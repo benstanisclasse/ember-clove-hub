@@ -43,3 +43,12 @@ All 15 ads re-opened after saving: name, own slideshow video, product-page link 
 - Campaign XXX live; ad group under TikTok review; 15 ads delivery OK. Balance $1,000.
 - Live differences: budget **$120.34/day** (not $90) and **auto-add creatives ON** on all 15 ads. Left unchanged pending the owner's decision (editing during the 7-day trial cancels the rebate).
 - 7-day trial: no edits, no pausing. Max spend at $120.34/day = ~$842.- Owner decision: "Keep the rebate: leave the $120.34 budget and auto-add on, and check daily which videos TikTok adds." Daily check: DAILY_CHECKS.md.
+
+## Pixel check (2026-10-28 ~22:40 CT)
+
+Owner asked to confirm the TikTok pixel is on Shopify and TikTok can see it. Read-only check, nothing changed.
+
+- **On the store:** emberandclove.com loads the TikTok app's web pixel (pixel code XXX, "TikTok Pixel for Shopify 1792800281") on every page, sharing all events; the site is not password-protected.
+- **TikTok receives it:** Events Manager shows status "Ready for campaign" and 4,741 events Oct 22-28, mostly server-side (Shopify + Events API), with a daily curve that matches Shopify's sessions. Page view 2,475, View content 2,031, Landing page view 157, collection_viewed 43, Add to cart 22, Initiate checkout 11, Search 1, all Active.
+- **Purchase:** 0, "Waiting for the first event". That's expected: Shopify has 0 orders since the store opened. Set up by Shopify, so the first real order should fire it. The rebate's "at least 1 pixel event" condition is already met.
+- **Diagnostics:** one item, "No catalog connected to pixel" (0 campaigns impacted, 0.00% of events). It doesn't affect this campaign (catalog creatives are off). Because of it, the API's catalog event diagnostic reads 0 for everything; use Events Manager for pixel health instead.
