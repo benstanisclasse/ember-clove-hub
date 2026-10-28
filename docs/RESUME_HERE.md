@@ -1,4 +1,18 @@
-# Where we left off (saved 2026-10-27, ~22:45 ET)
+# Where we left off (saved 2026-10-28, ~23:00 CT)
+
+## 0. Store and ads: one-page status (read this first)
+
+Setup is basically done. Almost everything now waits on Google/TikTok reviews or the first orders (0 orders so far).
+
+| Channel | State | Next |
+|---|---|---|
+| TikTok | EC_TT_ProductTest01 LIVE, $120.34/day, 15 ads, rebate trial to 2026-11-04 12:04 CST | Hands off; daily check 9:00; credit (if any) by ~11-18; don't edit TikTok account info until then |
+| Meta | Page-likes test F2 active ($5/day); Shopify Advantage+ Sales paused | Decide whether to start a sales campaign after TikTok's first week |
+| Google | Performance Max-1 (account XXX-XXX-XXXX = BridgeMark's account) PAUSED, $15/day, US + Australia, Purchases goal | Wait for Merchant Center approval (0 of 3.17K approved), check advertiser name, then owner switches on |
+| Store | Sells to US + Australia (same shipping); pixels: TikTok, Meta, Google all firing | First order verifies Purchase on all three |
+
+Owner to-dos: (1) small test order (verifies Purchase on TikTok, Meta, Google); (2) keep Google Ads in BridgeMark's account or make an Ember & Clove one; (3) theme announcement bar + product Shipping block still US-only/$70 wording; (4) EPROLO shipping cost to Australia; (5) key files in Downloads (key.txt, openrouter_api_key.txt, client_secret_*.json) -> env vars, delete files; (6) housekeeping: empty TikTok draft XXX, old chats the sweep marked safe to delete, data/inbox/loose_2026-10-28/.
+Claude to-dos when due: add Google Ads to ads-dashboard-refresh before PMax goes live; re-check Merchant Center shipping after any Shopify shipping edit; TikTok catalog match rate is 0% (only matters for catalog ads).
 
 Two development programs run side by side. Each has its own documents in `docs/`.
 
@@ -20,7 +34,7 @@ TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group →
 (platform-claimed / Shopify-attributed / blended). Meta began delivering on 10/27 ($0.44, 16 impressions).
 
 Open owner decisions carried over: none blocking Phase E. TikTok test 01 LIVE since 2026-10-28 (rebate trial, no edits until 2026-11-04 12:04 CST); dashboard page Advertising > TikTok tests (/ads/tests, scripts/studio/ad_tests.py).
-**Microsoft Advertising removed 2026-10-28** (account suspended; owner: "remove Microsoft from our system"). Ads = Meta + TikTok only.
+**Microsoft Advertising removed 2026-10-28** (account suspended; owner: "remove Microsoft from our system"). Ads = Meta + TikTok, plus Google Performance Max-1 (paused) since 10-28 evening.
 
 ## 2. Content Studio 2.0 ("Autonomous Content Studio 2.0" master prompt) — Phase D done 2026-10-28; next E (~2 weeks of tagged content)
 
