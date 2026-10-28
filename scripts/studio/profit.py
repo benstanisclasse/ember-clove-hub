@@ -165,7 +165,7 @@ def report(con, out=analytics.DASH, days=90, today=None):
                       "contribution": round(contrib, 2), "ad_spend": round(spend, 2), "content_cost": round(content, 2),
                       "profit_after_marketing": round(contrib - spend - content, 2),
                       "cost_complete": all(e["cost_complete"] for e in os_)})
-    (out / "profit_daily.json").write_text(json.dumps(daily, indent=1), encoding="utf-8")
+    analytics.write_text_atomic((out / "profit_daily.json"), json.dumps(daily, indent=1))
 
     prod = {}
     for o in per_order:
@@ -178,8 +178,8 @@ def report(con, out=analytics.DASH, days=90, today=None):
             p["units"] += li["quantity"]
             p["net_sales"] = round(p["net_sales"] + share, 2)
             p["cogs"] = round(p["cogs"] + li["quantity"] * float(v.get("unit_cost") or 0), 2)
-    (out / "profit_products.json").write_text(json.dumps(sorted(prod.values(), key=lambda r: -r["net_sales"]), indent=1),
-                                              encoding="utf-8")
+    analytics.write_text_atomic(out / "profit_products.json",
+                                json.dumps(sorted(prod.values(), key=lambda r: -r["net_sales"]), indent=1))
 
     b = budgets()
     n = len(per_order)
@@ -196,12 +196,12 @@ def report(con, out=analytics.DASH, days=90, today=None):
                "cost_complete": all(e["cost_complete"] for e in per_order), "window_days": days, "to": today.isoformat()}
     if not n and cat:
         summary["allowable_cpa_catalog"] = round(cat["avg_contribution"] - b["target_profit_per_order"], 2)
-    (out / "profit_summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
+    analytics.write_text_atomic(out / "profit_summary.json", json.dumps(summary, indent=1))
 
     ledger = [dict(r) for r in con.execute(
         "SELECT day, provider, kind, ROUND(SUM(usd), 2) AS usd, COUNT(*) AS items FROM generation_costs "
         "GROUP BY day, provider, kind ORDER BY day")]
-    (out / "cost_ledger.json").write_text(json.dumps(ledger, indent=1), encoding="utf-8")
+    analytics.write_text_atomic((out / "cost_ledger.json"), json.dumps(ledger, indent=1))
     return [f"orders costed {n}", f"profit days {len(daily)}", f"products sold {len(prod)}", f"ledger rows {len(ledger)}"]
 
 

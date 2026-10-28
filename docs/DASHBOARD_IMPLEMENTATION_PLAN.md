@@ -303,3 +303,34 @@ session's tests). Verified live: Store, Overview and Operations pages, alerts, n
 spend needs product-specific campaigns; dollar costs of credit-based tools are only counted if recorded in the CSV.
 
 **Next:** H (hardening), then G (intelligence) once there is ~2 weeks of history.
+
+---
+
+## Phase H report (2026-10-28, owner: "Start Phase H (hardening) next?")
+
+**Checks and results**
+- Regression: 151/151 tests (studio, dashboard, profit, content, hardening); `cli.py validate` OK; all 7 pages load with
+  no console errors and nothing "Failed to load"; all 8 sync jobs green. Fixed: Content Studio heading still read
+  "Ember Studio Control Room" (the Phase D rename had not applied).
+- Security: no secret value (PostZen, Shopify id/secret, Higgsfield, Kalodata) appears in any page, `/data`, dashboard
+  data file or log; no token-shaped strings or email addresses served; POST/PUT/DELETE/PATCH → 501; firewall rule
+  "Ember Studio dashboard (LAN)" = local subnet, Private/Domain profiles, network is Private. Added `nosniff`,
+  `X-Frame-Options: SAMEORIGIN`, `Referrer-Policy: no-referrer`, removed the Python version banner. Reviewed the Content
+  Studio `/media/frames/` route: strict id pattern + database lookup, no path traversal.
+- Reliability: all files my modules write (Shopify, attribution, profit, ads, health, system info, episode history) are
+  now written atomically (`analytics.write_text_atomic` / `atomic_open`); `/data` serves the last good copy of any file
+  that can't be parsed (logged). Backup task now retries 2× (15 min apart).
+- Startup: dashboard task = boot trigger (+1 min), restart 3× every 5 min, no time limit, S4U. Timed cold start: page up
+  in 1.6 s, first full sync in 16.5 s, no errors. A real reboot test was not run (needs the owner's OK; it interrupts the PC).
+- Speed: pages 2–3 ms (21–52 KB), `/data` 19 ms (291 KB), d3 12 ms (cached), shared CSS/JS 3 ms — far under targets.
+
+**Docs:** `docs/DASHBOARD_OPERATIONS.md` (what runs where, health, start/stop, credentials and rotation, security,
+backups/restore/git, common problems, changing settings, adding a data source, tests).
+
+**Tests:** new `scripts/studio/test_hardening.py` (headers on every response, read-only methods, atomic write survives a
+crash, last-good fallback) — suite 151/151.
+
+**Open owner items:** real reboot test; optional: move the PostZen key from `Downloads\key.txt` to the `POSTZEN_API_KEY`
+user env var; dashboard password stays off by choice.
+
+**Next:** Phase G (intelligence) once ~2 weeks of history with posts, spend and orders exist (from ~2026-11-10).

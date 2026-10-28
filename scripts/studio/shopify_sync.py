@@ -275,11 +275,11 @@ def write_dashboard_files(con, out=DASH):
     all_rows = [dict(r) for r in con.execute("SELECT * FROM store_daily WHERE day >= ? ORDER BY day",
                                              (_window(HISTORY_DAYS)[0],))]
     flag_bot_days(all_rows)
-    (out / "store_daily.json").write_text(json.dumps(all_rows, indent=1), encoding="utf-8")
+    analytics.write_text_atomic((out / "store_daily.json"), json.dumps(all_rows, indent=1))
     rows = [r for r in all_rows if r["day"] >= a]  # reconciliation covers the 30-day window
 
     def write_csv(name, cols, data):
-        with open(out / f"{name}.csv", "w", newline="", encoding="utf-8") as f:
+        with analytics.atomic_open(out / f"{name}.csv", newline="") as f:
             w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
             w.writeheader()
             w.writerows(data)
@@ -327,7 +327,7 @@ def run_reconciliation(con, a, b, rows, out=DASH):
                          (lo.strftime("%Y-%m-%dT%H:%M:%SZ"), hi.strftime("%Y-%m-%dT%H:%M:%SZ"))).fetchone()[0]
     rec = {**reconcile(rows, (t or [{}])[0], (st or [{}])[0].get("sessions"), stored, count),
            "from": a, "to": b, "checked_at": analytics.now_utc()}
-    (out / "store_reconciliation.json").write_text(json.dumps(rec, indent=1), encoding="utf-8")
+    analytics.write_text_atomic((out / "store_reconciliation.json"), json.dumps(rec, indent=1))
     return rec
 
 
@@ -395,7 +395,7 @@ def sync(out=DASH, db_path=None):
         a, b, rows, n_prod = write_dashboard_files(con, out)
         rec = run_reconciliation(con, a, b, rows, out)
         attr = attribution_report(con, a)
-        (out / "store_attribution.json").write_text(json.dumps(attr, indent=1), encoding="utf-8")
+        analytics.write_text_atomic((out / "store_attribution.json"), json.dumps(attr, indent=1))
         profit.import_generation_costs(con)  # Phase F: content cost ledger + profitability files
         profit_lines = profit.report(con, out)
     finally:

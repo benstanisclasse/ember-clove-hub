@@ -57,7 +57,7 @@ def merge(snap):
     rows += [{"date": day, "platform": platform, **{k: _num(d.get(k)) for k in COLS[2:]}} for day, d in days.items()]
     rows.sort(key=lambda r: (r["date"], r["platform"]))
     OUT.mkdir(parents=True, exist_ok=True)
-    with open(DAILY, "w", newline="", encoding="utf-8") as f:
+    with analytics.atomic_open(DAILY, newline="") as f:
         w = csv.DictWriter(f, fieldnames=COLS)
         w.writeheader()
         w.writerows(rows)
@@ -66,7 +66,7 @@ def merge(snap):
     accounts[platform] = {"platform": platform, "account": snap.get("account", ""), "account_id": str(snap.get("account_id", "")),
                           "status": snap.get("status", ""), "active_campaigns": int(snap.get("active_campaigns") or 0),
                           "note": snap.get("note", ""), "refreshed_at": dt.datetime.now().isoformat(timespec="minutes")}
-    ACCOUNTS.write_text(json.dumps([accounts[p] for p in PLATFORMS if p in accounts], indent=1), encoding="utf-8")
+    analytics.write_text_atomic(ACCOUNTS, json.dumps([accounts[p] for p in PLATFORMS if p in accounts], indent=1))
     msg = f"{platform}: {len(days)} days saved, {len(rows)} rows in ads_daily.csv"
     if "entities" in snap:
         msg += f"; {merge_entities(platform, snap['entities'], snap.get('entities_period', 'last_7d'))} entities"
@@ -84,7 +84,7 @@ def merge_entities(platform, entities, period):
     new = [{"platform": platform, **{k: e.get(k) for k in ENTITY_FIELDS}, "id": str(e["id"]),
             "parent_id": str(e.get("parent_id") or ""), **{k: _num(e.get(k)) for k in COLS[2:]},
             "period": period, "refreshed_at": fetched} for e in entities]
-    ENTITIES.write_text(json.dumps(keep + new, indent=1, ensure_ascii=False), encoding="utf-8")
+    analytics.write_text_atomic(ENTITIES, json.dumps(keep + new, indent=1, ensure_ascii=False))
     return len(new)
 
 

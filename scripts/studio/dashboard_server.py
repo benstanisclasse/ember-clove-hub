@@ -141,18 +141,30 @@ window.dash = (() => {
 });</script></body></html>"""
 
 
+_LAST_GOOD = {}
+
+
 def _rows(name):
+    """One dataset for /data. If a file can't be read or parsed (a writer that doesn't write atomically, a disk hiccup),
+    serve the last good copy instead of failing the whole page."""
     jp, cp = OUT / f"{name}.json", OUT / f"{name}.csv"
-    if jp.exists():
-        rows = json.loads(jp.read_text(encoding="utf-8"))
-        if isinstance(rows, dict):  # single-record files (e.g. store_reconciliation) become one row
-            rows = [rows]
-        return {"rows": rows, "columns": list(rows[0]) if rows else []}
-    if cp.exists():
-        with open(cp, newline="", encoding="utf-8") as f:
-            r = csv.DictReader(f)
-            return {"rows": list(r), "columns": r.fieldnames or []}
-    return None
+    try:
+        if jp.exists():
+            rows = json.loads(jp.read_text(encoding="utf-8"))
+            if isinstance(rows, dict):  # single-record files (e.g. store_reconciliation) become one row
+                rows = [rows]
+            out = {"rows": rows, "columns": list(rows[0]) if rows else []}
+        elif cp.exists():
+            with open(cp, newline="", encoding="utf-8") as f:
+                r = csv.DictReader(f)
+                out = {"rows": list(r), "columns": r.fieldnames or []}
+        else:
+            return None
+    except (OSError, ValueError, csv.Error) as e:
+        LOG.warning("dataset %s unreadable (%s); serving the last good copy", name, e)
+        return _LAST_GOOD.get(name)
+    _LAST_GOOD[name] = out
+    return out
 
 
 def page(path, every):
@@ -176,7 +188,7 @@ def _tiktok():
         hist = [dict(r) for r in con.execute(
             "SELECT t.episode_id, t.from_state, t.to_state, t.actor, t.reason, t.at FROM transitions t "
             "JOIN episodes e ON e.id = t.episode_id WHERE e.test = 0 ORDER BY t.episode_id, t.at")]
-        (OUT / "episode_history.json").write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+        analytics.write_text_atomic((OUT / "episode_history.json"), json.dumps(hist, ensure_ascii=False))
         return lines + [f"episode_history {len(hist)}"]
     finally:
         con.close()
@@ -189,7 +201,7 @@ def write_system_info():
     mirror = root / "media_mirror"
     info = {"latest_backup": snaps[-1] if snaps else None, "backup_count": len(snaps), "backup_dir": str(root),
             "mirror_files": sum(1 for f in mirror.rglob("*") if f.is_file()) if mirror.exists() else 0}
-    (OUT / "system_info.json").write_text(json.dumps(info), encoding="utf-8")
+    analytics.write_text_atomic((OUT / "system_info.json"), json.dumps(info))
 
 
 def episode_frames(episode_id):
@@ -249,6 +261,14 @@ def health_rows():
 
 def make_handler(every):
     class Handler(BaseHTTPRequestHandler):
+        server_version, sys_version = "EmberStudio", ""  # don't advertise the Python version
+
+        def end_headers(self):  # Phase H: basic browser hardening on every response
+            self.send_header("X-Content-Type-Options", "nosniff")
+            self.send_header("X-Frame-Options", "SAMEORIGIN")
+            self.send_header("Referrer-Policy", "no-referrer")
+            super().end_headers()
+
         def _send(self, code, body, ctype):
             data = body.encode("utf-8")
             self.send_response(code)

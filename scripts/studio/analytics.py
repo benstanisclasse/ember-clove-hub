@@ -15,6 +15,7 @@ import contextlib
 import csv
 import datetime as dt
 import json
+import os
 import sqlite3
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -51,6 +52,21 @@ CREATE VIEW IF NOT EXISTS ad_daily_latest AS
     GROUP BY platform, level, entity_id, day) m
   ON a.platform = m.platform AND a.level = m.level AND a.entity_id = m.entity_id AND a.day = m.day AND a.fetched_at = m.f;
 """
+
+
+@contextlib.contextmanager
+def atomic_open(path, newline=None):
+    """Write a file so readers only ever see the old or the new version, never half of one (temp file + replace)."""
+    path = Path(path)
+    tmp = path.with_name(f".{path.name}.tmp")
+    with open(tmp, "w", encoding="utf-8", newline=newline) as f:
+        yield f
+    os.replace(tmp, path)
+
+
+def write_text_atomic(path, text):
+    with atomic_open(path) as f:
+        f.write(text)
 
 
 def now_utc():
@@ -200,4 +216,4 @@ def snapshot_dashboard_files(out=DASH, path=None):
 
 
 def write_health_file(out=DASH, path=None):
-    (out / "sync_health.json").write_text(json.dumps(health(path), indent=1), encoding="utf-8")
+    write_text_atomic((out / "sync_health.json"), json.dumps(health(path), indent=1))

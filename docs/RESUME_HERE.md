@@ -2,7 +2,7 @@
 
 Two development programs run side by side. Each has its own documents in `docs/`.
 
-## 1. Dashboard 2.0 ("Marketing Intelligence & Operations Dashboard 2.0" master prompt) — Phase F done 2026-10-28; next H, then G
+## 1. Dashboard 2.0 ("Marketing Intelligence & Operations Dashboard 2.0" master prompt) — Phase H done 2026-10-28; next G (from ~2026-11-10)
 
 | Phase | Status | Report |
 |---|---|---|
@@ -12,10 +12,10 @@ Two development programs run side by side. Each has its own documents in `docs/`
 | D Design system, six-section sidebar, Overview, Ads/Intelligence/Ops pages, calendar views | done | "Phase D report" |
 | E Attribution (tracking convention, store attribution, campaign drill-down, three lenses) | done | "Phase E report" |
 | F Profitability (profit engine, cost ledger, budgets) | done | "Phase F report" |
-| G Intelligence | after ~2 weeks of history | |
-| **H Hardening** | **next** | |
+| **G Intelligence** | **next, from ~2026-11-10** (needs ~2 weeks of history) | |
+| H Hardening (security, atomic writes, startup, speed, operations guide) | done | "Phase H report", `DASHBOARD_OPERATIONS.md` |
 
-To resume: "Continue Dashboard 2.0 with Phase H." Phase E = one UTM convention for new links, launch-day check that
+To resume: "Continue Dashboard 2.0 with Phase G." Phase E = one UTM convention for new links, launch-day check that
 TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group → ad drill-down, three lenses
 (platform-claimed / Shopify-attributed / blended). Meta began delivering on 10/27 ($0.44, 16 impressions).
 
@@ -27,7 +27,10 @@ Phase A audit DONE → `CONTENT_STUDIO_AUDIT.md`, `CONTENT_STUDIO_ARCHITECTURE_V
 Phase B DONE 2026-10-27 (report at the end of CONTENT_STUDIO_ROADMAP.md). Next: Content Studio Phase C.
 Phase C DONE 2026-10-27 (commit 97f7869; report at the end of CONTENT_STUDIO_ROADMAP.md): generation/asset records,
 content features, 24h/48h/7d marks, utm_content=<content id>, performance + production-cost views.
-To resume: "Start Content Studio Phase D."
+Phase D (items 1–4) DONE 2026-10-28 (commit 382a7ad): shared rule module (checks.py), media-bound approvals,
+product availability at publish, Facebook AI-picture weeks in the database (fb_ai.py). Items 5–7 still open.
+To resume: "Finish Content Studio Phase D items 5-7" or, once ~2 weeks of tagged content exist, "Start Phase E".
+First real use of fb_ai.py: the AI-picture week from 2026-11-04.
 Note: Dashboard 2.0 Phases E and F were completed in a parallel session.
 Must share Dashboard 2.0's infrastructure: same dashboard, same `studio/analytics.db` history store, same Shopify
 connector (`scripts/shopify_api.py`), same sync-health and backup jobs. No second dashboard or connector.
