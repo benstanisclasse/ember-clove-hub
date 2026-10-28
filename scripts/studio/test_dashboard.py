@@ -129,7 +129,7 @@ def get(url):
 
 
 def test_pages_render_with_local_d3(server):
-    for path in ("/", "/index.html", "/metrics"):
+    for path in ("/", "/content", "/content/performance", "/ads", "/store", "/intelligence", "/ops"):
         code, ctype, body = get(server + path)
         assert code == 200 and ctype.startswith("text/html")
         assert b'src="/static/d3.min.js"' in body and b"cdn.jsdelivr" not in body
@@ -204,3 +204,31 @@ def test_store_page_and_single_record_dataset(server):
     j = json.loads(get(server + "/data")[2])
     rec = j["datasets"]["store_reconciliation"]
     assert rec is None or (len(rec["rows"]) == 1 and "checks" in rec["rows"][0])
+
+
+# --- Phase D: navigation and pages ---------------------------------------------------------------------------------
+
+def test_old_addresses_redirect(server):
+    import http.client
+    host, port = server.replace("http://", "").split(":")
+    for old, new in (("/index.html", "/content"), ("/metrics", "/content/performance")):
+        c = http.client.HTTPConnection(host, int(port), timeout=10)
+        c.request("GET", old)
+        r = c.getresponse()
+        assert r.status == 301 and r.getheader("Location") == new
+
+
+def test_every_page_has_the_sidebar_and_shared_assets(server):
+    for path, label in (("/", "Overview"), ("/content", "Content Studio"), ("/ads", "Advertising"), ("/store", "Store"),
+                        ("/intelligence", "Intelligence"), ("/ops", "Operations"), ("/content/performance", "Performance")):
+        body = get(server + path)[2].decode("utf-8")
+        assert 'class="side-nav"' in body and "/static/app.css" in body and "/static/components.js" in body
+        current = body.split('aria-current="page"')[1].split("</a>")[0]
+        assert label in current, f"{path} should mark {label} as the current section"
+    for f in ("app.css", "components.js"):
+        assert get(server + "/static/" + f)[0] == 200
+
+
+def test_data_includes_new_datasets(server):
+    j = json.loads(get(server + "/data")[2])
+    assert {"system_info", "episode_history", "store_daily"} <= set(j["datasets"])

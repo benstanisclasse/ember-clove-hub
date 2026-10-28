@@ -1,0 +1,178 @@
+<style>
+/* Overview: how Ember & Clove is doing and what needs attention today. Uses the shared ui components. */
+.ov-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: end; }
+.ov-kpis { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); }
+.ov-main { display: grid; gap: var(--cds-gap-md); grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+@media (max-width: 1000px) { .ov-main { grid-template-columns: 1fr; } .ov-top { grid-template-columns: 1fr; } }
+</style>
+
+<div class="es">
+  <header class="ov-top">
+    <div class="es-head">
+      <h1 class="es-title">Overview</h1>
+      <p class="es-take" id="ov-take">How the store, ads and content are doing, and what needs attention today.</p>
+    </div>
+    <div class="es-seg" id="ov-range" role="group" aria-label="Period"></div>
+  </header>
+
+  <section class="ov-kpis" id="ov-kpis" aria-label="Key figures"></section>
+  <p class="es-note" id="ov-period"></p>
+
+  <div class="ov-main">
+    <section class="es-card">
+      <div class="es-controls" style="justify-content: space-between"><h2 class="es-h2">Performance</h2>
+        <div class="es-seg" id="ov-metric" role="group" aria-label="Chart metric"></div></div>
+      <p class="es-note" id="ov-chart-note"></p>
+      <div class="es-chart" id="ov-chart"></div>
+    </section>
+    <section class="es-card">
+      <h2 class="es-h2">Today</h2>
+      <ul class="ops-list" id="ov-today"></ul>
+      <h2 class="es-h2" style="margin-top: 8px">Needs attention</h2>
+      <div id="ov-alerts" style="display: grid; gap: 8px"></div>
+    </section>
+  </div>
+
+  <section class="es-card">
+    <h2 class="es-h2">Channels</h2>
+    <p class="es-note">Organic reach and ad numbers are for the selected period; store visits by channel cover the last 30 days.
+      Purchases here are what each ad platform claims; they can overlap and are never added to store orders.</p>
+    <div class="es-tablewrap"><table class="es-table" id="ov-channels"></table></div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const {el, num, usd, pct, big, fmt, rows, status, periods, sumIn, series, kpi, bars, table, todayET, day} = ui;
+  let n = 7, metric = 'net_sales';
+  const RANGES = [[7, '7 days'], [14, '14 days'], [30, '30 days']];
+  const METRICS = [['net_sales', 'Net sales'], ['spend', 'Ad spend'], ['orders', 'Orders'], ['sessions', 'Visits']];
+
+  // Shared numbers for the period and the one before it.
+  function figures(range) {
+    const store = rows('store_daily').map(r => ({...r, date: r.day}));
+    const human = r => !Number(r.bot_flag);
+    const ads = rows('ads_daily'), tt = rows('daily_metrics'), fb = rows('fb_daily'), gen = rows('spend');
+    const s = k => sumIn(store, k, range);
+    const visits = sumIn(store, 'sessions', range, 'date', human);
+    return {net: s('net_sales'), orders: s('orders'), total: s('total_sales'), visits, completed: sumIn(store, 'completed_sessions', range, 'date', human),
+      spend: sumIn(ads, 'spend', range), clicks: sumIn(ads, 'clicks', range), claimed: sumIn(ads, 'purchases', range),
+      reach: (sumIn(tt, 'views', range) ?? 0) + (sumIn(fb, 'impressions', range) ?? 0), gen: sumIn(gen, 'usd', range) ?? 0,
+      hasStore: status('store_daily') === 'ok' && store.length > 0, hasAds: status('ads_daily') === 'ok' && ads.length > 0};
+  }
+  const followersAt = (data, date) => { const r = data.filter(x => x.date <= date).pop(); return r ? num(r.followers) : null; };
+
+  function draw() {
+    ui.segmented(document.getElementById('ov-range'), RANGES, n, v => { n = v; draw(); });
+    ui.segmented(document.getElementById('ov-metric'), METRICS, metric, v => { metric = v; draw(); });
+    const P = periods(n), c = figures(P.cur), p = figures(P.prev);
+    document.getElementById('ov-period').textContent =
+      `${day(P.cur[0])} – ${day(P.cur[1])} compared with ${day(P.prev[0])} – ${day(P.prev[1])} (Eastern days; TikTok and Facebook report UTC days). Flagged bot-traffic days are left out of visits.`;
+    const store = rows('store_daily').map(r => ({...r, date: r.day}));
+    const ads = rows('ads_daily');
+    const tf = rows('followers'), ff = rows('fb_followers');
+    const fol = r => { const a = followersAt(tf, r), b = followersAt(ff, r); return a == null && b == null ? null : (a || 0) + (b || 0); };
+    const noStore = !c.hasStore ? (status('store_daily') === 'loading' ? 'Loading…' : 'Not connected') : null;
+    const cards = [
+      kpi({label: 'Net sales', value: c.net, prev: p.net, format: usd, spark: series(store, 'net_sales', P.cur), color: 'var(--ch-store)',
+           source: 'Shopify', job: 'shopify', state: noStore, tip: 'Shopify net sales: gross sales − discounts − returns, by order day (Eastern).'}),
+      kpi({label: 'Orders', value: c.orders, prev: p.orders, format: fmt, spark: series(store, 'orders', P.cur), color: 'var(--ch-store)',
+           source: 'Shopify', job: 'shopify', state: noStore, sub: c.orders === 0 ? 'No orders yet' : null, tip: 'Orders placed (Shopify sales report).'}),
+      kpi({label: 'Ad spend', value: c.spend, prev: p.spend, format: usd, invert: true, spark: series(ads, 'spend', P.cur),
+           source: 'Meta · TikTok · Microsoft', job: 'ads:*', lateMin: 420, state: !c.hasAds ? 'Not connected' : null,
+           tip: 'Total spend across the three ad accounts (refreshed every 3 hours by Claude).'}),
+      kpi({label: 'MER', value: c.spend ? c.net / c.spend : null, prev: p.spend ? p.net / p.spend : null, format: v => d3.format('.2f')(v) + '×',
+           source: 'Shopify ÷ ads', state: !c.spend ? 'No ad spend yet' : null,
+           tip: 'Marketing efficiency ratio: store net sales ÷ total ad spend (all sales, not just ad-attributed).'}),
+      kpi({label: 'Cost per order', value: c.orders && c.spend ? c.spend / c.orders : null, prev: p.orders && p.spend ? p.spend / p.orders : null,
+           format: usd, invert: true, source: 'blended', state: !c.spend ? 'No ad spend yet' : !c.orders ? 'No orders yet' : null,
+           tip: 'Blended: total ad spend ÷ all store orders. The planning figure is $20.'}),
+      kpi({label: 'Store visits', value: c.visits, prev: p.visits, format: fmt, spark: series(store, 'sessions', P.cur, 'date', r => !Number(r.bot_flag)),
+           color: 'var(--ch-facebook)', source: 'Shopify', job: 'shopify', state: noStore, tip: 'Online store sessions, excluding days flagged as bot traffic.'}),
+      kpi({label: 'Conversion rate', value: c.visits ? c.completed / c.visits : null, prev: p.visits ? p.completed / p.visits : null, format: pct,
+           source: 'Shopify', state: noStore || (!c.visits ? 'No visits' : null), tip: 'Sessions that completed checkout ÷ sessions (bot days excluded).'}),
+      kpi({label: 'Organic reach', value: c.reach, prev: p.reach, format: big, spark: series(rows('daily_metrics'), 'views', P.cur),
+           source: 'TikTok views + Facebook impressions', job: 'tiktok', tip: 'TikTok video views plus Facebook Page impressions (PostZen, UTC days).'}),
+      kpi({label: 'Followers', value: fol(P.cur[1]), prev: fol(P.prev[1]), format: fmt, source: 'TikTok + Facebook', job: 'tiktok',
+           tip: 'Latest follower counts on TikTok and the Facebook Page, compared with the end of the previous period.'}),
+      kpi({label: 'Content cost', value: c.gen, prev: p.gen, format: usd, invert: true, spark: series(rows('spend'), 'usd', P.cur),
+           source: 'Ember Studio', job: 'tiktok', sub: 'No cap set (owner choice)', tip: 'AI video generation spend recorded by Ember Studio. Other AI spend is not tracked yet.'}),
+      kpi({label: 'Contribution profit', source: 'estimate', state: c.orders ? 'Coming in Phase F' : 'Needs orders first',
+           tip: 'Revenue minus product, shipping, fees, refunds and ad spend. Built once orders exist (Phase F).'}),
+    ];
+    document.getElementById('ov-kpis').replaceChildren(...cards);
+
+    // performance chart
+    const chartData = [];
+    for (let d = P.cur[0]; d <= P.cur[1]; d = ui.addDays(d, 1)) {
+      const st = store.find(r => r.date === d) || {};
+      chartData.push({date: d, net_sales: num(st.net_sales) || 0, orders: num(st.orders) || 0, sessions: num(st.sessions) || 0, bot: Number(st.bot_flag),
+        spend: d3.sum(ads.filter(r => r.date === d), r => num(r.spend) || 0)});
+    }
+    const isMoney = metric === 'net_sales' || metric === 'spend';
+    document.getElementById('ov-chart-note').textContent = metric === 'sessions' ? 'Grey bars are flagged bot-traffic days.' :
+      metric === 'spend' ? 'All three ad accounts combined.' : 'Shopify, by order day.';
+    bars(document.getElementById('ov-chart'), chartData, {x: 'date', y: r => r[metric], yfmt: isMoney ? d3.format('$,.0f') : fmt,
+      color: r => metric === 'sessions' && r.bot ? 'var(--color-border-line)' : metric === 'spend' ? 'var(--ch-meta)' : 'var(--color-accent)',
+      lines: r => [`${METRICS.find(m => m[0] === metric)[1]}: ${isMoney ? usd(r[metric]) : fmt(r[metric])}`, `Orders: ${fmt(r.orders)}`],
+      empty: `No ${METRICS.find(m => m[0] === metric)[1].toLowerCase()} in this period yet.`});
+
+    drawToday(c);
+    drawAlerts(P, c);
+    drawChannels(P);
+  }
+
+  function drawToday(c) {
+    const today = todayET();
+    const sch = rows('schedule'), fbs = rows('fb_schedule');
+    const ttToday = sch.filter(r => r.date === today), fbToday = fbs.filter(r => r.date === today);
+    const drafts = sch.filter(r => /TikTok drafts/.test(r.tiktok || ''));
+    const approve = sch.filter(r => r.stage === 'QA_PASSED' || r.stage === 'GENERATED');
+    const failed = sch.filter(r => /fail|error/i.test(r.tiktok || '')).length + fbs.filter(r => /fail|error/i.test(r.status || '')).length;
+    const live = d3.sum(rows('ads_accounts'), r => num(r.active_campaigns) || 0);
+    const delivering = new Set(rows('ads_daily').filter(r => r.date === today && num(r.spend) > 0).map(r => r.platform)).size;
+    const upcoming = [...sch.map(r => ({...r, ch: 'TikTok', what: r.series})), ...fbs.map(r => ({...r, ch: 'Facebook', what: r.products}))]
+      .filter(r => `${r.date} ${r.time}` >= `${today} ${new Intl.DateTimeFormat('en-GB', {timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit'}).format(new Date())}`)
+      .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time)).slice(0, 3);
+    const item = (label, count, href, cls) => el('li', {}, el('a', {href, text: label}), el('span', {class: `count ${cls || ''}`, text: String(count)}));
+    document.getElementById('ov-today').replaceChildren(
+      item('Posts scheduled today', ttToday.length + fbToday.length, '/content'),
+      item('Videos waiting in your TikTok drafts', drafts.length, '/content', drafts.length ? 'st-warn' : ''),
+      item('Videos waiting for approval', approve.length, '/content', approve.length ? 'st-warn' : ''),
+      item('Failed posts', failed, '/content', failed ? 'st-bad' : ''),
+      item('Live ad campaigns', live, '/ads'),
+      item('Ad accounts delivering today', delivering, '/ads', live && !delivering ? 'st-warn' : ''),
+      ...upcoming.map(r => el('li', {}, el('span', {text: `Next: ${r.ch} · ${r.what}`}), el('span', {class: 'es-sub', text: `${day(r.date)} ${r.time}`}))));
+  }
+
+  function drawAlerts(P, c) {
+    const list = ui.alerts(P.cur);
+    document.getElementById('ov-alerts').replaceChildren(...(list.length ? list.slice(0, 5).map(a => el('div', {class: `alert ${a.sev}`},
+      el('b', {}, el('a', {href: a.href, text: a.title})), el('span', {text: `${a.why} ${a.ev ? 'Evidence: ' + a.ev + '.' : ''} ${a.act}`}))) :
+      [el('p', {class: 'es-note', text: 'Nothing needs attention right now.'})]));
+  }
+
+  function drawChannels(P) {
+    const ads = rows('ads_daily'), src = rows('store_sources'), utm = rows('store_utm');
+    const visits = (f) => d3.sum(src.filter(f), r => num(r.sessions) || 0);
+    const utmVisits = (f) => d3.sum(utm.filter(f), r => num(r.sessions) || 0);
+    const adRow = (p, name) => ({channel: name, seen: sumIn(ads.filter(r => r.platform === p), 'impressions', P.cur), visits: null,
+      spend: sumIn(ads.filter(r => r.platform === p), 'spend', P.cur), clicks: sumIn(ads.filter(r => r.platform === p), 'clicks', P.cur),
+      claimed: sumIn(ads.filter(r => r.platform === p), 'purchases', P.cur)});
+    const data = [
+      {channel: 'TikTok organic', seen: sumIn(rows('daily_metrics'), 'views', P.cur), visits: visits(r => r.campaign === 'tiktok' && r.source === 'social')},
+      {channel: 'Facebook organic', seen: sumIn(rows('fb_daily'), 'impressions', P.cur), visits: visits(r => r.campaign === 'facebook' && r.source === 'social')},
+      {...adRow('meta', 'Meta ads')}, {...adRow('tiktok', 'TikTok ads'), visits: utmVisits(r => r.source === 'tiktok' && /paid/.test(r.medium))},
+      {...adRow('microsoft', 'Microsoft ads'), visits: visits(r => r.campaign === 'microsoft')},
+      {channel: 'Direct', visits: visits(r => r.source === 'direct')}, {channel: 'Search', visits: visits(r => r.source === 'search')},
+    ];
+    const opt = v => v == null ? '—' : fmt(v);
+    table(document.getElementById('ov-channels'), data, [
+      {k: 'channel', label: 'Channel'}, {k: 'seen', label: 'Seen', n: 1, f: opt}, {k: 'visits', label: 'Store visits (30 d)', n: 1, f: opt},
+      {k: 'spend', label: 'Ad spend', n: 1, f: v => v == null ? '—' : usd(v)}, {k: 'clicks', label: 'Ad clicks', n: 1, f: opt},
+      {k: 'claimed', label: 'Platform-claimed purchases', n: 1, f: opt}], {});
+  }
+
+  dash.onData(draw);
+})();
+</script>

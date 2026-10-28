@@ -184,3 +184,52 @@ any database migration.
 orders older than 60 days would need read_all_orders (not needed yet, store opened 10/23).
 
 **Next: Phase D** (navigation, design system, Overview with store + ads + organic together).
+
+---
+
+## Phase D report (2026-10-27, owner: "Yes, start Phase D: the shared design system, sidebar navigation with the six sections, the Overview page and the improved content calendar.")
+
+**Implemented**
+- D1 Design system: `studio/dashboard/static/app.css` (dark-first Ember & Clove palette, light theme toggle remembered per
+  browser, shared card/table/chart/KPI/alert/drawer/calendar styles) and `static/components.js` (`ui.*`: KPI card with
+  previous-period change, sparkline, source and freshness dot; bars; sortable table with totals and CSV export; detail
+  drawer; period helpers; rule-based `ui.alerts`). Unknown values render as states (`Not connected`, `No orders yet`,
+  `No ad spend yet`, `Needs orders first`), never as 0.
+- D2 Sidebar shell with six sections: Overview `/`, Content Studio `/content` (+ Performance `/content/performance`),
+  Advertising `/ads`, Store `/store`, Intelligence `/intelligence`, Operations `/ops`. Old `/index.html` and `/metrics`
+  redirect (301). Phone layout: sticky top bar with scrolling sections, KPI cards two per row, no sideways scrolling.
+  Our CSS/JS are version-tagged and not cached; only d3 is cached.
+- D3 Overview: 7/14/30-day KPIs with the previous period (net sales, orders, ad spend, MER, blended cost per order,
+  visits without bot days, conversion, organic reach, followers, content cost, contribution profit marked "needs
+  orders"), switchable performance chart, Today panel (scheduled today, waiting in TikTok drafts, waiting approval,
+  failed, live campaigns, delivering today, next posts), Needs-attention alerts, channel table (organic reach, store
+  visits by channel, ad spend, clicks, platform claims — never added to store orders).
+- Advertising page (paid-ads section moved here from Metrics): KPIs with comparison, spend per day stacked by platform,
+  per-platform cards with what is running, platforms table with CTR/CPC/CPM/CPA/ROAS and CSV export.
+- Intelligence page: every rule-based finding with why it matters, evidence and suggested action; honest "what the data
+  can say yet"; Phase G plan.
+- Operations page: sync-health table, backups (from new `system_info` file), automatic jobs, content cost chart with
+  "No cap", read-only settings.
+- D4 Content calendar: Week / Month / Day / List views, prev/next/today, filters (channel, status, series/post type,
+  product or caption search), CSV export of the list, detail drawer per post with the full production history
+  (new `episode_history` file from `studio.db` transitions).
+- D5 Dark-first theme in brand colours; checked at 375 px and desktop.
+
+**Verified live:** all 7 pages load with the right section highlighted and no console errors; calendar views, filters,
+search and drawer exercised; KPI states correct with today's data (Meta began delivering: $0.44, 16 impressions).
+**Tests:** 3 new (redirects, sidebar/assets on every page, new datasets) — **57/57 pass.**
+
+**Files:** new `static/app.css`, `static/components.js`, `overview.html`, `ads.html`, `intelligence.html`, `ops.html`;
+changed `dashboard_server.py` (shell, routes, redirects, system_info, episode_history, caching), `index.html`
+(Content Studio + calendar), `metrics.html` (Content performance; ads moved out), `shopify_sync.py` (store_daily file
+keeps 90 days for comparisons), `test_dashboard.py`.
+
+**Not done / limits**
+- Existing Content Studio, Performance and Store pages keep some of their own helper code (they work and look
+  consistent via the shared tokens); folding them fully onto `ui.*` is clean-up, not a feature.
+- Comparisons for ads show "no previous period data" until 60 days of ad history exist.
+- Thumbnails in the calendar need asset paths exposed safely (Phase E/F with the creative library).
+- Global date control is per page (Overview, Advertising, Store), not yet one shared header control.
+
+**Next: Phase E (attribution)** as ads deliver: UTM convention for new links, launch-day macro check, campaign/ad-level
+drill-down, and the three lenses (platform-claimed, Shopify-attributed, blended).

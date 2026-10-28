@@ -1,0 +1,51 @@
+<style>
+/* Intelligence: rule-based findings now; daily summaries, experiments and creative comparisons come in Phase G. */
+.int-plan { margin: 0; padding-left: 18px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: grid; gap: 4px; }
+</style>
+
+<div class="es">
+  <header class="es-head"><h1 class="es-title">Intelligence</h1>
+    <p class="es-take">Findings from transparent rules over the dashboard's data. Each one says what happened, why it matters, the evidence and
+      what to do. Recommendations never act on their own: publishing, spending and campaign changes always wait for you.</p></header>
+
+  <section class="es-card">
+    <h2 class="es-h2">Findings, last 7 days</h2>
+    <div id="int-alerts" style="display:grid; gap:8px"></div>
+  </section>
+
+  <section class="es-grid2">
+    <div class="es-card"><h2 class="es-h2">What the data can and can't say yet</h2>
+      <ul class="int-plan" id="int-data"></ul></div>
+    <div class="es-card"><h2 class="es-h2">Coming next (Phase G, once there is enough data)</h2>
+      <ul class="int-plan">
+        <li>Daily summary of what changed versus the previous period, with sample sizes.</li>
+        <li>Anomaly checks on revenue, conversion, CPA, CTR, reach and failed posts against their own history.</li>
+        <li>Creative comparisons (hooks, formats, series, posting times) with minimum sample rules.</li>
+        <li>Experiment registry linked to videos, posts and ads, with Winner / Loser / Inconclusive results.</li>
+        <li>Live-ad statuses from the existing decision rules (stop-loss, tracking check, learning, promising, weak) as recommendations only.</li>
+      </ul></div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const {el, rows, fmt, num, sumIn, periods} = ui;
+  function draw() {
+    const list = ui.alerts(periods(7).cur);
+    document.getElementById('int-alerts').replaceChildren(...(list.length ? list.map(a => el('div', {class: `alert ${a.sev}`},
+      el('b', {}, el('a', {href: a.href, text: a.title})), el('span', {text: `Why it matters: ${a.why}`}),
+      a.ev ? el('span', {text: `Evidence: ${a.ev}`}) : null, el('span', {text: `Suggested action: ${a.act}`}))) :
+      [el('p', {class: 'es-note', text: 'No findings right now.'})]));
+    const orders = d3.sum(rows('store_daily'), r => num(r.orders) || 0);
+    const spend = d3.sum(rows('ads_daily'), r => num(r.spend) || 0);
+    const vids = rows('tiktok_videos').filter(r => r.url).length, posts = rows('fb_posts').length;
+    document.getElementById('int-data').replaceChildren(...[
+      `Store orders recorded: ${fmt(orders)}. Attribution, cost per order and profit analysis need orders.`,
+      `Ad spend recorded: $${spend.toFixed(2)}. Campaign comparisons need delivery on at least one platform.`,
+      `Live TikTok videos: ${vids}; Facebook posts: ${posts}. Creative comparisons need roughly 10+ posts per group before patterns mean anything.`,
+      'History started 2026-10-27, so trend and anomaly baselines build up from there.',
+    ].map(t => el('li', {text: t})));
+  }
+  dash.onData(draw);
+})();
+</script>

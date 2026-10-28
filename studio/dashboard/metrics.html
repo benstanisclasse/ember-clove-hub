@@ -50,9 +50,9 @@
 
 <div class="es">
   <header class="es-head">
-    <h1 class="es-title">Metrics</h1>
-    <p class="es-take">All channels together, paid ads across Meta, TikTok and Microsoft, then TikTok and the Facebook Page on their own.
-      Post numbers come from PostZen and refresh every 15 minutes; ad numbers every few hours. The platforms themselves can lag by a few hours.</p>
+    <h1 class="es-title">Content performance</h1>
+    <p class="es-take">Organic content: TikTok and the Facebook Page together, then each on its own.
+      Numbers come from PostZen and refresh every 15 minutes. The platforms themselves can lag by a few hours.</p>
   </header>
 
   <section class="es-sec" id="all">
@@ -84,35 +84,7 @@
     </div>
   </section>
 
-  <section class="es-sec" id="ads">
-    <h2 class="es-h2">Paid ads, all platforms</h2>
-    <p class="es-note">Meta, TikTok and Microsoft ad accounts over the last 30 days. Claude refreshes these numbers from each platform every
-      few hours (updated <span id="ads-updated">—</span>); purchases and revenue are what each platform credits to its own ads.</p>
-    <div class="es-tiles">
-      <div class="es-tile"><span class="es-label">Ad spend</span><span class="es-big" id="ads-spend">—</span>
-        <span class="es-sub">last 30 days, all platforms</span></div>
-      <div class="es-tile"><span class="es-label">Purchases</span><span class="es-big" id="ads-purch">—</span>
-        <span class="es-sub">credited to ads</span></div>
-      <div class="es-tile"><span class="es-label">Cost per purchase</span><span class="es-big" id="ads-cpa">—</span>
-        <span class="es-sub">spend ÷ purchases</span></div>
-      <div class="es-tile"><span class="es-label">Return on ad spend</span><span class="es-big" id="ads-roas">—</span>
-        <span class="es-sub">revenue ÷ spend</span></div>
-      <div class="es-tile"><span class="es-label">Clicks</span><span class="es-big" id="ads-clicks">—</span>
-        <span class="es-sub"><span id="ads-cpc">—</span> per click</span></div>
-    </div>
-    <div class="es-card">
-      <h3 class="es-h2">Spend per day, by platform</h3>
-      <p class="es-note" id="ads-legend">Daily ad spend, stacked by platform.</p>
-      <div class="es-chart" id="ads-daily"></div>
-    </div>
-    <div class="es-card">
-      <h3 class="es-h2">Platforms compared</h3>
-      <p class="es-note">Last 30 days per ad account, with what is running there now.</p>
-      <div class="es-tablewrap"><table class="es-table" id="ads-table"><thead><tr><th>Platform</th><th>Account</th>
-        <th class="n">Live campaigns</th><th class="n">Spend</th><th class="n">Impr.</th><th class="n">Clicks</th><th class="n">Per click</th>
-        <th class="n">Purchases</th><th class="n">Per purchase</th><th class="n">Return</th><th>Now</th></tr></thead><tbody></tbody></table></div>
-    </div>
-  </section>
+  <p class="es-note">Paid ads moved to <a href="/ads">Advertising</a>.</p>
 
   <section class="es-sec" id="tiktok">
     <h2 class="es-h2">TikTok</h2>
@@ -351,55 +323,6 @@ function growthTable(tableId, emptyId, d, nameOf, days = 7) {
   });
 }
 
-const ADS = [['meta', 'Meta'], ['tiktok', 'TikTok'], ['microsoft', 'Microsoft']];
-const money = v => v == null || !isFinite(v) ? '—' : d3.format(v >= 1000 ? '$,.0f' : '$,.2f')(v);
-
-function drawAds() {
-  const daily = dash.data('ads_daily'), accts = dash.data('ads_accounts');
-  const rows = daily.status === 'ok' ? daily.data : [], acc = accts.status === 'ok' ? accts.data : [];
-  const latest = rows.length ? d3.max(rows, r => r.date) : null;
-  const since = latest ? d3.utcFormat('%Y-%m-%d')(new Date(new Date(latest + 'T00:00:00Z').getTime() - 29 * 864e5)) : null;
-  const recent = rows.filter(r => since && r.date >= since);
-  const per = ADS.map(([p, name], i) => {
-    const rs = recent.filter(r => r.platform === p), a = acc.find(x => x.platform === p) || {};
-    return {p, name, color: dash.colors[i === 0 ? 1 : i === 1 ? 0 : 2], a, rs, spend: sum(rs, 'spend'), impr: sum(rs, 'impressions'),
-            clicks: sum(rs, 'clicks'), purch: sum(rs, 'purchases'), rev: sum(rs, 'revenue')};
-  });
-  const tot = k => per.reduce((s, x) => s + x[k], 0);
-  const spend = tot('spend'), clicks = tot('clicks'), purch = tot('purch'), rev = tot('rev');
-  set('ads-spend', money(spend));
-  set('ads-purch', fmt(purch));
-  set('ads-cpa', purch ? money(spend / purch) : '—');
-  set('ads-roas', spend ? d3.format('.2f')(rev / spend) + '×' : '—');
-  set('ads-clicks', big(clicks));
-  set('ads-cpc', clicks ? money(spend / clicks) : '—');
-  const when = acc.map(a => a.refreshed_at).filter(Boolean).sort().pop();
-  set('ads-updated', when ? new Date(when).toLocaleString([], {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'}) : 'not yet');
-  const legend = document.getElementById('ads-legend');
-  legend.replaceChildren('Daily ad spend, stacked by platform. ', ...per.flatMap(x => {
-    const s = document.createElement('span'); s.style.color = x.color; s.textContent = '■';
-    return [s, ` ${x.name}  `];
-  }));
-  stacked('ads-daily', per.map(x => ({name: x.name, color: x.color,
-    rows: spend ? x.rs.map(r => ({date: r.date, value: num(r.spend)})) : []})),
-    'No ad spend in the last 30 days.');
-  const body = document.querySelector('#ads-table tbody');
-  body.replaceChildren(...[...per, {name: 'All platforms', a: {}, spend, impr: tot('impr'), clicks, purch, rev, total: true}].map(x => {
-    const tr = document.createElement('tr');
-    const live = x.total ? per.reduce((s, y) => s + (y.a.active_campaigns || 0), 0) : x.a.active_campaigns;
-    [x.name, x.total ? '' : (x.a.account || 'not connected'), live == null ? '—' : fmt(live), money(x.spend), fmt(x.impr), fmt(x.clicks),
-     x.clicks ? money(x.spend / x.clicks) : '—', fmt(x.purch), x.purch ? money(x.spend / x.purch) : '—',
-     x.spend ? d3.format('.2f')(x.rev / x.spend) + '×' : '—', x.total ? '' : (x.a.note || '')].forEach((v, i) => {
-      const td = document.createElement('td');
-      if (i >= 2 && i <= 9) td.className = 'n';
-      td.textContent = v;
-      if (x.total) td.style.fontWeight = '500';
-      tr.append(td);
-    });
-    return tr;
-  }));
-}
-
 function drawAll() {
   const ok = id => dash.data(id).status === 'ok';
   const rows = id => ok(id) ? dash.data(id).data : [];
@@ -438,7 +361,6 @@ function drawAll() {
 
 dash.onData(() => {
   drawAll();
-  drawAds();
   const vids = dash.data('tiktok_videos'), tfol = dash.data('followers'), tday = dash.data('daily_metrics');
   const tl = dash.data('post_timeline'), sched = dash.data('schedule');
   const fbp = dash.data('fb_posts'), ffol = dash.data('fb_followers'), fday = dash.data('fb_daily'), fsch = dash.data('fb_schedule');

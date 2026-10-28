@@ -270,9 +270,12 @@ def sync_catalog(con, fetched_at):
 
 def write_dashboard_files(con, out=DASH):
     a, b = _window(WINDOW_DAYS)
-    rows = [dict(r) for r in con.execute("SELECT * FROM store_daily WHERE day >= ? ORDER BY day", (a,))]
-    flag_bot_days(rows)
-    (out / "store_daily.json").write_text(json.dumps(rows, indent=1), encoding="utf-8")
+    # the page file keeps the full history window so 30-day periods can be compared with the 30 days before
+    all_rows = [dict(r) for r in con.execute("SELECT * FROM store_daily WHERE day >= ? ORDER BY day",
+                                             (_window(HISTORY_DAYS)[0],))]
+    flag_bot_days(all_rows)
+    (out / "store_daily.json").write_text(json.dumps(all_rows, indent=1), encoding="utf-8")
+    rows = [r for r in all_rows if r["day"] >= a]  # reconciliation covers the 30-day window
 
     def write_csv(name, cols, data):
         with open(out / f"{name}.csv", "w", newline="", encoding="utf-8") as f:

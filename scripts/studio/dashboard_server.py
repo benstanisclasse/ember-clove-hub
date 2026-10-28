@@ -36,41 +36,37 @@ STATIC = OUT / "static"
 LOG = logging.getLogger("dashboard")
 DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_metrics", "spend", "caps",
             "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts", "sync_health",
-            "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation"]
+            "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation", "system_info",
+            "episode_history"]
 JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "ads:meta": "Meta ads",
               "ads:tiktok": "TikTok ads", "ads:microsoft": "Microsoft ads"}
-PAGES = {"/": ("index.html", "Ember Studio Control Room"), "/index.html": ("index.html", "Ember Studio Control Room"),
-         "/metrics": ("metrics.html", "Ember & Clove Metrics"), "/store": ("store.html", "Ember & Clove Store")}
+# path -> (file, title, nav key). Six sections (Phase D); old addresses redirect.
+PAGES = {"/": ("overview.html", "Overview · Ember & Clove", "overview"),
+         "/content": ("index.html", "Content Studio · Ember & Clove", "content"),
+         "/content/performance": ("metrics.html", "Content performance · Ember & Clove", "performance"),
+         "/ads": ("ads.html", "Advertising · Ember & Clove", "ads"),
+         "/store": ("store.html", "Store · Ember & Clove", "store"),
+         "/intelligence": ("intelligence.html", "Intelligence · Ember & Clove", "intelligence"),
+         "/ops": ("ops.html", "Operations · Ember & Clove", "ops")}
+REDIRECTS = {"/index.html": "/content", "/metrics": "/content/performance"}
+ICON = {  # 16px line icons (Lucide-style paths, drawn inline)
+    "overview": '<path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 3v6h8V3z"/>',
+    "content": '<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+    "performance": '<path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/>',
+    "ads": '<path d="M3 11l18-8v18L3 13z"/><path d="M7 13v5a2 2 0 0 0 4 0v-3"/>',
+    "store": '<path d="M3 9l1.5-5h15L21 9M3 9h18v11H3zM9 20v-6h6v6"/>',
+    "intelligence": '<path d="M12 3a6 6 0 0 0-3.5 10.9V17h7v-3.1A6 6 0 0 0 12 3zM9.5 21h5"/>',
+    "ops": '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'}
+NAV = [("/", "overview", "Overview", False), ("/content", "content", "Content Studio", False),
+       ("/content/performance", "performance", "Performance", True), ("/ads", "ads", "Advertising", False),
+       ("/store", "store", "Store", False), ("/intelligence", "intelligence", "Intelligence", False),
+       ("/ops", "ops", "Operations", False)]
 STATE = {"last_sync": None, "last_error": None}
 
 SHELL = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>%TITLE%</title>
-<style>
-:root { --color-bg:#f7f5f2; --color-panel:#ffffff; --color-fg:#24201d; --color-fg-muted:#6f665f; --color-border-line:#e4ded7;
-  --color-ok:#2f7d4f; --color-warn:#a86a12; --color-bad:#b3362c; --cds-chart-grid:#ece7e1; --cds-chart-axis:#c9c1b8;
-  --cds-chart-reference:#8a7f75; --cds-chart-status-critical:#c0392b; --cds-surface-popover:#ffffff; --cds-border:#ddd5cc;
-  --cds-shadow-popover:0 4px 16px rgba(36,32,29,.12); --cds-text-secondary:#6f665f; color-scheme: light; }
-@media (prefers-color-scheme: dark) { :root { --color-bg:#1b1917; --color-panel:#24211e; --color-fg:#eee8e2; --color-fg-muted:#a99f96;
-  --color-border-line:#3a3531; --color-ok:#6cc08d; --color-warn:#e0a54a; --color-bad:#ef7a6f; --cds-chart-grid:#332f2b;
-  --cds-chart-axis:#4a443f; --cds-chart-reference:#a99f96; --cds-chart-status-critical:#ef7a6f; --cds-surface-popover:#2c2825;
-  --cds-border:#443e39; --cds-shadow-popover:0 4px 16px rgba(0,0,0,.4); --cds-text-secondary:#a99f96; color-scheme: dark; } }
-:root { --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", sans-serif; --font-anthropic-serif: Georgia, "Times New Roman", serif;
-  --cds-font-size-caption:.8125rem; --cds-font-size-body:.9375rem; --cds-font-size-heading:1.0625rem; --cds-font-size-title:1.75rem;
-  --cds-font-weight-medium:500; --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:12px; --cds-gap-lg:20px; --cds-gap-xl:32px;
-  --cds-pad-xs:4px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-radius:8px; --cds-dur-slow:.3s; }
-html, body { margin:0; background:var(--color-bg); color:var(--color-fg); font-family:var(--font-anthropic-sans); }
-#dash-root { max-width:1200px; margin-inline:auto; padding-block:24px 48px;
-  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
-.lan-bar { font-size:.75rem; color:var(--color-fg-muted); margin-bottom:12px; display:flex; gap:8px; flex-wrap:wrap; }
-.lan-bar .bad { color:var(--color-bad); } .lan-bar .warn { color:var(--color-warn); } .lan-bar .ok { color:var(--color-ok); }
-#lan-health { display:flex; gap:10px; flex-wrap:wrap; }
-html.lan-stale .es-big { opacity:.55; }
-.lan-nav { display:flex; gap:6px; margin-bottom:16px; }
-.lan-nav a { font-size:.8125rem; padding:4px 12px; border:1px solid var(--color-border-line); border-radius:999px;
-  color:var(--color-fg); text-decoration:none; background:var(--color-panel); }
-.lan-nav a[aria-current="page"] { background:var(--color-fg); color:var(--color-bg); border-color:var(--color-fg); }
-.dash-skeleton { color:transparent !important; background:var(--color-border-line); border-radius:4px; }
-</style>
+<link rel="stylesheet" href="/static/app.css">
+<script>try { if (localStorage.getItem('ec-theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (e) {}</script>
 <script src="/static/d3.min.js"></script>
 <script>
 window.dash = (() => {
@@ -88,7 +84,8 @@ window.dash = (() => {
   };
   async function load() {
     try {
-      const j = await (await fetch('data', {cache: 'no-store'})).json();
+      const j = await (await fetch('/data', {cache: 'no-store'})).json();
+      window.dashHealth = j.health || [];
       names.forEach(n => ds[n] = j.datasets[n] ? {status: 'ok', data: j.datasets[n].rows, columns: j.datasets[n].columns, meta: []}
                                                : {status: 'error', data: [], columns: [], message: 'missing'});
       const bar = document.getElementById('lan-synced');
@@ -123,12 +120,24 @@ window.dash = (() => {
     refresh: () => load(), loader() {}, params: () => ({}), setParams() {}, resetParams() {}, setLink() {},
   };
 })();
-</script></head><body><div id="dash-root">
-<nav class="lan-nav" aria-label="Pages">%NAV%</nav>
+</script>
+<script src="/static/components.js"></script></head><body><div class="app">
+<aside class="side"><a class="brand" href="/"><span class="brand-mark">E&amp;C</span><span><div class="brand-name">Ember &amp; Clove</div>
+<div class="brand-sub">Ember Studio</div></span></a>
+<nav class="side-nav" aria-label="Sections">%NAV%</nav>
+<div class="side-foot"><button class="theme-btn" type="button" id="theme-btn">Switch theme</button>
+<span>Read-only dashboard · home network</span></div></aside>
+<main id="dash-root">
 <div class="lan-bar"><span id="lan-synced">Loading…</span><span>· syncs with PostZen every %EVERY% min ·</span>
 <span id="lan-health" aria-label="Sync health"></span><span id="lan-error" class="bad" hidden></span></div>
 %PAGE%
-</div></body></html>"""
+</main></div>
+<script>document.getElementById('theme-btn').addEventListener('click', () => {
+  const light = document.documentElement.dataset.theme !== 'light';
+  if (light) document.documentElement.dataset.theme = 'light'; else delete document.documentElement.dataset.theme;
+  try { localStorage.setItem('ec-theme', light ? 'light' : 'dark'); } catch (e) {}
+  if (window.dash) dash.refresh();
+});</script></body></html>"""
 
 
 def _rows(name):
@@ -146,20 +155,40 @@ def _rows(name):
 
 
 def page(path, every):
-    file, title = PAGES[path]
-    nav = "".join(f'<a href="{href}"{' aria-current="page"' if PAGES[href][0] == file else ''}>{label}</a>'
-                  for href, label in (("/", "Control room"), ("/metrics", "Metrics"), ("/store", "Store")))
+    file, title, key = PAGES[path]
+    nav = "".join(f'<a href="{href}" class="{"sub" if sub else ""}"{' aria-current="page"' if k == key else ''}>'
+                  f'<svg viewBox="0 0 24 24" aria-hidden="true">{ICON[k]}</svg>{label}</a>'
+                  for href, k, label, sub in NAV)
     body = (OUT / file).read_text(encoding="utf-8")
-    return (SHELL.replace("%NAMES%", json.dumps(DATASETS)).replace("%EVERY%", str(every)).replace("%TITLE%", title)
+    shell = SHELL
+    for asset in ("app.css", "components.js"):  # version tag so browsers never run a stale copy after an update
+        shell = shell.replace(f"/static/{asset}", f"/static/{asset}?v={int((STATIC / asset).stat().st_mtime)}")
+    return (shell.replace("%NAMES%", json.dumps(DATASETS)).replace("%EVERY%", str(every)).replace("%TITLE%", title)
             .replace("%NAV%", nav).replace("%PAGE%", body))
 
 
 def _tiktok():
     con = db.connect()
     try:
-        return publishing.sync(con, bible.load())
+        lines = publishing.sync(con, bible.load())
+        # production history for the calendar's detail panel (real episodes only)
+        hist = [dict(r) for r in con.execute(
+            "SELECT t.episode_id, t.from_state, t.to_state, t.actor, t.reason, t.at FROM transitions t "
+            "JOIN episodes e ON e.id = t.episode_id WHERE e.test = 0 ORDER BY t.episode_id, t.at")]
+        (OUT / "episode_history.json").write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+        return lines + [f"episode_history {len(hist)}"]
     finally:
         con.close()
+
+
+def write_system_info():
+    """Backups and other facts for the Operations page (no secrets)."""
+    root = OUT.parents[1] / "backups"
+    snaps = sorted(p.name for p in root.iterdir() if p.is_dir() and len(p.name) == 10 and p.name[4] == "-") if root.exists() else []
+    mirror = root / "media_mirror"
+    info = {"latest_backup": snaps[-1] if snaps else None, "backup_count": len(snaps), "backup_dir": str(root),
+            "mirror_files": sum(1 for f in mirror.rglob("*") if f.is_file()) if mirror.exists() else 0}
+    (OUT / "system_info.json").write_text(json.dumps(info), encoding="utf-8")
 
 
 JOBS = [("tiktok", _tiktok), ("facebook", lambda: facebook_photos.sync_dashboard(OUT)),
@@ -181,6 +210,7 @@ def sync_once():
             failures.append(f"{JOB_LABELS.get(name, name)}: {type(e).__name__}: {str(e)[:160]}")
             LOG.exception("sync job %s failed", name)
     analytics.write_health_file(OUT)
+    write_system_info()
     STATE.update(last_sync=time.strftime("%Y-%m-%dT%H:%M:%S%z"), last_error="; ".join(failures) or None)
     LOG.info("sync done%s", f" with failures: {failures}" if failures else "")
     return failures
@@ -212,6 +242,12 @@ def make_handler(every):
 
         def do_GET(self):
             path = self.path.split("?")[0]
+            if path in REDIRECTS:
+                self.send_response(301)
+                self.send_header("Location", REDIRECTS[path])
+                self.send_header("Content-Length", "0")
+                self.end_headers()
+                return None
             if path in PAGES:
                 return self._send(200, page(path, every), "text/html; charset=utf-8")
             if path == "/data":
@@ -227,7 +263,8 @@ def make_handler(every):
                 f = (STATIC / path[len("/static/"):]).resolve()
                 if STATIC.resolve() in f.parents and f.is_file():  # no path traversal outside static/
                     ctype = mimetypes.guess_type(f.name)[0] or "application/octet-stream"
-                    return self._send_bytes(200, f.read_bytes(), ctype, cache=True)
+                    # only the third-party library is cached; our own CSS/JS change with every release
+                    return self._send_bytes(200, f.read_bytes(), ctype, cache=f.name == "d3.min.js")
             return self._send(404, "Not found", "text/plain")
 
         def _send_bytes(self, code, data, ctype, cache=False):

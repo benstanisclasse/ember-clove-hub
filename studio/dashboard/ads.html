@@ -1,0 +1,107 @@
+<style>
+/* Advertising: Meta, TikTok and Microsoft ad accounts side by side (account level; campaign drill-down comes in Phase E). */
+.ad-kpis { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); }
+.ad-plat { display: grid; gap: 4px; }
+.ad-plat .name { display: flex; align-items: center; gap: 8px; font-weight: 500; }
+.ad-plat .name i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+</style>
+
+<div class="es">
+  <header class="es-head" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:end">
+    <div class="es-head"><h1 class="es-title">Advertising</h1>
+      <p class="es-take">Meta, TikTok and Microsoft ad accounts. Claude refreshes these numbers every 3 hours while the Claude app is open
+        (read-only). Purchases and revenue are what each platform credits to its own ads; platforms can claim the same sale.</p></div>
+    <div class="es-seg" id="ad-range" role="group" aria-label="Period"></div>
+  </header>
+  <section class="ad-kpis" id="ad-kpis"></section>
+  <section class="es-card">
+    <h2 class="es-h2">Spend per day</h2><p class="es-note" id="ad-legend"></p>
+    <div class="es-chart" id="ad-chart"></div>
+  </section>
+  <section class="es-grid3" id="ad-platforms"></section>
+  <section class="es-card">
+    <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Platforms compared</h2>
+      <button class="es-btn" type="button" id="ad-csv">Download CSV</button></div>
+    <p class="es-note">Selected period. Campaign, ad set and ad drill-down arrives once campaigns deliver (Phase E).</p>
+    <div class="es-tablewrap"><table class="es-table" id="ad-table"></table></div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const {el, num, usd, pct, fmt, big, rows, status, periods, sumIn, series, kpi, bars, table, day} = ui;
+  const PLAT = [['meta', 'Meta', 'var(--ch-meta)'], ['tiktok', 'TikTok', 'var(--ch-tiktok)'], ['microsoft', 'Microsoft', 'var(--ch-microsoft)']];
+  let n = 30, lastRows = [], COLS;
+  const ratio = (a, b) => b ? a / b : null;
+
+  function draw() {
+    ui.segmented(document.getElementById('ad-range'), [[7, '7 days'], [14, '14 days'], [30, '30 days']], n, v => { n = v; draw(); });
+    const P = periods(n), ads = rows('ads_daily'), accts = rows('ads_accounts');
+    const st = status('ads_daily'), state = st === 'ok' && ads.length ? null : st === 'loading' ? 'Loading…' : 'Not connected';
+    const tot = (k, r) => sumIn(ads, k, r) ?? null;
+    const c = {spend: tot('spend', P.cur), imp: tot('impressions', P.cur), clk: tot('clicks', P.cur), pur: tot('purchases', P.cur), rev: tot('revenue', P.cur)};
+    const p = {spend: tot('spend', P.prev), imp: tot('impressions', P.prev), clk: tot('clicks', P.prev), pur: tot('purchases', P.prev), rev: tot('revenue', P.prev)};
+    const noSpend = c.spend ? null : 'No spend yet';
+    document.getElementById('ad-kpis').replaceChildren(
+      kpi({label: 'Ad spend', value: c.spend, prev: p.spend, format: usd, invert: true, spark: series(ads, 'spend', P.cur), state, source: 'all platforms', job: 'ads:*', lateMin: 420}),
+      kpi({label: 'Impressions', value: c.imp, prev: p.imp, format: big, spark: series(ads, 'impressions', P.cur), state, source: 'all platforms', job: 'ads:*', lateMin: 420}),
+      kpi({label: 'Clicks', value: c.clk, prev: p.clk, format: fmt, spark: series(ads, 'clicks', P.cur), state, source: 'all platforms', job: 'ads:*', lateMin: 420}),
+      kpi({label: 'Cost per click', value: ratio(c.spend, c.clk), prev: ratio(p.spend, p.clk), format: usd, invert: true, state: state || noSpend, source: 'spend ÷ clicks'}),
+      kpi({label: 'Platform-claimed purchases', value: c.pur, prev: p.pur, format: fmt, state, source: 'may overlap', tip: 'Sum of each platform’s own purchase claims; not store orders.'}),
+      kpi({label: 'Platform CPA', value: c.pur ? c.spend / c.pur : null, prev: p.pur ? p.spend / p.pur : null, format: usd, invert: true,
+           state: state || noSpend || (!c.pur ? 'No purchases claimed' : null), source: 'spend ÷ claimed purchases', tip: 'Compare with the $20 planning figure and each product’s break-even on the Store page.'}),
+      kpi({label: 'Platform ROAS', value: c.spend ? c.rev / c.spend : null, prev: p.spend ? p.rev / p.spend : null, format: v => d3.format('.2f')(v) + '×',
+           state: state || noSpend, source: 'claimed revenue ÷ spend'}));
+
+    // spend per day, stacked by platform
+    const days = []; for (let d = P.cur[0]; d <= P.cur[1]; d = ui.addDays(d, 1)) days.push(d);
+    const box = document.getElementById('ad-chart'); box.replaceChildren();
+    document.getElementById('ad-legend').replaceChildren('Stacked by platform: ', ...PLAT.flatMap(([, name, col]) => [el('span', {style: `color:${col}`, text: '■'}), ` ${name}  `]));
+    if (!c.spend) box.append(el('p', {class: 'es-empty', text: 'No ad spend in this period.'}));
+    else {
+      const W = Math.max(280, box.clientWidth), H = 190, m = {t: 12, r: 12, b: 26, l: 46};
+      const stackRows = days.map(d => Object.fromEntries([['date', d], ...PLAT.map(([k]) => [k, sumIn(ads.filter(r => r.platform === k), 'spend', [d, d]) || 0])]));
+      const stack = d3.stack().keys(PLAT.map(x => x[0]))(stackRows);
+      const x = d3.scaleBand(days, [m.l, W - m.r]).padding(.25), y = d3.scaleLinear([0, d3.max(stack.at(-1), s => s[1]) || 1], [H - m.b, m.t]).nice(4);
+      const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+      svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+      svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', v => y(v) + 4).attr('text-anchor', 'end').text(d3.format('$,.0f'));
+      const step = Math.ceil(days.length / Math.max(1, Math.floor((W - m.l - m.r) / 56)));
+      svg.append('g').selectAll('text').data(days.filter((d, i) => i % step === 0)).join('text').attr('x', d => x(d) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text(day);
+      stack.forEach((s, i) => svg.append('g').selectAll('rect').data(s).join('rect').attr('x', d => x(d.data.date) + Math.max(0, (x.bandwidth() - 26) / 2))
+        .attr('width', Math.min(26, x.bandwidth())).attr('y', d => y(d[1])).attr('height', d => y(d[0]) - y(d[1])).attr('fill', PLAT[i][2]));
+    }
+
+    // per-platform cards
+    document.getElementById('ad-platforms').replaceChildren(...PLAT.map(([k, name, col]) => {
+      const a = accts.find(x => x.platform === k), r = ads.filter(x => x.platform === k);
+      const sp = sumIn(r, 'spend', P.cur);
+      return el('div', {class: 'es-card ad-plat'}, el('div', {class: 'name'}, el('i', {style: `background:${col}`}), name),
+        el('div', {class: 'es-sub', text: a ? `${a.account} · ${a.status || ''}` : 'Not connected'}),
+        el('div', {class: 'kpi-val', style: 'font-family:var(--font-anthropic-serif);font-size:1.4rem', text: sp == null ? '—' : usd(sp)}),
+        el('div', {class: 'es-sub', text: `${a ? fmt(num(a.active_campaigns) || 0) : '—'} live campaign${a && num(a.active_campaigns) === 1 ? '' : 's'} · spend in period`}),
+        el('div', {class: 'es-note', text: a && a.note ? a.note : ''}),
+        el('div', {class: 'es-note', text: a && a.refreshed_at ? `Refreshed ${new Date(a.refreshed_at).toLocaleString()}` : ''}));
+    }));
+
+    lastRows = PLAT.map(([k, name]) => {
+      const r = ads.filter(x => x.platform === k), a = accts.find(x => x.platform === k) || {};
+      const s = key => sumIn(r, key, P.cur);
+      const o = {platform: name, account: a.account || 'not connected', live: num(a.active_campaigns), spend: s('spend'), impressions: s('impressions'), clicks: s('clicks'),
+        purchases: s('purchases'), revenue: s('revenue')};
+      return {...o, ctr: ratio(o.clicks, o.impressions), cpc: ratio(o.spend, o.clicks), cpm: o.impressions ? 1000 * o.spend / o.impressions : null,
+        cpa: ratio(o.spend, o.purchases), roas: ratio(o.revenue, o.spend)};
+    });
+    const T = {platform: 'All platforms', account: '', live: d3.sum(lastRows, r => r.live || 0), spend: c.spend, impressions: c.imp, clicks: c.clk, purchases: c.pur, revenue: c.rev,
+      ctr: ratio(c.clk, c.imp), cpc: ratio(c.spend, c.clk), cpm: c.imp ? 1000 * c.spend / c.imp : null, cpa: ratio(c.spend, c.pur), roas: ratio(c.rev, c.spend)};
+    const opt = f => v => v == null ? '—' : f(v);
+    COLS = [{k: 'platform', label: 'Platform'}, {k: 'account', label: 'Account'}, {k: 'live', label: 'Live campaigns', n: 1, f: opt(fmt)},
+      {k: 'spend', label: 'Spend', n: 1, f: opt(usd)}, {k: 'impressions', label: 'Impr.', n: 1, f: opt(fmt)}, {k: 'clicks', label: 'Clicks', n: 1, f: opt(fmt)},
+      {k: 'ctr', label: 'CTR', n: 1, f: opt(pct)}, {k: 'cpc', label: 'CPC', n: 1, f: opt(usd)}, {k: 'cpm', label: 'CPM', n: 1, f: opt(usd)},
+      {k: 'purchases', label: 'Claimed purchases', n: 1, f: opt(fmt)}, {k: 'cpa', label: 'CPA', n: 1, f: opt(usd)}, {k: 'roas', label: 'ROAS', n: 1, f: opt(v => d3.format('.2f')(v) + '×')}];
+    table(document.getElementById('ad-table'), lastRows, COLS, {total: T, sortKey: 'spend'});
+  }
+  document.getElementById('ad-csv').addEventListener('click', () => ui.csv(`ads_${ui.todayET()}.csv`, lastRows, COLS));
+  dash.onData(draw);
+})();
+</script>

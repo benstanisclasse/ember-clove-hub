@@ -1,0 +1,79 @@
+<style>
+/* Operations & settings: sync health, backups, generation cost, settings (read-only for now). */
+.ops-kv { display: grid; grid-template-columns: 12rem 1fr; gap: 6px 12px; font-size: var(--cds-font-size-caption); margin: 0; }
+.ops-kv dt { color: var(--color-fg-muted); } .ops-kv dd { margin: 0; }
+</style>
+
+<div class="es">
+  <header class="es-head"><h1 class="es-title">Operations</h1>
+    <p class="es-take">Is every data source current, are backups running, what content costs, and the settings the dashboard uses.</p></header>
+
+  <section class="es-card">
+    <h2 class="es-h2">Sync health</h2>
+    <p class="es-note">Every sync job, its last success and last attempt. TikTok, Facebook, Shopify and History run every 15 minutes on this PC;
+      the ad accounts are refreshed every 3 hours by a Claude task while the Claude app is open.</p>
+    <div class="es-tablewrap"><table class="es-table" id="ops-health"></table></div>
+  </section>
+
+  <section class="es-grid2">
+    <div class="es-card"><h2 class="es-h2">Backups</h2><dl class="ops-kv" id="ops-backups"></dl></div>
+    <div class="es-card"><h2 class="es-h2">Automatic jobs</h2>
+      <dl class="ops-kv">
+        <dt>Dashboard server</dt><dd>Windows task "Ember Studio Dashboard", starts with the PC; syncs every 15 min.</dd>
+        <dt>Nightly backup</dt><dd>Windows task "Ember Hub Nightly Backup", 2:30 am; keeps 14 days + media mirror.</dd>
+        <dt>Ads refresh</dt><dd>Claude scheduled task "ads-dashboard-refresh", every 3 h at :20; read-only.</dd>
+        <dt>Facebook auto-plan</dt><dd>Not scheduled (waiting for your OK).</dd>
+      </dl></div>
+  </section>
+
+  <section class="es-card">
+    <h2 class="es-h2">Content generation cost</h2>
+    <p class="es-note" id="ops-cost-note"></p>
+    <div class="es-chart" id="ops-cost"></div>
+  </section>
+
+  <section class="es-card">
+    <h2 class="es-h2">Settings</h2>
+    <p class="es-note">Read-only here for now; they live in the Hub's config and bible files. Changing them stays a decision for you.</p>
+    <dl class="ops-kv" id="ops-settings"></dl>
+  </section>
+</div>
+
+<script>
+(() => {
+  const {el, rows, usd, fmt, num, bars, table} = ui;
+  const ago = t => { if (!t) return 'never'; const m = (Date.now() - new Date(t)) / 60000;
+    return m < 90 ? `${Math.round(m)} min ago` : m < 2880 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} d ago`; };
+  function kv(id, pairs) { document.getElementById(id).replaceChildren(...pairs.flatMap(([k, v]) => [el('dt', {text: k}), el('dd', {text: v})])); }
+
+  function draw() {
+    const h = (window.dashHealth || []).map(x => ({...x, status: x.ok === false ? 'Failed' : (window.ui.freshness(x.job, x.job.startsWith('ads:') ? 420 : 45).cls === 'warn' ? 'Late' : 'OK')}));
+    table(document.getElementById('ops-health'), h, [
+      {k: 'label', label: 'Source'}, {k: 'status', label: 'Status', cls: r => r.status === 'OK' ? 'st-ok' : r.status === 'Late' ? 'st-warn' : 'st-bad'},
+      {k: 'last_success', label: 'Last success', f: v => ago(v)}, {k: 'last_attempt', label: 'Last attempt', f: v => ago(v)},
+      {k: 'rows', label: 'Rows', n: 1, f: v => v == null ? '—' : fmt(v)}, {k: 'seconds', label: 'Seconds', n: 1, f: v => v == null ? '—' : String(Math.round(v * 10) / 10)},
+      {k: 'error', label: 'Last error', f: v => v || '—'}], {empty: 'No sync has run yet.'});
+
+    const sys = rows('system_info')[0] || {};
+    kv('ops-backups', [['Latest snapshot', sys.latest_backup || 'none yet'], ['Snapshots kept', sys.backup_count != null ? `${sys.backup_count} (up to 14)` : '—'],
+      ['Media mirror', sys.mirror_files != null ? `${fmt(sys.mirror_files)} files` : '—'], ['Location', sys.backup_dir || 'backups/ in the Hub'],
+      ['Code history', 'local git repository in the Hub']]);
+
+    const sp = rows('spend'), caps = rows('caps');
+    const cap = k => { const c = caps.find(x => x.cap === k); return c && c.usd != null && c.usd !== '' ? Number(c.usd) : null; };
+    const day = cap('per day'), week = cap('per week');
+    document.getElementById('ops-cost-note').textContent = `Ember Studio video generation per day (total ${usd(d3.sum(sp, r => num(r.usd) || 0))}). `
+      + (day == null && week == null ? 'No daily or weekly cap set (owner choice, 10/26).' : `Caps: ${day != null ? usd(day) + '/day' : 'no daily'}, ${week != null ? usd(week) + '/week' : 'no weekly'}.`)
+      + ' Image generation and other AI tools are not tracked here yet.';
+    bars(document.getElementById('ops-cost'), sp, {x: 'date', y: r => num(r.usd) || 0, yfmt: d3.format('$,.0f'), ref: day || 0,
+      color: r => day != null && num(r.usd) > day ? 'var(--cds-chart-status-critical)' : 'var(--ch-facebook)',
+      lines: r => [`Spend: ${usd(num(r.usd))}`, `Videos: ${fmt(num(r.videos) || 0)}`], empty: 'Nothing spent yet.'});
+
+    const cpa = (rows('store_products')[0] || {}).cpa_assumed;
+    kv('ops-settings', [['Reporting time zone', 'America/New_York (Eastern)'], ['Generation caps', day == null && week == null ? 'No cap (owner choice, 10/26)' : 'set in studio/bible/rules.yaml'],
+      ['Planning cost per order', cpa ? `${usd(num(cpa))} (planning figure, not measured)` : '—'], ['Bot-traffic flag', '≥ 100 visits, ≥ 3× nearby median, < 1% to cart'],
+      ['Store sync', 'every 15 min, last 90 days re-read'], ['Ads sync', 'every 3 h, last 7 days re-read'], ['Dashboard password', 'off (owner choice)']]);
+  }
+  dash.onData(draw);
+})();
+</script>

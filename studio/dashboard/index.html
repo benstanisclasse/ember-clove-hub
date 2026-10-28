@@ -79,15 +79,26 @@
   </section>
 
   <section class="es-sec" id="calendar">
-    <h2 class="es-h2">Posting calendar, all channels</h2>
-    <p class="es-note">Every planned post on TikTok and the Facebook Page by day and time (Eastern). The dot names the channel
-      (<span style="color:#c2652a">●</span> TikTok, <span style="color:#3f7cac">●</span> Facebook); the edge color shows where it is:
-      grey in production or not sent, amber approved or waiting, green live, red failed.</p>
-    <div class="es-filters">
-      <div class="es-weeks" id="weeks" role="group" aria-label="Week"></div>
-      <div class="es-weeks" id="chans" role="group" aria-label="Channel"></div>
+    <h2 class="es-h2">Content calendar</h2>
+    <p class="es-note">Every planned post on TikTok and the Facebook Page (Eastern time). Click any post for its details and production history.</p>
+    <div class="cal-bar">
+      <div class="es-seg" id="cal-view" role="group" aria-label="Calendar view"></div>
+      <div class="cal-nav"><button class="es-btn" type="button" id="cal-prev" aria-label="Previous">‹</button>
+        <span class="label" id="cal-label"></span><button class="es-btn" type="button" id="cal-next" aria-label="Next">›</button>
+        <button class="es-btn" type="button" id="cal-today">Today</button></div>
     </div>
-    <div class="es-cal" id="cal" data-source="schedule fb_schedule"></div>
+    <div class="es-controls">
+      <div class="es-seg" id="chans" role="group" aria-label="Channel"></div>
+      <select class="es-select" id="cal-status" aria-label="Status"></select>
+      <select class="es-select" id="cal-series" aria-label="Series or post type"></select>
+      <input class="es-search" id="cal-search" type="search" placeholder="Search product or caption" aria-label="Search product or caption">
+      <span class="es-note" id="cal-count"></span>
+    </div>
+    <div class="cal-legend"><span><span class="dot" style="background:var(--ch-tiktok)"></span>TikTok</span>
+      <span><span class="dot" style="background:var(--ch-facebook)"></span>Facebook</span>
+      <span class="st-muted">grey: in production or not sent</span><span class="st-warn">amber: approved or waiting</span>
+      <span class="st-ok">green: live</span><span class="st-bad">red: failed</span></div>
+    <div id="cal" data-source="schedule fb_schedule"></div>
   </section>
 
   <section class="es-sec" id="facebook">
@@ -210,23 +221,54 @@ const tone = (r) => r.stage === 'POSTED' || r.stage === 'MEASURED' ? 'st-ok'
   : (r.stage === 'APPROVED' || r.stage === 'SCHEDULED') ? 'st-warn' : 'st-muted';
 const ftone = s => /published|posted/i.test(s) ? 'st-ok' : /fail|error/i.test(s) ? 'st-bad' : /scheduled|queued/i.test(s) ? 'st-warn' : 'st-muted';
 const CHANNELS = [['all', 'All channels'], ['tiktok', 'TikTok'], ['facebook', 'Facebook']];
-let week = null;
-let channel = 'all';
+const VIEWS = [['week', 'Week'], ['month', 'Month'], ['day', 'Day'], ['list', 'List']];
+const STATUS = [['all', 'All statuses'], ['st-muted', 'In production / not sent'], ['st-warn', 'Approved / waiting'], ['st-ok', 'Live'], ['st-bad', 'Failed']];
+const cal = {view: 'week', cursor: null, channel: 'all', status: 'all', series: 'all', q: ''};
 
-// One list of calendar cards from both channels' schedules.
+// One list of calendar items from both channels' schedules.
 function calendarItems() {
   const tt = dash.data('schedule'), fb = dash.data('fb_schedule');
   const items = [];
   if (tt.status === 'ok') tt.data.forEach(r => items.push({
     channel: 'tiktok', date: r.date, time: r.time, key: r.episode, live: r.stage === 'POSTED' || r.stage === 'MEASURED',
     head: `${r.time} · ${r.location}`, title: r.series, detail: r.store_piece, pill: STAGE_NAME[r.stage] || r.stage, tone: tone(r),
-    extra: r.tiktok ? 'TikTok: ' + r.tiktok : ''}));
+    extra: r.tiktok ? 'TikTok: ' + r.tiktok : '', group: r.series, search: `${r.store_piece} ${r.caption} ${r.series}`.toLowerCase(), raw: r}));
   if (fb.status === 'ok') fb.data.forEach(r => items.push({
     channel: 'facebook', date: r.date, time: r.time, key: `fb ${r.date} ${r.time}`, live: /published|posted/i.test(r.status),
     head: `${r.time} · ${r.photos} photo${r.photos === 1 ? '' : 's'}`, title: r.kind === 'outfit' ? 'Outfit post' : 'Product post',
-    detail: r.products, pill: r.status, tone: ftone(r.status), extra: ''}));
+    detail: r.products, pill: r.status, tone: ftone(r.status), extra: '', group: r.kind === 'outfit' ? 'Facebook outfit post' : 'Facebook product post',
+    search: `${r.products}`.toLowerCase(), raw: r}));
   return {items, status: [tt.status, fb.status].includes('loading') ? 'loading'
     : tt.status === 'error' && fb.status === 'error' ? 'error' : 'ok'};
+}
+
+// Detail panel: everything about one post, with the TikTok production history from studio.db transitions.
+function openItem(r) {
+  const x = r.raw, link = url => url ? ui.el('a', {href: url, target: '_blank', rel: 'noopener', text: 'Open post'}) : null;
+  if (r.channel === 'tiktok') {
+    const hist = (dash.data('episode_history').data || []).filter(h => h.episode_id === x.episode);
+    ui.drawer(`${x.series} · ${ui.day(x.date)} ${x.time}`, ui.dl([['Channel', 'TikTok'], ['Episode', x.episode], ['Location', x.location],
+      ['Store piece', x.store_piece], ['Stage', STAGE_NAME[x.stage] || x.stage], ['TikTok', x.tiktok], ['Sent as', x.send_mode],
+      ['Caption', x.caption], ['Post', link(x.post_url)], ['Generation cost', x.cost_usd != null ? usd(Number(x.cost_usd)) : null]]),
+      ui.el('h4', {class: 'es-h2', text: 'Production history'}),
+      hist.length ? ui.el('ul', {class: 'timeline'}, hist.slice().reverse().map(h => ui.el('li', {},
+        ui.el('div', {text: (STAGE_NAME[h.to_state] || h.to_state) + (h.from_state && h.from_state !== h.to_state ? ` (from ${STAGE_NAME[h.from_state] || h.from_state})` : '')}),
+        ui.el('span', {text: `${new Date(h.at).toLocaleString()} · ${h.actor}${h.reason ? ' · ' + h.reason : ''}`}))))
+        : ui.el('p', {class: 'es-note', text: 'No history recorded.'}));
+  } else {
+    ui.drawer(`${r.title} · ${ui.day(x.date)} ${x.time}`, ui.dl([['Channel', 'Facebook Page'], ['Products', x.products], ['Photos', String(x.photos)],
+      ['Status', x.status], ['Post', link(x.post_url)]]));
+  }
+}
+
+function itemNode(r, compact) {
+  if (compact) return ui.el('div', {class: `cal-item ch-${r.channel}`, title: `${r.time} ${r.title}: ${r.detail} (${r.pill})`,
+    onclick: () => openItem(r), text: `${r.time} ${r.title}`});
+  return ui.el('div', {class: `es-slot ${r.tone} ch-${r.channel}`, title: r.key, tabindex: '0', onclick: () => openItem(r),
+      onkeydown: e => { if (e.key === 'Enter') openItem(r); }},
+    ui.el('span', {class: 'es-chan', text: r.channel === 'tiktok' ? 'TikTok' : 'Facebook'}), ui.el('div', {class: 't', text: r.head}),
+    ui.el('div', {class: 's', text: r.title}), ui.el('div', {class: 'p', text: r.detail}), ui.el('span', {class: 'es-pill ' + r.tone, text: r.pill}),
+    r.extra ? ui.el('div', {class: 'p', text: r.extra}) : null);
 }
 
 function fill(id, el, field, f) {
@@ -249,62 +291,70 @@ function failed(box, d) {
 
 function drawCalendar() {
   const box = document.getElementById('cal');
-  const weeksEl = document.getElementById('weeks');
-  const chansEl = document.getElementById('chans');
   const d = calendarItems();
   box.classList.toggle('dash-skeleton', d.status === 'loading');
-  if (d.status === 'error') { weeksEl.replaceChildren(); chansEl.replaceChildren(); return failed(box, d); }
-  if (d.status !== 'ok') { box.replaceChildren(); weeksEl.replaceChildren(); chansEl.replaceChildren(); return; }
-  chansEl.replaceChildren(...CHANNELS.map(([c, label]) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.textContent = label;
-    b.setAttribute('aria-pressed', String(c === channel));
-    b.addEventListener('click', () => { channel = c; drawCalendar(); });
-    return b;
-  }));
-  const rows = d.items.filter(r => channel === 'all' || r.channel === channel)
+  if (d.status === 'error') return failed(box, d);
+  if (d.status !== 'ok') { box.replaceChildren(); return; }
+  const redraw = () => drawCalendar();
+  ui.segmented(document.getElementById('cal-view'), VIEWS, cal.view, v => { cal.view = v; redraw(); });
+  ui.segmented(document.getElementById('chans'), CHANNELS, cal.channel, v => { cal.channel = v; redraw(); });
+  const select = (id, opts, key) => {
+    const s = document.getElementById(id);
+    if (s.options.length !== opts.length) s.replaceChildren(...opts.map(([v, l]) => ui.el('option', {value: v, text: l})));
+    s.value = cal[key]; s.onchange = () => { cal[key] = s.value; redraw(); };
+  };
+  select('cal-status', STATUS, 'status');
+  select('cal-series', [['all', 'All series and post types'], ...[...new Set(d.items.map(r => r.group))].sort().map(g => [g, g])], 'series');
+  const search = document.getElementById('cal-search');
+  search.oninput = () => { cal.q = search.value.toLowerCase(); redraw(); };
+  const rows = d.items.filter(r => (cal.channel === 'all' || r.channel === cal.channel) && (cal.status === 'all' || r.tone === cal.status)
+      && (cal.series === 'all' || r.group === cal.series) && (!cal.q || r.search.includes(cal.q)))
     .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
-  const mondayOf = (s) => { const t = new Date(s + 'T00:00:00Z'); return d3.utcFormat('%Y-%m-%d')(new Date(t - ((t.getUTCDay() + 6) % 7) * 864e5)); };
-  const weeks = [...new Set(rows.map(r => mondayOf(r.date)))].sort();
-  if (!week || !weeks.includes(week)) {
-    const open = rows.find(r => !r.live);
-    week = open ? mondayOf(open.date) : weeks[weeks.length - 1];
+  document.getElementById('cal-count').textContent = `${rows.length} of ${d.items.length} posts`;
+  const today = ui.todayET();
+  if (!cal.cursor) { const open = rows.find(r => !r.live && r.date >= today); cal.cursor = open ? open.date : today; }
+  const mondayOf = s => { const t = new Date(s + 'T00:00:00Z'); return ui.iso(new Date(t - ((t.getUTCDay() + 6) % 7) * 864e5)); };
+  const move = dir => {
+    if (cal.view === 'month') { const t = new Date(cal.cursor.slice(0, 8) + '01T00:00:00Z'); t.setUTCMonth(t.getUTCMonth() + dir); cal.cursor = ui.iso(t); }
+    else cal.cursor = ui.addDays(cal.cursor, dir * (cal.view === 'day' ? 1 : 7));
+    redraw();
+  };
+  document.getElementById('cal-prev').onclick = () => move(-1);
+  document.getElementById('cal-next').onclick = () => move(1);
+  document.getElementById('cal-today').onclick = () => { cal.cursor = today; redraw(); };
+  ['cal-prev', 'cal-next', 'cal-today', 'cal-label'].forEach(id => { document.getElementById(id).style.visibility = cal.view === 'list' ? 'hidden' : ''; });
+  const label = t => { document.getElementById('cal-label').textContent = t; };
+  const dt = s => new Date(s + 'T00:00:00Z');
+
+  if (cal.view === 'week') {
+    const start = mondayOf(cal.cursor), days = d3.range(7).map(i => ui.addDays(start, i));
+    label(`Week of ${ui.day(start)}`);
+    box.replaceChildren(ui.el('div', {class: 'es-cal'}, days.map(day => ui.el('div', {class: 'es-day'},
+      ui.el('div', {class: 'es-dayname', text: d3.utcFormat('%a %b %-d')(dt(day)) + (day === today ? ' · today' : '')}),
+      ui.el('div', {class: 'es-slots'}, rows.filter(r => r.date === day).map(r => itemNode(r)))))));
+  } else if (cal.view === 'month') {
+    const first = cal.cursor.slice(0, 8) + '01', start = mondayOf(first), month = dt(first).getUTCMonth();
+    label(d3.utcFormat('%B %Y')(dt(first)));
+    let cells = d3.range(42).map(i => ui.addDays(start, i));
+    if (dt(cells[35]).getUTCMonth() !== month) cells = cells.slice(0, 35);  // drop a sixth row that is all next month
+    box.replaceChildren(ui.el('div', {class: 'cal-month'}, ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map(w => ui.el('div', {class: 'dow', text: w})),
+      cells.map(day => ui.el('div', {class: `cal-cell${dt(day).getUTCMonth() !== month ? ' out' : ''}${day === today ? ' today' : ''}`},
+        ui.el('span', {class: 'num', text: d3.utcFormat('%a %-d')(dt(day))}), rows.filter(r => r.date === day).map(r => itemNode(r, true))))));
+  } else if (cal.view === 'day') {
+    label(d3.utcFormat('%A, %B %-d')(dt(cal.cursor)));
+    const items = rows.filter(r => r.date === cal.cursor);
+    box.replaceChildren(items.length ? ui.el('div', {class: 'es-grid3'}, items.map(r => itemNode(r)))
+      : ui.el('p', {class: 'es-empty', text: 'Nothing planned this day.'}));
+  } else {
+    const tbl = ui.el('table', {class: 'es-table'});
+    const cols = [{k: 'date', label: 'Date', f: v => ui.day(v)}, {k: 'time', label: 'Time'},
+      {k: 'channel', label: 'Channel', f: v => v === 'tiktok' ? 'TikTok' : 'Facebook'}, {k: 'title', label: 'Series / type'},
+      {k: 'detail', label: 'Product'}, {k: 'pill', label: 'Status', cls: r => r.tone}];
+    box.replaceChildren(ui.el('div', {class: 'es-controls', style: 'justify-content:flex-end'},
+      ui.el('button', {class: 'es-btn', type: 'button', text: 'Download CSV', onclick: () => ui.csv(`content_calendar_${today}.csv`, rows, cols)})),
+      ui.el('div', {class: 'es-tablewrap'}, tbl));
+    ui.table(tbl, rows, cols, {onRow: openItem, empty: 'No posts match these filters.'});
   }
-  weeksEl.replaceChildren(...weeks.map(w => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.textContent = 'Week of ' + d3.utcFormat('%b %-d')(new Date(w + 'T00:00:00Z'));
-    b.setAttribute('aria-pressed', String(w === week));
-    b.addEventListener('click', () => { week = w; drawCalendar(); });
-    return b;
-  }));
-  const start = new Date(week + 'T00:00:00Z');
-  const days = d3.range(7).map(i => d3.utcFormat('%Y-%m-%d')(new Date(start.getTime() + i * 864e5)));
-  box.replaceChildren(...days.map(day => {
-    const col = document.createElement('div');
-    col.className = 'es-day';
-    const name = document.createElement('div');
-    name.className = 'es-dayname';
-    name.textContent = d3.utcFormat('%a %b %-d')(new Date(day + 'T00:00:00Z'));
-    const slots = document.createElement('div');
-    slots.className = 'es-slots';
-    rows.filter(r => r.date === day).forEach(r => {
-      const card = document.createElement('div');
-      card.className = `es-slot ${r.tone} ch-${r.channel}`;
-      card.title = r.key;
-      const c = document.createElement('span'); c.className = 'es-chan'; c.textContent = r.channel === 'tiktok' ? 'TikTok' : 'Facebook';
-      const t = document.createElement('div'); t.className = 't'; t.textContent = r.head;
-      const s = document.createElement('div'); s.className = 's'; s.textContent = r.title;
-      const p = document.createElement('div'); p.className = 'p'; p.textContent = r.detail;
-      const pill = document.createElement('span'); pill.className = 'es-pill ' + r.tone; pill.textContent = r.pill;
-      card.append(c, t, s, p, pill);
-      if (r.extra) { const k = document.createElement('div'); k.className = 'p'; k.textContent = r.extra; card.append(k); }
-      slots.append(card);
-    });
-    col.append(name, slots);
-    return col;
-  }));
 }
 
 function tooltip(box) {
