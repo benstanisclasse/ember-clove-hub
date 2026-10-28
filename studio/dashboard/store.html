@@ -1,0 +1,271 @@
+<style>
+/* Store analytics: Shopify sales, visits, funnel, traffic sources, product economics (read-only). */
+.es { display: grid; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); }
+.es-head { display: grid; gap: var(--cds-gap-xs); }
+.es-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.es-take { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+.es-tiles { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); }
+.es-tile, .es-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.es-tile { display: grid; gap: var(--cds-gap-xs); align-content: start; }
+.es-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.es-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.es-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.es-sec { display: grid; gap: var(--cds-gap-md); }
+.es-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.es-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.es-grid2 { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.es-card { display: grid; gap: var(--cds-gap-sm); align-content: start; }
+.es-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: center; }
+.es-seg { display: flex; gap: var(--cds-gap-xs); }
+.es-seg button { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: 999px; background: var(--color-bg); color: var(--color-fg); cursor: pointer; }
+.es-seg button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); }
+.es-check { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: flex; gap: 6px; align-items: center; }
+.es-chart { position: relative; min-height: 180px; }
+.es-chart svg text { fill: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); }
+.es-empty { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.es-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+.es-tip .d { color: var(--cds-text-secondary); }
+.es-tablewrap { overflow: auto; max-height: 28rem; }
+.es-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.es-table th, .es-table td { text-align: left; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.es-table th { position: sticky; top: 0; background: var(--color-panel); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); }
+.es-table th[data-k] { cursor: pointer; user-select: none; }
+.es-table td.n, .es-table th.n { text-align: right; }
+.es-table td.neg { color: var(--color-bad); }
+.es-search { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-width: 14rem; }
+.es-funnel { display: grid; gap: var(--cds-gap-sm); }
+.es-step { display: grid; grid-template-columns: 9rem 1fr 6rem; gap: var(--cds-gap-sm); align-items: center; font-size: var(--cds-font-size-caption); }
+.es-step .bar { height: 14px; border-radius: 4px; background: var(--color-border-line); overflow: hidden; }
+.es-step .bar span { display: block; height: 100%; background: #3f7cac; }
+.es-step .v { text-align: right; font-variant-numeric: tabular-nums; }
+.es-recon li { font-size: var(--cds-font-size-caption); }
+.st-ok { color: var(--color-ok); } .st-bad { color: var(--color-bad); } .st-warn { color: var(--color-warn); }
+@media (max-width: 600px) { .es-step { grid-template-columns: 7rem 1fr 4.5rem; } }
+</style>
+
+<div class="es">
+  <header class="es-head">
+    <h1 class="es-title">Store</h1>
+    <p class="es-take">Shopify sales, visits and products, read-only. Days are Eastern time, as Shopify reports them.
+      Revenue follows Shopify's definitions: net sales = gross − discounts − returns; total sales = net + shipping + taxes.</p>
+  </header>
+
+  <div class="es-controls">
+    <div class="es-seg" id="range" role="group" aria-label="Period"></div>
+    <label class="es-check"><input type="checkbox" id="exbot" checked> Exclude flagged bot-traffic days from visits and conversion</label>
+  </div>
+
+  <section class="es-tiles" aria-label="Store figures">
+    <div class="es-tile"><span class="es-label">Net sales</span><span class="es-big" id="t-net">—</span><span class="es-sub" id="t-net-sub">—</span></div>
+    <div class="es-tile"><span class="es-label">Orders</span><span class="es-big" id="t-orders">—</span><span class="es-sub" id="t-orders-sub">—</span></div>
+    <div class="es-tile"><span class="es-label">Average order value</span><span class="es-big" id="t-aov">—</span><span class="es-sub">net sales ÷ orders</span></div>
+    <div class="es-tile"><span class="es-label">Visits</span><span class="es-big" id="t-sess">—</span><span class="es-sub" id="t-sess-sub">—</span></div>
+    <div class="es-tile"><span class="es-label">Conversion rate</span><span class="es-big" id="t-conv">—</span><span class="es-sub">visits that completed checkout</span></div>
+    <div class="es-tile"><span class="es-label">Added to cart</span><span class="es-big" id="t-cart">—</span><span class="es-sub">of visits</span></div>
+  </section>
+
+  <section class="es-sec">
+    <div class="es-grid2">
+      <div class="es-card"><h2 class="es-h2">Visits per day</h2>
+        <p class="es-note">Grey bars are days flagged as likely bot or test traffic (<span id="flag-rule">—</span>).</p>
+        <div class="es-chart" id="c-sess"></div><p class="es-note" id="flag-list"></p></div>
+      <div class="es-card"><h2 class="es-h2">Net sales per day</h2><p class="es-note">Orders shown on hover.</p>
+        <div class="es-chart" id="c-sales"></div></div>
+    </div>
+  </section>
+
+  <section class="es-sec">
+    <div class="es-grid2">
+      <div class="es-card"><h2 class="es-h2">Purchase funnel</h2>
+        <p class="es-note">Store visits in the selected period; each step shows the share of the step before.</p>
+        <div class="es-funnel" id="funnel"></div></div>
+      <div class="es-card"><h2 class="es-h2">Data check</h2>
+        <p class="es-note">Every sync compares the dashboard's stored numbers with Shopify's own totals for the last 30 days.</p>
+        <ul class="es-recon" id="recon"></ul></div>
+    </div>
+  </section>
+
+  <section class="es-sec">
+    <div class="es-grid2">
+      <div class="es-card"><h2 class="es-h2">Traffic sources</h2><p class="es-note">Last 30 days, by where visitors came from (Shopify's referrer).</p>
+        <div class="es-tablewrap"><table class="es-table" id="sources"><thead><tr><th>Channel</th><th>Site</th><th class="n">Visits</th>
+          <th class="n">Carts</th><th class="n">Checkouts</th><th class="n">Purchases</th></tr></thead><tbody></tbody></table></div></div>
+      <div class="es-card"><h2 class="es-h2">Tracking tags</h2><p class="es-note">Last 30 days, by the UTM tags on the link visitors used.
+        Unfilled tags like <code>__CAMPAIGN_NAME__</code> usually come from ad previews.</p>
+        <div class="es-tablewrap"><table class="es-table" id="utm"><thead><tr><th>Source</th><th>Medium</th><th>Campaign</th><th>Content</th>
+          <th class="n">Visits</th><th class="n">Carts</th><th class="n">Purchases</th></tr></thead><tbody></tbody></table></div></div>
+    </div>
+  </section>
+
+  <section class="es-sec">
+    <div class="es-card">
+      <h2 class="es-h2">Product economics</h2>
+      <p class="es-note">Per single-item order, before ads. <b>Estimates</b> from the same model as the price changes: median variant price,
+        the most expensive variant to source (unit cost from Shopify), EPROLO shipping (real quotes where known, otherwise the
+        $4.85 + $15.45/kg fit), customer shipping $8 under $70, card fees 2.9% + $0.30, refunds 5%. "Kept after ad cost" uses the
+        <span id="cpa">$20</span> planning figure, not a measured cost per sale. Click a column to sort.</p>
+      <div class="es-controls"><input class="es-search" id="psearch" type="search" placeholder="Search products" aria-label="Search products">
+        <span class="es-note" id="pcount"></span></div>
+      <div class="es-tablewrap"><table class="es-table" id="products"><thead><tr></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+</div>
+
+<script>
+const fmt = d3.format(',');
+const usd = v => v == null || !isFinite(v) ? '—' : d3.format(Math.abs(v) >= 1000 ? '$,.0f' : '$,.2f')(v);
+const pct = v => v == null || !isFinite(v) ? '—' : d3.format('.1%')(v);
+const num = v => v == null || v === '' ? null : Number(v);
+const set = (id, v) => { document.getElementById(id).textContent = v; };
+const day = s => d3.utcFormat('%b %-d')(new Date(s + 'T00:00:00Z'));
+const RANGES = [[7, 'Last 7 days'], [14, 'Last 14 days'], [30, 'Last 30 days']];
+let range = 30, sortKey = 'kept_after_cpa', sortDesc = false, search = '';
+
+function rows(id) { const d = dash.data(id); return d.status === 'ok' ? d.data : []; }
+function status(id) { return dash.data(id).status; }
+
+function tooltip(box) {
+  let tip = box.querySelector('.es-tip');
+  if (!tip) { tip = document.createElement('div'); tip.className = 'es-tip'; tip.hidden = true; box.append(tip); }
+  return tip;
+}
+
+function bars(boxId, data, value, color, lines, empty) {
+  const box = document.getElementById(boxId);
+  box.replaceChildren();
+  if (!data.length || !d3.sum(data, value)) { const p = document.createElement('p'); p.className = 'es-empty'; p.textContent = empty; box.append(p); return; }
+  const W = Math.max(280, box.clientWidth), H = 180, m = {t: 12, r: 12, b: 26, l: 44};
+  const x = d3.scaleBand(data.map(r => r.day), [m.l, W - m.r]).padding(0.25);
+  const y = d3.scaleLinear([0, Math.max(d3.max(data, value), 1)], [H - m.b, m.t]).nice(4);
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r)
+    .attr('y1', v => y(v)).attr('y2', v => y(v)).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', v => y(v) + 4).attr('text-anchor', 'end')
+    .text(boxId === 'c-sales' ? d3.format('$,.0f') : fmt);
+  const step = Math.ceil(data.length / Math.max(1, Math.floor((W - m.l - m.r) / 56)));
+  svg.append('g').selectAll('text').data(data.filter((r, i) => i % step === 0)).join('text')
+    .attr('x', r => x(r.day) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text(r => day(r.day));
+  svg.append('g').selectAll('rect').data(data).join('rect').attr('x', r => x(r.day) + Math.max(0, (x.bandwidth() - 28) / 2))
+    .attr('width', Math.min(28, x.bandwidth())).attr('y', r => y(value(r))).attr('height', r => y(0) - y(value(r))).attr('rx', 3)
+    .attr('fill', color);
+  const tip = tooltip(box);
+  svg.selectAll('rect').on('mousemove', (ev, r) => {
+    tip.hidden = false; tip.replaceChildren();
+    const a = document.createElement('div'); a.className = 'd'; a.textContent = day(r.day);
+    tip.append(a, ...lines(r).map(t => { const b = document.createElement('div'); b.textContent = t; return b; }));
+    const [px, py] = d3.pointer(ev, box);
+    tip.style.left = Math.min(px + 12, box.clientWidth - tip.offsetWidth) + 'px'; tip.style.top = Math.max(0, py - 56) + 'px';
+  }).on('mouseleave', () => { tip.hidden = true; });
+}
+
+function table(id, data, cols) {
+  const body = document.querySelector(`#${id} tbody`);
+  body.replaceChildren(...data.map(r => {
+    const tr = document.createElement('tr');
+    cols.forEach(([f, n]) => { const td = document.createElement('td'); if (n) td.className = 'n'; td.textContent = f(r); tr.append(td); });
+    return tr;
+  }));
+  if (!data.length) { const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = cols.length;
+    td.className = 'es-empty'; td.textContent = 'No visits recorded yet.'; tr.append(td); body.append(tr); }
+}
+
+const PCOLS = [['title', 'Product', 0, r => r.title], ['price', 'Price', 1, r => usd(num(r.price))],
+  ['unit_cost', 'Unit cost', 1, r => usd(num(r.unit_cost))], ['supplier_shipping', 'Supplier ship', 1, r => usd(num(r.supplier_shipping))],
+  ['contribution', 'Contribution', 1, r => usd(num(r.contribution))], ['margin_pct', 'Margin', 1, r => pct(num(r.margin_pct))],
+  ['breakeven_roas', 'Break-even ROAS', 1, r => num(r.breakeven_roas) == null ? '—' : d3.format('.2f')(num(r.breakeven_roas)) + '×'],
+  ['kept_after_cpa', 'Kept after ad cost', 1, r => usd(num(r.kept_after_cpa))], ['inventory', 'Stock', 1, r => fmt(num(r.inventory) || 0)],
+  ['units_30d', 'Units (30 d)', 1, r => fmt(num(r.units_30d) || 0)], ['net_sales_30d', 'Net sales (30 d)', 1, r => usd(num(r.net_sales_30d) || 0)]];
+
+function drawProducts() {
+  const head = document.querySelector('#products thead tr'), body = document.querySelector('#products tbody');
+  head.replaceChildren(...PCOLS.map(([k, label, n]) => {
+    const th = document.createElement('th'); th.dataset.k = k; if (n) th.className = 'n';
+    th.textContent = label + (k === sortKey ? (sortDesc ? ' ↓' : ' ↑') : '');
+    th.addEventListener('click', () => { sortDesc = k === sortKey ? !sortDesc : n === 1; sortKey = k; drawProducts(); });
+    return th;
+  }));
+  let data = rows('store_products');
+  if (status('store_products') !== 'ok') { body.replaceChildren(); set('pcount', status('store_products') === 'loading' ? 'Loading…' : 'Not connected yet'); return; }
+  const q = search.toLowerCase();
+  data = data.filter(r => !q || (r.title || '').toLowerCase().includes(q) || (r.type || '').toLowerCase().includes(q));
+  const val = r => { const v = r[sortKey]; return sortKey === 'title' ? (v || '') : (num(v) ?? -Infinity); };
+  data.sort((a, b) => (val(a) < val(b) ? -1 : val(a) > val(b) ? 1 : 0) * (sortDesc ? -1 : 1));
+  const losing = data.filter(r => num(r.kept_after_cpa) != null && num(r.kept_after_cpa) < 0).length;
+  set('pcount', `${data.length} products · ${losing} would lose money at the planning ad cost`);
+  if (data[0]) set('cpa', usd(num(data[0].cpa_assumed)));
+  body.replaceChildren(...data.map(r => {
+    const tr = document.createElement('tr');
+    PCOLS.forEach(([k, , n, f]) => {
+      const td = document.createElement('td'); if (n) td.className = 'n'; td.textContent = f(r);
+      if (k === 'kept_after_cpa' && num(r.kept_after_cpa) < 0) td.classList.add('neg');
+      if (k === 'title' && r.econ_status && r.econ_status !== 'Estimate') td.textContent += ` (${r.econ_status})`;
+      tr.append(td);
+    });
+    return tr;
+  }));
+}
+
+function draw() {
+  document.getElementById('range').replaceChildren(...RANGES.map(([n, label]) => {
+    const b = document.createElement('button'); b.type = 'button'; b.textContent = label; b.setAttribute('aria-pressed', String(n === range));
+    b.addEventListener('click', () => { range = n; draw(); }); return b;
+  }));
+  const st = status('store_daily');
+  if (st !== 'ok') { ['t-net', 't-orders', 't-aov', 't-sess', 't-conv', 't-cart'].forEach(id => set(id, st === 'loading' ? '…' : '—'));
+    set('t-net-sub', st === 'loading' ? 'Loading…' : 'Shopify not connected yet'); return; }
+  const all = rows('store_daily');
+  const last = all.length ? all[all.length - 1].day : null;
+  const from = last ? d3.utcFormat('%Y-%m-%d')(new Date(new Date(last + 'T00:00:00Z').getTime() - (range - 1) * 864e5)) : null;
+  const sel = all.filter(r => from && r.day >= from);
+  const exbot = document.getElementById('exbot').checked;
+  const human = sel.filter(r => !(exbot && Number(r.bot_flag)));
+  const S = (rs, k) => d3.sum(rs, r => num(r[k]) || 0);
+  const net = S(sel, 'net_sales'), orders = S(sel, 'orders'), sess = S(human, 'sessions'), rawSess = S(sel, 'sessions');
+  set('t-net', usd(net)); set('t-net-sub', `total sales ${usd(S(sel, 'total_sales'))} incl. shipping and tax`);
+  set('t-orders', fmt(orders)); set('t-orders-sub', orders ? `${fmt(S(sel, 'new_customers'))} new · ${fmt(S(sel, 'returning_customers'))} returning` : 'No orders yet');
+  set('t-aov', orders ? usd(net / orders) : '—');
+  set('t-sess', fmt(sess));
+  const flagged = sel.filter(r => Number(r.bot_flag));
+  set('t-sess-sub', exbot && flagged.length ? `${fmt(rawSess)} raw; ${flagged.length} flagged day${flagged.length > 1 ? 's' : ''} left out` : 'all days counted');
+  set('t-conv', sess ? pct(S(human, 'completed_sessions') / sess) : '—');
+  set('t-cart', sess ? pct(S(human, 'cart_sessions') / sess) : '—');
+
+  set('flag-rule', 'at least 100 visits, 3× the median of nearby days, under 1% adding to cart');
+  bars('c-sess', sel, r => num(r.sessions) || 0, r => Number(r.bot_flag) ? 'var(--color-border-line)' : '#3f7cac',
+    r => [`Visits: ${fmt(num(r.sessions) || 0)}`, `Added to cart: ${fmt(num(r.cart_sessions) || 0)}`].concat(Number(r.bot_flag) ? ['Flagged: ' + r.bot_reason] : []),
+    'No visits in this period.');
+  document.getElementById('flag-list').textContent = flagged.length ? flagged.map(r => `${day(r.day)}: ${r.bot_reason}`).join(' · ') : 'No days flagged in this period.';
+  bars('c-sales', sel, r => num(r.net_sales) || 0, '#c2652a',
+    r => [`Net sales: ${usd(num(r.net_sales) || 0)}`, `Orders: ${fmt(num(r.orders) || 0)}`], 'No sales yet in this period.');
+
+  const steps = [['Visits', S(human, 'sessions')], ['Added to cart', S(human, 'cart_sessions')],
+    ['Reached checkout', S(human, 'checkout_sessions')], ['Purchased', S(human, 'completed_sessions')]];
+  document.getElementById('funnel').replaceChildren(...steps.map(([label, v], i) => {
+    const row = document.createElement('div'); row.className = 'es-step';
+    const l = document.createElement('span'); l.textContent = label;
+    const bar = document.createElement('div'); bar.className = 'bar'; const fill = document.createElement('span');
+    fill.style.width = steps[0][1] ? Math.max(v / steps[0][1] * 100, v ? 1 : 0) + '%' : '0'; bar.append(fill);
+    const val = document.createElement('span'); val.className = 'v';
+    val.textContent = i === 0 ? fmt(v) : `${fmt(v)} · ${steps[i - 1][1] ? pct(v / steps[i - 1][1]) : '—'}`;
+    row.append(l, bar, val); return row;
+  }));
+
+  table('sources', rows('store_sources'), [[r => r.source || '(unknown)', 0], [r => r.campaign || '—', 0], [r => fmt(num(r.sessions)), 1],
+    [r => fmt(num(r.cart_sessions)), 1], [r => fmt(num(r.checkout_sessions)), 1], [r => fmt(num(r.completed_sessions)), 1]]);
+  table('utm', rows('store_utm'), [[r => r.source || '(no tags)', 0], [r => r.medium || '—', 0], [r => r.campaign || '—', 0],
+    [r => r.content || '—', 0], [r => fmt(num(r.sessions)), 1], [r => fmt(num(r.cart_sessions)), 1], [r => fmt(num(r.completed_sessions)), 1]]);
+
+  const rec = rows('store_reconciliation')[0], ul = document.getElementById('recon');
+  if (!rec) ul.replaceChildren(Object.assign(document.createElement('li'), {textContent: 'Not checked yet.'}));
+  else ul.replaceChildren(...(typeof rec.checks === 'string' ? JSON.parse(rec.checks) : rec.checks).map(c => {
+    const li = document.createElement('li'); li.className = c.ok ? 'st-ok' : 'st-bad';
+    li.textContent = `${c.ok ? '✓' : '✕'} ${c.check}: dashboard ${fmt(c.dashboard)}, Shopify ${fmt(c.shopify)}`; return li;
+  }), Object.assign(document.createElement('li'), {className: 'es-note',
+    textContent: `${day(rec.from)} – ${day(rec.to)}, checked ${new Date(rec.checked_at).toLocaleString()}`}));
+  drawProducts();
+}
+
+document.getElementById('exbot').addEventListener('change', draw);
+document.getElementById('psearch').addEventListener('input', e => { search = e.target.value; drawProducts(); });
+dash.onData(draw);
+</script>

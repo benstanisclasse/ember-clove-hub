@@ -150,3 +150,57 @@ def test_data_endpoint_shape(server):
 def test_static_cannot_escape_its_folder(server):
     for path in ("/static/../../../config/hub.json", "/static/..%2F..%2F..%2Fconfig%2Fhub.json", "/static/", "/nope"):
         assert get(server + path)[0] == 404
+
+
+# --- Shopify (Phase C) ---------------------------------------------------------------------------------------------
+
+from studio import shopify_sync  # noqa: E402
+import profitability_model  # noqa: E402
+
+
+def _days(sessions, carts=None):
+    start = dt.date(2026, 10, 20)
+    return [{"day": (start + dt.timedelta(days=i)).isoformat(), "sessions": s, "cart_sessions": (carts or {}).get(i, 0)}
+            for i, s in enumerate(sessions)]
+
+
+def test_bot_flag_catches_spike_only():
+    days = shopify_sync.flag_bot_days(_days([0, 0, 0, 159, 1104, 65, 405, 412], {4: 5, 6: 1, 7: 3}))
+    assert [d["day"] for d in days if d["bot_flag"]] == ["2026-10-24"]
+    assert "3.9x the nearby median (282)" in days[4]["bot_reason"]  # neighbours 159, 65, 405, 412
+
+
+def test_bot_flag_needs_neighbours_and_low_cart_rate():
+    assert not any(d["bot_flag"] for d in shopify_sync.flag_bot_days(_days([0, 900, 0])))  # one day alone
+    spike_with_carts = shopify_sync.flag_bot_days(_days([100, 100, 1000, 100], {2: 50}))  # 5% carts: real buyers
+    assert not any(d["bot_flag"] for d in spike_with_carts)
+    assert not any(d["bot_flag"] for d in shopify_sync.flag_bot_days(_days([20, 20, 90, 20])))  # under 100 visits
+
+
+def test_product_economics_matches_profitability_model():
+    v = [{"price": 55.99, "unit_cost": 17.77, "grams": 380}, {"price": 55.99, "unit_cost": 17.77, "grams": 380},
+         {"price": 59.99, "unit_cost": 18.50, "grams": 400}]
+    e = shopify_sync.product_economics("Test Dress", v, cpa=20.0)
+    expect = profitability_model.contribution("Test Dress", 55.99, 18.50, 400)  # median_low price, costliest variant
+    assert e["contribution"] == round(expect, 2) and e["kept_after_cpa"] == round(expect - 20, 2)
+    assert e["breakeven_cpa"] == e["contribution"] and e["econ_status"] == "Estimate"
+    assert shopify_sync.product_economics("X", [{"price": 10.0}])["econ_status"] == "No unit cost on record"
+    assert shopify_sync.product_economics("X", [])["econ_status"] == "No price"
+
+
+def test_reconcile_flags_mismatch():
+    rows = [{"orders": 1, "net_sales": 40, "total_sales": 48, "sessions": 10}, {"orders": 0, "net_sales": 0,
+                                                                                "total_sales": 0, "sessions": 5}]
+    ok = shopify_sync.reconcile(rows, {"orders": 1, "net_sales": 40, "total_sales": 48}, 15, 1, 1)
+    assert ok["ok"] is True
+    bad = shopify_sync.reconcile(rows, {"orders": 2, "net_sales": 40, "total_sales": 48}, 15, 1, 2)
+    assert bad["ok"] is False and [c["check"] for c in bad["checks"] if not c["ok"]] == [
+        "Orders (sales report)", "Orders stored vs order count"]
+
+
+def test_store_page_and_single_record_dataset(server):
+    code, ctype, body = get(server + "/store")
+    assert code == 200 and b"Product economics" in body and b'href="/store"' in body
+    j = json.loads(get(server + "/data")[2])
+    rec = j["datasets"]["store_reconciliation"]
+    assert rec is None or (len(rec["rows"]) == 1 and "checks" in rec["rows"][0])

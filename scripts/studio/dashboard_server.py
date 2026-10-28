@@ -29,17 +29,18 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import facebook_photos  # noqa: E402
-from studio import analytics, bible, db, publishing  # noqa: E402
+from studio import analytics, bible, db, publishing, shopify_sync  # noqa: E402
 
 OUT = publishing.OUT
 STATIC = OUT / "static"
 LOG = logging.getLogger("dashboard")
 DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_metrics", "spend", "caps",
-            "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts", "sync_health"]
-JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "snapshots": "History", "ads:meta": "Meta ads",
+            "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts", "sync_health",
+            "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation"]
+JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "ads:meta": "Meta ads",
               "ads:tiktok": "TikTok ads", "ads:microsoft": "Microsoft ads"}
 PAGES = {"/": ("index.html", "Ember Studio Control Room"), "/index.html": ("index.html", "Ember Studio Control Room"),
-         "/metrics": ("metrics.html", "Ember & Clove Metrics")}
+         "/metrics": ("metrics.html", "Ember & Clove Metrics"), "/store": ("store.html", "Ember & Clove Store")}
 STATE = {"last_sync": None, "last_error": None}
 
 SHELL = """<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -134,6 +135,8 @@ def _rows(name):
     jp, cp = OUT / f"{name}.json", OUT / f"{name}.csv"
     if jp.exists():
         rows = json.loads(jp.read_text(encoding="utf-8"))
+        if isinstance(rows, dict):  # single-record files (e.g. store_reconciliation) become one row
+            rows = [rows]
         return {"rows": rows, "columns": list(rows[0]) if rows else []}
     if cp.exists():
         with open(cp, newline="", encoding="utf-8") as f:
@@ -145,7 +148,7 @@ def _rows(name):
 def page(path, every):
     file, title = PAGES[path]
     nav = "".join(f'<a href="{href}"{' aria-current="page"' if PAGES[href][0] == file else ''}>{label}</a>'
-                  for href, label in (("/", "Control room"), ("/metrics", "Metrics")))
+                  for href, label in (("/", "Control room"), ("/metrics", "Metrics"), ("/store", "Store")))
     body = (OUT / file).read_text(encoding="utf-8")
     return (SHELL.replace("%NAMES%", json.dumps(DATASETS)).replace("%EVERY%", str(every)).replace("%TITLE%", title)
             .replace("%NAV%", nav).replace("%PAGE%", body))
@@ -160,6 +163,7 @@ def _tiktok():
 
 
 JOBS = [("tiktok", _tiktok), ("facebook", lambda: facebook_photos.sync_dashboard(OUT)),
+        ("shopify", lambda: shopify_sync.sync(OUT)),
         ("snapshots", lambda: [f"{analytics.snapshot_dashboard_files(OUT)} rows"])]
 
 

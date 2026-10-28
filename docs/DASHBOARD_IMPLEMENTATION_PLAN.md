@@ -144,3 +144,43 @@ any database migration.
 - Generation spend still only covers Studio video jobs (Phase F ledger).
 
 **Next: Phase C (Shopify).** Needs the owner to create the read-only custom app token.
+
+---
+
+## Phase C report (2026-10-27, owner: "Yes, build the rest of Phase C now: the Shopify sync, Store Analytics page, product economics, bot-traffic flag and the reconciliation check.")
+
+**Implemented**
+- C1 Access: Dev Dashboard app "Ember Dashboard (read-only)" (scopes read_orders, read_products, read_inventory,
+  read_reports, read_analytics), installed by the owner; client id/secret in user env vars; `scripts/shopify_api.py`
+  exchanges them for 24 h tokens (memory only), GraphQL with backoff, ShopifyQL.
+- C2 `scripts/studio/shopify_sync.py` (dashboard job "shopify", every 15 min, ~5 s): last 90 days of sales and the
+  sessions funnel per Eastern day; sessions by referrer and by UTM per day; orders + lines incremental by updated_at
+  (first/last visit source, UTM, landing page; no names, emails or addresses); active products and variants (price,
+  unit cost, weight, stock). Tables in `studio/analytics.db`: store_daily, store_sources_daily, orders, order_lines,
+  products, variants.
+- C3 Store page (`/store`, nav "Store"): net/total sales, orders, AOV, visits, conversion, cart rate for 7/14/30 days;
+  visits and net sales per day; purchase funnel; traffic sources; tracking tags; data check.
+- C4 Product economics for all 92 active products, from `profitability_model.contribution` / `.ship` (same basis as
+  the price changes): price (a real variant price), unit cost, supplier shipping, contribution before ads, margin,
+  break-even CPA/ROAS, kept after the $20 planning ad cost, stock, 30-day units and net sales. Labelled "Estimate".
+- Bot-traffic flag: ≥ 100 visits, ≥ 3× the median of nearby days with traffic (±7 days, ≥ 2 such days), < 1% adding to
+  cart. Flags 10/24 only (1,104 visits). Excluded from visits/conversion KPIs by default; raw totals stay visible.
+- C5 Reconciliation every sync, last 30 days: orders, net sales, total sales, sessions (stored daily sum vs Shopify's
+  own total) and stored orders vs Shopify's order count. All 5 checks pass (sessions 2,147 = 2,147).
+
+**Tests:** 5 new (bot flag ×2, economics vs model, reconciliation mismatch, store page) — **54/54 pass.**
+
+**Files:** `scripts/shopify_api.py` (new), `scripts/studio/shopify_sync.py` (new), `studio/dashboard/store.html`
+(new), `scripts/studio/dashboard_server.py`, `scripts/studio/test_dashboard.py`, `config/hub.json` (secret names).
+
+**Findings surfaced by the new page**
+- 0 orders so far; 1,043 visits excluding the flagged day; 4 reached checkout, 0 purchased.
+- Of 30-day visits: direct 1,857, Facebook 278, TikTok 5; tagged visits: `fb_photos` 5, TikTok ads with unfilled
+  `__CAMPAIGN_NAME__` 3 (likely previews).
+- About 70 products keep un-rounded prices (e.g. $35.78, $41.50); only the 22 repriced on 10/27 end in .99.
+- No product loses money at the $20 planning ad cost, but several keep under $1 per order after it.
+
+**Limitations:** product-level conversion needs per-product sessions (not in this sync); refunds are taken at order level;
+orders older than 60 days would need read_all_orders (not needed yet, store opened 10/23).
+
+**Next: Phase D** (navigation, design system, Overview with store + ads + organic together).
