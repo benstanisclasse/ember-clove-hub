@@ -160,5 +160,11 @@
     "weekly_ad_budget": null,
     "monthly_ad_budget": null,
     "per_platform_daily": {}
+  },
+  "kalodata": {
+    "_note": "Market Engine credit budget (owner decision D1, 2026-10-28). Scheduled collection must stop at the cap; weekly scans run only when the owner asks. 1 credit ~ $0.10.",
+    "monthly_credit_budget": 30,
+    "weekly_scan_credits": 20,
+    "weekly_scan_on_request_only": true
   }
 }
