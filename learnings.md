@@ -19,3 +19,9 @@ All 13 products are priced only ~10–11% above Shopify unit cost. After payment
 
 ### 2026-10-24 — Sourcing decision: dropship apparel only
 Owner chose dropship-only, apparel-only. Supplier research (reports/supplier_research_2026-10-24.md): Printful cuts landed cost vs current suppliers by ~$4 (tee), ~$7 (crewneck) and ~$23 (hoodie). With Printful, profit per sale reaches the ~$20 ad budget at tee $32.99, crewneck $44.99, hoodie $49.99+. Hoodies have the most room ($26–31 at $54.99–59.99). Wellness products dropped: current supplier retail prices undercut any viable markup. Evidence: **verified** for Printful list prices; Printify/Gooten figures are estimates.
+
+### 2026-10-28 — Market research evidence levels (Market Engine Phase A audits)
+- **Strong (observational):** winning TikTok Shop videos are far more often paid-boosted (84% vs 41%, survives multiple-testing correction). Paid support matters more than any creative feature we measured.
+- **Not supported:** person-with-product in the first frame, longer videos, faster talking, speech share, text hooks, close-ups — none survive correction or matching on paid status. The `rules.yaml` gates words_per_second 2.9–3.8 and speech_share_min 0.70 stay as **production defaults, not proven rules** (owner decision D3); widen them if they block good videos. Our own experiments (Content Studio Phase E) are the real test.
+- **Breakout scores** are mostly "already sells close to the top 500"; treat the weekly list as a research shortlist, not a forecast (owner decision D5).
+- **Seasonality** from Kalodata is one observed year; Meta Ad Library has no spend or impressions for US ads.

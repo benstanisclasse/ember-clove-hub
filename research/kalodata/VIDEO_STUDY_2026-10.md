@@ -1,5 +1,19 @@
 # Video study: what separates winning videos (2026-10)
 
+> **Correction (2026-10-28, Market Engine Phase A audits).**
+>
+> Audit docs/MARKET_CREATIVE_COMPETITIVE_AUDIT.md re-checked this study:
+> - **Survives:** paid boosting (84% of winners vs 41% of comparisons, 43:4 pairs) is the only result that survives
+>   correction for the 152 tests run (Holm and Benjamini-Hochberg).
+> - **Does not survive:** person with product in the first frame, length, talking speed, speech share, text hook and
+>   close-ups. Within pairs with the same paid status (44 pairs) "person at 0 s" is 52% vs 50%; adjusted for paid status
+>   its odds ratio is 1.34 (95% CI 0.66-2.72).
+> - **Not matched:** video age (winners median 37 days vs 17), so newer comparisons had less time to sell.
+> - **Tags not hand-checked:** the "looks AI" tag caught 8 of 17 videos Kalodata flags as AI.
+> - Production gates built from this (2.9-3.8 words/s, 70% speech share) are defaults, not proven rules (owner decision
+>   D3, 2026-10-28). The stored videos were moved to the Recycle Bin on 2026-10-28; transcripts, tags and frame sheets kept.
+
+
 91 pairs (182 videos), 25 categories. Each pair: a product's best-selling September video vs a typical video of the same product that got some views and stalled. Product and month are the same, so differences are about the video. Small p (under 0.05) = unlikely to be chance.
 
 ## Measurements

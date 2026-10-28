@@ -1,5 +1,12 @@
 # Meta Ad Library scan — women's clothing, US, active ads (2026-10-27)
 
+> **Correction (2026-10-28, Market Engine Phase A audits).**
+>
+> - US commercial ads in the Meta Ad Library show **no impressions, spend or results**. Run time, ad count and the
+>   low-impression flag are the only signals; "current winners" or "spend signal" are inferences, not observations
+>   (docs/MARKET_CREATIVE_COMPETITIVE_AUDIT.md).
+
+
 Owner request: "Research: search Meta's Ad Library to see what ads other clothing stores are running right now."
 Tool: Meta Ads connector `ads_library_search` (active ads, US). It returns page name, headline/link title, start time and a
 snapshot link only — no ad images, body text, spend or results. Open the snapshot links to see the creative.

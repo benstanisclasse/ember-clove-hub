@@ -1,5 +1,13 @@
 # What sells best by month and quarter: categories, subcategories, product types (2026-10-26)
 
+> **Correction (2026-10-28, Market Engine Phase A audits).**
+>
+> - This is **one observed year** (and October 2025 is a partial month), so peaks are observations, not validated
+>   recurring patterns (audit docs/MARKET_CREATIVE_COMPETITIVE_AUDIT.md).
+> - "Heating up" ratios include ~11% market-wide growth over the year; compare against the market, not against 1.0.
+> - Match products to the right type bucket (e.g. sweater dresses are not "dresses peak in May").
+
+
 Sources: monthly top-500 products per category (core download, Nov 2025 – Sep 2026; Oct 2025 is incomplete) and
 Kalodata subcategory rankings for the last 30, 90 and 365 days (0.9 credits). Subcategory history by month isn't
 available from Kalodata's API (category rankings only take rolling windows), so monthly detail below category level

@@ -1,5 +1,13 @@
 # Extra insights from the core data (2026-10-26)
 
+> **Correction (2026-10-28, Market Engine Phase A audits).**
+>
+> - October 2025 covers about one week, so any Oct-based growth or "Nov vs earlier" comparison is overstated
+>   (docs/MARKET_DATA_QUALITY_REPORT.md).
+> - Seasonality here is one observed year, not a validated recurring pattern (docs/MARKET_CREATIVE_COMPETITIVE_AUDIT.md).
+> - Commission figures are today's values applied to past months.
+
+
 From the 12-month core download (top 500 products per category per month). No new credits.
 
 ## 1. The holidays are the biggest months, and we're two weeks away

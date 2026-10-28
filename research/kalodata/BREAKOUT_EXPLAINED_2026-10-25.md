@@ -1,5 +1,15 @@
 # Why the breakout model picks what it picks (2026-10-25)
 
+> **Correction (2026-10-28, Market Engine Phase A audits).**
+>
+> - "Current sales" dominating the explanation is the main point: the breakout score is mostly distance to the
+>   category's top-500 floor (audit docs/MARKET_MODEL_VALIDATION_AUDIT.md). Treat the other drivers as weak.
+> - Commission findings use today's commission, copied into past months, and are confounded with category and brand;
+>   they are not evidence about commission at the time.
+> - Percentages like "61%" or "35%" are model scores, not calibrated probabilities (scores ≥50% came true 42%; ~32% for
+>   deep-list products outside the training range).
+
+
 Model: chance that a rising product outside its category's top 500 enters the top 500 within 3 months
 (`scripts/score_breakouts.py`; explanations `scripts/explain_breakouts.py` →
 `model_v1_2026-10-25/breakout_explanations_2026-09.json`). It sees only sales patterns from Kalodata: not how the

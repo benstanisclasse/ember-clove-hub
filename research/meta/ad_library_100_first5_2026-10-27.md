@@ -1,5 +1,11 @@
 # Ad Library list — first 5 in detail (2026-10-27)
 
+> **Correction (2026-10-28, Market Engine Phase A audits).**
+>
+> - The "longest-running first" order turned out to list the newest ads (median ~2.4 hours live). No spend or
+>   impressions exist for US ads; ad longevity does not prove profitability (docs/MARKET_CREATIVE_COMPETITIVE_AUDIT.md).
+
+
 List: research/meta/ad_library_100_2026-10-27.csv (100 active US clothing/shoe ads, 61 stores, longest-running first).
 Built by scripts/meta_ad_library_list.py from the Meta Ads connector search; first 5 opened on the Ad Library website
 (Chrome) for the extra fields. Ad copy summarised, not copied.
