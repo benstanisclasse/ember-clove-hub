@@ -11,7 +11,14 @@
   "version": 2,
   "headline": "Fitted top, flared skirt",
   "caption": "Mock neck, fitted bodice and a skirt that flares out from metal rings at the hip.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "059c69ab1596a1a8e8cfaf9dede6707e4caa8e7179be2817686c3a571724cd86"
+  }
  },
  {
   "ad_name": "EC_TT_P001_B_LIFESTYLE",
@@ -25,7 +32,14 @@
   "version": 1,
   "headline": "Holiday party, one piece",
   "caption": "One dress for the holiday party. Add tights and boots and you are ready.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "27237347b4d15e30a59e3c88dd6d8b9c82fc1c6f23c96aab8da3669a0b854b8e"
+  }
  },
  {
   "ad_name": "EC_TT_P001_C_BENEFIT",
@@ -39,7 +53,14 @@
   "version": 2,
   "headline": "The detail: metal rings, full flare",
   "caption": "The detail that makes it: a full flare fanned out from metal ring hardware.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "605b540a254bb05c81cb55123167e3d7d19f24b84ef3e02217ac4dacdab2ab70"
+  }
  },
  {
   "ad_name": "EC_TT_P003_A_PRODUCT",
@@ -53,7 +74,14 @@
   "version": 1,
   "headline": "A blazer dress with roses",
   "caption": "Black blazer dress with red 3D roses on long green stems.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "b30ecedd49aa58e0132199281398870c3364fdd7b3b80c8940b027187bdea1ec"
+  }
  },
  {
   "ad_name": "EC_TT_P003_B_LIFESTYLE",
@@ -67,7 +95,14 @@
   "version": 1,
   "headline": "The office party dress",
   "caption": "The office holiday party dress: tailored, long-sleeved, roses up front.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "5d3f11a0627fcbbf5853c76ee8e82e788a7bac1f1c6006e6b72a1937f9d690ed"
+  }
  },
  {
   "ad_name": "EC_TT_P003_C_BENEFIT",
@@ -81,7 +116,14 @@
   "version": 1,
   "headline": "Blazer and dress in one",
   "caption": "Blazer and dress in one piece. Nothing else to plan.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "4b62e4760467b1b7da126db3fccdef7dac56f0a67ed648d283358c986a4a2caa"
+  }
  },
  {
   "ad_name": "EC_TT_P005_A_PRODUCT",
@@ -95,7 +137,14 @@
   "version": 1,
   "headline": "The long burgundy coat",
   "caption": "Long burgundy coat with wide notch lapels and dropped shoulders.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "09bb503621df97b3beb09ed52a9472e67406981f1982952dbec966714d2ae367"
+  }
  },
  {
   "ad_name": "EC_TT_P005_B_LIFESTYLE",
@@ -109,7 +158,14 @@
   "version": 1,
   "headline": "Made for cold-week walks",
   "caption": "The long coat for November city days, over your favorite knit.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "b6e34b2f8e691a5c3419a5e5f31e356d7ad49091319bf0f8f69cd44e9f7f3252"
+  }
  },
  {
   "ad_name": "EC_TT_P005_C_BENEFIT",
@@ -123,7 +179,14 @@
   "version": 1,
   "headline": "Cut roomy to layer",
   "caption": "Cut roomy and long to layer over knits, dresses and work clothes.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "a5001cbbf99c4a760ebb7f120be65f7aca75d4a885b1d0ba28bccd531563522a"
+  }
  },
  {
   "ad_name": "EC_TT_P006_A_PRODUCT",
@@ -137,7 +200,14 @@
   "version": 1,
   "headline": "Chunky rib, high collar",
   "caption": "Chunky rib knit with a high stand collar and button-tab shoulders.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "8e7c1242a30dda747f10e7bc5476f7e429a3be58448ef2638c26f48e55e37a9a"
+  }
  },
  {
   "ad_name": "EC_TT_P006_B_LIFESTYLE",
@@ -151,7 +221,14 @@
   "version": 1,
   "headline": "Your weekend knit",
   "caption": "The cardigan for slow weekends: chunky rib, easy fit.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "5145c2c87045e95c3dd167bead088297d96239e8eefe294b6c4d6ed7852f5e94"
+  }
  },
  {
   "ad_name": "EC_TT_P006_C_BENEFIT",
@@ -165,7 +242,14 @@
   "version": 1,
   "headline": "Button it up like a jacket",
   "caption": "Button the stand collar up and wear it like a jacket.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "060c53f1aa9342409b4dba39671d08fcafb2f9d2594df96523309975a33d6545"
+  }
  },
  {
   "ad_name": "EC_TT_P007_A_PRODUCT",
@@ -179,7 +263,14 @@
   "version": 1,
   "headline": "Soft faux suede, notch lapels",
   "caption": "Relaxed faux suede blazer with notch lapels and a yoke seam.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "670de36119f971ae44a5adf88a7549bea0a3fcfd7bb4f07374e313716da39f36"
+  }
  },
  {
   "ad_name": "EC_TT_P007_B_LIFESTYLE",
@@ -193,7 +284,14 @@
   "version": 1,
   "headline": "Weekend in the city",
   "caption": "Faux suede over a turtleneck and jeans: the easy city look.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "076e043cdff9247e23284f07ec342c1db86830a7a59b84c361d39c5b69849993"
+  }
  },
  {
   "ad_name": "EC_TT_P007_C_BENEFIT",
@@ -207,7 +305,14 @@
   "version": 1,
   "headline": "Turtleneck + jeans + this",
   "caption": "Turtleneck, jeans and this blazer: an outfit in three pieces.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "16c84b39bc34a86254e216b79b56a149120f34a3b9bd02f2b71983873ead3b78"
+  }
  },
  {
   "ad_name": "EC_TT_P009_A_PRODUCT",
@@ -221,7 +326,14 @@
   "version": 1,
   "headline": "Plush-lined hood, utility zip",
   "caption": "Utility zip jacket with a plush-lined hood and contrast collar.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "a11a2675c68f37ec0568af8382c170973e56a73faa98167dbeeca507b16556e3"
+  }
  },
  {
   "ad_name": "EC_TT_P009_B_LIFESTYLE",
@@ -235,7 +347,14 @@
   "version": 1,
   "headline": "Cold-morning errands",
   "caption": "The easy top layer for cold mornings and quick errands.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "27f659b4fb775e36388267410a11958d0205e0c9feabccaa98d2f7f251625387"
+  }
  },
  {
   "ad_name": "EC_TT_P009_C_BENEFIT",
@@ -249,7 +368,14 @@
   "version": 1,
   "headline": "Lined where it counts",
   "caption": "Plush fleece lining in the hood and body, oversized over your knits.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "506f59f373697925d2f03c8da877f81551f959a8789d3e601b159e7c76e350ad"
+  }
  },
  {
   "ad_name": "EC_TT_P011_A_PRODUCT",
@@ -263,7 +389,14 @@
   "version": 1,
   "headline": "Black moto, polished collar",
   "caption": "Fitted faux leather moto jacket with a snap-tab stand collar.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "73057a9f76f0726d99819632472576c98039b285a390f67b58662ba0a2e4a85f"
+  }
  },
  {
   "ad_name": "EC_TT_P011_B_LIFESTYLE",
@@ -277,7 +410,14 @@
   "version": 1,
   "headline": "Dinner downtown",
   "caption": "A black moto over your knit dress for dinner downtown.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "9ac0ede2ef86214e4288bc6aae0d0e5f137dc80d2391b5b76b575425b998d5af"
+  }
  },
  {
   "ad_name": "EC_TT_P011_C_BENEFIT",
@@ -291,7 +431,14 @@
   "version": 1,
   "headline": "One jacket, three outfits",
   "caption": "One black jacket, three outfits: dresses, jeans and minis.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "bb23587ec057bc53d16fa32ed9b5285c2c23d25cc103f0ff6014171dba3618e5"
+  }
  },
  {
   "ad_name": "EC_TT_P012_A_PRODUCT",
@@ -305,7 +452,14 @@
   "version": 1,
   "headline": "Fold-over cuff, brass snaps",
   "caption": "Knee-high boots with a fold-over cuff, brass snaps and a block heel.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "c99d2c894fe9cfa3a1f9dd0b99fca61d073a9de4af8e4711d0d1c6f9ad29a3e1"
+  }
  },
  {
   "ad_name": "EC_TT_P012_B_LIFESTYLE",
@@ -319,7 +473,14 @@
   "version": 1,
   "headline": "Boots for every dress",
   "caption": "The knee boots your sweater dresses have been waiting for.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "da7f43c863698715c3aca7114bd78fa804721f42ed5be948627e554c13658fcb"
+  }
  },
  {
   "ad_name": "EC_TT_P012_C_BENEFIT",
@@ -333,7 +494,14 @@
   "version": 1,
   "headline": "One pair, three outfits",
   "caption": "One pair, three outfits: midi dress, mini and jeans.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "ed6bc34d1093f799c80314631ee325f561e1b248228af312399b1973f3874f86"
+  }
  },
  {
   "ad_name": "EC_TT_P013_A_PRODUCT",
@@ -347,7 +515,14 @@
   "version": 1,
   "headline": "Cable knit, mock neck, midi",
   "caption": "Cable knit sweater dress with a mock neck, long sleeves and midi length.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "de0b115f49987fbcd5a7ce614bdacd0508399621c4357604109d5ccb263c857c"
+  }
  },
  {
   "ad_name": "EC_TT_P013_B_LIFESTYLE",
@@ -361,7 +536,14 @@
   "version": 1,
   "headline": "Holiday plans, one dress",
   "caption": "One dress for every holiday plan: dinners, visits and photos.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "d1b4931705a413f6dd799d577582526c2ed8f56eb7e9dfc6f0f55b6aada81400"
+  }
  },
  {
   "ad_name": "EC_TT_P013_C_BENEFIT",
@@ -375,7 +557,14 @@
   "version": 1,
   "headline": "The slit makes boots work",
   "caption": "A front slit that shows off tall boots and keeps you moving.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "f78d9be7be0fad4defd0cab0a9675df96ac9819083ecc13376abb72ddf4f1b7a"
+  }
  },
  {
   "ad_name": "EC_TT_P014_A_PRODUCT",
@@ -389,7 +578,14 @@
   "version": 1,
   "headline": "Stripes with a polo collar",
   "caption": "Bold stripes and a soft open polo collar in a relaxed knit.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "e87e9d98c93bdf4c9f060d8a9016c79ae6c566e46ba8b75bfa34ff636de25112"
+  }
  },
  {
   "ad_name": "EC_TT_P014_B_LIFESTYLE",
@@ -403,7 +599,14 @@
   "version": 1,
   "headline": "Easy weekend, put-together",
   "caption": "Stripes and a polo collar: weekend easy, still put-together.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "6af3e02ae95958cf81533db875df2fe954d6c7691c7eb33ea54f085fafe91816"
+  }
  },
  {
   "ad_name": "EC_TT_P014_C_BENEFIT",
@@ -417,6 +620,13 @@
   "version": 1,
   "headline": "Jeans to skirt to office",
   "caption": "One sweater, three outfits: jeans, a skirt or under a blazer.",
-  "status": "awaiting_review"
+  "status": "approved",
+  "approval": {
+   "quote": "Approve all 30 (Recommended)",
+   "actor": "owner",
+   "via": "chat (Claude Code question)",
+   "at": "2026-10-28T14:22:09Z",
+   "prototype_sha256": "c51b6c62c85141310a638edf0b53f8b7a765d49cbb4f590471724ad71a055717"
+  }
  }
 ]
