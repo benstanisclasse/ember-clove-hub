@@ -430,6 +430,8 @@ def main():
                     print(f"{cid}: scheduled ({post.get('_id')})")
             except SystemExit as e:
                 print(f"{cid}: {e}")
+            except Exception as e:  # one refused or failed post (e.g. a provider content filter) never stops the rest
+                print(f"{cid}: FAILED {type(e).__name__}: {e}")
     con.close()
 
 
