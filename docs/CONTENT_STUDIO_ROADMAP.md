@@ -261,3 +261,53 @@ session's hardening tests).
   Facebook outfit compatibility rules and rotating caption formats, the character references library.
 
 **Next:** finish Phase D items 5–7, or move to Phase E (creative experimentation) once ~2 weeks of tagged content exist.
+
+## Phase D items 5–7 report (2026-10-28, commit 1aabcec)
+
+Owner: "Finish Content Studio Phase D items 5-7 first: template hashing in the bible approval, Facebook outfit/caption
+rotation rules, character references library."
+
+**5. Approvals cover reference images and prompt templates**
+- `studio/bible/approved_assets.json` records, per approved bible file, the sha256 of every reference image it names
+  (face_refs, ref_images, reference_images), and for the unit "templates" the three video/first-frame templates and
+  `scripts/prompt_style.py`. `bible.load` re-hashes them: a changed or missing image makes that file draft again
+  (`changed_assets` lists which); changed templates block production until `cli.py bible-approve templates --quote`.
+  `bible-approve FILE` now writes the lock for that file's images with the owner's words.
+- `cli.py bible-lock` (one-time) bound what was already approved, only where every file is older than its approval:
+  rules, character (face_main.png), world (9 room images), series and the templates, all locked; none refused.
+  Wardrobe and products are draft (wardrobe since the ruffle-skirt edit of 10-27) and get locked when the owner
+  approves them.
+- Generation jobs now store the sha256 of each local reference image next to it (`asset_refs.sha256`), so a changed
+  reference shows up as a new configuration in the production records.
+
+**6. Facebook outfit compatibility and caption rotation** (`scripts/facebook_photos.py`, used by both the plan files and
+`fb_ai.py`)
+- `outfit_problems`: no two pieces of one type, at most one patterned piece (print, floral, plaid, stripe, patchwork,
+  colorblock...), no formal pieces (satin, sequins, velvet, silk, heels) with lounge pieces (sweatshirts, joggers,
+  slippers). Lace with denim stays allowed. `pick_outfit` tries up to 60 combinations and falls back to a single-product
+  post when none passes. Defaults in `OUTFIT_RULES`; an `outfit_rules` object in `data/facebook/rules.json` overrides them.
+- Captions rotate between three single-product formats (title first, question first, detail first) and two outfit
+  formats, and the comment question changes every post: no two posts in a row with the same structure or question,
+  carried across weeks through `history.json` (`caption_format`, `question`). Every format keeps the store link last.
+  Dry run on the live catalogue for 11-04 to 11-10: 12 posts, no repeats back to back, both outfits compatible.
+
+**7. Ember's references library** (`scripts/studio/character_refs.py`, table `character_refs`, `cli.py refs ...`)
+- Records face reference versions and approved/rejected examples with sha256, source, who decided and their words.
+  Seeded from the record (17 entries): face reference v1 `face_main.png` (in use); the 10-26 face candidates (B chosen,
+  same file as the face in use; A, C, D not chosen); frame sheets of the 12 videos the owner approved. No rejected
+  video examples yet (no explicit video rejection is on record).
+- Owner-only verdicts with a quote; a face reference in use can't be rejected; files are re-hashed every sync and a
+  changed file is flagged. The library never edits `character.yaml`: Ember's face changes only through the bible
+  (edit face_refs, then `bible-approve character`, which now also locks the new image).
+- Dashboard (Content Studio): "Ember's references and approvals": which approvals are locked to their files (and any
+  changed file), and the library with thumbnails, verdicts and quotes (`/media/refs/<id>` and the datasets
+  `character_refs`, `bible_locks` added by the Dashboard session, commit 8de3132).
+
+**Tests:** 14 new (changed image voids an approval, changed template blocks production, bible-lock only binds older files,
+outfit compatibility incl. override and pick_outfit, caption/question rotation across weeks, library seeding, owner-only
+verdicts without identity change, changed library file flagged). Full suite 166/166.
+
+**Open for the owner:** wardrobe.yaml (and products.yaml, needed only once selling is on) are draft; real video
+generation needs `bible-approve wardrobe`, which will also lock its 35 images.
+
+**Next:** Phase E (creative experimentation) once ~2 weeks of tagged content exist; first real `fb_ai.py` week from 11-04.

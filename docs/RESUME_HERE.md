@@ -21,15 +21,17 @@ TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group →
 
 Open owner decisions carried over: none blocking Phase E. Microsoft PMax still learning; TikTok sales campaign still a draft.
 
-## 2. Content Studio 2.0 ("Autonomous Content Studio 2.0" master prompt) — Phase D items 1–4 done 2026-10-28; next D 5–7 or E
+## 2. Content Studio 2.0 ("Autonomous Content Studio 2.0" master prompt) — Phase D done 2026-10-28; next E (~2 weeks of tagged content)
 
 Phase A audit DONE → `CONTENT_STUDIO_AUDIT.md`, `CONTENT_STUDIO_ARCHITECTURE_V2.md`, `CONTENT_STUDIO_ROADMAP.md`.
 Phase B DONE 2026-10-27 (report at the end of CONTENT_STUDIO_ROADMAP.md): unified content records, honest publish states.
 Phase C DONE 2026-10-27 (commit 97f7869; report at the end of CONTENT_STUDIO_ROADMAP.md): generation/asset records,
 content features, 24h/48h/7d marks, utm_content=<content id>, performance + production-cost views.
 Phase D (items 1–4) DONE 2026-10-28 (commit 382a7ad): shared rule module (checks.py), media-bound approvals,
-product availability at publish, Facebook AI-picture weeks in the database (fb_ai.py). Items 5–7 still open.
-To resume: "Finish Content Studio Phase D items 5-7" or, once ~2 weeks of tagged content exist, "Start Phase E".
+product availability at publish, Facebook AI-picture weeks in the database (fb_ai.py).
+Phase D items 5–7 DONE 2026-10-28 (commit 1aabcec): approvals cover reference images + prompt templates
+(approved_assets.json), Facebook outfit compatibility + caption rotation, Ember's references library. Phase D complete.
+To resume: "Start Content Studio Phase E" (once ~2 weeks of tagged content exist). Owner: wardrobe.yaml is draft.
 First real use of fb_ai.py: the AI-picture week from 2026-11-04.
 Note: Dashboard 2.0 Phases E and F were completed in a parallel session.
 Must share Dashboard 2.0's infrastructure: same dashboard, same `studio/analytics.db` history store, same Shopify

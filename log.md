@@ -493,3 +493,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 ## 2026-10-28 ~00:30 ET — Dashboard 2.0 Phase H done (owner: "Start Phase H (hardening) next?")
 - 151/151 tests; all pages and jobs healthy. Security: no secret in any page/data/log, writes refused (501), firewall local subnet only, security headers added, Python banner removed. Reliability: atomic writes for all dashboard modules, last-good fallback in /data, backup task retries 2x. Cold start 1.6 s, first sync 16.5 s; pages 2-3 ms, /data 19 ms. New docs/DASHBOARD_OPERATIONS.md. Report: docs/DASHBOARD_IMPLEMENTATION_PLAN.md "Phase H report".
 - Not done (owner OK needed): real reboot test. Optional: move PostZen key from Downloads\key.txt to the POSTZEN_API_KEY user env var.
+
+## 2026-10-28 ~01:45 ET — Content Studio Phase D items 5-7 done (owner: "Finish Content Studio Phase D items 5-7 first: template hashing in the bible approval, Facebook outfit/caption rotation rules, character references library.")
+- Bible approvals now cover the reference images and prompt templates (studio/bible/approved_assets.json); cli.py bible-lock bound rules, character, world, series and the templates (all older than their approvals). Wardrobe/products still draft (owner to approve).
+- Facebook: outfit compatibility rules + caption format/question rotation (rules.json notes updated). Ember's references library (17 entries) with dashboard section; Dashboard session added the datasets and /media/refs route (8de3132).
+- 14 new tests, suite 166/166. Commit 1aabcec. Report: docs/CONTENT_STUDIO_ROADMAP.md "Phase D items 5-7 report". No posts sent, nothing generated, no store or ad changes.
