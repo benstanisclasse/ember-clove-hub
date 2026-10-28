@@ -3,7 +3,9 @@
 Overall: permutation importance on the forward test months, and how the predicted chance moves with each main signal
 (partial dependence). Per product: each signal is reset to a typical riser's value (the training median) and the drop
 in the product's score is that signal's contribution.
-Run: python -I scripts/explain_breakouts.py
+Run: python -I scripts/explain_breakouts.py --out research/kalodata/explain_v1_rerun_<date>
+Outputs go to a new folder (an existing one is refused; v1 outputs are never overwritten). The audit found these
+per-product "reasons" are one model fit's descriptive patterns, not findings (docs/MARKET_MODEL_VALIDATION_AUDIT.md).
 """
 import json
 import sys
@@ -16,7 +18,7 @@ from sklearn.inspection import permutation_importance
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from score_breakouts import FEATS  # noqa: E402
-from train_product_model import HGB, MONTHS, OUT, TASKS, build, load, subset  # noqa: E402
+from train_product_model import HGB, MONTHS, TASKS, build, load, out_arg, prepare_out, subset  # noqa: E402
 
 PICKS = ["La Costa Slide", "Cushionaire Fable", "MAELREG Men", "Potaroma Pet Brain", "BEDLORE", "Zoe Low Rise",
          "Faux Fur Short Booties", "SHOWITTY Womens High Waisted", "HSIA Seamless Iris", "PAVOI 14K Gold Plated Letter"]
@@ -53,8 +55,9 @@ def show(f, v):
     return f"{v:,.0f}"
 
 
-def main():
+def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")
+    out_dir = prepare_out(out_arg(argv, "explain_v1_rerun"))
     df, cats, _ = load()
     p = build(df)
     which, label, h = TASKS["breakouts_3m"]
@@ -103,7 +106,7 @@ def main():
                          "effect": round(c, 2)} for f, c in top]})
     out = {"model": "breakouts_3m without riser position", "typical_riser": {LABEL[f]: show(f, ref[f]) for f in FEATS},
            "importance": importance, "curves": curves, "products": explained}
-    (OUT / "breakout_explanations_2026-09.json").write_text(json.dumps(out, indent=2, ensure_ascii=False),
+    (out_dir / f"breakout_explanations_{MONTHS[-1]}.json").write_text(json.dumps(out, indent=2, ensure_ascii=False),
                                                            encoding="utf-8")
     print(json.dumps(out, indent=1, ensure_ascii=False))
 

@@ -7,7 +7,10 @@ top-200 riser (by growth) lists. Two questions, each 1 and 3 months ahead:
   breakouts risers outside the top 500: in the top 500 next month (h=1) / within three months (h=3)
 Tested forward in time: trained on earlier months, scored on later months it never saw.
 Also: whether creator and video counts (1,003-row detail sample) add signal; scores for September 2026 products.
-Run: python -I scripts/train_product_model.py
+Run: python -I scripts/train_product_model.py --out research/kalodata/model_v1_rerun_<date>
+Pinned (Market Engine B0, 2026-10-28): riser rows are selected by pull kind 'risers' (pages 1-2, positions 1-200), so the
+deep Sep 2026 pages (kind 'risers_deep') can't change what v1 trains on, and outputs go to a new folder: the script
+refuses to write into an existing one (model_v1_2026-10-25 is never overwritten). Superseded by scripts/market_eval.py.
 """
 import json
 import sqlite3
@@ -27,7 +30,7 @@ from sklearn.preprocessing import StandardScaler
 
 HUB = Path(__file__).resolve().parent.parent
 DB = HUB / "research" / "kalodata" / "kalodata.db"
-OUT = HUB / "research" / "kalodata" / "model_v1_2026-10-25"
+OUT = HUB / "research" / "kalodata" / "model_v1_2026-10-25"  # v1 outputs: read-only reference, never written
 MONTHS = [f"{y}-{m:02d}" for y, m in [(2025, 10), (2025, 11), (2025, 12)] + [(2026, i) for i in range(1, 10)]]
 MI = {m: i for i, m in enumerate(MONTHS)}
 NUM = ["revenue", "sales_volumn", "unit_price", "revenue_growth_rate", "commission_rate", "live_revenue",
@@ -43,7 +46,7 @@ def load():
     df = pd.read_sql("SELECT u.name, p.position, p.product_id, p.product_name, p.launch_date, p.seller_id, "
                      + ", ".join(f"p.{c}" for c in NUM) +
                      " FROM products p JOIN pulls u ON p.pull_id = u.pull_id "
-                     "WHERE u.name LIKE 'core_products_%' OR u.name LIKE 'core_risers_%'", con)
+                     "WHERE u.name LIKE 'core_products_%' OR (u.name LIKE 'core_risers_%' AND u.kind = 'risers')", con)
     cats = dict(con.execute("SELECT c.category_id, c.category_name FROM categories c JOIN pulls u ON c.pull_id = "
                             "u.pull_id WHERE u.name LIKE 'core_categories_l1_last365Day%'").fetchall())
     det = pd.read_sql("SELECT u.name, d.product_id, d.creator_number, d.video_number, d.live_number, d.min_price, "
@@ -228,7 +231,25 @@ def profile(p):
     return tabs
 
 
-def score_latest(p, models, cats):
+def prepare_out(path):
+    """Versioned output folder: refuse an existing one so a rerun can never overwrite earlier outputs."""
+    path = Path(path)
+    if path.exists():
+        raise SystemExit(f"Refusing to write into existing folder {path}: pass a new --out")
+    path.mkdir(parents=True)
+    return path
+
+
+def out_arg(argv, default_name):
+    import argparse
+    import datetime as dt
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=str(HUB / "research" / "kalodata" / f"{default_name}_{dt.date.today()}"),
+                    help="new output folder (must not exist)")
+    return Path(ap.parse_args(argv).out)
+
+
+def score_latest(p, models, cats, out):
     last = MONTHS[-1]
     cur = p[p["month"] == last].copy()
     hold, brk = cur[cur["in_top500"]].copy(), cur[(~cur["in_top500"]) & (cur["in_risers"] == 1)].copy()
@@ -241,27 +262,27 @@ def score_latest(p, models, cats):
     for d in (hold, brk):
         d["category"] = d["cat"].map(cats)
     hold.sort_values("p_hold_3m", ascending=False)[cols + ["rank_pos", "p_hold_1m", "p_hold_3m"]].to_csv(
-        OUT / f"scores_holders_{last}.csv", index=False)
+        out / f"scores_holders_{last}.csv", index=False)
     brk.sort_values("p_break_3m", ascending=False)[cols + ["riser_pos", "p_break_1m", "p_break_3m"]].to_csv(
-        OUT / f"scores_breakouts_{last}.csv", index=False)
+        out / f"scores_breakouts_{last}.csv", index=False)
     return len(hold), len(brk)
 
 
-def main():
+def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")
-    OUT.mkdir(parents=True, exist_ok=True)
+    out = prepare_out(out_arg(argv, "model_v1_rerun"))
     df, cats, det = load()
     p = build(df)
     print(f"panel: {len(p):,} product-months, {p['product_id'].nunique():,} products, {p['cat'].nunique()} categories")
     results, models = evaluate(p)
     results["breadth_test"] = breadth_test(p, det)
     results["profile_holders_1m"] = profile(p)
-    n_hold, n_brk = score_latest(p, models, cats)
+    n_hold, n_brk = score_latest(p, models, cats, out)
     results["scored_latest"] = {"month": MONTHS[-1], "holders": n_hold, "breakout_candidates": n_brk}
-    (OUT / "results.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
-    joblib.dump({"features": FEATURES, "models": models}, OUT / "models.joblib")
-    p.drop(columns=["name"]).to_csv(OUT / "panel.csv.gz", index=False, compression="gzip")
-    print(f"Saved {OUT}")
+    (out / "results.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
+    joblib.dump({"features": FEATURES, "models": models}, out / "models.joblib")
+    p.drop(columns=["name"]).to_csv(out / "panel.csv.gz", index=False, compression="gzip")
+    print(f"Saved {out}")
 
 
 if __name__ == "__main__":
