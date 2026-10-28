@@ -87,3 +87,28 @@ Also worth weighing:
    the knits from about April.
 4. The UK once the VAT number exists. It's the better fit for the current autumn/winter range.
 5. Merchant Center countries → Google Ads campaign per country, paused until listings are approved.
+
+## What was done (2026-10-28, evening)
+
+Owner decisions: "ok i guess dont sell to uk" (no UK VAT registration → no UK). Australia: returns "Same 7 days";
+shipping "keep the same as US they will be shorter" (no EPROLO AU quote yet; the EPROLO app wouldn't load in
+Chrome, so real AU shipping costs are still unknown).
+
+| Where | Change | Verified |
+|---|---|---|
+| Shopify Markets | New market **Australia** (gid://shopify/Market/41095332079, handle `au`), active, base currency AUD, local currencies + rounding on. Price inclusions left default (no GST collection; under the A$75k threshold). | Admin API read-back |
+| Shopify shipping (General profile) | New zone **Australia** (AU, all states): Standard US$8, Standard free at US$70 or more. Same as the US zone. Shopify converts to AUD. | Admin API read-back |
+| Shopify shipping policy | "United States only" → "United States and Australia"; delivery line covers both; free-shipping line now "US$70 or more (for Australian orders, the same amount in Australian dollars)"; tracking "to the US" → "to you"; date 28 Oct. Before/after HTML: `reports/redesign/shipping_policy_{before,after}_2026-10-28.html`. API lacks `write_legal_policies`, so edited in admin (Settings > Policies). | Live page fetched |
+| Merchant Center XXX shipping | The Shopify sync created AU policies (flat A$11.37; price-based) at 7–13 days and **reset the US price-based policy to 4–5 days with the "No shipping below $70" conflict** (both fixed on 10-27, reverted by the sync after the AU zone was added). Fixed all three: handling 2–5 + transit 7–15 = **9–20 business days**, cutoff Eastern; US price-based "no shipping below" unticked again; AU price-based: free from A$99.50, A$11.37 below. US flat $8 policy unchanged (10–21 days). | MC save confirmations |
+| Merchant Center returns | New **Standard for Australia**: refund-policy URL, returns accepted, no exchanges, new only, 7 days, by mail, customer pays label, no restocking fee. Pending Google review (up to 10 days). | MC list |
+| Merchant Center products | The feed grew from 1.59K to 3.17K items (the AU copies of the catalog); all still "Limited / Available soon". | MC overview |
+| Google Ads Performance Max-1 | Locations: United States → **United States + Australia** (presence). Still **paused**, $15/day shared. | Settings summary |
+
+Not done / follow-ups:
+- **Watch:** every Shopify shipping change re-syncs and can overwrite Merchant Center delivery times. Re-check
+  MC shipping after any Shopify shipping edit (or turn off the app's "Shipping information" sync and manage MC by hand).
+- Real EPROLO shipping cost to Australia (to check margins at US$8 / free at US$70).
+- Theme copy: the announcement bar and the product page "Shipping" block still say US-only/$70 wording. Live theme
+  writes are blocked for the connector, so this needs an edit in the theme editor (owner, or Claude with approval).
+- Seasons: Australia is heading into summer, so winter knits/boots won't sell there now.
+- Hub profit model and dashboard assume USD/US shipping.
