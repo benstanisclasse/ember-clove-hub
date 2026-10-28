@@ -30,6 +30,16 @@
     <h2 class="es-h2">Content generation cost</h2>
     <p class="es-note" id="ops-cost-note"></p>
     <div class="es-chart" id="ops-cost"></div>
+    <h3 class="es-h2" style="margin-top:6px">Cost ledger by provider</h3>
+    <p class="es-note">Real dollar charges only: Ember Studio video spend (exact) plus anything recorded in
+      <code>data/costs/generation_costs.csv</code> (date, provider, kind, usd, note). Tools paid in credits are not converted to dollars.</p>
+    <div class="es-tablewrap"><table class="es-table" id="ops-ledger"></table></div>
+  </section>
+
+  <section class="es-card">
+    <h2 class="es-h2">Ad budgets</h2>
+    <p class="es-note">Display and alerts only; the dashboard never changes a campaign or budget. Set them in <code>config/hub.json</code> → budgets.</p>
+    <dl class="ops-kv" id="ops-budgets"></dl>
   </section>
 
   <section class="es-card">
@@ -64,7 +74,7 @@
     const day = cap('per day'), week = cap('per week');
     document.getElementById('ops-cost-note').textContent = `Ember Studio video generation per day (total ${usd(d3.sum(sp, r => num(r.usd) || 0))}). `
       + (day == null && week == null ? 'No daily or weekly cap set (owner choice, 10/26).' : `Caps: ${day != null ? usd(day) + '/day' : 'no daily'}, ${week != null ? usd(week) + '/week' : 'no weekly'}.`)
-      + ' Image generation and other AI tools are not tracked here yet.';
+      + ' Other dollar costs go in the ledger below.';
     bars(document.getElementById('ops-cost'), sp, {x: 'date', y: r => num(r.usd) || 0, yfmt: d3.format('$,.0f'), ref: day || 0,
       color: r => day != null && num(r.usd) > day ? 'var(--cds-chart-status-critical)' : 'var(--ch-facebook)',
       lines: r => [`Spend: ${usd(num(r.usd))}`, `Videos: ${fmt(num(r.videos) || 0)}`], empty: 'Nothing spent yet.'});
@@ -73,6 +83,23 @@
     kv('ops-settings', [['Reporting time zone', 'America/New_York (Eastern)'], ['Generation caps', day == null && week == null ? 'No cap (owner choice, 10/26)' : 'set in studio/bible/rules.yaml'],
       ['Planning cost per order', cpa ? `${usd(num(cpa))} (planning figure, not measured)` : '—'], ['Bot-traffic flag', '≥ 100 visits, ≥ 3× nearby median, < 1% to cart'],
       ['Store sync', 'every 15 min, last 90 days re-read'], ['Ads sync', 'every 3 h, last 7 days re-read'], ['Dashboard password', 'off (owner choice)']]);
+
+    const led = rows('cost_ledger');
+    const byProv = d3.rollups(led, v => ({usd: d3.sum(v, r => num(r.usd) || 0), items: d3.sum(v, r => num(r.items) || 0),
+      first: d3.min(v, r => r.day), last: d3.max(v, r => r.day)}), r => r.provider, r => r.kind).flatMap(([p, ks]) => ks.map(([k, x]) => ({provider: p, kind: k, ...x})));
+    table(document.getElementById('ops-ledger'), byProv, [{k: 'provider', label: 'Provider'}, {k: 'kind', label: 'Kind'},
+      {k: 'items', label: 'Items', n: 1, f: v => fmt(v)}, {k: 'usd', label: 'Spend', n: 1, f: v => usd(v)},
+      {k: 'first', label: 'First'}, {k: 'last', label: 'Last'}], {sortKey: 'usd', empty: 'No dollar costs recorded yet.',
+      total: byProv.length ? {provider: 'Total', kind: '', items: d3.sum(byProv, r => r.items), usd: d3.sum(byProv, r => r.usd), first: '', last: ''} : null});
+
+    const s = rows('profit_summary')[0] || {}, b = s.budgets || {};
+    const money = v => v == null || v === '' ? 'not set' : usd(num(v));
+    const committed = s.committed_daily_budgets || [];
+    kv('ops-budgets', [['Daily ad budget', money(b.daily_ad_budget)], ['Weekly ad budget', money(b.weekly_ad_budget)],
+      ['Monthly ad budget', money(b.monthly_ad_budget)], ['Target cost per order', `${money(b.target_cpa)} (planning figure)`],
+      ['Target profit per order', money(b.target_profit_per_order)],
+      ['Live campaign budgets', committed.length ? committed.map(x => `${x.campaign} (${x.platform}) ${usd(num(x.daily_budget))}/day`).join('; ') : 'none'],
+      ['Committed per day', committed.length ? `${usd(d3.sum(committed, x => num(x.daily_budget) || 0))}/day ≈ ${usd(30 * d3.sum(committed, x => num(x.daily_budget) || 0))}/month` : '—']]);
   }
   dash.onData(draw);
 })();

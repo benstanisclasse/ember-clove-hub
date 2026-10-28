@@ -151,5 +151,14 @@
     "profile_id": "XXX",
     "facebook_account_id": "XXX",
     "facebook_page": "Ember & Clove"
+  },
+  "budgets": {
+    "_note": "Display and alerts only (Dashboard Phase F); nothing changes campaigns. null = no budget set. target_cpa is the planning figure, not measured.",
+    "target_cpa": 20.0,
+    "target_profit_per_order": 10.0,
+    "daily_ad_budget": null,
+    "weekly_ad_budget": null,
+    "monthly_ad_budget": null,
+    "per_platform_daily": {}
   }
 }

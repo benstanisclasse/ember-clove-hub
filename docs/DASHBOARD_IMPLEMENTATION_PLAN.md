@@ -267,3 +267,39 @@ drill-down, and the three lenses (platform-claimed, Shopify-attributed, blended)
 Advertising page tree and lenses, new alerts, no console errors.
 
 **Next:** F (profitability engine — can be built now and lights up with the first orders), then H, then G.
+
+---
+
+## Phase F report (2026-10-28, owner: "Yes, add the final URL suffix ... to the Microsoft PMax campaign, then continue with Phase F.")
+
+**Before F:** Microsoft PMax "PMax Ember & Clove" got the approved Final URL suffix
+`utm_source=microsoft&utm_medium=paid_search&utm_campaign={CampaignId}` (Microsoft Advertising UI, verified through the
+connector; nothing else changed).
+
+**Implemented**
+- `scripts/studio/profit.py` (runs inside every Shopify sync, read-only): per-order economics — revenue (merchandise
+  after discounts + shipping charged − refunds), product cost (variant unit cost), EPROLO shipping per unit
+  (`profitability_model.ship`), card fees, 5% refund allowance for recent unrefunded orders → contribution; flags orders
+  with a missing unit cost. Per Eastern day: contribution − ad spend − content cost = profit after marketing. Products
+  sold. Break-even ROAS and allowable cost per order (contribution − target profit). With no orders, the same figures
+  come from the catalog, clearly labelled.
+- Content cost ledger (`analytics.db` `generation_costs`): Ember Studio spend (exact, zero-cost refusals left out) + any
+  real dollar charge recorded in `data/costs/generation_costs.csv`. Credits-only tools are not converted.
+- Budget settings (`config/hub.json` → `budgets`: target cost per order $20, target profit per order $10, daily/weekly/
+  monthly budgets unset): display and alerts only. Live campaign budgets read from the drill-down.
+- Pages: Store → Profitability (6 tiles, day-by-day table, products sold); Overview → "Profit after marketing" card;
+  Operations → cost ledger by provider and ad budgets. Alerts: spend over a set daily budget, campaign budgets above
+  it, planning cost per order above what keeps the target profit.
+
+**Today's numbers (estimates):** no orders; catalog average order: contribution $28.88 (49.8%), break-even ROAS 2.01×,
+allowable cost per order $18.88 — just under the $20 planning figure. Profit after marketing so far −$39.64 ($1.19 Meta
++ $38.45 content). Live campaign budgets $25.80/day (≈ $774/month if fully spent).
+
+**Tests:** new `scripts/studio/test_profit.py` (7: model match, multi-item/refund/old orders, missing cost, Eastern day,
+ledger import, report with cancelled orders, catalog fallback) — full suite **108/108 pass** (incl. the Content Studio
+session's tests). Verified live: Store, Overview and Operations pages, alerts, no console errors.
+
+**Limits:** per-unit EPROLO shipping overstates multi-item orders until real combined quotes exist; product-level ad
+spend needs product-specific campaigns; dollar costs of credit-based tools are only counted if recorded in the CSV.
+
+**Next:** H (hardening), then G (intelligence) once there is ~2 weeks of history.

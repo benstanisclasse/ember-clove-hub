@@ -97,6 +97,23 @@
     </div>
   </section>
 
+  <section class="es-sec" id="profit">
+    <div class="es-card">
+      <h2 class="es-h2">Profitability</h2>
+      <p class="es-note" id="pf-basis"></p>
+      <div class="es-tiles" id="pf-tiles"></div>
+      <h3 class="es-h2" style="margin-top:6px">Day by day</h3>
+      <p class="es-note">Contribution = what orders leave after product, supplier shipping, card fees and a 5% refund allowance.
+        Profit after marketing also subtracts ad spend (all platforms) and content generation cost. All estimates.</p>
+      <div class="es-tablewrap"><table class="es-table" id="pf-daily"><thead><tr><th>Day</th><th class="n">Orders</th><th class="n">Revenue</th>
+        <th class="n">Product + shipping</th><th class="n">Fees + refunds</th><th class="n">Contribution</th><th class="n">Ad spend</th>
+        <th class="n">Content</th><th class="n">Profit after marketing</th></tr></thead><tbody></tbody></table></div>
+      <h3 class="es-h2" style="margin-top:6px">Products sold</h3>
+      <div class="es-tablewrap"><table class="es-table" id="pf-products"><thead><tr><th>Product</th><th class="n">Units</th>
+        <th class="n">Net sales</th><th class="n">Product cost</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+
   <section class="es-sec">
     <div class="es-card">
       <h2 class="es-h2">Product economics</h2>
@@ -263,6 +280,54 @@ function draw() {
   }), Object.assign(document.createElement('li'), {className: 'es-note',
     textContent: `${day(rec.from)} – ${day(rec.to)}, checked ${new Date(rec.checked_at).toLocaleString()}`}));
   drawProducts();
+  drawProfit();
+}
+
+// Phase F: profitability for the selected period (estimates; catalog basis until the first orders).
+function drawProfit() {
+  const s = rows('profit_summary')[0], tiles = document.getElementById('pf-tiles');
+  const tile = (label, value, sub, cls) => { const t = document.createElement('div'); t.className = 'es-tile';
+    t.innerHTML = '<span class="es-label"></span><span class="es-big"></span><span class="es-sub"></span>';
+    t.children[0].textContent = label; t.children[1].textContent = value; t.children[2].textContent = sub || '';
+    if (cls) t.children[1].classList.add(cls); return t; };
+  if (!s) { tiles.replaceChildren(tile('Profitability', '—', status('profit_summary') === 'loading' ? 'Loading…' : 'Not connected yet')); return; }
+  const daily = rows('profit_daily');
+  const last = daily.length ? daily[daily.length - 1].date : null;
+  const from = last ? d3.utcFormat('%Y-%m-%d')(new Date(new Date(last + 'T00:00:00Z').getTime() - (range - 1) * 864e5)) : null;
+  const sel = daily.filter(r => from && r.date >= from);
+  const S = k => d3.sum(sel, r => num(r[k]) || 0);
+  const orders = S('orders'), rev = S('revenue'), contrib = S('contribution'), spend = S('ad_spend'), content = S('content_cost');
+  const after = contrib - spend - content, budgets = s.budgets || {}, cat = s.catalog || {};
+  const committed = d3.sum(s.committed_daily_budgets || [], b => num(b.daily_budget) || 0);
+  document.getElementById('pf-basis').textContent = orders
+    ? `${fmt(orders)} orders in the last ${range} days. Estimates from Shopify orders and unit costs${s.cost_complete ? '' : ' (some items have no unit cost on record)'}.`
+    : `No orders yet, so per-order figures come from the catalog: the average of ${cat.products || 0} products, one item per order. They switch to real orders automatically.`;
+  const brk = orders && contrib > 0 ? rev / contrib : num(cat.breakeven_roas);
+  const perOrder = orders ? contrib / orders : num(cat.avg_contribution);
+  const allowable = perOrder == null ? null : perOrder - (num(budgets.target_profit_per_order) || 0);
+  tiles.replaceChildren(
+    tile('Contribution', orders ? usd(contrib) : '—', orders ? `${pct(rev ? contrib / rev : null)} of revenue` : 'needs orders'),
+    tile('Profit after marketing', usd(after), `contribution − ${usd(spend)} ads − ${usd(content)} content`, after < 0 ? 'st-bad' : null),
+    tile('Contribution per order', usd(perOrder), orders ? 'from orders' : 'catalog average'),
+    tile('Break-even ROAS', brk ? d3.format('.2f')(brk) + '×' : '—', 'ads must return this to break even'),
+    tile('Allowable cost per order', usd(allowable), `keeps ${usd(num(budgets.target_profit_per_order))} profit; planning figure ${usd(num(budgets.target_cpa))}`,
+      allowable != null && num(budgets.target_cpa) > allowable ? 'st-warn' : null),
+    tile('Ad budgets committed', committed ? `${usd(committed)}/day` : '—', (s.committed_daily_budgets || []).map(b => `${b.platform} ${usd(num(b.daily_budget))}`).join(' + ') || 'no live campaign budgets'));
+  const body = document.querySelector('#pf-daily tbody');
+  body.replaceChildren(...sel.slice().reverse().filter(r => num(r.orders) || num(r.ad_spend) || num(r.content_cost)).map(r => {
+    const tr = document.createElement('tr');
+    [day(r.date), fmt(num(r.orders)), usd(num(r.revenue)), usd(num(r.cogs)), usd(num(r.fees_refunds)), usd(num(r.contribution)),
+     usd(num(r.ad_spend)), usd(num(r.content_cost)), usd(num(r.profit_after_marketing))].forEach((v, i) => {
+      const td = document.createElement('td'); if (i) td.className = 'n'; td.textContent = v;
+      if (i === 8 && num(r.profit_after_marketing) < 0) td.classList.add('neg'); tr.append(td); });
+    return tr;
+  }));
+  if (!body.children.length) body.innerHTML = '<tr><td colspan="9" class="es-empty">No orders, ad spend or content cost in this period.</td></tr>';
+  const pb = document.querySelector('#pf-products tbody'), prods = rows('profit_products');
+  pb.replaceChildren(...prods.map(p => { const tr = document.createElement('tr');
+    [p.title, fmt(num(p.units)), usd(num(p.net_sales)), usd(num(p.cogs))].forEach((v, i) => { const td = document.createElement('td');
+      if (i) td.className = 'n'; td.textContent = v; tr.append(td); }); return tr; }));
+  if (!prods.length) pb.innerHTML = '<tr><td colspan="4" class="es-empty">No products sold yet.</td></tr>';
 }
 
 document.getElementById('exbot').addEventListener('change', draw);

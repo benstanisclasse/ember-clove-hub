@@ -97,8 +97,14 @@
            tip: 'Latest follower counts on TikTok and the Facebook Page, compared with the end of the previous period.'}),
       kpi({label: 'Content cost', value: c.gen, prev: p.gen, format: usd, invert: true, spark: series(rows('spend'), 'usd', P.cur),
            source: 'Ember Studio', job: 'tiktok', sub: 'No cap set (owner choice)', tip: 'AI video generation spend recorded by Ember Studio. Other AI spend is not tracked yet.'}),
-      kpi({label: 'Contribution profit', source: 'estimate', state: c.orders ? 'Coming in Phase F' : 'Needs orders first',
-           tip: 'Revenue minus product, shipping, fees, refunds and ad spend. Built once orders exist (Phase F).'}),
+      (() => {  // Phase F: contribution after ads and content (estimate); needs orders
+        const pd = rows('profit_daily'), s = k => sumIn(pd, k, P.cur), sp = k => sumIn(pd, k, P.prev);
+        const v = r => r('contribution') == null ? null : r('contribution') - (r('ad_spend') || 0) - (r('content_cost') || 0);
+        return kpi({label: 'Profit after marketing', value: v(s), prev: v(sp), format: usd, spark: series(pd, 'profit_after_marketing', P.cur),
+          source: 'estimate', job: 'shopify', state: status('profit_daily') !== 'ok' ? 'Not connected' : null,
+          sub: c.orders ? null : 'No orders yet: ad and content spend only',
+          tip: 'Order contribution (after product, supplier shipping, fees, refund allowance) minus ad spend and content cost. Estimates; see Store → Profitability.'});
+      })(),
     ];
     document.getElementById('ov-kpis').replaceChildren(...cards);
 

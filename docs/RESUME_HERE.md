@@ -2,7 +2,7 @@
 
 Two development programs run side by side. Each has its own documents in `docs/`.
 
-## 1. Dashboard 2.0 ("Marketing Intelligence & Operations Dashboard 2.0" master prompt) — Phase E done 2026-10-28; next F
+## 1. Dashboard 2.0 ("Marketing Intelligence & Operations Dashboard 2.0" master prompt) — Phase F done 2026-10-28; next H, then G
 
 | Phase | Status | Report |
 |---|---|---|
@@ -11,11 +11,11 @@ Two development programs run side by side. Each has its own documents in `docs/`
 | C Shopify (read-only app, sync, Store page, product economics, bot flag, reconciliation) | done | "Phase C report" |
 | D Design system, six-section sidebar, Overview, Ads/Intelligence/Ops pages, calendar views | done | "Phase D report" |
 | E Attribution (tracking convention, store attribution, campaign drill-down, three lenses) | done | "Phase E report" |
-| **F Profitability** | **next** (engine can be built before orders) | |
+| F Profitability (profit engine, cost ledger, budgets) | done | "Phase F report" |
 | G Intelligence | after ~2 weeks of history | |
-| H Hardening | last | |
+| **H Hardening** | **next** | |
 
-To resume: "Continue Dashboard 2.0 with Phase F." Phase E = one UTM convention for new links, launch-day check that
+To resume: "Continue Dashboard 2.0 with Phase H." Phase E = one UTM convention for new links, launch-day check that
 TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group → ad drill-down, three lenses
 (platform-claimed / Shopify-attributed / blended). Meta began delivering on 10/27 ($0.44, 16 impressions).
 

@@ -27,7 +27,7 @@ import attribution  # noqa: E402  (channel mapping and tracking-tag checks)
 import pricing_study  # noqa: E402  (CPA planning figure and the per-order 'kept' model used for prices)
 import profitability_model  # noqa: E402  (EPROLO shipping and contribution before ads)
 import shopify_api  # noqa: E402
-from studio import analytics  # noqa: E402
+from studio import analytics, profit  # noqa: E402
 
 DASH = analytics.DASH
 HISTORY_DAYS = 90       # sales and sessions re-read each run (Shopify revises recent days: refunds, late sessions)
@@ -396,12 +396,14 @@ def sync(out=DASH, db_path=None):
         rec = run_reconciliation(con, a, b, rows, out)
         attr = attribution_report(con, a)
         (out / "store_attribution.json").write_text(json.dumps(attr, indent=1), encoding="utf-8")
+        profit.import_generation_costs(con)  # Phase F: content cost ledger + profitability files
+        profit_lines = profit.report(con, out)
     finally:
         con.close()
     flagged = sum(r["bot_flag"] for r in rows)
     return [f"store days/sources {n_store}", f"orders {n_orders}", f"products+variants {n_catalog}",
             f"products priced {n_prod}", f"bot-flagged days {flagged}",
-            f"reconciliation {'OK' if rec['ok'] else 'MISMATCH'}", f"tag issues {len(attr['tag_issues'])}"]
+            f"reconciliation {'OK' if rec['ok'] else 'MISMATCH'}", f"tag issues {len(attr['tag_issues'])}", *profit_lines]
 
 
 if __name__ == "__main__":

@@ -219,6 +219,24 @@ window.ui = (() => {
       && !/Like Page/i.test(e.url_tags || '')).forEach(e => out.push({sev: 'warn', title: `${e.name}: links carry no tracking tags`,
       why: 'Store visits and orders from this campaign will look like ordinary search or direct traffic.', ev: e.url_tags,
       act: 'Add a final URL suffix with utm_source/utm_medium/utm_campaign (a change to a live campaign: needs your OK).', href: '/ads'}));
+    // Phase F: budgets are display + alerts only
+    const ps = rows('profit_summary')[0];
+    if (ps) {
+      const b = ps.budgets || {}, committed = (ps.committed_daily_budgets || []).reduce((t, x) => t + (num(x.daily_budget) || 0), 0);
+      const today = todayET(), spentToday = sumIn(rows('ads_daily'), 'spend', [today, today]) || 0;
+      if (num(b.daily_ad_budget) != null && spentToday > num(b.daily_ad_budget)) out.push({sev: 'bad', title: 'Ad spend over the daily budget',
+        why: 'Today’s spend is above the budget you set.', ev: `${usd(spentToday)} spent vs ${usd(num(b.daily_ad_budget))} budget`,
+        act: 'Review the campaigns in each ad account (changes need your OK).', href: '/ads'});
+      if (num(b.daily_ad_budget) != null && committed > num(b.daily_ad_budget)) out.push({sev: 'warn', title: 'Campaign budgets add up to more than your daily budget',
+        why: 'If every campaign spends its budget, the total goes over.', ev: `${usd(committed)}/day committed vs ${usd(num(b.daily_ad_budget))}/day budget`,
+        act: 'Lower a campaign budget or raise the daily budget in config.', href: '/ops'});
+      const per = ps.orders ? ps.avg_contribution_per_order : (ps.catalog || {}).avg_contribution;
+      const allow = per == null ? null : per - (num(b.target_profit_per_order) || 0);
+      if (allow != null && num(b.target_cpa) > allow) out.push({sev: 'info', title: 'Planning cost per order is above what keeps your target profit',
+        why: `At ${usd(num(b.target_cpa))} per order an average order keeps less than ${usd(num(b.target_profit_per_order))}.`,
+        ev: `average contribution ${usd(per)} (${ps.orders ? 'orders' : 'catalog estimate'}) → allowable ${usd(allow)}`,
+        act: 'Use the allowable figure as the cost-per-order ceiling when judging ads.', href: '/store'});
+    }
     return out;
   }
 
