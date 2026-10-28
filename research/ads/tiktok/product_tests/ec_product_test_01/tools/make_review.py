@@ -71,6 +71,7 @@ def overlay(src, headline):
     return img
 
 
+prev = {m["ad_name"]: m for m in json.load(open(T / "prototypes_manifest.json", encoding="utf-8"))}     if (T / "prototypes_manifest.json").exists() else {}
 manifest = []
 for r in rows:
     key = f"{r['product_id']}_{r['concept'][0]}"
@@ -78,11 +79,17 @@ for r in rows:
     if not src.exists():
         print("missing", key)
         continue
-    out = OUT / f"{r['ad_name']}_hero_v1.jpg"
-    overlay(src, r["slide1_headline"]).save(out, quality=92)
+    p0 = prev.get(r["ad_name"], {})
+    version = p0.get("version", 1)
+    img = overlay(src, r["slide1_headline"])
+    if p0 and (p0.get("headline") != r["slide1_headline"] or p0.get("raw_sha256") != sha(src)):
+        version += 1  # changed text or picture: new version, earlier approval no longer applies
+    out = OUT / f"{r['ad_name']}_hero_v{version}.jpg"
+    if not out.exists() or version != p0.get("version"):
+        img.save(out, quality=92)
     manifest.append({"ad_name": r["ad_name"], "experiment_id": r["experiment_id"], "product_id": r["product_id"],
                      "concept": r["concept"], "raw_image": str(src).replace("\\", "/"), "raw_sha256": sha(src),
-                     "prototype": str(out).replace("\\", "/"), "prototype_sha256": sha(out), "version": 1,
+                     "prototype": str(out).replace("\\", "/"), "prototype_sha256": sha(out), "version": version,
                      "headline": r["slide1_headline"], "caption": r["caption"], "status": "awaiting_review"})
 
 # product contact sheets: 3 concepts side by side with hypothesis and copy
