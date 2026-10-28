@@ -197,3 +197,67 @@ sessions, AI-disclosure check, link content id). Full suite 121/121.
 
 **Next: Phase D** (production quality: Facebook AI-picture workflow in the database, shared rule module, product
 availability at publish, media-bound approvals).
+
+## Phase D report (2026-10-28, commit 382a7ad)
+
+Owner: "Yes, start Content Studio Phase D: Facebook AI-picture workflow in the database, shared rule module, product
+availability at publish, media-bound approvals." (Roadmap items 1–4; items 5–7 below are still open.)
+
+**Built**
+- **Shared rule module** `scripts/studio/checks.py`, used by both channels. Text rules are the bible's
+  `banned_phrases`/`banned_regex` (read as they are, so changing them still needs a bible approval) plus the Facebook
+  caption patterns that lived in `facebook_photos.py`. Every finding has a severity:
+  - critical (blocks, never overridable): price, delivery, urgency, testimonial wording, missing #aigenerated on
+    AI media, product inactive/out of stock, unapproved/unbound/changed media or caption;
+  - high (blocks until the owner accepts it): unsupported claims ("warm", "wool"...), other banned phrases, product
+    not found in the store data;
+  - medium/low: shown only (e.g. availability data over 26 h old, a link without the content id).
+  TikTok scripts keep their exact old checks and messages; captions are matched at word starts with links removed
+  (a product handle in a URL never trips a rule). `python -I scripts/studio/checks.py text "..."` checks any text.
+- **Owner overrides**: `checks.py override CONTENT_ID --check NAME --quote "..."`, owner only, high findings only,
+  bound to the exact file and caption sha256 (a new file or caption needs a new override).
+- **Media-bound approvals (TikTok)**: `cli.py approve` stores the video's sha256; `schedule` runs the caption rules and
+  stores the caption's sha256; publishing re-hashes both and refuses a changed video or caption, a rule failure or an
+  unavailable store piece ("EW-... held: [critical] media_changed: ..."). `cli.py bind-approvals` bound the 11
+  approvals given before today, each only because the file's mtime is earlier than the approval (none held).
+- **Product availability**: from the synced Shopify data (`analytics.db products/variants`): ACTIVE and stock on at
+  least one variant; wardrobe pieces are looked up by product gid. Checked right before every TikTok send, every
+  Facebook send (plan-file `publish` and `fb_ai schedule`), and on every content sync for all upcoming items, which
+  are flagged on the dashboard (Checks column, drawer, quality notice) and never changed or cancelled automatically.
+  Today: 21 upcoming items checked, 0 flagged.
+- **Facebook AI-picture workflow in the database** `scripts/studio/fb_ai.py` (tables `fb_ai_posts` + content_items;
+  template `studio/templates/fb_ai_picture.j2` = the style text used on 10-28, versioned by its hash):
+  plan → (scene) → generate → review sheet → fidelity verdict → QA → approve → schedule → status sync. Each step is a
+  content_event; the generation job is recorded (Phase C); the fidelity verdict, QA findings and approval are bound to
+  the picture's sha256; a failed picture is held until a new one is generated; scheduling uploads once and uses the
+  idempotency key `fbai-<content id>`. Approval: Claude approves only under the owner's standing instruction for
+  Facebook AI pictures ("i dont need to approve every image i approve do it", 2026-10-27) after its own fidelity
+  check; otherwise the owner approves with `--actor owner`. `facebook_photos.py sync` (dashboard job) refreshes the
+  PostZen status of these posts and adds them to the Facebook schedule. Supplier-photo weeks stay in plan files.
+- **Dashboard (Content Studio)**: queue "Checks" column (held: which checks / notes / clear), "Needs you" includes held
+  items, drawer shows the current findings and whether the approval is bound to the exact file and caption; new
+  workflow state labels.
+
+**Acceptance**
+- No Facebook post needs manual JSON editing: AI-picture weeks are made and sent entirely through `fb_ai.py`.
+- A changed video or caption cannot publish under an old approval: tested for TikTok (video and caption) and for
+  Facebook AI pictures (picture and caption).
+- An out-of-stock or inactive product blocks its post with a clear message: tested in `fb_ai schedule`, plan-file
+  `publish` and TikTok publishing; upcoming posts are flagged.
+
+**Tests:** 23 new (rules and severities, script messages unchanged, availability, binding, overrides, upcoming flags,
+plan-file refusal, the whole AI-picture flow with fake Higgsfield and PostZen, changed picture/caption, out of stock,
+status refresh, TikTok approve/schedule/publish binding, bind-approvals). Full suite 151/151 (with the Dashboard
+session's hardening tests).
+
+**Not done / limits**
+- No real AI-picture week has been run through `fb_ai.py` yet (it generates paid images and schedules public posts);
+  the 10-28 week was already sent the old way. The next AI week (from 2026-11-04) is the first real run.
+- The fidelity check is Claude's judgement recorded with the file's hash; a vision-model comparison can be added later
+  as advice, measured against these verdicts.
+- Facebook posts sent before Phase B carry plan-level approvals without hashes; they are shown as "approved before
+  approvals named the file".
+- Roadmap Phase D items 5–7 remain: template/prompt-style hashing inside the bible approval and hashed reference images,
+  Facebook outfit compatibility rules and rotating caption formats, the character references library.
+
+**Next:** finish Phase D items 5–7, or move to Phase E (creative experimentation) once ~2 weeks of tagged content exist.
