@@ -138,7 +138,7 @@
       <div class="es-tablewrap"><table class="es-table" id="tt-vtable"><thead><tr></tr></thead><tbody></tbody></table></div>
     </div>
     <div class="es-card">
-      <h3 class="es-h2">First week, per video</h3><p class="es-note">Total views at the end of each day after a video went live (Day 1 = its first day), newest video first. One row per video, so you can compare how fast each one takes off.</p>
+      <h3 class="es-h2">First week, per video</h3><p class="es-note">Total views at the end of each day after a video went live (Day 1 = its first day), newest video first. One row per video, so you can compare how fast each one takes off. Days are UTC, as PostZen reports them.</p>
       <p class="es-empty" id="tt-tempty" hidden>Nothing yet: a video gets a row once it is live.</p>
       <div class="es-tablewrap"><table class="es-table" id="tt-ttable"><thead><tr></tr></thead><tbody></tbody></table></div>
     </div>
@@ -181,9 +181,11 @@ const big = v => v == null ? '—' : v >= 10000 ? d3.format('.3~s')(v) : fmt(v);
 const day = s => d3.utcFormat('%b %-d')(new Date(s + 'T00:00:00Z'));
 const set = (id, v) => { document.getElementById(id).textContent = v; };
 
-function failed(box) {
+function failed(box, d) {
   box.replaceChildren();
-  const p = document.createElement('p'); p.className = 'es-empty'; p.textContent = 'Failed to load'; box.append(p);
+  // a source that has never produced its file is not connected yet, which is different from a broken load
+  const p = document.createElement('p'); p.className = 'es-empty';
+  p.textContent = d && d.message === 'missing' ? 'Not connected yet' : 'Failed to load'; box.append(p);
 }
 
 function tooltip(box) {
@@ -194,7 +196,7 @@ function tooltip(box) {
 
 function bars(boxId, d, xKey, yKey, label, empty, color) {
   const box = document.getElementById(boxId);
-  if (d.status === 'error') return failed(box);
+  if (d.status === 'error') return failed(box, d);
   box.replaceChildren();
   if (d.status !== 'ok') return;
   const rows = d.data.filter(r => num(r[yKey]) != null);
@@ -228,7 +230,7 @@ function bars(boxId, d, xKey, yKey, label, empty, color) {
 
 function line(boxId, d, empty, color) {
   const box = document.getElementById(boxId);
-  if (d.status === 'error') return failed(box);
+  if (d.status === 'error') return failed(box, d);
   box.replaceChildren();
   if (d.status !== 'ok') return;
   if (!d.data.length) { const e = document.createElement('p'); e.className = 'es-empty'; e.textContent = empty; box.append(e); return; }

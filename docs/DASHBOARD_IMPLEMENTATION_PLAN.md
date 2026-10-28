@@ -107,3 +107,40 @@ any database migration.
 4. Generation caps: keep **No cap** (display fix only) or set limits.
 5. Dashboard password on the home network: yes/no.
 6. Bot/test traffic: flag and exclude flagged days from conversion KPIs (raw kept), yes/no.
+
+---
+
+## Phase B report (2026-10-27, approved by owner: "Approved: order B, C, D, E ... Start Phase B.")
+
+**Implemented**
+- B1 Local git repository (3+ commits), `.gitignore` excludes media, raw exports, databases, backups, logs, secrets;
+  line endings kept as-is (bible approvals are content-hash locked). 315 files tracked, none containing keys.
+- B2 `scripts/backup_hub.py` + Windows task "Ember Hub Nightly Backup" (02:30, S4U, test run result 0). Daily snapshot
+  ≈ 5 MB (keep 14) + append-only media mirror (268 MB first run). Restore drill: backup row counts = live.
+- B3 Honest states: weekly/daily cap read "No … cap set (owner choice, 10/26)" instead of $0.00; spend bars no longer
+  turn red against a non-existent cap; missing sources say "Not connected yet"; stale data marked "(stale)" and dimmed;
+  UTC-bucketed PostZen days labelled.
+- B4 Sync jobs isolated (TikTok, Facebook, History) and recorded in `sync_runs`; ads refreshes recorded as
+  `ads:meta|tiktok|microsoft`; health dots in every page's top bar with hover details; `/health` lists jobs;
+  `logs/dashboard.log` (rotating 1 MB × 5).
+- B5 `studio/analytics.db`: `post_snapshots` (append-only per sync), `account_daily`, `ad_daily` (+ `ad_daily_latest`).
+- B6 `analytics.local_day()` / `day_bounds_utc()` (America/New_York, DST-correct).
+- B7 d3 7.8.5 served from `studio/dashboard/static/` (checksum identical on jsdelivr and unpkg).
+- B8 `scripts/studio/test_dashboard.py` (11 tests): DST days, job health, snapshots, followers, ad revisions, ads merge,
+  pages, `/data` shape, static path-traversal. **49/49 tests pass.**
+
+**Files changed:** `.gitignore`, `CLAUDE.md`, `scripts/backup_hub.py` (new), `scripts/studio/analytics.py` (new),
+`scripts/studio/test_dashboard.py` (new), `scripts/studio/dashboard_server.py`, `scripts/ads_snapshot.py`,
+`studio/dashboard/index.html`, `studio/dashboard/metrics.html`, `studio/dashboard/static/d3.min.js` (new).
+
+**Database changes:** new `studio/analytics.db` only; `studio/studio.db` untouched (still has its unused `metrics` table).
+
+**Verified live:** server restarted; all 6 jobs green; both pages render with local d3, no console errors.
+
+**Known limitations / carried forward**
+- History starts now: no back-filled snapshots before 2026-10-27 21:02 ET (by design).
+- PostZen daily totals remain UTC-bucketed (labelled, not re-bucketed); re-bucketing needs per-post timestamps (Phase D).
+- Bot-traffic flagging needs Shopify sessions → Phase C.
+- Generation spend still only covers Studio video jobs (Phase F ledger).
+
+**Next: Phase C (Shopify).** Needs the owner to create the read-only custom app token.

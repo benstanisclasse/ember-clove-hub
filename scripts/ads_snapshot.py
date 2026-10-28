@@ -8,7 +8,8 @@ numbers to this script, one platform at a time, as a JSON file:
 Rows for that platform and those dates replace the old ones; other platforms and older days are kept.
 
   python -I scripts/ads_snapshot.py merge <file.json>
-Writes studio/dashboard/ads_daily.csv (one row per platform per day) and ads_accounts.json (one row per platform).
+Writes studio/dashboard/ads_daily.csv (one row per platform per day) and ads_accounts.json (one row per platform),
+and appends the same days to studio/analytics.db (ad_daily, kept per fetch) with a sync_runs row "ads:<platform>".
 """
 import csv
 import datetime as dt
@@ -16,7 +17,10 @@ import json
 import sys
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent.parent / "studio" / "dashboard"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from studio import analytics  # noqa: E402
+
+OUT =Path(__file__).resolve().parent.parent / "studio" / "dashboard"
 DAILY, ACCOUNTS = OUT / "ads_daily.csv", OUT / "ads_accounts.json"
 PLATFORMS = ("meta", "tiktok", "microsoft")
 COLS = ["date", "platform", "spend", "impressions", "clicks", "purchases", "revenue"]
@@ -59,4 +63,9 @@ def merge(snap):
 if __name__ == "__main__":
     if len(sys.argv) != 3 or sys.argv[1] != "merge":
         raise SystemExit(__doc__)
-    print(merge(json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))))
+    snap = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
+    with analytics.job(f"ads:{snap.get('platform')}") as run:  # sync health + append-only history
+        print(merge(snap))
+        run["rows"] = analytics.record_ad_days(snap["platform"], snap.get("days") or [], "account",
+                                               snap.get("account_id", ""))
+        run["detail"] = snap.get("note", "")

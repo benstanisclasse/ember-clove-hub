@@ -5,27 +5,39 @@ the online dashboard's `dash` data API, reading the files `cli.py sync` and `fac
 minutes it runs both syncs itself (PostZen status, TikTok and Facebook metrics, followers; calendar and spend from
 studio.db; Facebook plans from data/facebook), so the pages stay current.
 
+Each sync job (TikTok, Facebook, history snapshots) runs on its own: one failing never skips the others, and every
+run is recorded in studio/analytics.db (sync_runs) and shown on the pages. Ads arrive from the Claude scheduled task
+through scripts/ads_snapshot.py and are recorded the same way. Server messages and tracebacks go to
+logs/dashboard.log (rotated).
+
 Read-only: GET only, no write endpoints, no keys or prompts served. Run:
-  python scripts/studio/dashboard_server.py [--port 8790] [--every-min 15]
-POSTZEN_API_KEY must be in the environment for the sync (scripts/studio/run_dashboard.ps1 sets it).
+  python scripts/studio/dashboard_server.py [--port 8790] [--every-min 15] [--no-sync]
+POSTZEN_API_KEY must be in the environment for the sync (scripts/studio/run_dashboard.cmd sets it).
 """
 import argparse
 import csv
 import json
+import logging
+import logging.handlers
+import mimetypes
+import re
 import sys
 import threading
 import time
-import traceback
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import facebook_photos  # noqa: E402
-from studio import bible, db, publishing  # noqa: E402
+from studio import analytics, bible, db, publishing  # noqa: E402
 
 OUT = publishing.OUT
+STATIC = OUT / "static"
+LOG = logging.getLogger("dashboard")
 DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_metrics", "spend", "caps",
-            "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts"]
+            "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts", "sync_health"]
+JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "snapshots": "History", "ads:meta": "Meta ads",
+              "ads:tiktok": "TikTok ads", "ads:microsoft": "Microsoft ads"}
 PAGES = {"/": ("index.html", "Ember Studio Control Room"), "/index.html": ("index.html", "Ember Studio Control Room"),
          "/metrics": ("metrics.html", "Ember & Clove Metrics")}
 STATE = {"last_sync": None, "last_error": None}
@@ -49,14 +61,16 @@ html, body { margin:0; background:var(--color-bg); color:var(--color-fg); font-f
 #dash-root { max-width:1200px; margin-inline:auto; padding-block:24px 48px;
   padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
 .lan-bar { font-size:.75rem; color:var(--color-fg-muted); margin-bottom:12px; display:flex; gap:8px; flex-wrap:wrap; }
-.lan-bar .bad { color:var(--color-bad); }
+.lan-bar .bad { color:var(--color-bad); } .lan-bar .warn { color:var(--color-warn); } .lan-bar .ok { color:var(--color-ok); }
+#lan-health { display:flex; gap:10px; flex-wrap:wrap; }
+html.lan-stale .es-big { opacity:.55; }
 .lan-nav { display:flex; gap:6px; margin-bottom:16px; }
 .lan-nav a { font-size:.8125rem; padding:4px 12px; border:1px solid var(--color-border-line); border-radius:999px;
   color:var(--color-fg); text-decoration:none; background:var(--color-panel); }
 .lan-nav a[aria-current="page"] { background:var(--color-fg); color:var(--color-bg); border-color:var(--color-fg); }
 .dash-skeleton { color:transparent !important; background:var(--color-border-line); border-radius:4px; }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script src="/static/d3.min.js"></script>
 <script>
 window.dash = (() => {
   const names = %NAMES%;
@@ -77,9 +91,25 @@ window.dash = (() => {
       names.forEach(n => ds[n] = j.datasets[n] ? {status: 'ok', data: j.datasets[n].rows, columns: j.datasets[n].columns, meta: []}
                                                : {status: 'error', data: [], columns: [], message: 'missing'});
       const bar = document.getElementById('lan-synced');
-      if (bar) bar.textContent = j.last_sync ? 'Updated ' + new Date(j.last_sync).toLocaleString() : 'Not synced yet';
+      const ageMin = j.last_sync ? (Date.now() - new Date(j.last_sync)) / 60000 : null;
+      const stale = ageMin == null || ageMin > 2.5 * j.every_min;
+      if (bar) { bar.textContent = j.last_sync ? 'Updated ' + new Date(j.last_sync).toLocaleString() + (stale ? ' (stale)' : '') : 'Not synced yet';
+                 bar.className = stale ? 'warn' : ''; }
+      document.documentElement.classList.toggle('lan-stale', stale);
       const err = document.getElementById('lan-error');
       if (err) { err.hidden = !j.last_error; err.textContent = j.last_error ? 'Last sync failed: ' + j.last_error : ''; }
+      const hl = document.getElementById('lan-health');
+      if (hl) hl.replaceChildren(...(j.health || []).map(h => {
+        // A job is late when its last success is older than its expected interval allows (ads: 3 h task).
+        const age = h.last_success ? (Date.now() - new Date(h.last_success)) / 60000 : null;
+        const late = age == null || age > (h.job.startsWith('ads:') ? 7 * 60 : 2.5 * j.every_min);
+        const s = document.createElement('span');
+        s.className = h.ok === false ? 'bad' : late ? 'warn' : 'ok';
+        s.textContent = `${h.ok === false ? '✕' : late ? '!' : '✓'} ${h.label}`;
+        s.title = `${h.label}: last success ${h.last_success ? new Date(h.last_success).toLocaleString() : 'never'}`
+          + (h.error ? ` · last error: ${h.error}` : '') + (h.rows != null ? ` · ${h.rows} rows` : '');
+        return s;
+      }));
     } catch (e) { names.forEach(n => ds[n] = {status: 'error', data: [], columns: [], message: String(e)}); }
     run();
   }
@@ -94,8 +124,8 @@ window.dash = (() => {
 })();
 </script></head><body><div id="dash-root">
 <nav class="lan-nav" aria-label="Pages">%NAV%</nav>
-<div class="lan-bar"><span id="lan-synced">Loading…</span><span>· syncs with PostZen every %EVERY% min</span>
-<span id="lan-error" class="bad" hidden></span></div>
+<div class="lan-bar"><span id="lan-synced">Loading…</span><span>· syncs with PostZen every %EVERY% min ·</span>
+<span id="lan-health" aria-label="Sync health"></span><span id="lan-error" class="bad" hidden></span></div>
 %PAGE%
 </div></body></html>"""
 
@@ -121,18 +151,48 @@ def page(path, every):
             .replace("%NAV%", nav).replace("%PAGE%", body))
 
 
+def _tiktok():
+    con = db.connect()
+    try:
+        return publishing.sync(con, bible.load())
+    finally:
+        con.close()
+
+
+JOBS = [("tiktok", _tiktok), ("facebook", lambda: facebook_photos.sync_dashboard(OUT)),
+        ("snapshots", lambda: [f"{analytics.snapshot_dashboard_files(OUT)} rows"])]
+
+
+def sync_once():
+    """Run every job independently; return the list of failures (empty when all succeeded)."""
+    failures = []
+    for name, fn in JOBS:
+        try:
+            with analytics.job(name) as run:
+                lines = fn() or []
+                run["detail"] = "; ".join(lines)
+                # each job returns summary lines like "fb_posts 3"; count the first number on each line
+                run["rows"] = sum(int(m.group()) for line in lines if (m := re.search(r"\d+", str(line))))
+        except Exception as e:  # recorded in sync_runs by analytics.job; keep serving the last good data
+            failures.append(f"{JOB_LABELS.get(name, name)}: {type(e).__name__}: {str(e)[:160]}")
+            LOG.exception("sync job %s failed", name)
+    analytics.write_health_file(OUT)
+    STATE.update(last_sync=time.strftime("%Y-%m-%dT%H:%M:%S%z"), last_error="; ".join(failures) or None)
+    LOG.info("sync done%s", f" with failures: {failures}" if failures else "")
+    return failures
+
+
 def sync_loop(every_min):
     while True:
         try:
-            con = db.connect()
-            publishing.sync(con, bible.load())
-            con.close()
-            facebook_photos.sync_dashboard(OUT)
-            STATE.update(last_sync=time.strftime("%Y-%m-%dT%H:%M:%S%z"), last_error=None)
-        except Exception as e:  # keep serving the last good data
-            STATE["last_error"] = f"{type(e).__name__}: {str(e)[:200]}"
-            traceback.print_exc()
+            sync_once()
+        except Exception:  # never let the loop die
+            LOG.exception("sync loop error")
         time.sleep(every_min * 60)
+
+
+def health_rows():
+    return [{**h, "label": JOB_LABELS.get(h["job"], h["job"])} for h in analytics.health()]
 
 
 def make_handler(every):
@@ -155,10 +215,24 @@ def make_handler(every):
                 if not last and (OUT / "synced_at.txt").exists():
                     last = (OUT / "synced_at.txt").read_text(encoding="utf-8").strip()
                 return self._send(200, json.dumps({"datasets": {n: _rows(n) for n in DATASETS}, "last_sync": last,
-                                                   "last_error": STATE["last_error"]}), "application/json")
+                                                   "last_error": STATE["last_error"], "every_min": every,
+                                                   "health": health_rows()}), "application/json")
             if path == "/health":
-                return self._send(200, json.dumps(STATE), "application/json")
+                return self._send(200, json.dumps({**STATE, "jobs": health_rows()}), "application/json")
+            if path.startswith("/static/"):
+                f = (STATIC / path[len("/static/"):]).resolve()
+                if STATIC.resolve() in f.parents and f.is_file():  # no path traversal outside static/
+                    ctype = mimetypes.guess_type(f.name)[0] or "application/octet-stream"
+                    return self._send_bytes(200, f.read_bytes(), ctype, cache=True)
             return self._send(404, "Not found", "text/plain")
+
+        def _send_bytes(self, code, data, ctype, cache=False):
+            self.send_response(code)
+            self.send_header("Content-Type", ctype)
+            self.send_header("Content-Length", str(len(data)))
+            self.send_header("Cache-Control", "max-age=86400" if cache else "no-store")
+            self.end_headers()
+            self.wfile.write(data)
 
         def log_message(self, fmt, *args):
             pass
@@ -171,11 +245,25 @@ def main():
     ap.add_argument("--host", default="0.0.0.0")
     ap.add_argument("--port", type=int, default=8790)
     ap.add_argument("--every-min", type=int, default=15)
+    ap.add_argument("--no-sync", action="store_true", help="serve the current files only (tests)")
     a = ap.parse_args()
-    threading.Thread(target=sync_loop, args=(a.every_min,), daemon=True).start()
+    setup_logging()
+    if not a.no_sync:
+        threading.Thread(target=sync_loop, args=(a.every_min,), daemon=True).start()
     srv = ThreadingHTTPServer((a.host, a.port), make_handler(a.every_min))
-    print(f"Ember Studio dashboard on http://{a.host}:{a.port} (sync every {a.every_min} min)", flush=True)
+    LOG.info("Ember Studio dashboard on http://%s:%s (sync every %s min%s)", a.host, a.port, a.every_min,
+             ", sync off" if a.no_sync else "")
     srv.serve_forever()
+
+
+def setup_logging():
+    logs = OUT.parents[1] / "logs"
+    logs.mkdir(exist_ok=True)
+    h = logging.handlers.RotatingFileHandler(logs / "dashboard.log", maxBytes=1_000_000, backupCount=5, encoding="utf-8")
+    h.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
+    LOG.addHandler(h)
+    LOG.addHandler(logging.StreamHandler())
+    LOG.setLevel(logging.INFO)
 
 
 if __name__ == "__main__":

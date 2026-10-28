@@ -15,3 +15,12 @@
   or captions. No post-production edits unless approved. Don't publish, spend or change live store settings without
   approval. Never print or store API keys; keys live in user environment variables (`config/hub.json` secrets).
 - Log every material action in `log.md`.
+
+## Code, history and backups (since 2026-10-27)
+- The Hub is a **local git repository** (no remote). After changing code, config or docs, commit with a clear message.
+  Never commit secrets; `.gitignore` keeps out media, raw exports, databases, backups and logs.
+- `studio/analytics.db` holds history (post snapshots, followers, ad days) and sync health; `studio/studio.db` stays the
+  conveyor. Reporting days are Eastern: use `studio.analytics.local_day()`.
+- Nightly backups (Windows task "Ember Hub Nightly Backup", `scripts/backup_hub.py`) go to `backups/`. Run it by hand
+  before any database migration.
+- Dashboard 2.0 plan and audit: `docs/`. Tests: `python -m pytest -q scripts/studio`.
