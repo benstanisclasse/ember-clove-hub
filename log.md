@@ -477,3 +477,7 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 
 ## 2026-10-27 ~23:20 ET — Content Studio Phase B done (owner: "Approved: build Content Studio Phase B ... Facebook link default: in the caption. AI pictures as a standard Facebook post type, each still approved by me.")
 - Unified content records + honest publish states (scripts/studio/content.py, job "content"); PostZen retries, upload once, per-send records; studio.db WAL; Facebook: link in caption default, AI pictures standard (refused without #aigenerated), per-post approval hashes, plan overwrite guard; Ready-for-TikTok list + Content queue on the Content Studio page; 27 new tests. Corrected the 10/27 slippers plan record to what was actually sent. Shopify client now retries dropped connections. Report: docs/CONTENT_STUDIO_ROADMAP.md "Phase B report". Coordinated with the parallel Dashboard session (Phase E done there, Phase F in progress); its uncommitted files left alone.
+
+## 2026-10-28 ~01:00 ET — Dashboard 2.0 Phase F done (owner: "... then continue with Phase F.")
+- Profit engine in every Shopify sync (studio/profit.py), content cost ledger, budgets (config, display/alerts only); Store Profitability section, Overview profit card, Ops ledger + budgets. 108/108 tests. Report: docs/DASHBOARD_IMPLEMENTATION_PLAN.md "Phase F report".
+- Catalog estimate: average order contribution $28.88, break-even ROAS 2.01x, allowable cost per order $18.88 (below the $20 planning figure). Profit after marketing to date -$39.64 (ads $1.19, content $38.45). Live campaign budgets $25.80/day.
