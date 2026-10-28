@@ -460,3 +460,53 @@ def test_old_approvals_are_bound_only_to_unchanged_files(con, b, tmp_path, monke
     cli.cmd_bind_approvals(con, b, argparse.Namespace(actor="claude"))  # v1 was written just now: after the approval
     assert json.loads(db.get(con, eps[0]["id"])["approval_json"]).get("asset_sha256")
     assert not json.loads(db.get(con, eps[1]["id"])["approval_json"]).get("asset_sha256")
+
+
+# --- Phase D item 5: approvals cover reference images and prompt templates ------------------------------------------
+
+def _bible_copy(tmp_path, monkeypatch):
+    import shutil
+    folder = tmp_path / "studio" / "bible"
+    shutil.copytree(bible.BIBLE, folder)
+    (folder / bible.LOCK).unlink(missing_ok=True)
+    shutil.copytree(bible.HUB / "studio" / "refs", tmp_path / "studio" / "refs")
+    shutil.copytree(bible.HUB / "assets", tmp_path / "assets", dirs_exist_ok=True,
+                    ignore=lambda d, names: [n for n in names if n.endswith((".mp4", ".mov"))])
+    shutil.copytree(bible.HUB / "studio" / "templates", tmp_path / "studio" / "templates")
+    (tmp_path / "scripts").mkdir()
+    shutil.copy2(bible.HUB / "scripts" / "prompt_style.py", tmp_path / "scripts" / "prompt_style.py")
+    monkeypatch.setattr(bible, "BIBLE", folder)
+    monkeypatch.setattr(cli, "HUB", tmp_path)
+    return folder
+
+
+def test_a_changed_reference_image_voids_the_approval(tmp_path, monkeypatch, con):
+    folder = _bible_copy(tmp_path, monkeypatch)
+    cli.cmd_bible_approve(con, None, argparse.Namespace(file="character", quote="test approval"))
+    c = bible.load(folder)["character"]
+    assert c.status == "approved" and c.assets_locked and not c.changed_assets
+    (tmp_path / "studio" / "refs" / "face_main.png").write_bytes(b"a different face")
+    c = bible.load(folder)["character"]
+    assert c.status == "draft" and c.changed_assets == ["studio/refs/face_main.png"]
+
+
+def test_changed_templates_block_production_until_approved(tmp_path, monkeypatch, con, b):
+    _bible_copy(tmp_path, monkeypatch)
+    cli.cmd_bible_approve(con, None, argparse.Namespace(file="templates", quote="the templates are fine"))
+    assert bible.template_status() == {"locked": True, "changed": []}
+    tpl = tmp_path / "studio" / "templates" / "video_prompt.j2"
+    tpl.write_text(tpl.read_text(encoding="utf-8") + "\nextra line", encoding="utf-8")
+    assert bible.template_status()["changed"] == ["studio/templates/video_prompt.j2"]
+    with pytest.raises(bible.BibleError, match="templates"):
+        bible.require_approved(b)
+
+
+def test_bible_lock_only_binds_files_older_than_the_approval(tmp_path, monkeypatch, con):
+    import os
+    folder = _bible_copy(tmp_path, monkeypatch)
+    room = next(p for p in bible.asset_paths(__import__("yaml").safe_load((folder / "world.yaml").read_text(encoding="utf-8"))))
+    os.utime(tmp_path / room, (4102444800, 4102444800))  # 2100: newer than the world approval
+    cli.cmd_bible_lock(con, bible.load(folder), argparse.Namespace())
+    lock = bible.read_lock(folder)
+    assert "character" in lock and "templates" in lock and "world" not in lock
+    assert not bible.load(folder)["world"].assets_locked

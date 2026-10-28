@@ -1,0 +1,59 @@
+{
+ "rules": {
+  "hash": "4f53cda18c2baa0c",
+  "files": {},
+  "approved_hash": "de3594761d3f2d82",
+  "at": "2026-10-27T23:53:06",
+  "quote": null,
+  "basis": "bound in Phase D to the images as approved on 2026-10-26T22:16:24 (unchanged since)"
+ },
+ "character": {
+  "hash": "77e5643db422ccc4",
+  "files": {
+   "studio/refs/face_main.png": "10bad2493c091da7de4305c5963dcb5fa9cde018bb3223f1543280fa4946653a"
+  },
+  "approved_hash": "796c1c148acd8ddc",
+  "at": "2026-10-27T23:53:06",
+  "quote": null,
+  "basis": "bound in Phase D to the images as approved on 2026-10-26T16:16:30 (unchanged since)"
+ },
+ "world": {
+  "hash": "f049cc330dc2eb8d",
+  "files": {
+   "studio/refs/rooms/living-room.png": "9884b5b03db06cea6effc35ce2bc0eeda87e681dc3611938c4c8de47ea7ed9c5",
+   "studio/refs/rooms/bedroom.png": "a9b16b8e177502a425b63148fc8af6a9bb9b34716409a98dade3166b265d8687",
+   "studio/refs/rooms/entryway.png": "a515b85b50eae37b9eb195d8be2b14f4de6056eb34ce23976518f7dc5a649b96",
+   "studio/refs/rooms/closet.png": "6c5fe99050c068cdc70908b8d37f4467cb07b07946c510d96e59e33e7f77b2af",
+   "studio/refs/rooms/front-steps.png": "ce3999c86d9e80a05dfef0243dd33236809957ab5f6d86783ec812cc2ac03193",
+   "studio/refs/rooms/sidewalk.png": "d6cfcf68a470d45c796eccfc457b69574999c84c4e934905b3d91bd291420492",
+   "studio/refs/rooms/lake-path.png": "c743a0ffcdb7dcb0242a977174294bda4176cb6b42e2d87d193010e99b2900bf",
+   "studio/refs/rooms/night-street.png": "69c773ec3b218ab70cc86948e894aae45da6e83e2487325f4516a61bd99acdba",
+   "studio/refs/rooms/club-lounge.png": "bf63e3352ee89d381707d5f47188fa2b7b7ab86ff9683385883484d679b3aa6d"
+  },
+  "approved_hash": "6ac72cde4f74fab2",
+  "at": "2026-10-27T23:53:07",
+  "quote": null,
+  "basis": "bound in Phase D to the images as approved on 2026-10-26T21:31:46 (unchanged since)"
+ },
+ "series": {
+  "hash": "4f53cda18c2baa0c",
+  "files": {},
+  "approved_hash": "979f5811e6dff29a",
+  "at": "2026-10-27T23:53:07",
+  "quote": null,
+  "basis": "bound in Phase D to the images as approved on 2026-10-26T21:31:50 (unchanged since)"
+ },
+ "templates": {
+  "hash": "c75be006afce9354",
+  "files": {
+   "studio/templates/video_prompt.j2": "5d4e3e6d8892babcfad7b9664fc5271f3d092897c590f43653fa89319b9f52f9",
+   "studio/templates/video_prompt_frame.j2": "5ccd992a86afdbf89e412abc4e7a8f3cf5fc5737f567ff71eff831c148df4ac7",
+   "studio/templates/first_frame.j2": "b7e0abedf715e787232fe511370506cdc384ffb68770d2ef668ab55d1bcfd793",
+   "scripts/prompt_style.py": "b23077349293fb4678c57620d50135a9c6484d47bbfd007713411a871fb84aa9"
+  },
+  "approved_hash": null,
+  "at": "2026-10-27T23:53:07",
+  "quote": null,
+  "basis": "bound in Phase D to the templates in use at the last bible approval (2026-10-26T22:16:24, unchanged since)"
+ }
+}

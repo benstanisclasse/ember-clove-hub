@@ -52,5 +52,6 @@
  "auto_publish_quote": "",
  "link_placement": "caption",
  "ai_pictures": true,
- "_note_phase_b": "Owner 2026-10-27: 'Facebook link default: in the caption. AI pictures as a standard Facebook post type, each still approved by me.' AI posts must carry #aigenerated (publish refuses otherwise)."
+ "_note_phase_b": "Owner 2026-10-27: 'Facebook link default: in the caption. AI pictures as a standard Facebook post type, each still approved by me.' AI posts must carry #aigenerated (publish refuses otherwise). Superseded the same day for AI pictures: owner 'i dont need to approve every image i approve do it' (Claude checks each picture).",
+ "_note_phase_d": "Content Studio Phase D (2026-10-28): captions rotate between formats (no two posts in a row with the same structure or question); outfits must pass facebook_photos.outfit_problems (no two pieces of one type, at most max_patterned patterned pieces, no formal pieces with lounge pieces). Defaults live in OUTFIT_RULES; add an 'outfit_rules' object here to override any of them."
 }

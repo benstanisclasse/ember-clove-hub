@@ -130,10 +130,10 @@ def plan_week(con, start, days, products, rules, history):
     for n, p in enumerate(posts):
         caption = p["caption"].rstrip() + "\n\n#aigenerated"
         con.execute("INSERT INTO fb_ai_posts (content_id, week, date, slot, kind, products, titles, supplier_photos, "
-                    "scene, caption, first_comment) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                    "scene, caption, first_comment, caption_format, question) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (p["content_id"], week, p["date"], p["slot"], p["kind"], json.dumps(p["products"]),
                      json.dumps(p["titles"]), json.dumps(p["photos"]), default_scene(p, types, n), caption,
-                     p["first_comment"]))
+                     p["first_comment"], p.get("caption_format"), p.get("question")))
         save(con, p["content_id"], "planned", "planned (fb_ai plan)")
     return posts
 
@@ -319,7 +319,8 @@ def schedule(con, cid, pz=None, rules=None, account=None, analytics_path=None, n
     save(con, cid, "scheduled", f"sent to PostZen for {local:%a %b %d %H:%M %Z} ({post.get('_id')})")
     history = fp.load_history()
     history.append({"date": p["date"], "slot": p["slot"], "products": json.loads(p["products"]),
-                    "postzen_post_id": post.get("_id"), "ai_picture": True, "content_id": cid})
+                    "postzen_post_id": post.get("_id"), "ai_picture": True, "content_id": cid,
+                    "caption_format": p["caption_format"], "question": p["question"]})
     content.atomic_write(fp.HISTORY, json.dumps(history, ensure_ascii=False, indent=1))
     return post
 

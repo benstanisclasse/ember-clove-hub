@@ -83,7 +83,11 @@ CREATE TABLE IF NOT EXISTS fb_ai_posts (
   content_id TEXT PRIMARY KEY, week TEXT, date TEXT, slot TEXT, kind TEXT, products TEXT, titles TEXT,
   supplier_photos TEXT, scene TEXT, prompt TEXT, prompt_hash TEXT, image_path TEXT, image_sha256 TEXT, image_url TEXT,
   caption TEXT, first_comment TEXT, fidelity_json TEXT, checks_json TEXT, approval_json TEXT, postzen_post_id TEXT,
-  status TEXT, post_url TEXT);
+  status TEXT, post_url TEXT, caption_format TEXT, question TEXT);
+-- Phase D item 7: Ember's references library (scripts/studio/character_refs.py); never changes character.yaml
+CREATE TABLE IF NOT EXISTS character_refs (
+  ref_id INTEGER PRIMARY KEY, kind TEXT, version INTEGER, path TEXT UNIQUE, sha256 TEXT, verdict TEXT,
+  in_use INTEGER DEFAULT 0, source TEXT, quote TEXT, actor TEXT, at TEXT, note TEXT);
 """
 MARKS = (("24h", 24), ("48h", 48), ("7d", 168))
 MARK_WINDOW_H = 6  # a mark uses the first snapshot taken within 6 hours after it; otherwise it stays empty
@@ -121,7 +125,7 @@ def now_utc():
 def connect(path=None):
     """studio.db with the content tables. WAL and a busy timeout let the dashboard sync and the CLI write safely."""
     con = db.connect(path or db.DB)
-    con.executescript(SCHEMA)
+    ensure_schema(con)
     return con
 
 
@@ -437,6 +441,12 @@ def template_fingerprint(name):
 
 def ensure_schema(con):
     con.executescript(SCHEMA)
+    if "sha256" not in {r[1] for r in con.execute("PRAGMA table_info(asset_refs)")}:  # Phase D: references hashed
+        con.execute("ALTER TABLE asset_refs ADD COLUMN sha256 TEXT")
+    have = {r[1] for r in con.execute("PRAGMA table_info(fb_ai_posts)")}
+    for col in ("caption_format", "question"):  # Phase D item 6: caption rotation carried into the history
+        if col not in have:
+            con.execute(f"ALTER TABLE fb_ai_posts ADD COLUMN {col} TEXT")
 
 
 def start_job(con, content_ref, kind, provider, model, settings=None, template=None, prompt_hash=None,
@@ -449,7 +459,9 @@ def start_job(con, content_ref, kind, provider, model, settings=None, template=N
         (content_ref, kind, provider, model, json.dumps(settings or {}), template,
          template_fingerprint(template) if template else None, prompt_hash, prompt_text, now_utc(), "running", note))
     for i, r in enumerate(refs):
-        con.execute("INSERT OR REPLACE INTO asset_refs VALUES (?,?,?)", (cur.lastrowid, i, str(r)))
+        local = HUB / str(r) if not str(r).startswith("http") else None  # local reference files are hashed
+        con.execute("INSERT OR REPLACE INTO asset_refs (job_id, position, ref, sha256) VALUES (?,?,?,?)",
+                    (cur.lastrowid, i, str(r), sha256_file(local) if local and local.exists() else None))
     con.commit()
     return cur.lastrowid
 
@@ -535,7 +547,7 @@ def backfill_generation(con):
             if cur.rowcount:
                 jid = cur.lastrowid
                 for i, ref in enumerate(job.get("refs") or []):
-                    con.execute("INSERT OR REPLACE INTO asset_refs VALUES (?,?,?)", (jid, i, ref))
+                    con.execute("INSERT OR REPLACE INTO asset_refs (job_id, position, ref) VALUES (?,?,?)", (jid, i, ref))
                 if png.exists():
                     aid = add_asset(con, f"IMG-{out_dir.name}/{job['key']}", "image", png, results.get(job["key"]))
                     con.execute("UPDATE generation_jobs SET asset_id = ? WHERE job_id = ?", (aid, jid))
@@ -731,6 +743,8 @@ def quality_checks(con):
     for r in con.execute("SELECT job_id, content_ref FROM generation_jobs WHERE status = 'running' AND started_at < ?",
                          ((dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=2)).strftime("%Y-%m-%dT%H:%M:%SZ"),)):
         issues.append({"severity": "medium", "check": "generation job never finished", "detail": f"job {r['job_id']} {r['content_ref']}"})
+    from studio import character_refs
+    issues += character_refs.check(con)
     for cid, found in upcoming_checks(con).items():
         issues += [{**f, "detail": f"{cid}: {f['detail']}"} for f in found if f["severity"] in ("critical", "high")]
     return issues
@@ -833,6 +847,29 @@ def write_dashboard_files(con, out=DASH):
     return len(rows)
 
 
+def write_reference_files(con, b, out=DASH):
+    """character_refs.json (the references library) and bible_locks.json (which approvals cover their images and the
+    prompt templates, and anything changed since). Returns the number of library entries."""
+    from studio import bible, character_refs
+    character_refs.sync(con)
+    refs = character_refs.rows(con)
+    atomic_write(out / "character_refs.json", json.dumps(refs, ensure_ascii=False, indent=1))
+    lock = bible.read_lock()
+    units = []
+    for name in bible.FILES:
+        m = b[name]
+        units.append({"unit": name, "status": m.status, "changed_since_approval": m.changed_since_approval,
+                      "approved_at": m.approved_at, "images_locked": m.assets_locked, "images": len((lock.get(name) or {}).get("files") or {}),
+                      "changed": m.changed_assets, "basis": (lock.get(name) or {}).get("basis")})
+    tpl = bible.template_status()
+    units.append({"unit": "templates", "status": "approved" if tpl["locked"] and not tpl["changed"] else "draft",
+                  "changed_since_approval": bool(tpl["changed"]), "approved_at": (lock.get("templates") or {}).get("at"),
+                  "images_locked": tpl["locked"], "images": len(bible.TEMPLATE_FILES), "changed": tpl["changed"],
+                  "basis": (lock.get("templates") or {}).get("basis")})
+    atomic_write(out / "bible_locks.json", json.dumps(units, ensure_ascii=False, indent=1))
+    return len(refs)
+
+
 def sync(out=DASH, b=None):
     """Mirror both channels and write the dashboard files. Returns summary lines like the other sync jobs."""
     con = connect()
@@ -846,12 +883,13 @@ def sync(out=DASH, b=None):
         n_feat = derive_features(con, b)
         n_marks = compute_marks(con)
         n_links = collect_links(con)
+        n_refs = write_reference_files(con, b, out)  # before the queue: its quality checks read the library
         n_rows = write_dashboard_files(con, out)
         states = dict(con.execute("SELECT state, COUNT(*) FROM content_items WHERE test = 0 GROUP BY state").fetchall())
     finally:
         con.close()
     return [f"tiktok items {n_tt}", f"facebook items {n_fb}", f"queue rows {n_rows}", f"backfilled jobs {n_back}",
-            f"features {n_feat}", f"marks {n_marks}", f"tracked links {n_links}",
+            f"features {n_feat}", f"marks {n_marks}", f"tracked links {n_links}", f"references {n_refs}",
             "states " + ", ".join(f"{k} {v}" for k, v in sorted(states.items()))]
 
 

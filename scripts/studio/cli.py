@@ -12,6 +12,9 @@
   python scripts/studio/cli.py posted EP --url https://...
   python scripts/studio/cli.py board                              where every episode is
   python scripts/studio/cli.py bind-approvals                     one-time (Phase D): bind older approvals to their file
+  python scripts/studio/cli.py bible-lock                         one-time (Phase D): lock approved images + templates
+  python scripts/studio/cli.py refs list | sync | add PATH --kind example --note "..." | verdict N approved --quote "..."
+  python scripts/studio/cli.py bible-approve templates --quote "..."  owner approves changed prompt templates
 
 Approvals are bound to the media (Phase D): `approve` stores the video's sha256 and `schedule` the caption's (after
 the shared caption rules in checks.py pass); publishing re-hashes both and refuses anything changed since.
@@ -36,8 +39,13 @@ HUB = Path(__file__).resolve().parents[2]
 def cmd_validate(con, b, args):
     eps = [dict(r) for r in con.execute("SELECT * FROM episodes WHERE test = 0 ORDER BY post_date, slot")]  # trials aren't posts
     errs = gates.check_calendar(eps, b)
-    draft = [n + (" (changed since approval)" if b[n].changed_since_approval else "") for n in bible.unapproved(b)]
+    draft = [n + (" (changed since approval" + (f": {', '.join(b[n].changed_assets)}" if b[n].changed_assets else "") + ")"
+                  if b[n].changed_since_approval else "") for n in bible.unapproved(b)]
+    unlocked = [n for n in bible.FILES if b[n].status == "approved" and not b[n].assets_locked]
+    tpl = bible.template_status()
     print("Bible: OK (draft: " + (", ".join(draft) or "none") + ")")
+    print("Images/templates locked to the approval: " + ("files " + ", ".join(unlocked) + " not locked yet; " if unlocked else "all approved files; ")
+          + ("templates CHANGED: " + ", ".join(tpl["changed"]) if tpl["changed"] else "templates locked" if tpl["locked"] else "templates not locked yet"))
     print("Calendar: " + ("OK" if not errs else "\n  " + "\n  ".join(errs)))
     return 1 if errs else 0
 
@@ -318,6 +326,25 @@ def cmd_bind_approvals(con, b, args):
     return 0
 
 
+def cmd_refs(con, b, args):
+    """Ember's references library (character_refs.py): records face reference versions and approved/rejected examples;
+    it never changes character.yaml."""
+    from studio import character_refs as lib
+    content.ensure_schema(con)
+    if args.action == "sync":
+        print(f"{lib.sync(con)} new entries")
+    elif args.action == "add":
+        print(f"added as candidate #{lib.add(con, args.target, args.kind, args.note, args.actor)}")
+    elif args.action == "verdict":
+        lib.verdict(con, int(args.target), args.value, args.quote, args.actor)
+        print(f"#{args.target}: {args.value}")
+    lib.sync(con)
+    for r in lib.rows(con):
+        print(f"#{r['ref_id']:<3} {r['kind']:8} {'v' + str(r['version']) if r['version'] else '  ':3} {r['verdict']:9}"
+              f"{' IN USE' if r['in_use'] else '       '} {r['path']}  ({r['source']}{'' if r['file_ok'] else '; FILE CHANGED'})")
+    return 0
+
+
 def cmd_board(con, b, args):
     rows = con.execute("SELECT id, post_date, slot, pillar, title, state, test, cost_usd FROM episodes "
                        "ORDER BY post_date, slot").fetchall()
@@ -328,7 +355,52 @@ def cmd_board(con, b, args):
     return 0
 
 
+def _lock_entry(paths, approved_hash, quote, basis):
+    return {**bible.assets_lock(HUB, paths), "approved_hash": approved_hash, "at": db.now(), "quote": quote,
+            "basis": basis}
+
+
+def cmd_bible_lock(con, b, args):
+    """Phase D, one-time: lock the reference images of every approved bible file, and the prompt templates, as they
+    are now, but only where every file is older than the approval it is bound to (unchanged since). Anything newer stays
+    unlocked and needs the owner's `bible-approve` again."""
+    lock = bible.read_lock()
+    for name in bible.FILES:
+        data = yaml.safe_load((bible.BIBLE / f"{name}.yaml").read_text(encoding="utf-8"))
+        if name in lock or b[name].status != "approved":
+            print(f"{name}: {'already locked' if name in lock else 'not approved'}")
+            continue
+        paths = bible.asset_paths(data)
+        at = dt.datetime.fromisoformat(data["approved_at"])
+        late = [p for p in paths if not (HUB / p).exists() or dt.datetime.fromtimestamp((HUB / p).stat().st_mtime) > at]
+        if late:
+            print(f"{name}: NOT locked; changed after the approval or missing: {', '.join(late)}")
+            continue
+        lock[name] = _lock_entry(paths, data["approved_hash"], None,
+                                 f"bound in Phase D to the images as approved on {data['approved_at']} (unchanged since)")
+        print(f"{name}: locked ({len(paths)} images)")
+    if "templates" not in lock:
+        last = max(dt.datetime.fromisoformat(b[n].approved_at) for n in bible.FILES if b[n].status == "approved")
+        late = [p for p in bible.TEMPLATE_FILES if dt.datetime.fromtimestamp((HUB / p).stat().st_mtime) > last]
+        if late:
+            print(f"templates: NOT locked; changed after the last bible approval: {', '.join(late)}")
+        else:
+            lock["templates"] = _lock_entry(bible.TEMPLATE_FILES, None, None,
+                                            f"bound in Phase D to the templates in use at the last bible approval ({last:%Y-%m-%dT%H:%M:%S}, unchanged since)")
+            print("templates: locked")
+    bible.write_lock(lock)
+    return 0
+
+
 def cmd_bible_approve(con, b, args):
+    if args.file == "templates":  # the prompt templates and prompt_style.py, approved as one unit
+        lock = bible.read_lock()
+        lock["templates"] = _lock_entry(bible.TEMPLATE_FILES, None, args.quote, "owner")
+        bible.write_lock(lock)
+        with open(bible.BIBLE / "approvals.log", "a", encoding="utf-8") as f:
+            f.write(f"{db.now()}\ttemplates\towner: {args.quote}\n")
+        print("templates approved")
+        return 0
     path = bible.BIBLE / f"{args.file}.yaml"
     data = yaml.safe_load(path.read_text(encoding="utf-8"))
     data.update(status="approved", approved_by="owner", approved_at=db.now(), approved_hash=bible.content_hash(data))
@@ -341,6 +413,9 @@ def cmd_bible_approve(con, b, args):
         text = re.sub(rf"^{k}:.*$", f"{k}: {value}", text, count=1, flags=re.M)
     bible.MODELS[args.file].model_validate(yaml.safe_load(text))  # the file as written must load
     path.write_text(text, encoding="utf-8")
+    lock = bible.read_lock()  # Phase D: the approval covers the reference images this file names, by sha256
+    lock[args.file] = _lock_entry(bible.asset_paths(data), data["approved_hash"], args.quote, "owner")
+    bible.write_lock(lock)
     log = bible.BIBLE / "approvals.log"
     with open(log, "a", encoding="utf-8") as f:
         f.write(f"{db.now()}\t{args.file}\towner: {args.quote}\n")
@@ -401,8 +476,16 @@ def main():
     p.add_argument("--ai-label-on", action="store_true", help="the post is disclosed as AI (TikTok's label or a caption disclosure)")
     sub.add_parser("board")
     sub.add_parser("bind-approvals")
+    sub.add_parser("bible-lock")
+    p = sub.add_parser("refs", help="Ember's references library")
+    p.add_argument("action", choices=["sync", "list", "add", "verdict"])
+    p.add_argument("target", nargs="?", help="add: image path; verdict: reference number")
+    p.add_argument("value", nargs="?", choices=["approved", "rejected"])
+    p.add_argument("--kind", default="example", choices=["example", "face_ref"])
+    p.add_argument("--note")
+    p.add_argument("--quote")
     p = sub.add_parser("bible-approve")
-    p.add_argument("file", choices=bible.FILES)
+    p.add_argument("file", choices=bible.FILES + ["templates"])
     p.add_argument("--quote", required=True)
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
@@ -417,7 +500,7 @@ def main():
                    "qa": cmd_qa, "approve": lambda c, bb, a: cmd_owner(c, bb, a, "APPROVED"),
                    "reject": lambda c, bb, a: cmd_owner(c, bb, a, "REJECTED"), "schedule": cmd_schedule,
                    "posted": cmd_posted, "board": cmd_board, "bible-approve": cmd_bible_approve,
-                   "bind-approvals": cmd_bind_approvals}[args.cmd]
+                   "bind-approvals": cmd_bind_approvals, "bible-lock": cmd_bible_lock, "refs": cmd_refs}[args.cmd]
         sys.exit(handler(con, b, args))
     except (bible.BibleError, db.GateError) as e:
         print(f"REFUSED: {e}")

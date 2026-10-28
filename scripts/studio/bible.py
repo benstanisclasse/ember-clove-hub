@@ -1,7 +1,12 @@
 """Load and validate the world bible (studio/bible/*.yaml). Fails closed: a missing or malformed field is an error.
 
 Each file carries status draft|approved, and an approval is locked to the file's contents (approved_hash): editing an
-approved file in any way other than its comments makes it draft again until the owner re-approves it. Production (anything that can be posted) requires every file approved
+approved file in any way other than its comments makes it draft again until the owner re-approves it.
+Content Studio Phase D: an approval also covers the files the text points to. studio/bible/approved_assets.json keeps,
+per approved file, the sha256 of every reference image it names (face_refs, ref_images, reference_images), and for the
+unit "templates" the prompt templates and scripts/prompt_style.py (TEMPLATE_FILES). A changed or missing image makes its
+file draft again; a changed template blocks production until the owner approves the templates (`cli.py bible-approve
+templates`). A file approved before this lock existed counts as "not locked yet" (shown, not blocking). Production (anything that can be posted) requires every file approved
 (products.yaml only once selling is on, i.e. rules.mix.product_share_max > 0); test runs (--test) may use draft files
 and their outputs can never be approved for posting.
 """
@@ -17,6 +22,10 @@ HUB = Path(__file__).resolve().parents[2]
 BIBLE = HUB / "studio" / "bible"
 FILES = ["rules", "character", "world", "wardrobe", "products", "series"]
 APPROVAL_KEYS = ("status", "approved_by", "approved_at", "approved_hash")
+LOCK = "approved_assets.json"
+REF_KEYS = ("face_refs", "ref_images", "reference_images")
+TEMPLATE_FILES = ["studio/templates/video_prompt.j2", "studio/templates/video_prompt_frame.j2",
+                  "studio/templates/first_frame.j2", "scripts/prompt_style.py"]
 
 
 def content_hash(data):
@@ -25,12 +34,59 @@ def content_hash(data):
     return hashlib.sha256(json.dumps(body, sort_keys=True, default=str).encode()).hexdigest()[:16]
 
 
+def asset_paths(data):
+    """Every reference image a bible file names, in file order."""
+    out = []
+    if isinstance(data, dict):
+        for k, v in data.items():
+            out += [str(x) for x in v] if k in REF_KEYS and isinstance(v, list) else asset_paths(v)
+    elif isinstance(data, list):
+        for x in data:
+            out += asset_paths(x)
+    return list(dict.fromkeys(out))
+
+
+def file_sha(hub, rel):
+    p = Path(hub) / rel
+    return hashlib.sha256(p.read_bytes()).hexdigest() if p.exists() else "missing"
+
+
+def assets_lock(hub, paths):
+    """{hash, files: {path: sha256}} for a set of files; the hash changes when any file changes or goes missing."""
+    files = {p: file_sha(hub, p) for p in paths}
+    return {"hash": hashlib.sha256(json.dumps(sorted(files.items())).encode()).hexdigest()[:16], "files": files}
+
+
+def read_lock(folder=None):
+    p = Path(folder or BIBLE) / LOCK
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def write_lock(lock, folder=None):
+    p = Path(folder or BIBLE) / LOCK
+    tmp = p.with_suffix(".tmp")
+    tmp.write_bytes((json.dumps(lock, indent=1, ensure_ascii=False) + "\n").encode("utf-8"))
+    tmp.replace(p)
+
+
+def template_status(folder=None):
+    """{locked, changed: [files changed since the owner approved the templates]}."""
+    folder = Path(folder or BIBLE)
+    entry = read_lock(folder).get("templates")
+    if not entry:
+        return {"locked": False, "changed": []}
+    now = assets_lock(folder.parents[1], TEMPLATE_FILES)["files"]
+    return {"locked": True, "changed": [f for f in TEMPLATE_FILES if now.get(f) != entry["files"].get(f)]}
+
+
 class Approval(BaseModel):
     status: Literal["draft", "approved"]
     approved_by: Optional[str] = None
     approved_at: Optional[str] = None
     approved_hash: Optional[str] = None
     changed_since_approval: bool = False
+    assets_locked: bool = False                  # Phase D: its reference images are hashed in approved_assets.json
+    changed_assets: list[str] = []               # images changed or missing since the approval
 
     @model_validator(mode="after")
     def _approved_needs_owner(self):
@@ -249,6 +305,7 @@ class BibleError(Exception):
 def load(folder: Path = BIBLE):
     """Return {name: model}. Raises BibleError listing every problem across all files."""
     out, errors = {}, []
+    lock = read_lock(folder)
     for name in FILES:
         path = folder / f"{name}.yaml"
         if not path.exists():
@@ -259,6 +316,13 @@ def load(folder: Path = BIBLE):
             out[name] = MODELS[name].model_validate(data)
             if out[name].status == "approved" and out[name].approved_hash != content_hash(data):
                 out[name] = out[name].model_copy(update={"status": "draft", "changed_since_approval": True})
+            entry = lock.get(name)
+            if out[name].status == "approved" and entry and entry.get("approved_hash") == out[name].approved_hash:
+                now = assets_lock(folder.parents[1], asset_paths(data))
+                changed = sorted(f for f in set(now["files"]) | set(entry["files"])
+                                 if now["files"].get(f) != entry["files"].get(f))
+                out[name] = out[name].model_copy(update={"assets_locked": True, "changed_assets": changed}
+                                                 | ({"status": "draft", "changed_since_approval": True} if changed else {}))
         except ValidationError as e:
             errors += [f"{name}.yaml: {'.'.join(str(x) for x in err['loc'])}: {err['msg']}" for err in e.errors()]
     if errors:
@@ -296,6 +360,9 @@ def unapproved(b):
 
 def require_approved(b):
     missing = unapproved(b)
+    tpl = template_status()
+    if tpl["changed"]:
+        missing.append("templates (changed since approval: " + ", ".join(tpl["changed"]) + ")")
     if missing:
         raise BibleError("Production needs every bible file approved by the owner. Still draft: " + ", ".join(missing)
                          + ". Use --test for test runs (their videos can never be approved for posting).")

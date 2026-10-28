@@ -177,6 +177,20 @@
       <div class="es-chart" id="schart" data-source="spend caps"></div>
     </div>
   </section>
+
+  <section class="es-sec" id="references">
+    <h2 class="es-h2">Ember's references and approvals</h2>
+    <div class="es-card">
+      <p class="es-note">Each bible approval also covers the reference images it names and the prompt templates, by
+        file fingerprint (sha256). If one of those files changes, its approval lapses until you approve it again.</p>
+      <div class="es-tablewrap"><table class="es-table" id="lock-table"></table></div>
+    </div>
+    <div class="es-card">
+      <p class="es-note">The face references and the examples of how Ember should look, with your verdicts. This library
+        only records them: Ember's face is changed only by editing the character file and approving it.</p>
+      <div class="es-grid3" id="ref-list"></div>
+    </div>
+  </section>
 </div>
 
 <script>
@@ -601,9 +615,35 @@ function drawQuality() {
       text: `${i.check}: ${i.detail}`}))));
 }
 
+// Phase D items 5 and 7: bible approvals locked to their images/templates, and Ember's references library
+function drawReferences() {
+  const locks = dash.data('bible_locks'), refs = dash.data('character_refs');
+  const LOCK_NAME = {rules: 'Rules', character: 'Character', world: 'World (rooms)', wardrobe: 'Wardrobe', products: 'Products',
+    series: 'Series', templates: 'Prompt templates'};
+  ui.table(document.getElementById('lock-table'), locks.status === 'ok' ? locks.data : [], [
+    {k: 'unit', label: 'Part', f: v => LOCK_NAME[v] || v},
+    {k: 'status', label: 'Approval', f: (v, r) => v === 'approved' ? 'approved' : r.changed_since_approval ? 'CHANGED since approval' : 'draft',
+     cls: r => r.status === 'approved' ? 'st-ok' : 'st-bad'},
+    {k: 'images', label: 'Files covered', n: 1, f: (v, r) => r.images_locked ? String(v) : 'not locked yet'},
+    {k: 'changed', label: 'Changed files', f: v => (v || []).join(', ') || '—'},
+    {k: 'basis', label: 'Locked by', f: v => v === 'owner' ? 'your approval' : v || '—'}],
+    {empty: locks.status === 'loading' ? 'Loading…' : 'Not connected yet.'});
+  const list = refs.status === 'ok' ? refs.data : [];
+  const box = document.getElementById('ref-list');
+  if (refs.status !== 'ok') { box.replaceChildren(ui.el('p', {class: 'es-empty', text: refs.status === 'loading' ? 'Loading…' : 'Not connected yet.'})); return; }
+  box.replaceChildren(...list.map(r => ui.el('figure', {class: 'es-card', style: 'margin:0'},
+    ui.el('div', {role: 'img', 'aria-label': r.kind === 'face_ref' ? 'Face reference' : 'Frames from a video',
+      style: `height:150px;border-radius:8px;background:#000 url(/media/refs/${r.ref_id}) ${r.kind === 'face_ref' ? 'center/cover' : '0 0/auto 300% repeat-x'}`}),
+    ui.el('figcaption', {class: 'es-sub', text: `${r.kind === 'face_ref' ? 'Face reference' + (r.version ? ` v${r.version}` : '') : 'Example'} · ${r.source}`}),
+    ui.el('span', {class: `es-pill ${r.verdict === 'approved' ? 'st-ok' : r.verdict === 'rejected' ? 'st-bad' : 'st-warn'}`,
+      text: r.in_use ? 'in use' : r.verdict}),
+    ui.el('div', {class: 'es-note', text: [r.note, r.quote ? `“${r.quote}”` : null, r.file_ok ? null : 'FILE CHANGED OR MISSING'].filter(Boolean).join(' · ')}))));
+}
+
 dash.onData(() => {
   drawQueue();
   drawQuality();
+  drawReferences();
   drawFacebook();
   ['when', 'series', 'status'].forEach(f => fill('next_post', document.querySelector(`[data-source="next_post"][data-field="${f}"]`), f));
   const h = {followers: fmt, posted: fmt, planned: fmt, views: v => v >= 10000 ? Intl.NumberFormat('en', {notation: 'compact', maximumFractionDigits: 1}).format(v) : fmt(v),

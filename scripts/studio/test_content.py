@@ -591,3 +591,114 @@ def test_refresh_records_public(fbweek):
     assert fb_ai.refresh(con, StatusPZ()) == 1
     assert con.execute("SELECT state FROM content_items WHERE content_id = ?", (cid,)).fetchone()[0] == "public"
     assert fb_ai.schedule_rows(con)[0]["post_url"] == "https://fb/p/1"
+
+
+# --- Phase D item 6: Facebook outfit compatibility and caption rotation ---------------------------------------------
+
+def _piece(title, ptype):
+    return {"title": title, "product_type": ptype, "handle": title.lower().replace(" ", "-")}
+
+
+@pytest.mark.parametrize("titles, expect", [
+    ([("Rib Knit Top", "Tops & Bodysuits"), ("Denim Skirt", "Skirts"), ("Suede Jacket", "Outerwear")], []),
+    ([("Lace Top", "Tops & Bodysuits"), ("Ripped Jeans", "Jeans & Pants"), ("Wool Coat", "Outerwear")], []),
+    ([("Leopard Print Top", "Tops & Bodysuits"), ("Plaid Skirt", "Skirts"), ("Coat", "Outerwear")],
+     ["2 patterned pieces (max 1)"]),
+    ([("Satin Blouse", "Tops & Bodysuits"), ("Jogger Pants", "Jeans & Pants"), ("Coat", "Outerwear")],
+     ["dressy and lounge pieces mixed"]),
+    ([("Top A", "Tops & Bodysuits"), ("Top B", "Tops & Bodysuits"), ("Coat", "Outerwear")], ["two pieces of the same type"])])
+def test_outfit_compatibility(titles, expect):
+    assert facebook_photos.outfit_problems([_piece(t, k) for t, k in titles], {}) == expect
+
+
+def test_outfit_rules_can_be_overridden_in_rules_json():
+    parts = [_piece("Leopard Print Top", "Tops"), _piece("Plaid Skirt", "Skirts"), _piece("Coat", "Outerwear")]
+    assert facebook_photos.outfit_problems(parts, {"outfit_rules": {"max_patterned": 2}}) == []
+
+
+def test_pick_outfit_never_returns_a_clash():
+    pool = [_piece("Satin Cami", "Tops & Bodysuits"), _piece("Rib Knit Top", "Tops & Bodysuits"),
+            _piece("Jogger Pants", "Jeans & Pants"), _piece("Straight Jeans", "Jeans & Pants"),
+            _piece("Wool Coat", "Outerwear")]
+    for seed in range(30):
+        parts = facebook_photos.pick_outfit(pool, random.Random(seed), set(), {})
+        assert parts and not facebook_photos.outfit_problems(parts, {})
+    assert facebook_photos.pick_outfit(pool[:1] + pool[2:3] + pool[4:], random.Random(1), set(), {}) is None
+
+
+def test_captions_rotate_and_questions_never_repeat_back_to_back(monkeypatch):
+    monkeypatch.setattr(facebook_photos, "no_ai_marker", lambda u: True)
+    rules = {**FB_RULES, "outfit_every": 3}
+    products = _feed(6) + [{**_feed(1)[0], "handle": f"bottom-{i}", "title": f"Denim Skirt {i}", "product_type": "Skirts"}
+                           for i in range(3)] + [{**_feed(1)[0], "handle": "coat", "title": "Wool Coat", "product_type": "Outerwear"}]
+    history = [{"date": "2099-01-04", "slot": "10:00", "products": [], "caption_format": "title_first",
+                "question": "How would you style it?"}]
+    posts = facebook_photos.plan(dt.date(2099, 1, 5), 5, rules, products, history)
+    fmts = ["title_first"] + [p["caption_format"] for p in posts]
+    qs = ["How would you style it?"] + [p["question"] for p in posts]
+    assert all(a != b for a, b in zip(fmts, fmts[1:])), fmts
+    assert all(a != b for a, b in zip(qs, qs[1:]) if a != "Which piece would you wear first?"), qs
+    assert any(p["kind"] == "outfit" for p in posts)
+    for p in posts:  # every format still ends with the store link and asks its question
+        assert "https://emberandclove.com/products/" in p["caption"].rstrip().split("\n")[-1] and p["question"] in p["caption"]
+
+
+# --- Phase D item 7: Ember's references library ---------------------------------------------------------------------
+
+@pytest.fixture
+def library(tmpdb, tmp_path, monkeypatch):
+    from studio import character_refs
+    monkeypatch.setattr(character_refs, "HUB", tmp_path)
+    monkeypatch.setattr(content, "HUB", tmp_path)
+    bdir = tmp_path / "studio" / "bible"
+    (tmp_path / "studio" / "refs" / "candidates").mkdir(parents=True)
+    bdir.mkdir(parents=True)
+    (bdir / "character.yaml").write_text('approved_at: "2026-10-26T16:16:30"\n'
+                                         "face_refs: [studio/refs/face_main.png]   # owner chose option B\n", encoding="utf-8")
+    (bdir / "approvals.log").write_text("2026-10-26T16:16:30\tcharacter\towner: Ember is the name and i approve it\n",
+                                        encoding="utf-8")
+    (tmp_path / "studio" / "refs" / "face_main.png").write_bytes(b"face B")
+    (tmp_path / "studio" / "refs" / "candidates" / "face_option_A.png").write_bytes(b"face A")
+    (tmp_path / "studio" / "refs" / "candidates" / "face_option_B.png").write_bytes(b"face B")
+    con = content.connect()
+    _episode(con, "EW-20990101-1", state="SCHEDULED", video_path="studio/episodes/EW-20990101-1/v.mp4",
+             approval_json=json.dumps({"owner_quote": "these are approved", "at": "2026-10-26T20:00:00"}))
+    (tmp_path / "studio" / "episodes" / "EW-20990101-1").mkdir(parents=True)
+    (tmp_path / "studio" / "episodes" / "EW-20990101-1" / "v_frames.jpg").write_bytes(b"frames")
+    return con, character_refs, bdir
+
+
+def test_library_is_seeded_from_the_record(library):
+    con, lib, bdir = library
+    assert lib.sync(con, bdir) == 4 and lib.sync(con, bdir) == 0
+    got = {r["path"]: (r["kind"], r["verdict"], r["in_use"], r["version"]) for r in lib.rows(con)}
+    assert got["studio/refs/face_main.png"] == ("face_ref", "approved", 1, 1)
+    assert got["studio/refs/candidates/face_option_A.png"][1] == "rejected"
+    assert got["studio/refs/candidates/face_option_B.png"][1] == "approved"  # the option chosen
+    assert got["studio/episodes/EW-20990101-1/v_frames.jpg"][:2] == ("example", "approved")
+    assert lib.check(con, bdir) == []
+
+
+def test_only_the_owner_gives_verdicts_and_identity_never_changes(library, tmp_path):
+    con, lib, bdir = library
+    lib.sync(con, bdir)
+    (tmp_path / "studio" / "refs" / "face_new.png").write_bytes(b"maybe")
+    rid = lib.add(con, "studio/refs/face_new.png", "face_ref", "softer light")
+    with pytest.raises(ValueError):
+        lib.verdict(con, rid, "approved", "yes", "claude")
+    lib.verdict(con, rid, "approved", "I like this one", "owner")
+    r = con.execute("SELECT * FROM character_refs WHERE ref_id = ?", (rid,)).fetchone()
+    assert (r["verdict"], r["version"], r["in_use"]) == ("approved", 2, 0)  # approved, but not Ember's face
+    assert "face_new" not in (bdir / "character.yaml").read_text(encoding="utf-8")
+    in_use = con.execute("SELECT ref_id FROM character_refs WHERE in_use = 1").fetchone()[0]
+    with pytest.raises(ValueError, match="in use"):
+        lib.verdict(con, in_use, "rejected", "no", "owner")
+    with pytest.raises(ValueError):
+        lib.add(con, "data/elsewhere.png", "example", "outside the reference folders")
+
+
+def test_library_flags_a_changed_file(library, tmp_path):
+    con, lib, bdir = library
+    lib.sync(con, bdir)
+    (tmp_path / "studio" / "refs" / "face_main.png").write_bytes(b"edited face")
+    assert [i["check"] for i in lib.check(con, bdir)] == ["reference file changed or missing"]

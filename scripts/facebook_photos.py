@@ -134,7 +134,8 @@ def eligible(products, day, rules):
     return keep
 
 
-def question(p, rng):
+def question(p, rng, avoid=None):
+    """A question for the comments; never the same one as the post before (`avoid`) when another fits."""
     t = p["product_type"]
     pool = ["How would you style it?", "Work or weekend?", "Dressed up or dressed down?",
             "What would you pair it with?"]
@@ -146,7 +147,55 @@ def question(p, rng):
         pool.append("What would you wear it over?")
     if t == "Accessories":
         pool.append("Everyday piece or special occasion?")
-    return rng.choice(pool)
+    return rng.choice([q for q in pool if q != avoid] or pool)
+
+
+# Caption structures (Content Studio Phase D): rotated so no two posts in a row read the same way.
+SINGLE_FORMATS = ("title_first", "question_first", "detail_first")
+OUTFIT_FORMATS = ("list_then_question", "question_then_list")
+
+
+def next_format(formats, last, rng):
+    """Any format but the one used by the post before."""
+    return rng.choice([f for f in formats if f != last] or list(formats))
+
+
+def single_caption(fmt, title, lead, cols_line, q):
+    if fmt == "question_first":
+        return [q, "", title, lead] + ([cols_line] if cols_line else [])
+    if fmt == "detail_first":
+        return [lead, "", title + (f" · {cols_line}" if cols_line else ""), "", q]
+    return [title, "", lead] + ([cols_line] if cols_line else []) + ["", q]  # title_first (the original format)
+
+
+# Outfit compatibility (Content Studio Phase D). Defaults below; rules.json "outfit_rules" overrides any of them.
+OUTFIT_RULES = {
+    "max_patterned": 1,
+    "pattern_words": ["print", "floral", "plaid", "stripe", "leopard", "animal", "graphic", "letter", "alphabet",
+                      "polka", "gingham", "check", "camo", "tie-dye", "paisley", "pattern", "contrast", "patchwork",
+                      "two-tone", "colorblock", "color block"],
+    "dressy_words": ["satin", "sequin", "velvet", "silk", "stiletto", "heel", "pump"],
+    "casual_words": ["sweatshirt", "hoodie", "jogger", "sweatpant", "slipper", "pajama", "lounge"],
+}
+
+
+def outfit_problems(parts, rules):
+    """Why these pieces don't go together (empty = compatible): two products of one type, more than max_patterned
+    patterned pieces, or formal pieces (satin, sequins, heels...) with lounge ones (sweatshirts, joggers, slippers...).
+    Lace with denim is fine; it's the formal/lounge clash that reads wrong."""
+    r = {**OUTFIT_RULES, **(rules.get("outfit_rules") or {})}
+    titles = [p["title"].lower() for p in parts]
+    has = lambda words, t: any(w in t for w in words)  # noqa: E731
+    out = []
+    types = [p["product_type"] for p in parts]
+    if len(set(types)) < len(types):
+        out.append("two pieces of the same type")
+    patterned = [t for t in titles if has(r["pattern_words"], t)]
+    if len(patterned) > r["max_patterned"]:
+        out.append(f"{len(patterned)} patterned pieces (max {r['max_patterned']})")
+    if any(has(r["dressy_words"], t) for t in titles) and any(has(r["casual_words"], t) for t in titles):
+        out.append("dressy and lounge pieces mixed")
+    return out
 
 
 def link(p, rules, day, slot, content_id=None):
@@ -158,44 +207,51 @@ def link(p, rules, day, slot, content_id=None):
                     content_id or f"{day}_{slot.replace(':', '')}")
 
 
-def single_post(p, rules, rng, day, slot, content_id=None):
+def single_post(p, rules, rng, day, slot, content_id=None, fmt="title_first", avoid_question=None):
     photos = clean_photos(p, rules["max_photos"])
     if not photos:
         return None
     cols = colors(p)
-    lines = [p["title"], "", lead_sentence(p["body_html"])]
-    if len(cols) > 1:
-        lines.append(f"In {len(cols)} colors." if len(cols) > 3 else f"In {', '.join(cols[:-1])} and {cols[-1]}.")
-    lines += ["", question(p, rng)]
+    cols_line = (f"In {len(cols)} colors." if len(cols) > 3 else f"In {', '.join(cols[:-1])} and {cols[-1]}.") \
+        if len(cols) > 1 else ""
+    q = question(p, rng, avoid_question)
+    lines = single_caption(fmt, p["title"], lead_sentence(p["body_html"]), cols_line, q)
     shop = f"Shop it here: {link(p, rules, day, slot, content_id)}"
+    post = {"kind": "product", "products": [p["handle"]], "titles": [p["title"]], "photos": photos,
+            "caption_format": fmt, "question": q}
     if rules.get("link_placement", "caption") == "caption":
-        return {"kind": "product", "products": [p["handle"]], "titles": [p["title"]], "photos": photos,
-                "caption": "\n".join(lines + ["", shop]), "first_comment": None}
-    return {"kind": "product", "products": [p["handle"]], "titles": [p["title"]], "photos": photos,
-            "caption": "\n".join(lines), "first_comment": shop}
+        return {**post, "caption": "\n".join(lines + ["", shop]), "first_comment": None}
+    return {**post, "caption": "\n".join(lines), "first_comment": shop}
 
 
-def outfit_post(parts, rules, day, slot, content_id=None):
+def outfit_post(parts, rules, day, slot, content_id=None, fmt="list_then_question"):
     firsts = [clean_photos(p, 1) for p in parts]
     if not all(firsts):
         return None
     names = [p["title"] for p in parts]
-    caption = "\n".join(["One outfit, three pieces:", *[f"• {n}" for n in names], "",
-                         "Which piece would you wear first?"])
+    q = "Which piece would you wear first?"
+    listing = ["One outfit, three pieces:", *[f"• {n}" for n in names]]
+    caption = "\n".join([q, "", *listing] if fmt == "question_then_list" else [*listing, "", q])
     comment = "Shop the pieces:\n" + "\n".join(f"{p['title']}: {link(p, rules, day, slot, content_id)}" for p in parts)
     if rules.get("link_placement", "caption") == "caption":
         caption, comment = f"{caption}\n\n{comment}", None
     return {"kind": "outfit", "products": [p["handle"] for p in parts], "titles": names,
-            "photos": [f[0] for f in firsts], "caption": caption, "first_comment": comment}
+            "photos": [f[0] for f in firsts], "caption": caption, "first_comment": comment, "caption_format": fmt,
+            "question": q}
 
 
-def pick_outfit(pool, rng, used):
-    by = lambda types: [p for p in pool if p["product_type"] in types and p["handle"] not in used]
+def pick_outfit(pool, rng, used, rules=None, tries=60):
+    """Three pieces (top, bottom, a finishing piece) that pass outfit_problems; None when no combination does."""
+    by = lambda types: [p for p in pool if p["product_type"] in types and p["handle"] not in used]  # noqa: E731
     tops, bottoms = by({"Tops & Bodysuits", "Sweaters & Sweatshirts"}), by({"Skirts", "Jeans & Pants"})
     finish = by({"Outerwear", "Accessories", "Sandals"})
     if not (tops and bottoms and finish):
         return None
-    return [rng.choice(tops), rng.choice(bottoms), rng.choice(finish)]
+    for _ in range(tries):
+        parts = [rng.choice(tops), rng.choice(bottoms), rng.choice(finish)]
+        if not outfit_problems(parts, rules or {}):
+            return parts
+    return None
 
 
 def plan(start, days, rules, products, history, seed=None):
@@ -203,6 +259,8 @@ def plan(start, days, rules, products, history, seed=None):
     recent = {h for e in history if e["date"] >= (start - dt.timedelta(days=rules["no_repeat_days"])).isoformat()
               for h in e["products"]}
     posts, used, last_type = [], set(recent), None
+    before = max(history, key=lambda e: (e["date"], e["slot"])) if history else {}
+    last_fmt, last_q = before.get("caption_format"), before.get("question")  # carried over from the last sent post
     for n in range(days):
         day = start + dt.timedelta(days=n)
         pool = eligible(products, day, rules)
@@ -211,20 +269,23 @@ def plan(start, days, rules, products, history, seed=None):
             post = None
             cid = f"FB-{start.isoformat()}-{len(posts):02d}"  # the id content.py gives this post (plan start + index)
             if len(posts) % rules["outfit_every"] == rules["outfit_every"] - 1:
-                parts = pick_outfit(pool, rng, used)
-                post = parts and outfit_post(parts, rules, day.isoformat(), slot, cid)
+                parts = pick_outfit(pool, rng, used, rules)
+                post = parts and outfit_post(parts, rules, day.isoformat(), slot, cid,
+                                             next_format(OUTFIT_FORMATS, last_fmt, rng))
             if not post:
                 fresh = [p for p in pool if p["handle"] not in used and p["product_type"] != last_type]
                 if not fresh:
                     fresh = [p for p in pool if p["handle"] not in used] or pool
+                fmt = next_format(SINGLE_FORMATS, last_fmt, rng)
                 for p in rng.sample(fresh, len(fresh)):  # first product with a usable photo
-                    post = single_post(p, rules, rng, day.isoformat(), slot, cid)
+                    post = single_post(p, rules, rng, day.isoformat(), slot, cid, fmt, last_q)
                     if post:
                         last_type = p["product_type"]
                         break
                 if not post:
                     print(f"  {day} {slot}: no product with a usable photo; slot left empty")
                     continue
+            last_fmt, last_q = post["caption_format"], post["question"]
             used |= set(post["products"])
             posts.append({"date": day.isoformat(), "slot": slot, "content_id": cid, **post})
     return posts
@@ -301,7 +362,8 @@ def publish(plan_path, quote):
             content.record_publish(con, cid, "facebook", "fb_scheduled", key, postzen_post_id=p["postzen_post_id"],
                                    state="submitted", platform_status=p["status"], evidence="PostZen accepted the request")
             history.append({"date": p["date"], "slot": p["slot"], "products": p["products"],
-                            "postzen_post_id": p["postzen_post_id"], "ai_picture": is_ai_post(p)})
+                            "postzen_post_id": p["postzen_post_id"], "ai_picture": is_ai_post(p),
+                            "caption_format": p.get("caption_format"), "question": p.get("question")})
             content.atomic_write(plan_path, json.dumps(data, ensure_ascii=False, indent=1))  # saved after every post
             content.atomic_write(HISTORY, json.dumps(history, ensure_ascii=False, indent=1))
             sent += 1
