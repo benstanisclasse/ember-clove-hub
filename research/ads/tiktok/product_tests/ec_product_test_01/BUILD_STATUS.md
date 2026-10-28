@@ -38,3 +38,8 @@ Owner, 2026-10-28: "cna you keep track in hub ig". Updated as each ad is finishe
 
 ## Final check (2026-10-28, ~13:40 CT)
 All 15 ads re-opened after saving: name, own slideshow video, product-page link with utm_content, 5/5 captions (all 4 new ones present), AI label (1 asset), Music refresh only, add-ons 0/2, product cards 0/4 info, Shop now, catalog creatives off. Spot-check: P006_C promotes only Off-White/M. Rebate panel: 7 of 7 criteria met. Not published.
+
+## Published 2026-10-28 ~13:04 CT
+- Campaign XXX live; ad group under TikTok review; 15 ads delivery OK. Balance $1,000.
+- Live differences: budget **$120.34/day** (not $90) and **auto-add creatives ON** on all 15 ads. Left unchanged pending the owner's decision (editing during the 7-day trial cancels the rebate).
+- 7-day trial: no edits, no pausing. Max spend at $120.34/day = ~$842.
