@@ -3,6 +3,7 @@
 Run: python -m pytest -q scripts/studio/test_hardening.py
 """
 import json
+import sqlite3
 import sys
 import threading
 import urllib.error
@@ -61,3 +62,31 @@ def test_rows_serves_last_good_copy_when_a_file_breaks(tmp_path, monkeypatch):
     (tmp_path / "demo.json").write_text('[{"k": 2', encoding="utf-8")  # a half-written file
     assert dashboard_server._rows("demo")["rows"] == [{"k": 1}]
     assert dashboard_server._rows("never_written") is None
+
+
+def test_ref_images_only_from_refs_or_episodes(tmp_path, monkeypatch):
+    out = tmp_path / "studio" / "dashboard"
+    out.mkdir(parents=True)
+    monkeypatch.setattr(dashboard_server, "OUT", out)
+    dbf = tmp_path / "s.db"
+    def connect():
+        con = sqlite3.connect(dbf)
+        con.row_factory = sqlite3.Row
+        return con
+    monkeypatch.setattr(dashboard_server.db, "connect", connect)
+    assert dashboard_server.ref_image("1") is None  # table not there yet
+    for rel in ("studio/refs/a.png", "studio/episodes/e1/b.JPG", "studio/other/c.png", "secret.png", "studio/refs/d.txt"):
+        (tmp_path / rel).parent.mkdir(parents=True, exist_ok=True)
+        (tmp_path / rel).write_bytes(b"img")
+    con = connect()
+    con.execute("CREATE TABLE character_refs (ref_id INTEGER PRIMARY KEY, path TEXT)")
+    con.executemany("INSERT INTO character_refs VALUES (?, ?)", [
+        (1, "studio/refs/a.png"), (2, r"studio\episodes\e1\b.JPG"), (3, "studio/other/c.png"),
+        (4, "studio/refs/../../secret.png"), (5, str(tmp_path / "secret.png")), (6, "studio/refs/d.txt"),
+        (7, "studio/refs/missing.png")])
+    con.commit()
+    con.close()
+    assert dashboard_server.ref_image("1") == (tmp_path / "studio/refs/a.png").resolve()
+    assert dashboard_server.ref_image("2") == (tmp_path / "studio/episodes/e1/b.JPG").resolve()
+    for bad in ("3", "4", "5", "6", "7", "99", "1.png", "../1", "", "-1"):
+        assert dashboard_server.ref_image(bad) is None, bad

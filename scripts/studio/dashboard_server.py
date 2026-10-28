@@ -21,6 +21,7 @@ import logging
 import logging.handlers
 import mimetypes
 import re
+import sqlite3
 import sys
 import threading
 import time
@@ -38,7 +39,8 @@ DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_me
             "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts", "sync_health",
             "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation", "system_info",
             "episode_history", "ads_entities", "store_attribution", "content_queue", "content_events",
-            "profit_daily", "profit_products", "profit_summary", "cost_ledger", "content_jobs", "content_quality"]
+            "profit_daily", "profit_products", "profit_summary", "cost_ledger", "content_jobs", "content_quality",
+            "character_refs", "bible_locks"]
 JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "content": "Content queue", "ads:meta": "Meta ads",
               "ads:tiktok": "TikTok ads", "ads:microsoft": "Microsoft ads"}
 # path -> (file, title, nav key). Six sections (Phase D); old addresses redirect.
@@ -220,6 +222,31 @@ def episode_frames(episode_id):
     return f if f.is_file() else None
 
 
+REF_DIRS = ("studio/refs", "studio/episodes")
+REF_TYPES = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg"}
+
+
+def ref_image(ref_id):
+    """Path of a character reference image, looked up by ref_id in studio.db; None unless it is a .png/.jpg under
+    studio/refs/ or studio/episodes/ (checked after resolving, so ../ and absolute paths are refused)."""
+    if not re.fullmatch(r"\d{1,9}", ref_id or ""):
+        return None
+    con = db.connect()
+    try:
+        row = con.execute("SELECT path FROM character_refs WHERE ref_id = ?", (int(ref_id),)).fetchone()
+    except sqlite3.OperationalError:  # table not created yet
+        return None
+    finally:
+        con.close()
+    if not row or not row["path"]:
+        return None
+    hub = OUT.parents[1].resolve()
+    f = (hub / row["path"].replace("\\", "/")).resolve()
+    if f.suffix.lower() not in REF_TYPES or not any((hub / d).resolve() in f.parents for d in REF_DIRS):
+        return None
+    return f if f.is_file() else None
+
+
 JOBS = [("tiktok", _tiktok), ("facebook", lambda: facebook_photos.sync_dashboard(OUT)),
         ("shopify", lambda: shopify_sync.sync(OUT)),
         ("snapshots", lambda: [f"{analytics.snapshot_dashboard_files(OUT)} rows"]),
@@ -307,6 +334,10 @@ def make_handler(every):
                 frames = episode_frames(path[len("/media/frames/"):])
                 if frames:
                     return self._send_bytes(200, frames.read_bytes(), "image/jpeg")
+            if path.startswith("/media/refs/"):  # a character reference image (Content Studio bible)
+                ref = ref_image(path[len("/media/refs/"):])
+                if ref:
+                    return self._send_bytes(200, ref.read_bytes(), REF_TYPES[ref.suffix.lower()])
             return self._send(404, "Not found", "text/plain")
 
         def _send_bytes(self, code, data, ctype, cache=False):
