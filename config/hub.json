@@ -63,7 +63,9 @@
     "higgsfield_api": "HIGGSFIELD_API_KEY",
     "kalodata_api": "KALODATA_API_KEY",
     "openrouter_api": "OPENROUTER_API_KEY",
-    "postzen_api": "POSTZEN_API_KEY"
+    "postzen_api": "POSTZEN_API_KEY",
+    "shopify_client_id": "SHOPIFY_CLIENT_ID",
+    "shopify_client_secret": "SHOPIFY_CLIENT_SECRET"
   },
   "economics": {
     "_note": "Assumptions used by economics.py. Change here, then rerun economics.py.",
