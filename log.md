@@ -498,3 +498,7 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Bible approvals now cover the reference images and prompt templates (studio/bible/approved_assets.json); cli.py bible-lock bound rules, character, world, series and the templates (all older than their approvals). Wardrobe/products still draft (owner to approve).
 - Facebook: outfit compatibility rules + caption format/question rotation (rules.json notes updated). Ember's references library (17 entries) with dashboard section; Dashboard session added the datasets and /media/refs route (8de3132).
 - 14 new tests, suite 166/166. Commit 1aabcec. Report: docs/CONTENT_STUDIO_ROADMAP.md "Phase D items 5-7 report". No posts sent, nothing generated, no store or ad changes.
+
+## 2026-10-28 — Loose files from the "Dashboard 2.0" chat filed into the Hub (owner: "yes move that into the hub")
+- That chat's temporary folder had 22 files: 19 were already in the Hub (identical by SHA-256: assets/<creative ID>/, brand/). Copied the other 3 (originals kept): assets/_research/2026-10-24_product_picks_P01_P02_backup.jpg, assets/_research/2026-10-24_backup_candidates.jpg, docs/archive/hub-2.0-creative-testing-engine-prompt_2026-10-23_first-draft.md (older draft: 30-day returns; the Hub copy is newer).
+- New docs/prompts/LOOSE_FILE_SWEEP_PROMPT.md: prompt for a session that finds store files left in other chats' temporary folders, transcripts and Downloads/Desktop, copies (never moves) the missing ones into the Hub and writes docs/LOOSE_FILES_INVENTORY.md.
