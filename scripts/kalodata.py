@@ -52,6 +52,7 @@ def call(path, payload, name, budget=None, credits=0.0, method="POST"):
     body = resp.json() if resp.headers.get("content-type", "").startswith("application/json") else {"raw": resp.text[:500]}
     RAW.mkdir(parents=True, exist_ok=True)
     raw_file = RAW / f"{name}.json"
+    body = kalodata_db.scrub(body)  # no buyer identities on disk (owner, 2026-10-28)
     raw_file.write_text(json.dumps({"path": path, "request": payload, "status": resp.status_code, "response": body},
                                    indent=2, ensure_ascii=False), encoding="utf-8")
     try:

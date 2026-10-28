@@ -19,7 +19,18 @@ logs/
 __pycache__/
 *.pyc
 .pytest_cache/
-research/
+# research/: reports, audits and small CSVs are tracked; data and model outputs are backed up, not versioned
+research/**/raw/
+research/**/videos/
+research/tiktok/ads/
+research/kalodata/model_*/
+research/kalodata/pilot_model_*/
+research/kalodata/snapshots/
+research/**/*.joblib
+research/**/*.gz
+research/**/*.log
+research/**/*.jsonl
+research/kalodata/video_links_core.csv
 assets/
 studio/episodes/
 studio/refs/
