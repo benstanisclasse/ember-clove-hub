@@ -106,3 +106,50 @@ Content Studio D → then E/F of both as data accumulates.**
 4. Re-approve `wardrobe.yaml` (currently draft because it changed after approval), so production video generation is
    possible again — after reviewing the change.
 5. Face reference for Ember's videos: keep off (current) or test on again in trials for consistency.
+
+---
+
+## Phase B report (2026-10-27, owner: "Approved: build Content Studio Phase B (unified content records, Facebook into the database, honest publish states, PostZen reliability, Ready-for-TikTok queue). Facebook link default: in the caption. AI pictures as a standard Facebook post type, each still approved by me.")
+
+**Implemented**
+- `scripts/studio/content.py`: tables in studio.db — `content_items`, `content_products`, `content_assets`,
+  `content_events`, `publish_jobs`, `media_uploads`. Every real TikTok episode is mirrored as `TT-<id>` (its 216
+  transitions copied once as events); every Facebook plan post as `FB-<plan start>-<nn>` (status changes between syncs
+  become events). Dashboard job "content" runs after the TikTok/Facebook syncs (~1 s) and writes `content_queue.json` +
+  `content_events.json`.
+- **Honest publish states**: submitted / scheduled / in_tiktok_drafts / awaiting_manual_post / public / paused / failed.
+  A TikTok draft is "public" only with public evidence (views or impressions in PostZen analytics) or the owner's
+  `posted`. Today: dinner video public (33 views), drizzly-day video "post it now", 7 drafts scheduled for their slots.
+- **Reliability**: studio.db in WAL with a 30 s busy timeout; PostZen client retries 429/5xx/dropped connections for
+  reads, updates and keyed creates (never unkeyed creates); TikTok videos uploaded once and reused (`media_uploads`);
+  every TikTok and Facebook send writes its publish job before and after the call and records failures; one failed
+  status check no longer aborts a sync; atomic writes for plan, history and dashboard queue files; Shopify client
+  retries dropped connections (a live sync had failed on one).
+- **Facebook**: `rules.json link_placement: caption` (default) and `ai_pictures: true`; AI posts are refused unless the
+  caption has #aigenerated; each sent post stores its own approval (owner's words, time, caption and photo hashes) and
+  is saved immediately; `plan` refuses to overwrite a week that has posts in PostZen. The 10/27 slippers record was
+  corrected to what was actually sent (planned caption kept as `caption_planned`).
+- **Dashboard (Content Studio page)**: "Ready for TikTok publication" (filmstrip thumbnail from the QA frame sheet via
+  `/media/frames/<episode>`, slot, caption, state, approval, AI-label reminder) and "Content queue" (all 33 items,
+  filters Open / Needs you / Scheduled / Public / All and by channel, history drawer, CSV).
+
+**Tests:** `scripts/studio/test_content.py` 27 tests (states incl. "a draft with a URL is not public", mirrors and
+idempotency, record/upload-once, atomic writes, PostZen retry rules, Facebook caption link / AI refusal / plan guard,
+frame route) — full suite 101/101 at the time of the run.
+
+**Files:** new `scripts/studio/content.py`, `scripts/studio/test_content.py`; changed `scripts/postzen.py`,
+`scripts/shopify_api.py`, `scripts/studio/db.py`, `scripts/studio/publishing.py`, `scripts/facebook_photos.py`,
+`studio/dashboard/index.html`, `data/facebook/rules.json`, `data/facebook/plan_2026-10-28.json` (one record corrected).
+`dashboard_server.py` content job + frame route were committed inside the parallel Dashboard Phase E commit 189074b.
+
+**Database changes:** new tables in studio.db only (backup taken first); episodes/transitions untouched.
+
+**Limits / next**
+- Facebook plan files are still the working source; the database mirrors them. Making the database the source (and the
+  AI-picture generate → fidelity review → caption → approve flow) is Phase D.
+- Media-hash-bound approval is enforced for Facebook sends (hashes stored per post); TikTok approval binding to the
+  video hash is Phase D (publish jobs already store the asset hash).
+- Item series show ids (e.g. `minneapolis-weather`), not display names.
+
+**Next: Phase C** (generation/asset records, content features, 24 h/48 h/7 d marks, `utm_content=<content_id>` with
+the attribution convention now in `scripts/attribution.py`).
