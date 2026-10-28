@@ -1,0 +1,450 @@
+[
+ {
+  "handle": "long-coat",
+  "product_id": "gid://shopify/Product/9757276700911",
+  "original_title": "long coat",
+  "new_title": "Two-Button Notch Lapel Long Coat",
+  "product_type": "Outerwear",
+  "tags": [
+   "coat",
+   "outerwear",
+   "long",
+   "notch-lapel",
+   "oversized",
+   "long-sleeve",
+   "burgundy",
+   "red",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A roomy burgundy coat with wide notch lapels and dropped shoulders, cut long to layer over knits.</strong></p><ul><li>Polyester with a brushed, wool-look texture, black lining</li><li>Relaxed fit, two-button front, flap hip pockets</li><li>Below-knee length (about 45–46 in)</li></ul><p>Sizes XS–L · Bust 43–48 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41319725990127",
+  "media_alts": {
+   "gid://shopify/MediaImage/41319725990127": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, front",
+   "gid://shopify/MediaImage/41319726219503": "Two-Button Notch Lapel Long Coat in Burgundy, close-up of the lapel and lining",
+   "gid://shopify/MediaImage/41319726448879": "Two-Button Notch Lapel Long Coat in Burgundy, close-up of the back collar",
+   "gid://shopify/MediaImage/41319726481647": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, back",
+   "gid://shopify/MediaImage/41319726612719": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, front",
+   "gid://shopify/MediaImage/41319726645487": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "wine red": "Burgundy"
+  },
+  "option_renames": {},
+  "flags": [],
+  "notes": "Photos show a dark plum-burgundy, so \"wine red\" is renamed Burgundy. Supplier lists polyester only; the brushed, flecked surface looks like wool, so the copy says \"wool-look\" polyester. Size table converted from cm: bust 110–122 cm, length 115–118 cm (the spec line \"80–100 cm\" contradicts the table; the copy uses the table). No on-model photos, so where the hem falls on the body is unverified. Gallery images 1, 5 and 6 are near-identical front flats.",
+  "wardrobe": {
+   "use": true,
+   "color": "Burgundy",
+   "photo_media_id": "gid://shopify/MediaImage/41319725990127",
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "outerwear",
+   "prompt_description": "An oversized below-the-knee burgundy coat in a brushed wool-look fabric with wide notch lapels, dropped shoulders, a two-button front with dark buttons, flap hip pockets and a black lining."
+  }
+ },
+ {
+  "handle": "high-heel-boots-women-round-toe-pleated-womens-knight-western-boots-women-bamboo-joint-mid-calf-copper-buckle-western-fashion-tassel-boots",
+  "product_id": "gid://shopify/Product/9757617783023",
+  "original_title": "High Heel Boots Women Round Toe  Pleated Women's Knight Western Boots Women Bamboo Joint Mid-Calf Copper Buckle Western Fashion Tassel Boots",
+  "new_title": "Studded Fold-Over Mid-Calf Boots",
+  "product_type": "Sandals",
+  "tags": [
+   "boots",
+   "mid-calf",
+   "fold-over",
+   "studded",
+   "buckle",
+   "faux leather",
+   "black",
+   "brown",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Slouchy distressed boots with a fold-over shaft and a studded hem, an easy pull-on with jeans.</strong></p><ul><li>Faux leather upper, textile lining, TPR sole</li><li>Pull-on, buckle strap at the top, round toe</li><li>Mid-calf shaft (about 12.5 in), 1.2 in stacked heel</li></ul><p>US 5.5–10 (EU 36–42)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320974778607",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320973009135": "Studded Fold-Over Mid-Calf Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320973336815": "Studded Fold-Over Mid-Calf Boots in Black, on model, front view",
+   "gid://shopify/MediaImage/41320973762799": "Studded Fold-Over Mid-Calf Boots in Dark Brown, on model, side view",
+   "gid://shopify/MediaImage/41320974516463": "Studded Fold-Over Mid-Calf Boots in Dark Brown, on model, side view",
+   "gid://shopify/MediaImage/41320974778607": "Studded Fold-Over Mid-Calf Boots in Black, shown single, side view",
+   "gid://shopify/MediaImage/41320974942447": "Studded Fold-Over Mid-Calf Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320975368431": "Studded Fold-Over Mid-Calf Boots in Dark Brown, shown single, side view"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [],
+  "notes": "Footwear goes under Sandals per the brief. Supplier title says \"tassel\", \"pleated\", \"copper buckle\" and \"bamboo joint\"; photos show no tassels, a silver-tone buckle and a slouchy fold-over shaft with silver studs, so the copy follows the photos. Shaft 32 cm and heel 3 cm from the measured description image. The supplier size table stops at EU 41 (US 9.5); EU 42 = US 10 is inferred from the same chart. Description images carry a \"Dengweisi\" brand banner; the gallery images are clean, so nothing is added from the description. Variant size values are still bare EU numbers.",
+  "wardrobe": {
+   "use": true,
+   "color": "Black",
+   "photo_media_id": "gid://shopify/MediaImage/41320974778607",
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "shoes",
+   "prompt_description": "Black distressed faux leather mid-calf boots with a slouchy fold-over shaft, a silver-tone buckle strap at the top, rows of small silver studs along the folded hem, a round toe and a low stacked heel."
+  }
+ },
+ {
+  "handle": "fashion-winter-high-heel-chunky-heel-belt-buckle-suede-over-the-knee-womens-boots-made-to-order-ships-in-7-days",
+  "product_id": "gid://shopify/Product/9757617815791",
+  "original_title": "Fashion Winter High Heel Chunky Heel  Belt Buckle Suede Over-the-Knee Women's Boots Made to order, ships in 7 days",
+  "new_title": "Triple Buckle Faux Suede Boots",
+  "product_type": "Sandals",
+  "tags": [
+   "boots",
+   "knee-high",
+   "buckle",
+   "faux suede",
+   "block heel",
+   "black",
+   "tan",
+   "green",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Tall faux suede boots with three buckle straps up the shaft and a burnished toe, made for jeans and skirts.</strong></p><ul><li>Faux suede upper, faux leather lining, rubber sole</li><li>Three D-ring buckle straps, almond toe</li><li>Below-knee shaft (about 14 in), 2.4 in block heel</li></ul><p>US 4–11 (EU 34–43)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320975433967",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320972943599": "Triple Buckle Faux Suede Boots in Sage Green, on model, side view",
+   "gid://shopify/MediaImage/41320973304047": "Triple Buckle Faux Suede Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320973697263": "Triple Buckle Faux Suede Boots in Tan, on model, side view",
+   "gid://shopify/MediaImage/41320974713071": "Triple Buckle Faux Suede Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320974876911": "Triple Buckle Faux Suede Boots in Sage Green, shown single, side view",
+   "gid://shopify/MediaImage/41320975335663": "Triple Buckle Faux Suede Boots in Black, shown single, side view",
+   "gid://shopify/MediaImage/41320975433967": "Triple Buckle Faux Suede Boots in Tan, shown single, side view"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Earth Yellow": "Tan",
+   "Gray": "Sage Green"
+  },
+  "option_renames": {},
+  "flags": [
+   "photo color mismatch"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Supplier title says over-the-knee; the photos and the measured image (shaft 35.8 cm, heel 6 cm) show a boot ending below the knee, so the copy says below-knee. Spec says round toe; photos show an almond toe with a darker burnished tip. \"Earth Yellow\" shows as tan and \"Gray\" as a pale sage green, so both are renamed. The supplier made-to-order note is left out. Sizes from the supplier chart (EU 34 = US 4 to EU 43 = US 11); variant size values are still bare EU numbers.",
+  "wardrobe": {
+   "use": true,
+   "color": "Tan",
+   "photo_media_id": "gid://shopify/MediaImage/41320975433967",
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "shoes",
+   "prompt_description": "Tan faux suede below-the-knee boots with three silver-tone D-ring buckle straps up the outer shaft, an almond toe with a darker burnished tip and a low gray stacked block heel."
+  }
+ },
+ {
+  "handle": "western-style-ankle-boots-for-women-pointed-toe-with-tassel-chunky-high-heel-made-to-order-ships-in-7-days",
+  "product_id": "gid://shopify/Product/9757617848559",
+  "original_title": "Western Style Ankle Boots for Women, Pointed Toe with Tassel, Chunky High Heel Made to order, ships in 7 days",
+  "new_title": "Fringe Faux Suede Ankle Boots",
+  "product_type": "Sandals",
+  "tags": [
+   "boots",
+   "ankle",
+   "fringe",
+   "western",
+   "faux suede",
+   "block heel",
+   "black",
+   "tan",
+   "green",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Western-style ankle boots with long fringe down the outer side and a stacked heel, easy over skinny jeans.</strong></p><ul><li>Faux suede upper, faux leather lining, rubber sole</li><li>Pull-on, pointed toe with a burnished tip</li><li>Ankle shaft (about 6 in), 3.2 in stacked block heel</li></ul><p>US 4.5–10.5 (EU 34–43)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320975532271",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320973402351": "Fringe Faux Suede Ankle Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320973631727": "Fringe Faux Suede Ankle Boots in Tan, on model, side view",
+   "gid://shopify/MediaImage/41320974483695": "Fringe Faux Suede Ankle Boots in Sage Green, on model, side view",
+   "gid://shopify/MediaImage/41320974844143": "Fringe Faux Suede Ankle Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320974975215": "Fringe Faux Suede Ankle Boots in Sage Green, shown single, side view",
+   "gid://shopify/MediaImage/41320975401199": "Fringe Faux Suede Ankle Boots in Black, shown single, side view",
+   "gid://shopify/MediaImage/41320975532271": "Fringe Faux Suede Ankle Boots in Tan, shown single, side view"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Earth Yellow": "Tan",
+   "Gray": "Sage Green"
+  },
+  "option_renames": {},
+  "flags": [
+   "photo color mismatch"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Spec says PU upper; it looks like suede, so the copy says faux suede. \"Earth Yellow\" (spec: Khaki) shows as tan and \"Gray\" as pale sage green, so both are renamed. Shaft 14.5 cm and heel 8 cm from the measured description image; no zip is visible, so it is called pull-on. This supplier chart maps China 34 = US 4.5 to China 43 = US 10.5, half a size off the chart on the buckle boots from the same supplier; the owner may want to standardize. The made-to-order note is left out.",
+  "wardrobe": {
+   "use": true,
+   "color": "Tan",
+   "photo_media_id": "gid://shopify/MediaImage/41320975532271",
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "shoes",
+   "prompt_description": "Tan faux suede pointed-toe ankle boots with long matching fringe running down the outer side, a darker burnished toe tip and a 3-inch wood-look stacked block heel."
+  }
+ },
+ {
+  "handle": "black-kitten-slipper",
+  "product_id": "gid://shopify/Product/9757617914095",
+  "original_title": "Black Kitten Slipper",
+  "new_title": "Embroidered Cat Plush Slippers",
+  "product_type": "Sandals",
+  "tags": [
+   "slipper",
+   "plush",
+   "cat",
+   "embroidered",
+   "slip-on",
+   "white",
+   "black",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Fluffy white house slippers with a black cat face on each toe, made for lounging at home.</strong></p><ul><li>Curly plush upper, cotton lining, TPR sole</li><li>Backless slip-on, closed round toe</li><li>Flat cushioned sole</li></ul><p>US 6–13 (EU 36/37–44/45, paired sizes)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320973172975",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320973172975": "Embroidered Cat Plush Slippers in White, on foot, front view",
+   "gid://shopify/MediaImage/41320973500655": "Embroidered Cat Plush Slippers in White, on foot, side view",
+   "gid://shopify/MediaImage/41320974287087": "Embroidered Cat Plush Slippers in White, on foot, front view",
+   "gid://shopify/MediaImage/41320974614767": "Embroidered Cat Plush Slippers in White, on foot, side view",
+   "gid://shopify/MediaImage/41320974811375": "Embroidered Cat Plush Slippers in White, on foot, front view",
+   "gid://shopify/MediaImage/41320975007983": "Embroidered Cat Plush Slippers in White, on foot, side view"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [
+   "house slipper",
+   "unisex sizes",
+   "off-brand"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. A cartoon house slipper; it may not fit the apparel line. The cat looks like an embroidered or appliqued patch; the supplier calls it a cartoon pattern. The supplier lists it as unisex with paired EU sizes 36/37 to 44/45 and gives no size chart; the US range is an approximate conversion and the top sizes are men's. The color is White (black cat motif), matching the variant; the original title's \"Black Kitten\" refers to the cat.",
+  "wardrobe": {
+   "use": false,
+   "color": "White",
+   "photo_media_id": "gid://shopify/MediaImage/41320973172975",
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "shoes",
+   "prompt_description": "White curly plush backless house slippers with a black embroidered kitten face on each closed round toe and a flat white sole."
+  }
+ },
+ {
+  "handle": "baotou-half-slippers-womens-summer-lazy-mules-genuine-leather-high-heeled-single-shoes-evening-evening-style-heelless-womens-s",
+  "product_id": "gid://shopify/Product/9757617979631",
+  "original_title": "Baotou half slippers women's summer lazy mules genuine leather high-heeled single shoes evening evening style heelless women's s",
+  "new_title": "Metal Toe Cap Wedge Mules",
+  "product_type": "Sandals",
+  "tags": [
+   "mule",
+   "wedge",
+   "metal toe",
+   "square toe",
+   "slip-on",
+   "faux leather",
+   "ivory",
+   "black",
+   "brown",
+   "spring",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Backless mules with a squared metal toe cap and a low wedge, a sharp slip-on with cropped jeans.</strong></p><ul><li>Smooth faux leather upper, rubber sole</li><li>Backless slip-on, closed square toe with metal cap</li><li>Low black wedge heel</li></ul><p>US 4–9 (EU 34–40)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320973730031",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320973730031": "Metal Toe Cap Wedge Mules in Ivory, on foot, side view",
+   "gid://shopify/MediaImage/41320974450927": "Metal Toe Cap Wedge Mules in Cognac, shown single, side view",
+   "gid://shopify/MediaImage/41320974745839": "Metal Toe Cap Wedge Mules in Ivory, on foot, side view",
+   "gid://shopify/MediaImage/41320974909679": "Metal Toe Cap Wedge Mules in Black, on foot, side view",
+   "gid://shopify/MediaImage/41320975040751": "Metal Toe Cap Wedge Mules in Cognac, on foot, side view"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41320974450927"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Off white": "Ivory",
+   "Brown": "Cognac"
+  },
+  "option_renames": {},
+  "flags": [
+   "brand logo"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Image 2 (Cognac, product only) shows a faint stamped brand name on the insole, so it is moved last; it is also the Brown variant image, so that variant should point at image 5 (Cognac on foot). The supplier title says \"genuine leather\" and \"high-heeled\" and the spec says plastic upper; the copy says faux leather and the photos show a low wedge. Colors renamed to match the photos: off-white shows as ivory, brown as a reddish cognac. The supplier only gives foot lengths (EU 34 = 220 mm to EU 39 = 245 mm, nothing for EU 40); the US range uses a standard conversion. Heel height is not given, so none is stated.",
+  "wardrobe": {
+   "use": true,
+   "color": "Black",
+   "photo_media_id": "gid://shopify/MediaImage/41320974909679",
+   "season": [
+    "spring",
+    "fall"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "shoes",
+   "prompt_description": "Black smooth faux leather backless mules with a closed square toe capped by a polished metal tip and a low black wedge heel."
+  }
+ },
+ {
+  "handle": "slope-heel-thick-sole-fish-mouth-patterned-high-rise-sandals",
+  "product_id": "gid://shopify/Product/9757625155823",
+  "original_title": "Slope heel thick sole fish mouth patterned high rise sandals",
+  "new_title": "Floral Print Platform Wedge Slides",
+  "product_type": "Sandals",
+  "tags": [
+   "wedge",
+   "platform",
+   "slide",
+   "floral",
+   "faux suede",
+   "peep toe",
+   "orange",
+   "black",
+   "green",
+   "summer",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A bold paisley-floral wedge under a wide faux suede band, an easy summer slide with denim or linen.</strong></p><ul><li>Faux suede band, printed wedge, rubber outsole</li><li>Wide single band, slip-on, open peep toe</li><li>Platform wedge (about 4 in)</li></ul><p>US 4–12 (EU 35–43)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320994046191",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320993718511": "Floral Print Platform Wedge Slides in Orange, Green and Black, on model",
+   "gid://shopify/MediaImage/41320994046191": "Floral Print Platform Wedge Slides in Orange, on model, side view",
+   "gid://shopify/MediaImage/41320994177263": "Floral Print Platform Wedge Slides in Green, sole view",
+   "gid://shopify/MediaImage/41320994242799": "Floral Print Platform Wedge Slides in Black, on model, side view",
+   "gid://shopify/MediaImage/41320994603247": "Floral Print Platform Wedge Slides in Black, shown single, side view with wedge height",
+   "gid://shopify/MediaImage/41320994799855": "Floral Print Platform Wedge Slides in Black, on model, side view",
+   "gid://shopify/MediaImage/41320995029231": "Floral Print Platform Wedge Slides in Orange, on model, side view",
+   "gid://shopify/MediaImage/41320995291375": "Floral Print Platform Wedge Slides in Green, on model, side view"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41320994603247"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [
+   "text overlay"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Image 5 has a \"10.5cm / 4.13in\" measurement overlay, so it is moved last; the lead is the clean on-model Orange shot (no plain-background shot without text exists). Spec says suede upper; the copy says faux suede. The green band is a deep emerald; \"Green\" is kept. Sizes from the supplier chart (EU 35 = US 4 to EU 43 = US 12); variant size values are still bare EU numbers.",
+  "wardrobe": {
+   "use": true,
+   "color": "Orange",
+   "photo_media_id": "gid://shopify/MediaImage/41320994046191",
+   "season": [
+    "spring",
+    "summer"
+   ],
+   "open_toe": true,
+   "occasion": [
+    "day"
+   ],
+   "category": "shoes",
+   "prompt_description": "Orange faux suede peep-toe wedge slides with one wide band across the foot and a 4-inch platform wedge wrapped in a red, green and cream paisley-floral print."
+  }
+ },
+ {
+  "handle": "autumn-and-winter-high-heels-thick-heels-one-foot-stomping-warehouse-tube-high-pass-boots-for-women",
+  "product_id": "gid://shopify/Product/9757625188591",
+  "original_title": "Autumn and winter high heels, thick heels, one foot stomping, warehouse tube high pass boots for women",
+  "new_title": "Snap Button Fold-Over Knee Boots",
+  "product_type": "Sandals",
+  "tags": [
+   "boots",
+   "knee-high",
+   "fold-over",
+   "snap button",
+   "faux leather",
+   "block heel",
+   "beige",
+   "black",
+   "white",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Knee-high boots with a wide fold-over cuff and a row of brass snaps, a sleek match for skirts and dresses.</strong></p><ul><li>Smooth faux leather, faux leather lining, rubber sole</li><li>Side zip, snap-button trim, small metal charm</li><li>Knee-high shaft (about 14 in), 2.8 in block heel</li></ul><p>US 5–11 (EU 35–43)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41320994865391",
+  "media_alts": {
+   "gid://shopify/MediaImage/41320993947887": "Snap Button Fold-Over Knee Boots in White, on model, side view",
+   "gid://shopify/MediaImage/41320994144495": "Snap Button Fold-Over Knee Boots in Black, on model, side view",
+   "gid://shopify/MediaImage/41320994210031": "Snap Button Fold-Over Knee Boots in Beige, on model, side view",
+   "gid://shopify/MediaImage/41320994537711": "Snap Button Fold-Over Knee Boots in White, on model, side view",
+   "gid://shopify/MediaImage/41320994734319": "Snap Button Fold-Over Knee Boots in Beige, on model, side view",
+   "gid://shopify/MediaImage/41320994865391": "Snap Button Fold-Over Knee Boots in Beige, shown single, side view",
+   "gid://shopify/MediaImage/41320995258607": "Snap Button Fold-Over Knee Boots in Black, shown single, side view",
+   "gid://shopify/MediaImage/41320995324143": "Snap Button Fold-Over Knee Boots in White, shown single, side view"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Apricot": "Beige"
+  },
+  "option_renames": {},
+  "flags": [],
+  "notes": "Footwear goes under Sandals per the brief. \"Apricot\" shows as a light beige, so it is renamed. The cuff carries a small gold leopard-head charm (decorative, no lettering). Shaft 36 cm and heel 7 cm from the measured description image; side zip from the spec (not visible in photos). Upper material is not stated; it reads as smooth faux leather. Sizes from the supplier chart (EU 35 = US 5 to EU 43 = US 11); variant size values are still bare EU numbers.",
+  "wardrobe": {
+   "use": true,
+   "color": "Beige",
+   "photo_media_id": "gid://shopify/MediaImage/41320994865391",
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "shoes",
+   "prompt_description": "Beige smooth faux leather knee-high boots with a wide fold-over cuff, a column of brass snap buttons down the outer side, a small gold leopard-head charm on the cuff, a round toe and a 3-inch block heel."
+  }
+ }
+]

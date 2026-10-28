@@ -1,0 +1,881 @@
+{
+  "product_id": "gid://shopify/Product/9751716921583",
+  "handle": "womens-fashion-sandals-cross-border-pointed-thin-heel-sandals-shoes",
+  "original_title": "Women's Fashion Sandals Cross Border Pointed Thin Heel Sandals Shoes",
+  "current_title": "Women's Fashion Sandals Cross Border Pointed Thin Heel Sandals Shoes",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/womens-fashion-sandals-cross-border-pointed-thin-heel-sandals-shoes",
+  "category": null,
+  "colors": [
+    "White",
+    "Black",
+    "Gold",
+    "Grey",
+    "Silver crocodile pattern",
+    "Golden crocodile pattern"
+  ],
+  "sizes": [
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+  ],
+  "options": {
+    "Color": [
+      "White",
+      "Black",
+      "Gold",
+      "Grey",
+      "Silver crocodile pattern",
+      "Golden crocodile pattern"
+    ],
+    "Size": [
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+    ]
+  },
+  "price_min": 86.22,
+  "price_max": 86.22,
+  "cost_min": 30.56,
+  "cost_max": 30.56,
+  "specs": {
+    "Upper material": "artificial PU",
+    "Sole material": "rubber",
+    "Toe shape": "fish mouth",
+    "Popular element": "shallow mouth",
+    "Wearing mode": "sleeve/overshoe",
+    "Processing method": "shaving skin",
+    "Pattern": "solid color",
+    "Sole technology": "viscose shoes",
+    "Inner lining material": "imitation leather",
+    "Upper height": "high",
+    "Back top style": "back empty",
+    "Production time": "8-15 days",
+    "Color": "white, black, gold, gray, silver crocodile pattern, gold crocodile pattern",
+    "Size": "34,35,36,37,38,39,40,41,42,43,44,45",
+    "Applicable scenario": "banquet",
+    "Heel shape": "thin heel",
+    "Heel height": "heel (above 8cm)"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Please refer to the international standard size chart (the actual situation depends on the individual foot type)"
+      ],
+      [
+        "EUR Size",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      [
+        "CN Size",
+        "220",
+        "225",
+        "230",
+        "235",
+        "240",
+        "245"
+      ],
+      [
+        "Foot length (mm)",
+        "215-220",
+        "221-225",
+        "226-230",
+        "231-235",
+        "236-240",
+        "241-245"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F035FBC68A7F4D520F387AEB01386755.jpg?v=1792823488",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/DB57F5A7EE454C25CCAF1F3C3ECB1BD3.jpg?v=1792823492",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/90817C97ECEB045895BB901CBE1FF434.jpg?v=1792823506",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7427DB0639FBE3FA99E244AE99899F91.jpg?v=1792823510",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A7B666E4C254C401B6A898C51802FA26.jpg?v=1792823513",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [
+    "https://cbu01.alicdn.com/img/ibank/O1CN011ZK9za24RkqBTiCSD_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01UHU5zD24RkqJ9XQRo_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01hdOtzw24RkqF6PjnZ_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN011ntpM824RkqKqs8J3_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN012CcoxA24RkqDdPgSj_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN013wzUqO24RkqBTeIqy_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01mxuBiR24RkqGYV3Xh_!!2712767388-0-cib.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01KM9nzN24RkqBTeAXT_!!2712767388-0-cib.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White / 34",
+      "sku": "9972C0F2667342C68B5CBDDFFFF5C88A",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "White / 35",
+      "sku": "064B74DDDDD84391BBDB97660A4AF63B",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "White / 36",
+      "sku": "7242E09E12374D63BFB0CE203895AC4E",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "White / 37",
+      "sku": "F467FAC5042140BEAA4A6017367059C2",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "White / 38",
+      "sku": "D5A46C87AC60494EB9649CA4AF5337CE",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "White / 39",
+      "sku": "1E39A1551CEF46F48E134A21C5101C19",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "White / 40",
+      "sku": "B94BD3B733504984BC9398F9870FD893",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "White / 41",
+      "sku": "3D26AF50BCF04728A27F099F4FC9B7C8",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "White / 42",
+      "sku": "7C92C47F8EC04247B83B0D82246CCD4D",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "White / 43",
+      "sku": "A842FD769C044E0180F01FC6EF3500DA",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "White / 44",
+      "sku": "4B6759346A3B4C9893B9119844353876",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "44"
+      }
+    },
+    {
+      "title": "White / 45",
+      "sku": "AD73CC25AB3C4FA6B31DE11114CF9EFD",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "White",
+        "Size": "45"
+      }
+    },
+    {
+      "title": "Black / 34",
+      "sku": "8932B2CDBBC54F0C92A52B0FEEC54CF4",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Black / 35",
+      "sku": "B51962B1D4434C8D9B632E12FF56E6BE",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "9D94DC2F83544EFD917399710A5B2C2D",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "327E858759544F42AE27381E5B703C49",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "7469D27D079546E1BF22D2E8D7810AB6",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "0C08D18E996544E98FCDB29D91C5BFCD",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "7E06D6AECEEE47A3B31E485CB477BA20",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "75F98FDB216049DE9EDB4B043DA7728A",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "21C92335D033469DB9DA118AD0262AA9",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "8A6D865EA161495F84C05304809BA092",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 44",
+      "sku": "3EFE746952EA48A285D7DB484A9C9D0A",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "44"
+      }
+    },
+    {
+      "title": "Black / 45",
+      "sku": "FDF5A28D50B9429CBF32CF5AFF0A250F",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Black",
+        "Size": "45"
+      }
+    },
+    {
+      "title": "Gold / 34",
+      "sku": "EDC11BC799E7487E82C21AEA6B478B02",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Gold / 35",
+      "sku": "245CA41535D442F48138F24FBC86FDAA",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Gold / 36",
+      "sku": "BAAC9F88CD5544FF9A4F7CF42F5AE813",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Gold / 37",
+      "sku": "CE4F20443CB7454B8C1B0D58AE41C270",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Gold / 38",
+      "sku": "A148C2BF677C481695E6F177D2173B2D",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Gold / 39",
+      "sku": "A98FB98A546B429C857B394A964BBD4E",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Gold / 40",
+      "sku": "0E95A76FFFCB4A2A965DF168A8D43375",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Gold / 41",
+      "sku": "89B750A385CC49C59A8F66DE5BA307C8",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Gold / 42",
+      "sku": "54726ABA1E1A48C9ABABEBEB189B2A24",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Gold / 43",
+      "sku": "5BA140B19F4844E2A56F5FFED99AB4AA",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Gold / 44",
+      "sku": "A031F318A05D401980BE3F9B3CEA88BF",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "44"
+      }
+    },
+    {
+      "title": "Gold / 45",
+      "sku": "4EB9C93084EC45B2847156AA29629BA3",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Gold",
+        "Size": "45"
+      }
+    },
+    {
+      "title": "Grey / 34",
+      "sku": "92DF3A0891E94B838DE89CDCB7C7326D",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Grey / 35",
+      "sku": "800094B8904147E997A9B1A0FCA58A60",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Grey / 36",
+      "sku": "2BDC6E24118A42C0B1F8BCE88EA63EB4",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Grey / 37",
+      "sku": "D57410F3BD364EFB84F05EFED8DF8EDE",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Grey / 38",
+      "sku": "B1C219284D5E4F9AAD1F76BC4CE2FDBF",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Grey / 39",
+      "sku": "6FAC959EC14741BD80279A3B515C8CCC",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Grey / 40",
+      "sku": "7A31C7D27C6C424CA7888B0F1E6A4F81",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Grey / 41",
+      "sku": "FA0752AD2FC74F8FB4FA3EF23C5F774C",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Grey / 42",
+      "sku": "8B16E094966E474B9E53DC77DFF367A5",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Grey / 43",
+      "sku": "799A853119744749A068480C5990EA78",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Grey / 44",
+      "sku": "63727DCFA34044EA9C82BFA7EAAFAF50",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "44"
+      }
+    },
+    {
+      "title": "Grey / 45",
+      "sku": "329542B5D576403196F52139D3F0B491",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Grey",
+        "Size": "45"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 34",
+      "sku": "B95C39AB1100443C81B7E8B4756502AC",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 35",
+      "sku": "E6B8773F62714E8CB3CF1E9C11264209",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 36",
+      "sku": "B100460A4EAD4E899D2E58EE84269D57",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 37",
+      "sku": "C1BB6AC9DFB3413AB23E4821529C9CC3",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 38",
+      "sku": "36E0ABFAF10540009B40DBC16E1110B0",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 39",
+      "sku": "1BACA05CEEC246219C3A1300CB3FAE16",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 40",
+      "sku": "E49FCF8C275E442DB99D26CFA872F54B",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 41",
+      "sku": "3A86199171914B68954F8C93E8AE2810",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 42",
+      "sku": "A17E557BBD494199B6B55577F59D9D3E",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 43",
+      "sku": "AA02EF741C704E74A281D3B40980D68E",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 44",
+      "sku": "8B8AF1DFA1D54F699850E01797CF700A",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "44"
+      }
+    },
+    {
+      "title": "Silver crocodile pattern / 45",
+      "sku": "0DBFE10F49AE4B2CADAABF5D30033D1A",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Silver crocodile pattern",
+        "Size": "45"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 34",
+      "sku": "D946D6A887B74B4FAAF3C5FFDCE38D15",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 35",
+      "sku": "1840F4D8DCF64DCFA6499D588D20BBA5",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 36",
+      "sku": "DFC5F1BC91BE464CAAFD33CED1071356",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 37",
+      "sku": "51AEF5FB89564755BF20F1000B0F2A45",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 38",
+      "sku": "4BF6BFE008EE4A49918918C75EB73C8D",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 39",
+      "sku": "3493430AA04A4795A2E7445BDD7A78F6",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 40",
+      "sku": "C500C16B70B74DCE931EC520EE63FECC",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 41",
+      "sku": "86A156378B7E4BDEABE1BF89BA24C5CD",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 42",
+      "sku": "595C9C9EAF00442C9055BE87A780DD45",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 43",
+      "sku": "D61A89366FE8461292AD4C9D1EFF5C1B",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 44",
+      "sku": "0BEFB39A594D46B58313341E45F9BD14",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "44"
+      }
+    },
+    {
+      "title": "Golden crocodile pattern / 45",
+      "sku": "2ADD2B8076474EFD8756AE69989FB4F7",
+      "price": "86.22",
+      "cost": "30.56",
+      "options": {
+        "Color": "Golden crocodile pattern",
+        "Size": "45"
+      }
+    }
+  ],
+  "raw_description_html": "<p><span style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px 20px 0px 0px; outline: none; width: 150px; color: rgb(153, 153, 153); font-size: 20px;\"></span></p><p><span style=\"font-size: 20px;\">Upper material: artificial PU</span></p><p><span style=\"font-size: 20px;\">Sole material: rubber</span></p><p><span style=\"font-size: 20px;\">Toe shape: fish mouth</span></p><p><span style=\"font-size: 20px;\">Popular element: shallow mouth</span></p><p><span style=\"font-size: 20px;\">Wearing mode: sleeve/overshoe</span></p><p><span style=\"font-size: 20px;\">Processing method: shaving skin</span></p><p><span style=\"font-size: 20px;\">Pattern: solid color</span></p><p><span style=\"font-size: 20px;\">Sole technology: viscose shoes</span></p><p><span style=\"font-size: 20px;\">Inner lining material: imitation leather</span></p><p><span style=\"font-size: 20px;\">Upper height: high</span></p><p><span style=\"font-size: 20px;\">Back top style: back empty</span></p><p><span style=\"font-size: 20px;\">Production time: 8-15 days</span></p><p><span style=\"font-size: 20px;\">Color: white, black, gold, gray, silver crocodile pattern, gold crocodile pattern</span></p><p><span style=\"font-size: 20px;\">Size: 34,35,36,37,38,39,40,41,42,43,44,45</span></p><p><span style=\"font-size: 20px;\">Applicable scenario: banquet</span></p><p><span style=\"font-size: 20px;\">Heel shape: thin heel</span></p><p><span style=\"font-size: 20px;\">Heel height: heel (above 8cm)</span></p><p><span style=\"font-size: 20px; box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px 20px 0px 0px; outline: none; flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis;\"><br></span></p><p><br></p><table width=\"875\">\n<colgroup><col width=\"125\" style=\"width:125px\" span=\"7\"></colgroup>\n<tbody>\n<tr style=\"height:33px\" class=\"firstRow\"><td colspan=\"7\" width=\"875\" style=\"\"><span style=\"font-size: 20px;\">Please refer to the international standard size chart (the actual situation depends on the individual foot type)</span></td></tr>\n<tr style=\"height:33px\">\n<td style=\"\"><span style=\"font-size: 20px;\">EUR Size</span></td>\n<td><span style=\"font-size: 20px;\">34</span></td>\n<td><span style=\"font-size: 20px;\">35</span></td>\n<td><span style=\"font-size: 20px;\">36</span></td>\n<td><span style=\"font-size: 20px;\">37</span></td>\n<td><span style=\"font-size: 20px;\">38</span></td>\n<td><span style=\"font-size: 20px;\">39</span></td>\n</tr>\n<tr style=\"height:33px\">\n<td style=\"\"><span style=\"font-size: 20px;\">CN Size</span></td>\n<td><span style=\"font-size: 20px;\">220</span></td>\n<td><span style=\"font-size: 20px;\">225</span></td>\n<td><span style=\"font-size: 20px;\">230</span></td>\n<td><span style=\"font-size: 20px;\">235</span></td>\n<td><span style=\"font-size: 20px;\">240</span></td>\n<td><span style=\"font-size: 20px;\">245</span></td>\n</tr>\n<tr style=\"height:33px\">\n<td style=\"\"><span style=\"font-size: 20px;\">Foot length (mm)</span></td>\n<td><span style=\"font-size: 20px;\">215-220</span></td>\n<td><span style=\"font-size: 20px;\">221-225</span></td>\n<td><span style=\"font-size: 20px;\">226-230</span></td>\n<td><span style=\"font-size: 20px;\">231-235</span></td>\n<td><span style=\"font-size: 20px;\">236-240</span></td>\n<td><span style=\"font-size: 20px;\">241-245</span></td>\n</tr>\n</tbody>\n</table><p><span style=\"font-size: 20px; box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin: 0px; padding: 0px 20px 0px 0px; outline: none; flex: 1 1 0%; overflow: hidden; text-overflow: ellipsis;\"><br></span></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN011ZK9za24RkqBTiCSD_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01UHU5zD24RkqJ9XQRo_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01hdOtzw24RkqF6PjnZ_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN011ntpM824RkqKqs8J3_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN012CcoxA24RkqDdPgSj_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN013wzUqO24RkqBTeIqy_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4; font-family: \"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01mxuBiR24RkqGYV3Xh_!!2712767388-0-cib.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.4;\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01KM9nzN24RkqBTeAXT_!!2712767388-0-cib.jpg\"></p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

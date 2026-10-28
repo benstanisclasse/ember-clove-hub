@@ -1,0 +1,134 @@
+{
+  "creative_id": "EC-P01-A05-H01-V02",
+  "parent_id": null,
+  "changed_field": null,
+  "experiment_id": "C1-P01-A05",
+  "product_id": "gid://shopify/Product/9751656071407",
+  "platform": "tiktok",
+  "length_s": 15,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "Own knee-high boots? This dress is for you.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "callout",
+    "opening_visual": "product-on-body-stride",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "The dress your tall boots need (ICP-P01 A1) - AR-04 stride demo",
+        "icp": "P01 S1 Boot-season outfit builder",
+        "product": "Cable Knit Mock Neck Midi Dress",
+        "color": "Caramel",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims; no post-production",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "product_reference": [
+      {
+        "references": [
+          "assets/EC-P01-A02-H01-V01/ref1_dress_neck_down.jpg",
+          "assets/EC-P01-A02-H01-V01/ref2_cable_slit_closeup.jpg"
+        ],
+        "source_photo": "Shopify 1E3E6FA7B028205FCC94E89C7CF6CC63.jpg (caramel street shot)",
+        "processing": "cropped below the chin to exclude the supplier model's face",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Own knee-high boots? This dress is for you.",
+          "Cable knit, mock neck, fitted through the hips.",
+          "The slit opens over your boots, so walking's easy.",
+          "It's Ember and Clove, fifty-two ninety-nine. Link's right here."
+        ],
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5/reference-to-video",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 15 seconds, four quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is an AI-generated young adult woman (not any real person), friendly and excited, speaking English directly to the camera. Clear natural speech, light room tone, no background music, no on-screen text, no logos.\nThe dress in every shot is the exact caramel cable-knit mock neck midi sweater dress from the reference images: plain-knit fitted top with a mock neck, long sleeves with ribbed cuffs, a ribbed waistband at the natural waist, a vertical cable-knit skirt fitted through the hips with a diagonal wrap seam that opens into a front slit, midi length to mid-calf where the hem overlaps the top of black knee-high boots. Keep its caramel color, the cable pattern (on the skirt only), the slit position and height (never higher than in the references) and the length identical to the references.\nShot 1 (0-3 s): the presenter (shoulder-length wavy dark-brown hair, small gold hoop earrings) is already wearing the caramel dress with black knee-high boots; full-length shot, she takes two steps toward the camera so the front slit opens over the boots, looking straight into the lens, saying: \"Own knee-high boots? This dress is for you.\"\nShot 2 (3-7 s): cut to a mid-shot; her hands run down the cable-knit skirt and smooth the ribbed waistband, then touch the mock neck; her eyes follow her hands, saying: \"Cable knit, mock neck, fitted through the hips.\"\nShot 3 (7-11 s): cut to a full-length side-front shot; she walks past the arched mirror and the front slit opens over the boot shaft with each step, saying: \"The slit opens over your boots, so walking's easy.\"\nShot 4 (11-15 s): she walks up to the camera into a smiling chest-up close-up, saying: \"It's Ember and Clove, fifty-two ninety-nine. Link's right here.\"",
+        "duration": 15,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "request_id": "7b699a3f-e639-4549-aacf-73d67c311a31",
+        "status": "completed",
+        "cost_note": "actual: open.higgsfield.ai billing usage -$4.85; balance after $33.24",
+        "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/7b699a3f-e639-4549-aacf-73d67c311a31/9d0512cd-f333-4039-b744-2c63487e876a.mp4",
+        "recorded_at": "2026-10-25T11:31:17",
+        "credits": 0,
+        "usd": 4.85
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 4.85
+  },
+  "status": "APPROVED",
+  "created_at": "2026-10-25T11:27:37",
+  "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/7b699a3f-e639-4549-aacf-73d67c311a31/9d0512cd-f333-4039-b744-2c63487e876a.mp4",
+  "local_path": "assets\\EC-P01-A05-H01-V02\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-25T11:34:18",
+    "result": "visual pass; audio for owner to confirm",
+    "notes": "caramel cable knit, mock neck, ribbed waist, front slit opening over black knee-high boots while walking all match; mirror walk-by shows slit; AI presenter; no logos seen",
+    "owner_review": {
+      "approved_at": "2026-10-25T11:40:55",
+      "note": "Owner 2026-10-25: will use. Note: spoken price/delivery lines lock the ad to current price; remake winners without them before any price change."
+    }
+  },
+  "elements": {
+    "observed": {
+      "room": "other",
+      "lighting": "natural_daylight",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "brown",
+      "hair_length": "shoulder",
+      "jewelry": [
+        "hoop_earrings",
+        "rings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "true",
+      "glasses": "false",
+      "worn_with": [
+        "boots"
+      ],
+      "color_palette": "neutral_earth",
+      "props": [
+        "mirror"
+      ],
+      "camera_style": "selfie_handheld",
+      "main_shot_distance": "mixed",
+      "camera_movement": "slight",
+      "actions": [
+        "walking",
+        "turning_twirling",
+        "hand_detail",
+        "talking_to_camera"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:05:00"
+    }
+  }
+}

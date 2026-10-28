@@ -1,0 +1,596 @@
+{
+ "query": "mutation($id0: ID!, $mv0: [MoveInput!]!, $id1: ID!, $mv1: [MoveInput!]!, $id2: ID!, $mv2: [MoveInput!]!, $id3: ID!, $mv3: [MoveInput!]!, $id4: ID!, $mv4: [MoveInput!]!, $id5: ID!, $mv5: [MoveInput!]!, $id6: ID!, $mv6: [MoveInput!]!, $id7: ID!, $mv7: [MoveInput!]!, $id8: ID!, $mv8: [MoveInput!]!, $id9: ID!, $mv9: [MoveInput!]!, $id10: ID!, $mv10: [MoveInput!]!, $id11: ID!, $mv11: [MoveInput!]!, $id12: ID!, $mv12: [MoveInput!]!, $id13: ID!, $mv13: [MoveInput!]!, $id14: ID!, $mv14: [MoveInput!]!, $id15: ID!, $mv15: [MoveInput!]!, $id16: ID!, $mv16: [MoveInput!]!) {\n  r0: productReorderMedia(id: $id0, moves: $mv0) { job { id } userErrors { field message } }\n  r1: productReorderMedia(id: $id1, moves: $mv1) { job { id } userErrors { field message } }\n  r2: productReorderMedia(id: $id2, moves: $mv2) { job { id } userErrors { field message } }\n  r3: productReorderMedia(id: $id3, moves: $mv3) { job { id } userErrors { field message } }\n  r4: productReorderMedia(id: $id4, moves: $mv4) { job { id } userErrors { field message } }\n  r5: productReorderMedia(id: $id5, moves: $mv5) { job { id } userErrors { field message } }\n  r6: productReorderMedia(id: $id6, moves: $mv6) { job { id } userErrors { field message } }\n  r7: productReorderMedia(id: $id7, moves: $mv7) { job { id } userErrors { field message } }\n  r8: productReorderMedia(id: $id8, moves: $mv8) { job { id } userErrors { field message } }\n  r9: productReorderMedia(id: $id9, moves: $mv9) { job { id } userErrors { field message } }\n  r10: productReorderMedia(id: $id10, moves: $mv10) { job { id } userErrors { field message } }\n  r11: productReorderMedia(id: $id11, moves: $mv11) { job { id } userErrors { field message } }\n  r12: productReorderMedia(id: $id12, moves: $mv12) { job { id } userErrors { field message } }\n  r13: productReorderMedia(id: $id13, moves: $mv13) { job { id } userErrors { field message } }\n  r14: productReorderMedia(id: $id14, moves: $mv14) { job { id } userErrors { field message } }\n  r15: productReorderMedia(id: $id15, moves: $mv15) { job { id } userErrors { field message } }\n  r16: productReorderMedia(id: $id16, moves: $mv16) { job { id } userErrors { field message } }\n}",
+ "variables": {
+  "id0": "gid://shopify/Product/9755699970287",
+  "id1": "gid://shopify/Product/9756888170735",
+  "id2": "gid://shopify/Product/9756888236271",
+  "id3": "gid://shopify/Product/9756888269039",
+  "id4": "gid://shopify/Product/9756956524783",
+  "id5": "gid://shopify/Product/9756888432879",
+  "id6": "gid://shopify/Product/9756888498415",
+  "id7": "gid://shopify/Product/9756888989935",
+  "id8": "gid://shopify/Product/9756889022703",
+  "id9": "gid://shopify/Product/9756889153775",
+  "id10": "gid://shopify/Product/9756889252079",
+  "id11": "gid://shopify/Product/9756889874671",
+  "id12": "gid://shopify/Product/9756901933295",
+  "id13": "gid://shopify/Product/9756905537775",
+  "id14": "gid://shopify/Product/9756949676271",
+  "id15": "gid://shopify/Product/9757002268911",
+  "id16": "gid://shopify/Product/9757005840623",
+  "mv0": [
+   {
+    "id": "gid://shopify/MediaImage/41311366349039",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365529839",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365628143",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365726447",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365759215",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365890287",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366021359",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366119663",
+    "newPosition": "7"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366250735",
+    "newPosition": "8"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366447343",
+    "newPosition": "9"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366545647",
+    "newPosition": "10"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366676719",
+    "newPosition": "11"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365955823",
+    "newPosition": "12"
+   }
+  ],
+  "mv1": [
+   {
+    "id": "gid://shopify/MediaImage/41317798346991",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317797691631",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798117615",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798740207",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799264495",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799559407",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799887087",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800214767",
+    "newPosition": "7"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800607983",
+    "newPosition": "8"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801459951",
+    "newPosition": "9"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803491567",
+    "newPosition": "10"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804343535",
+    "newPosition": "11"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806866671",
+    "newPosition": "12"
+   }
+  ],
+  "mv2": [
+   {
+    "id": "gid://shopify/MediaImage/41317799592175",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798052079",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798314223",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798772975",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799231727",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799919855",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800247535",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801066735",
+    "newPosition": "7"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801427183",
+    "newPosition": "8"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801722095",
+    "newPosition": "9"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803524335",
+    "newPosition": "10"
+   }
+  ],
+  "mv3": [
+   {
+    "id": "gid://shopify/MediaImage/41317798674671",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798281455",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799035119",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799362799",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799821551",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800116463",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800444143",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801165039",
+    "newPosition": "7"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806375151",
+    "newPosition": "8"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807587567",
+    "newPosition": "9"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808505071",
+    "newPosition": "10"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808799983",
+    "newPosition": "11"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317809127663",
+    "newPosition": "12"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814108399",
+    "newPosition": "13"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814337775",
+    "newPosition": "14"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814960367",
+    "newPosition": "15"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816860911",
+    "newPosition": "16"
+   }
+  ],
+  "mv4": [
+   {
+    "id": "gid://shopify/MediaImage/41317831114991",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828231407",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831311599",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831901423",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317829935343",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831508207",
+    "newPosition": "5"
+   }
+  ],
+  "mv5": [
+   {
+    "id": "gid://shopify/MediaImage/41317799788783",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799526639",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799952623",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800476911",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801197807",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801492719",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806244079",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806801135",
+    "newPosition": "7"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807030511",
+    "newPosition": "8"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808177391",
+    "newPosition": "9"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808275695",
+    "newPosition": "10"
+   }
+  ],
+  "mv6": [
+   {
+    "id": "gid://shopify/MediaImage/41317800149231",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799624943",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800509679",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801132271",
+    "newPosition": "3"
+   }
+  ],
+  "mv7": [
+   {
+    "id": "gid://shopify/MediaImage/41317803229423",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803917551",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804146927",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804769519",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805097199",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807063279",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808537839",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317809160431",
+    "newPosition": "7"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803458799",
+    "newPosition": "8"
+   }
+  ],
+  "mv8": [
+   {
+    "id": "gid://shopify/MediaImage/41317814370543",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804998895",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806637295",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814993135",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803196655",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803557103",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803950319",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804736751",
+    "newPosition": "7"
+   }
+  ],
+  "mv9": [
+   {
+    "id": "gid://shopify/MediaImage/41317808570607",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804474607",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806833903",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808767215",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317809094895",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317813485807",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317813944559",
+    "newPosition": "6"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806604527",
+    "newPosition": "7"
+   }
+  ],
+  "mv10": [
+   {
+    "id": "gid://shopify/MediaImage/41317807325423",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804179695",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807554799",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317810438383",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804507375",
+    "newPosition": "4"
+   }
+  ],
+  "mv11": [
+   {
+    "id": "gid://shopify/MediaImage/41317816828143",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807522031",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816008943",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317817680111",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317817876719",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807751407",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816631535",
+    "newPosition": "6"
+   }
+  ],
+  "mv12": [
+   {
+    "id": "gid://shopify/MediaImage/41317820236015",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317824332015",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317820727535",
+    "newPosition": "2"
+   }
+  ],
+  "mv13": [
+   {
+    "id": "gid://shopify/MediaImage/41317821546735",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317820924143",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317822890223",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317823250671",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317821350127",
+    "newPosition": "4"
+   }
+  ],
+  "mv14": [
+   {
+    "id": "gid://shopify/MediaImage/41317826953455",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828034799",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828460783",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828657391",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317830295791",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317827248367",
+    "newPosition": "5"
+   }
+  ],
+  "mv15": [
+   {
+    "id": "gid://shopify/MediaImage/41317838127343",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317837406447",
+    "newPosition": "1"
+   }
+  ],
+  "mv16": [
+   {
+    "id": "gid://shopify/MediaImage/41317840421103",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317840716015",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317841371375",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317843763439",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317844222191",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317841174767",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317843599599",
+    "newPosition": "6"
+   }
+  ]
+ }
+}

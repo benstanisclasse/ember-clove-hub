@@ -1,0 +1,320 @@
+{
+  "product_id": "gid://shopify/Product/9751716757743",
+  "handle": "open-toe-buckle-flat-sandals",
+  "original_title": "Open Toe Buckle Flat Sandals",
+  "current_title": "Open Toe Buckle Flat Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-buckle-flat-sandals",
+  "category": null,
+  "colors": [
+    "Black",
+    "Terracotta"
+  ],
+  "sizes": [
+    "42",
+    "43",
+    "40",
+    "41",
+    "38",
+    "39",
+    "36",
+    "37",
+    "35"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Terracotta"
+    ],
+    "Size": [
+      "42",
+      "43",
+      "40",
+      "41",
+      "38",
+      "39",
+      "36",
+      "37",
+      "35"
+    ]
+  },
+  "price_min": 20.48,
+  "price_max": 20.48,
+  "cost_min": 3.01,
+  "cost_max": 3.01,
+  "specs": {
+    "Size": "unit：mm",
+    "Fit": "True to size, order usual size.",
+    "Includes": "Box not included",
+    "Heel height": "Flats",
+    "Upper material": "PU",
+    "Sole material": "rubber"
+  },
+  "description_text": [
+    "Product measurements:",
+    "Imported"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35",
+        "225"
+      ],
+      [
+        "36",
+        "230"
+      ],
+      [
+        "37",
+        "235"
+      ],
+      [
+        "38",
+        "240"
+      ],
+      [
+        "39",
+        "245"
+      ],
+      [
+        "40",
+        "250"
+      ],
+      [
+        "41",
+        "255"
+      ],
+      [
+        "42",
+        "260"
+      ],
+      [
+        "43",
+        "265"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8F3AD4D93F48735D7F975584601E3D56.jpg?v=1792823484",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2CD23A3E8D885C4D320B522A8ED883C8.jpg?v=1792823488",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6411CA183EFC8020774186435EF8148D.jpg?v=1792823490",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4601DB71CFC7AA9BF53EDFFDC056102F.jpg?v=1792823492",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C3EE56C6BF45FDD0B947A3731DE7A239.jpg?v=1792823503",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 42",
+      "sku": "789A2C4514E740ACB4552ADDFF4513B0",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "D3C3FF8BB3B64C9D882474E08B7B012C",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "D3E85B4C02AC40E4B4269F87F108E6ED",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "897101DD2FDF4E93A5AE7C16B47F18FC",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "40637A64D38D42E08EEA7639AA56C008",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "C8FB5DE5D7694C4BB3AEF1EBF0B47251",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "3880D2697F9D41D8A05FBDCC2F86CA2B",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "3C206828E5764679BB4019BFBD9D2016",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Terracotta / 43",
+      "sku": "77F3B5238F5247679C3CDDA820FA577C",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 35",
+      "sku": "4E7EFBAF41304447A47BDC3184B3E9CD",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Black",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Terracotta / 41",
+      "sku": "826D05760721476A98F4112C437D05A1",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Terracotta / 42",
+      "sku": "352ABB3B7CC24C82BED35B6EED05E5EB",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Terracotta / 39",
+      "sku": "488C9F04AE6D44BF9967AFDDBC90C4CB",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Terracotta / 40",
+      "sku": "E8B89B495C77461DADDEEB34B086133F",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Terracotta / 37",
+      "sku": "921ACB6048214947B026001A6BB4D19A",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Terracotta / 38",
+      "sku": "5AE11279A06B41838B71E36D7639F5C8",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Terracotta / 35",
+      "sku": "C518066B0D8F4DBDBB9A3A01069A75D0",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Terracotta / 36",
+      "sku": "E61734AB7CE44D5894B6B1E7AA4DDF3A",
+      "price": "20.48",
+      "cost": "3.01",
+      "options": {
+        "Color": "Terracotta",
+        "Size": "36"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<li><p>Size:unit：mm<br></p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px; font-weight: 400; word-break: break-all;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">35</th>\n<td style=\"padding: 9px; word-break: break-all;\">225</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">36</th>\n<td style=\"padding: 9px; word-break: break-all;\">230</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">37</th>\n<td style=\"padding: 9px; word-break: break-all;\">235</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">38</th>\n<td style=\"padding: 9px; word-break: break-all;\">240</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">39</th>\n<td style=\"padding: 9px; word-break: break-all;\">245</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">40</th>\n<td style=\"padding: 9px; word-break: break-all;\">250</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">41</th>\n<td style=\"padding: 9px; word-break: break-all;\">255</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">42</th>\n<td style=\"padding: 9px; word-break: break-all;\">260</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">43</th>\n<td style=\"padding: 9px; word-break: break-all;\">265</td>\n</tr>\n</tbody>\n</table>\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Includes: Box not included</p></li>\n<li><p>Heel height: Flats</p></li>\n<li><p>Upper material: PU</p></li>\n<li><p>Sole material: rubber</p></li>\n<li><p>Imported</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

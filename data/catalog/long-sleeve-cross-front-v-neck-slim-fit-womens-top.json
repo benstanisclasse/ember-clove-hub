@@ -1,0 +1,206 @@
+{
+  "product_id": "gid://shopify/Product/9756890005743",
+  "handle": "long-sleeve-cross-front-v-neck-slim-fit-womens-top",
+  "original_title": "Long Sleeve Cross Front V-Neck Slim Fit Women's Top",
+  "current_title": "Long Sleeve Cross Front V-Neck Slim Fit Women's Top",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "tops",
+  "url": "https://emberandclove.com/products/long-sleeve-cross-front-v-neck-slim-fit-womens-top",
+  "category": null,
+  "colors": [
+    "White",
+    "Black",
+    "Gray",
+    "Pink"
+  ],
+  "sizes": [
+    "S",
+    "M"
+  ],
+  "options": {
+    "Color": [
+      "White",
+      "Black",
+      "Gray",
+      "Pink"
+    ],
+    "Size": [
+      "S",
+      "M"
+    ]
+  },
+  "price_min": 35.78,
+  "price_max": 35.78,
+  "cost_min": 7.94,
+  "cost_max": 7.94,
+  "specs": {
+    "Color": "White, Black, Gray, Pin",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long Sleeved",
+    "Neckline": "V-Neck",
+    "Length": "Regular",
+    "Fabric": "Rayon Blend",
+    "Fit Type": "Slim Fit",
+    "Occasion": "Casual, Daily, Dating",
+    "Size": "S, M",
+    "Gender": "Unisex",
+    "Details": "Edge Binding",
+    "Wearing Style": "Outerwear",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "SIZE",
+        "Length",
+        "Bust",
+        "Shoulder",
+        "Sleeve"
+      ],
+      [
+        "S",
+        "45",
+        "70",
+        "35",
+        "58"
+      ],
+      [
+        "M",
+        "46",
+        "74",
+        "36",
+        "59"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C0D56CF0517DA07AC7FBBEC147F3E87F.jpg?v=1793048008",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D8EB0F86BA1384A6B48C918E17C9CB68.jpg?v=1793048029",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4F72235BBE81BAF218E9128F4949DD80.jpg?v=1793048047",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4C1BD9074AEFA2A2749D5FECE3D2471F.jpg?v=1793048048",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FE9D487F58DD72A6F4BB049134DB7440.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5EE230FD5E7DF6389DB48BDE56D3C230.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FD604EF8D0892A78CB35702A0E2E0375.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/62C7876F478BB8D25319411B4F47C0C4.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/094C46FD6092CCED4E1AF39A87AE498A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AA3B9DB0C3F723E32A926B939883238B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E1E504B1341D6FD418DEC2CAA8695D21.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/18CCB7FF305BC85DFC393F594F8F1A7F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/686728EAA2C2A834B044B10EE8F861D7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0DCE8E07BA111B300F4471A2DCFC8DE8.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4B9529A1453348BA75AEDFB33734E3FF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EDC5672554C535CD322C0F6E8D1BB025.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CA0D0729664EB035585C8761E3B50689.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F3508A7F50CF8D433DC163CC277D3C13.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A60CA6CAFEAA3B43BD651338153DAFD1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0FC940F02783952002F95A9A78B622AE.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White / S",
+      "sku": "915FFABA01A14AFC9F91CD16C50533AE",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "White",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White / M",
+      "sku": "B1BB82761148474F9FAB7EC69F11EAA2",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "White",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "1E2F356E9E694D2A90B28BC12A58B0CC",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "A5B5503B09234552900C38AD7159FB4D",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray / S",
+      "sku": "3C857E5E3468460AAF893C2145494FF2",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray / M",
+      "sku": "250D710FC8F24B1EA4DC69414FBDD9E2",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Pink / S",
+      "sku": "C5183F628B8D46A4B199F659022FCBDD",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "Pink",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Pink / M",
+      "sku": "D8ACDE7331F249FA8F5944A46E3F7DFB",
+      "price": "35.78",
+      "cost": "7.94",
+      "options": {
+        "Color": "Pink",
+        "Size": "M"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Color: White, Black, Gray, Pin</strong></p><p style=\"font-size: 16px;\"><strong>Pattern Type: Solid Color</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length: Long Sleeved</strong></p><p style=\"font-size: 16px;\"><strong>Neckline: V-Neck</strong></p><p style=\"font-size: 16px;\"><strong>Length: Regular</strong></p><p style=\"font-size: 16px;\"><strong>Fabric: Rayon Blend</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type: Slim Fit</strong></p><p style=\"font-size: 16px;\"><strong>Occasion: Casual, Daily, Dating</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M</strong></p><p style=\"font-size: 16px;\"><strong>Gender: Unisex</strong></p><p style=\"font-size: 16px;\"><strong>Details: Edge Binding</strong></p><p style=\"font-size: 16px;\"><strong>Wearing Style: Outerwear</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table style=\"width: 100%; border-collapse: collapse; text-align: center; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden;\">\n<thead><tr style=\"background-color: #e8e8e8;\" class=\"firstRow\">\n<th style=\"padding: 12px; color: #333;\">SIZE</th>\n<th style=\"padding: 12px; color: #333;\">Length</th>\n<th style=\"padding: 12px; color: #333;\">Bust</th>\n<th style=\"padding: 12px; color: #333;\">Shoulder</th>\n<th style=\"padding: 12px; color: #333;\">Sleeve</th>\n</tr></thead>\n<tbody>\n<tr style=\"background-color: #f9f9f9;\">\n<td style=\"padding: 12px; color: #333;\">S</td>\n<td style=\"padding: 12px; color: #333;\">45</td>\n<td style=\"padding: 12px; color: #333;\">70</td>\n<td style=\"padding: 12px; color: #333;\">35</td>\n<td style=\"padding: 12px; color: #333;\">58</td>\n</tr>\n<tr style=\"background-color: #ffffff;\">\n<td style=\"padding: 12px; color: #333;\">M</td>\n<td style=\"padding: 12px; color: #333;\">46</td>\n<td style=\"padding: 12px; color: #333;\">74</td>\n<td style=\"padding: 12px; color: #333;\">36</td>\n<td style=\"padding: 12px; color: #333;\">59</td>\n</tr>\n</tbody>\n</table><p style=\"text-align: center; margin-top: 20px; font-size: 16px; color: #333;\"><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FE9D487F58DD72A6F4BB049134DB7440.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5EE230FD5E7DF6389DB48BDE56D3C230.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FD604EF8D0892A78CB35702A0E2E0375.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/62C7876F478BB8D25319411B4F47C0C4.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/094C46FD6092CCED4E1AF39A87AE498A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AA3B9DB0C3F723E32A926B939883238B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E1E504B1341D6FD418DEC2CAA8695D21.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/18CCB7FF305BC85DFC393F594F8F1A7F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/686728EAA2C2A834B044B10EE8F861D7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0DCE8E07BA111B300F4471A2DCFC8DE8.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4B9529A1453348BA75AEDFB33734E3FF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EDC5672554C535CD322C0F6E8D1BB025.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CA0D0729664EB035585C8761E3B50689.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F3508A7F50CF8D433DC163CC277D3C13.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A60CA6CAFEAA3B43BD651338153DAFD1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0FC940F02783952002F95A9A78B622AE.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

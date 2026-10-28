@@ -1,0 +1,65 @@
+{
+  "creative_id": "EC-P01-A05-H01-V06",
+  "parent_id": "EC-P01-A05-H01-V03",
+  "changed_field": "model",
+  "experiment_id": "C1-P01-A05-MODELTEST",
+  "product_id": "gid://shopify/Product/9751656071407",
+  "platform": "tiktok",
+  "length_s": 14,
+  "resolution": "480p",
+  "source": "openrouter",
+  "hook_text": "If you own knee-high boots, you need this dress this winter.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "callout",
+    "opening_visual": "product-on-body-walk",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "script": [
+      {
+        "lines": [
+          "If you own knee-high boots, you need this dress this winter.",
+          "Chunky cable knit, a mock neck, and a ribbed waist that keeps it fitted.",
+          "The front slit lets you actually walk in it, and the below-the-knee length looks so good over boots.",
+          "It comes in seven colors. Tap the link to see them."
+        ],
+        "recorded_at": "2026-10-26T15:13:56",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 14 seconds, four quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is a fictional young adult woman (not any real person) with long brunette hair, friendly and confident, speaking English directly to the camera at a brisk, natural pace with no pauses between lines. In every shot she wears the exact caramel-brown cable-knit midi sweater dress from the reference images: mock neck, ribbed waistband, long sleeves with ribbed cuffs, vertical cable-knit pattern down the skirt with a diagonal wrap seam, fitted through the hip, below-the-knee length, and a front slit. Keep its color, knit pattern, neckline, waistband and slit identical to the references. She wears plain black knee-high leather boots with a low heel; the dress hem overlaps the boot tops.\nShot 1 (0-3 s): already wearing the dress and boots, she walks toward the camera from the mirror and says: \"If you own knee-high boots, you need this dress this winter.\"\nShot 2 (3-6.5 s): detail close-ups: her hand runs over the chunky cable knit, then the mock neck, then the ribbed waist, while she says: \"Chunky cable knit, a mock neck, and a ribbed waist that keeps it fitted.\"\nShot 3 (6.5-10.5 s): full-length shot; she steps toward the camera so the front slit opens over the boots, then turns once, saying: \"The front slit lets you actually walk in it, and the below-the-knee length looks so good over boots.\"\nShot 4 (10.5-14 s): smiling close-up, lips moving clearly with every word, as she says: \"It comes in seven colors. Tap the link to see them.\"\nClear natural speech, light room tone, no background music, no brand names on any item. Photorealistic, indistinguishable from real iPhone footage filmed by a friend: real skin texture with visible pores and natural small imperfections, natural facial asymmetry, realistic individual hair strands and flyaways, anatomically correct hands with five fingers, natural blinking, true-to-life fabric texture, weight and creases, real-world lighting with soft natural shadows, a lived-in real home with ordinary everyday details, slight handheld camera movement and natural phone exposure. No CGI, 3D render, animation, illustration, painterly or airbrushed look; no plastic or waxy skin, no beauty filter, no over-smoothing, no glossy perfection; no warped, melting or morphing body parts or clothing, no extra fingers; no on-screen text, subtitles or logos.",
+        "duration": 14,
+        "resolution": "480p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "job_id": "gen-vid-1793042036-G7uOU8X6Y8xCFQ5yyrcD",
+        "status": "completed",
+        "cost_note": "OpenRouter usage.cost 1.4434835; est $1.44",
+        "recorded_at": "2026-10-26T15:16:45",
+        "credits": 0,
+        "usd": 1.4434835
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 1.4435
+  },
+  "status": "REVIEW",
+  "created_at": "2026-10-26T15:13:56",
+  "local_path": "assets\\EC-P01-A05-H01-V06\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-26T15:19:43",
+    "result": "fail: mispronounced hook",
+    "notes": "Seedance 2.5 480p 14 s, $1.44. Script heard except knee-high as knee-haul (pronunciation or mishearing), 4.1 words/s (fast). Realistic face (freckles, natural skin) and room; dress matches; shot 3 crops to the lower body. 480p will look soft on phones. OWNER 2026-10-26: hook is spoken as \"knee-haul boots\", not knee-high (real pronunciation error; the script check had flagged it). Not usable as is."
+  }
+}

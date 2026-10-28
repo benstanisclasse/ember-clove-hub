@@ -1,0 +1,277 @@
+{
+  "product_id": "gid://shopify/Product/9751716692207",
+  "handle": "peep-toe-block-heel-sandals",
+  "original_title": "Peep Toe Block Heel Sandals",
+  "current_title": "Peep Toe Block Heel Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/peep-toe-block-heel-sandals",
+  "category": null,
+  "colors": [
+    "Ivory",
+    "Black"
+  ],
+  "sizes": [
+    "40(US9)",
+    "39(US8)",
+    "38(US7)",
+    "37(US6)",
+    "42(US10.5)",
+    "41(US10)",
+    "36(US5)"
+  ],
+  "options": {
+    "Color": [
+      "Ivory",
+      "Black"
+    ],
+    "Size": [
+      "40(US9)",
+      "39(US8)",
+      "38(US7)",
+      "37(US6)",
+      "42(US10.5)",
+      "41(US10)",
+      "36(US5)"
+    ]
+  },
+  "price_min": 40.1,
+  "price_max": 40.1,
+  "cost_min": 5.33,
+  "cost_max": 5.33,
+  "specs": {
+    "Color": "Black, Ivory",
+    "Style": "Sandals",
+    "Closure": "Buckle",
+    "Material": "Microfiber",
+    "Sole Material": "Rubber",
+    "Heel Height": "High Heel",
+    "Toe Style": "Open Toe",
+    "Suitable Occasion": "Casual",
+    "Size": "36,37,38,39,40,41,42",
+    "Unit": "cm"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "36(US5)",
+        "22.75"
+      ],
+      [
+        "37(US6)",
+        "23.25"
+      ],
+      [
+        "38(US7)",
+        "24"
+      ],
+      [
+        "39(US8)",
+        "24.5"
+      ],
+      [
+        "40(US9)",
+        "25.25"
+      ],
+      [
+        "41(US10)",
+        "26"
+      ],
+      [
+        "42(US10.5)",
+        "26.25"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FC0E1E0B0345814A7DD622162FB05493.jpg?v=1792823483",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BD7F3981934A360E8C69E4E5074069A9.jpg?v=1792823485",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/817F6F2736BB388860CF074354985218.jpg?v=1792823487",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/478D299A929CFF43FDC23902D48A88A5.jpg?v=1792823489",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C56E2AC56D2EE4AAB1715E6CC84B4153.jpg?v=1792823492",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/04B1F02706CEBF4558E25253B4955CA7.jpg?v=1792823494",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Ivory / 40(US9)",
+      "sku": "3D0CF30836204E23A61FEE4701AC2B2B",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Ivory / 39(US8)",
+      "sku": "51E2416838144E1C9CCCB84D7484D4FC",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Ivory / 38(US7)",
+      "sku": "0B04C2F7E74F442F93A82AA1E36F62EB",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Ivory / 37(US6)",
+      "sku": "D97D18125621478DBB96C2BD6A3EA9C3",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Ivory / 42(US10.5)",
+      "sku": "57DC1D1003A3443CB50AC4ABC68CFF7E",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Ivory / 41(US10)",
+      "sku": "9BAE0CB7C71640DB96CA92C211E5F07B",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Black / 39(US8)",
+      "sku": "8AEDEA5F93ED4F14A3BB2F348AF3650F",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Black / 38(US7)",
+      "sku": "5341F73523AE4165B71EDB8B38AF8F1C",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 37(US6)",
+      "sku": "1B8B076E26224DD2990A4C969FD25898",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Black / 36(US5)",
+      "sku": "D1B56F9E15F34019865E7929BFF6E9DF",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Ivory / 36(US5)",
+      "sku": "518BA816A974484682C6FDE5DF297DEE",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Ivory",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Black / 42(US10.5)",
+      "sku": "DD88983A67324CB0B874A9ADE85A8347",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Black / 41(US10)",
+      "sku": "C22CC530C25F49E1A8BFA4358BB546B0",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Black / 40(US9)",
+      "sku": "CED55745DEB24D9B959E083291CC0508",
+      "price": "40.10",
+      "cost": "5.33",
+      "options": {
+        "Color": "Black",
+        "Size": "40(US9)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Color: Black, Ivory</p><p>- Style: Sandals</p><p>- Closure: Buckle</p><p>- Material: Microfiber</p><p>- Sole Material: Rubber</p><p>- Heel Height: High Heel</p><p>- Toe Style: Open Toe</p><p>- Suitable Occasion: Casual</p><p>- Size:36,37,38,39,40,41,42</p><p>- Unit: cm</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<p><br></p>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.75</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">41(US10)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">42(US10.5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.25</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

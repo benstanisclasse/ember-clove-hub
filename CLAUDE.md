@@ -1,0 +1,17 @@
+# Ember & Clove Hub: rules for any Claude session
+
+## Character-account content: use the conveyor, nothing else
+- All content for the character account goes through `python scripts/studio/cli.py` (see `studio/README.md`).
+- Never generate character videos with one-off scripts (`make_*.py`) or by calling video APIs directly.
+- Never edit `studio/studio.db` by hand, and never move an episode's stage except through `cli.py`.
+- Never pass `--actor owner` unless the owner wrote the approval in this conversation; put their exact words in
+  `--quote`. Never approve a bible file, episode or rule change on your own judgement.
+- Never weaken a rule in `studio/bible/rules.yaml` to make something pass; fix the script or ask the owner.
+- When a video fails for a new reason, add it to `rules.yaml` (`tts_avoid`, `banned_phrases`) and tell the owner.
+- Realism is the owner's call: report machine checks as checks, not as a verdict that a video looks real.
+
+## Standing owner rules (all work)
+- AI presenter, labelled as AI. No testimonials or "I bought" claims. No prices or delivery times in spoken lines
+  or captions. No post-production edits unless approved. Don't publish, spend or change live store settings without
+  approval. Never print or store API keys; keys live in user environment variables (`config/hub.json` secrets).
+- Log every material action in `log.md`.

@@ -1,0 +1,411 @@
+{
+  "product_id": "gid://shopify/Product/9751717544175",
+  "handle": "open-toe-stiletto-sandals",
+  "original_title": "Open Toe Stiletto Sandals",
+  "current_title": "Open Toe Stiletto Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-stiletto-sandals",
+  "category": null,
+  "colors": [
+    "Black",
+    "Pastel Yellow",
+    "Burgundy"
+  ],
+  "sizes": [
+    "41",
+    "42",
+    "39",
+    "40",
+    "37",
+    "38",
+    "35",
+    "36",
+    "43"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Pastel Yellow",
+      "Burgundy"
+    ],
+    "Size": [
+      "41",
+      "42",
+      "39",
+      "40",
+      "37",
+      "38",
+      "35",
+      "36",
+      "43"
+    ]
+  },
+  "price_min": 50.98,
+  "price_max": 50.98,
+  "cost_min": 10.04,
+  "cost_max": 10.04,
+  "specs": {
+    "Size": "unit：cm",
+    "Fit": "True to size, order usual size.",
+    "Heel height": "High heels",
+    "Upper material": "PU",
+    "Inner material": "super fiber",
+    "Sole material": "rubber"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35",
+        "22.5"
+      ],
+      [
+        "36",
+        "23"
+      ],
+      [
+        "37",
+        "23.5"
+      ],
+      [
+        "38",
+        "24"
+      ],
+      [
+        "39",
+        "24.5"
+      ],
+      [
+        "40",
+        "25"
+      ],
+      [
+        "41",
+        "25.5"
+      ],
+      [
+        "42",
+        "26"
+      ],
+      [
+        "43",
+        "26.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/792EEA1EFE6FB9FB6E96557909CC695B.jpg?v=1792823492",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F3FD97542242912F208CBEAA7AE01D4E.jpg?v=1792823499",
+      "altText": "",
+      "width": 562,
+      "height": 562
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FE9400CEA74DCF7B559C04EF0F4F617C.jpg?v=1792823507",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4DC777C142AB14F17F3719F2B7454738.jpg?v=1792823517",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BB95E6DE13835DD90085E97099595BCC.jpg?v=1792823523",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 41",
+      "sku": "70EDD15C93484EC8BA8EF158495AEF3A",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "B3A9ADD2448D461BA2B9D7BE9C2D7EE7",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "51E36A035CEB4AA1B94AF33BA5AB6A8D",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "F59AA0E42F494F798077796AE2AF6842",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "A73B3649628F459E918CEC174AFE749B",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "7BCA8B1706B04E759ED30D42DD5DDE3F",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 35",
+      "sku": "C228162914FD444BA6E59E41C93BCF31",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "CE1DAFD2DED2441AAEDD2356C9376ED7",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 42",
+      "sku": "56203F3731654BD3A40958283DA0A848",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 43",
+      "sku": "80378E10D3A24E0E997D68A9368BD25B",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 40",
+      "sku": "9AF60210F0D640F99C87B0B71550FDCA",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 41",
+      "sku": "BD70E02272EB4D2E93546D9649263FE7",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 38",
+      "sku": "CEB01BFDDDA54A578D2CB2424C591288",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 39",
+      "sku": "9818609B3FD94955A537A22DBAAEC168",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 36",
+      "sku": "14771D1D373F4517A81E9F0912FD5061",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 37",
+      "sku": "F0E9E671106E45B8BFD24746E0CAA224",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Burgundy / 42",
+      "sku": "7F2E8417718649AE9E873686AC35F57A",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Burgundy / 43",
+      "sku": "5409ED097B3A4777B2E73B0F7C81D631",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Burgundy / 40",
+      "sku": "381A87085F064E10A1DC8F91AE43AD8F",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Burgundy / 41",
+      "sku": "63F40DBDE4244605B300B61CBFF3CF1E",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Burgundy / 38",
+      "sku": "70F05CBA4A714C05A2844464C7C7857C",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Burgundy / 39",
+      "sku": "2C6F7089EC744E23A188DBE67CEBECE8",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Burgundy / 36",
+      "sku": "7FBCC08C05C048BBB9091450BC5CD65B",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Burgundy / 37",
+      "sku": "E1FFF68A2CF8484D9F937D149A72309D",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "7F6DA327054849F6B2CE430FB49F59FC",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Burgundy / 35",
+      "sku": "120E19FB5FD5420C877AF0E7DDD29A30",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 35",
+      "sku": "3F6757C38AFA4B7AB8D6AF249E689F61",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "35"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<li><p>Size:unit：cm<br></p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">35</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">36</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">37</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">38</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">39</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">40</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">41</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">42</th>\n<td style=\"padding: 9px; word-break: break-all;\">26</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">43</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n</tbody>\n</table>\n<br><ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Heel height: High heels</p></li>\n<li><p>Upper material: PU</p></li>\n<li><p>Inner material: super fiber</p></li>\n<li><p>Sole material: rubber</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

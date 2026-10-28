@@ -1,0 +1,150 @@
+{
+  "product_id": "gid://shopify/Product/9757617914095",
+  "handle": "black-kitten-slipper",
+  "original_title": "Black Kitten Slipper",
+  "current_title": "Black Kitten Slipper",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/black-kitten-slipper",
+  "category": null,
+  "colors": [
+    "White"
+  ],
+  "sizes": [
+    "36/37",
+    "38/39",
+    "40/41",
+    "42/43",
+    "44/45"
+  ],
+  "options": {
+    "Color": [
+      "White"
+    ],
+    "Size": [
+      "36/37",
+      "38/39",
+      "40/41",
+      "42/43",
+      "44/45"
+    ]
+  },
+  "price_min": 19.62,
+  "price_max": 19.62,
+  "cost_min": 2.1,
+  "cost_max": 2.1,
+  "specs": {
+    "Color": "White",
+    "Style": "Cute",
+    "Pattern Type": "Cartoon",
+    "Material": "Plush",
+    "Sole Material": "TPR",
+    "Lining Material": "Cotton",
+    "Toe Style": "Round Toe",
+    "Occasion": "Daily Home",
+    "Gender": "Unisex",
+    "Size": "36/37, 38/39, 40/41, 42/43, 44/45"
+  },
+  "description_text": [],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C892BA562BF4D42B54BB009A73B48380.jpg?v=1793068161",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8DCF54341FAE86A7CBF6F2FED99C20F2.jpg?v=1793068163",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EA242EC100C3A711697568EBE98C74F3.jpg?v=1793068165",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A8298F1AD5CCD3C6994DDE34CD89B3C2.jpg?v=1793068167",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9967CF57C410377511A6DDFBAC92F72B.jpg?v=1793068169",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/58E9C074367724FE9AD8C371A8DE456A.jpg?v=1793068171",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/FC30EDE5309C332A4708293AE3339CDF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/9B565496FC200BB5C158ACE5AF2C8677.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/0FC4EE7890CC7E92F70AE7EF9AA69403.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/316818CFA093B6EE045C844BC8B7B9D7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/78F858D0D050A6CE6B7F17BFE1B3209C.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White / 36/37",
+      "sku": "0C86AE79D13E4E73B5459B7F22B6F8E5",
+      "price": "19.62",
+      "cost": "2.1",
+      "options": {
+        "Color": "White",
+        "Size": "36/37"
+      }
+    },
+    {
+      "title": "White / 38/39",
+      "sku": "20AE42B5FD6C46D4828A49D1FF401BF1",
+      "price": "19.62",
+      "cost": "2.1",
+      "options": {
+        "Color": "White",
+        "Size": "38/39"
+      }
+    },
+    {
+      "title": "White / 40/41",
+      "sku": "31ACA737F90E421A95AC8232B4295B35",
+      "price": "19.62",
+      "cost": "2.1",
+      "options": {
+        "Color": "White",
+        "Size": "40/41"
+      }
+    },
+    {
+      "title": "White / 42/43",
+      "sku": "EB7E4D1438714044A05ED4334B48027F",
+      "price": "19.62",
+      "cost": "2.1",
+      "options": {
+        "Color": "White",
+        "Size": "42/43"
+      }
+    },
+    {
+      "title": "White / 44/45",
+      "sku": "ACC9B2216DDE4BC5BA69F95A84965318",
+      "price": "19.62",
+      "cost": "2.1",
+      "options": {
+        "Color": "White",
+        "Size": "44/45"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><br></p><p><strong>Color: White</strong></p><p><strong>Style: Cute</strong></p><p><strong>Pattern Type: Cartoon</strong></p><p><strong>Material: Plush</strong></p><p><strong>Sole Material: TPR</strong></p><p><strong>Lining Material: Cotton</strong></p><p><strong>Toe Style: Round Toe</strong></p><p><strong>Occasion: Daily Home</strong></p><p><strong>Gender: Unisex</strong></p><p><strong>Size: 36/37, 38/39, 40/41, 42/43, 44/45</strong></p><p><img alt=\"hGiXj/2ty9QKaif3SOV3/9OqIukJMrU8m5B8\" src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/FC30EDE5309C332A4708293AE3339CDF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/9B565496FC200BB5C158ACE5AF2C8677.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/0FC4EE7890CC7E92F70AE7EF9AA69403.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/316818CFA093B6EE045C844BC8B7B9D7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/78F858D0D050A6CE6B7F17BFE1B3209C.jpg\"> \n </p><p>  </p>",
+  "cataloged_at": "2026-10-26T22:33:04"
+}

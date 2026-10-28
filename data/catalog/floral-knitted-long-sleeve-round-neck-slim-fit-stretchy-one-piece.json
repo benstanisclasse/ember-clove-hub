@@ -1,0 +1,148 @@
+{
+  "product_id": "gid://shopify/Product/9751656857839",
+  "handle": "floral-knitted-long-sleeve-round-neck-slim-fit-stretchy-one-piece",
+  "original_title": "Floral Knitted Long Sleeve Round Neck Slim Fit Stretchy One-Piece",
+  "current_title": "Floral Knitted Long Sleeve Round Neck Slim Fit Stretchy One-Piece",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://nkpfvz-ra.myshopify.com/products/floral-knitted-long-sleeve-round-neck-slim-fit-stretchy-one-piece",
+  "category": null,
+  "colors": [
+    "Dark Teal",
+    "Apricot",
+    "Coffee",
+    "Black"
+  ],
+  "sizes": [
+    "One Size"
+  ],
+  "options": {
+    "Color": [
+      "Dark Teal",
+      "Apricot",
+      "Coffee",
+      "Black"
+    ],
+    "Size": [
+      "One Size"
+    ]
+  },
+  "price_min": 49.26,
+  "price_max": 49.26,
+  "cost_min": 13.9,
+  "cost_max": 13.9,
+  "specs": {
+    "Color": "Dark Green Blue, Apricot, Coffee, Black",
+    "Style": "Sexy, Street Trendy",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Round Neck",
+    "Length": "Regular",
+    "Material": "Polyester",
+    "Fit Type": "Slim Fit",
+    "Waistline": "High Waist",
+    "Size": "One Size",
+    "Details": "Splicing",
+    "Stretch": "Slight Stretch",
+    "Thickness": "Medium",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Length",
+        "Bust",
+        "Sleeve Length"
+      ],
+      [
+        "One Size",
+        "68",
+        "66+",
+        "60"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/38C91BEC88A2B0B14C183111ADA132F4.jpg?v=1792822479",
+      "altText": "",
+      "width": 1920,
+      "height": 1919
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/669D7E5405F4471B93229AB2F84EADED.jpg?v=1792822483",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7A509E212F48738B1F2C22E5B4AA3420.jpg?v=1792822508",
+      "altText": "",
+      "width": 1060,
+      "height": 1060
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/13FA7FDF9B1B5E95DD28D50848E91E4D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/58261672183A365847E695D8D9E498B8.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/14557C953045AF98D74DB7CE2003CBD2.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D9E917EBAB5AEE298D8CCAB69E2F8F15.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A941B561FBBD003AD4864BF323096B74.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A8A5E0CC5F7A05BD233DC5862835BEB2.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D462219B898EEFCB4AC52FD68CD46BB3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E37FD5B6AA09A2F9A10ACEEC43816E00.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/18AE691D587A0A4D11D561BE7DD1DFDE.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5C572B45ECB51C018AB12F8ADA1F2E06.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D20562950AF7665A370C7C6C9C543E52.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B8E939B026CD22B7DE598DEAB8E71D77.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7B941059FA42AD44399D34E899568A68.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0F5C590BDED8C715C84E3FD4334A33C5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Dark Teal / One Size",
+      "sku": "DBFBDBDC545A434BB7C689550849C229",
+      "price": "49.26",
+      "cost": "13.9",
+      "options": {
+        "Color": "Dark Teal",
+        "Size": "One Size"
+      }
+    },
+    {
+      "title": "Apricot / One Size",
+      "sku": "310227A137DC48EC89685BC23C446FEA",
+      "price": "49.26",
+      "cost": "13.9",
+      "options": {
+        "Color": "Apricot",
+        "Size": "One Size"
+      }
+    },
+    {
+      "title": "Coffee / One Size",
+      "sku": "0EBA5719B5284CB3A73E8AEA80EB2DF3",
+      "price": "49.26",
+      "cost": "13.9",
+      "options": {
+        "Color": "Coffee",
+        "Size": "One Size"
+      }
+    },
+    {
+      "title": "Black / One Size",
+      "sku": "95D087D066634D259877C42856DEEB0B",
+      "price": "49.26",
+      "cost": "13.9",
+      "options": {
+        "Color": "Black",
+        "Size": "One Size"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Color: Dark Green Blue, Apricot, Coffee, Black</strong></p><p><strong>Style: Sexy, Street Trendy</strong></p><p><strong>Pattern Type: Solid Color</strong></p><p><strong>Sleeve Length: Long Sleeve</strong></p><p><strong>Neckline: Round Neck</strong></p><p><strong>Length: Regular</strong></p><p><strong>Material: Polyester</strong></p><p><strong>Fit Type: Slim Fit</strong></p><p><strong>Waistline: High Waist</strong></p><p><strong>Size: One Size</strong></p><p><strong>Details: Splicing</strong></p><p><strong>Stretch: Slight Stretch</strong></p><p><strong>Thickness: Medium</strong></p><p><strong>Unit：cm</strong></p><table width=\"-76\">\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Sleeve Length</th>\n</tr></thead>\n<tbody><tr>\n<td>One Size</td>\n<td>68</td>\n<td>66+</td>\n<td>60</td>\n</tr></tbody>\n</table><p style=\"text-align:center;margin-top:10px;\"><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/13FA7FDF9B1B5E95DD28D50848E91E4D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/58261672183A365847E695D8D9E498B8.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/14557C953045AF98D74DB7CE2003CBD2.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D9E917EBAB5AEE298D8CCAB69E2F8F15.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A941B561FBBD003AD4864BF323096B74.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A8A5E0CC5F7A05BD233DC5862835BEB2.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D462219B898EEFCB4AC52FD68CD46BB3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E37FD5B6AA09A2F9A10ACEEC43816E00.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/18AE691D587A0A4D11D561BE7DD1DFDE.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5C572B45ECB51C018AB12F8ADA1F2E06.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D20562950AF7665A370C7C6C9C543E52.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B8E939B026CD22B7DE598DEAB8E71D77.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7B941059FA42AD44399D34E899568A68.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0F5C590BDED8C715C84E3FD4334A33C5.jpg\"> </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

@@ -1,0 +1,67 @@
+{
+ "query": "mutation($pid0: ID!, $opt0: OptionUpdateInput!, $val0: [OptionValueUpdateInput!], $pid1: ID!, $opt1: OptionUpdateInput!, $val1: [OptionValueUpdateInput!], $pid2: ID!, $opt2: OptionUpdateInput!, $val2: [OptionValueUpdateInput!], $pid3: ID!, $opt3: OptionUpdateInput!, $val3: [OptionValueUpdateInput!], $pid4: ID!, $opt4: OptionUpdateInput!, $val4: [OptionValueUpdateInput!]) {\n  o0: productOptionUpdate(productId: $pid0, option: $opt0, optionValuesToUpdate: $val0) { product { id } userErrors { field message code } }\n  o1: productOptionUpdate(productId: $pid1, option: $opt1, optionValuesToUpdate: $val1) { product { id } userErrors { field message code } }\n  o2: productOptionUpdate(productId: $pid2, option: $opt2, optionValuesToUpdate: $val2) { product { id } userErrors { field message code } }\n  o3: productOptionUpdate(productId: $pid3, option: $opt3, optionValuesToUpdate: $val3) { product { id } userErrors { field message code } }\n  o4: productOptionUpdate(productId: $pid4, option: $opt4, optionValuesToUpdate: $val4) { product { id } userErrors { field message code } }\n}",
+ "variables": {
+  "pid0": "gid://shopify/Product/9757276700911",
+  "opt0": {
+   "id": "gid://shopify/ProductOption/12377245188335"
+  },
+  "val0": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193049698543",
+    "name": "Burgundy"
+   }
+  ],
+  "pid1": "gid://shopify/Product/9757617815791",
+  "opt1": {
+   "id": "gid://shopify/ProductOption/12377592496367"
+  },
+  "val1": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193517461743",
+    "name": "Tan"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193517494511",
+    "name": "Sage Green"
+   }
+  ],
+  "pid2": "gid://shopify/Product/9757617848559",
+  "opt2": {
+   "id": "gid://shopify/ProductOption/12377592561903"
+  },
+  "val2": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193518051567",
+    "name": "Tan"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193518084335",
+    "name": "Sage Green"
+   }
+  ],
+  "pid3": "gid://shopify/Product/9757617979631",
+  "opt3": {
+   "id": "gid://shopify/ProductOption/12377592758511"
+  },
+  "val3": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193518969071",
+    "name": "Ivory"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193519034607",
+    "name": "Cognac"
+   }
+  ],
+  "pid4": "gid://shopify/Product/9757625188591",
+  "opt4": {
+   "id": "gid://shopify/ProductOption/12377600065775"
+  },
+  "val4": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193528897775",
+    "name": "Beige"
+   }
+  ]
+ }
+}

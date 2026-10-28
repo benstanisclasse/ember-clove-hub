@@ -1,0 +1,168 @@
+{
+ "query": "mutation($p0: ProductUpdateInput!, $p1: ProductUpdateInput!, $p2: ProductUpdateInput!, $p3: ProductUpdateInput!, $p4: ProductUpdateInput!, $p5: ProductUpdateInput!, $p6: ProductUpdateInput!, $p7: ProductUpdateInput!) {\n  u0: productUpdate(product: $p0) { product { id title } userErrors { field message } }\n  u1: productUpdate(product: $p1) { product { id title } userErrors { field message } }\n  u2: productUpdate(product: $p2) { product { id title } userErrors { field message } }\n  u3: productUpdate(product: $p3) { product { id title } userErrors { field message } }\n  u4: productUpdate(product: $p4) { product { id title } userErrors { field message } }\n  u5: productUpdate(product: $p5) { product { id title } userErrors { field message } }\n  u6: productUpdate(product: $p6) { product { id title } userErrors { field message } }\n  u7: productUpdate(product: $p7) { product { id title } userErrors { field message } }\n}",
+ "variables": {
+  "p0": {
+   "id": "gid://shopify/Product/9757092315375",
+   "title": "3D Rose Blazer Mini Dress",
+   "descriptionHtml": "<p><strong>A black blazer dress with puffed shoulders and red 3D roses on long green stems climbing the front.</strong></p><ul><li>Polyester suiting with a smooth, structured finish</li><li>Fitted waist, notch lapels, single-breasted buttons, flap pockets</li><li>Long sleeves, mini length (about 31–32 in)</li></ul><p>Sizes S–XL · Bust 34–39 in</p>",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "blazer dress",
+    "mini",
+    "rose",
+    "floral appliqué",
+    "notch-lapel",
+    "long-sleeve",
+    "black",
+    "red",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p1": {
+   "id": "gid://shopify/Product/9757092675823",
+   "title": "Notch Lapel Faux Suede Blazer",
+   "descriptionHtml": "<p><strong>A relaxed faux suede blazer with notch lapels and a yoke seam across the chest, easy over a turtleneck and jeans.</strong></p><ul><li>Polyester faux suede, smooth satin-look lining</li><li>Loose fit, three-button front, flap hip pockets</li><li>Long sleeves, hip length (about 25–26 in)</li></ul><p>Sizes S–L · Bust 40–43 in</p>",
+   "productType": "Outerwear",
+   "tags": [
+    "blazer",
+    "jacket",
+    "outerwear",
+    "faux suede",
+    "notch-lapel",
+    "long-sleeve",
+    "brown",
+    "camel",
+    "spring",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p2": {
+   "id": "gid://shopify/Product/9757095198959",
+   "title": "Off-Shoulder Open Back Maxi Dress",
+   "descriptionHtml": "<p><strong>A floor-length column dress with a folded off-shoulder band and a deep scoop open back.</strong></p><ul><li>Soft, stretchy polyester jersey with a matte finish</li><li>Close, body-skimming fit, folded band across the shoulders</li><li>Maxi length (about 50–52 in from the band)</li></ul><p>Sizes S–L · Bust 34–37 in</p>",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "maxi",
+    "off-shoulder",
+    "open back",
+    "bodycon",
+    "jersey",
+    "sleeveless",
+    "brown",
+    "spring",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p3": {
+   "id": "gid://shopify/Product/9757095395567",
+   "title": "Snap Collar Faux Leather Jacket",
+   "descriptionHtml": "<p><strong>A fitted faux leather moto-style jacket with a snap-tab stand collar and shaped seams through the waist.</strong></p><ul><li>Smooth PU faux leather with a soft sheen</li><li>Center zip, zip chest pocket, zip side pockets</li><li>Long sleeves, hip length (about 21–23 in)</li></ul><p>Sizes S–XL · Bust 37–43 in</p>",
+   "productType": "Outerwear",
+   "tags": [
+    "jacket",
+    "outerwear",
+    "moto",
+    "faux leather",
+    "stand collar",
+    "zip",
+    "long-sleeve",
+    "black",
+    "spring",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p4": {
+   "id": "gid://shopify/Product/9757098017007",
+   "title": "Tiered Stripe Sleeveless Swing Dress",
+   "descriptionHtml": "<p><strong>A loose tiered swing dress in crisp white-and-color stripes with a ruffled hem, an easy summer dress with sandals.</strong></p><ul><li>Lightweight polyester and spandex blend</li><li>Loose fit, scoop neck, sleeveless, pullover</li><li>Three tiers, knee length (about 37–38 in)</li></ul><p>Sizes S–XL · Bust 37–43 in</p>",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "swing",
+    "tiered",
+    "striped",
+    "sleeveless",
+    "scoop neck",
+    "blue",
+    "brown",
+    "spring",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p5": {
+   "id": "gid://shopify/Product/9757098049775",
+   "title": "Mock Neck Side-Pleat Mini Dress",
+   "descriptionHtml": "<p><strong>A sleek sleeveless mini with a high mock neck and sculpted pleats that flare out from metal ring details at each hip.</strong></p><ul><li>Polyester with a smooth matte finish</li><li>Fitted bodice, princess seams, metal ring hardware</li><li>Sleeveless, above-knee length (about 35–36 in)</li></ul><p>Sizes S–XL · Bust 34–39 in</p>",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "mini",
+    "mock neck",
+    "sleeveless",
+    "pleated",
+    "fit-and-flare",
+    "brown",
+    "white",
+    "spring",
+    "summer",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p6": {
+   "id": "gid://shopify/Product/9757099294959",
+   "title": "Floral Satin Blazer Mini Set",
+   "descriptionHtml": "<p><strong>A matching set of a cropped floral blazer and a high-waist mini with a front slit, printed in soft pink and mint peonies.</strong></p><ul><li>Polyester satin with a soft sheen, lined blazer</li><li>Cropped double-breasted blazer (about 17–18 in), gold-tone buttons</li><li>High-waist skort-style mini (about 14 in), front slit</li></ul><p>Sizes S–L · Bust 38–41 in · Waist 25–28 in</p>",
+   "productType": "Skirts",
+   "tags": [
+    "set",
+    "two-piece",
+    "blazer",
+    "skort",
+    "floral",
+    "satin",
+    "long-sleeve",
+    "pink",
+    "green",
+    "spring",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p7": {
+   "id": "gid://shopify/Product/9757099819247",
+   "title": "Cowl Neck Satin Maxi Dress",
+   "descriptionHtml": "<p><strong>A glossy satin maxi with a draped cowl neckline, a low open back and a high side slit.</strong></p><ul><li>Satin-finish fabric with a high sheen</li><li>Close fit, adjustable spaghetti straps, side zip, elastic back</li><li>Floor-length maxi (about 55–56 in), thigh-high slit</li></ul><p>Sizes S–L · Bust 30–33 in</p>",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "maxi",
+    "satin",
+    "cowl neck",
+    "slit",
+    "open back",
+    "spaghetti strap",
+    "black",
+    "green",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  }
+ }
+}

@@ -1,0 +1,134 @@
+{
+  "creative_id": "EC-P02-A03-H01-V01",
+  "parent_id": null,
+  "changed_field": null,
+  "experiment_id": "C1-P02-A03",
+  "product_id": "gid://shopify/Product/9751655809263",
+  "platform": "tiktok",
+  "length_s": 15,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "Okay, this sweater dress is so cozy.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "statement",
+    "opening_visual": "creator-face",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "UGC try-on haul",
+        "product": "Turtleneck Rib Knit Sweater Dress",
+        "color": "Burgundy",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims; no post-production",
+        "recorded_at": "2026-10-24T21:10:04",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "product_reference": [
+      {
+        "references": [
+          "assets/EC-P02-A03-H01-V01/ref1_dress_neck_down.jpg",
+          "assets/EC-P02-A03-H01-V01/ref2_turtleneck_knit_closeup.jpg"
+        ],
+        "source_photo": "Shopify EB40AEBD79AAF3FECCF037153E856C2F.jpg (burgundy studio shot)",
+        "processing": "cropped below the chin to exclude the supplier model's face",
+        "recorded_at": "2026-10-24T21:10:04",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Okay, this sweater dress is so cozy.",
+          "It's a slouchy turtleneck with dropped shoulders.",
+          "Throw it on with tights and boots and you're done.",
+          "Seven colors, sizes small to 3X. Link's right here."
+        ],
+        "recorded_at": "2026-10-24T21:10:04",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5/reference-to-video",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 15 seconds, four quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is an AI-generated young adult woman (not any real person), friendly and excited, speaking English directly to the camera. Clear natural speech, light room tone, no background music, no on-screen text, no logos.\nThe dress in every shot is the exact burgundy chunky rib-knit turtleneck sweater dress from the reference images: loose slouchy fit, folded turtleneck, dropped shoulders, long full sleeves with ribbed cuffs, ribbed hem, mini length ending at mid-thigh. Keep its color, chunky rib knit, turtleneck and length identical to the references.\nShot 1 (0-3 s): wearing a casual white tee, she holds the burgundy sweater dress on a hanger up to the camera, saying: \"Okay, this sweater dress is so cozy.\"\nShot 2 (3-7 s): cut to her wearing it, mid-shot, folding the turtleneck down and pushing up the slouchy sleeves, saying: \"It's a slouchy turtleneck with dropped shoulders.\"\nShot 3 (7-11 s): cut to a full-length shot wearing it with opaque black tights and black knee-high boots; she does a little twirl, saying: \"Throw it on with tights and boots and you're done.\"\nShot 4 (11-15 s): she walks up to the camera into a smiling close-up, saying: \"Seven colors, sizes small to 3X. Link's right here.\"",
+        "duration": 15,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "request_id": "688f1987-f4ef-47ff-ad61-a3858151cd6b",
+        "status": "completed",
+        "cost_note": "actual: open.higgsfield.ai billing usage -$4.85; balance after $52.65",
+        "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/688f1987-f4ef-47ff-ad61-a3858151cd6b/e769cced-e665-41dd-8c07-0fdcb2b90afc.mp4",
+        "recorded_at": "2026-10-24T21:14:05",
+        "credits": 0,
+        "usd": 4.85
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 4.85
+  },
+  "status": "APPROVED",
+  "created_at": "2026-10-24T21:10:04",
+  "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/688f1987-f4ef-47ff-ad61-a3858151cd6b/e769cced-e665-41dd-8c07-0fdcb2b90afc.mp4",
+  "local_path": "assets\\EC-P02-A03-H01-V01\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-24T21:14:53",
+    "result": "visual pass; audio for owner to confirm",
+    "notes": "burgundy chunky rib knit, folded turtleneck, dropped shoulders, slouchy sleeves, mini length over black tights and knee-high boots all match; 4 beats (hanger 0-3s, turtleneck/sleeves 3-7s, full-length twirl 7-11.5s, close-up pointing 12-15s); AI-generated presenter; Seedance 30%-off rate matched the estimate",
+    "owner_review": {
+      "approved_at": "2026-10-24T21:17:43",
+      "note": "Owner watched and listened 2026-10-24: approved as delivered (no edits)"
+    }
+  },
+  "elements": {
+    "observed": {
+      "room": "other",
+      "lighting": "natural_daylight",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "blonde",
+      "hair_length": "long",
+      "jewelry": [
+        "necklace",
+        "rings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "true",
+      "glasses": "false",
+      "worn_with": [
+        "tights",
+        "boots"
+      ],
+      "color_palette": "mixed",
+      "props": [
+        "mirror"
+      ],
+      "camera_style": "selfie_handheld",
+      "main_shot_distance": "mixed",
+      "camera_movement": "slight",
+      "actions": [
+        "talking_to_camera",
+        "hand_detail",
+        "turning_twirling",
+        "posing"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:05:14"
+    }
+  }
+}

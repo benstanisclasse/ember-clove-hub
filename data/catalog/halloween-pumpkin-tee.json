@@ -1,0 +1,334 @@
+{
+  "product_id": "gid://shopify/Product/9751303717103",
+  "handle": "halloween-pumpkin-tee",
+  "original_title": "Halloween Pumpkin Tee",
+  "current_title": "Halloween Pumpkin Tee",
+  "vendor": "MerchMallow",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/halloween-pumpkin-tee",
+  "category": "Apparel & Accessories > Clothing > Clothing Tops > T-Shirts",
+  "colors": [
+    "Black Heather",
+    "Heather Prism Peach",
+    "Heather Prism Dusty Blue",
+    "Ash"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL"
+  ],
+  "options": {
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "Color": [
+      "Black Heather",
+      "Heather Prism Peach",
+      "Heather Prism Dusty Blue",
+      "Ash"
+    ]
+  },
+  "price_min": 16.09,
+  "price_max": 17.2,
+  "cost_min": 14.49,
+  "cost_max": 15.49,
+  "specs": {
+    "Perfect Fit": "Crafted to feel like a well-loved favorite with a retail fit that adapts to any wardrobe.",
+    "Premium Material": "Soft cotton with quality printing ensures lasting comfort and vibrant designs.",
+    "High-Quality Material": "Made from 100% Airlume combed and ring-spun cotton, offering a soft, breathable, and lightweight feel (4.2 oz/yd²).",
+    "Durable & Ethical": "Manufactured sustainably by Bella+Canvas in the US and internationally, adhering to no-sweatshop and humane labor practices (Platinum WRAP Certified).",
+    "o Ribbed Knit Collar": "Elastic and durable, retains shape over time.",
+    "o Shoulder Tape": "Stabilizes the back of the garment and prevents stretching.",
+    "o Side Seams": "Maintain structure and provide long-lasting shape.",
+    "o Sleeve Printing": "High-quality Direct-to-Film (DTF) or Direct-to-Garment (DTG) methods for crisp, vibrant designs.",
+    "o Neck Label Printing": "Detailed and durable designs using DTF or DTG techniques."
+  },
+  "description_text": [
+    "Unisex Jersey Short Sleeve Tee – Timeless Comfort & Style",
+    "• Enhanced Features:",
+    "• Custom Printing Options:",
+    "This versatile tee is ideal for casual wear, layering, and custom printing, making it a go-to favorite for any occasion!"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/halloween-pumpkin-tee-black-heather-s-peachy-sunday-t-shirt-34591433785502.png?v=1792788115",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/halloween-pumpkin-tee-peachy-sunday-t-shirt-34591204671646.png?v=1792788115",
+      "altText": "",
+      "width": 1080,
+      "height": 1079
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/halloween-pumpkin-tee-heather-prism-dusty-blue-s-peachy-sunday-t-shirt-34591926452382.png?v=1792788116",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/halloween-pumpkin-tee-ash-s-peachy-sunday-t-shirt-34591444271262.png?v=1792788116",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "S / Black Heather",
+      "sku": "50258145870099",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Black Heather"
+      }
+    },
+    {
+      "title": "M / Black Heather",
+      "sku": "50258145902867",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Black Heather"
+      }
+    },
+    {
+      "title": "L / Black Heather",
+      "sku": "50258145935635",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Black Heather"
+      }
+    },
+    {
+      "title": "XL / Black Heather",
+      "sku": "50258145968403",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Black Heather"
+      }
+    },
+    {
+      "title": "2XL / Black Heather",
+      "sku": "50258146001171",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Black Heather"
+      }
+    },
+    {
+      "title": "3XL / Black Heather",
+      "sku": "50258146033939",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Black Heather"
+      }
+    },
+    {
+      "title": "S / Heather Prism Peach",
+      "sku": "50258146066707",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Heather Prism Peach"
+      }
+    },
+    {
+      "title": "M / Heather Prism Peach",
+      "sku": "50258146099475",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Heather Prism Peach"
+      }
+    },
+    {
+      "title": "L / Heather Prism Peach",
+      "sku": "50258146132243",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Heather Prism Peach"
+      }
+    },
+    {
+      "title": "XL / Heather Prism Peach",
+      "sku": "50258146165011",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Heather Prism Peach"
+      }
+    },
+    {
+      "title": "2XL / Heather Prism Peach",
+      "sku": "50258146197779",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Heather Prism Peach"
+      }
+    },
+    {
+      "title": "3XL / Heather Prism Peach",
+      "sku": "50258146230547",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Heather Prism Peach"
+      }
+    },
+    {
+      "title": "S / Heather Prism Dusty Blue",
+      "sku": "50258146263315",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Heather Prism Dusty Blue"
+      }
+    },
+    {
+      "title": "M / Heather Prism Dusty Blue",
+      "sku": "50258146296083",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Heather Prism Dusty Blue"
+      }
+    },
+    {
+      "title": "L / Heather Prism Dusty Blue",
+      "sku": "50258146328851",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Heather Prism Dusty Blue"
+      }
+    },
+    {
+      "title": "XL / Heather Prism Dusty Blue",
+      "sku": "50258146361619",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Heather Prism Dusty Blue"
+      }
+    },
+    {
+      "title": "2XL / Heather Prism Dusty Blue",
+      "sku": "50258146394387",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Heather Prism Dusty Blue"
+      }
+    },
+    {
+      "title": "3XL / Heather Prism Dusty Blue",
+      "sku": "50258146427155",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Heather Prism Dusty Blue"
+      }
+    },
+    {
+      "title": "S / Ash",
+      "sku": "50258146459923",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "M / Ash",
+      "sku": "50258146492691",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "L / Ash",
+      "sku": "50258146525459",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "XL / Ash",
+      "sku": "50258146558227",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "2XL / Ash",
+      "sku": "50258146590995",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "3XL / Ash",
+      "sku": "50258146623763",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Ash"
+      }
+    }
+  ],
+  "raw_description_html": "<p>Unisex Jersey Short Sleeve Tee – Timeless Comfort &amp; Style<br>\n• Perfect Fit: Crafted to feel like a well-loved favorite with a retail fit that adapts to any wardrobe.<br>\n• Premium Material: Soft cotton with quality printing ensures lasting comfort and vibrant designs.<br>\n• High-Quality Material: Made from 100% Airlume combed and ring-spun cotton, offering a soft, breathable, and lightweight feel (4.2 oz/yd²).<br>\n• Durable &amp; Ethical: Manufactured sustainably by Bella+Canvas in the US and internationally, adhering to no-sweatshop and humane labor practices (Platinum WRAP Certified).<br>\n• Enhanced Features:<br>\no Ribbed Knit Collar: Elastic and durable, retains shape over time.<br>\no Shoulder Tape: Stabilizes the back of the garment and prevents stretching.<br>\no Side Seams: Maintain structure and provide long-lasting shape.<br>\n• Custom Printing Options:<br>\no Sleeve Printing: High-quality Direct-to-Film (DTF) or Direct-to-Garment (DTG) methods for crisp, vibrant designs.<br>\no Neck Label Printing: Detailed and durable designs using DTF or DTG techniques.<br>\nThis versatile tee is ideal for casual wear, layering, and custom printing, making it a go-to favorite for any occasion!</p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

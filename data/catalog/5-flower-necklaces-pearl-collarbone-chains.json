@@ -1,0 +1,95 @@
+{
+  "product_id": "gid://shopify/Product/9757660053743",
+  "handle": "5-flower-necklaces-pearl-collarbone-chains",
+  "original_title": "5 flower necklaces pearl collarbone chains",
+  "current_title": "5 flower necklaces pearl collarbone chains",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/5-flower-necklaces-pearl-collarbone-chains",
+  "category": null,
+  "colors": [
+    "Gold"
+  ],
+  "sizes": [],
+  "options": {
+    "Color": [
+      "Gold"
+    ],
+    "Purity": [
+      "14k"
+    ]
+  },
+  "price_min": 12.68,
+  "price_max": 12.68,
+  "cost_min": 1.72,
+  "cost_max": 1.72,
+  "specs": {
+    "Material": "Copper",
+    "Color": "Gold",
+    "Style": "European and American Style",
+    "Pattern Type": "Floral",
+    "Design Element": "Pearl",
+    "Purity": "14K"
+  },
+  "description_text": [],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CBA8848A5CD49A749BEAAD3A529972E1.jpg?v=1793071863",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C99C10DC6F03FC295A55893823DA83E1.jpg?v=1793071865",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FC216A8D36DC873C003DE1EA18CBC88C.jpg?v=1793071867",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/AFC69E5CC766AE67FC659E4F4D3B41F0.jpg?v=1793071868",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/176CF99283200ACB421E1263B4A49F9D.jpg?v=1793071870",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/33F6DE0A2B6742680903B63578445396.jpg?v=1793071872",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/34F5E6F07A53264007586288DE49E243.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/1922B89A4D15477789C9713891E52CFF.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/1D931270FDC3494181481229616E776F.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/74E1345E33274200BFD450ED1815F796.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Gold / 14k",
+      "sku": "5D964BA8F2D44F03BBD5B2BC0C8833CC",
+      "price": "12.68",
+      "cost": "1.72",
+      "options": {
+        "Color": "Gold",
+        "Purity": "14k"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px; font-weight: bold;\">Material: Copper</p><p style=\"font-size: 16px; font-weight: bold;\">Color: Gold</p><p style=\"font-size: 16px; font-weight: bold;\">Style: European and American Style</p><p style=\"font-size: 16px; font-weight: bold;\">Pattern Type: Floral</p><p style=\"font-size: 16px; font-weight: bold;\">Design Element: Pearl</p><p style=\"font-size: 16px; font-weight: bold;\">Purity: 14K</p><p><img alt=\"hGiXj/2ty9QKaif3SOV7/yaPjsUpOLYIbOGG\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/34F5E6F07A53264007586288DE49E243.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/1922B89A4D15477789C9713891E52CFF.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/1D931270FDC3494181481229616E776F.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202605/74E1345E33274200BFD450ED1815F796.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T23:35:48"
+}

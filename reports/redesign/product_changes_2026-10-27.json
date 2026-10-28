@@ -1,0 +1,630 @@
+[
+ {
+  "product_id": "gid://shopify/Product/9757276700911",
+  "handle": "long-coat",
+  "before": {
+   "title": "long coat",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41319725990127",
+    "gid://shopify/MediaImage/41319726219503",
+    "gid://shopify/MediaImage/41319726448879",
+    "gid://shopify/MediaImage/41319726481647",
+    "gid://shopify/MediaImage/41319726612719",
+    "gid://shopify/MediaImage/41319726645487"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41319725990127": "",
+    "gid://shopify/MediaImage/41319726219503": "",
+    "gid://shopify/MediaImage/41319726448879": "",
+    "gid://shopify/MediaImage/41319726481647": "",
+    "gid://shopify/MediaImage/41319726612719": "",
+    "gid://shopify/MediaImage/41319726645487": ""
+   },
+   "options": {
+    "Color": [
+     "wine red"
+    ],
+    "Size": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
+   }
+  },
+  "after": {
+   "title": "Two-Button Notch Lapel Long Coat",
+   "productType": "Outerwear",
+   "tags": [
+    "coat",
+    "outerwear",
+    "long",
+    "notch-lapel",
+    "oversized",
+    "long-sleeve",
+    "burgundy",
+    "red",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41319725990127",
+    "gid://shopify/MediaImage/41319726219503",
+    "gid://shopify/MediaImage/41319726448879",
+    "gid://shopify/MediaImage/41319726481647",
+    "gid://shopify/MediaImage/41319726612719",
+    "gid://shopify/MediaImage/41319726645487"
+   ],
+   "color_renames": {
+    "wine red": "Burgundy"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [],
+  "notes": "Photos show a dark plum-burgundy, so \"wine red\" is renamed Burgundy. Supplier lists polyester only; the brushed, flecked surface looks like wool, so the copy says \"wool-look\" polyester. Size table converted from cm: bust 110–122 cm, length 115–118 cm (the spec line \"80–100 cm\" contradicts the table; the copy uses the table). No on-model photos, so where the hem falls on the body is unverified. Gallery images 1, 5 and 6 are near-identical front flats."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757617783023",
+  "handle": "high-heel-boots-women-round-toe-pleated-womens-knight-western-boots-women-bamboo-joint-mid-calf-copper-buckle-western-fashion-tassel-boots",
+  "before": {
+   "title": "High Heel Boots Women Round Toe  Pleated Women's Knight Western Boots Women Bamboo Joint Mid-Calf Copper Buckle Western Fashion Tassel Boots",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320973009135",
+    "gid://shopify/MediaImage/41320973336815",
+    "gid://shopify/MediaImage/41320973762799",
+    "gid://shopify/MediaImage/41320974516463",
+    "gid://shopify/MediaImage/41320974778607",
+    "gid://shopify/MediaImage/41320974942447",
+    "gid://shopify/MediaImage/41320975368431"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320973009135": "",
+    "gid://shopify/MediaImage/41320973336815": "",
+    "gid://shopify/MediaImage/41320973762799": "",
+    "gid://shopify/MediaImage/41320974516463": "",
+    "gid://shopify/MediaImage/41320974778607": "",
+    "gid://shopify/MediaImage/41320974942447": "",
+    "gid://shopify/MediaImage/41320975368431": ""
+   },
+   "options": {
+    "Color": [
+     "Black",
+     "Dark Brown"
+    ],
+    "Size": [
+     "36",
+     "37",
+     "38",
+     "39",
+     "40",
+     "41",
+     "42"
+    ]
+   }
+  },
+  "after": {
+   "title": "Studded Fold-Over Mid-Calf Boots",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "mid-calf",
+    "fold-over",
+    "studded",
+    "buckle",
+    "faux leather",
+    "black",
+    "brown",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320974778607",
+    "gid://shopify/MediaImage/41320973009135",
+    "gid://shopify/MediaImage/41320973336815",
+    "gid://shopify/MediaImage/41320973762799",
+    "gid://shopify/MediaImage/41320974516463",
+    "gid://shopify/MediaImage/41320974942447",
+    "gid://shopify/MediaImage/41320975368431"
+   ],
+   "color_renames": {},
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [],
+  "notes": "Footwear goes under Sandals per the brief. Supplier title says \"tassel\", \"pleated\", \"copper buckle\" and \"bamboo joint\"; photos show no tassels, a silver-tone buckle and a slouchy fold-over shaft with silver studs, so the copy follows the photos. Shaft 32 cm and heel 3 cm from the measured description image. The supplier size table stops at EU 41 (US 9.5); EU 42 = US 10 is inferred from the same chart. Description images carry a \"Dengweisi\" brand banner; the gallery images are clean, so nothing is added from the description. Variant size values are still bare EU numbers."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757617815791",
+  "handle": "fashion-winter-high-heel-chunky-heel-belt-buckle-suede-over-the-knee-womens-boots-made-to-order-ships-in-7-days",
+  "before": {
+   "title": "Fashion Winter High Heel Chunky Heel  Belt Buckle Suede Over-the-Knee Women's Boots Made to order, ships in 7 days",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320972943599",
+    "gid://shopify/MediaImage/41320973304047",
+    "gid://shopify/MediaImage/41320973697263",
+    "gid://shopify/MediaImage/41320974713071",
+    "gid://shopify/MediaImage/41320974876911",
+    "gid://shopify/MediaImage/41320975335663",
+    "gid://shopify/MediaImage/41320975433967"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320972943599": "",
+    "gid://shopify/MediaImage/41320973304047": "",
+    "gid://shopify/MediaImage/41320973697263": "",
+    "gid://shopify/MediaImage/41320974713071": "",
+    "gid://shopify/MediaImage/41320974876911": "",
+    "gid://shopify/MediaImage/41320975335663": "",
+    "gid://shopify/MediaImage/41320975433967": ""
+   },
+   "options": {
+    "Color": [
+     "Black",
+     "Earth Yellow",
+     "Gray"
+    ],
+    "Size": [
+     "34",
+     "35",
+     "36",
+     "37",
+     "38",
+     "39",
+     "40",
+     "41",
+     "42",
+     "43"
+    ]
+   }
+  },
+  "after": {
+   "title": "Triple Buckle Faux Suede Boots",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "knee-high",
+    "buckle",
+    "faux suede",
+    "block heel",
+    "black",
+    "tan",
+    "green",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320975433967",
+    "gid://shopify/MediaImage/41320972943599",
+    "gid://shopify/MediaImage/41320973304047",
+    "gid://shopify/MediaImage/41320973697263",
+    "gid://shopify/MediaImage/41320974713071",
+    "gid://shopify/MediaImage/41320974876911",
+    "gid://shopify/MediaImage/41320975335663"
+   ],
+   "color_renames": {
+    "Earth Yellow": "Tan",
+    "Gray": "Sage Green"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "photo color mismatch"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Supplier title says over-the-knee; the photos and the measured image (shaft 35.8 cm, heel 6 cm) show a boot ending below the knee, so the copy says below-knee. Spec says round toe; photos show an almond toe with a darker burnished tip. \"Earth Yellow\" shows as tan and \"Gray\" as a pale sage green, so both are renamed. The supplier made-to-order note is left out. Sizes from the supplier chart (EU 34 = US 4 to EU 43 = US 11); variant size values are still bare EU numbers."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757617848559",
+  "handle": "western-style-ankle-boots-for-women-pointed-toe-with-tassel-chunky-high-heel-made-to-order-ships-in-7-days",
+  "before": {
+   "title": "Western Style Ankle Boots for Women, Pointed Toe with Tassel, Chunky High Heel Made to order, ships in 7 days",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320973402351",
+    "gid://shopify/MediaImage/41320973631727",
+    "gid://shopify/MediaImage/41320974483695",
+    "gid://shopify/MediaImage/41320974844143",
+    "gid://shopify/MediaImage/41320974975215",
+    "gid://shopify/MediaImage/41320975401199",
+    "gid://shopify/MediaImage/41320975532271"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320973402351": "",
+    "gid://shopify/MediaImage/41320973631727": "",
+    "gid://shopify/MediaImage/41320974483695": "",
+    "gid://shopify/MediaImage/41320974844143": "",
+    "gid://shopify/MediaImage/41320974975215": "",
+    "gid://shopify/MediaImage/41320975401199": "",
+    "gid://shopify/MediaImage/41320975532271": ""
+   },
+   "options": {
+    "Color": [
+     "Black",
+     "Earth Yellow",
+     "Gray"
+    ],
+    "Size": [
+     "34",
+     "35",
+     "36",
+     "37",
+     "38",
+     "39",
+     "40",
+     "41",
+     "42",
+     "43"
+    ]
+   }
+  },
+  "after": {
+   "title": "Fringe Faux Suede Ankle Boots",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "ankle",
+    "fringe",
+    "western",
+    "faux suede",
+    "block heel",
+    "black",
+    "tan",
+    "green",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320975532271",
+    "gid://shopify/MediaImage/41320973402351",
+    "gid://shopify/MediaImage/41320973631727",
+    "gid://shopify/MediaImage/41320974483695",
+    "gid://shopify/MediaImage/41320974844143",
+    "gid://shopify/MediaImage/41320974975215",
+    "gid://shopify/MediaImage/41320975401199"
+   ],
+   "color_renames": {
+    "Earth Yellow": "Tan",
+    "Gray": "Sage Green"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "photo color mismatch"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Spec says PU upper; it looks like suede, so the copy says faux suede. \"Earth Yellow\" (spec: Khaki) shows as tan and \"Gray\" as pale sage green, so both are renamed. Shaft 14.5 cm and heel 8 cm from the measured description image; no zip is visible, so it is called pull-on. This supplier chart maps China 34 = US 4.5 to China 43 = US 10.5, half a size off the chart on the buckle boots from the same supplier; the owner may want to standardize. The made-to-order note is left out."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757617914095",
+  "handle": "black-kitten-slipper",
+  "before": {
+   "title": "Black Kitten Slipper",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320973172975",
+    "gid://shopify/MediaImage/41320973500655",
+    "gid://shopify/MediaImage/41320974287087",
+    "gid://shopify/MediaImage/41320974614767",
+    "gid://shopify/MediaImage/41320974811375",
+    "gid://shopify/MediaImage/41320975007983"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320973172975": "",
+    "gid://shopify/MediaImage/41320973500655": "",
+    "gid://shopify/MediaImage/41320974287087": "",
+    "gid://shopify/MediaImage/41320974614767": "",
+    "gid://shopify/MediaImage/41320974811375": "",
+    "gid://shopify/MediaImage/41320975007983": ""
+   },
+   "options": {
+    "Color": [
+     "White"
+    ],
+    "Size": [
+     "36/37",
+     "38/39",
+     "40/41",
+     "42/43",
+     "44/45"
+    ]
+   }
+  },
+  "after": {
+   "title": "Embroidered Cat Plush Slippers",
+   "productType": "Sandals",
+   "tags": [
+    "slipper",
+    "plush",
+    "cat",
+    "embroidered",
+    "slip-on",
+    "white",
+    "black",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320973172975",
+    "gid://shopify/MediaImage/41320973500655",
+    "gid://shopify/MediaImage/41320974287087",
+    "gid://shopify/MediaImage/41320974614767",
+    "gid://shopify/MediaImage/41320974811375",
+    "gid://shopify/MediaImage/41320975007983"
+   ],
+   "color_renames": {},
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "house slipper",
+   "unisex sizes",
+   "off-brand"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. A cartoon house slipper; it may not fit the apparel line. The cat looks like an embroidered or appliqued patch; the supplier calls it a cartoon pattern. The supplier lists it as unisex with paired EU sizes 36/37 to 44/45 and gives no size chart; the US range is an approximate conversion and the top sizes are men's. The color is White (black cat motif), matching the variant; the original title's \"Black Kitten\" refers to the cat."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757617979631",
+  "handle": "baotou-half-slippers-womens-summer-lazy-mules-genuine-leather-high-heeled-single-shoes-evening-evening-style-heelless-womens-s",
+  "before": {
+   "title": "Baotou half slippers women's summer lazy mules genuine leather high-heeled single shoes evening evening style heelless women's s",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320973730031",
+    "gid://shopify/MediaImage/41320974450927",
+    "gid://shopify/MediaImage/41320974745839",
+    "gid://shopify/MediaImage/41320974909679",
+    "gid://shopify/MediaImage/41320975040751"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320973730031": "",
+    "gid://shopify/MediaImage/41320974450927": "",
+    "gid://shopify/MediaImage/41320974745839": "",
+    "gid://shopify/MediaImage/41320974909679": "",
+    "gid://shopify/MediaImage/41320975040751": ""
+   },
+   "options": {
+    "Color": [
+     "Off white",
+     "Black",
+     "Brown"
+    ],
+    "Size": [
+     "34",
+     "35",
+     "36",
+     "37",
+     "38",
+     "39",
+     "40"
+    ]
+   }
+  },
+  "after": {
+   "title": "Metal Toe Cap Wedge Mules",
+   "productType": "Sandals",
+   "tags": [
+    "mule",
+    "wedge",
+    "metal toe",
+    "square toe",
+    "slip-on",
+    "faux leather",
+    "ivory",
+    "black",
+    "brown",
+    "spring",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320973730031",
+    "gid://shopify/MediaImage/41320974745839",
+    "gid://shopify/MediaImage/41320974909679",
+    "gid://shopify/MediaImage/41320975040751",
+    "gid://shopify/MediaImage/41320974450927"
+   ],
+   "color_renames": {
+    "Off white": "Ivory",
+    "Brown": "Cognac"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "brand logo"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Image 2 (Cognac, product only) shows a faint stamped brand name on the insole, so it is moved last; it is also the Brown variant image, so that variant should point at image 5 (Cognac on foot). The supplier title says \"genuine leather\" and \"high-heeled\" and the spec says plastic upper; the copy says faux leather and the photos show a low wedge. Colors renamed to match the photos: off-white shows as ivory, brown as a reddish cognac. The supplier only gives foot lengths (EU 34 = 220 mm to EU 39 = 245 mm, nothing for EU 40); the US range uses a standard conversion. Heel height is not given, so none is stated."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757625155823",
+  "handle": "slope-heel-thick-sole-fish-mouth-patterned-high-rise-sandals",
+  "before": {
+   "title": "Slope heel thick sole fish mouth patterned high rise sandals",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320993718511",
+    "gid://shopify/MediaImage/41320994046191",
+    "gid://shopify/MediaImage/41320994177263",
+    "gid://shopify/MediaImage/41320994242799",
+    "gid://shopify/MediaImage/41320994603247",
+    "gid://shopify/MediaImage/41320994799855",
+    "gid://shopify/MediaImage/41320995029231",
+    "gid://shopify/MediaImage/41320995291375"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320993718511": "",
+    "gid://shopify/MediaImage/41320994046191": "",
+    "gid://shopify/MediaImage/41320994177263": "",
+    "gid://shopify/MediaImage/41320994242799": "",
+    "gid://shopify/MediaImage/41320994603247": "",
+    "gid://shopify/MediaImage/41320994799855": "",
+    "gid://shopify/MediaImage/41320995029231": "",
+    "gid://shopify/MediaImage/41320995291375": ""
+   },
+   "options": {
+    "Color": [
+     "Black",
+     "Orange",
+     "Green"
+    ],
+    "Size": [
+     "35",
+     "36",
+     "37",
+     "38",
+     "39",
+     "40",
+     "41",
+     "42",
+     "43"
+    ]
+   }
+  },
+  "after": {
+   "title": "Floral Print Platform Wedge Slides",
+   "productType": "Sandals",
+   "tags": [
+    "wedge",
+    "platform",
+    "slide",
+    "floral",
+    "faux suede",
+    "peep toe",
+    "orange",
+    "black",
+    "green",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320994046191",
+    "gid://shopify/MediaImage/41320993718511",
+    "gid://shopify/MediaImage/41320994177263",
+    "gid://shopify/MediaImage/41320994242799",
+    "gid://shopify/MediaImage/41320994799855",
+    "gid://shopify/MediaImage/41320995029231",
+    "gid://shopify/MediaImage/41320995291375",
+    "gid://shopify/MediaImage/41320994603247"
+   ],
+   "color_renames": {},
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "text overlay"
+  ],
+  "notes": "Footwear goes under Sandals per the brief. Image 5 has a \"10.5cm / 4.13in\" measurement overlay, so it is moved last; the lead is the clean on-model Orange shot (no plain-background shot without text exists). Spec says suede upper; the copy says faux suede. The green band is a deep emerald; \"Green\" is kept. Sizes from the supplier chart (EU 35 = US 4 to EU 43 = US 12); variant size values are still bare EU numbers."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757625188591",
+  "handle": "autumn-and-winter-high-heels-thick-heels-one-foot-stomping-warehouse-tube-high-pass-boots-for-women",
+  "before": {
+   "title": "Autumn and winter high heels, thick heels, one foot stomping, warehouse tube high pass boots for women",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41320993947887",
+    "gid://shopify/MediaImage/41320994144495",
+    "gid://shopify/MediaImage/41320994210031",
+    "gid://shopify/MediaImage/41320994537711",
+    "gid://shopify/MediaImage/41320994734319",
+    "gid://shopify/MediaImage/41320994865391",
+    "gid://shopify/MediaImage/41320995258607",
+    "gid://shopify/MediaImage/41320995324143"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41320993947887": "",
+    "gid://shopify/MediaImage/41320994144495": "",
+    "gid://shopify/MediaImage/41320994210031": "",
+    "gid://shopify/MediaImage/41320994537711": "",
+    "gid://shopify/MediaImage/41320994734319": "",
+    "gid://shopify/MediaImage/41320994865391": "",
+    "gid://shopify/MediaImage/41320995258607": "",
+    "gid://shopify/MediaImage/41320995324143": ""
+   },
+   "options": {
+    "Color": [
+     "Apricot",
+     "Black",
+     "White"
+    ],
+    "Size": [
+     "35",
+     "36",
+     "37",
+     "38",
+     "39",
+     "40",
+     "41",
+     "42",
+     "43"
+    ]
+   }
+  },
+  "after": {
+   "title": "Snap Button Fold-Over Knee Boots",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "knee-high",
+    "fold-over",
+    "snap button",
+    "faux leather",
+    "block heel",
+    "beige",
+    "black",
+    "white",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41320994865391",
+    "gid://shopify/MediaImage/41320993947887",
+    "gid://shopify/MediaImage/41320994144495",
+    "gid://shopify/MediaImage/41320994210031",
+    "gid://shopify/MediaImage/41320994537711",
+    "gid://shopify/MediaImage/41320994734319",
+    "gid://shopify/MediaImage/41320995258607",
+    "gid://shopify/MediaImage/41320995324143"
+   ],
+   "color_renames": {
+    "Apricot": "Beige"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [],
+  "notes": "Footwear goes under Sandals per the brief. \"Apricot\" shows as a light beige, so it is renamed. The cuff carries a small gold leopard-head charm (decorative, no lettering). Shaft 36 cm and heel 7 cm from the measured description image; side zip from the spec (not visible in photos). Upper material is not stated; it reads as smooth faux leather. Sizes from the supplier chart (EU 35 = US 5 to EU 43 = US 11); variant size values are still bare EU numbers."
+ }
+]

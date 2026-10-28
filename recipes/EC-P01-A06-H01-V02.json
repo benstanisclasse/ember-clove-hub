@@ -1,0 +1,134 @@
+{
+  "creative_id": "EC-P01-A06-H01-V02",
+  "parent_id": null,
+  "changed_field": null,
+  "experiment_id": "C1-P01-A06",
+  "product_id": "gid://shopify/Product/9751656071407",
+  "platform": "tiktok",
+  "length_s": 15,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "Holiday party coming? This is the whole outfit.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "callout",
+    "opening_visual": "product-on-body-occasion",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "Holiday plans, one dress (ICP-P01 A2) - AR-15 occasion",
+        "icp": "P01 S2 Holiday-gathering dresser",
+        "product": "Cable Knit Mock Neck Midi Dress",
+        "color": "Red",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims; no post-production",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "product_reference": [
+      {
+        "references": [
+          "assets/EC-P01-A06-H01-V01/ref1_red_dress_neck_down.jpg",
+          "assets/EC-P01-A06-H01-V01/ref2_red_cable_slit_closeup.jpg"
+        ],
+        "source_photo": "Shopify A02E524E5518B5581012D3C06BA3779B.jpg (red studio shot)",
+        "processing": "cropped below the chin to exclude the supplier model's face",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Holiday party coming? This is the whole outfit.",
+          "Ember and Clove's red cable knit, mock neck, long sleeves.",
+          "Fitted through the hips, with a slit to move in.",
+          "Delivery's about two to three weeks. Link's right here."
+        ],
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5/reference-to-video",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 15 seconds, four quick cuts, natural phone-camera look, the same warm apartment in the evening, decorated for the holidays with warm string lights around the front door and a small wreath. The presenter is an AI-generated young adult woman (not any real person), friendly and excited, speaking English directly to the camera. Clear natural speech, light room tone, no background music, no on-screen text, no logos.\nThe dress in every shot is the exact red cable-knit mock neck midi sweater dress from the reference images: plain-knit fitted top with a mock neck, long sleeves with ribbed cuffs, a ribbed waistband at the natural waist, a vertical cable-knit skirt fitted through the hips with a diagonal wrap seam that opens into a front slit, midi length to mid-calf where the hem overlaps the top of black knee-high boots. Keep its bright coral-red color, the cable pattern (on the skirt only), the slit position and height (never higher than in the references) and the length identical to the references. Do not darken it to crimson or burgundy.\nShot 1 (0-3 s): the presenter (shoulder-length wavy dark-brown hair, small gold hoop earrings) is already wearing the red dress with black knee-high boots, standing full-length by the front door framed with string lights; she fastens a small earring, then turns to the camera, saying: \"Holiday party coming? This is the whole outfit.\"\nShot 2 (3-7 s): cut to a mid-shot under the string lights; she turns slightly to show the mock neck, the long sleeves and the cable-knit skirt, saying: \"Ember and Clove's red cable knit, mock neck, long sleeves.\"\nShot 3 (7-11 s): cut to a full-length shot; she walks across the room and the front slit opens over the boots, saying: \"Fitted through the hips, with a slit to move in.\"\nShot 4 (11-15 s): she walks up to the camera into a friendly chest-up close-up, saying: \"Delivery's about two to three weeks. Link's right here.\"",
+        "duration": 15,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "request_id": "9c6f78c7-6205-4035-86f8-11e34358f110",
+        "status": "completed",
+        "cost_note": "actual: open.higgsfield.ai billing usage -$4.85; balance after $33.24",
+        "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/9c6f78c7-6205-4035-86f8-11e34358f110/fe1cdd65-ec06-4817-a20b-de13ef090440.mp4",
+        "recorded_at": "2026-10-25T11:30:56",
+        "credits": 0,
+        "usd": 4.85
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 4.85
+  },
+  "status": "APPROVED",
+  "created_at": "2026-10-25T11:27:37",
+  "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/9c6f78c7-6205-4035-86f8-11e34358f110/fe1cdd65-ec06-4817-a20b-de13ef090440.mp4",
+  "local_path": "assets\\EC-P01-A06-H01-V02\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-25T11:34:18",
+    "result": "visual pass; audio for owner to confirm",
+    "notes": "red cable knit, mock neck, ribbed waist, front slit over boots all match; string-light door and wreath setting as scripted; AI presenter; no logos seen",
+    "owner_review": {
+      "approved_at": "2026-10-25T11:40:56",
+      "note": "Owner 2026-10-25: will use. Note: spoken price/delivery lines lock the ad to current price; remake winners without them before any price change."
+    }
+  },
+  "elements": {
+    "observed": {
+      "room": "hallway_entry",
+      "lighting": "mixed",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "brown",
+      "hair_length": "shoulder",
+      "jewelry": [
+        "hoop_earrings",
+        "rings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "true",
+      "glasses": "false",
+      "worn_with": [
+        "boots"
+      ],
+      "color_palette": "bright_bold",
+      "props": [
+        "none"
+      ],
+      "camera_style": "filmed_by_someone_handheld",
+      "main_shot_distance": "mixed",
+      "camera_movement": "slight",
+      "actions": [
+        "posing",
+        "hand_detail",
+        "walking",
+        "talking_to_camera"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:05:06"
+    }
+  }
+}

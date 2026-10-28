@@ -1,0 +1,599 @@
+{
+  "product_id": "gid://shopify/Product/9751716430063",
+  "handle": "paris-letter-open-toe-flat-sandals",
+  "original_title": "PARIS Letter Open Toe Flat Sandals",
+  "current_title": "PARIS Letter Open Toe Flat Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/paris-letter-open-toe-flat-sandals",
+  "category": null,
+  "colors": [
+    "Pastel  Blue",
+    "Beige",
+    "Hot Pink",
+    "Caramel",
+    "Khaki"
+  ],
+  "sizes": [
+    "36(US5)",
+    "44(US12)",
+    "38(US7)",
+    "37(US6)",
+    "41(US10)",
+    "40(US9)",
+    "43(US11)",
+    "42(US10.5)",
+    "39(US8)"
+  ],
+  "options": {
+    "Color": [
+      "Pastel  Blue",
+      "Beige",
+      "Hot Pink",
+      "Caramel",
+      "Khaki"
+    ],
+    "Size": [
+      "36(US5)",
+      "44(US12)",
+      "38(US7)",
+      "37(US6)",
+      "41(US10)",
+      "40(US9)",
+      "43(US11)",
+      "42(US10.5)",
+      "39(US8)"
+    ]
+  },
+  "price_min": 20.42,
+  "price_max": 20.42,
+  "cost_min": 3.34,
+  "cost_max": 3.34,
+  "specs": {
+    "Color": "Caramel, Pastel Blue,Khaki, Hot Pink,Beige",
+    "Style": "Slippers",
+    "Closure Type": "Slip-On",
+    "Material": "Cotton",
+    "Sole Material": "Rubber",
+    "Heel Height": "Low Heel",
+    "Toe Style": "Open Toe",
+    "Occasion": "Casual",
+    "Size": "36, 37, 38, 39, 40, 41, 42,43,44",
+    "Unit": "cm"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "36(US5)",
+        "23"
+      ],
+      [
+        "37(US6)",
+        "23.5"
+      ],
+      [
+        "38(US7)",
+        "24"
+      ],
+      [
+        "39(US8)",
+        "24.5"
+      ],
+      [
+        "40(US9)",
+        "25"
+      ],
+      [
+        "41(US10)",
+        "25.5"
+      ],
+      [
+        "42(US10.5)",
+        "26.5"
+      ],
+      [
+        "43(US11)",
+        "26.7"
+      ],
+      [
+        "44(US12)",
+        "26.7"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FF916D1106BD75D32472B23161E15C23.jpg?v=1792823482",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3935E03F2CBA7EEBA7E6F1C57F628764.jpg?v=1792823485",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8E2B63F92CE54C32940CC5988C01EDAB.jpg?v=1792823487",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A6FCB65AA82087CD317B13798714A278.jpg?v=1792823490",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6603A0A130AF629A74C7A0E1D939C6C7.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Pastel  Blue / 36(US5)",
+      "sku": "8135E967D59B4B00B53C71354A1429CF",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Beige / 44(US12)",
+      "sku": "3F697CEF05FB40C5AD9420B8631D077E",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "44(US12)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 38(US7)",
+      "sku": "D90777D111854F06951F0078055C1660",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 37(US6)",
+      "sku": "CF5C46BFDD3B4135993E30FAC5246B0B",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Beige / 41(US10)",
+      "sku": "197D34D6A3784652A1E7786D4B41ACA3",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Beige / 40(US9)",
+      "sku": "E0E512DC8F7E41738500261D3DB0C18E",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Beige / 43(US11)",
+      "sku": "D4C75EF0DE6D4D2CBF3B4890D9A75BA1",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Beige / 42(US10.5)",
+      "sku": "486C924274034CC1B08C31A3ACA4E2C0",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Beige / 37(US6)",
+      "sku": "04A410EB339040B3B654FE6334895935",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Beige / 36(US5)",
+      "sku": "77CFD410310E4D17AB497874DACA002F",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Beige / 39(US8)",
+      "sku": "11FB82B90ED44322AC44C27AAAA0179F",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Beige / 38(US7)",
+      "sku": "DC897AED20C74D4B96C33E4A30D8390C",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Beige",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Hot Pink / 42(US10.5)",
+      "sku": "D90695E69BC9492DA5F7B5DD55616AD3",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Hot Pink / 41(US10)",
+      "sku": "1FDDDF8FA34D43ED93D3E4BBED1EDDD3",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Hot Pink / 44(US12)",
+      "sku": "DC936633D14C4BD092794740FEF4A2E3",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "44(US12)"
+      }
+    },
+    {
+      "title": "Hot Pink / 43(US11)",
+      "sku": "515F5B41B1F6441C808FC3E1E6875672",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Caramel / 43(US11)",
+      "sku": "C96908CC8A8F4A2C9ED8879ECFC61187",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Caramel / 42(US10.5)",
+      "sku": "15F681C7A1E44E2DBBB971F749682C24",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Khaki / 36(US5)",
+      "sku": "F8443EFFFF3E462ABDD0DA9D5F31576C",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Caramel / 44(US12)",
+      "sku": "65586126DDE9497FBF79B3AC985584BF",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "44(US12)"
+      }
+    },
+    {
+      "title": "Caramel / 39(US8)",
+      "sku": "BA86370218304612937E963F59A80082",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Caramel / 38(US7)",
+      "sku": "8368F583F9D8463182056DFDE1450D09",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Caramel / 41(US10)",
+      "sku": "F556E7D83D134951BC42375A2863B81D",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Caramel / 40(US9)",
+      "sku": "0BB6794C10904620BABA329D0F8DE8F4",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 44(US12)",
+      "sku": "12364AB87106408BAFF0A0402AF43704",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "44(US12)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 43(US11)",
+      "sku": "19AC62F9FF704386BA2AAC3487BD54EB",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Caramel / 37(US6)",
+      "sku": "D038F3EF2B964092A736710E5F95A959",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Caramel / 36(US5)",
+      "sku": "B33C72A05A414C509B1448B1793AD9A7",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Caramel",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 40(US9)",
+      "sku": "11B7447FD9994ACB9A670B58447FE1B4",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 39(US8)",
+      "sku": "6FEC11FDDBB94A95BB6564948826E0F5",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 42(US10.5)",
+      "sku": "909CF8D695674BEF81174D34E76F732C",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 41(US10)",
+      "sku": "55BAC620F59A4F35AE94B2F2577DB395",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Khaki / 42(US10.5)",
+      "sku": "31A0EB0D61C8453697AE01E711ADA8C5",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Khaki / 41(US10)",
+      "sku": "357A351A5E264F558F7F598C7763929E",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Khaki / 44(US12)",
+      "sku": "2D88D3AA57E5466684CC874F13BDF62B",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "44(US12)"
+      }
+    },
+    {
+      "title": "Khaki / 43(US11)",
+      "sku": "9660B62AB0E449BFB8C7520ED9B1E3CE",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Khaki / 38(US7)",
+      "sku": "54E76BA8148A401AA4FE61EB53066E47",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Khaki / 37(US6)",
+      "sku": "D80839A4EDD84E53B80A62D77A52FAD4",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Khaki / 40(US9)",
+      "sku": "93836CE449C045B385A5ADB73EC2455A",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Khaki / 39(US8)",
+      "sku": "54369F67D53342B4970F562F04710387",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Khaki",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Hot Pink / 38(US7)",
+      "sku": "714D326563E7460FAE013BE548A19D17",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Hot Pink / 37(US6)",
+      "sku": "C864F78F2F144834ACB84D3BE0EDE9F3",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Hot Pink / 40(US9)",
+      "sku": "5954398D3A7441329EAA68053FA06E7F",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Hot Pink / 39(US8)",
+      "sku": "0BF93E6D1C7E4CD9A53713E25AB78AD3",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Hot Pink / 36(US5)",
+      "sku": "9B1B4E8F443B4F83976421A6EBE6752A",
+      "price": "20.42",
+      "cost": "3.34",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "36(US5)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Color:Caramel, Pastel  Blue,Khaki, Hot Pink,Beige</p><p>- Style: Slippers</p><p>- Closure Type: Slip-On</p><p>- Material: Cotton</p><p>- Sole Material: Rubber</p><p>- Heel Height: Low Heel</p><p>- Toe Style: Open Toe</p><p>- Occasion: Casual</p><p>- Size: 36, 37, 38, 39, 40, 41, 42,43,44</p><p>- Unit: cm</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<p><br></p>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">41(US10)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">42(US10.5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">43(US11)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.7</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">44(US12)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.7</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

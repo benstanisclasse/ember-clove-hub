@@ -1,0 +1,137 @@
+{
+  "product_id": "gid://shopify/Product/9757659988207",
+  "handle": "exaggerated-bead-chain-18k-gold-heart-pendant-necklace-geometric-minimalist-hip-hop-choker",
+  "original_title": "exaggerated bead chain 18K gold heart pendant necklace geometric minimalist hip-hop choker",
+  "current_title": "exaggerated bead chain 18K gold heart pendant necklace geometric minimalist hip-hop choker",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/exaggerated-bead-chain-18k-gold-heart-pendant-necklace-geometric-minimalist-hip-hop-choker",
+  "category": null,
+  "colors": [
+    "Steel Color Necklace",
+    "Golden  Necklace",
+    "Golden  Bracelet"
+  ],
+  "sizes": [],
+  "options": {
+    "Color": [
+      "Steel Color Necklace",
+      "Golden  Necklace",
+      "Golden  Bracelet"
+    ]
+  },
+  "price_min": 18.78,
+  "price_max": 20.46,
+  "cost_min": 4.94,
+  "cost_max": 5.78,
+  "specs": {
+    "Material": "Stainless Steel",
+    "Finish": "Electroplated",
+    "Design": "Heart-shaped, Geometric",
+    "Chain Style": "Regular Chain",
+    "Multi-layer": "No",
+    "Pendant Material": "Titanium Steel",
+    "Circumference": "41cm (inclusive) - 50cm (inclusive)",
+    "Color": "Steel Color Heart Stainless Steel Bead Necklace, Gold Color Heart Stainless Steel Bead Necklace, Gold Color Heart Stainless Steel Bead Bracelet",
+    "Occasion": "Casual",
+    "Product Category": "Necklace",
+    "Target Audience": "Women",
+    "Trend Element": "Heart / Heart-shaped",
+    "Trend Element Category": "Shape / Pattern"
+  },
+  "description_text": [
+    "\\"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A812F8CEA248535AB6B3DD3829712B9B.jpg?v=1793071861",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B5F031A59FF8BB5837B46D4BEB06B68B.jpg?v=1793071864",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E825AFE9E4E936AC7413A4F7FF0A0320.jpg?v=1793071865",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C2F6451F6581183CCC6D336A23F7E64D.jpg?v=1793071868",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D11924D6EC410FD02358797D72F476E9.jpg?v=1793071870",
+      "altText": "",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EC6911DAB7A4B19D22196ECABC7C1951.jpg?v=1793071872",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A9D8FCE63CB4D9B8A2F29A9A83ECBF9B.jpg?v=1793071874",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D3394AACB7F8FA8F7972AEE2431EE237.jpg?v=1793071876",
+      "altText": "",
+      "width": 284,
+      "height": 385
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/80A5084BBE8C81359FD1CF04E41051A4.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/FF3FFC1DEE81A530134421027A9E9F76.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/2A98E7C61A2C91AA1BC4200670D592C4.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/7ABCAC35A43333D7681CCE7558B312F3.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/A59D7F016799871E9CBC78A07EBE79C0.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/78962FAC0F03DCD8F22D207DCBB75A8F.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/BEA3CC8A5B7C58E3F7A05702540D5BF8.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Steel Color Necklace",
+      "sku": "78FAA5A8D73E49ACBCFE74E840DA4814",
+      "price": "19.44",
+      "cost": "5.27",
+      "options": {
+        "Color": "Steel Color Necklace"
+      }
+    },
+    {
+      "title": "Golden  Necklace",
+      "sku": "71BACD542F574C9AA5F32F604DB14C0B",
+      "price": "20.46",
+      "cost": "5.78",
+      "options": {
+        "Color": "Golden  Necklace"
+      }
+    },
+    {
+      "title": "Golden  Bracelet",
+      "sku": "37469E77F41A409EB4A7E597286D020F",
+      "price": "18.78",
+      "cost": "4.94",
+      "options": {
+        "Color": "Golden  Bracelet"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Material: Stainless Steel</strong></p><p><strong>Finish: Electroplated</strong></p><p><strong>Design: Heart-shaped, Geometric</strong></p><p><strong>Chain Style: Regular Chain</strong></p><p><strong>Multi-layer: No</strong></p><p><strong>Pendant Material: Titanium Steel</strong></p><p><strong>Circumference: 41cm (inclusive) - 50cm (inclusive)</strong></p><p><strong>Color: Steel Color Heart Stainless Steel Bead Necklace, Gold Color Heart Stainless Steel Bead Necklace, Gold Color Heart Stainless Steel Bead Bracelet</strong></p><p><strong>Occasion: Casual</strong></p><p><strong>Product Category: Necklace</strong></p><p><strong>Target Audience: Women</strong></p><p><strong>Trend Element: Heart / Heart-shaped</strong></p><p><strong>Trend Element Category: Shape / Pattern</strong></p><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/80A5084BBE8C81359FD1CF04E41051A4.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/FF3FFC1DEE81A530134421027A9E9F76.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/2A98E7C61A2C91AA1BC4200670D592C4.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/7ABCAC35A43333D7681CCE7558B312F3.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/A59D7F016799871E9CBC78A07EBE79C0.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/78962FAC0F03DCD8F22D207DCBB75A8F.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/BEA3CC8A5B7C58E3F7A05702540D5BF8.jpg\"> \\ </p>",
+  "cataloged_at": "2026-10-26T23:35:47"
+}

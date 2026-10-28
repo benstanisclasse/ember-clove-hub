@@ -1,0 +1,75 @@
+{
+  "product_id": "gid://shopify/Product/9751302209775",
+  "handle": "essential-oil-diffuser-ash",
+  "original_title": "Essential Oil Diffuser - Ash",
+  "current_title": "Essential Oil Diffuser - Ash",
+  "vendor": "Bursera",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/essential-oil-diffuser-ash",
+  "category": "Health & Beauty > Personal Care > Essential Oils > Essential Oil Diffusers",
+  "colors": [],
+  "sizes": [],
+  "options": {
+    "Title": [
+      "Default Title"
+    ]
+  },
+  "price_min": 79.02,
+  "price_max": 79.02,
+  "cost_min": 71.19,
+  "cost_max": 71.19,
+  "specs": {},
+  "description_text": [
+    "Invigorate your living environment and fill your room with the scents that inspire you.",
+    "Uniquely shaped black ceramic essential oil diffuser influenced by artisanal flower vases and a matte finish to add to a refined décor.",
+    "With a one, three, and five-hour run time feature, automatic shut-off, and a soft white LED light that cycles between different brightness levels, this easy to clean, low maintenance diffuser is ideal for tableside décor and to refresh your space with the power of scent."
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/Ceramic-Diffuser-Ash-3.jpg?v=1792788058",
+      "altText": "",
+      "width": 1586,
+      "height": 1903
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/Bursera-CeramicDiffuserAshAmazon.jpg?v=1792788059",
+      "altText": "",
+      "width": 1261,
+      "height": 1513
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/IMG_5569.jpg?v=1792788059",
+      "altText": "",
+      "width": 3024,
+      "height": 4032
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/Ceramic-Diffuser-Ash-2.jpg?v=1792788060",
+      "altText": "",
+      "width": 1537,
+      "height": 1844
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/Bursera-Ceramic-Diffuser-Ash_5c7f5ead-7c62-4e36-8e94-217df0931a18.jpg?v=1792788060",
+      "altText": "",
+      "width": 1200,
+      "height": 1500
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Default Title",
+      "sku": "3862",
+      "price": "79.02",
+      "cost": "71.19",
+      "options": {
+        "Title": "Default Title"
+      }
+    }
+  ],
+  "raw_description_html": "<div class=\"Polaris-Layout__Section_1b1h1\" data-mce-fragment=\"1\">\n<div class=\"Polaris-Card_yis1o Polaris-Card--newDesignLanguage_1rik8\" data-mce-fragment=\"1\">\n<div class=\"Polaris-Card__Section_1b1h1\" data-mce-fragment=\"1\">\n<div data-mce-fragment=\"1\">\n<div data-mce-fragment=\"1\">\n<p>Invigorate your living environment and fill your room with the scents that inspire you.</p>\n<p>Uniquely shaped black ceramic essential oil diffuser influenced by artisanal flower vases and a matte finish to add to a refined décor.</p>\n</div>\n<div data-mce-fragment=\"1\">With a one, three, and five-hour run time feature, automatic shut-off, and a soft white LED light that cycles between different brightness levels, this easy to clean, low maintenance diffuser is ideal for tableside décor and to refresh your space with the power of scent. </div>\n</div>\n</div>\n</div>\n</div>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

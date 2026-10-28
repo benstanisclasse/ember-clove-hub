@@ -1,0 +1,582 @@
+[
+ {
+  "product_id": "gid://shopify/Product/9757092315375",
+  "handle": "three-dimensional-rose-contrasting-dress-niche-design-fashionable-lapel-off-shoulder-temperament-commuting-suit-skirt",
+  "before": {
+   "title": "Three dimensional rose contrasting dress, niche design, fashionable lapel, off shoulder temperament, commuting suit skirt",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318188548335",
+    "gid://shopify/MediaImage/41318188744943",
+    "gid://shopify/MediaImage/41318189105391",
+    "gid://shopify/MediaImage/41318189793519",
+    "gid://shopify/MediaImage/41318190416111",
+    "gid://shopify/MediaImage/41318190547183"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318188548335": "",
+    "gid://shopify/MediaImage/41318188744943": "",
+    "gid://shopify/MediaImage/41318189105391": "",
+    "gid://shopify/MediaImage/41318189793519": "",
+    "gid://shopify/MediaImage/41318190416111": "",
+    "gid://shopify/MediaImage/41318190547183": ""
+   },
+   "options": {
+    "color": [
+     "Black"
+    ],
+    "size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   }
+  },
+  "after": {
+   "title": "3D Rose Blazer Mini Dress",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "blazer dress",
+    "mini",
+    "rose",
+    "floral appliqué",
+    "notch-lapel",
+    "long-sleeve",
+    "black",
+    "red",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318190416111",
+    "gid://shopify/MediaImage/41318188548335",
+    "gid://shopify/MediaImage/41318189793519",
+    "gid://shopify/MediaImage/41318190547183",
+    "gid://shopify/MediaImage/41318188744943",
+    "gid://shopify/MediaImage/41318189105391"
+   ],
+   "color_renames": {},
+   "option_renames": {
+    "color": "Color",
+    "size": "Size"
+   },
+   "added_media": []
+  },
+  "flags": [
+   "watermark"
+  ],
+  "notes": "Photos win over the supplier text: the title says \"off shoulder\" and \"suit skirt\", but the photos show a one-piece long-sleeve blazer dress with covered, puffed shoulders, notch lapels, covered buttons, flap pockets and three red fabric roses with sage-green stems. Images 2 and 3 carry an \"aishang meyzis\" watermark, so they are moved last; image 2 is also the variant image for every size, so the variants should point at image 5 (clean mannequin front, the lead). Sizes from the supplier list: bust 86–98 cm, length 78–81 cm. Option names color/size are capitalised."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757092675823",
+  "handle": "retro-suede-jacket-jacket",
+  "before": {
+   "title": "Retro suede jacket jacket",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318189498607",
+    "gid://shopify/MediaImage/41318190121199",
+    "gid://shopify/MediaImage/41318190514415",
+    "gid://shopify/MediaImage/41318190874863",
+    "gid://shopify/MediaImage/41318191431919",
+    "gid://shopify/MediaImage/41318192021743",
+    "gid://shopify/MediaImage/41318192185583"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318189498607": "",
+    "gid://shopify/MediaImage/41318190121199": "",
+    "gid://shopify/MediaImage/41318190514415": "",
+    "gid://shopify/MediaImage/41318190874863": "",
+    "gid://shopify/MediaImage/41318191431919": "",
+    "gid://shopify/MediaImage/41318192021743": "",
+    "gid://shopify/MediaImage/41318192185583": ""
+   },
+   "options": {
+    "color": [
+     "Dark brown",
+     "Light brown"
+    ],
+    "size": [
+     "S",
+     "M",
+     "L"
+    ]
+   }
+  },
+  "after": {
+   "title": "Notch Lapel Faux Suede Blazer",
+   "productType": "Outerwear",
+   "tags": [
+    "blazer",
+    "jacket",
+    "outerwear",
+    "faux suede",
+    "notch-lapel",
+    "long-sleeve",
+    "brown",
+    "camel",
+    "spring",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318192021743",
+    "gid://shopify/MediaImage/41318189498607",
+    "gid://shopify/MediaImage/41318190121199",
+    "gid://shopify/MediaImage/41318190514415",
+    "gid://shopify/MediaImage/41318190874863",
+    "gid://shopify/MediaImage/41318191431919",
+    "gid://shopify/MediaImage/41318192185583"
+   ],
+   "color_renames": {
+    "Dark brown": "Dark Brown",
+    "Light brown": "Camel"
+   },
+   "option_renames": {
+    "color": "Color",
+    "size": "Size"
+   },
+   "added_media": []
+  },
+  "flags": [
+   "social-media style photos (rights unclear)"
+  ],
+  "notes": "Supplier says \"suede\" and polyester; the copy says polyester faux suede. \"Light brown\" shows as camel and \"Dark brown\" is only re-cased. The on-model shots look like one creator's personal social posts (bedroom, street, coffee in hand) rather than supplier studio shots, so the photo rights may be worth checking. On-model shade is between the two flats; labelled Dark Brown. Image 5 shows a black lining where images 6 and 7 show a taupe lining, so lining color may vary. Size table converted from cm: bust 102–110, length 63–65."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757095198959",
+  "handle": "european-and-american-style-spring-and-summer-womens-clothing-new-one-shoulder-exposed-backpack-buttocks-sexy-long-skirt-dress",
+  "before": {
+   "title": "European and American style spring and summer women's clothing new one shoulder exposed backpack buttocks sexy long skirt dress",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318199230703",
+    "gid://shopify/MediaImage/41318199853295",
+    "gid://shopify/MediaImage/41318199951599",
+    "gid://shopify/MediaImage/41318200279279",
+    "gid://shopify/MediaImage/41318200606959",
+    "gid://shopify/MediaImage/41318200738031"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318199230703": "",
+    "gid://shopify/MediaImage/41318199853295": "",
+    "gid://shopify/MediaImage/41318199951599": "",
+    "gid://shopify/MediaImage/41318200279279": "",
+    "gid://shopify/MediaImage/41318200606959": "",
+    "gid://shopify/MediaImage/41318200738031": ""
+   },
+   "options": {
+    "Color": [
+     "Coffee"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   }
+  },
+  "after": {
+   "title": "Off-Shoulder Open Back Maxi Dress",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "maxi",
+    "off-shoulder",
+    "open back",
+    "bodycon",
+    "jersey",
+    "sleeveless",
+    "brown",
+    "spring",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318199230703",
+    "gid://shopify/MediaImage/41318199853295",
+    "gid://shopify/MediaImage/41318199951599",
+    "gid://shopify/MediaImage/41318200279279",
+    "gid://shopify/MediaImage/41318200606959",
+    "gid://shopify/MediaImage/41318200738031"
+   ],
+   "color_renames": {},
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [],
+  "notes": "Photos win over the supplier text: the title says \"one shoulder\" (and a garbled \"backpack buttocks\"), but every photo shows an off-the-shoulder folded band across both shoulders and a deep scoop open back. Fabric reads as a matte stretch jersey (polyester per supplier). Size chart image: bust 86–94 cm, length 126–131 cm. Image 5 is a rough cut-out of the model on white; kept in place. \"Coffee\" matches the reddish chocolate brown, so no rename."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757095395567",
+  "handle": "slim-zipper-jacket-jacket",
+  "before": {
+   "title": "Slim zipper jacket jacket",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318200213743",
+    "gid://shopify/MediaImage/41318200344815",
+    "gid://shopify/MediaImage/41318200672495",
+    "gid://shopify/MediaImage/41318201000175",
+    "gid://shopify/MediaImage/41318201327855",
+    "gid://shopify/MediaImage/41318201852143"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318200213743": "",
+    "gid://shopify/MediaImage/41318200344815": "",
+    "gid://shopify/MediaImage/41318200672495": "",
+    "gid://shopify/MediaImage/41318201000175": "",
+    "gid://shopify/MediaImage/41318201327855": "",
+    "gid://shopify/MediaImage/41318201852143": ""
+   },
+   "options": {
+    "Color": [
+     "25598 Black"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   }
+  },
+  "after": {
+   "title": "Snap Collar Faux Leather Jacket",
+   "productType": "Outerwear",
+   "tags": [
+    "jacket",
+    "outerwear",
+    "moto",
+    "faux leather",
+    "stand collar",
+    "zip",
+    "long-sleeve",
+    "black",
+    "spring",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318200213743",
+    "gid://shopify/MediaImage/41318200344815",
+    "gid://shopify/MediaImage/41318200672495",
+    "gid://shopify/MediaImage/41318201000175",
+    "gid://shopify/MediaImage/41318201852143",
+    "gid://shopify/MediaImage/41318201327855"
+   ],
+   "color_renames": {
+    "25598 Black": "Black"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "photos look AI-generated",
+   "collage"
+  ],
+  "notes": "The model photos look AI-generated (same face and pose set, very smooth skin and leather); the owner should judge whether they read as real. Image 5 is a four-panel close-up collage, so it is moved last. The supplier lists \"Belted\" and \"Waist-Cinched\"; no belt shows in any photo, so the copy mentions only the shaped waist seams. \"25598 Black\" is renamed Black (supplier code removed). Size table converted from cm: bust 94–110, length 54–58. Lining is not stated."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757098017007",
+  "handle": "striped-dress-sleeveless-dress",
+  "before": {
+   "title": "Striped dress sleeveless dress",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318211322095",
+    "gid://shopify/MediaImage/41318211911919",
+    "gid://shopify/MediaImage/41318212010223",
+    "gid://shopify/MediaImage/41318212600047",
+    "gid://shopify/MediaImage/41318213353711",
+    "gid://shopify/MediaImage/41318213419247"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318211322095": "",
+    "gid://shopify/MediaImage/41318211911919": "",
+    "gid://shopify/MediaImage/41318212010223": "",
+    "gid://shopify/MediaImage/41318212600047": "",
+    "gid://shopify/MediaImage/41318213353711": "",
+    "gid://shopify/MediaImage/41318213419247": ""
+   },
+   "options": {
+    "Color": [
+     "Brown",
+     "Blue"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   }
+  },
+  "after": {
+   "title": "Tiered Stripe Sleeveless Swing Dress",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "swing",
+    "tiered",
+    "striped",
+    "sleeveless",
+    "scoop neck",
+    "blue",
+    "brown",
+    "spring",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318211322095",
+    "gid://shopify/MediaImage/41318211911919",
+    "gid://shopify/MediaImage/41318212010223",
+    "gid://shopify/MediaImage/41318212600047",
+    "gid://shopify/MediaImage/41318213353711",
+    "gid://shopify/MediaImage/41318213419247"
+   ],
+   "color_renames": {},
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [],
+  "notes": "Photos match the supplier: a sleeveless scoop-neck dress in three tiers of vertical stripes on white. The Brown stripe is a caramel brown; the name is kept. Supplier says mid-length; the table gives 93–97 cm, which sits at the knee on the model. Size table converted from cm: bust 94–110. Lead is image 1 (plain background, head cropped)."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757098049775",
+  "handle": "metal-buckle-symmetrical-pleated-sleeveless-short-skirt-with-waist-cinching-dress",
+  "before": {
+   "title": "Metal buckle symmetrical pleated sleeveless short skirt with waist cinching dress",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318211879151",
+    "gid://shopify/MediaImage/41318211977455",
+    "gid://shopify/MediaImage/41318212567279",
+    "gid://shopify/MediaImage/41318213320943"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318211879151": "",
+    "gid://shopify/MediaImage/41318211977455": "",
+    "gid://shopify/MediaImage/41318212567279": "",
+    "gid://shopify/MediaImage/41318213320943": ""
+   },
+   "options": {
+    "color": [
+     "coffee",
+     "white"
+    ],
+    "size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   }
+  },
+  "after": {
+   "title": "Mock Neck Side-Pleat Mini Dress",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "mini",
+    "mock neck",
+    "sleeveless",
+    "pleated",
+    "fit-and-flare",
+    "brown",
+    "white",
+    "spring",
+    "summer",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318211977455",
+    "gid://shopify/MediaImage/41318212567279",
+    "gid://shopify/MediaImage/41318213320943",
+    "gid://shopify/MediaImage/41318211879151"
+   ],
+   "color_renames": {
+    "coffee": "Brown",
+    "white": "White"
+   },
+   "option_renames": {
+    "color": "Color",
+    "size": "Size"
+   },
+   "added_media": []
+  },
+  "flags": [
+   "collage"
+  ],
+  "notes": "Photos win over the supplier text: the spec says \"diagonal collar\", the photos show a high mock neck; the \"metal buckle\" is a small metal ring at each hip where the side pleats gather. Image 1 is a two-model side-by-side collage, so it is moved last. \"coffee\" shows as a medium chocolate brown, renamed Brown; \"white\" is re-cased. Closure is not visible and the spec (\"Sleeve\") is unclear, so none is stated. Size chart image: bust 86–98 cm, length 88–91 cm."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757099294959",
+  "handle": "european-and-american-fashion-loose-suit-skirt-two-piece-set-long-sleeved-lapel-top-printed-high-waisted-short-skirt",
+  "before": {
+   "title": "European and American fashion loose suit skirt two-piece set long sleeved lapel top printed high waisted short skirt",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318215713007",
+    "gid://shopify/MediaImage/41318216007919",
+    "gid://shopify/MediaImage/41318216761583",
+    "gid://shopify/MediaImage/41318217056495",
+    "gid://shopify/MediaImage/41318217122031",
+    "gid://shopify/MediaImage/41318217646319"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318215713007": "",
+    "gid://shopify/MediaImage/41318216007919": "",
+    "gid://shopify/MediaImage/41318216761583": "",
+    "gid://shopify/MediaImage/41318217056495": "",
+    "gid://shopify/MediaImage/41318217122031": "",
+    "gid://shopify/MediaImage/41318217646319": ""
+   },
+   "options": {
+    "Color": [
+     "pink"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   }
+  },
+  "after": {
+   "title": "Floral Satin Blazer Mini Set",
+   "productType": "Skirts",
+   "tags": [
+    "set",
+    "two-piece",
+    "blazer",
+    "skort",
+    "floral",
+    "satin",
+    "long-sleeve",
+    "pink",
+    "green",
+    "spring",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318217122031",
+    "gid://shopify/MediaImage/41318215713007",
+    "gid://shopify/MediaImage/41318216007919",
+    "gid://shopify/MediaImage/41318216761583",
+    "gid://shopify/MediaImage/41318217056495",
+    "gid://shopify/MediaImage/41318217646319"
+   ],
+   "color_renames": {
+    "pink": "Pink Floral"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "skort, not a skirt",
+   "duplicate image"
+  ],
+  "notes": "Type: the set goes under Skirts because its bottom is sold as the \"suit skirt\" and reads as a slit mini from the front; Outerwear (for the blazer) is the alternative. Photos win over the supplier text: the back views (image 4 and a description image) show shorts, so the bottom is a skort-style mini with a front slit, and the copy says so. The blazer is cropped and double-breasted with gold-tone embossed buttons and a white lining (description close-ups). Image 6 is a byte-identical copy of image 5 and is the variant image; it is moved last and image 5 leads. Size chart image: bust 96–104, waist 64–72, jacket length 43–45, bottom length 35–36 cm. Wardrobe category is \"bottom\" but it is a full outfit."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757099819247",
+  "handle": "new-french-dress-ladies-long-dress-fashion-backless-slit-dress",
+  "before": {
+   "title": "New French Dress Ladies Long Dress Fashion Backless Slit Dress",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41318218072303",
+    "gid://shopify/MediaImage/41318218367215",
+    "gid://shopify/MediaImage/41318218891503",
+    "gid://shopify/MediaImage/41318218989807",
+    "gid://shopify/MediaImage/41318219677935",
+    "gid://shopify/MediaImage/41318219776239"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41318218072303": "",
+    "gid://shopify/MediaImage/41318218367215": "",
+    "gid://shopify/MediaImage/41318218891503": "",
+    "gid://shopify/MediaImage/41318218989807": "",
+    "gid://shopify/MediaImage/41318219677935": "",
+    "gid://shopify/MediaImage/41318219776239": ""
+   },
+   "options": {
+    "Color": [
+     "FKD9122-Black",
+     "FKD9122-Green"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   }
+  },
+  "after": {
+   "title": "Cowl Neck Satin Maxi Dress",
+   "productType": "Dresses",
+   "tags": [
+    "dress",
+    "maxi",
+    "satin",
+    "cowl neck",
+    "slit",
+    "open back",
+    "spaghetti strap",
+    "black",
+    "green",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41318219677935",
+    "gid://shopify/MediaImage/41318218072303",
+    "gid://shopify/MediaImage/41318218367215",
+    "gid://shopify/MediaImage/41318218891503",
+    "gid://shopify/MediaImage/41318218989807",
+    "gid://shopify/MediaImage/41318219776239"
+   ],
+   "color_renames": {
+    "FKD9122-Black": "Black",
+    "FKD9122-Green": "Emerald Green"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "fabric not stated"
+  ],
+  "notes": "The supplier gives no fabric, only a size chart image; the copy says satin-finish from the photos without naming a fiber. Side zip, adjustable straps and elasticated back from the description close-ups. Colors lose the supplier code; the green is a bright emerald. Size chart: bust 76–84 cm, length 140–142 cm; the bust measurement is small for the size labels and may be unstretched, worth a check. Image 2 is a mirror selfie with a phone; kept in place."
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "date": "2026-10-27",
+  "time": "19:16",
+  "weekday": "Tue",
+  "kind": "product",
+  "products": "Embroidered Cat Plush Slippers",
+  "photos": 1,
+  "status": "published",
+  "post_url": "https://www.facebook.com/XXX_122097736509528852"
+ },
+ {
+  "date": "2026-10-28",
+  "time": "19:00",
+  "weekday": "Wed",
+  "kind": "product",
+  "products": "Crossover Rib Waist Top",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-10-29",
+  "time": "09:00",
+  "weekday": "Thu",
+  "kind": "product",
+  "products": "Belted Collared Midi Shirt Dress",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-10-29",
+  "time": "19:00",
+  "weekday": "Thu",
+  "kind": "outfit",
+  "products": "Pheasant Print Crewneck Fleece Sweatshirt + Contrast Stitch V-Waist Flare Jeans + Snap Collar Faux Leather Jacket",
+  "photos": 3,
+  "status": "not sent",
+  "post_url": ""
+ },
+ {
+  "date": "2026-10-30",
+  "time": "09:00",
+  "weekday": "Fri",
+  "kind": "product",
+  "products": "Fleece-Lined Hooded Zip Jacket",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-10-30",
+  "time": "19:00",
+  "weekday": "Fri",
+  "kind": "product",
+  "products": "Alphabet Print Crewneck Fleece Sweatshirt",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-10-31",
+  "time": "10:00",
+  "weekday": "Sat",
+  "kind": "product",
+  "products": "Fleece-Lined Faux Leather Skinny Pants",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-11-01",
+  "time": "10:00",
+  "weekday": "Sun",
+  "kind": "outfit",
+  "products": "Striped Polo Collar Knit Sweater + Two-Tone Patchwork Skinny Jeans + Notch Lapel Faux Suede Blazer",
+  "photos": 3,
+  "status": "not sent",
+  "post_url": ""
+ },
+ {
+  "date": "2026-11-02",
+  "time": "09:00",
+  "weekday": "Mon",
+  "kind": "product",
+  "products": "Malibu Beach Graphic Sweatshirt",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-11-02",
+  "time": "19:00",
+  "weekday": "Mon",
+  "kind": "product",
+  "products": "Zodiac Crescent Moon Necklace",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-11-03",
+  "time": "09:00",
+  "weekday": "Tue",
+  "kind": "product",
+  "products": "Frayed Hem Ripped Ankle Jeans",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ },
+ {
+  "date": "2026-11-03",
+  "time": "19:00",
+  "weekday": "Tue",
+  "kind": "outfit",
+  "products": "Lace Panel Sheer Chiffon Blouse + Long Pleated Knit Skirt + Embrace Figure Pendant Necklace",
+  "photos": 1,
+  "status": "scheduled",
+  "post_url": ""
+ }
+]

@@ -1,0 +1,231 @@
+{
+ "EC-P01-A03-H01-V01": {
+  "duration_s": 15.1,
+  "cuts": 1,
+  "cut_times": [
+   3.0
+  ],
+  "cuts_per_10s": 0.66,
+  "words": 35,
+  "words_per_s": 2.32,
+  "speech_share": 0.66,
+  "hook_text": "Okay, you need to see the sweater dress.",
+  "hook_type": "you_need_to_see_this",
+  "first_frame": "person_with_product",
+  "on_screen_text_first_3s": "",
+  "format": "try_on",
+  "presenter": "on_camera_speaking",
+  "presenter_looks_ai_generated": "false",
+  "product_first_seen_s": 0,
+  "product_shown_as_0s": "held",
+  "detail_closeups": "true",
+  "script_beats": [
+   "product_intro",
+   "feature",
+   "proof_demo",
+   "cta"
+  ],
+  "claims": [
+   "comfort",
+   "sizing",
+   "other"
+  ],
+  "cta": "spoken",
+  "cta_text": "Links right here",
+  "setting": "home",
+  "production": "phone_ugc",
+  "summary": "A woman in a white tee selfie-films herself holding up a brown cable-knit sweater dress on a hanger, says viewers need to see it, then tries it on to show the fitted hips, side slit, and walkability, notes it comes in seven colors, and points to the links.",
+  "transcript": "Okay, you need to see the sweater dress. It's cable knit and it's fitted through the hips and the slit means you can actually walk in it. It comes in seven colors. Links right here."
+ },
+ "EC-P01-A05-H01-V02": {
+  "duration_s": 15.1,
+  "cuts": 1,
+  "cut_times": [
+   7.5
+  ],
+  "cuts_per_10s": 0.66,
+  "words": 35,
+  "words_per_s": 2.32,
+  "speech_share": 0.7,
+  "hook_text": "own knee -walled boots. This dress is for you.",
+  "hook_type": "problem_pain",
+  "first_frame": "person_with_product",
+  "on_screen_text_first_3s": "",
+  "format": "try_on",
+  "presenter": "on_camera_speaking",
+  "presenter_looks_ai_generated": "false",
+  "product_first_seen_s": 0,
+  "product_shown_as_0s": "worn",
+  "detail_closeups": "true",
+  "script_beats": [
+   "product_intro",
+   "feature",
+   "cta"
+  ],
+  "claims": [
+   "comfort",
+   "sizing"
+  ],
+  "cta": "spoken",
+  "cta_text": "links right here",
+  "setting": "home",
+  "production": "polished",
+  "summary": "A presenter wearing a brown cable-knit mock-neck midi dress with a front slit and knee-high boots introduces the dress, highlighting its fit through the hips and easy walking, then directs viewers to the links.",
+  "transcript": "own knee -walled boots. This dress is for you. Cable knit, mock neck, fitted through the hips. The slit opens over your boots so walking is easy. It's Ember & Clave 5299, links right here."
+ },
+ "EC-P01-A06-H01-V02": {
+  "duration_s": 15.1,
+  "cuts": 3,
+  "cut_times": [
+   3.0,
+   7.5,
+   11.08
+  ],
+  "cuts_per_10s": 1.99,
+  "words": 37,
+  "words_per_s": 2.45,
+  "speech_share": 0.7,
+  "hook_text": "Holiday party coming. This is the whole outfit. Ember",
+  "hook_type": "problem_pain",
+  "first_frame": "person_with_product",
+  "on_screen_text_first_3s": "",
+  "format": "try_on",
+  "presenter": "on_camera_speaking",
+  "presenter_looks_ai_generated": "false",
+  "product_first_seen_s": 0,
+  "product_shown_as_0s": "worn",
+  "detail_closeups": "true",
+  "script_beats": [
+   "problem",
+   "product_intro",
+   "feature",
+   "cta"
+  ],
+  "claims": [
+   "other"
+  ],
+  "cta": "spoken",
+  "cta_text": "Links right here.",
+  "setting": "home",
+  "production": "phone_ugc",
+  "summary": "A creator wearing a red cable-knit mock-neck midi dress with a slit, framed by holiday lights at her front door, pitches it for a holiday party, notes the fit and delivery time, and directs viewers to the links.",
+  "transcript": "Holiday party coming. This is the whole outfit. Ember and clothes, red cable knit, mock neck, long sleeves. Fitted through the hips with a slit to move in. Deliveries about two to three weeks. Links right here."
+ },
+ "EC-P02-A03-H01-V01": {
+  "duration_s": 15.1,
+  "cuts": 2,
+  "cut_times": [
+   3.25,
+   7.17
+  ],
+  "cuts_per_10s": 1.33,
+  "words": 34,
+  "words_per_s": 2.26,
+  "speech_share": 0.82,
+  "hook_text": "Okay, this sweater dress is so cozy.",
+  "hook_type": "bold_claim",
+  "first_frame": "person_with_product",
+  "on_screen_text_first_3s": "",
+  "format": "try_on",
+  "presenter": "on_camera_speaking",
+  "presenter_looks_ai_generated": "false",
+  "product_first_seen_s": 0,
+  "product_shown_as_0s": "held",
+  "detail_closeups": "true",
+  "script_beats": [
+   "product_intro",
+   "feature",
+   "proof_demo",
+   "cta"
+  ],
+  "claims": [
+   "comfort",
+   "sizing",
+   "other"
+  ],
+  "cta": "spoken",
+  "cta_text": "links right here",
+  "setting": "home",
+  "production": "phone_ugc",
+  "summary": "A woman holds up a burgundy slashy turtleneck sweater dress, calls it cozy, shows close-up fabric and the neckline, then wears it with tights and boots, noting seven colours, sizes small to 3X, and links below.",
+  "transcript": "Okay, this sweater dress is so cozy. It's a slashy turtleneck with dropped shoulders. Throw it on with tights and boots and you're done. Seven colors, sizes small to three X, links right here."
+ },
+ "EC-P02-A05-H01-V02": {
+  "duration_s": 15.1,
+  "cuts": 2,
+  "cut_times": [
+   3.33,
+   7.08
+  ],
+  "cuts_per_10s": 1.33,
+  "words": 33,
+  "words_per_s": 2.19,
+  "speech_share": 0.83,
+  "hook_text": "Tights and boots all winter. This is your dress",
+  "hook_type": "bold_claim",
+  "first_frame": "person_with_product",
+  "on_screen_text_first_3s": "",
+  "format": "try_on",
+  "presenter": "on_camera_speaking",
+  "presenter_looks_ai_generated": "false",
+  "product_first_seen_s": 0,
+  "product_shown_as_0s": "worn",
+  "detail_closeups": "true",
+  "script_beats": [
+   "product_intro",
+   "feature",
+   "proof_demo",
+   "offer",
+   "cta"
+  ],
+  "claims": [
+   "other"
+  ],
+  "cta": "spoken",
+  "cta_text": "links right here",
+  "setting": "home",
+  "production": "phone_ugc",
+  "summary": "A woman in a mirror-lit room models a burgundy slouchy turtleneck sweater dress over black leggings and tall boots, pitches it as an easy winter outfit, shows close-ups of the knit, and points viewers to the links for the $44.99 piece.",
+  "transcript": "Tights and boots all winter. This is your dress slushy turtleneck dropped shoulders loose fit It's a short one easy over tights and boots. It's ember and clap 44 .99 links right here"
+ },
+ "EC-P02-A06-H01-V02": {
+  "duration_s": 15.1,
+  "cuts": 2,
+  "cut_times": [
+   3.0,
+   7.42
+  ],
+  "cuts_per_10s": 1.33,
+  "words": 37,
+  "words_per_s": 2.45,
+  "speech_share": 0.75,
+  "hook_text": "Living in leggings, but want to look dressed.",
+  "hook_type": "problem_pain",
+  "first_frame": "person_with_product",
+  "on_screen_text_first_3s": "",
+  "format": "styling",
+  "presenter": "on_camera_speaking",
+  "presenter_looks_ai_generated": "false",
+  "product_first_seen_s": 0,
+  "product_shown_as_0s": "worn",
+  "detail_closeups": "true",
+  "script_beats": [
+   "problem",
+   "product_intro",
+   "feature",
+   "proof_demo",
+   "offer",
+   "cta"
+  ],
+  "claims": [
+   "other",
+   "price_discount"
+  ],
+  "cta": "spoken",
+  "cta_text": "links right here",
+  "setting": "home",
+  "production": "phone_ugc",
+  "summary": "A woman in a burgundy oversized turtleneck sweater dress styles it with black leggings and boots, pitching it as an easy way to look dressed up instead of wearing leggings alone, priced at $44.99 with links directed to the caption.",
+  "transcript": "Living in leggings, but want to look dressed. It's a loose sloshy sweater dress with a folded turtleneck. Add leggings and boots and you're out the door dressed. It's Ember and Clod, 44 .99, links right here."
+ }
+}

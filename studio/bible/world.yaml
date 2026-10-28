@@ -1,0 +1,70 @@
+# Where she lives. DRAFT: owner approves; each room needs a reference image (generated once, then reused) before
+# approval, so every video is filmed in the same apartment.
+status: approved
+approved_by: owner
+approved_at: "2026-10-26T21:31:46"
+approved_hash: "6ac72cde4f74fab2"
+
+city: "Minneapolis, Minnesota"        # draft: real winters make boots, knits and coats believable; owner may change
+climate: "cold snowy winters, crisp short autumns, warm summers"
+home: "a lived-in one-bedroom loft-style apartment in an older brick building: exposed red-brick walls, warm wood floors, tall windows, warm neutral decor"
+rooms:
+  - id: living-room
+    name: Living room
+    description: "apartment living room with an exposed red-brick wall, warm wood floors, a tall arched black floor mirror, a light linen sofa with a cream knit throw, a few plants, a tall window with soft daylight"
+    ref_images: [studio/refs/rooms/living-room.png]
+    lighting: [natural_daylight, warm_indoor_lamps]
+  - id: bedroom
+    name: Bedroom
+    description: "bedroom with an exposed red-brick wall, warm wood floors, a neatly made white bed with a cream knit throw, a wood dresser, sheer white curtains on a tall window"
+    ref_images: [studio/refs/rooms/bedroom.png]
+    lighting: [natural_daylight, warm_indoor_lamps]
+  - id: entryway
+    name: Entryway
+    description: "small entryway with exposed brick walls, a white front door with black coat hooks holding a coat and plain bags, a small wood stool with black boots, a round wood-framed mirror, warm wood floors"
+    ref_images: [studio/refs/rooms/entryway.png]
+    lighting: [natural_daylight, warm_indoor_lamps]
+  - id: closet
+    name: Closet
+    description: "open closet beside an exposed brick wall: clothes on wooden hangers, folded knits on wood shelves, boots and sneakers lined up on warm wood floors"
+    ref_images: [studio/refs/rooms/closet.png]
+    lighting: [warm_indoor_lamps]
+  # Outdoor spots (owner 2026-10-26: "she doesnt always have to" film indoors; added so she can wear sunglasses).
+  # Reference images show autumn; winter versions (snow) are needed before December posts use these spots.
+  - id: front-steps
+    name: Front steps
+    description: "the front steps of her older four-story red-brick apartment building: wide concrete steps with black iron handrails leading up to a dark green wooden front door with a black wall lantern, fallen orange leaves on the steps and the sidewalk"
+    ref_images: [studio/refs/rooms/front-steps.png]
+    lighting: [natural_daylight]
+    outdoor: true
+  - id: sidewalk
+    name: Tree-lined sidewalk
+    description: "a quiet tree-lined residential sidewalk in her Minneapolis neighborhood: a straight concrete sidewalk scattered with fallen leaves, tall trees with golden leaves arching overhead, grass strips on both sides, older red-brick houses set back on one side"
+    ref_images: [studio/refs/rooms/sidewalk.png]
+    lighting: [natural_daylight]
+    outdoor: true
+  - id: lake-path
+    name: Lake path
+    description: "a paved walking path curving along a calm city lake: a grass edge, still grey-blue water reflecting the trees, golden, orange and rust autumn trees along the shore, a plain wooden bench beside the path"
+    ref_images: [studio/refs/rooms/lake-path.png]
+    lighting: [natural_daylight]
+    outdoor: true
+  # Night-out spots (owner 2026-10-26: "make some about going out at night to club ... show off different outfits")
+  - id: night-street
+    name: Downtown at night
+    description: "a quiet downtown Minneapolis sidewalk at night beside an older red-brick building: a tall dark wooden door under a plain black awning lined with small warm bulbs, warm light glowing from tall curtained windows, wet pavement reflecting the lights"
+    ref_images: [studio/refs/rooms/night-street.png]
+    lighting: [night_street_lights]
+    outdoor: true
+  - id: club-lounge
+    name: Club lounge
+    description: "a dim lounge club at night: a dark velvet booth and a small round marble table with two cocktails, an exposed brick wall, warm amber wall lamps, a blurred dance floor with colored lights and out-of-focus people in the background"
+    ref_images: [studio/refs/rooms/club-lounge.png]
+    lighting: [dim_bar_lights]
+props: ["arched black floor mirror", "white ceramic mug", "plain canvas tote", "knit throw blanket", "small potted plants"]
+side_characters: []                   # none for now; adding one later needs its own face reference
+seasons:                              # keeps content in step with the real calendar
+  fall: "Sep-Nov: layering, boots, first cold mornings"
+  holiday: "late Nov-Dec: parties, gifting, travel"
+  winter: "Jan-Mar: snow, tights, coats"
+  spring: "Apr-May: dresses, lighter knits"

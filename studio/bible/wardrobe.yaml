@@ -1,0 +1,366 @@
+# Ember's wardrobe. Owner 2026-10-26: she should look like she owns a lot of clothes, so the planner picks a different
+# outfit for every post from this list (seeded, season-appropriate, no repeat of a full outfit within
+# rules.outfits.no_repeat_outfit_days). Owner 2026-10-26: "always one item from ember & clove": every outfit has exactly
+# one store piece (the ec- items at the end, rules.outfits.store_pieces_per_outfit); the rest are her plain, unbranded
+# basics. Store pieces carry the Shopify product, one color's listing photo, and a description written from that photo.
+status: draft
+approved_by: null
+approved_at: null
+
+items:
+  # tops
+  - {id: tee-white, name: "plain white crew-neck tee", category: top, color: white, season: [all], occasion: [day]}
+  - {id: tee-black, name: "fitted black long-sleeve tee", category: top, color: black, season: [all]}
+  - {id: shirt-oxford-blue, name: "pale blue oversized oxford shirt", category: top, color: light blue, season: [all], occasion: [day]}
+  - {id: shirt-white-poplin, name: "crisp white poplin button-down", category: top, color: white, season: [all]}
+  - {id: blouse-satin-cream, name: "cream satin blouse", category: top, color: cream, season: [all]}
+  - {id: tank-ribbed-oat, name: "ribbed oat tank top", category: top, color: oatmeal, season: [spring, summer], occasion: [day]}
+  - {id: top-striped-breton, name: "navy and white striped long-sleeve top", category: top, color: navy stripe, season: [all], occasion: [day]}
+  - {id: bodysuit-black, name: "black square-neck bodysuit", category: top, color: black, season: [all]}
+  # knitwear
+  - {id: sweater-cream-chunky, name: "chunky cream crew-neck sweater", category: knitwear, color: cream, season: [fall, winter], occasion: [day]}
+  - {id: sweater-grey-crew, name: "soft heather-grey crew-neck sweater", category: knitwear, color: heather grey, season: [fall, winter], occasion: [day]}
+  - {id: turtleneck-black, name: "fine-knit black turtleneck", category: knitwear, color: black, season: [fall, winter]}
+  - {id: turtleneck-camel, name: "camel ribbed turtleneck", category: knitwear, color: camel, season: [fall, winter]}
+  - {id: cardigan-oat, name: "oatmeal button cardigan", category: knitwear, color: oatmeal, season: [fall, winter, spring], occasion: [day]}
+  - {id: sweater-burgundy-vneck, name: "deep burgundy V-neck sweater", category: knitwear, color: burgundy, season: [fall, winter]}
+  - {id: sweater-olive-cable, name: "olive green cable-knit sweater", category: knitwear, color: olive, season: [fall, winter], occasion: [day]}
+  - {id: sweatshirt-grey, name: "plain grey crewneck sweatshirt", category: knitwear, color: grey, season: [all], occasion: [day]}
+  # bottoms
+  - {id: jeans-straight-light, name: "straight-leg light-wash jeans", category: bottom, color: light denim, season: [all], occasion: [day]}
+  - {id: jeans-wide-dark, name: "wide-leg dark-wash jeans", category: bottom, color: dark denim, season: [all]}
+  - {id: jeans-black-straight, name: "straight-leg black jeans", category: bottom, color: black, season: [all]}
+  - {id: trousers-black-wide, name: "black wide-leg trousers", category: bottom, color: black, season: [all]}
+  - {id: trousers-grey-pleated, name: "grey pleated wool-look trousers", category: bottom, color: grey, season: [fall, winter]}
+  - {id: trousers-camel, name: "camel straight trousers", category: bottom, color: camel, season: [fall, winter, spring], occasion: [day]}
+  - {id: skirt-satin-champagne, name: "champagne satin midi-length slip skirt", category: bottom, color: champagne, season: [all]}
+  - {id: skirt-black-knit, name: "black ribbed knit maxi skirt", category: bottom, color: black, season: [fall, winter]}
+  - {id: skirt-denim-long, name: "long dark denim skirt", category: bottom, color: dark denim, season: [fall, spring], occasion: [day]}
+  - {id: leggings-black, name: "plain black leggings", category: bottom, color: black, season: [fall, winter], occasion: [day]}
+  # dresses (her own, not store products)
+  - {id: dress-black-knit-midi, name: "simple black long-sleeve knit dress, below the knee", category: dress, color: black, season: [fall, winter]}
+  - {id: dress-grey-sweater-mini, name: "oversized grey sweater dress", category: dress, color: grey, season: [fall, winter], occasion: [day]}
+  - {id: dress-brown-shirt, name: "chocolate-brown long-sleeve shirt dress", category: dress, color: chocolate, season: [fall, spring], occasion: [day]}
+  - {id: dress-navy-slip, name: "navy satin slip dress", category: dress, color: navy, season: [all], occasion: [night]}
+  # outerwear
+  - {id: coat-camel, name: "plain camel long coat", category: outerwear, color: camel, season: [fall, winter]}
+  - {id: coat-black-wool, name: "black long tailored coat", category: outerwear, color: black, season: [fall, winter]}
+  - {id: jacket-denim, name: "classic mid-wash denim jacket", category: outerwear, color: denim, season: [fall, spring], occasion: [day]}
+  - {id: jacket-leather-black, name: "black leather moto jacket", category: outerwear, color: black, season: [fall, spring]}
+  - {id: blazer-oversized-grey, name: "oversized grey blazer", category: outerwear, color: grey, season: [all]}
+  - {id: puffer-cream, name: "cream cropped puffer jacket", category: outerwear, color: cream, season: [winter], occasion: [day]}
+  - {id: trench-beige, name: "beige trench coat", category: outerwear, color: beige, season: [fall, spring]}
+  # shoes
+  - {id: boots-black-tall, name: "black leather boots to the knee", category: shoes, color: black, season: [fall, winter]}
+  - {id: boots-brown-ankle, name: "brown suede ankle boots", category: shoes, color: brown, season: [fall, winter]}
+  - {id: boots-black-chelsea, name: "black chelsea boots", category: shoes, color: black, season: [fall, winter, spring]}
+  - {id: loafers-black, name: "black leather loafers", category: shoes, color: black, season: [all], occasion: [day]}
+  - {id: sneakers-white, name: "plain white leather sneakers", category: shoes, color: white, season: [all], occasion: [day]}
+  - {id: flats-ballet-black, name: "black ballet flats", category: shoes, color: black, season: [spring, summer, fall]}
+  - {id: boots-taupe-suede-knee, name: "taupe suede boots to the knee", category: shoes, color: taupe, season: [fall, winter]}
+  - {id: boots-black-heeled-ankle, name: "black leather pointed-toe ankle boots with a block heel", category: shoes, color: black, season: [fall, winter, spring]}
+  - {id: boots-combat-black, name: "black leather lace-up combat boots", category: shoes, color: black, season: [fall, winter], occasion: [day]}
+  - {id: boots-burgundy-velvet, name: "burgundy velvet ankle boots with a slim heel", category: shoes, color: burgundy, season: [fall, winter], occasion: [night]}
+  - {id: loafers-brown, name: "brown leather penny loafers", category: shoes, color: brown, season: [all], occasion: [day]}
+  - {id: sneakers-grey-suede, name: "plain grey suede low-top sneakers", category: shoes, color: grey, season: [all], occasion: [day]}
+  - {id: pumps-black, name: "black suede pointed-toe pumps", category: shoes, color: black, season: [all]}
+  - {id: heels-black-slingback, name: "black low slingback heels", category: shoes, color: black, season: [all]}
+  # bags and accessories
+  - {id: tote-canvas, name: "plain canvas tote bag", category: bag, color: natural, season: [all], occasion: [day]}
+  - {id: bag-black-shoulder, name: "small plain black leather shoulder bag", category: bag, color: black, season: [all]}
+  - {id: bag-brown-tote, name: "plain brown leather tote", category: bag, color: brown, season: [all], occasion: [day]}
+  - {id: scarf-oat-wool, name: "oversized oatmeal knit scarf", category: accessory, color: oatmeal, season: [fall, winter]}
+  - {id: beanie-cream, name: "cream ribbed beanie", category: accessory, color: cream, season: [winter], occasion: [day]}
+  - {id: belt-brown, name: "thin brown leather belt", category: accessory, color: brown, season: [all]}
+  - {id: tights-black, name: "opaque black tights", category: hosiery, color: black, season: [fall, winter]}
+  # Ember & Clove store pieces: exactly one of these is in every outfit
+  - id: ec-offshoulder-sweatshirt
+    name: "Casual Long Sleeve Off-Shoulder Sweatshirt"
+    category: knitwear
+    color: "black"
+    season: [fall, winter, spring]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756905537775"
+    reference_images: [studio/refs/store/offshoulder-sweatshirt.jpg]
+    prompt_description: "a black cropped sweatshirt with a wide boat neckline that can slip off one shoulder, a front kangaroo pocket, dropped shoulders, full long sleeves with ribbed cuffs, and a wide ribbed band at the waist"
+  - id: ec-offshoulder-tee
+    name: "Long Sleeve Asymmetric Off-Shoulder T-Shirt"
+    category: top
+    color: "heather grey"
+    season: [all]
+    store_product: "gid://shopify/Product/9756901933295"
+    reference_images: [studio/refs/store/offshoulder-tee.jpg]
+    prompt_description: "a light heather-grey loose long-sleeve top in thin soft jersey with a one-shoulder neckline that leaves one shoulder bare with a thin strap across it, and a slanted asymmetric hem"
+  - id: ec-crossfront-top
+    name: "Long Sleeve Cross Front V-Neck Slim Fit Top"
+    category: top
+    color: "black"
+    season: [all]
+    store_product: "gid://shopify/Product/9756890005743"
+    reference_images: [studio/refs/store/crossfront-top.jpg]
+    prompt_description: "a fitted black long-sleeve top in smooth stretch fabric with a deep crossover wrap V-neckline, a seam under the bust, slightly puffed shoulders, hip length"
+  - id: ec-lace-shirt
+    name: "Asymmetrical Sheer Lace Long Sleeve Shirt"
+    category: top
+    color: "black"
+    season: [all]
+    store_product: "gid://shopify/Product/9756889874671"
+    reference_images: [studio/refs/store/lace-shirt.jpg]
+    prompt_description: "a loose black sheer chiffon blouse with wide balloon sleeves gathered into ruffled cuffs, a deep V-front edged with wide cream-and-grey lace panels over a cream lining, closed at the center with thin black ribbon ties"
+  - id: ec-lace-squareneck-top
+    name: "Double-Layer Long Sleeve Square Neck Top"
+    category: top
+    color: "mustard"
+    season: [all]
+    store_product: "gid://shopify/Product/9756889612527"
+    reference_images: [studio/refs/store/squareneck-tee.jpg]
+    prompt_description: "a fitted mustard-yellow floral lace long-sleeve top with a wide square neckline with scalloped lace edges, a nude lining under the lace body, and sheer lace sleeves that flare at the wrists"
+  - id: ec-tie-sleeve-top
+    name: "Long Sleeve V-Neck Tie Flare Sleeve Ruched Waist Top"
+    category: top
+    color: "mocha brown"
+    season: [all]
+    store_product: "gid://shopify/Product/9756889252079"
+    reference_images: [studio/refs/store/tiesleeve-top.jpg]
+    prompt_description: "a fitted mocha-brown long-sleeve knit top with an asymmetric V-neckline, a thin matching scarf tie looped around the neck with long ends, a draped ruffle peplum at the hip with an uneven hem, and flared ruffle cuffs"
+  - id: ec-asym-top
+    name: "Premium Asymmetrical Long Sleeve Slim Fit T-Shirt"
+    category: top
+    color: "navy"
+    season: [all]
+    store_product: "gid://shopify/Product/9756889153775"
+    reference_images: [studio/refs/store/asym-tee.jpg]
+    prompt_description: "a fitted navy-blue long-sleeve top in smooth stretch fabric with an asymmetric draped neckline that crosses diagonally over the chest and soft ruching at the waist"
+  - id: ec-cutout-cable-sweater
+    name: "Knit Sweater with 3D Crochet Hollow-out Details"
+    category: knitwear
+    color: "cream"
+    season: [fall, winter, spring]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756888989935"
+    reference_images: [studio/refs/store/crochet-sweater.jpg]
+    prompt_description: "a cream cable-knit crew-neck sweater with a small lattice cut-out at the center of the chest, cable panels down the front, a fitted ribbed waist and ribbed cuffs, regular length"
+  - id: ec-rib-button-cardigan
+    name: "Casual Ribbed V-Neck Sweater"
+    category: knitwear
+    color: "grey-green"
+    season: [fall, winter, spring]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756888924399"
+    reference_images: [studio/refs/store/twopiece-sweater.jpg]
+    prompt_description: "a grey-green fine-ribbed V-neck cardigan with one row of small matching buttons down the front, long fitted sleeves, hip length"
+  - id: ec-stripe-cardigan
+    name: "Color-Block Stripe Knit Cardigan with Lapel"
+    category: knitwear
+    color: "red, navy, brown and grey stripes"
+    season: [fall, winter, spring]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756888498415"
+    reference_images: [studio/refs/store/stripe-cardigan.jpg]
+    prompt_description: "a slim knit cardigan with a brown collar and small buttons down the front, in wide horizontal stripes of red, navy, brown and light grey, long sleeves with striped cuffs"
+  - id: ec-stripe-polo-sweater
+    name: "Striped Polo Collar Knit Sweater"
+    category: knitwear
+    color: "brown with grey and blue stripes"
+    season: [fall, winter, spring]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9751659741423"
+    reference_images: [studio/refs/store/polo-sweater.jpg]
+    prompt_description: "a relaxed chocolate-brown knit sweater with a polo collar and open V-placket, wide horizontal stripes of light grey and royal blue across the body and sleeves, dropped shoulders, ribbed cuffs and hem"
+  - id: ec-chunky-cardigan
+    name: "Chunky Knit High Neck Cardigan"
+    category: knitwear
+    color: "khaki"
+    season: [fall, winter]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756889022703"
+    reference_images: [studio/refs/store/chunky-cardigan.jpg]
+    prompt_description: "a beige-khaki chunky rib-knit cardigan with a high stand-up collar fastened by two black buttons, black buttons down the front, small button tabs on the dropped shoulders, wide sleeves and a ribbed hem band, hip length"
+  - id: ec-textured-bodysuit
+    name: "Textured Rib Mock Neck Bodysuit"
+    category: top
+    color: "off-white"
+    season: [all]
+    store_product: "gid://shopify/Product/9751657021679"
+    reference_images: [studio/refs/store/textured-bodysuit.jpg]
+    prompt_description: "an off-white fitted long-sleeve bodysuit with a mock neck and fine crinkled vertical ribs, tucked in so it reads as a smooth fitted top"
+  - id: ec-diagonal-bodysuit
+    name: "Diagonal Rib Mock Neck Bodysuit"
+    category: top
+    color: "black"
+    season: [all]
+    store_product: "gid://shopify/Product/9751656923375"
+    reference_images: [studio/refs/store/diagonal-bodysuit.jpg]
+    prompt_description: "a black fitted long-sleeve bodysuit with a mock neck and raised ribs sweeping diagonally across the body, tucked in so it reads as a smooth fitted top"
+  - id: ec-floral-bodysuit
+    name: "Floral Rib Knit Bodysuit"
+    category: top
+    color: "cream"
+    season: [all]
+    store_product: "gid://shopify/Product/9751656857839"
+    reference_images: [studio/refs/store/floral-bodysuit.jpg]
+    prompt_description: "a cream fitted long-sleeve bodysuit with a crew neck, fine vertical ribs and a tone-on-tone floral pattern, tucked in so it reads as a smooth fitted top"
+  - id: ec-mesh-wrap-top
+    name: "Ruched Mesh Wrap V-Neck Top"
+    category: top
+    color: "black"
+    season: [all]
+    store_product: "gid://shopify/Product/9751656759535"
+    reference_images: [studio/refs/store/mesh-wrap-top.jpg]
+    prompt_description: "a fitted black top with a wide V-neck, gathered ruched mesh crossing over the front, and sheer black mesh long sleeves"
+  - id: ec-pinstripe-skirt
+    name: "Pinstripe Pleated Mini Skirt"
+    category: bottom
+    color: "coffee pinstripe"
+    season: [fall, winter, spring]
+    store_product: "gid://shopify/Product/9751656366319"
+    reference_images: [studio/refs/store/pinstripe-skirt.jpg]
+    prompt_description: "a dark coffee-brown pinstriped pleated mini skirt with a smooth flat yoke, a covered-button tab at each hip and crisp knife pleats"
+  - id: ec-suede-skirt
+    name: "Asymmetric Faux Suede Midi Skirt"
+    category: bottom
+    color: "coffee brown"
+    season: [fall, winter, spring]
+    store_product: "gid://shopify/Product/9751656268015"
+    reference_images: [studio/refs/store/suede-skirt.jpg]
+    prompt_description: "a coffee-brown faux-suede skirt with a curved smooth yoke flaring into a full skirt with a pointed asymmetric handkerchief hem that falls below the knee"
+  - id: ec-ruffle-skirt
+    name: "Ruffle Slit Knit Midi Skirt"
+    category: bottom
+    color: "oatmeal"
+    season: [fall, winter]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9751656104175"
+    reference_images: [studio/refs/store/ruffle-skirt.jpg]
+    prompt_description: "an oatmeal knit skirt, high-waisted and close-fitting then softly flared to mid-calf, with a curved front slit and a small ruffle trimming the slit edge and the hem"
+  - id: ec-pleated-knit-skirt
+    name: "Long Pleated Knit Skirt"
+    category: bottom
+    color: "black"
+    season: [fall, winter]
+    store_product: "gid://shopify/Product/9751656005871"
+    reference_images: [studio/refs/store/pleated-skirt.jpg]
+    prompt_description: "a black long knit skirt with a high elastic waist and fine knife pleats that flare out to the ankle"
+  - id: ec-henley-maxi-dress
+    name: "Henley Tie-Waist Rib Maxi Dress"
+    category: dress
+    color: "dark grey"
+    season: [fall, winter, spring]
+    store_product: "gid://shopify/Product/9751655842031"
+    reference_images: [studio/refs/store/henley-maxi.jpg]
+    prompt_description: "a heather dark-grey fitted rib-knit long-sleeve maxi dress with a henley neckline and button placket, a matching sash wrapped and knotted at the hip, and a front slit"
+  - id: ec-belted-shirt-dress
+    name: "Belted Collared Midi Shirt Dress"
+    category: dress
+    color: "khaki"
+    season: [all]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9751655678191"
+    reference_images: [studio/refs/store/shirt-dress.jpg]
+    prompt_description: "a light khaki long-sleeve shirt dress with an open collar and V-neckline, a slim black belt with a black buckle at the waist, soft pleats falling to a long below-the-knee length, and buttoned cuffs"
+  - id: ec-cable-knit-dress
+    name: "Cable Knit Mock Neck Midi Dress"
+    category: dress
+    color: caramel
+    season: [fall, winter]
+    store_product: "gid://shopify/Product/9751656071407"
+    reference_images: [assets/EC-P01-A02-H01-V01/ref1_dress_neck_down.jpg, assets/EC-P01-A02-H01-V01/ref2_cable_slit_closeup.jpg]
+    prompt_description: "the exact caramel-brown cable-knit sweater dress from the reference images: mock neck, ribbed waistband, long sleeves with ribbed cuffs, plain knit bodice, vertical cable-knit pattern down the skirt with a diagonal wrap seam, fitted through the hip, below-the-knee length, and a single straight front slit with a clean edge"
+  - id: ec-turtleneck-sweater-dress
+    name: "Turtleneck Rib Knit Sweater Dress"
+    category: dress
+    color: burgundy
+    season: [fall, winter]
+    store_product: "gid://shopify/Product/9751655809263"
+    reference_images: [assets/EC-P02-A03-H01-V01/ref1_dress_neck_down.jpg, assets/EC-P02-A03-H01-V01/ref2_turtleneck_knit_closeup.jpg]
+    prompt_description: "the exact burgundy chunky rib-knit turtleneck sweater dress from the reference images: loose slouchy fit, folded turtleneck, dropped shoulders, long full sleeves with ribbed cuffs, ribbed hem, mini length ending at mid-thigh"
+  # Sunglasses: store pieces for outdoor spots only (owner 2026-10-26). Only the plain pointed cat-eye pair is used; the
+  # metal cat-eye (interlocking-letter emblem) and square pair (T-bar) carry designer-like hardware and stay out of videos.
+  - id: ec-cateye-sunglasses-black
+    name: "Pointed Cat Eye Sunglasses"
+    category: accessory
+    color: "black"
+    season: [all]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756888269039"
+    reference_images: [studio/refs/store/sunglasses-pointed-cateye-black.jpg]
+    prompt_description: "glossy black plastic cat-eye sunglasses with sharply pointed, upswept outer corners, a thick frame, dark grey lenses and a small plain metal bar on each temple"
+    outdoor_only: true
+  - id: ec-cateye-sunglasses-tortoise
+    name: "Pointed Cat Eye Sunglasses"
+    category: accessory
+    color: "tortoise"
+    season: [all]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9756888269039"
+    reference_images: [studio/refs/store/sunglasses-pointed-cateye-tortoise.jpg]
+    prompt_description: "glossy tortoiseshell (amber and dark brown) plastic cat-eye sunglasses with sharply pointed, upswept outer corners, a thick frame, brown lenses and a small plain metal bar on each temple"
+    outdoor_only: true
+  # Night-out store pieces (owner 2026-10-26): only in night posts
+  - id: ec-mesh-mini-dress-blue
+    name: "Ruffle Hem Mesh Mini Dress"
+    category: dress
+    color: "peacock blue"
+    season: [all]
+    occasion: [night]
+    store_product: "gid://shopify/Product/9751655481583"
+    reference_images: [studio/refs/store/mesh-mini-dress-blue.jpg]
+    prompt_description: "a peacock-blue fitted mesh mini dress with a high round neck, long sheer bell sleeves ending in ruffled cuffs, and a double ruffle at the hem, mid-thigh length"
+  - id: ec-mesh-mini-dress-tangerine
+    name: "Ruffle Hem Mesh Mini Dress"
+    category: dress
+    color: "tangerine"
+    season: [all]
+    occasion: [night]
+    store_product: "gid://shopify/Product/9751655481583"
+    reference_images: [studio/refs/store/mesh-mini-dress-tangerine.jpg]
+    prompt_description: "a tangerine-orange fitted mesh mini dress with a high round neck, long sheer bell sleeves ending in ruffled cuffs, and a double ruffle at the hem, mid-thigh length"
+  - id: ec-slingback-stilettos-black
+    name: "Croc-Embossed Slingback Stiletto Sandals"
+    category: shoes
+    color: "black"
+    season: [all]
+    occasion: [night]
+    open_toe: true
+    store_product: "gid://shopify/Product/9751717544175"
+    reference_images: [studio/refs/store/stiletto-slingback-black.jpg]
+    prompt_description: "black croc-embossed patent stiletto sandals with a pointed open toe, a thin slingback strap and a high thin heel"
+  - id: ec-rose-stilettos-red
+    name: "Rose Accent Strappy Stiletto Sandals"
+    category: shoes
+    color: "red"
+    season: [all]
+    occasion: [night]
+    open_toe: true
+    store_product: "gid://shopify/Product/9751716823279"
+    reference_images: [studio/refs/store/stiletto-rose-red.jpg]
+    prompt_description: "red strappy stiletto sandals with thin straps that wrap up the ankle, a large red fabric rose on the front strap and another at the ankle, and a high thin heel"
+  # Spring/summer store shoes (owner 2026-10-26): worn as a second Ember & Clove piece once the weather warms up
+  - id: ec-rhinestone-flats-black
+    name: "Butterfly Rhinestone Slingback Flats"
+    category: shoes
+    color: "black"
+    season: [spring, summer]
+    open_toe: true
+    store_product: "gid://shopify/Product/9751717019887"
+    reference_images: [studio/refs/store/rhinestone-slingback-flats-black.jpg]
+    prompt_description: "black flat sandals with a square open toe, a clear strap across the foot decorated with sparkly rhinestone butterflies, and a black slingback ankle strap"
+  - id: ec-espadrille-wedges-red
+    name: "Closed Toe Slingback Espadrille Wedges"
+    category: shoes
+    color: "red"
+    season: [spring, summer]
+    occasion: [day]
+    store_product: "gid://shopify/Product/9751717413103"
+    reference_images: [studio/refs/store/espadrille-wedges-red.jpg]
+    prompt_description: "red suede closed-toe espadrille wedges with an elastic slingback strap and a braided jute platform sole"
+  - id: ec-peep-toe-flats-olive
+    name: "Textured Peep Toe Slip-On Flats"
+    category: shoes
+    color: "olive green"
+    season: [spring, summer]
+    occasion: [day]
+    open_toe: true
+    store_product: "gid://shopify/Product/9751719182575"
+    reference_images: [studio/refs/store/peep-toe-flats-olive.jpg]
+    prompt_description: "olive-green textured leather slip-on flats with a small peep toe"

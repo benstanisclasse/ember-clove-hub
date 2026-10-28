@@ -1,0 +1,261 @@
+{
+  "product_id": "gid://shopify/Product/9751716724975",
+  "handle": "rhinestone-open-toe-flat-sandals",
+  "original_title": "Rhinestone Open Toe Flat Sandals",
+  "current_title": "Rhinestone Open Toe Flat Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/rhinestone-open-toe-flat-sandals",
+  "category": null,
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "36",
+    "43",
+    "38",
+    "37",
+    "40",
+    "39",
+    "42",
+    "41"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Size": [
+      "36",
+      "43",
+      "38",
+      "37",
+      "40",
+      "39",
+      "42",
+      "41"
+    ]
+  },
+  "price_min": 31.86,
+  "price_max": 31.86,
+  "cost_min": 5.69,
+  "cost_max": 5.69,
+  "specs": {
+    "Fit": "True to size, order usual size.",
+    "Includes": "Box not included",
+    "Heel height": "Flats",
+    "Material": "Rubber, Artificial PU"
+  },
+  "description_text": [
+    "Product measurements:",
+    "Imported"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2351ACBB4511A77A96B4EB2B78CC9B95.jpg?v=1792823483",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/83916104C60413497E5ECB940EF3C540.jpg?v=1792823485",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A367BF6F9C13E950BDBE68FEE8DD58B8.jpg?v=1792823488",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A0AD0FBD4847077F893DCC2D7459D942.jpg?v=1792823490",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ADCF9ECAB9986C53ABAFE1F675C85DA9.jpg?v=1792823492",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B6D09FB709A268358CA9DEB6CB79BE5C.jpg?v=1792823494",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202503/DD7E1A72364287A8B7C2320AEE0C89DA.png"
+  ],
+  "variants": [
+    {
+      "title": "Black / 36",
+      "sku": "0B1828B3E80E44838074A698B8FBAF03",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "White / 43",
+      "sku": "7C8C0EA6D0C2418BA222F1DD2B3E95EA",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "AD6D600A955942FFAC2107C90DD32D3C",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "929C50666D3A4467886ED273F90B1FDC",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "White / 40",
+      "sku": "3FDCB1E504FE42E6A85A81042F172E95",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "White / 39",
+      "sku": "2C1185C57A6A47A1973D0D1C2E1C6B0F",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "White / 42",
+      "sku": "322A0F1869A348FDA652A5D4748ED90E",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "White / 41",
+      "sku": "909E4EFF1EAF4DB6A3BF3256DE6AE52F",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "White / 36",
+      "sku": "6174A93470D34EDB8F6E3F43F4520DA5",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "White / 38",
+      "sku": "27576F5DE0F84FD9874F73597A46EBA9",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "White / 37",
+      "sku": "3A9502E1F3E54DD3A2CA93795E1E00C9",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "White",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "6C5CA6AABEC0428CBE3FBF4E7A0B764A",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "E77A3D14A1B6484D9D6D77E93E1D430C",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "3D6856323CE847CEA70D11E367C9B88C",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "2D3D7BC409ED4FF68C0F6D8A0790DA85",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "36281617E3D74DEEA7CCE7EC10001DDD",
+      "price": "31.86",
+      "cost": "5.69",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202503/DD7E1A72364287A8B7C2320AEE0C89DA.png\" title=\"DD7E1A72364287A8B7C2320AEE0C89DA.png\" alt=\"image.png\"><ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Includes: Box not included</p></li>\n<li><p>Heel height: Flats</p></li>\n<li><p>Material: Rubber, Artificial PU</p></li>\n<li><p>Imported</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

@@ -1,0 +1,535 @@
+{
+  "product_id": "gid://shopify/Product/9751659741423",
+  "handle": "elegant-contrast-stripe-knit-cardigan-womens-top-with-lapel-collar-slimming-fit",
+  "original_title": "Elegant Contrast Stripe Knit Cardigan Women's Top with Lapel Collar Slimming Fit",
+  "current_title": "Striped Polo Collar Knit Sweater",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "knitwear",
+  "url": "https://nkpfvz-ra.myshopify.com/products/elegant-contrast-stripe-knit-cardigan-womens-top-with-lapel-collar-slimming-fit",
+  "category": null,
+  "colors": [
+    "White Collar",
+    "Light Blue Collar",
+    "Yellow Collar Contrast Gray",
+    "Rose Red & Red Contrast",
+    "Blue & Red Color Block",
+    "Brown and Blue Color-block",
+    "Navy & Green Color Block",
+    "Gray and Green",
+    "Coffee & Red",
+    "Pink & Coffee Color Block",
+    "Gray Collar & Yellow Contrast"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "White Collar",
+      "Light Blue Collar",
+      "Yellow Collar Contrast Gray",
+      "Rose Red & Red Contrast",
+      "Blue & Red Color Block",
+      "Brown and Blue Color-block",
+      "Navy & Green Color Block",
+      "Gray and Green",
+      "Coffee & Red",
+      "Pink & Coffee Color Block",
+      "Gray Collar & Yellow Contrast"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 53.44,
+  "price_max": 53.44,
+  "cost_min": 12.13,
+  "cost_max": 12.13,
+  "specs": {
+    "Pattern Type": "Color Block, Solid",
+    "Sleeve Length": "Long Sleeve",
+    "Collar Type": "Polo Collar",
+    "Length": "Regular",
+    "Material": "Polyester Blend, Knitted",
+    "Fit Type": "Slim Fit",
+    "Closure Type": "Pullover",
+    "Thickness": "Regular",
+    "Color": "White Collar, Light Blue Collar, Yellow-Grey Contrast, Rose Red-Red Contrast, Blue-Red Contrast, Brown-Blue Contrast, Navy-Green Contrast, Grey-Green Contrast, Brown-Red Contrast, Pink-Brown Contrast, Grey-Yellow Contrast",
+    "Size": "S, M, L",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Sweater"
+      ],
+      [
+        "Size",
+        "Shoulder Width",
+        "Bust",
+        "Length",
+        "Sleeve Length"
+      ],
+      [
+        "S",
+        "60",
+        "118",
+        "54",
+        "49"
+      ],
+      [
+        "M",
+        "61",
+        "120",
+        "55",
+        "50"
+      ],
+      [
+        "L",
+        "62.5",
+        "124",
+        "56.5",
+        "51.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/842EA21E3A1B64FC99B6CC4C03967FAD.jpg?v=1792822522",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/70E85101CDDBC7F183BB234ADBA11C19.jpg?v=1792822550",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FB08DD3A614A92955370ECDDD29E7964.jpg?v=1792822552",
+      "altText": "",
+      "width": 1201,
+      "height": 1201
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A7F6D70EC0737A3BB6B3A4DEBB44085F.jpg?v=1792822554",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/880F35E52133D9974D39C2051002E605.jpg?v=1792822558",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F23F04E2A8160EBF9A5E80930A621F6A.jpg?v=1792822560",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F5938F0F00B7D0D53652F356AD7E140E.jpg?v=1792822562",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/13FEC3E9CC683DF1D3C7FF2FF1ECACF2.jpg?v=1792822575",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F88FD58FBE56409EBAB49B5DC0F0AFA.jpg?v=1792822576",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/101098D7B69C11BFE26E6C48D8B5B5FB.jpg?v=1792822578",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3B1B939BAB148ACF8885987FB3FD0E00.jpg?v=1792822580",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/676BCDBDE1DEA6606155C9BAF70C7604.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6BB6B7BF6A3DA26200EFA81CB301FF28.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/708F92B05D8E3957CE8B0A80908C0E7B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/29495E7B0584CFB04B0785BE03FDE571.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AF890716A9A01AC923D66B475AFB9566.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3DEAA9A1849979A729776ACF6D7B604A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7E0197151A2A54E6B1784001BAF75F9C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B729470A4896815E24D89F2D62DD4724.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C4B4EAC9150CD907F3640946B38DAEF0.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5F69623EE187A2B08472F24FB65FD699.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/73BCDCB73EF6C80CE1E0CABB81FE2176.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6233BFD93644AC6AF7178DB7255F3E16.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1125893D212111D9C27343F4B76C0F11.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E07A72331FCAE4537876CD50EA05542B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/ECEFB9FDDD5708CD1181A92ABD082D33.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/78FECE71BB920B5451D4D45763D7BC8B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2CA30312020E2176913004B88FEF215A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EC99DE4A63FF15D3A2D1E08D36073BC1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/59EA2AB4C1A11BB6C9EE5B5302A68A62.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/27A4FBA3FAF3E007931EB11767A90972.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B4192886E1534D488066F9715C2E0F9F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0F9B436BF6741545417E9765F8CF0A24.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White Collar / S",
+      "sku": "7C5EC852920B461EA4A4F6B6F1F24445",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "White Collar",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White Collar / M",
+      "sku": "CB492199C1384587AADFA7C10A4C4795",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "White Collar",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "White Collar / L",
+      "sku": "293B5A432FF44450893104C47D366D4E",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "White Collar",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Light Blue Collar / S",
+      "sku": "ACCBE6312DC642DD803CAEB0031B00B9",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Light Blue Collar",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Light Blue Collar / M",
+      "sku": "C0D4713DB07045028BF9B4845C719D22",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Light Blue Collar",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Light Blue Collar / L",
+      "sku": "160C747664C44947975C5E18A6A04352",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Light Blue Collar",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Yellow Collar Contrast Gray / S",
+      "sku": "12CF60E677414BFC8F98EE3D1172B06E",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Yellow Collar Contrast Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Yellow Collar Contrast Gray / M",
+      "sku": "485A6A34EF0A4FC5BD22DF25A4F47C2A",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Yellow Collar Contrast Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Yellow Collar Contrast Gray / L",
+      "sku": "38D1E12969A44BB193E28B188846C0EE",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Yellow Collar Contrast Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Rose Red & Red Contrast / S",
+      "sku": "BFACB1F9A8394C2494A6BAFFC4669276",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Rose Red & Red Contrast",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Rose Red & Red Contrast / M",
+      "sku": "698D74359E0B434089E908300259FA64",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Rose Red & Red Contrast",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Rose Red & Red Contrast / L",
+      "sku": "01597B91DDB24E53A06AAD960042FA85",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Rose Red & Red Contrast",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Blue & Red Color Block / S",
+      "sku": "6C1E9B9A962246829D8D0A13790DDF79",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Blue & Red Color Block",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Blue & Red Color Block / M",
+      "sku": "6A1989A027AE4877953288A14897CACF",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Blue & Red Color Block",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Blue & Red Color Block / L",
+      "sku": "389CE7847689429B97D59CD0E00EA188",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Blue & Red Color Block",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Brown and Blue Color-block / S",
+      "sku": "7731A8090E404ADCA928338481E731E9",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Brown and Blue Color-block",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Brown and Blue Color-block / M",
+      "sku": "10DB6584D5A545FB8C7954A28D243F43",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Brown and Blue Color-block",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Brown and Blue Color-block / L",
+      "sku": "CB387AA97A9C4621A3FD3A9F7C3856D3",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Brown and Blue Color-block",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Navy & Green Color Block / S",
+      "sku": "5970B69F3E2D455FA64527E1BC49D072",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Navy & Green Color Block",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Navy & Green Color Block / M",
+      "sku": "7DAFFA24FE3C4314A0EEC28906EA4948",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Navy & Green Color Block",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Navy & Green Color Block / L",
+      "sku": "D6432F5A49C1415AA0DD234B5420ABBB",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Navy & Green Color Block",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Gray and Green / S",
+      "sku": "FBDE2CDC62654465A5D619CF56035839",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Gray and Green",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray and Green / M",
+      "sku": "08D8EA5C7EC94891B333CB4A90712975",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Gray and Green",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray and Green / L",
+      "sku": "A1B52F6083E746D1BF6B299AE8EE6806",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Gray and Green",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Coffee & Red / S",
+      "sku": "40DF8A4319DC45D2988B0FA0B8CF75E6",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Coffee & Red",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Coffee & Red / M",
+      "sku": "8E28989826C649B4BA7C31A68CFA9BB6",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Coffee & Red",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Coffee & Red / L",
+      "sku": "2CC75988067D493FA0A020FB7324F671",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Coffee & Red",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Pink & Coffee Color Block / S",
+      "sku": "50B7C910B39F4FE2A6DE8FC4D8C307B7",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Pink & Coffee Color Block",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Pink & Coffee Color Block / M",
+      "sku": "F2F3B329433D4A67A995C1B346B0C183",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Pink & Coffee Color Block",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Pink & Coffee Color Block / L",
+      "sku": "CEE46C5C703B46259A26CACB814D2B7C",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Pink & Coffee Color Block",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Gray Collar & Yellow Contrast / S",
+      "sku": "FE842A124FFB4C3F82FA74CF7138E8B2",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Gray Collar & Yellow Contrast",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray Collar & Yellow Contrast / M",
+      "sku": "183F6A227ED0462B952E9B51CF5D94A2",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Gray Collar & Yellow Contrast",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray Collar & Yellow Contrast / L",
+      "sku": "7173EE2ED62B4F2EBD2674B4E34AFC46",
+      "price": "53.44",
+      "cost": "12.13",
+      "options": {
+        "Color": "Gray Collar & Yellow Contrast",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Pattern Type: Color Block, Solid</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length: Long Sleeve</strong></p><p style=\"font-size: 16px;\"><strong>Collar Type: Polo Collar</strong></p><p style=\"font-size: 16px;\"><strong>Length: Regular</strong></p><p style=\"font-size: 16px;\"><strong>Material: Polyester Blend, Knitted</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type: Slim Fit</strong></p><p style=\"font-size: 16px;\"><strong>Closure Type: Pullover</strong></p><p style=\"font-size: 16px;\"><strong>Thickness: Regular</strong></p><p style=\"font-size: 16px;\"><strong>Color: White Collar, Light Blue Collar, Yellow-Grey Contrast, Rose Red-Red Contrast, Blue-Red Contrast, Brown-Blue Contrast, Navy-Green Contrast, Grey-Green Contrast, Brown-Red Contrast, Pink-Brown Contrast, Grey-Yellow Contrast</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M, L</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table width=\"-89\">\n<thead>\n<tr class=\"firstRow\"><th colspan=\"5\">Sweater</th></tr>\n<tr>\n<th>Size</th>\n<th>Shoulder Width</th>\n<th>Bust</th>\n<th>Length</th>\n<th>Sleeve Length</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>60</td>\n<td>118</td>\n<td>54</td>\n<td>49</td>\n</tr>\n<tr>\n<td>M</td>\n<td>61</td>\n<td>120</td>\n<td>55</td>\n<td>50</td>\n</tr>\n<tr>\n<td>L</td>\n<td>62.5</td>\n<td>124</td>\n<td>56.5</td>\n<td>51.5</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/676BCDBDE1DEA6606155C9BAF70C7604.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6BB6B7BF6A3DA26200EFA81CB301FF28.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/708F92B05D8E3957CE8B0A80908C0E7B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/29495E7B0584CFB04B0785BE03FDE571.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AF890716A9A01AC923D66B475AFB9566.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3DEAA9A1849979A729776ACF6D7B604A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7E0197151A2A54E6B1784001BAF75F9C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B729470A4896815E24D89F2D62DD4724.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C4B4EAC9150CD907F3640946B38DAEF0.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5F69623EE187A2B08472F24FB65FD699.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/73BCDCB73EF6C80CE1E0CABB81FE2176.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6233BFD93644AC6AF7178DB7255F3E16.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1125893D212111D9C27343F4B76C0F11.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E07A72331FCAE4537876CD50EA05542B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/ECEFB9FDDD5708CD1181A92ABD082D33.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/78FECE71BB920B5451D4D45763D7BC8B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2CA30312020E2176913004B88FEF215A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EC99DE4A63FF15D3A2D1E08D36073BC1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/59EA2AB4C1A11BB6C9EE5B5302A68A62.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/27A4FBA3FAF3E007931EB11767A90972.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B4192886E1534D488066F9715C2E0F9F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0F9B436BF6741545417E9765F8CF0A24.jpg\"> </p>",
+  "cataloged_at": "2026-10-24T02:43:17",
+  "listing_history": [
+    {
+      "at": "2026-10-24T02:46:40",
+      "title": "Striped Polo Collar Knit Sweater",
+      "change": "renamed + short description (test)"
+    }
+  ]
+}

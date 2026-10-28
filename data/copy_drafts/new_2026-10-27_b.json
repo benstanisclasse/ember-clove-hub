@@ -1,0 +1,641 @@
+[
+ {
+  "handle": "minimalist-studded-shawl-wrap-scarf-1",
+  "product_id": "gid://shopify/Product/9756958851311",
+  "original_title": "Minimalist Studded Shawl Wrap Scarf",
+  "new_title": "Sheer Studded Hem Poncho Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "poncho",
+   "cape",
+   "sheer",
+   "studded",
+   "scarf-neck",
+   "brown",
+   "neutral",
+   "spring",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A sheer, crinkled poncho top with pointed corners, a row of metal studs along the hem and a long scarf tie at the neck.</strong></p><ul><li>Lightweight sheer polyester with a crinkle texture</li><li>Relaxed batwing cut, pullover, scarf loops at the neck</li><li>Pointed handkerchief hem (about 20–21 in long)</li></ul><p>Sizes XS–L (US 2–10)</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317830164719",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317828624623": "Sheer Studded Hem Poncho Top in Dark Brown, shown flat, front",
+   "gid://shopify/MediaImage/41317829116143": "Sheer Studded Hem Poncho Top in Dark Brown, close-up of the neckline and scarf",
+   "gid://shopify/MediaImage/41317830164719": "Sheer Studded Hem Poncho Top in Dark Brown, shown flat with the scarf hanging at front",
+   "gid://shopify/MediaImage/41317830492399": "Sheer Studded Hem Poncho Top in Dark Brown, close-up of the scarf tie",
+   "gid://shopify/MediaImage/41317831082223": "Sheer Studded Hem Poncho Top in Dark Brown, shown flat, front",
+   "gid://shopify/MediaImage/41317831147759": "Sheer Studded Hem Poncho Top in Dark Brown, shown flat, front, scarf looped"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317831082223",
+   "gid://shopify/MediaImage/41317829116143"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [
+   "duplicate listing (same as 9756956524783, live as Studded Scarf-Neck Poncho Top): archive, do not apply",
+   "brand logo",
+   "not a scarf"
+  ],
+  "notes": "Duplicate of 9756956524783, which is already live as \"Studded Scarf-Neck Poncho Top\": same specs, options and byte-identical gallery. Recommended: archive this listing instead of applying; this draft uses a different title only so it passes the uniqueness check. Photos win over the supplier text: the supplier calls it a \"shawl wrap scarf\", but the photos show a sheer pullover poncho top with a scarf tie at the neck and metal studs on the pointed hem, and the size table (XS–L, US 2–10, length 51–54.5 cm, sleeve 57–60.5 cm) is a garment's, so it goes under Tops & Bodysuits like its twin, not Accessories. The neck label reads \"BBWM WOMAN\" (legible in image 2, small in 1, 5 and 6), so image 2 is moved last; image 5 is a byte-identical copy of image 1 and is also moved last. Lead is image 3, where the scarf covers the label.",
+  "wardrobe": {
+   "use": false,
+   "color": "Dark Brown",
+   "photo_media_id": "gid://shopify/MediaImage/41317830164719",
+   "season": [
+    "spring",
+    "fall"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "top",
+   "prompt_description": "A sheer dark brown crinkled poncho top with a wide batwing shape, pointed handkerchief corners, a row of small silver studs along the hem and a long matching scarf tie looped at the boat neckline."
+  }
+ },
+ {
+  "handle": "casual-knitted-women-s-sweater-bandage-spliced-loose-contrast-color-cardigan-fashion-1",
+  "product_id": "gid://shopify/Product/9757006069999",
+  "original_title": "Casual Knitted Women 's Sweater Bandage Spliced Loose Contrast Color Cardigan Fashion",
+  "new_title": "Ribbon Bow Cream Knit Cardigan",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "cardigan",
+   "knit",
+   "oversized",
+   "ribbon",
+   "bow",
+   "long-sleeve",
+   "cream",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>An oversized cream cardigan with soft blue ribbon laced down the front and sleeves, finished with bow tails at the hem.</strong></p><ul><li>Acrylic knit</li><li>Oversized fit, button front, dropped shoulders, ribbed cuffs</li><li>Balloon sleeves, hip length (about 28–29 in)</li></ul><p>Sizes S–XL · Bust 47–51 in</p>",
+  "lead_media_id": null,
+  "media_alts": {},
+  "media_last": [],
+  "add_images_from_description": [
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/5B43FED1EAA48BC5837B4B7928C377A1.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/3BCB5B6426633C7EF13A28A9F0F7DCB0.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/454DBE31654ADA5A438FD0091A7D5EC5.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/66490A556E256D6B1C54D6D86457D63D.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/188D214B6AAEED3D367DC5A79065CF6A.jpg"
+  ],
+  "color_renames": {
+   "Beige": "Cream"
+  },
+  "option_renames": {},
+  "flags": [
+   "duplicate listing (same as 9757005742319, live as Ribbon Lace Oversized Knit Cardigan): archive, do not apply",
+   "no photos",
+   "low-res on-model photos"
+  ],
+  "notes": "Exact duplicate of 9757005742319 (handle without -1), already live as \"Ribbon Lace Oversized Knit Cardigan\": same description images, size table and options. Recommended: archive this listing instead of applying; the title here differs only so the check passes. No gallery images; the 5 description images are clean on-model shots (no text or logos) but 750x1000, dim, faces cropped; they are listed lead-first (buttoned front view) in case the owner keeps it. Photos show a button cardigan with blue-gray ribbon laced in a chevron pattern and bow tails at the hem, not a \"bandage\" sweater. \"Beige\" shows as cream, so it is renamed. Size table converted from cm: bust 120–129, length 71–72.5. Fabric is acrylic per supplier.",
+  "wardrobe": {
+   "use": false,
+   "color": "Cream",
+   "photo_media_id": null,
+   "season": [
+    "fall",
+    "winter"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "knitwear",
+   "prompt_description": "An oversized cream knit cardigan with balloon sleeves and ribbed cuffs, pale blue ribbon laced in chevrons down both front panels and along the sleeves, a button front and ribbon bow tails hanging at the hem."
+  }
+ },
+ {
+  "handle": "three-dimensional-rose-contrasting-dress-niche-design-fashionable-lapel-off-shoulder-temperament-commuting-suit-skirt",
+  "product_id": "gid://shopify/Product/9757092315375",
+  "original_title": "Three dimensional rose contrasting dress, niche design, fashionable lapel, off shoulder temperament, commuting suit skirt",
+  "new_title": "3D Rose Blazer Mini Dress",
+  "product_type": "Dresses",
+  "tags": [
+   "dress",
+   "blazer dress",
+   "mini",
+   "rose",
+   "floral appliqué",
+   "notch-lapel",
+   "long-sleeve",
+   "black",
+   "red",
+   "fall",
+   "winter",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A black blazer dress with puffed shoulders and red 3D roses on long green stems climbing the front.</strong></p><ul><li>Polyester suiting with a smooth, structured finish</li><li>Fitted waist, notch lapels, single-breasted buttons, flap pockets</li><li>Long sleeves, mini length (about 31–32 in)</li></ul><p>Sizes S–XL · Bust 34–39 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318190416111",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318188548335": "3D Rose Blazer Mini Dress in Black, on model, front",
+   "gid://shopify/MediaImage/41318188744943": "3D Rose Blazer Mini Dress in Black, on mannequin, front",
+   "gid://shopify/MediaImage/41318189105391": "3D Rose Blazer Mini Dress in Black, on mannequin, back",
+   "gid://shopify/MediaImage/41318189793519": "3D Rose Blazer Mini Dress in Black, close-up of the roses and lapel",
+   "gid://shopify/MediaImage/41318190416111": "3D Rose Blazer Mini Dress in Black, on mannequin, front",
+   "gid://shopify/MediaImage/41318190547183": "3D Rose Blazer Mini Dress in Black, on model, front"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41318188744943",
+   "gid://shopify/MediaImage/41318189105391"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {
+   "color": "Color",
+   "size": "Size"
+  },
+  "flags": [
+   "watermark"
+  ],
+  "notes": "Photos win over the supplier text: the title says \"off shoulder\" and \"suit skirt\", but the photos show a one-piece long-sleeve blazer dress with covered, puffed shoulders, notch lapels, covered buttons, flap pockets and three red fabric roses with sage-green stems. Images 2 and 3 carry an \"aishang meyzis\" watermark, so they are moved last; image 2 is also the variant image for every size, so the variants should point at image 5 (clean mannequin front, the lead). Sizes from the supplier list: bust 86–98 cm, length 78–81 cm. Option names color/size are capitalised.",
+  "wardrobe": {
+   "use": true,
+   "color": "Black",
+   "photo_media_id": "gid://shopify/MediaImage/41318190416111",
+   "season": [
+    "fall",
+    "winter",
+    "spring"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "dress",
+   "prompt_description": "A black long-sleeve blazer mini dress with puffed shoulders, notch lapels, black covered buttons down the front, flap hip pockets and three red three-dimensional fabric roses on long sage-green stems running down the front."
+  }
+ },
+ {
+  "handle": "shiny-rhinestone-button-waist-cinching-neck-mini-black-dress-playful-small-fragrance-party-bandage-dress",
+  "product_id": "gid://shopify/Product/9757092479215",
+  "original_title": "Shiny rhinestone button waist cinching neck mini black dress playful small fragrance party bandage dress",
+  "new_title": "Rhinestone Halter Button Mini Dress",
+  "product_type": "Dresses",
+  "tags": [
+   "dress",
+   "mini",
+   "halter",
+   "rhinestone",
+   "fit-and-flare",
+   "sleeveless",
+   "black",
+   "pink",
+   "party",
+   "spring",
+   "summer",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A fit-and-flare halter mini with rhinestone-encrusted straps and a row of jeweled buttons down the front.</strong></p><ul><li>Stretch knit (spandex per supplier), ribbed bust cups</li><li>Fitted bodice, studded collar band, back zip</li><li>Flared skirt, mini length (about 23 in)</li></ul><p>Sizes XS–L · Bust 30–38 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318190842095",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318188679407": "Rhinestone Halter Button Mini Dress in Black, on model, front",
+   "gid://shopify/MediaImage/41318189072623": "Rhinestone Halter Button Mini Dress in Black, on model, seated",
+   "gid://shopify/MediaImage/41318189433071": "Rhinestone Halter Button Mini Dress in Black, on model, seated",
+   "gid://shopify/MediaImage/41318189826287": "Rhinestone Halter Button Mini Dress in Black, on model, front",
+   "gid://shopify/MediaImage/41318190448879": "Rhinestone Halter Button Mini Dress in Black, on model, front",
+   "gid://shopify/MediaImage/41318190842095": "Rhinestone Halter Button Mini Dress in Black, shown flat, front",
+   "gid://shopify/MediaImage/41318191464687": "Rhinestone Halter Button Mini Dress in Fuchsia, on mannequin, front"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41318189826287",
+   "gid://shopify/MediaImage/41318189072623"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Rose Red": "Fuchsia"
+  },
+  "option_renames": {
+   "color": "Color",
+   "size": "Size"
+  },
+  "flags": [
+   "brand logo",
+   "designer look-alike",
+   "photo color mismatch"
+  ],
+  "notes": "Image 4 shows a handbag with a large gold \"B\" monogram plaque and image 2 has big \"B\" letter cushions, so both are moved last. The dress itself closely copies a well-known designer halter dress (crystal straps, jeweled buttons) and the lifestyle shots look like they come from other brands' campaigns; the owner may want to check the photo rights. \"Rose Red\" shows as a hot pink/fuchsia, so it is renamed. The supplier size chart (body measurements, XS–XXL) is cut to the offered XS–L: bust 30–37.5 in, waist 23.5–31 in, length 58 cm (23 in). Supplier lists spandex; the close-ups show a ribbed stretch knit at the bust. Back zip and studded collar band from the description images. Lead is the clean flat front (image 6).",
+  "wardrobe": {
+   "use": true,
+   "color": "Black",
+   "photo_media_id": "gid://shopify/MediaImage/41318190842095",
+   "season": [
+    "spring",
+    "summer",
+    "fall"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "night"
+   ],
+   "category": "dress",
+   "prompt_description": "A black sleeveless fit-and-flare halter mini dress with ribbed sweetheart bust cups, wide halter straps covered in silver rhinestones, a studded collar band at the neck and a row of large round jeweled buttons down the front."
+  }
+ },
+ {
+  "handle": "retro-suede-jacket-jacket",
+  "product_id": "gid://shopify/Product/9757092675823",
+  "original_title": "Retro suede jacket jacket",
+  "new_title": "Notch Lapel Faux Suede Blazer",
+  "product_type": "Outerwear",
+  "tags": [
+   "blazer",
+   "jacket",
+   "outerwear",
+   "faux suede",
+   "notch-lapel",
+   "long-sleeve",
+   "brown",
+   "camel",
+   "spring",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A relaxed faux suede blazer with notch lapels and a yoke seam across the chest, easy over a turtleneck and jeans.</strong></p><ul><li>Polyester faux suede, smooth satin-look lining</li><li>Loose fit, three-button front, flap hip pockets</li><li>Long sleeves, hip length (about 25–26 in)</li></ul><p>Sizes S–L · Bust 40–43 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318192021743",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318189498607": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, front",
+   "gid://shopify/MediaImage/41318190121199": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, side view",
+   "gid://shopify/MediaImage/41318190514415": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, front",
+   "gid://shopify/MediaImage/41318190874863": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, front",
+   "gid://shopify/MediaImage/41318191431919": "Notch Lapel Faux Suede Blazer in Dark Brown, shown flat, front",
+   "gid://shopify/MediaImage/41318192021743": "Notch Lapel Faux Suede Blazer in Dark Brown, shown flat, front",
+   "gid://shopify/MediaImage/41318192185583": "Notch Lapel Faux Suede Blazer in Camel, shown flat, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Dark brown": "Dark Brown",
+   "Light brown": "Camel"
+  },
+  "option_renames": {
+   "color": "Color",
+   "size": "Size"
+  },
+  "flags": [
+   "social-media style photos (rights unclear)"
+  ],
+  "notes": "Supplier says \"suede\" and polyester; the copy says polyester faux suede. \"Light brown\" shows as camel and \"Dark brown\" is only re-cased. The on-model shots look like one creator's personal social posts (bedroom, street, coffee in hand) rather than supplier studio shots, so the photo rights may be worth checking. On-model shade is between the two flats; labelled Dark Brown. Image 5 shows a black lining where images 6 and 7 show a taupe lining, so lining color may vary. Size table converted from cm: bust 102–110, length 63–65.",
+  "wardrobe": {
+   "use": true,
+   "color": "Dark Brown",
+   "photo_media_id": "gid://shopify/MediaImage/41318192021743",
+   "season": [
+    "spring",
+    "fall"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "outerwear",
+   "prompt_description": "A relaxed dark brown faux suede blazer with notch lapels, a horizontal yoke seam across the chest, three dark buttons, two flap hip pockets, long sleeves and a taupe lining."
+  }
+ },
+ {
+  "handle": "european-and-american-style-spring-and-summer-womens-clothing-new-one-shoulder-exposed-backpack-buttocks-sexy-long-skirt-dress",
+  "product_id": "gid://shopify/Product/9757095198959",
+  "original_title": "European and American style spring and summer women's clothing new one shoulder exposed backpack buttocks sexy long skirt dress",
+  "new_title": "Off-Shoulder Open Back Maxi Dress",
+  "product_type": "Dresses",
+  "tags": [
+   "dress",
+   "maxi",
+   "off-shoulder",
+   "open back",
+   "bodycon",
+   "jersey",
+   "sleeveless",
+   "brown",
+   "spring",
+   "summer",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A floor-length column dress with a folded off-shoulder band and a deep scoop open back.</strong></p><ul><li>Soft, stretchy polyester jersey with a matte finish</li><li>Close, body-skimming fit, folded band across the shoulders</li><li>Maxi length (about 50–52 in from the band)</li></ul><p>Sizes S–L · Bust 34–37 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318199230703",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318199230703": "Off-Shoulder Open Back Maxi Dress in Coffee, on mannequin, front",
+   "gid://shopify/MediaImage/41318199853295": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, side view",
+   "gid://shopify/MediaImage/41318199951599": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, back",
+   "gid://shopify/MediaImage/41318200279279": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, front",
+   "gid://shopify/MediaImage/41318200606959": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, back",
+   "gid://shopify/MediaImage/41318200738031": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, back"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [],
+  "notes": "Photos win over the supplier text: the title says \"one shoulder\" (and a garbled \"backpack buttocks\"), but every photo shows an off-the-shoulder folded band across both shoulders and a deep scoop open back. Fabric reads as a matte stretch jersey (polyester per supplier). Size chart image: bust 86–94 cm, length 126–131 cm. Image 5 is a rough cut-out of the model on white; kept in place. \"Coffee\" matches the reddish chocolate brown, so no rename.",
+  "wardrobe": {
+   "use": true,
+   "color": "Coffee",
+   "photo_media_id": "gid://shopify/MediaImage/41318199230703",
+   "season": [
+    "spring",
+    "summer"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "night"
+   ],
+   "category": "dress",
+   "prompt_description": "A floor-length chocolate brown stretch jersey column dress with a wide folded off-the-shoulder band across both shoulders, a close body-skimming fit and a deep scoop open back."
+  }
+ },
+ {
+  "handle": "slim-zipper-jacket-jacket",
+  "product_id": "gid://shopify/Product/9757095395567",
+  "original_title": "Slim zipper jacket jacket",
+  "new_title": "Snap Collar Faux Leather Jacket",
+  "product_type": "Outerwear",
+  "tags": [
+   "jacket",
+   "outerwear",
+   "moto",
+   "faux leather",
+   "stand collar",
+   "zip",
+   "long-sleeve",
+   "black",
+   "spring",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A fitted faux leather moto-style jacket with a snap-tab stand collar and shaped seams through the waist.</strong></p><ul><li>Smooth PU faux leather with a soft sheen</li><li>Center zip, zip chest pocket, zip side pockets</li><li>Long sleeves, hip length (about 21–23 in)</li></ul><p>Sizes S–XL · Bust 37–43 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318200213743",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318200213743": "Snap Collar Faux Leather Jacket in Black, on model, front",
+   "gid://shopify/MediaImage/41318200344815": "Snap Collar Faux Leather Jacket in Black, on model, three-quarter view",
+   "gid://shopify/MediaImage/41318200672495": "Snap Collar Faux Leather Jacket in Black, on model, front",
+   "gid://shopify/MediaImage/41318201000175": "Snap Collar Faux Leather Jacket in Black, on model, side view",
+   "gid://shopify/MediaImage/41318201327855": "Snap Collar Faux Leather Jacket in Black, close-ups of the collar, pockets and cuff",
+   "gid://shopify/MediaImage/41318201852143": "Snap Collar Faux Leather Jacket in Black, on model, front"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41318201327855"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "25598 Black": "Black"
+  },
+  "option_renames": {},
+  "flags": [
+   "photos look AI-generated",
+   "collage"
+  ],
+  "notes": "The model photos look AI-generated (same face and pose set, very smooth skin and leather); the owner should judge whether they read as real. Image 5 is a four-panel close-up collage, so it is moved last. The supplier lists \"Belted\" and \"Waist-Cinched\"; no belt shows in any photo, so the copy mentions only the shaped waist seams. \"25598 Black\" is renamed Black (supplier code removed). Size table converted from cm: bust 94–110, length 54–58. Lining is not stated.",
+  "wardrobe": {
+   "use": true,
+   "color": "Black",
+   "photo_media_id": "gid://shopify/MediaImage/41318200213743",
+   "season": [
+    "spring",
+    "fall"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "outerwear",
+   "prompt_description": "A black smooth faux leather moto-style jacket ending at the hip, with a stand collar closed by a two-snap tab, a center zip, a slanted zip chest pocket, zip side pockets and shaped panel seams through the waist."
+  }
+ },
+ {
+  "handle": "striped-dress-sleeveless-dress",
+  "product_id": "gid://shopify/Product/9757098017007",
+  "original_title": "Striped dress sleeveless dress",
+  "new_title": "Tiered Stripe Sleeveless Swing Dress",
+  "product_type": "Dresses",
+  "tags": [
+   "dress",
+   "swing",
+   "tiered",
+   "striped",
+   "sleeveless",
+   "scoop neck",
+   "blue",
+   "brown",
+   "spring",
+   "summer",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A loose tiered swing dress in crisp white-and-color stripes with a ruffled hem, an easy summer dress with sandals.</strong></p><ul><li>Lightweight polyester and spandex blend</li><li>Loose fit, scoop neck, sleeveless, pullover</li><li>Three tiers, knee length (about 37–38 in)</li></ul><p>Sizes S–XL · Bust 37–43 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318211322095",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318211322095": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front",
+   "gid://shopify/MediaImage/41318211911919": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front",
+   "gid://shopify/MediaImage/41318212010223": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front",
+   "gid://shopify/MediaImage/41318212600047": "Tiered Stripe Sleeveless Swing Dress in Brown, on model, back",
+   "gid://shopify/MediaImage/41318213353711": "Tiered Stripe Sleeveless Swing Dress in Brown, on model, front",
+   "gid://shopify/MediaImage/41318213419247": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [],
+  "notes": "Photos match the supplier: a sleeveless scoop-neck dress in three tiers of vertical stripes on white. The Brown stripe is a caramel brown; the name is kept. Supplier says mid-length; the table gives 93–97 cm, which sits at the knee on the model. Size table converted from cm: bust 94–110. Lead is image 1 (plain background, head cropped).",
+  "wardrobe": {
+   "use": true,
+   "color": "Blue",
+   "photo_media_id": "gid://shopify/MediaImage/41318211322095",
+   "season": [
+    "spring",
+    "summer"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "dress",
+   "prompt_description": "A loose sleeveless knee-length swing dress with a scoop neck and three tiers of blue and white vertical stripes ending in a ruffled hem."
+  }
+ },
+ {
+  "handle": "metal-buckle-symmetrical-pleated-sleeveless-short-skirt-with-waist-cinching-dress",
+  "product_id": "gid://shopify/Product/9757098049775",
+  "original_title": "Metal buckle symmetrical pleated sleeveless short skirt with waist cinching dress",
+  "new_title": "Mock Neck Side-Pleat Mini Dress",
+  "product_type": "Dresses",
+  "tags": [
+   "dress",
+   "mini",
+   "mock neck",
+   "sleeveless",
+   "pleated",
+   "fit-and-flare",
+   "brown",
+   "white",
+   "spring",
+   "summer",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A sleek sleeveless mini with a high mock neck and sculpted pleats that flare out from metal ring details at each hip.</strong></p><ul><li>Polyester with a smooth matte finish</li><li>Fitted bodice, princess seams, metal ring hardware</li><li>Sleeveless, above-knee length (about 35–36 in)</li></ul><p>Sizes S–XL · Bust 34–39 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318211977455",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318211879151": "Mock Neck Side-Pleat Mini Dress in Brown, on model, front",
+   "gid://shopify/MediaImage/41318211977455": "Mock Neck Side-Pleat Mini Dress in Brown, on model, front",
+   "gid://shopify/MediaImage/41318212567279": "Mock Neck Side-Pleat Mini Dress in White, on model, front",
+   "gid://shopify/MediaImage/41318213320943": "Mock Neck Side-Pleat Mini Dress in Brown, on model, three-quarter view"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41318211879151"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "coffee": "Brown",
+   "white": "White"
+  },
+  "option_renames": {
+   "color": "Color",
+   "size": "Size"
+  },
+  "flags": [
+   "collage"
+  ],
+  "notes": "Photos win over the supplier text: the spec says \"diagonal collar\", the photos show a high mock neck; the \"metal buckle\" is a small metal ring at each hip where the side pleats gather. Image 1 is a two-model side-by-side collage, so it is moved last. \"coffee\" shows as a medium chocolate brown, renamed Brown; \"white\" is re-cased. Closure is not visible and the spec (\"Sleeve\") is unclear, so none is stated. Size chart image: bust 86–98 cm, length 88–91 cm.",
+  "wardrobe": {
+   "use": true,
+   "color": "Brown",
+   "photo_media_id": "gid://shopify/MediaImage/41318211977455",
+   "season": [
+    "spring",
+    "summer",
+    "fall"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day",
+    "night"
+   ],
+   "category": "dress",
+   "prompt_description": "A chocolate brown sleeveless mini dress with a high mock neck, a fitted princess-seamed bodice and stiff sculpted pleats flaring out at each hip from a small silver metal ring."
+  }
+ },
+ {
+  "handle": "european-and-american-fashion-loose-suit-skirt-two-piece-set-long-sleeved-lapel-top-printed-high-waisted-short-skirt",
+  "product_id": "gid://shopify/Product/9757099294959",
+  "original_title": "European and American fashion loose suit skirt two-piece set long sleeved lapel top printed high waisted short skirt",
+  "new_title": "Floral Satin Blazer Mini Set",
+  "product_type": "Skirts",
+  "tags": [
+   "set",
+   "two-piece",
+   "blazer",
+   "skort",
+   "floral",
+   "satin",
+   "long-sleeve",
+   "pink",
+   "green",
+   "spring",
+   "summer",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A matching set of a cropped floral blazer and a high-waist mini with a front slit, printed in soft pink and mint peonies.</strong></p><ul><li>Polyester satin with a soft sheen, lined blazer</li><li>Cropped double-breasted blazer (about 17–18 in), gold-tone buttons</li><li>High-waist skort-style mini (about 14 in), front slit</li></ul><p>Sizes S–L · Bust 38–41 in · Waist 25–28 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318217122031",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318215713007": "Floral Satin Blazer Mini Set in Pink Floral, on model, front",
+   "gid://shopify/MediaImage/41318216007919": "Floral Satin Blazer Mini Set in Pink Floral, on model, front",
+   "gid://shopify/MediaImage/41318216761583": "Floral Satin Blazer Mini Set in Pink Floral, on model, three-quarter view",
+   "gid://shopify/MediaImage/41318217056495": "Floral Satin Blazer Mini Set in Pink Floral, on model, back",
+   "gid://shopify/MediaImage/41318217122031": "Floral Satin Blazer Mini Set in Pink Floral, on mannequin, front",
+   "gid://shopify/MediaImage/41318217646319": "Floral Satin Blazer Mini Set in Pink Floral, on mannequin, front"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41318217646319"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "pink": "Pink Floral"
+  },
+  "option_renames": {},
+  "flags": [
+   "skort, not a skirt",
+   "duplicate image"
+  ],
+  "notes": "Type: the set goes under Skirts because its bottom is sold as the \"suit skirt\" and reads as a slit mini from the front; Outerwear (for the blazer) is the alternative. Photos win over the supplier text: the back views (image 4 and a description image) show shorts, so the bottom is a skort-style mini with a front slit, and the copy says so. The blazer is cropped and double-breasted with gold-tone embossed buttons and a white lining (description close-ups). Image 6 is a byte-identical copy of image 5 and is the variant image; it is moved last and image 5 leads. Size chart image: bust 96–104, waist 64–72, jacket length 43–45, bottom length 35–36 cm. Wardrobe category is \"bottom\" but it is a full outfit.",
+  "wardrobe": {
+   "use": true,
+   "color": "Pink Floral",
+   "photo_media_id": "gid://shopify/MediaImage/41318217122031",
+   "season": [
+    "spring",
+    "summer"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "day"
+   ],
+   "category": "bottom",
+   "prompt_description": "A matching two-piece set in white satin printed with soft pink and mint-green peonies: a cropped double-breasted blazer with notch lapels, strong shoulders and gold-tone buttons, and a high-waist mini skort with a front slit."
+  }
+ },
+ {
+  "handle": "new-french-dress-ladies-long-dress-fashion-backless-slit-dress",
+  "product_id": "gid://shopify/Product/9757099819247",
+  "original_title": "New French Dress Ladies Long Dress Fashion Backless Slit Dress",
+  "new_title": "Cowl Neck Satin Maxi Dress",
+  "product_type": "Dresses",
+  "tags": [
+   "dress",
+   "maxi",
+   "satin",
+   "cowl neck",
+   "slit",
+   "open back",
+   "spaghetti strap",
+   "black",
+   "green",
+   "summer",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A glossy satin maxi with a draped cowl neckline, a low open back and a high side slit.</strong></p><ul><li>Satin-finish fabric with a high sheen</li><li>Close fit, adjustable spaghetti straps, side zip, elastic back</li><li>Floor-length maxi (about 55–56 in), thigh-high slit</li></ul><p>Sizes S–L · Bust 30–33 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41318219677935",
+  "media_alts": {
+   "gid://shopify/MediaImage/41318218072303": "Cowl Neck Satin Maxi Dress in Black, on model, front",
+   "gid://shopify/MediaImage/41318218367215": "Cowl Neck Satin Maxi Dress in Black, on model, front",
+   "gid://shopify/MediaImage/41318218891503": "Cowl Neck Satin Maxi Dress in Emerald Green, on model, front",
+   "gid://shopify/MediaImage/41318218989807": "Cowl Neck Satin Maxi Dress in Emerald Green, on model, back",
+   "gid://shopify/MediaImage/41318219677935": "Cowl Neck Satin Maxi Dress in Black, on mannequin, front",
+   "gid://shopify/MediaImage/41318219776239": "Cowl Neck Satin Maxi Dress in Emerald Green, on mannequin, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "FKD9122-Black": "Black",
+   "FKD9122-Green": "Emerald Green"
+  },
+  "option_renames": {},
+  "flags": [
+   "fabric not stated"
+  ],
+  "notes": "The supplier gives no fabric, only a size chart image; the copy says satin-finish from the photos without naming a fiber. Side zip, adjustable straps and elasticated back from the description close-ups. Colors lose the supplier code; the green is a bright emerald. Size chart: bust 76–84 cm, length 140–142 cm; the bust measurement is small for the size labels and may be unstretched, worth a check. Image 2 is a mirror selfie with a phone; kept in place.",
+  "wardrobe": {
+   "use": true,
+   "color": "Black",
+   "photo_media_id": "gid://shopify/MediaImage/41318219677935",
+   "season": [
+    "spring",
+    "summer"
+   ],
+   "open_toe": false,
+   "occasion": [
+    "night"
+   ],
+   "category": "dress",
+   "prompt_description": "A black glossy satin floor-length slip dress with a draped cowl neckline, thin adjustable spaghetti straps, a low open back and a thigh-high side slit."
+  }
+ }
+]

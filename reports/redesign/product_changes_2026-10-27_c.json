@@ -1,0 +1,537 @@
+[
+ {
+  "product_id": "gid://shopify/Product/9757659988207",
+  "handle": "exaggerated-bead-chain-18k-gold-heart-pendant-necklace-geometric-minimalist-hip-hop-choker",
+  "before": {
+   "title": "exaggerated bead chain 18K gold heart pendant necklace geometric minimalist hip-hop choker",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339191535",
+    "gid://shopify/MediaImage/41321339388143",
+    "gid://shopify/MediaImage/41321340141807",
+    "gid://shopify/MediaImage/41321340371183",
+    "gid://shopify/MediaImage/41321340764399",
+    "gid://shopify/MediaImage/41321341386991",
+    "gid://shopify/MediaImage/41321341681903",
+    "gid://shopify/MediaImage/41321341976815"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41321339191535": "",
+    "gid://shopify/MediaImage/41321339388143": "",
+    "gid://shopify/MediaImage/41321340141807": "",
+    "gid://shopify/MediaImage/41321340371183": "",
+    "gid://shopify/MediaImage/41321340764399": "",
+    "gid://shopify/MediaImage/41321341386991": "",
+    "gid://shopify/MediaImage/41321341681903": "",
+    "gid://shopify/MediaImage/41321341976815": ""
+   },
+   "options": {
+    "Color": [
+     "Steel Color Necklace",
+     "Golden  Necklace",
+     "Golden  Bracelet"
+    ]
+   }
+  },
+  "after": {
+   "title": "Puffy Heart Ball Chain Necklace",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "bracelet",
+    "heart",
+    "pendant",
+    "ball chain",
+    "stainless steel",
+    "gold-tone",
+    "silver-tone",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41321341681903",
+    "gid://shopify/MediaImage/41321339388143",
+    "gid://shopify/MediaImage/41321340141807",
+    "gid://shopify/MediaImage/41321340371183",
+    "gid://shopify/MediaImage/41321340764399",
+    "gid://shopify/MediaImage/41321341386991",
+    "gid://shopify/MediaImage/41321339191535",
+    "gid://shopify/MediaImage/41321341976815"
+   ],
+   "color_renames": {
+    "Steel Color Necklace": "Silver Necklace",
+    "Golden  Necklace": "Gold Necklace",
+    "Golden  Bracelet": "Gold Bracelet"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "low-res image",
+   "duplicate image",
+   "bracelet variant in a necklace listing"
+  ],
+  "notes": "Supplier title says \"18K gold\"; the spec says stainless steel (pendant titanium steel), electroplated, so the copy says gold-tone plated and never 18K gold. The \"Steel Color\" version is plain silver-tone steel. Measurements from description image 1: beads 0.8 cm, heart 3.5 cm, necklace about 40 cm + 5 cm extender (spec says 41-50 cm). Image 1 is a byte-identical copy of image 7 (the Gold Necklace variant image), so image 7 leads and image 1 goes last. Image 8, the only Gold Bracelet photo and its variant image, is 284x385 and blurry, so it goes last; bracelet length is not stated. The on-model shot (image 5) looks clean; owner to judge. Color option values had double spaces (\"Golden  Necklace\"), fixed in the renames."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757660053743",
+  "handle": "5-flower-necklaces-pearl-collarbone-chains",
+  "before": {
+   "title": "5 flower necklaces pearl collarbone chains",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339289839",
+    "gid://shopify/MediaImage/41321339519215",
+    "gid://shopify/MediaImage/41321340240111",
+    "gid://shopify/MediaImage/41321340469487",
+    "gid://shopify/MediaImage/41321340829935",
+    "gid://shopify/MediaImage/41321341354223"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41321339289839": "",
+    "gid://shopify/MediaImage/41321339519215": "",
+    "gid://shopify/MediaImage/41321340240111": "",
+    "gid://shopify/MediaImage/41321340469487": "",
+    "gid://shopify/MediaImage/41321340829935": "",
+    "gid://shopify/MediaImage/41321341354223": ""
+   },
+   "options": {
+    "Color": [
+     "Gold"
+    ],
+    "Purity": [
+     "14k"
+    ]
+   }
+  },
+  "after": {
+   "title": "Pearl Daisy Chain Choker",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "choker",
+    "pearl",
+    "flower",
+    "daisy",
+    "copper",
+    "gold-tone",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41321340469487",
+    "gid://shopify/MediaImage/41321340240111",
+    "gid://shopify/MediaImage/41321341354223",
+    "gid://shopify/MediaImage/41321339289839",
+    "gid://shopify/MediaImage/41321339519215",
+    "gid://shopify/MediaImage/41321340829935"
+   ],
+   "color_renames": {},
+   "option_renames": {
+    "Purity": "Plating"
+   },
+   "added_media": []
+  },
+  "flags": [
+   "text overlay",
+   "low-res on-model photos (upscaled)",
+   "duplicate image",
+   "title said 5 necklaces"
+  ],
+  "notes": "Photos win over the supplier title: \"5 flower necklaces\" is one necklace with five pearl-bead flowers, not five necklaces. Spec: copper, \"Purity: 14K\"; image 1 says \"14k gold plated\", so the copy says gold-tone plated copper and never 14K gold. The option \"Purity: 14k\" reads like solid gold to a shopper, so the option is renamed Plating (value 14k unchanged). Pearls: spec only says \"Design Element: Pearl\"; the copy says pearl-look beads. Length from image 1: 14 in + 2 in extender. Image 1 has a text overlay and goes last; image 5 is a small framed crop with rounded corners and a white border, last; image 2 is a byte-identical copy of image 6 (the variant image), last. The on-model shots (2, 3, 5, 6) are soft and look upscaled to 1920 px; the flat lay (image 4) is the sharpest and leads."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757660086511",
+  "handle": "embedded-cats-eye-stone-necklace-retro-vintage-geometric-choker-chain",
+  "before": {
+   "title": "Embedded Cat's Eye Stone Necklace Retro Vintage Geometric Choker Chain",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339257071",
+    "gid://shopify/MediaImage/41321339486447",
+    "gid://shopify/MediaImage/41321340305647",
+    "gid://shopify/MediaImage/41321340600559",
+    "gid://shopify/MediaImage/41321340928239",
+    "gid://shopify/MediaImage/41321341518063",
+    "gid://shopify/MediaImage/41321341714671",
+    "gid://shopify/MediaImage/41321342468335"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41321339257071": "",
+    "gid://shopify/MediaImage/41321339486447": "",
+    "gid://shopify/MediaImage/41321340305647": "",
+    "gid://shopify/MediaImage/41321340600559": "",
+    "gid://shopify/MediaImage/41321340928239": "",
+    "gid://shopify/MediaImage/41321341518063": "",
+    "gid://shopify/MediaImage/41321341714671": "",
+    "gid://shopify/MediaImage/41321342468335": ""
+   },
+   "options": {
+    "Color": [
+     "Green",
+     "Red",
+     "White"
+    ]
+   }
+  },
+  "after": {
+   "title": "Oval Stone Curb Chain Choker",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "choker",
+    "curb chain",
+    "rhinestone",
+    "stone",
+    "stainless steel",
+    "gold-tone",
+    "green",
+    "red",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339486447",
+    "gid://shopify/MediaImage/41321339257071",
+    "gid://shopify/MediaImage/41321340305647",
+    "gid://shopify/MediaImage/41321340600559",
+    "gid://shopify/MediaImage/41321340928239",
+    "gid://shopify/MediaImage/41321341518063",
+    "gid://shopify/MediaImage/41321341714671",
+    "gid://shopify/MediaImage/41321342468335"
+   ],
+   "color_renames": {
+    "White": "Cream"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "text overlay",
+   "variant images have text overlays"
+  ],
+  "notes": "Supplier title says \"cat's eye stone\" and the measurement images say \"opal\"; neither is in the spec (stainless steel, electroplated) and the photos show plain glossy cabochons with no cat's-eye band, so the copy says only \"oval cabochon stone\". Gold-tone from the photos; the spec gives only electroplating, so no karat is claimed. Sizes from images 6-8: 41 cm + 5 cm chain, chain 5.3 mm wide, center 9.5 mm; weight 20.5 g. \"White\" shows as a milky cream stone, renamed Cream. Images 6-8 carry measurement text and are also the variant images, so they go last; no clean single-color shot exists to point the variants at. Lead is image 2 (all three colors, clean). The spec lists a brand \"Oujia Jewelry\"; no logo is visible. Description images carry decorative text (\"Fashion Items\", \"America\") and were not used."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757660119279",
+  "handle": "necklace-embrace-pendant-necklace-mother-daughter-embrace-clavicle-chain",
+  "before": {
+   "title": "Necklace Embrace Pendant Necklace Mother-Daughter Embrace Clavicle Chain",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339355375",
+    "gid://shopify/MediaImage/41321340109039",
+    "gid://shopify/MediaImage/41321340338415",
+    "gid://shopify/MediaImage/41321340535023",
+    "gid://shopify/MediaImage/41321340961007",
+    "gid://shopify/MediaImage/41321341485295",
+    "gid://shopify/MediaImage/41321341747439"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41321339355375": "",
+    "gid://shopify/MediaImage/41321340109039": "",
+    "gid://shopify/MediaImage/41321340338415": "",
+    "gid://shopify/MediaImage/41321340535023": "",
+    "gid://shopify/MediaImage/41321340961007": "",
+    "gid://shopify/MediaImage/41321341485295": "",
+    "gid://shopify/MediaImage/41321341747439": ""
+   },
+   "options": {
+    "Color": [
+     "White with Gold",
+     "White and Black",
+     "Short white",
+     "Short White with Gold"
+    ]
+   }
+  },
+  "after": {
+   "title": "Embrace Figure Pendant Necklace",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "pendant",
+    "hug",
+    "gift",
+    "alloy",
+    "silver-tone",
+    "gold-tone",
+    "black",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339355375",
+    "gid://shopify/MediaImage/41321340535023",
+    "gid://shopify/MediaImage/41321341485295",
+    "gid://shopify/MediaImage/41321341747439",
+    "gid://shopify/MediaImage/41321340109039",
+    "gid://shopify/MediaImage/41321340338415",
+    "gid://shopify/MediaImage/41321340961007"
+   ],
+   "color_renames": {
+    "White with Gold": "Silver & Gold Couple",
+    "White and Black": "Silver & Black Couple",
+    "Short white": "Silver Mother & Child",
+    "Short White with Gold": "Silver & Gold Mother & Child"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "low-res photos",
+   "photo color mismatch",
+   "chain length missing"
+  ],
+  "notes": "Photos win over the supplier text: the \"White\" options are silver-tone, and \"Short\" means the mother-and-child design (a smaller figure held by a taller one), so the variants are renamed by finish and design. Spec: alloy, electroplated; no chain length, pendant size or clasp is given (\"Weight: 4\" has no unit), so the size line says the length is not stated; worth asking the supplier. Image 3 shows an all-gold-tone and an all-silver-tone couple pendant without chain, neither of which is offered, so it goes last. Image 2 is a small framed shot with rounded corners (the only photo of Silver & Gold Mother & Child, and its variant image) and goes last; image 5 is a near-copy of image 7 and goes last. All photos are 696-1445 px with soft edges."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757660184815",
+  "handle": "versatile-fresh-floral-stainless-steel-bracelet-for-women-unique-titanium-steel-necklace-jewelry",
+  "before": {
+   "title": "Versatile Fresh Floral Stainless Steel Bracelet for Women, Unique Titanium Steel Necklace Jewelry",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339453679",
+    "gid://shopify/MediaImage/41321340272879",
+    "gid://shopify/MediaImage/41321340502255",
+    "gid://shopify/MediaImage/41321340862703",
+    "gid://shopify/MediaImage/41321341419759",
+    "gid://shopify/MediaImage/41321341616367",
+    "gid://shopify/MediaImage/41321341878511",
+    "gid://shopify/MediaImage/41321342599407",
+    "gid://shopify/MediaImage/41321342894319",
+    "gid://shopify/MediaImage/41321343287535",
+    "gid://shopify/MediaImage/41321343582447",
+    "gid://shopify/MediaImage/41321343713519",
+    "gid://shopify/MediaImage/41321344172271",
+    "gid://shopify/MediaImage/41321344237807",
+    "gid://shopify/MediaImage/41321344499951",
+    "gid://shopify/MediaImage/41321344827631",
+    "gid://shopify/MediaImage/41321344925935",
+    "gid://shopify/MediaImage/41321345188079"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41321339453679": "",
+    "gid://shopify/MediaImage/41321340272879": "",
+    "gid://shopify/MediaImage/41321340502255": "",
+    "gid://shopify/MediaImage/41321340862703": "",
+    "gid://shopify/MediaImage/41321341419759": "",
+    "gid://shopify/MediaImage/41321341616367": "",
+    "gid://shopify/MediaImage/41321341878511": "",
+    "gid://shopify/MediaImage/41321342599407": "",
+    "gid://shopify/MediaImage/41321342894319": "",
+    "gid://shopify/MediaImage/41321343287535": "",
+    "gid://shopify/MediaImage/41321343582447": "",
+    "gid://shopify/MediaImage/41321343713519": "",
+    "gid://shopify/MediaImage/41321344172271": "",
+    "gid://shopify/MediaImage/41321344237807": "",
+    "gid://shopify/MediaImage/41321344499951": "",
+    "gid://shopify/MediaImage/41321344827631": "",
+    "gid://shopify/MediaImage/41321344925935": "",
+    "gid://shopify/MediaImage/41321345188079": ""
+   },
+   "options": {
+    "Color": [
+     "Black Bracelet",
+     "Red Bracelet",
+     "Colorful Bracelet",
+     "White Bracelet",
+     "Bronze  Bracelet",
+     "Green Bracelet",
+     "Dark Red Bracelet",
+     "Black Necklace",
+     "Red Necklace",
+     "Blue Necklace",
+     "Colorful Necklace",
+     "Silver Necklace",
+     "Bronze  Necklace",
+     "Green Necklace",
+     "Dark red Necklace"
+    ]
+   }
+  },
+  "after": {
+   "title": "Beaded Daisy Bracelet & Necklace",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "bracelet",
+    "necklace",
+    "beaded",
+    "flower",
+    "daisy",
+    "stainless steel",
+    "gold-tone",
+    "multicolor",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339453679",
+    "gid://shopify/MediaImage/41321340272879",
+    "gid://shopify/MediaImage/41321340502255",
+    "gid://shopify/MediaImage/41321340862703",
+    "gid://shopify/MediaImage/41321341616367",
+    "gid://shopify/MediaImage/41321341878511",
+    "gid://shopify/MediaImage/41321342599407",
+    "gid://shopify/MediaImage/41321342894319",
+    "gid://shopify/MediaImage/41321343287535",
+    "gid://shopify/MediaImage/41321343582447",
+    "gid://shopify/MediaImage/41321343713519",
+    "gid://shopify/MediaImage/41321344172271",
+    "gid://shopify/MediaImage/41321344237807",
+    "gid://shopify/MediaImage/41321344499951",
+    "gid://shopify/MediaImage/41321344827631",
+    "gid://shopify/MediaImage/41321344925935",
+    "gid://shopify/MediaImage/41321345188079",
+    "gid://shopify/MediaImage/41321341419759"
+   ],
+   "color_renames": {
+    "Colorful Bracelet": "Multicolor Bracelet",
+    "White Bracelet": "Silver Bracelet",
+    "Bronze  Bracelet": "Bronze Bracelet",
+    "Blue Necklace": "Indigo Necklace",
+    "Colorful Necklace": "Multicolor Necklace",
+    "Bronze  Necklace": "Bronze Necklace",
+    "Dark red Necklace": "Dark Red Necklace"
+   },
+   "option_renames": {},
+   "added_media": []
+  },
+  "flags": [
+   "brand logo",
+   "photo color mismatch",
+   "lengths missing"
+  ],
+  "notes": "Supplier title says \"titanium steel\" and the spec says stainless steel; the copy says stainless steel. The chain is gold-tone in every photo, but no plating is named, so no karat is claimed. Bead material is not stated; the copy says only faceted beads. \"White Bracelet\" (supplier \"White K\") shows silver-gray metallic beads on the gold-tone chain, matching the Silver Necklace, so it is renamed Silver Bracelet; \"Blue Necklace\" shows deep violet-blue beads, renamed Indigo; \"Colorful\" renamed Multicolor; double spaces and \"Dark red\" fixed. Image 5 carries a red \"ZOGXIN\" logo, so it goes last. No bracelet or necklace lengths are given anywhere; worth asking the supplier. The option still mixes color and item (\"Red Bracelet\"); a separate Style option would be cleaner but needs a variant rebuild."
+ },
+ {
+  "product_id": "gid://shopify/Product/9757660250351",
+  "handle": "zodiac-time-gem-luminous-necklace-for-women-simple-silver-moon-pendant-choker",
+  "before": {
+   "title": "Zodiac Time Gem Luminous Necklace for Women, Simple Silver Moon Pendant Choker",
+   "productType": "",
+   "tags": [],
+   "vendor": "eprolo",
+   "media_order": [
+    "gid://shopify/MediaImage/41321339420911",
+    "gid://shopify/MediaImage/41321340207343",
+    "gid://shopify/MediaImage/41321340403951",
+    "gid://shopify/MediaImage/41321340731631",
+    "gid://shopify/MediaImage/41321341321455",
+    "gid://shopify/MediaImage/41321341550831",
+    "gid://shopify/MediaImage/41321342009583",
+    "gid://shopify/MediaImage/41321342664943",
+    "gid://shopify/MediaImage/41321342959855",
+    "gid://shopify/MediaImage/41321343189231",
+    "gid://shopify/MediaImage/41321343549679",
+    "gid://shopify/MediaImage/41321343680751",
+    "gid://shopify/MediaImage/41321343779055",
+    "gid://shopify/MediaImage/41321344205039",
+    "gid://shopify/MediaImage/41321344401647",
+    "gid://shopify/MediaImage/41321344532719",
+    "gid://shopify/MediaImage/41321344860399"
+   ],
+   "alts": {
+    "gid://shopify/MediaImage/41321339420911": "",
+    "gid://shopify/MediaImage/41321340207343": "",
+    "gid://shopify/MediaImage/41321340403951": "",
+    "gid://shopify/MediaImage/41321340731631": "",
+    "gid://shopify/MediaImage/41321341321455": "",
+    "gid://shopify/MediaImage/41321341550831": "",
+    "gid://shopify/MediaImage/41321342009583": "",
+    "gid://shopify/MediaImage/41321342664943": "",
+    "gid://shopify/MediaImage/41321342959855": "",
+    "gid://shopify/MediaImage/41321343189231": "",
+    "gid://shopify/MediaImage/41321343549679": "",
+    "gid://shopify/MediaImage/41321343680751": "",
+    "gid://shopify/MediaImage/41321343779055": "",
+    "gid://shopify/MediaImage/41321344205039": "",
+    "gid://shopify/MediaImage/41321344401647": "",
+    "gid://shopify/MediaImage/41321344532719": "",
+    "gid://shopify/MediaImage/41321344860399": ""
+   },
+   "options": {
+    "Color": [
+     "Libra",
+     "Aquarius",
+     "Gemini",
+     "Pisces",
+     "Cancer",
+     "Capricorn",
+     "Leo",
+     "Sagittarius",
+     "Taurus",
+     "virgo",
+     "Aries",
+     "Scorpio"
+    ]
+   }
+  },
+  "after": {
+   "title": "Zodiac Crescent Moon Necklace",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "pendant",
+    "zodiac",
+    "moon",
+    "constellation",
+    "alloy",
+    "silver-tone",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove",
+   "media_order": [
+    "gid://shopify/MediaImage/41321340403951",
+    "gid://shopify/MediaImage/41321340731631",
+    "gid://shopify/MediaImage/41321341550831",
+    "gid://shopify/MediaImage/41321342009583",
+    "gid://shopify/MediaImage/41321342664943",
+    "gid://shopify/MediaImage/41321342959855",
+    "gid://shopify/MediaImage/41321343189231",
+    "gid://shopify/MediaImage/41321343549679",
+    "gid://shopify/MediaImage/41321343680751",
+    "gid://shopify/MediaImage/41321343779055",
+    "gid://shopify/MediaImage/41321344205039",
+    "gid://shopify/MediaImage/41321344401647",
+    "gid://shopify/MediaImage/41321344532719",
+    "gid://shopify/MediaImage/41321344860399",
+    "gid://shopify/MediaImage/41321339420911",
+    "gid://shopify/MediaImage/41321340207343",
+    "gid://shopify/MediaImage/41321341321455"
+   ],
+   "color_renames": {
+    "virgo": "Virgo"
+   },
+   "option_renames": {
+    "Color": "Zodiac Sign"
+   },
+   "added_media": []
+  },
+  "flags": [
+   "collage",
+   "text overlay",
+   "glow claim dropped",
+   "off-brand"
+  ],
+  "notes": "Supplier title says \"Luminous\" and \"Time Gem\"; the spec (alloy, electroplated) does not state glow-in-the-dark or the cabochon material, so the copy claims neither. Image 5 shows a plain white cabochon, possibly the glow face, but it matches no variant and goes last. Chain length: the spec says 51-60 cm, but the measurement image (2) says 46 cm / 18 in; the image is used. Pendant 40 mm, cabochon 20 mm from image 2. Image 1 is a collage and image 2 has text, both go last; lead is image 3 (largest clean shot, Aquarius). The option holds signs, not colors, so it is renamed Zodiac Sign and \"virgo\" re-cased. Variant photos assumed to match their sign (tiny printed labels). Printed-cabochon novelty look at a low price point; may read off-brand next to the apparel."
+ }
+]

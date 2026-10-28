@@ -1,0 +1,157 @@
+{
+  "product_id": "gid://shopify/Product/9756888498415",
+  "handle": "womens-elegant-color-block-stripe-knit-cardigan-with-lapel-slim-fit-top",
+  "original_title": "Women's Elegant Color-Block Stripe Knit Cardigan with Lapel Slim-Fit Top",
+  "current_title": "Women's Elegant Color-Block Stripe Knit Cardigan with Lapel Slim-Fit Top",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "knitwear",
+  "url": "https://emberandclove.com/products/womens-elegant-color-block-stripe-knit-cardigan-with-lapel-slim-fit-top",
+  "category": null,
+  "colors": [
+    "Striped"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Striped"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 49.48,
+  "price_max": 49.48,
+  "cost_min": 13.24,
+  "cost_max": 13.24,
+  "specs": {
+    "Pattern Type": "Contrast Stripes",
+    "SleeveLength": "Long Sleeve",
+    "Length": "Regular (50cm < Length ≤ 65cm)",
+    "Material": "Polyester, Viscose, Spandex Blend",
+    "Fabric": "Knitted",
+    "Closure Type": "Pullover / Cardigan",
+    "Fit Type": "Slim Fit",
+    "Color": "Striped",
+    "Size": "S, M, L",
+    "Bust": "74-82 cm",
+    "Type": "Sweater",
+    "Washing Care": "Hand Wash",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Shoulder Width",
+        "Bust",
+        "Length",
+        "Sleeve Length"
+      ],
+      [
+        "S",
+        "4",
+        "33",
+        "74",
+        "54",
+        "61"
+      ],
+      [
+        "M",
+        "6",
+        "34",
+        "78",
+        "55",
+        "62"
+      ],
+      [
+        "L",
+        "08/10",
+        "35.5",
+        "82",
+        "56.5",
+        "63.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/313D12EE46191CE472979185B2DF2FFE.jpg?v=1793047962",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3A4B8FB0FD40336646CAFC89F91A5DBE.jpg?v=1793047964",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D45BD633D9121F79BA59C47CA939982B.jpg?v=1793047966",
+      "altText": "",
+      "width": 1340,
+      "height": 1340
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BA92D59077EB470DCBA4C66C93CE66CF.jpg?v=1793047967",
+      "altText": "",
+      "width": 1785,
+      "height": 1785
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6BC42C9F6D56E76F8CABAEA6E4B6B175.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B8ACED0F9554B289F70D619DFB394139.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2A956807346E4C742D604269A2AADFF6.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EC8A080CF4718A028BC3EA8F67FEEE25.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CF79BEE4CF2D29AC6EF1C6EFCD7D556E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EE36C068578B0307DB7D27C1763ED7EB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/39196472143E4B1499131659070DF8A7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A154DED8E9E137486F2A157343755E17.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6D43DE273F491C9235DE583A829EBC11.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0231504DC9C67DF60CFE5A5D4898A984.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Striped / S",
+      "sku": "3865010510E7464CBABC885C9776507C",
+      "price": "49.48",
+      "cost": "13.24",
+      "options": {
+        "Color": "Striped",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Striped / M",
+      "sku": "78D8DDE371514C03AFE846DAC7752266",
+      "price": "49.48",
+      "cost": "13.24",
+      "options": {
+        "Color": "Striped",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Striped / L",
+      "sku": "CFD756C5D2D34021B943CCB48C0A2D9C",
+      "price": "49.48",
+      "cost": "13.24",
+      "options": {
+        "Color": "Striped",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Pattern Type:Contrast Stripes</strong></p><p><strong>SleeveLength:Long Sleeve</strong></p><p><strong>Length:Regular (50cm &lt; Length ≤ 65cm)</strong></p><p><strong>Material:Polyester, Viscose, Spandex Blend</strong></p><p><strong>Fabric:Knitted</strong></p><p><strong>Closure Type:Pullover / Cardigan</strong></p><p><strong>Fit Type:Slim Fit</strong></p><p><strong>Color:Striped</strong></p><p><strong>Size:S, M, L</strong></p><p><strong>Bust:74-82 cm</strong></p><p><strong>Type:Sweater</strong></p><p><strong>Washing Care:Hand Wash</strong></p><p><strong>Unit：cm</strong></p><table width=\"-76\">\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Shoulder Width</th>\n<th>Bust</th>\n<th>Length</th>\n<th>Sleeve Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>33</td>\n<td>74</td>\n<td>54</td>\n<td>61</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>34</td>\n<td>78</td>\n<td>55</td>\n<td>62</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>35.5</td>\n<td>82</td>\n<td>56.5</td>\n<td>63.5</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6BC42C9F6D56E76F8CABAEA6E4B6B175.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B8ACED0F9554B289F70D619DFB394139.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2A956807346E4C742D604269A2AADFF6.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EC8A080CF4718A028BC3EA8F67FEEE25.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CF79BEE4CF2D29AC6EF1C6EFCD7D556E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EE36C068578B0307DB7D27C1763ED7EB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/39196472143E4B1499131659070DF8A7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A154DED8E9E137486F2A157343755E17.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6D43DE273F491C9235DE583A829EBC11.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0231504DC9C67DF60CFE5A5D4898A984.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

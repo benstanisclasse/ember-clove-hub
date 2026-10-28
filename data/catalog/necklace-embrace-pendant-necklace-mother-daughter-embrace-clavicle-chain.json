@@ -1,0 +1,139 @@
+{
+  "product_id": "gid://shopify/Product/9757660119279",
+  "handle": "necklace-embrace-pendant-necklace-mother-daughter-embrace-clavicle-chain",
+  "original_title": "Necklace Embrace Pendant Necklace Mother-Daughter Embrace Clavicle Chain",
+  "current_title": "Necklace Embrace Pendant Necklace Mother-Daughter Embrace Clavicle Chain",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/necklace-embrace-pendant-necklace-mother-daughter-embrace-clavicle-chain",
+  "category": null,
+  "colors": [
+    "White with Gold",
+    "White and Black",
+    "Short white",
+    "Short White with Gold"
+  ],
+  "sizes": [],
+  "options": {
+    "Color": [
+      "White with Gold",
+      "White and Black",
+      "Short white",
+      "Short White with Gold"
+    ]
+  },
+  "price_min": 10.16,
+  "price_max": 10.24,
+  "cost_min": 0.56,
+  "cost_max": 0.6,
+  "specs": {
+    "Material": "Alloy",
+    "Finishing Process": "Electroplating",
+    "Brand": "None",
+    "Design Style": "Cartoon Character",
+    "Chain Style": "Polished Chain",
+    "Multi-Layer": "No",
+    "Pendant Material": "Alloy",
+    "Trend Element": "Ring-shaped",
+    "Style": "Sweet & Cool Style",
+    "Weight": "4",
+    "Style Category": "Individual Fashion Trend",
+    "Product Category": "Necklace",
+    "Target Audience": "Unisex",
+    "Trend Element Category": "Geometric"
+  },
+  "description_text": [],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A8E0F5B172D1EB7058D42B76782DB935.jpg?v=1793071863",
+      "altText": "",
+      "width": 696,
+      "height": 696
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1483F904E9F6305FB54A0142287D4FC6.jpg?v=1793071865",
+      "altText": "",
+      "width": 790,
+      "height": 790
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A662EB52720EFE219193D9DED383F371.jpg?v=1793071867",
+      "altText": "",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/04C3183FA6A21539FE1CFABEE3163C83.jpg?v=1793071869",
+      "altText": "",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53299A3A10146EFF0D3701F4CF19D8AD.jpg?v=1793071871",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E3939FAC63BD3C85DED079D96F926048.jpg?v=1793071872",
+      "altText": "",
+      "width": 1445,
+      "height": 1280
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F20C632F43017EC960EAEEFE9AE6E533.jpg?v=1793071874",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/2DAE3258C19D1D7E17AB049414F7862B.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/4F54E88A8AC3F90D39CF6CE82B577878.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/44CC3B7CEA614770828EA324CFA3D841.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/8A464A1A11EB3B799CE1ADFD206A99A6.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/3F0E90257A66A1EABAB99C62FBD9A99D.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White with Gold",
+      "sku": "0D424F5A477D458894A31E14B86C1480",
+      "price": "10.16",
+      "cost": "0.56",
+      "options": {
+        "Color": "White with Gold"
+      }
+    },
+    {
+      "title": "White and Black",
+      "sku": "26E5A0B63F0C4B6D9AB04EF715D29E73",
+      "price": "10.16",
+      "cost": "0.56",
+      "options": {
+        "Color": "White and Black"
+      }
+    },
+    {
+      "title": "Short white",
+      "sku": "CE6C5723671448978BD8A05A00728B63",
+      "price": "10.24",
+      "cost": "0.6",
+      "options": {
+        "Color": "Short white"
+      }
+    },
+    {
+      "title": "Short White with Gold",
+      "sku": "0122A74A085F4C2D9CFB4CBD8C1F3C53",
+      "price": "10.24",
+      "cost": "0.6",
+      "options": {
+        "Color": "Short White with Gold"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Material: Alloy</strong></p><p><strong>Finishing Process: Electroplating</strong></p><p><strong>Brand: None</strong></p><p><strong>Design Style: Cartoon Character</strong></p><p><strong>Chain Style: Polished Chain</strong></p><p><strong>Multi-Layer: No</strong></p><p><strong>Pendant Material: Alloy</strong></p><p><strong>Trend Element: Ring-shaped</strong></p><p><strong>Style: Sweet &amp; Cool Style</strong></p><p><strong>Weight: 4</strong></p><p><strong>Style Category: Individual Fashion Trend</strong></p><p><strong>Product Category: Necklace</strong></p><p><strong>Target Audience: Unisex</strong></p><p><strong>Trend Element Category: Geometric</strong></p><p><img alt=\"hGiXj/2ty9QKaif3SOV6/yeJOdrPc3NsVAfs\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/2DAE3258C19D1D7E17AB049414F7862B.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/4F54E88A8AC3F90D39CF6CE82B577878.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/44CC3B7CEA614770828EA324CFA3D841.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/8A464A1A11EB3B799CE1ADFD206A99A6.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/3F0E90257A66A1EABAB99C62FBD9A99D.jpg\"> \n </p>",
+  "cataloged_at": "2026-10-26T23:35:48"
+}

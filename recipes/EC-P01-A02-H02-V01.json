@@ -1,0 +1,282 @@
+{
+  "creative_id": "EC-P01-A02-H02-V01",
+  "parent_id": "EC-P01-A02-H01-V01",
+  "changed_field": "hook_text",
+  "experiment_id": "C1-P01-A02",
+  "product_id": "gid://shopify/Product/9751656071407",
+  "platform": "tiktok",
+  "length_s": 12,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "The slit is the whole point.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "pov",
+    "opening_visual": "lifestyle",
+    "setting": "outdoor",
+    "creator": "on-camera",
+    "on_screen_text": "captions+hook",
+    "voice": "none",
+    "pace_cuts_per_15s": ""
+  },
+  "steps": {
+    "post_production": [
+      {
+        "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+        "source_video": "assets\\EC-P01-A02-H01-V01\\base_raw.mp4",
+        "hook_overlay": {
+          "text": "The slit is the whole point.",
+          "start": 0.0,
+          "end": 3.2
+        },
+        "captions": [
+          [
+            3.3,
+            7.4,
+            "Cable knit · fitted through the hip"
+          ],
+          [
+            7.5,
+            12.0,
+            "Front slit for a real stride"
+          ]
+        ],
+        "end_card": {
+          "product": "Cable Knit Mock Neck Midi Dress",
+          "price": "$52.99",
+          "line1": "7 colors · Sizes S–XL",
+          "line2": "Free US shipping over $70",
+          "cta": "Shop now"
+        },
+        "base_seconds": 12.04,
+        "end_card_seconds": 2.5,
+        "total_seconds": 14.54,
+        "layers": [
+          [
+            0.0,
+            3.2
+          ],
+          [
+            3.3,
+            7.4
+          ],
+          [
+            7.5,
+            12.0
+          ]
+        ],
+        "music": "none in file; add from TikTok commercial music library at ad creation",
+        "recorded_at": "2026-10-24T20:57:21",
+        "credits": 0,
+        "usd": 0.0,
+        "superseded": true
+      },
+      {
+        "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+        "source_video": "assets\\EC-P01-A02-H01-V01\\base_raw.mp4",
+        "hook_overlay": {
+          "text": "The slit is the whole point.",
+          "start": 0.0,
+          "end": 3.2,
+          "y": 560,
+          "size": 46
+        },
+        "captions": [
+          [
+            3.3,
+            7.4,
+            "Cable knit, fitted at the hip"
+          ],
+          [
+            7.5,
+            12.0,
+            "Front slit for a real stride"
+          ]
+        ],
+        "end_card": {
+          "product": "Cable Knit Mock Neck Midi Dress",
+          "price": "$52.99",
+          "line1": "7 colors · Sizes S–XL",
+          "line2": "Free US shipping over $70",
+          "cta": "Shop now"
+        },
+        "base_seconds": 12.04,
+        "end_card_seconds": 2.5,
+        "total_seconds": 14.54,
+        "layers": [
+          [
+            0.0,
+            3.2
+          ],
+          [
+            3.3,
+            7.4
+          ],
+          [
+            7.5,
+            12.0
+          ]
+        ],
+        "music": "none in file; add from TikTok commercial music library at ad creation",
+        "recorded_at": "2026-10-24T20:58:54",
+        "credits": 0,
+        "usd": 0.0,
+        "superseded": true
+      },
+      {
+        "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+        "source_video": "assets\\EC-P01-A02-H01-V01\\base_raw.mp4",
+        "hook_overlay": {
+          "text": "The slit is the whole point.",
+          "start": 0.0,
+          "end": 3.2,
+          "y": 560,
+          "size": 46
+        },
+        "captions": [
+          [
+            3.3,
+            7.4,
+            "Cable knit, fitted at the hip"
+          ],
+          [
+            7.5,
+            12.0,
+            "Front slit for a real stride"
+          ]
+        ],
+        "end_card": {
+          "product": "Cable Knit Mock Neck Midi Dress",
+          "price": "$52.99",
+          "line1": "7 colors · Sizes S–XL",
+          "line2": "Free US shipping over $70",
+          "cta": "Shop now"
+        },
+        "base_seconds": 12.04,
+        "end_card_seconds": 2.5,
+        "total_seconds": 14.54,
+        "layers": [
+          [
+            0.0,
+            3.2
+          ],
+          [
+            3.3,
+            7.4
+          ],
+          [
+            7.5,
+            12.0
+          ]
+        ],
+        "music": "none in file; add from TikTok commercial music library at ad creation",
+        "recorded_at": "2026-10-24T20:59:45",
+        "credits": 0,
+        "usd": 0.0,
+        "superseded": true
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 0.0
+  },
+  "status": "REJECTED",
+  "created_at": "2026-10-24T20:57:13",
+  "video_url": null,
+  "local_path": "assets\\final\\EC-P01-A02-H02-V01.mp4",
+  "qa": {
+    "checked_at": "2026-10-24T20:24:10",
+    "result": "pass",
+    "notes": "caramel color, ribbed mock neck, ribbed waist and cuffs, vertical cables with diagonal wrap seam, front slit, midi length all match the store photo; hands clean; steady walk-toward-camera shot, no push-in at end; AI-generated model (not the supplier model)"
+  },
+  "tiktok_video_id": null,
+  "tiktok_ad_id": null,
+  "meta_ad_id": null,
+  "reuse_from_parent": {
+    "concept": {
+      "angle": "Moves with you (front slit, easy to walk in)",
+      "product": "Cable Knit Mock Neck Midi Dress",
+      "color": "Caramel",
+      "notes": "AI-generated model; label as AI-generated on TikTok",
+      "recorded_at": "2026-10-24T20:19:57",
+      "credits": 0,
+      "usd": 0.0
+    },
+    "product_reference": {
+      "source_photo": "Shopify 1E3E6FA7B028205FCC94E89C7CF6CC63.jpg (caramel street shot)",
+      "references": [
+        "ref1_dress_neck_down.jpg",
+        "ref2_cable_slit_closeup.jpg"
+      ],
+      "processing": "cropped collar-down to exclude the supplier model's face",
+      "recorded_at": "2026-10-24T20:19:57",
+      "credits": 0,
+      "usd": 0.0
+    },
+    "clip": {
+      "model": "kling-video/v4.0/reference-to-video",
+      "prompt": "Vertical 9:16 fashion video. An AI-generated young adult woman (not any real person) wears the exact caramel-brown cable-knit midi sweater dress shown in @image_1: mock neck, ribbed waistband, long sleeves, vertical cable-knit pattern down the skirt, fitted through the hip, midi length, and a front slit on her right side exactly as shown in @image_2. She walks confidently toward the camera along a quiet city sidewalk with pale concrete walls in soft overcast autumn daylight, wearing black knee-high boots and carrying a black slouchy leather bag. Her natural stride opens the front slit as she walks. Smooth handheld tracking shot at eye level, ending with a slow push-in on the cable-knit texture and the slit. Keep the dress color, knit pattern, neckline, waistband and slit identical to the references. No text, no logos.",
+      "duration": 12,
+      "resolution": "720p",
+      "aspect_ratio": "9:16",
+      "request_id": "3af0f1bc-47eb-4002-a796-dd7948e13209",
+      "status": "completed",
+      "cost_note": "actual: open.higgsfield.ai billing 2026-10-25, usage -1.60",
+      "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/3af0f1bc-47eb-4002-a796-dd7948e13209/997a6a84-969f-4827-827b-8a35a98049af.mp4",
+      "recorded_at": "2026-10-24T20:23:01",
+      "credits": 0,
+      "usd": 1.6
+    },
+    "post_production": {
+      "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+      "source_video": "assets\\EC-P01-A02-H01-V01\\base_raw.mp4",
+      "hook_overlay": {
+        "text": "POV: a sweater dress you can actually walk in",
+        "start": 0.0,
+        "end": 3.2
+      },
+      "captions": [
+        [
+          3.3,
+          7.4,
+          "Cable knit · fitted through the hip"
+        ],
+        [
+          7.5,
+          12.0,
+          "Front slit for a real stride"
+        ]
+      ],
+      "end_card": {
+        "product": "Cable Knit Mock Neck Midi Dress",
+        "price": "$52.99",
+        "line1": "7 colors · Sizes S–XL",
+        "line2": "Free US shipping over $70",
+        "cta": "Shop now"
+      },
+      "base_seconds": 12.04,
+      "end_card_seconds": 2.5,
+      "total_seconds": 14.54,
+      "layers": [
+        [
+          0.0,
+          3.2
+        ],
+        [
+          3.3,
+          7.4
+        ],
+        [
+          7.5,
+          12.0
+        ]
+      ],
+      "music": "none in file; add from TikTok commercial music library at ad creation",
+      "recorded_at": "2026-10-24T20:57:13",
+      "credits": 0,
+      "usd": 0.0
+    }
+  },
+  "status_reason": "Owner 2026-10-24: no text/end-card edits; use generated videos as delivered"
+}

@@ -1,0 +1,119 @@
+{
+ "query": "mutation($p0: ProductUpdateInput!, $p1: ProductUpdateInput!, $p2: ProductUpdateInput!, $p3: ProductUpdateInput!, $p4: ProductUpdateInput!, $p5: ProductUpdateInput!) {\n  u0: productUpdate(product: $p0) { product { id title } userErrors { field message } }\n  u1: productUpdate(product: $p1) { product { id title } userErrors { field message } }\n  u2: productUpdate(product: $p2) { product { id title } userErrors { field message } }\n  u3: productUpdate(product: $p3) { product { id title } userErrors { field message } }\n  u4: productUpdate(product: $p4) { product { id title } userErrors { field message } }\n  u5: productUpdate(product: $p5) { product { id title } userErrors { field message } }\n}",
+ "variables": {
+  "p0": {
+   "id": "gid://shopify/Product/9757659988207",
+   "title": "Puffy Heart Ball Chain Necklace",
+   "descriptionHtml": "<p><strong>A bold puffed heart pendant on a chunky ball chain, polished to a mirror shine.</strong></p><ul><li>Stainless steel, plain silver-tone or gold-tone plated</li><li>Puffed heart pendant about 1.4 in tall; round beads about 5/16 in across</li><li>Extender chain at the clasp; also offered as a gold-tone bracelet</li></ul><p>Necklace about 16 in + 2 in extender</p>",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "bracelet",
+    "heart",
+    "pendant",
+    "ball chain",
+    "stainless steel",
+    "gold-tone",
+    "silver-tone",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p1": {
+   "id": "gid://shopify/Product/9757660053743",
+   "title": "Pearl Daisy Chain Choker",
+   "descriptionHtml": "<p><strong>A fine gold-tone chain set with five tiny daisies of pearl-look beads that sit close at the collarbone.</strong></p><ul><li>Copper with gold-tone plating</li><li>Five evenly spaced pearl-bead flowers with gold-tone centers on a fine cable chain</li><li>Lobster clasp and extender chain with a small charm at the end</li></ul><p>Chain about 14 in + 2 in extender</p>",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "choker",
+    "pearl",
+    "flower",
+    "daisy",
+    "copper",
+    "gold-tone",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p2": {
+   "id": "gid://shopify/Product/9757660086511",
+   "title": "Oval Stone Curb Chain Choker",
+   "descriptionHtml": "<p><strong>A chunky gold-tone curb chain choker centered on an oval cabochon stone framed by tiny rhinestones.</strong></p><ul><li>Stainless steel with gold-tone plating, rhinestone accents</li><li>Oval cabochon in green, red or cream set in a curved center bar</li><li>Curb chain about 0.2 in wide, extender chain at the clasp</li></ul><p>Chain about 16 in + 2 in extender</p>",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "choker",
+    "curb chain",
+    "rhinestone",
+    "stone",
+    "stainless steel",
+    "gold-tone",
+    "green",
+    "red",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p3": {
+   "id": "gid://shopify/Product/9757660119279",
+   "title": "Embrace Figure Pendant Necklace",
+   "descriptionHtml": "<p><strong>A small sculpted pendant of two figures wrapped in a hug, on a fine silver-tone chain.</strong></p><ul><li>Polished plated alloy, silver-tone with gold-tone or black accents</li><li>Couple design, or mother-and-child design with a smaller figure held</li><li>Pendant hangs from a small bail on a fine chain</li></ul><p>One size · chain length not stated by the supplier</p>",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "pendant",
+    "hug",
+    "gift",
+    "alloy",
+    "silver-tone",
+    "gold-tone",
+    "black",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p4": {
+   "id": "gid://shopify/Product/9757660184815",
+   "title": "Beaded Daisy Bracelet & Necklace",
+   "descriptionHtml": "<p><strong>A dainty gold-tone chain dotted with faceted bead daisies and tiny gold-tone balls, as a bracelet or a matching necklace.</strong></p><ul><li>Gold-tone stainless steel chain with small faceted beads</li><li>Daisies in one color or mixed colors, little ball stations between them</li><li>Lobster clasp with an extender chain</li></ul><p>Bracelet or necklace · lengths not stated by the supplier</p>",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "bracelet",
+    "necklace",
+    "beaded",
+    "flower",
+    "daisy",
+    "stainless steel",
+    "gold-tone",
+    "multicolor",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p5": {
+   "id": "gid://shopify/Product/9757660250351",
+   "title": "Zodiac Crescent Moon Necklace",
+   "descriptionHtml": "<p><strong>A filigree crescent moon cradling a round domed pendant printed with a zodiac sign's constellation.</strong></p><ul><li>Silver-tone plated alloy with a domed cabochon over the print</li><li>Openwork swirl moon, sign name in small print, all 12 signs</li><li>Pendant about 1.6 in tall, cabochon about 0.8 in across</li></ul><p>Chain about 18 in, lobster clasp</p>",
+   "productType": "Accessories",
+   "tags": [
+    "jewelry",
+    "necklace",
+    "pendant",
+    "zodiac",
+    "moon",
+    "constellation",
+    "alloy",
+    "silver-tone",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  }
+ }
+}

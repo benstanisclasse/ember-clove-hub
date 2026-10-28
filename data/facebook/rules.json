@@ -1,0 +1,53 @@
+{
+ "_note": "Facebook Page photo posts (scripts/facebook_photos.py). Owner 2026-10-27: pictures only, no Ember backstory; 2 posts weekdays, 1 weekends. auto_publish stays false until the owner says to post weekly without review; set auto_publish_quote to their words.",
+ "vendor": "Ember & Clove",
+ "store_url": "https://emberandclove.com",
+ "timezone": "America/New_York",
+ "slots_weekday": [
+  "09:00",
+  "19:00"
+ ],
+ "slots_weekend": [
+  "10:00"
+ ],
+ "outfit_every": 4,
+ "no_repeat_days": 14,
+ "max_photos": 4,
+ "cold_season": [
+  "10-15",
+  "03-15"
+ ],
+ "warm_only_types": [],
+ "warm_only_tags": [
+  "summer",
+  "style-sandals"
+ ],
+ "warm_only_title_words": [
+  "peep toe",
+  "peep-toe",
+  "slingback",
+  "sandal",
+  "slide",
+  "mule",
+  "flip flop",
+  "open toe",
+  "open-toe",
+  "thong",
+  "short sleeve",
+  "sleeveless",
+  "tank",
+  "one-shoulder",
+  "one shoulder",
+  "off-shoulder",
+  "off shoulder",
+  "strapless",
+  "cami",
+  "halter",
+  "tube top"
+ ],
+ "cold_only_tags": [],
+ "skip_handles": [],
+ "plan_ahead_days": 3,
+ "auto_publish": false,
+ "auto_publish_quote": ""
+}

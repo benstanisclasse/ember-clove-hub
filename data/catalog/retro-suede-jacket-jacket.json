@@ -1,0 +1,213 @@
+{
+  "product_id": "gid://shopify/Product/9757092675823",
+  "handle": "retro-suede-jacket-jacket",
+  "original_title": "Retro suede jacket jacket",
+  "current_title": "Retro suede jacket jacket",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/retro-suede-jacket-jacket",
+  "category": null,
+  "colors": [
+    "Dark brown",
+    "Light brown"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Dark brown",
+      "Light brown"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 60.9,
+  "price_max": 60.9,
+  "cost_min": 14.49,
+  "cost_max": 14.49,
+  "specs": {
+    "Sleeve Type": "Regular Sleeve",
+    "Popular element": "Pocket",
+    "Thickness": "Medium",
+    "Collar type": "Flip collar",
+    "Fabric name": "Polyester",
+    "Main fabric composition": "90% (inclusive) -95% (exclusive)",
+    "Pattern": "Solid color",
+    "Type": "Loose fit",
+    "Craftsmanship": "Collage/Splicing",
+    "Clothing length": "Medium length (65cm",
+    "Sleeve length": "Long sleeves",
+    "Color": "dark brown, light brown",
+    "Size": "S, M, L",
+    "Style type": "Fresh and sweet",
+    "Front placket": "single breasted buckle",
+    "Style": "Princess style",
+    "unit": "CM"
+  },
+  "description_text": [
+    "size",
+    "、"
+  ],
+  "size_tables": [
+    [
+      [
+        "size",
+        "length",
+        "bust",
+        "shoulder",
+        "sleeve"
+      ],
+      [
+        "S",
+        "63",
+        "102",
+        "43",
+        "55"
+      ],
+      [
+        "M",
+        "64",
+        "106",
+        "44",
+        "56"
+      ],
+      [
+        "L",
+        "65",
+        "110",
+        "45",
+        "57"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F03F8203746D5250C0CFEF9DC1B740EE.jpg?v=1793049950",
+      "altText": "",
+      "width": 755,
+      "height": 748
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ECF3575CCC5BB7D8B577E45D3B41FFA8.jpg?v=1793049952",
+      "altText": "",
+      "width": 745,
+      "height": 745
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F4D07DAF7A580B72D36D801805FE4BD6.jpg?v=1793049954",
+      "altText": "",
+      "width": 745,
+      "height": 745
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0652C4A5F66629840E3E2CF128384592.jpg?v=1793049956",
+      "altText": "",
+      "width": 744,
+      "height": 744
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2445A9A5D792281B59146FBFE6266EAD.jpg?v=1793049958",
+      "altText": "",
+      "width": 808,
+      "height": 808
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E97C7E32EFEEA203A08C28C000726339.jpg?v=1793049960",
+      "altText": "",
+      "width": 862,
+      "height": 806
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8305EE48900D4E9F867B35CCC9FAD59D.jpg?v=1793049962",
+      "altText": "",
+      "width": 793,
+      "height": 789
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/4859C375F0314B5ACFCF71FDAC9D372C.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/9AFCFE2FA4742314AFA4326FB356BF72.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/7A224B8AC38AE245C09D38341F0752B1.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/0A1F152B3E0B6ED25E7F739959E6538F.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/9613D988D39E97510FA79E6EAD62B26E.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/12AE84D44CCAD80E16F4D43E9EF7F3D5.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/CB6094807FD765EDCD89A4F13C318259.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/20EBB82192595EA2337A9EA29C1E6F91.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/02D341D44F9514360FC07863466AE9C5.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/A7E9599CF91B8F785ECBBFAFF6432EAB.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/FB5AD39D9599500040185B72AB3DE36A.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/5AB46B349D9C6DA98260C714DC145487.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/873FE00C6B7E1B6AB12EB728FE97E8AA.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Dark brown / S",
+      "sku": "4A2F8CD39C844F4AA1EA056E67AE6214",
+      "price": "60.90",
+      "cost": "14.49",
+      "options": {
+        "color": "Dark brown",
+        "size": "S"
+      }
+    },
+    {
+      "title": "Dark brown / M",
+      "sku": "4423A6B023AF4E65A9A1BFF2ADF2D8F6",
+      "price": "60.90",
+      "cost": "14.49",
+      "options": {
+        "color": "Dark brown",
+        "size": "M"
+      }
+    },
+    {
+      "title": "Dark brown / L",
+      "sku": "4A83FAE91E794057B3DF4A5C28A51E5A",
+      "price": "60.90",
+      "cost": "14.49",
+      "options": {
+        "color": "Dark brown",
+        "size": "L"
+      }
+    },
+    {
+      "title": "Light brown / S",
+      "sku": "387E66271EA64E919AB9D573ACDB5E13",
+      "price": "60.90",
+      "cost": "14.49",
+      "options": {
+        "color": "Light brown",
+        "size": "S"
+      }
+    },
+    {
+      "title": "Light brown / M",
+      "sku": "E74E5F3739F641C1874ED937D86616E2",
+      "price": "60.90",
+      "cost": "14.49",
+      "options": {
+        "color": "Light brown",
+        "size": "M"
+      }
+    },
+    {
+      "title": "Light brown / L",
+      "sku": "3A9EE0C4331B4352A59206EE7667DB13",
+      "price": "60.90",
+      "cost": "14.49",
+      "options": {
+        "color": "Light brown",
+        "size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p><br></p><p><br></p><p><br></p><p><span style=\"font-size: 24px;\">Sleeve Type: Regular Sleeve</span></p><p><span style=\"font-size: 24px;\">Popular element: Pocket</span></p><p><span style=\"font-size: 24px;\">Thickness: Medium</span></p><p><span style=\"font-size: 24px;\">Collar type: Flip collar</span></p><p><span style=\"font-size: 24px;\">Fabric name: Polyester</span></p><p><span style=\"font-size: 24px;\">Main fabric composition: polyester (polyester fiber)</span></p><p><span style=\"font-size: 24px;\">Pattern: Solid color</span></p><p><span style=\"font-size: 24px;\">Type: Loose fit</span></p><p><span style=\"font-size: 24px;\">Craftsmanship: Collage/Splicing</span></p><p><span style=\"font-size: 24px;\">Clothing length: Medium length (65cm&lt;clothing length ≤ 80cm)</span></p><p><span style=\"font-size: 24px;\">Sleeve length: Long sleeves</span></p><p><span style=\"font-size: 24px;\">Color: dark brown, light brown</span></p><p><span style=\"font-size: 24px;\">Size: S, M, L</span></p><p><span style=\"font-size: 24px;\">Style type: Fresh and sweet</span></p><p><span style=\"font-size: 24px;\">Front placket: single breasted buckle</span></p><p><span style=\"font-size: 24px;\">Main fabric composition: 90% (inclusive) -95% (exclusive)</span></p><p><span style=\"font-size: 24px;\">Style: Princess style</span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\">size</span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\">unit：CM</span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\"></span></p><table><tbody>\n<tr class=\"firstRow\">\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">size</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">length</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">bust</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">shoulder</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">sleeve</td>\n</tr>\n<tr>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">S</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">63</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">102</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">43</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">55</td>\n</tr>\n<tr>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">M</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">64</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">106</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">44</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">56</td>\n</tr>\n<tr>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">L</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">65</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">110</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">45</td>\n<td width=\"190\" valign=\"top\" style=\"word-break: break-all;\">57</td>\n</tr>\n<tr>\n<td width=\"190\" valign=\"top\"><br></td>\n<td width=\"190\" valign=\"top\"><br></td>\n<td width=\"190\" valign=\"top\"><br></td>\n<td width=\"190\" valign=\"top\"><br></td>\n<td width=\"190\" valign=\"top\"><br></td>\n</tr>\n</tbody></table><p><span style=\"font-size: 24px;\"></span><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p>、\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/4859C375F0314B5ACFCF71FDAC9D372C.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/9AFCFE2FA4742314AFA4326FB356BF72.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/7A224B8AC38AE245C09D38341F0752B1.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/0A1F152B3E0B6ED25E7F739959E6538F.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/9613D988D39E97510FA79E6EAD62B26E.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/12AE84D44CCAD80E16F4D43E9EF7F3D5.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/CB6094807FD765EDCD89A4F13C318259.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/20EBB82192595EA2337A9EA29C1E6F91.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/02D341D44F9514360FC07863466AE9C5.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/A7E9599CF91B8F785ECBBFAFF6432EAB.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/FB5AD39D9599500040185B72AB3DE36A.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/5AB46B349D9C6DA98260C714DC145487.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/873FE00C6B7E1B6AB12EB728FE97E8AA.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T23:02:48"
+}

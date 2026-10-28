@@ -1,0 +1,213 @@
+{
+  "product_id": "gid://shopify/Product/9756889612527",
+  "handle": "double-layer-embossed-long-sleeve-square-neck-t-shirt-for-women",
+  "original_title": "Double-Layer Embossed Long Sleeve Square Neck T-Shirt for Women",
+  "current_title": "Double-Layer Embossed Long Sleeve Square Neck T-Shirt for Women",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/double-layer-embossed-long-sleeve-square-neck-t-shirt-for-women",
+  "category": null,
+  "colors": [
+    "White",
+    "Black",
+    "Khaki"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "White",
+      "Black",
+      "Khaki"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 43.92,
+  "price_max": 43.92,
+  "cost_min": 12.06,
+  "cost_max": 12.06,
+  "specs": {
+    "Color": "White, Black, Khaki",
+    "Pattern Type": "Solid",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Square Neck",
+    "Length": "Regular (50cm < Length ≤ 65cm)",
+    "Fabric": "Nylon",
+    "Fit Type": "Slim Fit",
+    "Occasion": "Shopping, Daily, Dating",
+    "Gender": "Unisex",
+    "Size": "S, M, L",
+    "Details": "Bound Edge, Versatile, Outerwear",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Length",
+        "Bust",
+        "Sleeve Length",
+        "Shoulder Width"
+      ],
+      [
+        "S",
+        "4",
+        "48",
+        "78",
+        "66",
+        "29"
+      ],
+      [
+        "M",
+        "6",
+        "49",
+        "82",
+        "67",
+        "30"
+      ],
+      [
+        "L",
+        "08/10",
+        "50",
+        "86",
+        "68",
+        "31"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/93CEF946A085314032A7883A25CEC40C.jpg?v=1793047989",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1AE826F98FF9ECC1BB0E4415C4348D85.jpg?v=1793047995",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/87CBD4EB2BC9904C677AC4E6D1A271BA.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3710135818A9DA3E8D8E6627B728D305.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3DA88969A66F6B35850A1C9901D48FC4.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/676D43485F01C9DE141016EE7E487151.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/15254798192AF0B96F6EBF4F9C881AF0.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/31DAD97391C02B43D1036B5CAA4C1C34.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D80FA2125FA9ECCCE4B3BF3CF8E10819.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3F83C51400F24F159A02D32964697563.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/08C23D36EAC636A1950564536E7D005C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1CCDCB7C7413268DD4BD262377EA20CC.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/79ED58A1E29C1A70C9095F94D247F096.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8DF58272A2758DC892C8B3CB51E20470.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C1E8AD933CFF4CAE2D877D38E9D53B82.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E48B6526B9A4ED550FAE451970986515.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3A3B2A23A2B588EF7559A3D4550709AB.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White / S",
+      "sku": "FAB2CDE92FDC4EA4A5BB28E5AD733BE1",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "White",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White / M",
+      "sku": "D0C66E2B494F435E9C016F98D6EC3D50",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "White",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "White / L",
+      "sku": "2035BE46231849D2A21231228DDBD472",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "White",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "28D967AC26094FE98EE1DD2D91A14C50",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "5A43A36FCB1543619A40A00D346B3173",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "E5EAA7426DE647CEA868370FD509F706",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Khaki / S",
+      "sku": "913DC05603494463A17E6E82C07C41DC",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "Khaki",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Khaki / M",
+      "sku": "6FD5AE1108384C0AB2001BE1E0925F80",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "Khaki",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Khaki / L",
+      "sku": "43A9D310836B4D9292C9CB8C8D2A4718",
+      "price": "43.92",
+      "cost": "12.06",
+      "options": {
+        "Color": "Khaki",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Color: White, Black, Khaki</strong></p><p style=\"font-size: 16px;\"><strong>Pattern Type: Solid</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length: Long Sleeve</strong></p><p style=\"font-size: 16px;\"><strong>Neckline: Square Neck</strong></p><p style=\"font-size: 16px;\"><strong>Length: Regular (50cm &lt; Length ≤ 65cm)</strong></p><p style=\"font-size: 16px;\"><strong>Fabric: Nylon</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type: Slim Fit</strong></p><p style=\"font-size: 16px;\"><strong>Occasion: Shopping, Daily, Dating</strong></p><p style=\"font-size: 16px;\"><strong>Gender: Unisex</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M, L</strong></p><p style=\"font-size: 16px;\"><strong>Details: Bound Edge, Versatile, Outerwear</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Sleeve Length</th>\n<th>Shoulder Width</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>48</td>\n<td>78</td>\n<td>66</td>\n<td>29</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>49</td>\n<td>82</td>\n<td>67</td>\n<td>30</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>50</td>\n<td>86</td>\n<td>68</td>\n<td>31</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/87CBD4EB2BC9904C677AC4E6D1A271BA.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3710135818A9DA3E8D8E6627B728D305.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3DA88969A66F6B35850A1C9901D48FC4.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/676D43485F01C9DE141016EE7E487151.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/15254798192AF0B96F6EBF4F9C881AF0.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/31DAD97391C02B43D1036B5CAA4C1C34.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D80FA2125FA9ECCCE4B3BF3CF8E10819.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3F83C51400F24F159A02D32964697563.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/08C23D36EAC636A1950564536E7D005C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1CCDCB7C7413268DD4BD262377EA20CC.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/79ED58A1E29C1A70C9095F94D247F096.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8DF58272A2758DC892C8B3CB51E20470.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C1E8AD933CFF4CAE2D877D38E9D53B82.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E48B6526B9A4ED550FAE451970986515.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3A3B2A23A2B588EF7559A3D4550709AB.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

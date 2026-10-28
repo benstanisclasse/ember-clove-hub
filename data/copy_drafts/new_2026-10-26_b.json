@@ -1,0 +1,326 @@
+[
+ {
+  "handle": "black-lip-print-loose-womens-fleece-sweatshirt",
+  "product_id": "gid://shopify/Product/9756888596719",
+  "original_title": "Black lip print loose women's fleece sweatshirt",
+  "new_title": "Lip Print Fleece Sweatshirt",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "sweatshirt",
+   "fleece",
+   "graphic",
+   "crewneck",
+   "long-sleeve",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A bold lip graphic with jewel-toned gold teeth, printed on a loose crewneck with dropped shoulders.</strong></p><ul><li>Polyester sweatshirt fleece</li><li>Loose fit, crew neck, ribbed cuffs and hem</li><li>Long sleeves, hip length (about 26–29 in)</li></ul><p>Sizes S–XXL · Bust 43–51 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317799854319",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317799854319": "Lip Print Fleece Sweatshirt in gray, shown flat, front",
+   "gid://shopify/MediaImage/41317800181999": "Lip Print Fleece Sweatshirt in pink, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317800542447": "Lip Print Fleece Sweatshirt in white, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317801230575": "Lip Print Fleece Sweatshirt in sage green, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317801689327": "Lip Print Fleece Sweatshirt in black, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317804703983": "Lip Print Fleece Sweatshirt in white, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317805719791": "Lip Print Fleece Sweatshirt in pink, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317807390959": "Lip Print Fleece Sweatshirt in sage green, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317808210159": "Lip Print Fleece Sweatshirt in black, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317814141167": "Lip Print Fleece Sweatshirt in orange, shown on a hanger, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Olive Green": "Sage Green"
+  },
+  "option_renames": {},
+  "flags": [
+   "text overlay ('Sweatshirt Only' on every photo)",
+   "no photo for Coffee",
+   "Gray variant has no image"
+  ],
+  "notes": "Every gallery photo carries a small 'Sweatshirt Only' text overlay (styled over denim shorts), so none can be moved aside; lead is the plain-background gray shot. Gray variant has no image: assign the lead (41317799854319). No Coffee photo exists in the gallery. 'Olive Green' shows as a muted sage green. Supplier mentions lantern sleeves; photos show plain ribbed cuffs. Size table says 2XL, option says XXL."
+ },
+ {
+  "handle": "round-neck-fleece-sports-hoodie",
+  "product_id": "gid://shopify/Product/9756888760559",
+  "original_title": "Round neck fleece sports hoodie",
+  "new_title": "Sunshine Graphic Fleece Sweatshirt",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "sweatshirt",
+   "fleece",
+   "graphic",
+   "crewneck",
+   "long-sleeve",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A retro sun-and-moon graphic with flowers and “Stay Magical” lettering on a relaxed crewneck.</strong></p><ul><li>Polyester sweatshirt fleece</li><li>Loose fit, crew neck, ribbed cuffs and hem</li><li>Long sleeves, hip length (about 26–29 in)</li></ul><p>Sizes S–XXL · Bust 43–51 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317800575215",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317800575215": "Sunshine Graphic Fleece Sweatshirt in coffee, shown flat, front",
+   "gid://shopify/MediaImage/41317801263343": "Sunshine Graphic Fleece Sweatshirt in black, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317801525487": "Sunshine Graphic Fleece Sweatshirt in sage green, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317803098351": "Sunshine Graphic Fleece Sweatshirt in gray, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317803884783": "Sunshine Graphic Fleece Sweatshirt in orange, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317804114159": "Sunshine Graphic Fleece Sweatshirt in white, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317804376303": "Sunshine Graphic Fleece Sweatshirt in pink, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317805129967": "Sunshine Graphic Fleece Sweatshirt in sage green, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317805883631": "Sunshine Graphic Fleece Sweatshirt in black, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317806276847": "Sunshine Graphic Fleece Sweatshirt in gray, shown on a hanger, front",
+   "gid://shopify/MediaImage/41317806571759": "Sunshine Graphic Fleece Sweatshirt in orange, shown on a hanger, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Olive Green": "Sage Green"
+  },
+  "option_renames": {},
+  "flags": [
+   "listed as hoodie (no hood)",
+   "text overlay ('Sweatshirt Only' on every photo)",
+   "Coffee variant has no image"
+  ],
+  "notes": "Title says 'hoodie' but every photo shows a hoodless crewneck sweatshirt: photo wins, typed as a sweatshirt. All photos carry a small 'Sweatshirt Only' overlay. Coffee variant has no image: the lead (41317800575215) is the brown/coffee one, assign it. 'Olive Green' shows as sage green. Same base garment and size table as the Lip Print sweatshirt."
+ },
+ {
+  "handle": "womens-elegant-color-block-stripe-knit-cardigan-with-lapel-slim-fit-top",
+  "product_id": "gid://shopify/Product/9756888498415",
+  "original_title": "Women's Elegant Color-Block Stripe Knit Cardigan with Lapel Slim-Fit Top",
+  "new_title": "Color-Block Stripe Rib Cardigan",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "cardigan",
+   "knit",
+   "striped",
+   "collared",
+   "long-sleeve",
+   "red",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Red, navy, brown and gray stripes on a fitted rib cardigan with a contrast brown polo collar.</strong></p><ul><li>Polyester, viscose and spandex rib knit with stretch</li><li>Slim fit, pointed collar, button front</li><li>Long sleeves, regular length (about 21–22 in)</li></ul><p>Sizes S–L · Bust 29–32 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317800149231",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317799624943": "Color-Block Stripe Rib Cardigan in red and navy stripe, shown flat, front",
+   "gid://shopify/MediaImage/41317800149231": "Color-Block Stripe Rib Cardigan in red and navy stripe, shown flat, front",
+   "gid://shopify/MediaImage/41317800509679": "Color-Block Stripe Rib Cardigan in red and navy stripe, close-up of the collar and buttons",
+   "gid://shopify/MediaImage/41317801132271": "Color-Block Stripe Rib Cardigan in red and navy stripe, close-up of the collar and ribbing"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317799624943",
+   "gid://shopify/MediaImage/41317800509679",
+   "gid://shopify/MediaImage/41317801132271"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Striped": "Red & Navy Stripe"
+  },
+  "option_renames": {},
+  "flags": [
+   "brand logo ('BBWM' neck label)"
+  ],
+  "notes": "Three of four photos show a 'BBWM WOMAN' neck label; lead is the only shot without it, the labelled ones go last. Title kept clear of the store's 'Striped Polo Collar Knit Sweater'; photos show a button-front cardigan with a polo collar. Supplier says 'Pullover / Cardigan'. 'Striped' renamed to describe the actual colorway."
+ },
+ {
+  "handle": "casual-ribbed-v-neck-fake-two-piece-womens-sweater",
+  "product_id": "gid://shopify/Product/9756888924399",
+  "original_title": "Casual Ribbed V-Neck Fake Two-Piece Women's Sweater",
+  "new_title": "Double V-Neck Rib Cardigan",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "cardigan",
+   "knit",
+   "rib",
+   "v-neck",
+   "long-sleeve",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A fitted rib cardigan with a layered double V-neckline, so it reads as two pieces in one.</strong></p><ul><li>Rib knit blend</li><li>Slim fit, button front, raglan sleeves</li><li>Long sleeves, regular length (about 21–22 in)</li></ul><p>Sizes S–M · Bust 30–31 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317803131119",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317803131119": "Double V-Neck Rib Cardigan in khaki, shown flat, front",
+   "gid://shopify/MediaImage/41317805621487": "Double V-Neck Rib Cardigan in cream, shown flat, front",
+   "gid://shopify/MediaImage/41317805916399": "Double V-Neck Rib Cardigan in gray, shown flat, front"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Apricot": "Cream",
+   "Green": "Charcoal"
+  },
+  "option_renames": {},
+  "flags": [
+   "listed as pullover sweater, photos show a cardigan",
+   "no photo for Green (Charcoal)"
+  ],
+  "notes": "Listed as a 'fake two-piece sweater' pullover; every photo shows a button-front rib cardigan whose layered V-neck trim gives the faux two-piece look: photo wins. Green has no gallery image; the description's color photos show it as a dark warm charcoal, so renamed Charcoal (owner please confirm). Apricot shows as cream. Spec says crop length but the size table gives 54–55 cm, a regular length. Spec says 'Unisex'."
+ },
+ {
+  "handle": "knit-sweater-with-3d-crochet-hollow-out-details-waist-cinching-casual-pullover-top",
+  "product_id": "gid://shopify/Product/9756888989935",
+  "original_title": "Knit Sweater with 3D Crochet Hollow-out Details, Waist-Cinching Casual Pullover Top",
+  "new_title": "Lace-Up Cable Knit Sweater",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "sweater",
+   "cable-knit",
+   "lace-up",
+   "crewneck",
+   "long-sleeve",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Allover cable knit with a criss-cross laced keyhole at the neckline, fitted through the body.</strong></p><ul><li>Polyester cable knit</li><li>Slim fit, crew neck, laced keyhole front</li><li>Long sleeves, ribbed cuffs and hem (about 22–23 in long)</li></ul><p>Sizes S–M · Bust 29–31 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317803229423",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317803229423": "Lace-Up Cable Knit Sweater in gray, shown flat, front",
+   "gid://shopify/MediaImage/41317803458799": "Lace-Up Cable Knit Sweater in cream, red, gray and black, all four colors shown flat",
+   "gid://shopify/MediaImage/41317803917551": "Lace-Up Cable Knit Sweater in red, shown flat, front",
+   "gid://shopify/MediaImage/41317804146927": "Lace-Up Cable Knit Sweater in cream, shown flat, front",
+   "gid://shopify/MediaImage/41317804769519": "Lace-Up Cable Knit Sweater in gray, close-up of the laced neckline",
+   "gid://shopify/MediaImage/41317805097199": "Lace-Up Cable Knit Sweater in black, shown flat, front",
+   "gid://shopify/MediaImage/41317807063279": "Lace-Up Cable Knit Sweater in cream, shown flat, front",
+   "gid://shopify/MediaImage/41317808537839": "Lace-Up Cable Knit Sweater in gray, shown flat, front",
+   "gid://shopify/MediaImage/41317809160431": "Lace-Up Cable Knit Sweater in red, shown flat, front"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317803458799"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Apricot": "Cream"
+  },
+  "option_renames": {},
+  "flags": [
+   "collage"
+  ],
+  "notes": "The cut-out is a laced keyhole (cord criss-crossed through eyelets), not a lattice. Four-color collage moved last. Apricot shows as cream. Two red shots differ in shade (coral vs bright red); the variant image is the bright red. Size table lists shoulder 54 cm for S vs 35 for M (supplier typo). Spec 'waist-cinching' not visible; photos show a fitted body."
+ },
+ {
+  "handle": "british-commuter-style-chunky-knit-high-neck-open-front-cardigan",
+  "product_id": "gid://shopify/Product/9756889022703",
+  "original_title": "British Commuter Style Chunky Knit High Neck Open Front Cardigan",
+  "new_title": "Stand Collar Chunky Knit Cardigan",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "cardigan",
+   "chunky-knit",
+   "high-neck",
+   "long-sleeve",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A chunky rib cardigan with a high stand collar that buttons off-center, plus button tabs at the shoulders.</strong></p><ul><li>Viscose and polyester rib knit</li><li>Loose fit, dropped shoulders, full button front</li><li>Long sleeves, banded hem (about 22–23 in long)</li></ul><p>Sizes S–L · Bust 44–47 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317814370543",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317803196655": "Stand Collar Chunky Knit Cardigan in gray, shown flat, front",
+   "gid://shopify/MediaImage/41317803557103": "Stand Collar Chunky Knit Cardigan in all seven colors, shown flat",
+   "gid://shopify/MediaImage/41317803950319": "Stand Collar Chunky Knit Cardigan in off-white, shown flat, front",
+   "gid://shopify/MediaImage/41317804736751": "Stand Collar Chunky Knit Cardigan in taupe, shown flat, front",
+   "gid://shopify/MediaImage/41317804998895": "Stand Collar Chunky Knit Cardigan in khaki, close-up of the buttoned collar",
+   "gid://shopify/MediaImage/41317806637295": "Stand Collar Chunky Knit Cardigan in dark red, shown flat, back",
+   "gid://shopify/MediaImage/41317814370543": "Stand Collar Chunky Knit Cardigan in khaki, shown flat, front",
+   "gid://shopify/MediaImage/41317814993135": "Stand Collar Chunky Knit Cardigan in black, shown flat, front"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317803557103",
+   "gid://shopify/MediaImage/41317803196655",
+   "gid://shopify/MediaImage/41317803950319",
+   "gid://shopify/MediaImage/41317804736751"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Camel": "Taupe"
+  },
+  "option_renames": {},
+  "flags": [
+   "photo color mismatch: Camel variant shows the gray cardigan",
+   "Dark Red variant photo is a back view",
+   "title says 'Open Front' but it buttons",
+   "brand logo ('INDEFEIR' neck label)",
+   "no photo for Brown",
+   "collage"
+  ],
+  "notes": "Camel variant points to the GRAY photo (41317803196655); the supplier color order matched to the 7-color collage makes Camel the taupe one, so point it to 41317804736751 and rename to Taupe. Dark Red's only photo (41317806637295) is a back view. Title says 'Open Front' but every photo shows a full button front: photo wins. Gray, off-white and taupe shots show an 'INDEFEIR' neck label and go last with the collage; lead is the label-free khaki front. Brown appears only in the collage. 'British' dropped as brand-like."
+ },
+ {
+  "handle": "casual-knitted-women-s-sweater-bandage-spliced-loose-contrast-color-cardigan-fashion",
+  "product_id": "gid://shopify/Product/9757005742319",
+  "original_title": "Casual Knitted Women 's Sweater Bandage Spliced Loose Contrast Color Cardigan Fashion",
+  "new_title": "Ribbon Lace Oversized Knit Cardigan",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "cardigan",
+   "knit",
+   "oversized",
+   "ribbon",
+   "long-sleeve",
+   "cream",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>An oversized cream cardigan laced with soft blue ribbon down the front and sleeves, tied in bows at the hem.</strong></p><ul><li>Acrylic knit</li><li>Oversized fit, button front, dropped shoulders</li><li>Long puff sleeves, hip length (about 28–29 in)</li></ul><p>Sizes S–XL · Bust 47–51 in</p>",
+  "lead_media_id": null,
+  "media_alts": {},
+  "media_last": [],
+  "add_images_from_description": [
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/5B43FED1EAA48BC5837B4B7928C377A1.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/3BCB5B6426633C7EF13A28A9F0F7DCB0.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/454DBE31654ADA5A438FD0091A7D5EC5.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/66490A556E256D6B1C54D6D86457D63D.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/188D214B6AAEED3D367DC5A79065CF6A.jpg"
+  ],
+  "color_renames": {
+   "Beige": "Cream"
+  },
+  "option_renames": {},
+  "flags": [
+   "no photos",
+   "duplicate listing (same as 9757006069999)",
+   "low-res on-model photos (750x1000, faces cropped)"
+  ],
+  "notes": "No gallery images; the 5 description images are clean on-model shots (no text or logos) but low resolution and dim. Lead is the buttoned front view. Photos show a button cardigan, matching the title's 'Cardigan' rather than 'Sweater'. Identical to 9757006069999 (same description images, sizes and options): keep this one and archive the other."
+ },
+ {
+  "handle": "casual-knitted-women-s-sweater-bandage-spliced-loose-contrast-color-cardigan-fashion-1",
+  "product_id": "gid://shopify/Product/9757006069999",
+  "original_title": "Casual Knitted Women 's Sweater Bandage Spliced Loose Contrast Color Cardigan Fashion",
+  "new_title": "Ribbon Lace Oversized Knit Cardigan",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "cardigan",
+   "knit",
+   "oversized",
+   "ribbon",
+   "long-sleeve",
+   "cream",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>An oversized cream cardigan laced with soft blue ribbon down the front and sleeves, tied in bows at the hem.</strong></p><ul><li>Acrylic knit</li><li>Oversized fit, button front, dropped shoulders</li><li>Long puff sleeves, hip length (about 28–29 in)</li></ul><p>Sizes S–XL · Bust 47–51 in</p>",
+  "lead_media_id": null,
+  "media_alts": {},
+  "media_last": [],
+  "add_images_from_description": [
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/5B43FED1EAA48BC5837B4B7928C377A1.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/3BCB5B6426633C7EF13A28A9F0F7DCB0.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/454DBE31654ADA5A438FD0091A7D5EC5.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/66490A556E256D6B1C54D6D86457D63D.jpg",
+   "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/188D214B6AAEED3D367DC5A79065CF6A.jpg"
+  ],
+  "color_renames": {
+   "Beige": "Cream"
+  },
+  "option_renames": {},
+  "flags": [
+   "duplicate listing (same as 9757005742319): archive, do not apply title",
+   "no photos"
+  ],
+  "notes": "Exact duplicate of 9757005742319 (same description images, size table and options; handle ends in -1). Copy mirrors that draft for reference only; applying this title too would create two identical titles, so archive this listing instead."
+ }
+]

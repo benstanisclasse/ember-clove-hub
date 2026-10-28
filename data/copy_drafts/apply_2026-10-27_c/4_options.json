@@ -1,0 +1,106 @@
+{
+ "query": "mutation($pid0: ID!, $opt0: OptionUpdateInput!, $val0: [OptionValueUpdateInput!], $pid1: ID!, $opt1: OptionUpdateInput!, $val1: [OptionValueUpdateInput!], $pid2: ID!, $opt2: OptionUpdateInput!, $val2: [OptionValueUpdateInput!], $pid3: ID!, $opt3: OptionUpdateInput!, $val3: [OptionValueUpdateInput!], $pid4: ID!, $opt4: OptionUpdateInput!, $val4: [OptionValueUpdateInput!], $pid5: ID!, $opt5: OptionUpdateInput!, $val5: [OptionValueUpdateInput!]) {\n  o0: productOptionUpdate(productId: $pid0, option: $opt0, optionValuesToUpdate: $val0) { product { id } userErrors { field message code } }\n  o1: productOptionUpdate(productId: $pid1, option: $opt1, optionValuesToUpdate: $val1) { product { id } userErrors { field message code } }\n  o2: productOptionUpdate(productId: $pid2, option: $opt2, optionValuesToUpdate: $val2) { product { id } userErrors { field message code } }\n  o3: productOptionUpdate(productId: $pid3, option: $opt3, optionValuesToUpdate: $val3) { product { id } userErrors { field message code } }\n  o4: productOptionUpdate(productId: $pid4, option: $opt4, optionValuesToUpdate: $val4) { product { id } userErrors { field message code } }\n  o5: productOptionUpdate(productId: $pid5, option: $opt5, optionValuesToUpdate: $val5) { product { id } userErrors { field message code } }\n}",
+ "variables": {
+  "pid0": "gid://shopify/Product/9757659988207",
+  "opt0": {
+   "id": "gid://shopify/ProductOption/12377638273263"
+  },
+  "val0": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193615864047",
+    "name": "Silver Necklace"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193615896815",
+    "name": "Gold Necklace"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193615929583",
+    "name": "Gold Bracelet"
+   }
+  ],
+  "pid1": "gid://shopify/Product/9757660053743",
+  "opt1": {
+   "id": "gid://shopify/ProductOption/12377638371567",
+   "name": "Plating"
+  },
+  "val1": [],
+  "pid2": "gid://shopify/Product/9757660086511",
+  "opt2": {
+   "id": "gid://shopify/ProductOption/12377638404335"
+  },
+  "val2": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616290031",
+    "name": "Cream"
+   }
+  ],
+  "pid3": "gid://shopify/Product/9757660119279",
+  "opt3": {
+   "id": "gid://shopify/ProductOption/12377638437103"
+  },
+  "val3": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616388335",
+    "name": "Silver & Gold Couple"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616421103",
+    "name": "Silver & Black Couple"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616453871",
+    "name": "Silver Mother & Child"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616486639",
+    "name": "Silver & Gold Mother & Child"
+   }
+  ],
+  "pid4": "gid://shopify/Product/9757660184815",
+  "opt4": {
+   "id": "gid://shopify/ProductOption/12377638502639"
+  },
+  "val4": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616716015",
+    "name": "Multicolor Bracelet"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616748783",
+    "name": "Silver Bracelet"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616781551",
+    "name": "Bronze Bracelet"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616945391",
+    "name": "Indigo Necklace"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193616978159",
+    "name": "Multicolor Necklace"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193617043695",
+    "name": "Bronze Necklace"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6193617109231",
+    "name": "Dark Red Necklace"
+   }
+  ],
+  "pid5": "gid://shopify/Product/9757660250351",
+  "opt5": {
+   "id": "gid://shopify/ProductOption/12377638568175",
+   "name": "Zodiac Sign"
+  },
+  "val5": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6193617469679",
+    "name": "Virgo"
+   }
+  ]
+ }
+}

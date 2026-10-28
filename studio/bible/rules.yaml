@@ -1,0 +1,94 @@
+# Production rules. The conveyor (scripts/studio) enforces every line here; nothing is checked "by judgement".
+# Changing this file changes the rules: owner approval required (status + approved_by).
+status: approved
+approved_by: owner
+approved_at: "2026-10-26T22:16:24"
+approved_hash: "de3594761d3f2d82"
+
+posting:
+  timezone: America/New_York
+  max_posts_per_day: 3
+  slots: ["08:30", "12:30", "19:30"]      # starting guess; replace with measured best times later
+
+mix:                      # per rolling 7 days
+  value_share_min: 1.0    # owner 2026-10-26: build the audience first, no selling yet
+  product_share_max: 0.0  # raise (e.g. 0.4) only when the owner says selling starts
+
+outfits:                  # owner 2026-10-26: she should look like she owns a lot of clothes
+  no_repeat_outfit_days: 21       # the same full outfit can't come back within 21 days
+  no_repeat_base_piece_posts: 4   # the main piece (dress, or top + bottom) not reused within 4 posts
+  store_pieces_per_outfit: 1      # owner 2026-10-26: "always one item from ember & clove"
+  extra_store_shoes: true         # owner 2026-10-26: store shoes may be a second Ember & Clove piece when they fit the weather
+  shoes_no_back_to_back: true     # owner 2026-10-26: no pair twice in a row
+  shoes_max_per_week: 3           # owner 2026-10-26: max 3 times a week
+  shoe_rules_from: "2026-11-09"   # the week of Nov 2 was already made
+
+rotation:
+  no_same_product_back_to_back: true
+  no_same_room_back_to_back: true
+  no_same_series_back_to_back: false
+
+cta:                      # TikTok guidelines: content that manipulates people into follows is not For You eligible
+  soft_lines:
+    - "New one every morning."
+    - "More outfits tomorrow."     # owner 2026-10-26: replaced "Part two tomorrow." (promised a follow-up that never came)
+    - "I post one of these every day."
+  max_soft_cta_per_window: 1
+  window_posts: 3         # at most 1 soft line in any 3 consecutive posts
+  product_cta: "Tap the link to see it."
+
+script:
+  words_per_second_min: 2.9
+  words_per_second_max: 3.8
+  lines: 4                # one line per shot
+
+banned_phrases:           # owner rules: no price, delivery, testimonials, unsupported claims, urgency
+  - "i bought"
+  - "i ordered"
+  - "my order"
+  - "i've been wearing"
+  - "free shipping"
+  - "ships"
+  - "delivery"
+  - "arrives"
+  - "on sale"
+  - "discount"
+  - "limited"
+  - "selling out"
+  - "last chance"
+  - "warm"
+  - "wool"
+  - "not itchy"
+  - "flattering on every body"
+  - "slimming"
+  - "guarantee"
+  - "follow me"
+  - "follow for"
+banned_regex:
+  - "\\$\\s?\\d"                         # prices
+  - "\\b\\d+\\s?(dollars|bucks)\\b"
+  - "\\b\\d+\\s?(days|weeks)\\b"           # delivery times
+
+tts_avoid:                # words the video voice has mispronounced; add every new one
+  - "knee-high"           # EC-P01-A05-H01-V06 said "knee-haul" (2026-10-26)
+  - "midi"                # EC-P01-A05-H01-V03 said "mini" (2026-10-26)
+  - "loafer"              # EW-20261102-2 said "lovers" (2026-10-26); covers "loafers"
+
+generation:
+  provider: openrouter
+  model: bytedance/seedance-2.5
+  resolution: 480p        # test tier; winners are remade at 720p (two-tier strategy)
+  duration_s: 14
+  usd_per_m_tokens: 10.70
+  max_usd_per_video: null   # owner 2026-10-26: no caps until full automation
+  max_usd_per_day: null   # owner 2026-10-26: no caps until full automation
+  max_usd_per_week: null   # owner 2026-10-26: no caps until full automation
+  max_attempts: 3
+  max_reference_images: 4
+  face_reference: false   # owner 2026-10-26: Seedance 2.5 refuses any realistic face image; her face is described in words
+
+qa:
+  require_exact_transcript: true          # any word that differs from the script fails
+  speech_share_min: 0.70
+  duration_tolerance_s: 0.6
+  frames_per_second_for_review: 2

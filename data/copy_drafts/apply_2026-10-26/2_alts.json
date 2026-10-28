@@ -1,0 +1,763 @@
+{
+ "query": "mutation($files: [FileUpdateInput!]!) { fileUpdate(files: $files) { files { id alt } userErrors { field message code } } }",
+ "variables": {
+  "files": [
+   {
+    "id": "gid://shopify/MediaImage/41311365529839",
+    "alt": "Plush-Lined EVA Clog Slippers in seven colors, group shot on a rug"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365628143",
+    "alt": "Plush-Lined EVA Clog Slippers in Orange and Yellow, pairs on a chair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365726447",
+    "alt": "Plush-Lined EVA Clog Slippers in Sky Blue and Pink, pairs on a chair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365759215",
+    "alt": "Plush-Lined EVA Clog Slippers in Orange, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365890287",
+    "alt": "Plush-Lined EVA Clog Slippers in Orange, close-up of the bendable shell and lining"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311365955823",
+    "alt": "Plush-Lined EVA Clog Slippers in Orange, plush liner pulled out of the shell"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366021359",
+    "alt": "Plush-Lined EVA Clog Slippers in Moss Green, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366119663",
+    "alt": "Plush-Lined EVA Clog Slippers in Sky Blue, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366250735",
+    "alt": "Plush-Lined EVA Clog Slippers in Black, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366349039",
+    "alt": "Plush-Lined EVA Clog Slippers in Orange, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366447343",
+    "alt": "Plush-Lined EVA Clog Slippers in Pink, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366545647",
+    "alt": "Plush-Lined EVA Clog Slippers in Yellow, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41311366676719",
+    "alt": "Plush-Lined EVA Clog Slippers in Wine, shown as a pair"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317796643055",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Camel, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317797232879",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Slate Blue, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317797560559",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Olive Green, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317797658863",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798084847",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Camel, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798379759",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799002351",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Slate Blue, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799297263",
+    "alt": "Fleece-Lined Hooded Zip Jacket in Olive Green, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317797691631",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Aqua Mirror, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798117615",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Pink Gradient, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798346991",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798740207",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Blue Gradient, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799264495",
+    "alt": "Oversized Metal Cat Eye Sunglasses in all colors, flat lay"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799559407",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Pink Gradient, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799887087",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Lavender Peach, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800214767",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Gray Pink, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800607983",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Aqua Mirror, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801459951",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Brown, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803491567",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Blue Gradient, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804343535",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Pink Mirror, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806866671",
+    "alt": "Oversized Metal Cat Eye Sunglasses in Black, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798052079",
+    "alt": "Chunky Oversized Square Sunglasses in Tortoise / Brown, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798314223",
+    "alt": "Chunky Oversized Square Sunglasses in Black / Purple Gray, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798772975",
+    "alt": "Chunky Oversized Square Sunglasses in Black / Purple Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799231727",
+    "alt": "Chunky Oversized Square Sunglasses in Cognac / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799592175",
+    "alt": "Chunky Oversized Square Sunglasses in Tortoise / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799919855",
+    "alt": "Chunky Oversized Square Sunglasses in Black / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800247535",
+    "alt": "Chunky Oversized Square Sunglasses in Black / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801066735",
+    "alt": "Chunky Oversized Square Sunglasses in Cognac / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801427183",
+    "alt": "Chunky Oversized Square Sunglasses in Black / Purple Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801722095",
+    "alt": "Chunky Oversized Square Sunglasses in Tortoise / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803524335",
+    "alt": "Chunky Oversized Square Sunglasses in White / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798281455",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Gray, on model, close-up"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317798674671",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799035119",
+    "alt": "Pointed Cat Eye Sunglasses in Tortoise / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799362799",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Gray, close-up of the temple"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799821551",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Gray, spec card with measurements"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800116463",
+    "alt": "Pointed Cat Eye Sunglasses in all colors, color chart"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800444143",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801165039",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Ice Blue, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806375151",
+    "alt": "Pointed Cat Eye Sunglasses in Black / Yellow, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807587567",
+    "alt": "Pointed Cat Eye Sunglasses in Red / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808505071",
+    "alt": "Pointed Cat Eye Sunglasses in Green / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808799983",
+    "alt": "Pointed Cat Eye Sunglasses in Caramel / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317809127663",
+    "alt": "Pointed Cat Eye Sunglasses in Amber / Brown, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814108399",
+    "alt": "Pointed Cat Eye Sunglasses in Clear Blue / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814337775",
+    "alt": "Pointed Cat Eye Sunglasses in Clear Gray / Gray, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814960367",
+    "alt": "Pointed Cat Eye Sunglasses in beige, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816860911",
+    "alt": "Pointed Cat Eye Sunglasses in white, angled view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828231407",
+    "alt": "Studded Scarf-Neck Poncho Top in Dark Brown, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317829935343",
+    "alt": "Studded Scarf-Neck Poncho Top in Dark Brown, close-up of the neckline and scarf"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831114991",
+    "alt": "Studded Scarf-Neck Poncho Top in Dark Brown, shown flat with the scarf hanging at front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831311599",
+    "alt": "Studded Scarf-Neck Poncho Top in Dark Brown, close-up of the scarf tie"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831508207",
+    "alt": "Studded Scarf-Neck Poncho Top in Dark Brown, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317831901423",
+    "alt": "Studded Scarf-Neck Poncho Top in Dark Brown, shown flat, front, scarf looped"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799526639",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Gray, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799788783",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Sage Green, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799952623",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in White, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800476911",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Pink, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801197807",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Black, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801492719",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in White, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806244079",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Sage Green, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806801135",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Black, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807030511",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Gray, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808177391",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Orange, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808275695",
+    "alt": "Alphabet Print Crewneck Fleece Sweatshirt in Coffee, shown on a hanger"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799854319",
+    "alt": "Lip Print Fleece Sweatshirt in gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800181999",
+    "alt": "Lip Print Fleece Sweatshirt in pink, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800542447",
+    "alt": "Lip Print Fleece Sweatshirt in white, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801230575",
+    "alt": "Lip Print Fleece Sweatshirt in sage green, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801689327",
+    "alt": "Lip Print Fleece Sweatshirt in black, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804703983",
+    "alt": "Lip Print Fleece Sweatshirt in white, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805719791",
+    "alt": "Lip Print Fleece Sweatshirt in pink, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807390959",
+    "alt": "Lip Print Fleece Sweatshirt in sage green, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808210159",
+    "alt": "Lip Print Fleece Sweatshirt in black, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814141167",
+    "alt": "Lip Print Fleece Sweatshirt in orange, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800575215",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in coffee, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801263343",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in black, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801525487",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in sage green, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803098351",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in gray, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803884783",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in orange, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804114159",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in white, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804376303",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in pink, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805129967",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in sage green, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805883631",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in black, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806276847",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in gray, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806571759",
+    "alt": "Sunshine Graphic Fleece Sweatshirt in orange, shown on a hanger, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317799624943",
+    "alt": "Color-Block Stripe Rib Cardigan in red and navy stripe, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800149231",
+    "alt": "Color-Block Stripe Rib Cardigan in red and navy stripe, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317800509679",
+    "alt": "Color-Block Stripe Rib Cardigan in red and navy stripe, close-up of the collar and buttons"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317801132271",
+    "alt": "Color-Block Stripe Rib Cardigan in red and navy stripe, close-up of the collar and ribbing"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803131119",
+    "alt": "Double V-Neck Rib Cardigan in khaki, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805621487",
+    "alt": "Double V-Neck Rib Cardigan in cream, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805916399",
+    "alt": "Double V-Neck Rib Cardigan in gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803229423",
+    "alt": "Lace-Up Cable Knit Sweater in gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803458799",
+    "alt": "Lace-Up Cable Knit Sweater in cream, red, gray and black, all four colors shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803917551",
+    "alt": "Lace-Up Cable Knit Sweater in red, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804146927",
+    "alt": "Lace-Up Cable Knit Sweater in cream, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804769519",
+    "alt": "Lace-Up Cable Knit Sweater in gray, close-up of the laced neckline"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317805097199",
+    "alt": "Lace-Up Cable Knit Sweater in black, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807063279",
+    "alt": "Lace-Up Cable Knit Sweater in cream, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808537839",
+    "alt": "Lace-Up Cable Knit Sweater in gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317809160431",
+    "alt": "Lace-Up Cable Knit Sweater in red, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803196655",
+    "alt": "Stand Collar Chunky Knit Cardigan in gray, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803557103",
+    "alt": "Stand Collar Chunky Knit Cardigan in all seven colors, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317803950319",
+    "alt": "Stand Collar Chunky Knit Cardigan in off-white, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804736751",
+    "alt": "Stand Collar Chunky Knit Cardigan in taupe, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804998895",
+    "alt": "Stand Collar Chunky Knit Cardigan in khaki, close-up of the buttoned collar"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806637295",
+    "alt": "Stand Collar Chunky Knit Cardigan in dark red, shown flat, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814370543",
+    "alt": "Stand Collar Chunky Knit Cardigan in khaki, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317814993135",
+    "alt": "Stand Collar Chunky Knit Cardigan in black, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804474607",
+    "alt": "Asymmetric Drape Neck Knit Top in Mauve, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806604527",
+    "alt": "Asymmetric Drape Neck Knit Top in Black, Navy, Gray, Cream, Pink and Mauve, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806833903",
+    "alt": "Asymmetric Drape Neck Knit Top in Pink, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808570607",
+    "alt": "Asymmetric Drape Neck Knit Top in Cream, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317808767215",
+    "alt": "Asymmetric Drape Neck Knit Top in Mauve, close-up of the draped neckline"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317809094895",
+    "alt": "Asymmetric Drape Neck Knit Top in Gray, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317813485807",
+    "alt": "Asymmetric Drape Neck Knit Top in Navy, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317813944559",
+    "alt": "Asymmetric Drape Neck Knit Top in Black, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804179695",
+    "alt": "Tie Neck Ruffle Hem Top in Peach, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317804507375",
+    "alt": "Tie Neck Ruffle Hem Top in Black, Coffee, Olive, Peach and Beige, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807325423",
+    "alt": "Tie Neck Ruffle Hem Top in Coffee, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807554799",
+    "alt": "Tie Neck Ruffle Hem Top in Beige, close-up of the neck strap and tie"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317810438383",
+    "alt": "Tie Neck Ruffle Hem Top in Beige, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317806342383",
+    "alt": "Scalloped Square Neck Lace Top in Mustard, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807358191",
+    "alt": "Scalloped Square Neck Lace Top in Black, White and Mustard, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807522031",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Red, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317807751407",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Mustard, Coffee, Black, Red and Ivory, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816008943",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Mustard, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816631535",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Mustard, shown flat with sleeves spread"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317816828143",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Black, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317817680111",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Ivory, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317817876719",
+    "alt": "Lace Panel Sheer Chiffon Blouse in Red, shown flat, close view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317812633839",
+    "alt": "Crossover Rib Waist Top in Blush, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317817319663",
+    "alt": "Crossover Rib Waist Top in White, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317818663151",
+    "alt": "Crossover Rib Waist Top in Blush, close-up of the crossover neckline"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317819449583",
+    "alt": "Crossover Rib Waist Top in Black, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317820236015",
+    "alt": "Strappy One-Shoulder Jersey Top in Gray, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317820727535",
+    "alt": "Strappy One-Shoulder Jersey Top in Black, White and Gray, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317824332015",
+    "alt": "Strappy One-Shoulder Jersey Top in Gray, close-up of the shoulder strap"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317820924143",
+    "alt": "Boat Neck Cropped Pocket Sweatshirt in Lime, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317821350127",
+    "alt": "Boat Neck Cropped Pocket Sweatshirt in Black, Heather Gray and Lime, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317821546735",
+    "alt": "Boat Neck Cropped Pocket Sweatshirt in Heather Gray, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317822890223",
+    "alt": "Boat Neck Cropped Pocket Sweatshirt in Black, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317823250671",
+    "alt": "Boat Neck Cropped Pocket Sweatshirt in Lime, close-up of the boat neck"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317826953455",
+    "alt": "Tie-Front Ruffle Lace Top in Coffee, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317827248367",
+    "alt": "Tie-Front Ruffle Lace Top in Black, Burgundy, Ivory and Coffee, shown together"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828034799",
+    "alt": "Tie-Front Ruffle Lace Top in Burgundy, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828460783",
+    "alt": "Tie-Front Ruffle Lace Top in Ivory, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317828657391",
+    "alt": "Tie-Front Ruffle Lace Top in Coffee, close-up of the tie neckline"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317830295791",
+    "alt": "Tie-Front Ruffle Lace Top in Black, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317832425711",
+    "alt": "Ripped Knee Wide-Leg Jeans in Medium Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317832655087",
+    "alt": "Ripped Knee Wide-Leg Jeans in Medium Blue, on model, front in studio"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317833244911",
+    "alt": "Ripped Knee Wide-Leg Jeans in Light Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317836357871",
+    "alt": "Ripped Knee Wide-Leg Jeans in Medium Blue, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317836521711",
+    "alt": "Ripped Knee Wide-Leg Jeans in Medium Blue, on model, full length in studio"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317836783855",
+    "alt": "Ripped Knee Wide-Leg Jeans in Light Blue, on model, full length"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317833539823",
+    "alt": "Contrast Stitch V-Waist Flare Jeans in Dark Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317833867503",
+    "alt": "Contrast Stitch V-Waist Flare Jeans in Dark Blue, on model, front with hand on hip"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317835309295",
+    "alt": "Contrast Stitch V-Waist Flare Jeans in Dark Blue, on model, side"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317835571439",
+    "alt": "Contrast Stitch V-Waist Flare Jeans in Dark Blue, on model, three-quarter front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317836095727",
+    "alt": "Contrast Stitch V-Waist Flare Jeans in Dark Blue, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317836947695",
+    "alt": "Contrast Stitch V-Waist Flare Jeans in Dark Blue, on model, side close-up"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317834096879",
+    "alt": "Shredded Light Wash Skinny Jeans in Light Blue, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317834522863",
+    "alt": "Shredded Light Wash Skinny Jeans in Light Blue, shown flat, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317834686703",
+    "alt": "Fleece-Lined Faux Leather Skinny Pants in Black, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317835079919",
+    "alt": "Fleece-Lined Faux Leather Skinny Pants in Black, shown flat, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317837406447",
+    "alt": "High-Waist Stretch Skinny Jeans in Burgundy, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317838127343",
+    "alt": "High-Waist Stretch Skinny Jeans in White, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317840421103",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317840716015",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317841174767",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, on model and shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317841371375",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, shown flat, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317843599599",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, on model and shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317843763439",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, shown flat, side"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41317844222191",
+    "alt": "Two-Tone Patchwork Skinny Jeans in Blue, shown flat, front"
+   }
+  ]
+ }
+}

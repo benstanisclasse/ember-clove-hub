@@ -1,0 +1,149 @@
+{
+  "product_id": "gid://shopify/Product/9751656202479",
+  "handle": "womens-lace-push-up-shapewear-bodysuit-sexy-lingerie-set-with-lift-support",
+  "original_title": "Women's Lace Push-Up Shapewear Bodysuit  Sexy Lingerie Set with Lift Support",
+  "current_title": "Women's Lace Push-Up Shapewear Bodysuit  Sexy Lingerie Set with Lift Support",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "lingerie",
+  "url": "https://nkpfvz-ra.myshopify.com/products/womens-lace-push-up-shapewear-bodysuit-sexy-lingerie-set-with-lift-support",
+  "category": null,
+  "colors": [
+    "Pink"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Pink"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 34.58,
+  "price_max": 34.58,
+  "cost_min": 9.91,
+  "cost_max": 9.91,
+  "specs": {
+    "Thickness": "Thin style",
+    "Color": "Pink",
+    "Sizes": "S, M, L",
+    "Packaging form": "Bagged",
+    "Corset set": "Adult sex toy",
+    "Style": "Corset",
+    "Unit": "CM; Due to different measurement methods, an error of 1-3CM is within a reasonable range."
+  },
+  "description_text": [
+    "Note:",
+    "Please allow 1-3 cm error due to manual measurement."
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Bust",
+        "Length",
+        "Waist",
+        "Pants Length",
+        "Weight (g)"
+      ],
+      [
+        "S",
+        "4",
+        "54",
+        "46",
+        "64",
+        "21",
+        "141"
+      ],
+      [
+        "M",
+        "6",
+        "58",
+        "47",
+        "68",
+        "22",
+        "142"
+      ],
+      [
+        "L",
+        "08/10",
+        "62",
+        "48",
+        "72",
+        "23",
+        "143"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A60F6AAD4DCA6FE9D37860C0EA726995.jpg?v=1792822467",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/095AE0052B5A9E86A29049C8F94F5926.jpg?v=1792822469",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/83039A3E17C5D376723A2EB91F58E21F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AA80B1F046B2CDE702D1D7C5D7E39E67.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/469614EFFFBB2CC6C9A313707ADF05CD.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D507ACD1B4B9F093A0B8FB52F94010AB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7CCF7AA41F379B5196C0098D0BEBCAEB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2F407E8D92CD2897843A56119642037E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6787EA7951B1FF6CADCA5B946C01A255.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5865B2D6B3AD21AE0D6C9A55D5079B29.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EEFAB9FA72BEC1DA9C41C68E55A354F4.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/87F45D8BC80313E5B474A77BC00E4B97.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E8A426A9EE34B202B24F0337E3FFF885.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FA12AC97B9B2480ECED6D96E5454ACF7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F2A4B3A853A19A47871D6155CBF28A1F.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Pink / S",
+      "sku": "6949CF2DC36A4DA58CE75AA001DA5313",
+      "price": "34.58",
+      "cost": "9.91",
+      "options": {
+        "Color": "Pink",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Pink / M",
+      "sku": "230F1E9B8D924D38929B9D99BFA8CE0E",
+      "price": "34.58",
+      "cost": "9.91",
+      "options": {
+        "Color": "Pink",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Pink / L",
+      "sku": "3D55607FC6C04997B30C2C26378935B2",
+      "price": "34.58",
+      "cost": "9.91",
+      "options": {
+        "Color": "Pink",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong><span style=\"text-wrap-mode: nowrap;\">Thickness: Thin style</span></strong></p><p><strong><span style=\"text-wrap-mode: nowrap;\">Color: Pink</span></strong></p><p><strong><span style=\"text-wrap-mode: nowrap;\">Sizes: S, M, L</span></strong></p><p><strong><span style=\"text-wrap-mode: nowrap;\">Packaging form: Bagged</span></strong></p><p><strong><span style=\"text-wrap-mode: nowrap;\">Corset set: Adult sex toy</span></strong></p><p><strong><span style=\"text-wrap-mode: nowrap;\">Style: Corset</span></strong></p><p style=\"font-size:16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Bust</th>\n<th>Length</th>\n<th style=\"word-break: break-all;\">Waist</th>\n<th>Pants Length</th>\n<th>Weight (g)</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>54</td>\n<td>46</td>\n<td>64</td>\n<td>21</td>\n<td>141</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>58</td>\n<td>47</td>\n<td>68</td>\n<td>22</td>\n<td>142</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>62</td>\n<td>48</td>\n<td>72</td>\n<td>23</td>\n<td>143</td>\n</tr>\n</tbody>\n</table><p><strong>Note:</strong><br>Unit: CM; Due to different measurement methods, an error of 1-3CM is within a reasonable range.<br>Please allow 1-3 cm error due to manual measurement.</p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/83039A3E17C5D376723A2EB91F58E21F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AA80B1F046B2CDE702D1D7C5D7E39E67.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/469614EFFFBB2CC6C9A313707ADF05CD.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D507ACD1B4B9F093A0B8FB52F94010AB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7CCF7AA41F379B5196C0098D0BEBCAEB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2F407E8D92CD2897843A56119642037E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6787EA7951B1FF6CADCA5B946C01A255.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5865B2D6B3AD21AE0D6C9A55D5079B29.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EEFAB9FA72BEC1DA9C41C68E55A354F4.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/87F45D8BC80313E5B474A77BC00E4B97.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E8A426A9EE34B202B24F0337E3FFF885.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FA12AC97B9B2480ECED6D96E5454ACF7.jpg\"> \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F2A4B3A853A19A47871D6155CBF28A1F.jpg\"> \n  </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

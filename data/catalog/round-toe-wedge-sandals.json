@@ -1,0 +1,722 @@
+{
+  "product_id": "gid://shopify/Product/9751717413103",
+  "handle": "round-toe-wedge-sandals",
+  "original_title": "Round Toe Wedge Sandals",
+  "current_title": "Round Toe Wedge Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/round-toe-wedge-sandals",
+  "category": null,
+  "colors": [
+    "Red",
+    "Black",
+    "Orange",
+    "Gray",
+    "Dusty Pink",
+    "Royal Blue",
+    "Eggshell"
+  ],
+  "sizes": [
+    "39",
+    "40",
+    "37",
+    "38",
+    "36",
+    "43",
+    "41",
+    "42"
+  ],
+  "options": {
+    "Color": [
+      "Red",
+      "Black",
+      "Orange",
+      "Gray",
+      "Dusty Pink",
+      "Royal Blue",
+      "Eggshell"
+    ],
+    "Size": [
+      "39",
+      "40",
+      "37",
+      "38",
+      "36",
+      "43",
+      "41",
+      "42"
+    ]
+  },
+  "price_min": 34.38,
+  "price_max": 34.38,
+  "cost_min": 5.02,
+  "cost_max": 5.02,
+  "specs": {
+    "Size": "unit：mm",
+    "Fit": "True to size, order usual size.",
+    "Includes": "Box not included",
+    "Heel height": "Mid heels",
+    "Upper material": "Cloth surface",
+    "Sole material": "rubber"
+  },
+  "description_text": [
+    "Product measurements:",
+    "Imported"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "36",
+        "230"
+      ],
+      [
+        "37",
+        "235"
+      ],
+      [
+        "38",
+        "240"
+      ],
+      [
+        "39",
+        "245"
+      ],
+      [
+        "40",
+        "250"
+      ],
+      [
+        "41",
+        "255"
+      ],
+      [
+        "42",
+        "260"
+      ],
+      [
+        "43",
+        "265"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4352522AA6942F01823E17D16C936459.jpg?v=1792823492",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/942091BFA1DAD375ECD72C9F18C66C00.jpg?v=1792823494",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/DEE0D7172ED4E2F3D2923825EDBD6296.jpg?v=1792823518",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E70D129CCDC61D4629301AE57E71E109.jpg?v=1792823531",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A270A8BEE2FC2769DFB785968E148F8E.jpg?v=1792823541",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5C55F75C205977542872588F01165824.jpg?v=1792823548",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/821D7F4337B788A954D92048A4E98A06.jpg?v=1792823550",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/61A4D44C83D16905E190B5F9391EFE92.jpg?v=1792823555",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Red / 39",
+      "sku": "90266A5020B74AA2A19A8169A68E7071",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Red / 40",
+      "sku": "A83C6DBA6A3C4ECBB801EB592BC87895",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Red / 37",
+      "sku": "9CAD9FAB53494137BCF061D884D508A7",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Red / 38",
+      "sku": "C0C6744B6C6A47C7BD99D4323C9D7DB3",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Red / 36",
+      "sku": "5F000F4CD9DC4E11A4DB81160A3E0665",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "A19467E038AE412E9C9447246D7AA3A7",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "920A4A8F608541E99E09F834A5765B32",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "807C65F50C48410CA116F745D366938A",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "77E5998925D545EDA0190B71D1D6DA0A",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Orange / 43",
+      "sku": "97FECA9B09A84921A4B8B5489561CC26",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "6995068965724178AE13E69373071C75",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Orange / 41",
+      "sku": "E60517A8111E4E4A8BC869B3D3490049",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Orange / 42",
+      "sku": "2948ED5BDE47487E85C6C6886F509B79",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Orange / 39",
+      "sku": "B3923BBC322142C7B04BC0520B3D6789",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Orange / 40",
+      "sku": "16BC68C560434EB4954190E9467E0F78",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Orange / 37",
+      "sku": "D5FDA4DA168840AB82C28F9013F06C88",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Orange / 38",
+      "sku": "749A9ABC0DEF45E7A68B90C774B907ED",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Red / 43",
+      "sku": "909E35BB1FA94B5C971023E08E88F1D8",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Orange / 36",
+      "sku": "7AF70A4F5FA34155B966DB38976CD603",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Orange",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Red / 41",
+      "sku": "31CCCC6F7F414CCC91000312C5A587BC",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Red / 42",
+      "sku": "3A31F8528A084CA3810D3A6BF9F017E7",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Red",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Gray / 39",
+      "sku": "0BB8BEB17F7C4A99A54BFA93F150DEE8",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Gray / 40",
+      "sku": "25033942C0DC416E90161D6E018548FC",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Gray / 37",
+      "sku": "4BFADC1F68F54CD2AC15555CDFA51BB0",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Gray / 38",
+      "sku": "65B32A810DC9430A8407A6A1F94CF9F7",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Dusty Pink / 43",
+      "sku": "32B44446E6594466AC8CE4967D75CBBB",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Gray / 36",
+      "sku": "29A70D3E0AEE49DFBDD5DFE0BBBE2FE1",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Dusty Pink / 41",
+      "sku": "EED13FCA7ED74F3C88C07C888FB8645F",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Dusty Pink / 42",
+      "sku": "91F2A4591E734CBFBBA7B05D2320A63B",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Dusty Pink / 39",
+      "sku": "B285ECA228AC4512B8F76034B836CEA0",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Dusty Pink / 40",
+      "sku": "DCC22B546B824BE5B0D9D038C79BCBB7",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Dusty Pink / 37",
+      "sku": "0AC7CBF84F194245B7BCF1CF668BFFC6",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Dusty Pink / 38",
+      "sku": "BC5F3447A99F46E683ECACE29F1D5F4E",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "4C25D7E3F2914A55B3209F364E8596DD",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Dusty Pink / 36",
+      "sku": "73D7EC42278D4F3A8CD717A40F565C19",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "96D058A70CA64A4CB85658EAF9804AC6",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "CABA8DC962CB4263A08D0D3436E59E8F",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Royal Blue / 39",
+      "sku": "C659949B89714235BC614B69A35E6DFE",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Royal Blue / 40",
+      "sku": "6339C978A832426E9E6AB2A8BC92FE94",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Royal Blue / 37",
+      "sku": "9EE0F47F059A479A99AABA6DD2C107C7",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Royal Blue / 38",
+      "sku": "F1D62B5972404F1CB82ACFA68BCC94ED",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Eggshell / 43",
+      "sku": "68AA73AB01C2416AAF7702C83C8ABD9C",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Royal Blue / 36",
+      "sku": "96F936C7CBBC4BA2A28724BBB29DE568",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Eggshell / 41",
+      "sku": "928C1FEB7E114A3AABEB78DE3A8F7FD9",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Eggshell / 42",
+      "sku": "E5B55FFCD5C74C3F9F044F67102F4A5B",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Eggshell / 39",
+      "sku": "EAFEB44EEC704925AF0912209672EC90",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Eggshell / 40",
+      "sku": "7BC1DE06113F47259C6E036329CBC47E",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Eggshell / 37",
+      "sku": "D7E1213581CE40EB95FE925B5C2F38B8",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Eggshell / 38",
+      "sku": "0E1C365328DB47A5A73C5E6936E26171",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Gray / 43",
+      "sku": "02DC4454079A42B6B683A372FD3BC4FB",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Eggshell / 36",
+      "sku": "E2C7E80EE865414781C4E49CC2011931",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Eggshell",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Gray / 41",
+      "sku": "0B31D66EE7054FA19EE537218C5E477E",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Gray / 42",
+      "sku": "1133E87E4A76483EBDCA83E117CF6B85",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Gray",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Royal Blue / 43",
+      "sku": "7E284755EEF54676BFD9F5404966688F",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Royal Blue / 41",
+      "sku": "20BC16A5E4CF49E8AE6EA3CF3BACF9BF",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Royal Blue / 42",
+      "sku": "A93D98D0C83C475FB4F0E8369D8398EB",
+      "price": "34.38",
+      "cost": "5.02",
+      "options": {
+        "Color": "Royal Blue",
+        "Size": "42"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<li><p>Size:unit：mm<br></p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">36</th>\n<td style=\"padding: 9px; word-break: break-all;\">230</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">37</th>\n<td style=\"padding: 9px; word-break: break-all;\">235</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">38</th>\n<td style=\"padding: 9px; word-break: break-all;\">240</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">39</th>\n<td style=\"padding: 9px; word-break: break-all;\">245</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">40</th>\n<td style=\"padding: 9px; word-break: break-all;\">250</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">41</th>\n<td style=\"padding: 9px; word-break: break-all;\">255</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">42</th>\n<td style=\"padding: 9px; word-break: break-all;\">260</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">43</th>\n<td style=\"padding: 9px; word-break: break-all;\">265</td>\n</tr>\n</tbody>\n</table>\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Includes: Box not included</p></li>\n<li><p>Heel height: Mid heels</p></li>\n<li><p>Upper material:Cloth surface</p></li>\n<li><p>Sole material: rubber</p></li>\n<li><p>Imported</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

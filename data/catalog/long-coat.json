@@ -1,0 +1,190 @@
+{
+  "product_id": "gid://shopify/Product/9757276700911",
+  "handle": "long-coat",
+  "original_title": "long coat",
+  "current_title": "long coat",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/long-coat",
+  "category": null,
+  "colors": [
+    "wine red"
+  ],
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "wine red"
+    ],
+    "Size": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 100.04,
+  "price_max": 100.04,
+  "cost_min": 21.73,
+  "cost_max": 21.73,
+  "specs": {
+    "Style": "Intellectual Style",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long sleeves",
+    "Neckline": "suit collar",
+    "Length": "Long (80cm",
+    "Fabric": "Polyester Fiber",
+    "Closure Type": "Single row two piece buckle",
+    "Details": "Splicing",
+    "Fit Type": "Regular",
+    "Occasion": "Temperament Commuting",
+    "Gender": "Female",
+    "Size": "XS, S, M, L",
+    "Material": "Polyester (polyester fiber)",
+    "unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      [
+        "Shoulder Width",
+        "52",
+        "54",
+        "56",
+        "58"
+      ],
+      [
+        "Bust",
+        "110",
+        "114",
+        "118",
+        "122"
+      ],
+      [
+        "Waist",
+        "114",
+        "118",
+        "122",
+        "126"
+      ],
+      [
+        "Hip",
+        "116",
+        "120",
+        "124",
+        "128"
+      ],
+      [
+        "Length",
+        "115",
+        "116",
+        "117",
+        "118"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/007C8A370F5CE2D8666C3F2D90984412.jpg?v=1793062195",
+      "altText": "",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E64B6E03E9691C96A0BCFBCF8618523C.jpg?v=1793062197",
+      "altText": "",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5F3BB001C248C809624CF3615D3B96BA.jpg?v=1793062200",
+      "altText": "",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FBF75EF033A6C14110CFD93CCA98C2A2.jpg?v=1793062202",
+      "altText": "",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/66C931D5FDF7C5B4818B0FB7EBE71CF4.jpg?v=1793062204",
+      "altText": "",
+      "width": 1500,
+      "height": 1500
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C41806139CAE68FE74523FC0887AB2F2.jpg?v=1793062205",
+      "altText": "",
+      "width": 1500,
+      "height": 1500
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/EC2A9DBE02B5DB794B4ACF4BADFB653B.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/D470C958F175693063D007011E20639B.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/52FBB4230DB9CAD713EA043DF78C54AE.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/09056F7312E6E588B341BF67A95F3619.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/CFCA899EE1A99254E0FFED1BD15FCA52.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/6D54EAB1075F5AAC64735AAA7EAE9519.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/5EF444F3D11F36F572BCE6EF73B2C4DC.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/7B0F36E975DC190F6FB8EA4AC7A3B493.jpg"
+  ],
+  "variants": [
+    {
+      "title": "wine red / XS",
+      "sku": "2E20A308073C4A1A883F51E9A7B65431",
+      "price": "100.04",
+      "cost": "21.73",
+      "options": {
+        "Color": "wine red",
+        "Size": "XS"
+      }
+    },
+    {
+      "title": "wine red / S",
+      "sku": "62EB06981DE24506B354868532C8721E",
+      "price": "100.04",
+      "cost": "21.73",
+      "options": {
+        "Color": "wine red",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "wine red / M",
+      "sku": "43BB88F2D12446EBB525814C2E4444D6",
+      "price": "100.04",
+      "cost": "21.73",
+      "options": {
+        "Color": "wine red",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "wine red / L",
+      "sku": "B25841A8A04F40D39DB7206415C29A0F",
+      "price": "100.04",
+      "cost": "21.73",
+      "options": {
+        "Color": "wine red",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Style: Intellectual Style</strong></p><p><strong>Pattern Type: Solid Color</strong></p><p><strong>Sleeve Length: Long sleeves</strong></p><p><strong>Neckline: suit collar</strong></p><p><strong>Length: Long (80cm&lt;clothing length ≤ 100cm)</strong></p><p><strong>Fabric: Polyester Fiber</strong></p><p><strong>Closure Type: Single row two piece buckle</strong></p><p><strong>Details: Splicing</strong></p><p><strong>Fit Type: Regular</strong></p><p><strong>Occasion: Temperament Commuting</strong></p><p><strong>Gender: Female</strong></p><p><strong>Size:XS, S, M, L</strong></p><p><strong>Material: Polyester (polyester fiber)</strong></p><p><strong>unit：cm</strong></p><p></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>XS</th>\n<th>S</th>\n<th>M</th>\n<th>L</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>Shoulder Width</td>\n<td>52</td>\n<td>54</td>\n<td>56</td>\n<td>58</td>\n</tr>\n<tr>\n<td>Bust</td>\n<td>110</td>\n<td>114</td>\n<td>118</td>\n<td>122</td>\n</tr>\n<tr>\n<td>Waist</td>\n<td>114</td>\n<td>118</td>\n<td>122</td>\n<td>126</td>\n</tr>\n<tr>\n<td>Hip</td>\n<td>116</td>\n<td>120</td>\n<td>124</td>\n<td>128</td>\n</tr>\n<tr>\n<td>Length</td>\n<td>115</td>\n<td>116</td>\n<td>117</td>\n<td>118</td>\n</tr>\n</tbody>\n</table><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/EC2A9DBE02B5DB794B4ACF4BADFB653B.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/D470C958F175693063D007011E20639B.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/52FBB4230DB9CAD713EA043DF78C54AE.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/09056F7312E6E588B341BF67A95F3619.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/CFCA899EE1A99254E0FFED1BD15FCA52.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/6D54EAB1075F5AAC64735AAA7EAE9519.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/5EF444F3D11F36F572BCE6EF73B2C4DC.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202512/7B0F36E975DC190F6FB8EA4AC7A3B493.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T22:33:04"
+}

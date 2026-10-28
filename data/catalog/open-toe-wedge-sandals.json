@@ -1,0 +1,324 @@
+{
+  "product_id": "gid://shopify/Product/9751717118191",
+  "handle": "open-toe-wedge-sandals",
+  "original_title": "Open Toe Wedge Sandals",
+  "current_title": "Clear Strap Platform Wedge Slides",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-wedge-sandals",
+  "category": null,
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "41(US10)",
+    "40(US9)",
+    "39(US8)",
+    "38(US7)",
+    "43(US11)",
+    "42(US10.5)",
+    "37(US6)",
+    "36(US5)",
+    "35(US4)"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Size": [
+      "41(US10)",
+      "40(US9)",
+      "39(US8)",
+      "38(US7)",
+      "43(US11)",
+      "42(US10.5)",
+      "37(US6)",
+      "36(US5)",
+      "35(US4)"
+    ]
+  },
+  "price_min": 32.5,
+  "price_max": 32.5,
+  "cost_min": 4.51,
+  "cost_max": 4.51,
+  "specs": {
+    "Color": "Black, White",
+    "Style": "Sandals",
+    "Closure": "Sleeve/Overshoes",
+    "Material": "PVC, PU",
+    "Sole Material": "Rubber",
+    "Heel Height": "High Heel",
+    "Toe Style": "Open Toe",
+    "Occasion": "Casual",
+    "Size": "35,36,37,38,39,40,41,42,43",
+    "Unit": "cm"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35(US4)",
+        "22.5"
+      ],
+      [
+        "36(US5)",
+        "23"
+      ],
+      [
+        "37(US6)",
+        "23.5"
+      ],
+      [
+        "38(US7)",
+        "24"
+      ],
+      [
+        "39(US8)",
+        "24.5"
+      ],
+      [
+        "40(US9)",
+        "25"
+      ],
+      [
+        "41(US10)",
+        "25.5"
+      ],
+      [
+        "42(US10.5)",
+        "26"
+      ],
+      [
+        "43(US11)",
+        "26.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2FA091AA2EA5F60EED33630312DEC4C6.jpg?v=1792823489",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6C5C7E1830E0E7FFE58F1C7871C19F07.jpg?v=1792823491",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6F06EE53AB5983D126108F9A17616931.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2F83010E815D44BC3A6CEC29AE87D3A5.jpg?v=1792823497",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 41(US10)",
+      "sku": "62CA9E532D874A2683B3BADE5A4165DC",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Black / 40(US9)",
+      "sku": "B0C53F3361C54D748FFBAD85768CEDDE",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Black / 39(US8)",
+      "sku": "D643E733D61A4D2883531932E1BB0713",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Black / 38(US7)",
+      "sku": "22792D1DF98742FB91631204CA2D7B06",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 43(US11)",
+      "sku": "B610BD3856A14D9593B3B88249D008BB",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Black / 42(US10.5)",
+      "sku": "66D731EFFF334F9E91E10FE0741F8AB9",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "White / 42(US10.5)",
+      "sku": "381E2D298349481BB6BA2919CFCE5A96",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "White / 41(US10)",
+      "sku": "A555A7252175447F8DA3404F6A5B4161",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "White / 40(US9)",
+      "sku": "C71F0A76FDD14D1C926AF2D01EE5A12E",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "White / 39(US8)",
+      "sku": "346FA02D8CEF4376B4C9C2D09D319435",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Black / 37(US6)",
+      "sku": "371E102B845F49B1A31B336314803C2F",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Black / 36(US5)",
+      "sku": "031778813A4A4C2989DE182B34BD578D",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Black / 35(US4)",
+      "sku": "AF92FA14E42F41DFA2BACE1DE5CB17E7",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "White / 43(US11)",
+      "sku": "7490C99371B04073896128A86652BC69",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "White / 38(US7)",
+      "sku": "A5F7EBD1A8724827961EC6D70B97E4BD",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "White / 37(US6)",
+      "sku": "B9E60CD5E92F4E769F53B4EE4111FC18",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "White / 36(US5)",
+      "sku": "1856AAE4C87843DB8FD0F0247AE9B15C",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "White / 35(US4)",
+      "sku": "26F91B40EF6F4AAFA752DD35A78914E7",
+      "price": "32.50",
+      "cost": "4.51",
+      "options": {
+        "Color": "White",
+        "Size": "35(US4)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Color: Black, White</p><p>- Style: Sandals</p><p>- Closure: Sleeve/Overshoes</p><p>- Material: PVC, PU</p><p>- Sole Material: Rubber</p><p>- Heel Height: High Heel</p><p>- Toe Style: Open Toe</p><p>- Occasion: Casual</p><p>- Size:35,36,37,38,39,40,41,42,43</p><p>- Unit: cm</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<p><br></p>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">35(US4)</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">41(US10)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">42(US10.5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">43(US11)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17",
+  "listing_history": [
+    {
+      "at": "2026-10-24T02:46:40",
+      "title": "Clear Strap Platform Wedge Slides",
+      "change": "renamed + short description (test)"
+    }
+  ]
+}

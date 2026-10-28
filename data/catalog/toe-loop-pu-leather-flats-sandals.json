@@ -1,0 +1,290 @@
+{
+  "product_id": "gid://shopify/Product/9751716561135",
+  "handle": "toe-loop-pu-leather-flats-sandals",
+  "original_title": "Toe Loop PU Leather Flats Sandals",
+  "current_title": "Toe Loop PU Leather Flats Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/toe-loop-pu-leather-flats-sandals",
+  "category": null,
+  "colors": [
+    "Black",
+    "Pastel Yellow"
+  ],
+  "sizes": [
+    "42(US10.5)",
+    "43(US11)",
+    "40(US9)",
+    "41(US10)",
+    "38(US7)",
+    "39(US8)",
+    "36(US5)",
+    "37(US6)"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Pastel Yellow"
+    ],
+    "Size": [
+      "42(US10.5)",
+      "43(US11)",
+      "40(US9)",
+      "41(US10)",
+      "38(US7)",
+      "39(US8)",
+      "36(US5)",
+      "37(US6)"
+    ]
+  },
+  "price_min": 29.24,
+  "price_max": 29.24,
+  "cost_min": 4.51,
+  "cost_max": 4.51,
+  "specs": {
+    "Color": "Black, Pastel Yellow",
+    "Style": "Sandals",
+    "Closure Type": "Slip-On",
+    "Material": "Faux PU, Faux Leather",
+    "Heel Height": "Flat Heel",
+    "Toe Style": "Open Toe",
+    "Occasion": "Casual",
+    "Size": "36,37,38,39,40,41,42,43",
+    "Unit": "CM"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "36(US5)",
+        "23"
+      ],
+      [
+        "37(US6)",
+        "23.5"
+      ],
+      [
+        "38(US7)",
+        "24"
+      ],
+      [
+        "39(US8)",
+        "24.5"
+      ],
+      [
+        "40(US9)",
+        "25"
+      ],
+      [
+        "41(US10)",
+        "25.5"
+      ],
+      [
+        "42(US10.5)",
+        "26"
+      ],
+      [
+        "43(US11)",
+        "26.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D0C8A0AFC25463E335FB14F1193EE337.jpg?v=1792823482",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E896B5C0B80C2D1CA111FDA7F7043C62.jpg?v=1792823485",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/99389F5CD8630B7B24EEE2AE6EB77F04.jpg?v=1792823487",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BDFB277E9DE29CABA0A7949FCEC1A8FC.jpg?v=1792823491",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 42(US10.5)",
+      "sku": "7474033A21084CBB8B3253D64E387DD8",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Black / 43(US11)",
+      "sku": "663B4814D7F34646908FDA74D4208077",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Black / 40(US9)",
+      "sku": "948A1FB1108A4DADAD3C4B1CF25777C4",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Black / 41(US10)",
+      "sku": "8A12B3566EFE4104836F38854624733D",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Black / 38(US7)",
+      "sku": "14B1E9256F174C8388E23C28BD513AC7",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 39(US8)",
+      "sku": "CDCD5E024B5A47899CCBAE6BC0ED0571",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Black / 36(US5)",
+      "sku": "7F75139F01C34F76906121BEBE34DCB3",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Black / 37(US6)",
+      "sku": "11B337857462437595BF667672DAC066",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 42(US10.5)",
+      "sku": "A7D682F7DBDE421CA6EC796139432520",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 43(US11)",
+      "sku": "7D9C9ED197DC4DC494E85BE50B3B5BE5",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 40(US9)",
+      "sku": "FA84E80D942F4BB58084C0F4EDEA04E7",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 41(US10)",
+      "sku": "AD14FDD597814AB7B878759E904D5D97",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 38(US7)",
+      "sku": "F946519AD4B242FD809FE98567E22CB5",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 39(US8)",
+      "sku": "740692579A964613817BF67E306530A4",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 36(US5)",
+      "sku": "A8A8A30FE2534C198AED09691D9D8761",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Pastel Yellow / 37(US6)",
+      "sku": "8DAE6936F71642B1A06A4CA54B121915",
+      "price": "29.24",
+      "cost": "4.51",
+      "options": {
+        "Color": "Pastel Yellow",
+        "Size": "37(US6)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Color: Black, Pastel Yellow</p><p>- Style: Sandals</p><p>- Closure Type: Slip-On</p><p>- Material: Faux PU, Faux Leather</p><p>- Heel Height: Flat Heel</p><p>- Toe Style: Open Toe</p><p>- Occasion: Casual</p><p>- Size: 36,37,38,39,40,41,42,43</p><p>- Unit: CM</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">41(US10)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">42(US10.5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">43(US11)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

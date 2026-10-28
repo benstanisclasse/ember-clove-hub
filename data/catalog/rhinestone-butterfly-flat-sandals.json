@@ -1,0 +1,273 @@
+{
+  "product_id": "gid://shopify/Product/9751717019887",
+  "handle": "rhinestone-butterfly-flat-sandals",
+  "original_title": "Rhinestone Butterfly Flat Sandals",
+  "current_title": "Rhinestone Butterfly Flat Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/rhinestone-butterfly-flat-sandals",
+  "category": null,
+  "colors": [
+    "Beige",
+    "Black"
+  ],
+  "sizes": [
+    "41",
+    "42",
+    "39",
+    "40",
+    "43",
+    "37",
+    "38",
+    "36"
+  ],
+  "options": {
+    "Color": [
+      "Beige",
+      "Black"
+    ],
+    "Size": [
+      "41",
+      "42",
+      "39",
+      "40",
+      "43",
+      "37",
+      "38",
+      "36"
+    ]
+  },
+  "price_min": 25.62,
+  "price_max": 25.62,
+  "cost_min": 4.01,
+  "cost_max": 4.01,
+  "specs": {
+    "Includes": "Box not included",
+    "Heel height": "Flats",
+    "Shoe upper material": "PVC",
+    "Sole Material": "Rubber"
+  },
+  "description_text": [
+    "Product measurements:",
+    "Material:",
+    "Imported"
+  ],
+  "size_tables": [
+    [
+      [
+        "size",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      [
+        "Foot length (mm)",
+        "230",
+        "235",
+        "240",
+        "245",
+        "250",
+        "255",
+        "260",
+        "265"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/87C3A243EB6316C1478DAEC1ADBC2029.jpg?v=1792823489",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4A846769E942103C82F7E52BECEBC5EE.jpg?v=1792823492",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5FED52EC753A12F334FC20CE58F49A90.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/DA3BCDF2922B7D436E4254C040504EBF.jpg?v=1792823503",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Beige / 41",
+      "sku": "4DA2A2F9943C40CD88F4B4BEE32F7535",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Beige / 42",
+      "sku": "6AC5495A9C8E4F8CA158F1E692909D24",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Beige / 39",
+      "sku": "DFBB94388B134D928CB131748EA101E0",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Beige / 40",
+      "sku": "164E393B26FC4E77BDF79365DBE18C9F",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Beige / 43",
+      "sku": "DDB3DF8594CC43CB9CF2ED1A066AA73B",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "9227F5FA5FE0469A808798F57CDC44A1",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "C5EF05335FE842EAB1769D663FC3BC24",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "F2B9D5669CB04D7D97DDB4C360A37C45",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "817C7D3E806D41A38030CF1A5ACC875C",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Beige / 37",
+      "sku": "F054D430DD044EE9BC0A344E559A957F",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Beige / 38",
+      "sku": "2DE1F2DEE3FA47DF8DF330A3E38B32D5",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "F2E32D6A663C43228B718752E47CFFDC",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Beige / 36",
+      "sku": "E1A9F8C06C6442808D12A960130F1587",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Beige",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "F32FF9A80F5C4C3D88DBCA054A69A506",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "85FA86F35C1C4BB5919ACAB1A3A0DBBF",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "AE4A984D2E04449998849747D5119F1E",
+      "price": "25.62",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\"><li><p>Product measurements:</p></li></ul><table width=\"540\">\n<colgroup>\n<col width=\"101\" style=\"width:75.75pt;\">\n<col width=\"72\" style=\"width:54.00pt;\">\n<col width=\"83\" style=\"width:62.25pt;\">\n<col width=\"75\" style=\"width:56.25pt;\">\n<col width=\"72\" style=\"width:54.00pt;\" span=\"3\">\n<col width=\"101\" style=\"width:75.75pt;\">\n<col width=\"72\" style=\"width:54.00pt;\">\n</colgroup>\n<tbody>\n<tr style=\"height:47.00pt;\" class=\"firstRow\">\n<td class=\"et3\" width=\"75\" style=\"\">size</td>\n<td class=\"et4\" width=\"54\" style=\"\">36</td>\n<td class=\"et4\" width=\"62\" style=\"\">37</td>\n<td class=\"et4\" width=\"56\" style=\"\">38</td>\n<td class=\"et4\" width=\"54\" style=\"\">39</td>\n<td class=\"et4\" width=\"54\" style=\"\">40</td>\n<td class=\"et4\" width=\"54\" style=\"\">41</td>\n<td class=\"et4\" width=\"75\" style=\"\">42</td>\n<td class=\"et4\" width=\"54\" style=\"\">43</td>\n</tr>\n<tr style=\"height:47.00pt;\">\n<td class=\"et5\" width=\"75\" style=\"\">Foot length (mm)</td>\n<td class=\"et4\">230</td>\n<td class=\"et4\">235</td>\n<td class=\"et4\">240</td>\n<td class=\"et4\">245</td>\n<td class=\"et4\">250</td>\n<td class=\"et4\">255</td>\n<td class=\"et4\">260</td>\n<td class=\"et4\">265</td>\n</tr>\n</tbody>\n</table><ul class=\" list-paddingleft-2\">\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Includes: Box not included</p></li>\n<li><p>Heel height: Flats</p></li>\n<li><p>Material: </p></li>\n<li><p>Shoe upper material: PVC</p></li>\n<li><p>Sole Material: Rubber</p></li>\n<li><p>Imported</p></li>\n</ul>\n<br>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

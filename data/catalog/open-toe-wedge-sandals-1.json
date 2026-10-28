@@ -1,0 +1,361 @@
+{
+  "product_id": "gid://shopify/Product/9751717150959",
+  "handle": "open-toe-wedge-sandals-1",
+  "original_title": "Open Toe Wedge Sandals",
+  "current_title": "Open Toe Wedge Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-wedge-sandals-1",
+  "category": null,
+  "colors": [
+    "Black",
+    "Gray",
+    "Brass"
+  ],
+  "sizes": [
+    "42(US10.5)",
+    "41(US10)",
+    "40(US9)",
+    "39(US8)",
+    "38(US7)",
+    "37(US6)",
+    "36(US5)"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Gray",
+      "Brass"
+    ],
+    "Size": [
+      "42(US10.5)",
+      "41(US10)",
+      "40(US9)",
+      "39(US8)",
+      "38(US7)",
+      "37(US6)",
+      "36(US5)"
+    ]
+  },
+  "price_min": 28.5,
+  "price_max": 28.5,
+  "cost_min": 4.01,
+  "cost_max": 4.01,
+  "specs": {
+    "Colors": "Black,Gray,Brass",
+    "Style": "sandals",
+    "Closure": "slip-on",
+    "Material": "PU",
+    "Sole material": "rubber",
+    "Heel height": "high heel",
+    "Toe style": "open toe",
+    "Occasion": "casual",
+    "Size": "36,37,38,39,40,41,42",
+    "Unit": "cm"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "36(US5)",
+        "22.5"
+      ],
+      [
+        "37(US6)",
+        "23"
+      ],
+      [
+        "38(US7)",
+        "24"
+      ],
+      [
+        "39(US8)",
+        "25"
+      ],
+      [
+        "40(US9)",
+        "25.5"
+      ],
+      [
+        "41(US10)",
+        "26.5"
+      ],
+      [
+        "42(US10.5)",
+        "27"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/47A35091198CD65FD840D57511A9476F.jpg?v=1792823491",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FBB8B9EA2E7AB609F04B44720B21F711.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/27881667578069A2B766DB50891FEAA0.jpg?v=1792823495",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C4C5F467052E3FBFC206445D964F7A75.jpg?v=1792823518",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CBB37BF5A688657834E75C548F650D47.jpg?v=1792823526",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9602FC46B1B39C4C8310F8D5F2B4765F.jpg?v=1792823528",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6E8DF0B347CA5B5CAA6272D103BAE963.jpg?v=1792823535",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EE7555D884EC57E088D2F5FBBE705477.jpg?v=1792823536",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 42(US10.5)",
+      "sku": "AF4D4C8251AA405AAD6CAD423523A151",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Black / 41(US10)",
+      "sku": "747253D980AF47BBBA3833EA47E86B58",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Black / 40(US9)",
+      "sku": "97DB0D3B703F48049BAFE5996F28DBD3",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Black / 39(US8)",
+      "sku": "B27E86DE33004210B4395F1A42B20EE7",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Gray / 41(US10)",
+      "sku": "73FE801F286D44B09FF5B6CB8626FE1C",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Gray / 40(US9)",
+      "sku": "1F96E8D72C6641B9A90FE285956CDF92",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Gray / 39(US8)",
+      "sku": "F69DC01A2D714ADA97AF2858885F4BA2",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Gray / 38(US7)",
+      "sku": "50EC9B8573EE4EE697EAEF2A39D46EEF",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 38(US7)",
+      "sku": "A7B9F3165A29494F94F1EA866FDCA5A9",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 37(US6)",
+      "sku": "BA454BDF8E62428A84463E00FDEBB66B",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Black / 36(US5)",
+      "sku": "19BC51C245D340399007C01B049255E3",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Black",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Gray / 42(US10.5)",
+      "sku": "4CCC86A329B34978ADC3A866165363F0",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Brass / 40(US9)",
+      "sku": "F00703D647C648E28072CB67FCDA57B0",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Brass / 39(US8)",
+      "sku": "61CD4128292C425E85AEA2EDEC1365DF",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Brass / 38(US7)",
+      "sku": "23D3256D7DB444D885E48CE93341984C",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Brass / 37(US6)",
+      "sku": "A674ACE3A3EE4A0F9CD851A3CD0924A4",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Gray / 37(US6)",
+      "sku": "3CE17DA223314E65B80405AD73FF4027",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Gray / 36(US5)",
+      "sku": "2C7EF08E04004D8CB434B9EFBDE487B9",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Brass / 42(US10.5)",
+      "sku": "A5F26823DE2E40B89D835E221477CF5A",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Brass / 41(US10)",
+      "sku": "D6EE9F2701C84340AA012FE230161BBE",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Brass / 36(US5)",
+      "sku": "9F1E5F7CA96048838607408E82D7865B",
+      "price": "28.50",
+      "cost": "4.01",
+      "options": {
+        "Color": "Brass",
+        "Size": "36(US5)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Colors: Black,Gray,Brass</p><p>- Style: sandals</p><p>- Closure: slip-on</p><p>- Material: PU</p><p>- Sole material: rubber</p><p>- Heel height: high heel</p><p>- Toe style: open toe</p><p>- Occasion: casual</p><p>- Size: 36,37,38,39,40,41,42</p><p>- Unit: cm</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<p><br></p>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">41(US10)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">42(US10.5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">27</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

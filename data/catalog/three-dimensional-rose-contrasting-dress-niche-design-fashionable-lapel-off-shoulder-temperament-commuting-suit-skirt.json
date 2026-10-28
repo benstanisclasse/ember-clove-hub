@@ -1,0 +1,149 @@
+{
+  "product_id": "gid://shopify/Product/9757092315375",
+  "handle": "three-dimensional-rose-contrasting-dress-niche-design-fashionable-lapel-off-shoulder-temperament-commuting-suit-skirt",
+  "original_title": "Three dimensional rose contrasting dress, niche design, fashionable lapel, off shoulder temperament, commuting suit skirt",
+  "current_title": "Three dimensional rose contrasting dress, niche design, fashionable lapel, off shoulder temperament, commuting suit skirt",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://emberandclove.com/products/three-dimensional-rose-contrasting-dress-niche-design-fashionable-lapel-off-shoulder-temperament-commuting-suit-skirt",
+  "category": null,
+  "colors": [
+    "Black"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "options": {
+    "Color": [
+      "Black"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  "price_min": 122.32,
+  "price_max": 122.32,
+  "cost_min": 46.87,
+  "cost_max": 46.87,
+  "specs": {
+    "Color": "Black",
+    "Style": "suit skirt",
+    "Pattern type": "3D rose",
+    "Sleeve length": "Long sleeves",
+    "Collar": "Flip collar",
+    "Length": "Short skirt",
+    "Fabric": "Polyester",
+    "Closure type": "button",
+    "Detail": "Color collision",
+    "Fit type": "slim fit",
+    "Occasion": "Formal",
+    "Gender": "Female",
+    "XL": "Bust:98cm,Waist:80cm,Hip:108cm,Sleeve Length:65cm,Length:81cm",
+    "Note": "1 inch = 2.54 cm, 1 cm = 0.39 inch",
+    "note": "measurement by hands allow 2-3cm errors which is normal"
+  },
+  "description_text": [
+    "SIZE",
+    "S:Bust:86cm,Waist:68cm,Hip:96cm,Sleeve Length:62cm,Length:78cm",
+    "M:Bust:90cm,Waist:72cm,Hip:100cm,Sleeve Length:63cm,Length:79cm",
+    "L:Bust:94cm,Waist:76cm,Hip:104cm,Sleeve Length:64cm,Length:80cm"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/207CCDA563C573FE694F31B971C8C1D7.jpg?v=1793049944",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/980B38EE234D142061091EEABFA0B593.jpg?v=1793049946",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/AC87C9C674B054A2AD9FA6B2A15BE1D3.jpg?v=1793049949",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F09E6F95E086632D9FA65883A4BFC767.jpg?v=1793049951",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8635ED9D89BCFA7732E4141BA7C60F60.jpg?v=1793049953",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C88634DDAB226BD92F0D576D61B0678A.jpg?v=1793049955",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/E22C4A966A7C6DAC11F8B971F25A151F.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/3E7FEF1FDA12467F8AA1DD5BD678BECC.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/6B94F504C7A8D70A112D4D69B3725CCC.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/E2174C772C59FB480AB482B312854402.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/680C28CE1A819D5E68CB587C35875484.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/F3B9D84DB3A0CE2FE0E3A0CBF7AF05EA.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Black / S",
+      "sku": "033A83387A19410DA83AC83683F0D87A",
+      "price": "122.32",
+      "cost": "46.87",
+      "options": {
+        "color": "Black",
+        "size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "A9329111291A49BE8E0B66E749E1E303",
+      "price": "122.32",
+      "cost": "46.87",
+      "options": {
+        "color": "Black",
+        "size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "DF897409B0FF4DC0B4DF0CB8D7D5E41A",
+      "price": "122.32",
+      "cost": "46.87",
+      "options": {
+        "color": "Black",
+        "size": "L"
+      }
+    },
+    {
+      "title": "Black / XL",
+      "sku": "0DD5912756A94004BC5A17FA0B13A020",
+      "price": "122.32",
+      "cost": "46.87",
+      "options": {
+        "color": "Black",
+        "size": "XL"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; color: rgb(255, 0, 0); font-size: 20px;\"><strong style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px;\"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word;\"></span></strong></span></p><p>Color: Black</p><p>Style: suit skirt</p><p>Pattern type: 3D rose</p><p>Sleeve length: Long sleeves</p><p>Collar: Flip collar</p><p>Length: Short skirt</p><p>Fabric: Polyester</p><p>Closure type: button</p><p>Detail: Color collision</p><p>Fit type: slim fit</p><p>Occasion: Formal</p><p>Gender: Female</p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; color: rgb(255, 0, 0); font-size: 20px;\"><strong style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px;\"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word;\">SIZE</span></strong></span><br></p><p><br></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 18px;\">S:Bust:86cm,Waist:68cm,Hip:96cm,Sleeve Length:62cm,Length:78cm</span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 18px;\">M:Bust:90cm,Waist:72cm,Hip:100cm,Sleeve Length:63cm,Length:79cm</span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 18px;\">L:Bust:94cm,Waist:76cm,Hip:104cm,Sleeve Length:64cm,Length:80cm</span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word;\"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 18px;\">XL:Bust:98cm,Waist:80cm,Hip:108cm,Sleeve Length:65cm,Length:81cm</span></span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word;\"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 18px;\"><br></span></span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 16px;\">Note: 1 inch = 2.54 cm, 1 cm = 0.39 inch</span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><span style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; padding: 0px; max-width: 100%; word-break: break-word; font-size: 16px;\">note: measurement by hands allow 2-3cm errors which is normal</span></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><br></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><img title=\"2-HOW TO MEASURE.jpg\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/E22C4A966A7C6DAC11F8B971F25A151F.jpg\"></p><p><br></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><img title=\"O1CN01CeUPGc2GBymOHntYT_!!3429068978-0-cib.jpg\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/3E7FEF1FDA12467F8AA1DD5BD678BECC.jpg\"></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><br></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><img title=\"O1CN01ETB1js2GBymaLg6lZ_!!3429068978-0-cib.jpg\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/6B94F504C7A8D70A112D4D69B3725CCC.jpg\"></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><br></p><p style=\"box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin-top: 0px; margin-bottom: 0px; padding: 0px; line-height: inherit; color: rgb(34, 34, 34); font-family: \"><img title=\"3-MODEL SHOW.jpg\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/E2174C772C59FB480AB482B312854402.jpg\"></p><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/680C28CE1A819D5E68CB587C35875484.jpg\"> <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/F3B9D84DB3A0CE2FE0E3A0CBF7AF05EA.jpg\"><br></p>",
+  "cataloged_at": "2026-10-26T23:02:48"
+}

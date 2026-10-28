@@ -1,0 +1,223 @@
+{
+ "query": "mutation($files: [FileUpdateInput!]!) { fileUpdate(files: $files) { files { id alt } userErrors { field message code } } }",
+ "variables": {
+  "files": [
+   {
+    "id": "gid://shopify/MediaImage/41319725990127",
+    "alt": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41319726219503",
+    "alt": "Two-Button Notch Lapel Long Coat in Burgundy, close-up of the lapel and lining"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41319726448879",
+    "alt": "Two-Button Notch Lapel Long Coat in Burgundy, close-up of the back collar"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41319726481647",
+    "alt": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41319726612719",
+    "alt": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41319726645487",
+    "alt": "Two-Button Notch Lapel Long Coat in Burgundy, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973009135",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973336815",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Black, on model, front view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973762799",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Dark Brown, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974516463",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Dark Brown, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974778607",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Black, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974942447",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975368431",
+    "alt": "Studded Fold-Over Mid-Calf Boots in Dark Brown, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320972943599",
+    "alt": "Triple Buckle Faux Suede Boots in Sage Green, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973304047",
+    "alt": "Triple Buckle Faux Suede Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973697263",
+    "alt": "Triple Buckle Faux Suede Boots in Tan, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974713071",
+    "alt": "Triple Buckle Faux Suede Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974876911",
+    "alt": "Triple Buckle Faux Suede Boots in Sage Green, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975335663",
+    "alt": "Triple Buckle Faux Suede Boots in Black, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975433967",
+    "alt": "Triple Buckle Faux Suede Boots in Tan, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973402351",
+    "alt": "Fringe Faux Suede Ankle Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973631727",
+    "alt": "Fringe Faux Suede Ankle Boots in Tan, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974483695",
+    "alt": "Fringe Faux Suede Ankle Boots in Sage Green, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974844143",
+    "alt": "Fringe Faux Suede Ankle Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974975215",
+    "alt": "Fringe Faux Suede Ankle Boots in Sage Green, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975401199",
+    "alt": "Fringe Faux Suede Ankle Boots in Black, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975532271",
+    "alt": "Fringe Faux Suede Ankle Boots in Tan, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973172975",
+    "alt": "Embroidered Cat Plush Slippers in White, on foot, front view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973500655",
+    "alt": "Embroidered Cat Plush Slippers in White, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974287087",
+    "alt": "Embroidered Cat Plush Slippers in White, on foot, front view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974614767",
+    "alt": "Embroidered Cat Plush Slippers in White, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974811375",
+    "alt": "Embroidered Cat Plush Slippers in White, on foot, front view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975007983",
+    "alt": "Embroidered Cat Plush Slippers in White, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320973730031",
+    "alt": "Metal Toe Cap Wedge Mules in Ivory, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974450927",
+    "alt": "Metal Toe Cap Wedge Mules in Cognac, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974745839",
+    "alt": "Metal Toe Cap Wedge Mules in Ivory, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320974909679",
+    "alt": "Metal Toe Cap Wedge Mules in Black, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320975040751",
+    "alt": "Metal Toe Cap Wedge Mules in Cognac, on foot, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320993718511",
+    "alt": "Floral Print Platform Wedge Slides in Orange, Green and Black, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994046191",
+    "alt": "Floral Print Platform Wedge Slides in Orange, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994177263",
+    "alt": "Floral Print Platform Wedge Slides in Green, sole view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994242799",
+    "alt": "Floral Print Platform Wedge Slides in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994603247",
+    "alt": "Floral Print Platform Wedge Slides in Black, shown single, side view with wedge height"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994799855",
+    "alt": "Floral Print Platform Wedge Slides in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320995029231",
+    "alt": "Floral Print Platform Wedge Slides in Orange, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320995291375",
+    "alt": "Floral Print Platform Wedge Slides in Green, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320993947887",
+    "alt": "Snap Button Fold-Over Knee Boots in White, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994144495",
+    "alt": "Snap Button Fold-Over Knee Boots in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994210031",
+    "alt": "Snap Button Fold-Over Knee Boots in Beige, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994537711",
+    "alt": "Snap Button Fold-Over Knee Boots in White, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994734319",
+    "alt": "Snap Button Fold-Over Knee Boots in Beige, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320994865391",
+    "alt": "Snap Button Fold-Over Knee Boots in Beige, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320995258607",
+    "alt": "Snap Button Fold-Over Knee Boots in Black, shown single, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41320995324143",
+    "alt": "Snap Button Fold-Over Knee Boots in White, shown single, side view"
+   }
+  ]
+ }
+}

@@ -1,0 +1,165 @@
+{
+  "product_id": "gid://shopify/Product/9751716626671",
+  "handle": "womens-sandals-luxury-designer-fashion-gold-chunky-sandals-elegant-square-toe-low-block-heel-sandals",
+  "original_title": "Women's Sandals Luxury Designer Fashion Gold Chunky Sandals Elegant Square toe Low block-heel Sandals",
+  "current_title": "Women's Sandals Luxury Designer Fashion Gold Chunky Sandals Elegant Square toe Low block-heel Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/womens-sandals-luxury-designer-fashion-gold-chunky-sandals-elegant-square-toe-low-block-heel-sandals",
+  "category": null,
+  "colors": [
+    "orange"
+  ],
+  "sizes": [
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+  ],
+  "options": {
+    "Color": [
+      "orange"
+    ],
+    "Size": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ]
+  },
+  "price_min": 49.7,
+  "price_max": 49.7,
+  "cost_min": 11.69,
+  "cost_max": 11.69,
+  "specs": {},
+  "description_text": [
+    "Color Orange",
+    "Sizes 35,36,37,38,39,40,41",
+    "Upper material microfiber",
+    "Square toe shape",
+    "Sole material rubber",
+    "Inner material microfiber"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B0B3F8D358736A9FD3DF95CE482FECD5.jpg?v=1792823483",
+      "altText": "",
+      "width": 760,
+      "height": 760
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5FB5AFF99A6910ACA529BA5A08911B45.jpg?v=1792823485",
+      "altText": "",
+      "width": 760,
+      "height": 760
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E065782E5B1E45441C9B381BDE010136.jpg?v=1792823488",
+      "altText": "",
+      "width": 760,
+      "height": 760
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/420029D848412677AB83D5C5599F40FC.jpg?v=1792823489",
+      "altText": "",
+      "width": 760,
+      "height": 760
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/AAA8DF2403F078EBE22F3B5CC9872A77.jpg?v=1792823491",
+      "altText": "",
+      "width": 760,
+      "height": 760
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202308/977AF17456419D6B92684A34CA7A85DF.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01YEs7f0295q21WG2wR_!!2211861978017-0-cib.jpg?__r__=1659602211161",
+    "https://cbu01.alicdn.com/img/ibank/O1CN019fI7GG295q21WFNQo_!!2211861978017-0-cib.jpg?__r__=1659602211161",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01gKJgOE295q22fjvVH_!!2211861978017-0-cib.jpg?__r__=1659602211162",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01tb1hwI295q1toPPpC_!!2211861978017-0-cib.jpg?__r__=1659602211162",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01kEGPzw295q23RF7Mi_!!2211861978017-0-cib.jpg?__r__=1659602211162"
+  ],
+  "variants": [
+    {
+      "title": "orange / 35",
+      "sku": "BF4F1E25B8C64095A1DB679DC471F2D9",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "35"
+      }
+    },
+    {
+      "title": "orange / 36",
+      "sku": "B8B27762C9B340EBB1E1F73D4495CDA1",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "36"
+      }
+    },
+    {
+      "title": "orange / 37",
+      "sku": "C42E5ED1C6D54BFBA76C4EFC012DDDA0",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "37"
+      }
+    },
+    {
+      "title": "orange / 38",
+      "sku": "FB5C9BDE21CD416AB7D8A23738E8F010",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "38"
+      }
+    },
+    {
+      "title": "orange / 39",
+      "sku": "87D585FF814B4DA4A2C7D10785D3686E",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "39"
+      }
+    },
+    {
+      "title": "orange / 40",
+      "sku": "8A67A197B91C410C9E0A6C25AA2685A3",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "40"
+      }
+    },
+    {
+      "title": "orange / 41",
+      "sku": "3FC33DFAF2B64918803BF414E1FC9BE5",
+      "price": "49.70",
+      "cost": "11.69",
+      "options": {
+        "color": "orange",
+        "size": "41"
+      }
+    }
+  ],
+  "raw_description_html": "<p><span class=\"offer-attr-item-name\"></span></p><p>Color Orange</p><p>Sizes 35,36,37,38,39,40,41</p><p>Upper material microfiber</p><p>Square toe shape</p><p>Sole material rubber</p><p>Inner material microfiber</p><p><span class=\"offer-attr-item-value\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202308/977AF17456419D6B92684A34CA7A85DF.jpg\" title=\"977AF17456419D6B92684A34CA7A85DF.jpg\" alt=\"121C7528B7D0D57B64DFF97300819EBC[1].jpg\"></span></p><p><span class=\"offer-attr-item-value\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01YEs7f0295q21WG2wR_!!2211861978017-0-cib.jpg?__r__=1659602211161\" alt=\"微信图片_20220803155539\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN019fI7GG295q21WFNQo_!!2211861978017-0-cib.jpg?__r__=1659602211161\" alt=\"微信图片_20220803155535\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01gKJgOE295q22fjvVH_!!2211861978017-0-cib.jpg?__r__=1659602211162\" alt=\"微信图片_20220803155547\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01tb1hwI295q1toPPpC_!!2211861978017-0-cib.jpg?__r__=1659602211162\" alt=\"微信图片_20220803155532\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01kEGPzw295q23RF7Mi_!!2211861978017-0-cib.jpg?__r__=1659602211162\" alt=\"微信图片_20220803155543\"></span></p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

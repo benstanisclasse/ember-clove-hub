@@ -1,0 +1,37 @@
+# The presenter. DRAFT: owner picks a face (portrait options in studio/refs/candidates/), name and details, then
+# approves with: python scripts/studio/cli.py --actor owner bible-approve character --quote "<owner's words>"
+status: approved
+approved_by: owner
+approved_at: "2026-10-26T16:16:30"
+approved_hash: "796c1c148acd8ddc"
+
+id: char-01
+name: Ember                   # owner 2026-10-26
+presents_as: woman
+age_range: "29-33"
+personality:
+  - warm and practical
+  - quietly confident
+  - a little funny, never sarcastic
+  - honest about what works and what doesn't
+voice_style: "friendly and brisk, like a friend giving straight styling advice over coffee"
+catchphrases: []              # let these emerge from what lands with viewers; add only proven ones
+never_says:                   # in addition to rules.banned_phrases
+  - "girlies"
+  - "obsessed"
+  - "you guys"
+  - "run don't walk"
+appearance:                   # from the chosen portrait (option B, owner 2026-10-26)
+  hair_color: dark brown
+  hair_length: shoulder-length
+  hair_style: "straight with a slight bend, often tucked behind one ear, soft middle part"
+  build: "average, natural proportions"
+  nails: "short, natural pink"
+  signature_jewelry: ["small gold hoop earrings", "a fine gold chain necklace"]
+backstory:                    # background for consistency; never claimed on camera as fact about a real person
+  lives_alone: true
+  job: "works a regular office job, so outfits have to work for real days"
+  style: "classic, cozy, practical: knits, boots, neutral colors, one interesting piece"
+  values: "buys fewer, better-fitting things; hates outfits you have to fuss with"
+face_refs: [studio/refs/face_main.png]   # owner chose option B on 2026-10-26
+ai_label_required: true       # every post carries TikTok's AI-generated label

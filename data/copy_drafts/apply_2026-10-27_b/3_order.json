@@ -1,0 +1,163 @@
+{
+ "query": "mutation($id0: ID!, $mv0: [MoveInput!]!, $id1: ID!, $mv1: [MoveInput!]!, $id2: ID!, $mv2: [MoveInput!]!, $id3: ID!, $mv3: [MoveInput!]!, $id4: ID!, $mv4: [MoveInput!]!, $id5: ID!, $mv5: [MoveInput!]!) {\n  r0: productReorderMedia(id: $id0, moves: $mv0) { job { id } mediaUserErrors { field message } }\n  r1: productReorderMedia(id: $id1, moves: $mv1) { job { id } mediaUserErrors { field message } }\n  r2: productReorderMedia(id: $id2, moves: $mv2) { job { id } mediaUserErrors { field message } }\n  r3: productReorderMedia(id: $id3, moves: $mv3) { job { id } mediaUserErrors { field message } }\n  r4: productReorderMedia(id: $id4, moves: $mv4) { job { id } mediaUserErrors { field message } }\n  r5: productReorderMedia(id: $id5, moves: $mv5) { job { id } mediaUserErrors { field message } }\n}",
+ "variables": {
+  "id0": "gid://shopify/Product/9757092315375",
+  "id1": "gid://shopify/Product/9757092675823",
+  "id2": "gid://shopify/Product/9757095395567",
+  "id3": "gid://shopify/Product/9757098049775",
+  "id4": "gid://shopify/Product/9757099294959",
+  "id5": "gid://shopify/Product/9757099819247",
+  "mv0": [
+   {
+    "id": "gid://shopify/MediaImage/41318190416111",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318188548335",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318189793519",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190547183",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318188744943",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318189105391",
+    "newPosition": "5"
+   }
+  ],
+  "mv1": [
+   {
+    "id": "gid://shopify/MediaImage/41318192021743",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318189498607",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190121199",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190514415",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190874863",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318191431919",
+    "newPosition": "5"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318192185583",
+    "newPosition": "6"
+   }
+  ],
+  "mv2": [
+   {
+    "id": "gid://shopify/MediaImage/41318200213743",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200344815",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200672495",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318201000175",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318201852143",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318201327855",
+    "newPosition": "5"
+   }
+  ],
+  "mv3": [
+   {
+    "id": "gid://shopify/MediaImage/41318211977455",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318212567279",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318213320943",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318211879151",
+    "newPosition": "3"
+   }
+  ],
+  "mv4": [
+   {
+    "id": "gid://shopify/MediaImage/41318217122031",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318215713007",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318216007919",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318216761583",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318217056495",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318217646319",
+    "newPosition": "5"
+   }
+  ],
+  "mv5": [
+   {
+    "id": "gid://shopify/MediaImage/41318219677935",
+    "newPosition": "0"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218072303",
+    "newPosition": "1"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218367215",
+    "newPosition": "2"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218891503",
+    "newPosition": "3"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218989807",
+    "newPosition": "4"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318219776239",
+    "newPosition": "5"
+   }
+  ]
+ }
+}

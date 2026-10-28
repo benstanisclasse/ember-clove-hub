@@ -1,0 +1,136 @@
+{
+  "product_id": "gid://shopify/Product/9751306109167",
+  "handle": "lipstick-girl-boss-tee",
+  "original_title": "Lipstick Girl Boss Tee",
+  "current_title": "Lipstick Girl Boss Tee",
+  "vendor": "MerchMallow",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/lipstick-girl-boss-tee",
+  "category": "Apparel & Accessories > Clothing > Clothing Tops > T-Shirts",
+  "colors": [
+    "Ash"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL"
+  ],
+  "options": {
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "Color": [
+      "Ash"
+    ]
+  },
+  "price_min": 16.09,
+  "price_max": 17.2,
+  "cost_min": 14.49,
+  "cost_max": 15.49,
+  "specs": {
+    "Perfect Fit": "Crafted to feel like a well-loved favorite with a retail fit that adapts to any wardrobe.",
+    "Premium Material": "Soft cotton with quality printing ensures lasting comfort and vibrant designs.",
+    "High-Quality Material": "Made from 100% Airlume combed and ring-spun cotton, offering a soft, breathable, and lightweight feel (4.2 oz/yd²).",
+    "Durable & Ethical": "Manufactured sustainably by Bella+Canvas in the US and internationally, adhering to no-sweatshop and humane labor practices (Platinum WRAP Certified).",
+    "o Ribbed Knit Collar": "Elastic and durable, retains shape over time.",
+    "o Shoulder Tape": "Stabilizes the back of the garment and prevents stretching.",
+    "o Side Seams": "Maintain structure and provide long-lasting shape.",
+    "o Sleeve Printing": "High-quality Direct-to-Film (DTF) or Direct-to-Garment (DTG) methods for crisp, vibrant designs.",
+    "o Neck Label Printing": "Detailed and durable designs using DTF or DTG techniques."
+  },
+  "description_text": [
+    "Unisex Jersey Short Sleeve Tee – Timeless Comfort & Style",
+    "• Enhanced Features:",
+    "• Custom Printing Options:",
+    "This versatile tee is ideal for casual wear, layering, and custom printing, making it a go-to favorite for any occasion!"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/lipstick-girl-boss-tee-ash-s-peachy-sunday-t-shirt-32801116586142.png?v=1792788218",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/lipstick-girl-boss-tee-peachy-sunday-t-shirt-32800941965470.png?v=1792788219",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "S / Ash",
+      "sku": "50262071279891",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "M / Ash",
+      "sku": "50262071312659",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "L / Ash",
+      "sku": "50262071345427",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "XL / Ash",
+      "sku": "50262071378195",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "2XL / Ash",
+      "sku": "50262071410963",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Ash"
+      }
+    },
+    {
+      "title": "3XL / Ash",
+      "sku": "50262071443731",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Ash"
+      }
+    }
+  ],
+  "raw_description_html": "<p>Unisex Jersey Short Sleeve Tee – Timeless Comfort &amp; Style<br>\n• Perfect Fit: Crafted to feel like a well-loved favorite with a retail fit that adapts to any wardrobe.<br>\n• Premium Material: Soft cotton with quality printing ensures lasting comfort and vibrant designs.<br>\n• High-Quality Material: Made from 100% Airlume combed and ring-spun cotton, offering a soft, breathable, and lightweight feel (4.2 oz/yd²).<br>\n• Durable &amp; Ethical: Manufactured sustainably by Bella+Canvas in the US and internationally, adhering to no-sweatshop and humane labor practices (Platinum WRAP Certified).<br>\n• Enhanced Features:<br>\no Ribbed Knit Collar: Elastic and durable, retains shape over time.<br>\no Shoulder Tape: Stabilizes the back of the garment and prevents stretching.<br>\no Side Seams: Maintain structure and provide long-lasting shape.<br>\n• Custom Printing Options:<br>\no Sleeve Printing: High-quality Direct-to-Film (DTF) or Direct-to-Garment (DTG) methods for crisp, vibrant designs.<br>\no Neck Label Printing: Detailed and durable designs using DTF or DTG techniques.<br>\nThis versatile tee is ideal for casual wear, layering, and custom printing, making it a go-to favorite for any occasion!</p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

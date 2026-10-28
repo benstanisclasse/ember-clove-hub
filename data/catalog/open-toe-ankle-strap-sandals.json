@@ -1,0 +1,331 @@
+{
+  "product_id": "gid://shopify/Product/9751716823279",
+  "handle": "open-toe-ankle-strap-sandals",
+  "original_title": "Open Toe Ankle Strap Sandals",
+  "current_title": "Open Toe Ankle Strap Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-ankle-strap-sandals",
+  "category": null,
+  "colors": [
+    "Gold",
+    "Red"
+  ],
+  "sizes": [
+    "40",
+    "41",
+    "38",
+    "39",
+    "36",
+    "37",
+    "35",
+    "43",
+    "42"
+  ],
+  "options": {
+    "Color": [
+      "Gold",
+      "Red"
+    ],
+    "Size": [
+      "40",
+      "41",
+      "38",
+      "39",
+      "36",
+      "37",
+      "35",
+      "43",
+      "42"
+    ]
+  },
+  "price_min": 50.98,
+  "price_max": 50.98,
+  "cost_min": 10.04,
+  "cost_max": 10.04,
+  "specs": {
+    "Size": "unit：cm",
+    "Fit": "True to size, order usual size.",
+    "Heel height": "High heels",
+    "Upper material": "PU",
+    "Inner material": "super fiber",
+    "Sole material": "rubber"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35",
+        "22.5"
+      ],
+      [
+        "36",
+        "23"
+      ],
+      [
+        "37",
+        "23.5"
+      ],
+      [
+        "38",
+        "24"
+      ],
+      [
+        "39",
+        "24.5"
+      ],
+      [
+        "40",
+        "25"
+      ],
+      [
+        "41",
+        "25.5"
+      ],
+      [
+        "42",
+        "26"
+      ],
+      [
+        "43",
+        "26.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B9EE7052CDB985542FBA79840E25DB95.jpg?v=1792823486",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/16CC9AF0F39979621047FF5CB3BD2413.jpg?v=1792823488",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9BAB70E83BC6542A09DB175E0B0F85D6.jpg?v=1792823490",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9FE1A516461AF3BBC25DD16798F0541B.jpg?v=1792823491",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5682BABBBE1644DB5E1C9AF611FE48FB.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5D453906C95B394EF6D899C9506C1BA3.jpg?v=1792823497",
+      "altText": "",
+      "width": 562,
+      "height": 562
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/430E18420260EF85A36CC70916C2825E.jpg?v=1792823500",
+      "altText": "",
+      "width": 562,
+      "height": 562
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Gold / 40",
+      "sku": "B00DBA71404541BC96A9C28D6F653D1C",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Gold / 41",
+      "sku": "1396B06632474F32B431E0E95FDB6B2A",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Gold / 38",
+      "sku": "80F6B4C58509402B81D08DC10E397AD5",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Gold / 39",
+      "sku": "3BE48DFECF874F52ACDF628A9037291B",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Gold / 36",
+      "sku": "86226C06475B4183B10E97F5F0C542E1",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Gold / 37",
+      "sku": "DD13DEE800E74625AE7A3B25A29E1239",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Gold / 35",
+      "sku": "B390687B319147769D20BF5B0AF7E847",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Red / 43",
+      "sku": "C053B0A6D1E34F0EBA1A11F50B448C7B",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Red / 41",
+      "sku": "53EC96D56F63467DBCA8249ABBBDA5F8",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Red / 42",
+      "sku": "CF141B69F9054CDD8E52CFA2D8635E33",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Red / 39",
+      "sku": "093AD9428E4144458CBE307A2A05EB2F",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Red / 40",
+      "sku": "7238E937C5CB44B68425A53B08D7B5B7",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Red / 37",
+      "sku": "E5DF1EE9CC46466AA42AD18445839699",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Red / 38",
+      "sku": "172A099E3D6E466FBCF9D559D42A7B80",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Red / 35",
+      "sku": "E341C847798F4B06BE79E8002958A43D",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Red / 36",
+      "sku": "05E6C5903E584823A487C753B98ED2F6",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Red",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Gold / 42",
+      "sku": "5497CE909E0E4E2CB87DA233C4EDE00C",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Gold / 43",
+      "sku": "DAB05366BC924F1DBDA2D5CE5D6648DA",
+      "price": "50.98",
+      "cost": "10.04",
+      "options": {
+        "Color": "Gold",
+        "Size": "43"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<li><p>Size:unit：cm<br></p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">35</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">36</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">37</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">38</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">39</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">40</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">41</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">42</th>\n<td style=\"padding: 9px; word-break: break-all;\">26</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">43</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n</tbody>\n</table>\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Heel height: High heels</p></li>\n<li><p>Upper material: PU</p></li>\n<li><p>Inner material: super fiber</p></li>\n<li><p>Sole material: rubber</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

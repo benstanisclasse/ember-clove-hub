@@ -1,0 +1,256 @@
+{
+  "product_id": "gid://shopify/Product/9751655481583",
+  "handle": "resort-tiered-long-sleeve-high-waist-mesh-elegant-dress",
+  "original_title": "Resort Tiered Long Sleeve High Waist Mesh Elegant Dress",
+  "current_title": "Resort Tiered Long Sleeve High Waist Mesh Elegant Dress",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://nkpfvz-ra.myshopify.com/products/resort-tiered-long-sleeve-high-waist-mesh-elegant-dress",
+  "category": null,
+  "colors": [
+    "Tangerine",
+    "Peacock Blue"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "options": {
+    "Color": [
+      "Tangerine",
+      "Peacock Blue"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  "price_min": 55.5,
+  "price_max": 55.5,
+  "cost_min": 17.77,
+  "cost_max": 17.77,
+  "specs": {
+    "Color": "Orange, Peacock Blue",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Round Neck",
+    "Length": "Short",
+    "Fabric": "Mesh",
+    "Closure Type": "Pullover",
+    "Details": "Draping, Flared Sleeves, Tiered Skirt",
+    "Fit Type": "High Waist, Flared Skirt",
+    "Size": "S, M, L, XL, XXL",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Bust",
+        "Waist",
+        "Hip",
+        "length",
+        "sleeve"
+      ],
+      [
+        "S",
+        "4",
+        "76-86",
+        "60-68",
+        "80-92",
+        "84",
+        "63"
+      ],
+      [
+        "M",
+        "6",
+        "80-90",
+        "64-72",
+        "84-96",
+        "85",
+        "64"
+      ],
+      [
+        "L",
+        "08/10",
+        "84-94",
+        "68-76",
+        "88-100",
+        "86",
+        "65"
+      ],
+      [
+        "XL",
+        "12",
+        "90-100",
+        "74-82",
+        "94-106",
+        "87",
+        "66"
+      ],
+      [
+        "XXL",
+        "14",
+        "96-106",
+        "80-88",
+        "100-112",
+        "88",
+        "67"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/50964E956C57A63734E06E587328A8D6.jpg?v=1792822461",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8E5CF45509C170AB41AFF9F9F1579574.jpg?v=1792822463",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/173996CAABE228B3DA8347AF1726F61F.jpg?v=1792822466",
+      "altText": "",
+      "width": 865,
+      "height": 865
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/204BFACBDEA9D7255B4D716F40C25814.jpg?v=1792822467",
+      "altText": "",
+      "width": 657,
+      "height": 657
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1E99A6A4D3A6229D87B38166ED4FE36B.jpg?v=1792822470",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/7417500EAF053500D9E5C0E124F60CC0.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/889222E746C357DD23E5A7EB69684B61.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/B960C03D30B30CBEC4560AB47F0EF4E7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/D118D6F015530B3211501E2CB970E6CF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/DC272EBD2E1A0D963DCD68281A3D95EB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/B5DD1DE317FEBDD7FD25FDD27A2A4D48.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/3382140F0A8E600B2E7FCABA1D1EA0EA.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Tangerine / S",
+      "sku": "E248E9DDE21E4925BC33BE33E138879A",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Tangerine",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Tangerine / M",
+      "sku": "2A85D689392E4F2088944E820C9F9357",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Tangerine",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Tangerine / L",
+      "sku": "0FA51F61DD7D4B0AB6F01140AEF8A451",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Tangerine",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Tangerine / XL",
+      "sku": "E365D0A5A49040D4B142B86E175DC4D3",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Tangerine",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Tangerine / XXL",
+      "sku": "47458FD8B80249769A73874D0BA8EE46",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Tangerine",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Peacock Blue / S",
+      "sku": "F5072A8348CF496FAE8D9E23F1604206",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Peacock Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Peacock Blue / M",
+      "sku": "FD2838B67F634C41904F259252D471DF",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Peacock Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Peacock Blue / L",
+      "sku": "246EDAAEE4DF4F63A2B59CD8120AFC4E",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Peacock Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Peacock Blue / XL",
+      "sku": "D6AFFFDF4B94413D9B4C3E731276E900",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Peacock Blue",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Peacock Blue / XXL",
+      "sku": "6B7A48A80D6B4992AEA962A1794740FF",
+      "price": "55.50",
+      "cost": "17.77",
+      "options": {
+        "Color": "Peacock Blue",
+        "Size": "XXL"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Color: Orange, Peacock Blue</strong></p><p style=\"font-size: 16px;\"><strong>Pattern Type: Solid Color</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length: Long Sleeve</strong></p><p style=\"font-size: 16px;\"><strong>Neckline: Round Neck</strong></p><p style=\"font-size: 16px;\"><strong>Length: Short</strong></p><p style=\"font-size: 16px;\"><strong>Fabric: Mesh</strong></p><p style=\"font-size: 16px;\"><strong>Closure Type: Pullover</strong></p><p style=\"font-size: 16px;\"><strong>Details: Draping, Flared Sleeves, Tiered Skirt</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type: High Waist, Flared Skirt</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M, L, XL, XXL</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Bust</th>\n<th>Waist</th>\n<th>Hip</th>\n<th>length</th>\n<th>sleeve</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>76-86</td>\n<td>60-68</td>\n<td>80-92</td>\n<td>84</td>\n<td>63</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>80-90</td>\n<td>64-72</td>\n<td>84-96</td>\n<td>85</td>\n<td>64</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>84-94</td>\n<td>68-76</td>\n<td>88-100</td>\n<td>86</td>\n<td>65</td>\n</tr>\n<tr>\n<td>XL</td>\n<td>12</td>\n<td>90-100</td>\n<td>74-82</td>\n<td>94-106</td>\n<td>87</td>\n<td>66</td>\n</tr>\n<tr>\n<td>XXL</td>\n<td>14</td>\n<td>96-106</td>\n<td>80-88</td>\n<td>100-112</td>\n<td>88</td>\n<td>67</td>\n</tr>\n</tbody>\n</table><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/7417500EAF053500D9E5C0E124F60CC0.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/889222E746C357DD23E5A7EB69684B61.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/B960C03D30B30CBEC4560AB47F0EF4E7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/D118D6F015530B3211501E2CB970E6CF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/DC272EBD2E1A0D963DCD68281A3D95EB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/B5DD1DE317FEBDD7FD25FDD27A2A4D48.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202609/3382140F0A8E600B2E7FCABA1D1EA0EA.jpg\"> </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

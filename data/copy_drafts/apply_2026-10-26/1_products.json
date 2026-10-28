@@ -1,0 +1,604 @@
+{
+ "query": "mutation($p0: ProductUpdateInput!, $p1: ProductUpdateInput!, $p2: ProductUpdateInput!, $p3: ProductUpdateInput!, $p4: ProductUpdateInput!, $p5: ProductUpdateInput!, $p6: ProductUpdateInput!, $p7: ProductUpdateInput!, $p8: ProductUpdateInput!, $p9: ProductUpdateInput!, $p10: ProductUpdateInput!, $p11: ProductUpdateInput!, $p12: ProductUpdateInput!, $p13: ProductUpdateInput!, $p14: ProductUpdateInput!, $p15: ProductUpdateInput!, $p16: ProductUpdateInput!, $p17: ProductUpdateInput!, $p18: ProductUpdateInput!, $p19: ProductUpdateInput!, $p20: ProductUpdateInput!, $p21: ProductUpdateInput!, $p22: ProductUpdateInput!, $p23: ProductUpdateInput!, $p24: ProductUpdateInput!, $p25: ProductUpdateInput!, $p26: ProductUpdateInput!, $p27: ProductUpdateInput!, $p28: ProductUpdateInput!, $m13: [CreateMediaInput!], $m23: [CreateMediaInput!]) {\n  u0: productUpdate(product: $p0) { product { id title } userErrors { field message } }\n  u1: productUpdate(product: $p1) { product { id title } userErrors { field message } }\n  u2: productUpdate(product: $p2) { product { id title } userErrors { field message } }\n  u3: productUpdate(product: $p3) { product { id title } userErrors { field message } }\n  u4: productUpdate(product: $p4) { product { id title } userErrors { field message } }\n  u5: productUpdate(product: $p5) { product { id title } userErrors { field message } }\n  u6: productUpdate(product: $p6) { product { id title } userErrors { field message } }\n  u7: productUpdate(product: $p7) { product { id title } userErrors { field message } }\n  u8: productUpdate(product: $p8) { product { id title } userErrors { field message } }\n  u9: productUpdate(product: $p9) { product { id title } userErrors { field message } }\n  u10: productUpdate(product: $p10) { product { id title } userErrors { field message } }\n  u11: productUpdate(product: $p11) { product { id title } userErrors { field message } }\n  u12: productUpdate(product: $p12) { product { id title } userErrors { field message } }\n  u13: productUpdate(product: $p13, media: $m13) { product { id title } userErrors { field message } }\n  u14: productUpdate(product: $p14) { product { id title } userErrors { field message } }\n  u15: productUpdate(product: $p15) { product { id title } userErrors { field message } }\n  u16: productUpdate(product: $p16) { product { id title } userErrors { field message } }\n  u17: productUpdate(product: $p17) { product { id title } userErrors { field message } }\n  u18: productUpdate(product: $p18) { product { id title } userErrors { field message } }\n  u19: productUpdate(product: $p19) { product { id title } userErrors { field message } }\n  u20: productUpdate(product: $p20) { product { id title } userErrors { field message } }\n  u21: productUpdate(product: $p21) { product { id title } userErrors { field message } }\n  u22: productUpdate(product: $p22) { product { id title } userErrors { field message } }\n  u23: productUpdate(product: $p23, media: $m23) { product { id title } userErrors { field message } }\n  u24: productUpdate(product: $p24) { product { id title } userErrors { field message } }\n  u25: productUpdate(product: $p25) { product { id title } userErrors { field message } }\n  u26: productUpdate(product: $p26) { product { id title } userErrors { field message } }\n  u27: productUpdate(product: $p27) { product { id title } userErrors { field message } }\n  u28: productUpdate(product: $p28) { product { id title } userErrors { field message } }\n}",
+ "variables": {
+  "p0": {
+   "id": "gid://shopify/Product/9755699970287",
+   "title": "Plush-Lined EVA Clog Slippers",
+   "descriptionHtml": "<p><strong>A waffle-textured clog shell with a fluffy plush cuff and lining, easy to slip on around the house.</strong></p><ul><li>Molded EVA shell, plush faux-fur lining</li><li>Removable plush liner, slip-on clog shape</li><li>Textured tread sole</li></ul><p>EU sizes 31–44 · Foot length 8–11 in</p>",
+   "productType": "Sandals",
+   "tags": [
+    "clog",
+    "slipper",
+    "eva",
+    "plush-lined",
+    "slip-on",
+    "multicolor",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p1": {
+   "id": "gid://shopify/Product/9756887810287",
+   "title": "Fleece-Lined Hooded Zip Jacket",
+   "descriptionHtml": "<p><strong>A workwear-style zip jacket with a plush-lined hood and a contrast collar, an easy top layer over knits.</strong></p><ul><li>Polyester shell, plush fleece lining</li><li>Loose fit, full zip, drawstring hood, zip chest pocket</li><li>Hip length (about 28–31 in), slant side pockets</li></ul><p>Sizes S–3XL · Bust 43–57 in</p>",
+   "productType": "Outerwear",
+   "tags": [
+    "jacket",
+    "outerwear",
+    "hooded",
+    "fleece-lined",
+    "zip-front",
+    "long-sleeve",
+    "neutral",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p2": {
+   "id": "gid://shopify/Product/9756888170735",
+   "title": "Oversized Metal Cat Eye Sunglasses",
+   "descriptionHtml": "<p><strong>Wide cat-eye lenses on a slim gold-tone frame, an easy finishing touch for sunny days and travel.</strong></p><ul><li>Gold-tone metal frame, acrylic lenses</li><li>Gradient, mirrored or solid lenses, clear nose pads</li><li>Oversized cat-eye shape, slim metal temples</li></ul><p>One size · Frame width about 6 in</p>",
+   "productType": "Accessories",
+   "tags": [
+    "sunglasses",
+    "cat-eye",
+    "metal-frame",
+    "gold-tone",
+    "gradient-lens",
+    "accessories",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p3": {
+   "id": "gid://shopify/Product/9756888236271",
+   "title": "Chunky Oversized Square Sunglasses",
+   "descriptionHtml": "<p><strong>Bold oversized square frames with flared corners, made for statement sunny-day looks.</strong></p><ul><li>Glossy plastic (PC) frame and lenses</li><li>Thick temples with a slim metal accent, gradient or solid lenses</li><li>Oversized square shape, lenses about 2 in wide and tall</li></ul><p>One size · Frame width about 6 in</p>",
+   "productType": "Accessories",
+   "tags": [
+    "sunglasses",
+    "square",
+    "oversized",
+    "gradient-lens",
+    "black",
+    "tortoise",
+    "accessories",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p4": {
+   "id": "gid://shopify/Product/9756888269039",
+   "title": "Pointed Cat Eye Sunglasses",
+   "descriptionHtml": "<p><strong>Sharp, upswept cat-eye frames in glossy and see-through colors, a retro accent for denim and summer dresses.</strong></p><ul><li>Plastic (PC) frame, acrylic lenses</li><li>Solid or see-through frames, gold-tone accent</li><li>Pointed cat-eye shape, lenses about 2 in wide</li></ul><p>One size · Frame width about 6 in</p>",
+   "productType": "Accessories",
+   "tags": [
+    "sunglasses",
+    "cat-eye",
+    "plastic-frame",
+    "black",
+    "tortoise",
+    "multicolor",
+    "accessories",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p5": {
+   "id": "gid://shopify/Product/9756956524783",
+   "title": "Studded Scarf-Neck Poncho Top",
+   "descriptionHtml": "<p><strong>A sheer, crinkled poncho top with handkerchief points, a studded hem and a scarf tie that loops at the neck.</strong></p><ul><li>Lightweight sheer polyester, crinkle texture</li><li>Relaxed batwing cut, neck scarf tie, metal stud trim</li><li>Pullover poncho shape with a pointed hem</li></ul><p>Sizes XS–L · Length 20–21 in</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "poncho",
+    "cape",
+    "sheer",
+    "studded",
+    "scarf-neck",
+    "brown",
+    "neutral",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p6": {
+   "id": "gid://shopify/Product/9756888432879",
+   "title": "Alphabet Print Crewneck Fleece Sweatshirt",
+   "descriptionHtml": "<p><strong>A relaxed crewneck with a playful handwriting-practice print with an apple and pencil, for easy school-day layering.</strong></p><ul><li>Polyester sweatshirt fleece, brushed inside</li><li>Loose fit, ribbed crew neck, cuffs and hem</li><li>Long sleeves, hip length (about 26–29 in)</li></ul><p>Sizes S–XXL · Bust 43–51 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "sweatshirt",
+    "fleece",
+    "crewneck",
+    "graphic",
+    "long-sleeve",
+    "multicolor",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p7": {
+   "id": "gid://shopify/Product/9756888596719",
+   "title": "Lip Print Fleece Sweatshirt",
+   "descriptionHtml": "<p><strong>A bold lip graphic with jewel-toned gold teeth, printed on a loose crewneck with dropped shoulders.</strong></p><ul><li>Polyester sweatshirt fleece</li><li>Loose fit, crew neck, ribbed cuffs and hem</li><li>Long sleeves, hip length (about 26–29 in)</li></ul><p>Sizes S–XXL · Bust 43–51 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "sweatshirt",
+    "fleece",
+    "graphic",
+    "crewneck",
+    "long-sleeve",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p8": {
+   "id": "gid://shopify/Product/9756888760559",
+   "title": "Sunshine Graphic Fleece Sweatshirt",
+   "descriptionHtml": "<p><strong>A retro sun-and-moon graphic with flowers and “Stay Magical” lettering on a relaxed crewneck.</strong></p><ul><li>Polyester sweatshirt fleece</li><li>Loose fit, crew neck, ribbed cuffs and hem</li><li>Long sleeves, hip length (about 26–29 in)</li></ul><p>Sizes S–XXL · Bust 43–51 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "sweatshirt",
+    "fleece",
+    "graphic",
+    "crewneck",
+    "long-sleeve",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p9": {
+   "id": "gid://shopify/Product/9756888498415",
+   "title": "Color-Block Stripe Rib Cardigan",
+   "descriptionHtml": "<p><strong>Red, navy, brown and gray stripes on a fitted rib cardigan with a contrast brown polo collar.</strong></p><ul><li>Polyester, viscose and spandex rib knit with stretch</li><li>Slim fit, pointed collar, button front</li><li>Long sleeves, regular length (about 21–22 in)</li></ul><p>Sizes S–L · Bust 29–32 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "cardigan",
+    "knit",
+    "striped",
+    "collared",
+    "long-sleeve",
+    "red",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p10": {
+   "id": "gid://shopify/Product/9756888924399",
+   "title": "Double V-Neck Rib Cardigan",
+   "descriptionHtml": "<p><strong>A fitted rib cardigan with a layered double V-neckline, so it reads as two pieces in one.</strong></p><ul><li>Rib knit blend</li><li>Slim fit, button front, raglan sleeves</li><li>Long sleeves, regular length (about 21–22 in)</li></ul><p>Sizes S–M · Bust 30–31 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "cardigan",
+    "knit",
+    "rib",
+    "v-neck",
+    "long-sleeve",
+    "neutral",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p11": {
+   "id": "gid://shopify/Product/9756888989935",
+   "title": "Lace-Up Cable Knit Sweater",
+   "descriptionHtml": "<p><strong>Allover cable knit with a criss-cross laced keyhole at the neckline, fitted through the body.</strong></p><ul><li>Polyester cable knit</li><li>Slim fit, crew neck, laced keyhole front</li><li>Long sleeves, ribbed cuffs and hem (about 22–23 in long)</li></ul><p>Sizes S–M · Bust 29–31 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "sweater",
+    "cable-knit",
+    "lace-up",
+    "crewneck",
+    "long-sleeve",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p12": {
+   "id": "gid://shopify/Product/9756889022703",
+   "title": "Stand Collar Chunky Knit Cardigan",
+   "descriptionHtml": "<p><strong>A chunky rib cardigan with a high stand collar that buttons off-center, plus button tabs at the shoulders.</strong></p><ul><li>Viscose and polyester rib knit</li><li>Loose fit, dropped shoulders, full button front</li><li>Long sleeves, banded hem (about 22–23 in long)</li></ul><p>Sizes S–L · Bust 44–47 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "cardigan",
+    "chunky-knit",
+    "high-neck",
+    "long-sleeve",
+    "neutral",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p13": {
+   "id": "gid://shopify/Product/9757005742319",
+   "title": "Ribbon Lace Oversized Knit Cardigan",
+   "descriptionHtml": "<p><strong>An oversized cream cardigan laced with soft blue ribbon down the front and sleeves, tied in bows at the hem.</strong></p><ul><li>Acrylic knit</li><li>Oversized fit, button front, dropped shoulders</li><li>Long puff sleeves, hip length (about 28–29 in)</li></ul><p>Sizes S–XL · Bust 47–51 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "cardigan",
+    "knit",
+    "oversized",
+    "ribbon",
+    "long-sleeve",
+    "cream",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "m13": [
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/5B43FED1EAA48BC5837B4B7928C377A1.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Ribbon Lace Oversized Knit Cardigan, photo 1"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/3BCB5B6426633C7EF13A28A9F0F7DCB0.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Ribbon Lace Oversized Knit Cardigan, photo 2"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/454DBE31654ADA5A438FD0091A7D5EC5.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Ribbon Lace Oversized Knit Cardigan, photo 3"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/66490A556E256D6B1C54D6D86457D63D.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Ribbon Lace Oversized Knit Cardigan, photo 4"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202312/188D214B6AAEED3D367DC5A79065CF6A.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Ribbon Lace Oversized Knit Cardigan, photo 5"
+   }
+  ],
+  "p14": {
+   "id": "gid://shopify/Product/9756889153775",
+   "title": "Asymmetric Drape Neck Knit Top",
+   "descriptionHtml": "<p><strong>A folded drape cuts across the neckline at an angle, with soft gathers at the side waist on a close, fitted knit.</strong></p><ul><li>Soft rayon and cotton blend knit</li><li>Slim fit, asymmetric draped neckline, ruched side waist</li><li>Long sleeves, lettuce-edge hems, length about 20–21 in</li></ul><p>Sizes S–L</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "knit",
+    "top",
+    "long-sleeve",
+    "asymmetric",
+    "ruched",
+    "neutral",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p15": {
+   "id": "gid://shopify/Product/9756889252079",
+   "title": "Tie Neck Ruffle Hem Top",
+   "descriptionHtml": "<p><strong>A slim strap loops around the neck and falls as a long tie over a crossover V, ending in a ruched, ruffled hem.</strong></p><ul><li>Stretch rib knit</li><li>Slim fit, crossover V-neck, ruched side waist</li><li>Long bell-cuff sleeves, asymmetric ruffle hem, length about 23–24 in</li></ul><p>Sizes S–L</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "knit",
+    "top",
+    "long-sleeve",
+    "tie-neck",
+    "ruffle",
+    "brown",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p16": {
+   "id": "gid://shopify/Product/9756889612527",
+   "title": "Scalloped Square Neck Lace Top",
+   "descriptionHtml": "<p><strong>Floral lace over a nude lining, finished with a scalloped square neckline and long, slightly flared sheer sleeves.</strong></p><ul><li>Nylon floral lace with a nude lining in the body</li><li>Slim fit, square neck with a scalloped lace edge</li><li>Long sheer lace sleeves, length about 19–20 in</li></ul><p>Sizes S–L</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "lace",
+    "top",
+    "square-neck",
+    "long-sleeve",
+    "sheer-sleeve",
+    "yellow",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p17": {
+   "id": "gid://shopify/Product/9756889874671",
+   "title": "Lace Panel Sheer Chiffon Blouse",
+   "descriptionHtml": "<p><strong>Airy chiffon falls into wide batwing sleeves, with a cream lace V-panel and two ribbon ties down the front.</strong></p><ul><li>Sheer polyester chiffon with lace trim, no stretch</li><li>Loose fit, lace V-panel front, ribbon ties</li><li>Batwing sleeves, gathered cuffs, pointed hem, length about 27–28 in</li></ul><p>Sizes XS–L</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "chiffon",
+    "blouse",
+    "lace",
+    "sheer",
+    "long-sleeve",
+    "black",
+    "spring",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p18": {
+   "id": "gid://shopify/Product/9756890005743",
+   "title": "Crossover Rib Waist Top",
+   "descriptionHtml": "<p><strong>A crossover V-neck sits above a fitted rib-knit waist panel for a clean empire line and a short, cropped length.</strong></p><ul><li>Soft rayon blend knit</li><li>Slim fit, crossover V-neck, rib-knit waist panel</li><li>Long sleeves with gathered shoulders, cropped length about 18 in</li></ul><p>Sizes S–M</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "knit",
+    "top",
+    "v-neck",
+    "long-sleeve",
+    "cropped",
+    "neutral",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p19": {
+   "id": "gid://shopify/Product/9756901933295",
+   "title": "Strappy One-Shoulder Jersey Top",
+   "descriptionHtml": "<p><strong>One bare shoulder with a thin strap on that side and an angled hem give this relaxed long-sleeve tee an easy shape.</strong></p><ul><li>Soft, lightweight jersey knit</li><li>Relaxed fit, one-shoulder neckline with a thin strap</li><li>Long sleeves, asymmetric hem, length about 24–25 in</li></ul><p>Sizes S–M · Bust 44–46 in</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "jersey",
+    "top",
+    "one-shoulder",
+    "long-sleeve",
+    "gray",
+    "neutral",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p20": {
+   "id": "gid://shopify/Product/9756905537775",
+   "title": "Boat Neck Cropped Pocket Sweatshirt",
+   "descriptionHtml": "<p><strong>A wide boat neck, kangaroo pocket and cropped ribbed hem make an easy weekend sweatshirt.</strong></p><ul><li>Sweatshirt knit with a brushed inside</li><li>Loose fit, dropped shoulders, wide boat neck, front pocket</li><li>Long sleeves with ribbed cuffs, cropped length about 23 in</li></ul><p>Sizes S–M · Bust 43–44 in</p>",
+   "productType": "Sweaters & Sweatshirts",
+   "tags": [
+    "sweatshirt",
+    "cropped",
+    "boat-neck",
+    "pocket",
+    "long-sleeve",
+    "neutral",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p21": {
+   "id": "gid://shopify/Product/9756949676271",
+   "title": "Tie-Front Ruffle Lace Top",
+   "descriptionHtml": "<p><strong>Rose-pattern lace gathers under a ruffled square neckline with a small front tie, over a nude-lined bust.</strong></p><ul><li>Stretch lace, 90% polyester and 10% spandex</li><li>Slim fit, ruffled square neck, gathered bust with tie</li><li>Sheer long sleeves, lettuce-edge hems, length about 19–20 in</li></ul><p>Sizes S–L</p>",
+   "productType": "Tops & Bodysuits",
+   "tags": [
+    "lace",
+    "top",
+    "square-neck",
+    "tie-front",
+    "long-sleeve",
+    "brown",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p22": {
+   "id": "gid://shopify/Product/9756981952751",
+   "title": "Ripped Knee Wide-Leg Jeans",
+   "descriptionHtml": "<p><strong>Faded denim falls wide from a high waist, with open rips at the knee for a relaxed, lived-in look.</strong></p><ul><li>Cotton denim, medium weight</li><li>High waist, zip fly, five pockets, ripped knee</li><li>Wide straight leg, raw hem, about 41–43 in long</li></ul><p>Sizes S–XXL · Waist 28–37 in · Hip 39–48 in</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "jeans",
+    "denim",
+    "wide-leg",
+    "ripped",
+    "high-waist",
+    "blue",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p23": {
+   "id": "gid://shopify/Product/9756982214895",
+   "title": "Frayed Hem Ripped Ankle Jeans",
+   "descriptionHtml": "<p><strong>A cropped skinny jean with shredded rips down the front and a frayed step hem.</strong></p><ul><li>Cotton-blend stretch denim</li><li>Button and zip fly, five-pocket style, ripped thighs and knees</li><li>Skinny leg, ankle length, frayed step hem</li></ul><p>Sizes S–XXL · Waist 27–35 in · Hip 37–44 in</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "jeans",
+    "denim",
+    "skinny",
+    "ripped",
+    "cropped",
+    "blue",
+    "black",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "m23": [
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/DB0B00345088C34F454446DD678CC9A4.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 1"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/87CC8E2D5698449322094A7A9B9BE354.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 2"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/7A1160029226C012BBCE077D0994D28A.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 3"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/90D210D525DF4C0B0103B112265E9818.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 4"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/E9928DEE0BB55AE8495ED6EC59B367B8.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 5"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/989423DC5879FD6B41487355667B2116.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 6"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/6A6CBAA9909099CB0F743807E1BE2500.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 7"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/5C77E628EF53BF0E0DB03245596BDDB7.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 8"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/B70771AB2BB81A28250B7DC8D43D09AA.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 9"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/6277F7005A68C0D705B6A798B0B72F4B.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 10"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/568932394363163458ECCE292C12583C.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 11"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/A88D64EF0300EDF3AB1C9B9511464E8A.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 12"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/97D5E9847EEB951769B8880B0AB0A3F2.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 13"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/B0903DCFD02FC7AD200309390AC6F491.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 14"
+   },
+   {
+    "originalSource": "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/0AC3FAAA8E4EDDC62DAAEA8C853CA96C.jpg",
+    "mediaContentType": "IMAGE",
+    "alt": "Frayed Hem Ripped Ankle Jeans, photo 15"
+   }
+  ],
+  "p24": {
+   "id": "gid://shopify/Product/9756983754991",
+   "title": "Contrast Stitch V-Waist Flare Jeans",
+   "descriptionHtml": "<p><strong>Deep indigo denim fits close through the hip, then opens into a long flare with white topstitching.</strong></p><ul><li>Dark wash denim, no stretch</li><li>V-front waistband, zip fly, five pockets</li><li>Flare leg, full length (about 41–42 in)</li></ul><p>Sizes S–XL · Waist 26–33 in · Hip 35–42 in</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "jeans",
+    "denim",
+    "flare",
+    "dark-wash",
+    "blue",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p25": {
+   "id": "gid://shopify/Product/9756992045295",
+   "title": "Shredded Light Wash Skinny Jeans",
+   "descriptionHtml": "<p><strong>A cloudy light wash with bold shredded rips down both legs, cut close from hip to ankle.</strong></p><ul><li>Stretch denim, light faded wash</li><li>Button and zip fly, curved front seams, five-pocket style</li><li>Skinny leg, full length (about 39–40 in)</li></ul><p>Sizes XS–XXXL · Waist 25–33 in (S–3XL)</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "jeans",
+    "denim",
+    "skinny",
+    "ripped",
+    "light-wash",
+    "blue",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p26": {
+   "id": "gid://shopify/Product/9756994306287",
+   "title": "Fleece-Lined Faux Leather Skinny Pants",
+   "descriptionHtml": "<p><strong>Black faux leather with a soft fleece lining, cut as a high-waist skinny pant.</strong></p><ul><li>PU faux leather outside, fleece-lined inside</li><li>High waist, zip fly, front patch pockets</li><li>Skinny leg, ankle zips, about 38–39 in long</li></ul><p>Sizes S–XXXL · Waist 25–33 in · Hip 34–42 in</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "pants",
+    "faux-leather",
+    "fleece-lined",
+    "skinny",
+    "high-waist",
+    "black",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p27": {
+   "id": "gid://shopify/Product/9757002268911",
+   "title": "High-Waist Stretch Skinny Jeans",
+   "descriptionHtml": "<p><strong>A high waist and a smooth, pocket-free front give these stretch skinny jeans a clean line.</strong></p><ul><li>Stretch denim with plenty of give</li><li>High waist, button and zip fly, back pockets</li><li>Skinny leg, full length (about 37–41 in)</li></ul><p>Sizes XS–XXL · Waist 22–30 in · Hip 30–38 in</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "jeans",
+    "denim",
+    "skinny",
+    "high-waist",
+    "stretch",
+    "white",
+    "burgundy",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p28": {
+   "id": "gid://shopify/Product/9757005840623",
+   "title": "Two-Tone Patchwork Skinny Jeans",
+   "descriptionHtml": "<p><strong>Light and mid-blue denim meet at a center seam, with ripped knees and frayed hems.</strong></p><ul><li>Cotton stretch denim</li><li>Mid rise, zip fly, five pockets, two-tone panels</li><li>Skinny leg, raw hem, about 38–39 in long</li></ul><p>Sizes S–4XL · Waist 25–35 in · Hip 33–43 in</p>",
+   "productType": "Jeans & Pants",
+   "tags": [
+    "jeans",
+    "denim",
+    "skinny",
+    "two-tone",
+    "ripped",
+    "blue",
+    "extended-sizes",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  }
+ }
+}

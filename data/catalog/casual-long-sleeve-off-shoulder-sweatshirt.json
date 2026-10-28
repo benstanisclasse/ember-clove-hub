@@ -1,0 +1,192 @@
+{
+  "product_id": "gid://shopify/Product/9756905537775",
+  "handle": "casual-long-sleeve-off-shoulder-sweatshirt",
+  "original_title": "Casual Long Sleeve Off-Shoulder Sweatshirt",
+  "current_title": "Casual Long Sleeve Off-Shoulder Sweatshirt",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "knitwear",
+  "url": "https://emberandclove.com/products/casual-long-sleeve-off-shoulder-sweatshirt",
+  "category": null,
+  "colors": [
+    "Green",
+    "White Gray",
+    "Black"
+  ],
+  "sizes": [
+    "S",
+    "M"
+  ],
+  "options": {
+    "Color": [
+      "Green",
+      "White Gray",
+      "Black"
+    ],
+    "Size": [
+      "S",
+      "M"
+    ]
+  },
+  "price_min": 47.72,
+  "price_max": 47.72,
+  "cost_min": 12.36,
+  "cost_max": 12.36,
+  "specs": {
+    "Color": "Green, White-Grey, Black",
+    "Pattern Type": "Solid",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Boat Neck",
+    "Length": "Short",
+    "Closure Type": "Pullover",
+    "Details": "Pockets",
+    "Fit Type": "Loose Fit",
+    "Occasion": "Casual",
+    "Gender": "Female",
+    "Size": "S, M",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Length",
+        "Bust",
+        "Shoulder Width",
+        "Sleeve Length"
+      ],
+      [
+        "S",
+        "4",
+        "58",
+        "108",
+        "58",
+        "57"
+      ],
+      [
+        "M",
+        "6",
+        "59",
+        "112",
+        "59",
+        "58"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/453129E406C18835A20F191F2A37E7B5.jpg?v=1793048060",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5B89E2E19BB697F251F196ED13C2159A.jpg?v=1793048064",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E090EF0BC62C834A007F685697624786.jpg?v=1793048065",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/185BA4FE17C0CFD036E829827AA46869.jpg?v=1793048076",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0C3D90536D2594C0C8D64F9F5A00F8AD.jpg?v=1793048078",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B56A25DBE4AE7206B29D1B085D535931.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3FF2A4C2479EDC80BEBF6EE1361315C7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/27418D920FA9C5A5A6C52D2B512A87D6.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C3365CCD445D8B28A769B162B847209A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1B1B492862F694A4693FE7BF2D1626F4.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/97A0D556523655D5BDE8B623498A8F18.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DBD1ACC6606860ED9CB2B96B38CA967A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A6CF016E38F1C0D6787AB74A61CB0DAC.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F685B4E25582EDF4CCC05E1C3BCE1D27.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1569609CE0674C6E7D83CD5FE7ED4C4B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BE13325B0651916E2AC6304F6197D656.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2229748FA9A62A4CEA0612523B29F3F1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/548F49B6FFB91FC8678210F930C938EF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1D392C3646AECC3EE7E8C07FE84EDA5A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/343759C7FC93E0161B8D59EFF5EBF1E4.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F612264114872A17901EC9CE04986CC0.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Green / S",
+      "sku": "F2C53ECE1AC449A389C4A261125AFC03",
+      "price": "47.72",
+      "cost": "12.36",
+      "options": {
+        "Color": "Green",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Green / M",
+      "sku": "D63C4378D94848B185533157CA7DE17C",
+      "price": "47.72",
+      "cost": "12.36",
+      "options": {
+        "Color": "Green",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "White Gray / S",
+      "sku": "EE7B945AF69849608709DF90E87C6F15",
+      "price": "47.72",
+      "cost": "12.36",
+      "options": {
+        "Color": "White Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White Gray / M",
+      "sku": "672BAEA6515D476AB07CFD45333E440D",
+      "price": "47.72",
+      "cost": "12.36",
+      "options": {
+        "Color": "White Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "CBD5534B683E4FAFB4AEAE1713782009",
+      "price": "47.72",
+      "cost": "12.36",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "9AF5B40015AB48C99BD9670966BA4A8B",
+      "price": "47.72",
+      "cost": "12.36",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Color: Green, White-Grey, Black</strong></p><p style=\"font-size: 16px;\"><strong>Pattern Type: Solid</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length: Long Sleeve</strong></p><p style=\"font-size: 16px;\"><strong>Neckline: Boat Neck</strong></p><p style=\"font-size: 16px;\"><strong>Length: Short</strong></p><p style=\"font-size: 16px;\"><strong>Closure Type: Pullover</strong></p><p style=\"font-size: 16px;\"><strong>Details: Pockets</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type: Loose Fit</strong></p><p style=\"font-size: 16px;\"><strong>Occasion: Casual</strong></p><p style=\"font-size: 16px;\"><strong>Gender: Female</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Shoulder Width</th>\n<th>Sleeve Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>58</td>\n<td>108</td>\n<td>58</td>\n<td>57</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>59</td>\n<td>112</td>\n<td>59</td>\n<td>58</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B56A25DBE4AE7206B29D1B085D535931.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3FF2A4C2479EDC80BEBF6EE1361315C7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/27418D920FA9C5A5A6C52D2B512A87D6.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C3365CCD445D8B28A769B162B847209A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1B1B492862F694A4693FE7BF2D1626F4.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/97A0D556523655D5BDE8B623498A8F18.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DBD1ACC6606860ED9CB2B96B38CA967A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A6CF016E38F1C0D6787AB74A61CB0DAC.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F685B4E25582EDF4CCC05E1C3BCE1D27.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1569609CE0674C6E7D83CD5FE7ED4C4B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BE13325B0651916E2AC6304F6197D656.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2229748FA9A62A4CEA0612523B29F3F1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/548F49B6FFB91FC8678210F930C938EF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1D392C3646AECC3EE7E8C07FE84EDA5A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/343759C7FC93E0161B8D59EFF5EBF1E4.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F612264114872A17901EC9CE04986CC0.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

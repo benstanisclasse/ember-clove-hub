@@ -1,0 +1,807 @@
+{
+  "product_id": "gid://shopify/Product/9751721443567",
+  "handle": "open-toe-flats-sandals",
+  "original_title": "Open Toe Flats Sandals",
+  "current_title": "Open Toe Flats Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-flats-sandals",
+  "category": null,
+  "colors": [
+    "Brown",
+    "Tan",
+    "Color",
+    "Hot Pink",
+    "Black",
+    "Dusty Pink",
+    "Pastel  Blue"
+  ],
+  "sizes": [
+    "41(US10)",
+    "42(US10.5)",
+    "39(US8)",
+    "40(US9)",
+    "37(US6)",
+    "38(US7)",
+    "35(US4)",
+    "36(US5)",
+    "43(US11)"
+  ],
+  "options": {
+    "Color": [
+      "Brown",
+      "Tan",
+      "Color",
+      "Hot Pink",
+      "Black",
+      "Dusty Pink",
+      "Pastel  Blue"
+    ],
+    "Size": [
+      "41(US10)",
+      "42(US10.5)",
+      "39(US8)",
+      "40(US9)",
+      "37(US6)",
+      "38(US7)",
+      "35(US4)",
+      "36(US5)",
+      "43(US11)"
+    ]
+  },
+  "price_min": 21.48,
+  "price_max": 21.48,
+  "cost_min": 3.51,
+  "cost_max": 3.51,
+  "specs": {
+    "Color": "Black, Pastel Blue, Tan,Hot Pink,Dusty Pink,Brown,Color",
+    "Style": "Sandal",
+    "Closure Type": "Overshoe",
+    "Material": "Linen",
+    "Heel Height": "Low Heel",
+    "Sole Material": "Rubber",
+    "Toe Style": "Open Toe",
+    "Occasion": "Casual",
+    "Size": "35,36,37,38,39,40,41,42,43",
+    "Unit": "CM"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35(US4)",
+        "22.5"
+      ],
+      [
+        "36(US5)",
+        "23"
+      ],
+      [
+        "37(US6)",
+        "23.5"
+      ],
+      [
+        "38(US7)",
+        "24"
+      ],
+      [
+        "39(US8)",
+        "24.5"
+      ],
+      [
+        "40(US9)",
+        "25"
+      ],
+      [
+        "41(US10)",
+        "25.5"
+      ],
+      [
+        "42(US10.5)",
+        "26"
+      ],
+      [
+        "43(US11)",
+        "26.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/164E087B8C1700C9FF2479A23D8D8193.jpg?v=1792823574",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D5CBC9274AEB2F70477EA389B9ABD671.jpg?v=1792823577",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/735C24D01FC0FE93F3AA010107ED8FF5.jpg?v=1792823579",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A8A8251A01CDD6217AC5E5C379B73DD6.jpg?v=1792823582",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3F24FE1407A4417ECCB0BE50D2A100F0.jpg?v=1792823584",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/49CD5F8C1B19B2F23B2FDEFCD4657075.jpg?v=1792823600",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E0B25E1EAB32394D964EA4294757FCC7.jpg?v=1792823601",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8A068F76D6B712263718C6DD7FDF2A2B.jpg?v=1792823604",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/57F6E3236EFA4DA1167E794613378701.jpg?v=1792823607",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Brown / 41(US10)",
+      "sku": "8FE3D61A619A42FB95D013346194D0E4",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Brown / 42(US10.5)",
+      "sku": "E212FEC01BEC45A6B70CDCA3E0F7F86D",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Brown / 39(US8)",
+      "sku": "4124326880E64DF88E0B1400BBA55D7A",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Brown / 40(US9)",
+      "sku": "AED687D4E6BA4A8EB58F993B09955BEA",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Brown / 37(US6)",
+      "sku": "7D65085838774318ADC42120C7458E4F",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Brown / 38(US7)",
+      "sku": "BF033A1577ED4EE389A9C8C83932E054",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Brown / 35(US4)",
+      "sku": "8169E3258F504B98A5F41D5BE00FF3FE",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Brown / 36(US5)",
+      "sku": "5B5102D4C1E141E09AD47000CB2D0F17",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Tan / 42(US10.5)",
+      "sku": "51B96095332B443FB8B45F34E87DA46C",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Tan / 43(US11)",
+      "sku": "EB583C55BC2E49B4AE3C22E167F138FC",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Tan / 40(US9)",
+      "sku": "AF270FAC24CF4FDB81988BC72E2A8E17",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Tan / 41(US10)",
+      "sku": "8E7D112C1DA5429688CACEA0FF24CD36",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Tan / 38(US7)",
+      "sku": "3EF97A4B93044D2A9526D154D128FCFC",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Tan / 39(US8)",
+      "sku": "CBB695E537354DD5912B0A642E294193",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Tan / 36(US5)",
+      "sku": "720E2005186542F5883351FA07F3D25C",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Tan / 37(US6)",
+      "sku": "97D441E4051846D7BBFA5087E6C3F22D",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Color / 42(US10.5)",
+      "sku": "4C85C2D714D5422F97F3915AAC0DD9D7",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Color / 43(US11)",
+      "sku": "63B9C55986A640F9A13E3CDBFE824F92",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Color / 40(US9)",
+      "sku": "4F900965D6CC45619B928B295F734AD3",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Color / 41(US10)",
+      "sku": "7D6901027C034B6C8F7884BC5DDE80D8",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Color / 38(US7)",
+      "sku": "9E477CB22CBE4ECAA2E2F4D73D35BA08",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Color / 39(US8)",
+      "sku": "786418C4849B469A85F42C8395A56818",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Color / 36(US5)",
+      "sku": "75F54B1EC3B5466C83A5D56AFC7CED66",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Color / 37(US6)",
+      "sku": "C11F7D4647A346C3AC4388AF86399FB3",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Brown / 43(US11)",
+      "sku": "59242BABF6E74D0192967A36796B6C82",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Brown",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Color / 35(US4)",
+      "sku": "FCCE0C97A67B4B378D113214640FE15C",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Color",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Hot Pink / 38(US7)",
+      "sku": "27DFF3D8FC7349E2974214890F942012",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Hot Pink / 39(US8)",
+      "sku": "719251430EDC41FA869A02ECDBFB44B5",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Hot Pink / 36(US5)",
+      "sku": "4742F091A47F4446A5297C76AB4F28BC",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Hot Pink / 37(US6)",
+      "sku": "40BCB93489744F95B585D581418D8B26",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Hot Pink / 35(US4)",
+      "sku": "01CE395E8C4D4E6A83F231BBB4BB03C9",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Black / 36(US5)",
+      "sku": "1767286DC9934E16A947D80A8066B585",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Black / 37(US6)",
+      "sku": "479147D545164A60A93EEC322DFEA7B2",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 43(US11)",
+      "sku": "2A8A21F1FA674D8BA301E6D41D7C17E5",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Black / 35(US4)",
+      "sku": "4461703FE5294297B884BBB821DCDD46",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 41(US10)",
+      "sku": "D383BA030EF84DB88E892B8D379C1FB0",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 42(US10.5)",
+      "sku": "FE2BBA670FB0411EAB821BAFB9D7AEE2",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 39(US8)",
+      "sku": "48C2737335F04B6B8750DB447D713ED7",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 40(US9)",
+      "sku": "DF211630F0C6436ABC9069AA59184445",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 37(US6)",
+      "sku": "39A4499133914D5483E3ECB6358FAEAB",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 38(US7)",
+      "sku": "1D634511FCA545E2B6B48B7A7CAC7D9D",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 35(US4)",
+      "sku": "F6AF2F0D2B7E45DFAFFEA642E669BB89",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Dusty Pink / 36(US5)",
+      "sku": "BA6B64D67C384CE88185BB84C9EA7532",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Hot Pink / 42(US10.5)",
+      "sku": "9D57DC6D63434D309B264B35889E580D",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Hot Pink / 43(US11)",
+      "sku": "10A9DDC479C4478A95CAE6CB254ED4BA",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Hot Pink / 40(US9)",
+      "sku": "8FCA667F224949E08E304A06C8C83378",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Hot Pink / 41(US10)",
+      "sku": "1E56970A601243BF8EA671EBDA9748A2",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Hot Pink",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 43(US11)",
+      "sku": "D677B14F495B437DA6DC03C83E9D2C74",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Tan / 35(US4)",
+      "sku": "75C5CA8F90334CF6AD10B75FE16BD11D",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Tan",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 41(US10)",
+      "sku": "4508078D4EEF4B4DBF1D2C5E94D18173",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 42(US10.5)",
+      "sku": "D56CF03AB8A3415DB69E19F7D0D36974",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 39(US8)",
+      "sku": "3B687481BACD461585C328E1AB15DE1D",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 40(US9)",
+      "sku": "30A038D803CC4CB0933005D49D52B6EA",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 37(US6)",
+      "sku": "F3C5548F8507413D80E45AF75B4BAB58",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 38(US7)",
+      "sku": "FC6A851F7AA8407491A7BC3CA8A406B0",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 35(US4)",
+      "sku": "336DF2F14A4C42EAAAF29E64DAF5FB7E",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "Pastel  Blue / 36(US5)",
+      "sku": "A1E96597C4D64664A3C8B97AF11E0645",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Pastel  Blue",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Black / 42(US10.5)",
+      "sku": "3467CA88855B4B23A6BB05F3EF34FDE4",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "42(US10.5)"
+      }
+    },
+    {
+      "title": "Black / 43(US11)",
+      "sku": "E818C760DE1D4212AFB768A3C4DE06E9",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "43(US11)"
+      }
+    },
+    {
+      "title": "Black / 40(US9)",
+      "sku": "3C5D50D6754A435397692F148A76B590",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Black / 41(US10)",
+      "sku": "817837AFD6F144848F9334B64CA9A12E",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "41(US10)"
+      }
+    },
+    {
+      "title": "Black / 38(US7)",
+      "sku": "F6EE5D16D24D4D32AF0E1CE584E460EB",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 39(US8)",
+      "sku": "1A692EFF4DAB47D4A71A56FFBCCCC86C",
+      "price": "21.48",
+      "cost": "3.51",
+      "options": {
+        "Color": "Black",
+        "Size": "39(US8)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Color: Black, Pastel  Blue, Tan,Hot Pink,Dusty Pink,Brown,Color</p><p>- Style: Sandal</p><p>- Closure Type: Overshoe</p><p>- Material: Linen</p><p>- Heel Height: Low Heel</p><p>- Sole Material: Rubber</p><p>- Toe Style: Open Toe</p><p>- Occasion: Casual</p><p>- Size: 35,36,37,38,39,40,41,42,43</p><p>- Unit: CM</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<p><br></p>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">35(US4)</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">41(US10)</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">42(US10.5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">43(US11)</th>\n<td style=\"padding: 9px; word-break: break-all;\">26.5</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

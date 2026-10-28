@@ -1,0 +1,272 @@
+{
+  "product_id": "gid://shopify/Product/9756949676271",
+  "handle": "sexy-lace-short-sleeve-square-neck-t-top",
+  "original_title": "Sexy Lace Short Sleeve Square Neck T-Top",
+  "current_title": "Sexy Lace Short Sleeve Square Neck T-Top",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "tops",
+  "url": "https://emberandclove.com/products/sexy-lace-short-sleeve-square-neck-t-top",
+  "category": null,
+  "colors": [
+    "Black",
+    "White",
+    "Coffee",
+    "Burgundy"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "White",
+      "Coffee",
+      "Burgundy"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 39.76,
+  "price_max": 39.76,
+  "cost_min": 9.93,
+  "cost_max": 9.93,
+  "specs": {
+    "Color": "Black, White, Coffee, Wine Red",
+    "Style": "Sweet & Spicy, Sexy Chic",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Square Neck",
+    "Length": "Regular (50-65cm)",
+    "Fit Type": "Slim Fit",
+    "Occasion": "Casual, Daily, Date, Shopping",
+    "Size": "S, M, L",
+    "Details": "Edge Binding",
+    "Softness": "Soft",
+    "Wearing Style": "Outerwear",
+    "Unit": "cm",
+    "Weight": "0.14kg Fabric: Lace Composition: 90% Polyester 10% Spandex Note: Hand flat measurement, allow 1-2CM error."
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Length",
+        "Bust",
+        "Sleeve Length",
+        "Shoulder Width"
+      ],
+      [
+        "S",
+        "4",
+        "48",
+        "72",
+        "63",
+        "35"
+      ],
+      [
+        "M",
+        "6",
+        "49",
+        "76",
+        "64",
+        "36"
+      ],
+      [
+        "L",
+        "08/10",
+        "50",
+        "80",
+        "65",
+        "37"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2C6D8F5630BD8ACFC10CBC8E5D86AD48.jpg?v=1793048104",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/18381F3B0677C149E68C2B0F5BE31FE2.jpg?v=1793048106",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B1F209CD06B1433742D9EDE9C1F13B4E.jpg?v=1793048109",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8982ED4AEA4C10E38CC5022FD80B503E.jpg?v=1793048111",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FD4001BF0CD99D4FAC39D9683EDDDB96.jpg?v=1793048113",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6B55C4D23CF33A55DA177112053B2A7A.jpg?v=1793048117",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1F471B2612E8BBE9D873F2BA58CFEE5A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/48BB816EA978F72307C7356F6AB28199.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0A55B97776B9A65C819E8C4E642FE62F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/935D21803DD081F073EC82C05219111C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DABC397F2A5F26CBF7163D1B927C2E19.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8D978D62C7928E21EA4FAE68B1A54CFF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/80AF3940C5FC8E35612117E077BEEF4D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F1D7E6D7DD37F45C0B5C7F69A5FB7DE0.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3F21B60B8AB01746FDC50A0E9BE8346F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C322552EC930BFAB69559F2C9FE3BC8C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7BF9B5EF9F68031AE1C5B58E38E454C1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1091BA454043066B7FC1637848E79BCB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/ADF0BA740954C29FBD4830F54B2FADA8.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/774DD4D3411307AEEAE27E61C6D76FF1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A3413A4DD69468B3F8AD2E0286AFD6A1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/206ADB2BC254ED49674BF7CC0919A422.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Black / S",
+      "sku": "15BE3322A0FA4AF2B25082A666B32FB0",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "172F347C23AA44BF88BF21016E1C08E2",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "4A4D45B079B346FA935AC0F75CA3511C",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "White / S",
+      "sku": "609A76BCCE2949ADAE9BBD3594A1146D",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "White",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White / M",
+      "sku": "BE0B79D4485D46499F08FC9D77EA69B1",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "White",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "White / L",
+      "sku": "3C2E4A9AED684D688D5CC2D196268C2F",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "White",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Coffee / S",
+      "sku": "B671EB82817843E68D51D58F6A9CF92C",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Coffee",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Coffee / M",
+      "sku": "8CADC2CC0F784BDE905F8E5EC89C0504",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Coffee",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Coffee / L",
+      "sku": "78373218A25444DA95551B481408F4A3",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Coffee",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Burgundy / S",
+      "sku": "9147CD00FC7D4E019474CA9B66F0C49E",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Burgundy / M",
+      "sku": "59FFB31E8A154B4EB05E94C6F06A970E",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Burgundy / L",
+      "sku": "95E02E1BBA4B4143A21D1661301F284F",
+      "price": "39.76",
+      "cost": "9.93",
+      "options": {
+        "Color": "Burgundy",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Color: Black, White, Coffee, Wine Red</strong></p><p><strong>Style: Sweet &amp; Spicy, Sexy Chic</strong></p><p><strong>Pattern Type: Solid Color</strong></p><p><strong>Sleeve Length: Long Sleeve</strong></p><p><strong>Neckline: Square Neck</strong></p><p><strong>Length: Regular (50-65cm)</strong></p><p><strong>Fit Type: Slim Fit</strong></p><p><strong>Occasion: Casual, Daily, Date, Shopping</strong></p><p><strong>Size: S, M, L</strong></p><p><strong>Details: Edge Binding</strong></p><p><strong>Softness: Soft</strong></p><p><strong>Wearing Style: Outerwear</strong></p><p><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Sleeve Length</th>\n<th>Shoulder Width</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>48</td>\n<td>72</td>\n<td>63</td>\n<td>35</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>49</td>\n<td>76</td>\n<td>64</td>\n<td>36</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>50</td>\n<td>80</td>\n<td>65</td>\n<td>37</td>\n</tr>\n</tbody>\n</table><p><strong>Weight:</strong> 0.14kg <strong>Fabric:</strong> Lace <strong>Composition:</strong> 90% Polyester 10% Spandex <strong>Note:</strong> Hand flat measurement, allow 1-2CM error.</p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1F471B2612E8BBE9D873F2BA58CFEE5A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/48BB816EA978F72307C7356F6AB28199.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0A55B97776B9A65C819E8C4E642FE62F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/935D21803DD081F073EC82C05219111C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DABC397F2A5F26CBF7163D1B927C2E19.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8D978D62C7928E21EA4FAE68B1A54CFF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/80AF3940C5FC8E35612117E077BEEF4D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F1D7E6D7DD37F45C0B5C7F69A5FB7DE0.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3F21B60B8AB01746FDC50A0E9BE8346F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/C322552EC930BFAB69559F2C9FE3BC8C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7BF9B5EF9F68031AE1C5B58E38E454C1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1091BA454043066B7FC1637848E79BCB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/ADF0BA740954C29FBD4830F54B2FADA8.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/774DD4D3411307AEEAE27E61C6D76FF1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A3413A4DD69468B3F8AD2E0286AFD6A1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/206ADB2BC254ED49674BF7CC0919A422.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

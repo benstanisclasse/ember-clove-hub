@@ -1,0 +1,117 @@
+{
+  "creative_id": "EC-P01-A03-H01-V02",
+  "parent_id": "EC-P01-A03-H01-V01",
+  "changed_field": "model",
+  "experiment_id": "C1-P01-A03",
+  "product_id": "gid://shopify/Product/9751656071407",
+  "platform": "tiktok",
+  "length_s": 8,
+  "resolution": "720p",
+  "source": "openrouter",
+  "hook_text": "Okay, you need to see this sweater dress.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "curiosity",
+    "opening_visual": "creator-face",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 5
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "Veo 3.1 remake of EC-P01-A03-H01-V01 (8 s cap: 3 shots, first two lines)",
+        "product": "Cable Knit Mock Neck Midi Dress",
+        "color": "Caramel",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims",
+        "recorded_at": "2026-10-25T17:20:50",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Okay, you need to see this sweater dress.",
+          "It's cable knit, and it's fitted through the hips."
+        ],
+        "recorded_at": "2026-10-25T17:20:51",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "google/veo-3.1",
+        "status": "rejected",
+        "error": "{\"error\":{\"message\":\"Missing Authentication header\",\"code\":401}}",
+        "recorded_at": "2026-10-25T17:20:54",
+        "credits": 0,
+        "usd": 0.0
+      },
+      {
+        "model": "google/veo-3.1",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 8 seconds, three quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is an AI-generated young adult woman (not any real person) with long brunette hair, friendly and excited, speaking English directly to the camera. The dress is the exact caramel-brown cable-knit midi sweater dress from the reference images: mock neck, ribbed waistband, long sleeves with ribbed cuffs, vertical cable-knit pattern down the skirt with a diagonal wrap seam, fitted through the hip, midi length, and a front slit. Keep its color, knit pattern, neckline, waistband and slit identical to the references.\nShot 1 (0-2.5 s): wearing a casual white tee, she holds the caramel dress on a hanger up to the camera and says: \"Okay, you need to see this sweater dress.\"\nShot 2 (2.5-5.5 s): cut to her wearing the dress, mid-shot, smoothing the ribbed waist and turning slightly, saying: \"It's cable knit, and it's fitted through the hips.\"\nShot 3 (5.5-8 s): cut to a full-length shot in black knee-high boots; she takes big confident steps toward the camera that open the front slit and smiles.\nClear natural speech, light room tone, no background music, no on-screen text, no subtitles, no logos.",
+        "duration": 8,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "job_id": "gen-vid-1792963272-Fr8VgfWu7aAEoeF8qB86",
+        "status": "completed",
+        "cost_note": "OpenRouter usage.cost 3.2; list $3.20",
+        "recorded_at": "2026-10-25T17:22:12",
+        "credits": 0,
+        "usd": 3.2
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 3.2
+  },
+  "status": "REVIEW",
+  "created_at": "2026-10-25T17:20:50",
+  "local_path": "assets\\EC-P01-A03-H01-V02\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-25T17:23:01",
+    "result": "visual pass with one flag; audio not verified",
+    "notes": "Veo 3.1 via OpenRouter, 8.00 s, 720x1280, 24 fps, AAC stereo audio. Caramel color, mock neck, ribbed waistband, diagonal wrap seam, cable skirt and front slit match; worn bodice is plain knit as on the real dress. FLAG: hanger shot (0-2.5 s) shows cable pattern on the bodice and sleeves, which the real dress does not have. Shots: hanger, waist fit check, full-length walk in black knee-high boots, mid-shot hands on hips. Same AI presenter throughout; no on-screen text or logos. Colors/link line dropped (8 s cap). Owner to listen to speech."
+  },
+  "elements": {
+    "observed": {
+      "room": "living_room",
+      "lighting": "natural_daylight",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "brown",
+      "hair_length": "long",
+      "jewelry": [
+        "hoop_earrings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "true",
+      "glasses": "false",
+      "worn_with": [
+        "boots"
+      ],
+      "color_palette": "neutral_earth",
+      "props": [
+        "none"
+      ],
+      "camera_style": "filmed_by_someone_handheld",
+      "main_shot_distance": "full_length",
+      "camera_movement": "slight",
+      "actions": [
+        "posing",
+        "hand_detail"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:05:56"
+    }
+  }
+}

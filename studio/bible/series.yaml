@@ -1,0 +1,58 @@
+# Recurring formats. Each episode belongs to one series. DRAFT until the owner approves.
+# Owner 2026-10-26: build the audience first, no selling yet. So every active series is styling-led lifestyle content:
+# her real days in Minneapolis, told through what she wears. The outfit is picked by the planner from wardrobe.yaml,
+# so viewers see a big, always-changing closet. When selling starts (rules.mix.product_share_max > 0), a store piece
+# can slot into these same formats as the outfit's base, and the product series below switches on.
+status: approved
+approved_by: owner
+approved_at: "2026-10-26T21:31:50"
+approved_hash: "979f5811e6dff29a"
+
+items:
+  - id: outfit-of-the-day
+    name: "What I'm wearing today"
+    pillar: value                 # value = no sales pitch; product = shows a product with the product CTA
+    premise: "today's full outfit and where she's wearing it (work, coffee, errands, dinner), with one small styling detail that makes it work"
+    episode_title: "Outfit {n}"
+    rooms: [living-room, front-steps, bedroom, sidewalk, entryway]  # rotates through these
+    cta: soft
+  - id: minneapolis-weather
+    name: "Dressing for Minneapolis weather"
+    pillar: value
+    premise: "the weather in one line (first frost, wind, a grey wet day, a surprise sunny one) and how today's outfit handles it, layer by layer"
+    episode_title: "Minneapolis weather, outfit {n}"
+    rooms: [front-steps, sidewalk, entryway, lake-path]  # mostly outside: the weather is the point
+    cta: soft
+  - id: get-ready
+    name: "Get ready with me"
+    pillar: value
+    premise: "she finishes getting dressed: the last two or three pieces go on and she explains the choice, ending on the full look in the mirror"
+    episode_title: "Get ready with me {n}"
+    rooms: [bedroom, closet]
+    cta: soft
+  - id: how-to-wear
+    name: "How to wear it"
+    pillar: value
+    premise: "one styling problem solved with today's outfit (e.g. what shoes with wide-leg trousers, how to tuck a chunky sweater)"
+    episode_title: "How to wear: {topic}"
+    rooms: [closet, living-room, bedroom]
+    cta: soft
+  - id: night-out
+    name: "Night out"
+    pillar: value
+    occasion: night               # night outfits (dressy pieces) and evening light; coat on outside
+    premise: "getting ready and heading out for the night: the full look, the one choice that makes it a night outfit, and arriving"
+    episode_title: "Night out {n}"
+    rooms: [bedroom, night-street, club-lounge]
+    cta: soft
+    weekdays: [Fri, Sat]          # owner 2026-10-26: the 7:30pm slot, a couple of times a week
+    slots: ["19:30"]
+  # Off while rules.mix.product_share_max is 0 (the planner never schedules it). Kept so selling can start without a
+  # new format.
+  - id: dress-feature
+    name: "Dress of the week"
+    pillar: product
+    premise: "shows one store dress worn, close-ups of the details, how she styles it"
+    episode_title: "{product}"
+    rooms: [living-room, entryway]
+    cta: product

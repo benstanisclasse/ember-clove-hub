@@ -1,0 +1,166 @@
+{
+ "query": "mutation($p0: ProductUpdateInput!, $p1: ProductUpdateInput!, $p2: ProductUpdateInput!, $p3: ProductUpdateInput!, $p4: ProductUpdateInput!, $p5: ProductUpdateInput!, $p6: ProductUpdateInput!, $p7: ProductUpdateInput!) {\n  u0: productUpdate(product: $p0) { product { id title } userErrors { field message } }\n  u1: productUpdate(product: $p1) { product { id title } userErrors { field message } }\n  u2: productUpdate(product: $p2) { product { id title } userErrors { field message } }\n  u3: productUpdate(product: $p3) { product { id title } userErrors { field message } }\n  u4: productUpdate(product: $p4) { product { id title } userErrors { field message } }\n  u5: productUpdate(product: $p5) { product { id title } userErrors { field message } }\n  u6: productUpdate(product: $p6) { product { id title } userErrors { field message } }\n  u7: productUpdate(product: $p7) { product { id title } userErrors { field message } }\n}",
+ "variables": {
+  "p0": {
+   "id": "gid://shopify/Product/9757276700911",
+   "title": "Two-Button Notch Lapel Long Coat",
+   "descriptionHtml": "<p><strong>A roomy burgundy coat with wide notch lapels and dropped shoulders, cut long to layer over knits.</strong></p><ul><li>Polyester with a brushed, wool-look texture, black lining</li><li>Relaxed fit, two-button front, flap hip pockets</li><li>Below-knee length (about 45–46 in)</li></ul><p>Sizes XS–L · Bust 43–48 in</p>",
+   "productType": "Outerwear",
+   "tags": [
+    "coat",
+    "outerwear",
+    "long",
+    "notch-lapel",
+    "oversized",
+    "long-sleeve",
+    "burgundy",
+    "red",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p1": {
+   "id": "gid://shopify/Product/9757617783023",
+   "title": "Studded Fold-Over Mid-Calf Boots",
+   "descriptionHtml": "<p><strong>Slouchy distressed boots with a fold-over shaft and a studded hem, an easy pull-on with jeans.</strong></p><ul><li>Faux leather upper, textile lining, TPR sole</li><li>Pull-on, buckle strap at the top, round toe</li><li>Mid-calf shaft (about 12.5 in), 1.2 in stacked heel</li></ul><p>US 5.5–10 (EU 36–42)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "mid-calf",
+    "fold-over",
+    "studded",
+    "buckle",
+    "faux leather",
+    "black",
+    "brown",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p2": {
+   "id": "gid://shopify/Product/9757617815791",
+   "title": "Triple Buckle Faux Suede Boots",
+   "descriptionHtml": "<p><strong>Tall faux suede boots with three buckle straps up the shaft and a burnished toe, made for jeans and skirts.</strong></p><ul><li>Faux suede upper, faux leather lining, rubber sole</li><li>Three D-ring buckle straps, almond toe</li><li>Below-knee shaft (about 14 in), 2.4 in block heel</li></ul><p>US 4–11 (EU 34–43)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "knee-high",
+    "buckle",
+    "faux suede",
+    "block heel",
+    "black",
+    "tan",
+    "green",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p3": {
+   "id": "gid://shopify/Product/9757617848559",
+   "title": "Fringe Faux Suede Ankle Boots",
+   "descriptionHtml": "<p><strong>Western-style ankle boots with long fringe down the outer side and a stacked heel, easy over skinny jeans.</strong></p><ul><li>Faux suede upper, faux leather lining, rubber sole</li><li>Pull-on, pointed toe with a burnished tip</li><li>Ankle shaft (about 6 in), 3.2 in stacked block heel</li></ul><p>US 4.5–10.5 (EU 34–43)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "ankle",
+    "fringe",
+    "western",
+    "faux suede",
+    "block heel",
+    "black",
+    "tan",
+    "green",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p4": {
+   "id": "gid://shopify/Product/9757617914095",
+   "title": "Embroidered Cat Plush Slippers",
+   "descriptionHtml": "<p><strong>Fluffy white house slippers with a black cat face on each toe, made for lounging at home.</strong></p><ul><li>Curly plush upper, cotton lining, TPR sole</li><li>Backless slip-on, closed round toe</li><li>Flat cushioned sole</li></ul><p>US 6–13 (EU 36/37–44/45, paired sizes)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "slipper",
+    "plush",
+    "cat",
+    "embroidered",
+    "slip-on",
+    "white",
+    "black",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p5": {
+   "id": "gid://shopify/Product/9757617979631",
+   "title": "Metal Toe Cap Wedge Mules",
+   "descriptionHtml": "<p><strong>Backless mules with a squared metal toe cap and a low wedge, a sharp slip-on with cropped jeans.</strong></p><ul><li>Smooth faux leather upper, rubber sole</li><li>Backless slip-on, closed square toe with metal cap</li><li>Low black wedge heel</li></ul><p>US 4–9 (EU 34–40)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "mule",
+    "wedge",
+    "metal toe",
+    "square toe",
+    "slip-on",
+    "faux leather",
+    "ivory",
+    "black",
+    "brown",
+    "spring",
+    "fall",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p6": {
+   "id": "gid://shopify/Product/9757625155823",
+   "title": "Floral Print Platform Wedge Slides",
+   "descriptionHtml": "<p><strong>A bold paisley-floral wedge under a wide faux suede band, an easy summer slide with denim or linen.</strong></p><ul><li>Faux suede band, printed wedge, rubber outsole</li><li>Wide single band, slip-on, open peep toe</li><li>Platform wedge (about 4 in)</li></ul><p>US 4–12 (EU 35–43)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "wedge",
+    "platform",
+    "slide",
+    "floral",
+    "faux suede",
+    "peep toe",
+    "orange",
+    "black",
+    "green",
+    "summer",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  },
+  "p7": {
+   "id": "gid://shopify/Product/9757625188591",
+   "title": "Snap Button Fold-Over Knee Boots",
+   "descriptionHtml": "<p><strong>Knee-high boots with a wide fold-over cuff and a row of brass snaps, a sleek match for skirts and dresses.</strong></p><ul><li>Smooth faux leather, faux leather lining, rubber sole</li><li>Side zip, snap-button trim, small metal charm</li><li>Knee-high shaft (about 14 in), 2.8 in block heel</li></ul><p>US 5–11 (EU 35–43)</p>",
+   "productType": "Sandals",
+   "tags": [
+    "boots",
+    "knee-high",
+    "fold-over",
+    "snap button",
+    "faux leather",
+    "block heel",
+    "beige",
+    "black",
+    "white",
+    "fall",
+    "winter",
+    "ec-collection"
+   ],
+   "vendor": "Ember & Clove"
+  }
+ }
+}

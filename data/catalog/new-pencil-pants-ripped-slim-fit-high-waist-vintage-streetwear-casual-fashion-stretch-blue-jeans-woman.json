@@ -1,0 +1,271 @@
+{
+  "product_id": "gid://shopify/Product/9756982214895",
+  "handle": "new-pencil-pants-ripped-slim-fit-high-waist-vintage-streetwear-casual-fashion-stretch-blue-jeans-woman",
+  "original_title": "New Pencil Pants Ripped Slim Fit High Waist Vintage Streetwear Casual Fashion Stretch Blue Jeans Woman",
+  "current_title": "New Pencil Pants Ripped Slim Fit High Waist Vintage Streetwear Casual Fashion Stretch Blue Jeans Woman",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/new-pencil-pants-ripped-slim-fit-high-waist-vintage-streetwear-casual-fashion-stretch-blue-jeans-woman",
+  "category": null,
+  "colors": [
+    "Black",
+    "Dark Blue",
+    "Light Blue"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Dark Blue",
+      "Light Blue"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  "price_min": 44.66,
+  "price_max": 44.66,
+  "cost_min": 8.95,
+  "cost_max": 8.95,
+  "specs": {
+    "Main fabric composition": "cotton",
+    "style": "Basic model",
+    "Pant length": "trousers"
+  },
+  "description_text": [
+    "Description",
+    "Fabric name；Denim fabric",
+    "Main Fabric Component 2；Polyester (polyester fiber)",
+    "Size Chart",
+    "Product Display Diagram"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Waist(CM)",
+        "Hip(CM)",
+        "Length(CM)"
+      ],
+      [
+        "S",
+        "68",
+        "93",
+        "98"
+      ],
+      [
+        "M",
+        "73",
+        "98",
+        "99"
+      ],
+      [
+        "L",
+        "78",
+        "103",
+        "100"
+      ],
+      [
+        "XL",
+        "83",
+        "108",
+        "101"
+      ],
+      [
+        "XXL",
+        "88",
+        "113",
+        "102"
+      ]
+    ]
+  ],
+  "gallery_images": [],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/7A1160029226C012BBCE077D0994D28A.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/90D210D525DF4C0B0103B112265E9818.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/5CF5CE0201453F7C967BE369161E4E24.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/213011C74B52F2EA68A562D878965EA0.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/E9928DEE0BB55AE8495ED6EC59B367B8.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/5C77E628EF53BF0E0DB03245596BDDB7.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/34590879EF6CCD9094C089AE275416E9.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/B70771AB2BB81A28250B7DC8D43D09AA.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/DC97F4BE6FF0188B43857770F5E5E0B9.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/6277F7005A68C0D705B6A798B0B72F4B.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/CDCE2F96B4482935D7DA1EEFE9D2A7FA.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/B0903DCFD02FC7AD200309390AC6F491.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/97D5E9847EEB951769B8880B0AB0A3F2.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/C10B843B862825C4E79AA571EE6E746C.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/0AC3FAAA8E4EDDC62DAAEA8C853CA96C.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/DB0B00345088C34F454446DD678CC9A4.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/87CC8E2D5698449322094A7A9B9BE354.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/989423DC5879FD6B41487355667B2116.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/6A6CBAA9909099CB0F743807E1BE2500.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/568932394363163458ECCE292C12583C.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/A88D64EF0300EDF3AB1C9B9511464E8A.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Black / S",
+      "sku": "2A128024035044C29B45B91776222543",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "AB78D8403FBF451194B12FEC77337791",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "04E8E0A8991F460EB32DA1C652891C6B",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / XL",
+      "sku": "23E0B639FCCF45798C3B0FF18AE5B4D5",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Black",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Black / XXL",
+      "sku": "249951F4637A48A4B739320F027F6EC2",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Black",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Dark Blue / S",
+      "sku": "7EAE086FE3A540BB9FD37E1253662C38",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Dark Blue / M",
+      "sku": "60565B1C19E244DFA42EEF6A1A817B4A",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Dark Blue / L",
+      "sku": "5D1573F929AF4628AE3697D86687F725",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Dark Blue / XL",
+      "sku": "2806EECE51DE4040838E7124FAD9BD42",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Dark Blue / XXL",
+      "sku": "92586C0D16A048FC888085FF03ED21D4",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Light Blue / S",
+      "sku": "CB65102297C644F9B495F61F9115AD9F",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Light Blue / M",
+      "sku": "2F2B2BAA5F1A41E382B6C7B04367FB3D",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Light Blue / L",
+      "sku": "7E08C333CAB94FD8AE104077D6AAB36A",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Light Blue / XL",
+      "sku": "0A381B8545DE4963B53A2FD92972E157",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Light Blue / XXL",
+      "sku": "B04C3D60377F421AA9F47AFEAF51142B",
+      "price": "44.66",
+      "cost": "8.95",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "XXL"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size:24px;font-weight:bold;text-align:left;display:block;width:100%;color:#000000;\"><br></p><p style=\"text-align: left;\"><strong><span style=\"color: rgb(25, 25, 25); font-family: \">Description</span></strong></p><p><br></p><p>Fabric name；Denim fabric</p><p>Main fabric composition：cotton</p><p>Main Fabric Component 2；Polyester (polyester fiber)</p><p>style：Basic model</p><p>Pant length：trousers</p><p><br></p><p><br></p><p><br></p><p style=\"text-align: left;\"><span style=\"color: rgb(25, 25, 25); font-family: \">Size Chart</span></p><p style=\"text-align: left;\"><span style=\"color: rgb(25, 25, 25); font-family: \"><br></span></p><p style=\"text-align: left;\"><span style=\"color: rgb(25, 25, 25); font-family: \"><br></span></p><p style=\"text-align: left;\"><span style=\"color: rgb(25, 25, 25); font-family: \"><br></span></p><p style=\"text-align: left;\"><span style=\"color: rgb(25, 25, 25); font-family: \"><br></span></p><p></p><table style=\"border-collapse:collapse;width:306.77pt;\" width=\"409\" border=\"0\">\n<colgroup>\n<col width=\"107\">\n<col width=\"114\">\n<col width=\"92\">\n<col width=\"96\">\n</colgroup>\n<tbody>\n<tr style=\"height:19;\" class=\"firstRow\">\n<td style=\"width:80.25pt;height:14.25pt;\" class=\"et2\" width=\"107\"><p style=\"text-align: left;\"><strong>Size</strong></p></td>\n<td style=\"width:85.5pt;\" class=\"et3\" width=\"114\"><p style=\"text-align: left;\"><strong>Waist(CM)</strong></p></td>\n<td style=\"width:69pt;\" class=\"et3\" width=\"92\"><p style=\"text-align: left;\"><strong>Hip(CM)</strong></p></td>\n<td style=\"width:72pt;\" class=\"et3\" width=\"96\"><p style=\"text-align: left;\"><strong>Length(CM)</strong></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:80.25pt;height:14.25pt;\" class=\"et2\" width=\"107\"><p style=\"text-align: left;\"><strong>S</strong></p></td>\n<td style=\"width:85.5pt;\" class=\"et4\" width=\"114\"><p style=\"text-align: left;\"><strong>68</strong></p></td>\n<td style=\"width:69pt;\" class=\"et4\" width=\"92\"><p style=\"text-align: left;\"><strong>93</strong></p></td>\n<td style=\"width:72pt;\" class=\"et4\" width=\"96\"><p style=\"text-align: left;\"><strong>98</strong></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:80.25pt;height:14.25pt;\" class=\"et2\" width=\"107\"><p style=\"text-align: left;\"><strong>M</strong></p></td>\n<td style=\"width:85.5pt;\" class=\"et4\" width=\"114\"><p style=\"text-align: left;\"><strong>73</strong></p></td>\n<td style=\"width:69pt;\" class=\"et4\" width=\"92\"><p style=\"text-align: left;\"><strong>98</strong></p></td>\n<td style=\"width:72pt;\" class=\"et4\" width=\"96\"><p style=\"text-align: left;\"><strong>99</strong></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:80.25pt;height:14.25pt;\" class=\"et2\" width=\"107\"><p style=\"text-align: left;\"><strong>L</strong></p></td>\n<td style=\"width:85.5pt;\" class=\"et4\" width=\"114\"><p style=\"text-align: left;\"><strong>78</strong></p></td>\n<td style=\"width:69pt;\" class=\"et4\" width=\"92\"><p style=\"text-align: left;\"><strong>103</strong></p></td>\n<td style=\"width:72pt;\" class=\"et4\" width=\"96\"><p style=\"text-align: left;\"><strong>100</strong></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:80.25pt;height:14.25pt;\" class=\"et2\" width=\"107\"><p style=\"text-align: left;\"><strong>XL</strong></p></td>\n<td style=\"width:85.5pt;\" class=\"et4\" width=\"114\"><p style=\"text-align: left;\"><strong>83</strong></p></td>\n<td style=\"width:69pt;\" class=\"et4\" width=\"92\"><p style=\"text-align: left;\"><strong>108</strong></p></td>\n<td style=\"width:72pt;\" class=\"et4\" width=\"96\"><p style=\"text-align: left;\"><strong>101</strong></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:80.25pt;height:14.25pt;\" class=\"et5\" width=\"107\"><p style=\"text-align: left;\"><strong>XXL</strong></p></td>\n<td style=\"width:85.5pt;\" class=\"et6\" width=\"114\"><p style=\"text-align: left;\"><strong>88</strong></p></td>\n<td style=\"width:69pt;\" class=\"et6\" width=\"92\"><p style=\"text-align: left;\"><strong>113</strong></p></td>\n<td style=\"width:72pt;\" class=\"et6\" width=\"96\"><p style=\"text-align: left;\"><strong>102</strong></p></td>\n</tr>\n</tbody>\n</table><p><br></p><p></p><p><br></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; text-align: left;\"><span style=\"color: rgb(25, 25, 25); font-family: \">Product Display Diagram</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px;\"><br></p><p><br></p><table style=\"border-collapse:collapse;width:438.02pt;\" width=\"584\" border=\"0\">\n<colgroup>\n<col width=\"135\">\n<col width=\"155\">\n<col width=\"146\">\n<col width=\"148\">\n</colgroup>\n<tbody>\n<tr style=\"height:20;\" class=\"firstRow\"><td style=\"width:438pt;height:15pt;\" class=\"et2\" width=\"584\" colspan=\"4\"><p><br></p></td></tr>\n<tr style=\"height:19;\">\n<td style=\"width:101.25pt;height:14.25pt;\" class=\"et5\" width=\"135\"><p><br></p></td>\n<td style=\"width:116.25pt;\" class=\"et5\" width=\"155\"><p><br></p></td>\n<td style=\"width:109.5pt;\" class=\"et5\" width=\"146\"><p><br></p></td>\n<td style=\"width:111pt;\" class=\"et5\" width=\"148\"><p><br></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:101.25pt;height:14.25pt;\" class=\"et5\" width=\"135\"><p><br></p></td>\n<td style=\"width:116.25pt;\" class=\"et5\" width=\"155\"><p><br></p></td>\n<td style=\"width:109.5pt;\" class=\"et5\" width=\"146\"><p><br></p></td>\n<td style=\"width:111pt;\" class=\"et5\" width=\"148\"><p><br></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:101.25pt;height:14.25pt;\" class=\"et5\" width=\"135\"><p><br></p></td>\n<td style=\"width:116.25pt;\" class=\"et5\" width=\"155\"><p><br></p></td>\n<td style=\"width:109.5pt;\" class=\"et5\" width=\"146\"><p><br></p></td>\n<td style=\"width:111pt;\" class=\"et5\" width=\"148\"><p><br></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:101.25pt;height:14.25pt;\" class=\"et5\" width=\"135\"><p><br></p></td>\n<td style=\"width:116.25pt;\" class=\"et5\" width=\"155\"><p><br></p></td>\n<td style=\"width:109.5pt;\" class=\"et5\" width=\"146\"><p><br></p></td>\n<td style=\"width:111pt;\" class=\"et5\" width=\"148\"><p><br></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:101.25pt;height:14.25pt;\" class=\"et5\" width=\"135\"><p><br></p></td>\n<td style=\"width:116.25pt;\" class=\"et5\" width=\"155\"><p><br></p></td>\n<td style=\"width:109.5pt;\" class=\"et5\" width=\"146\"><p><br></p></td>\n<td style=\"width:111pt;\" class=\"et5\" width=\"148\"><p><br></p></td>\n</tr>\n<tr style=\"height:19;\">\n<td style=\"width:101.25pt;height:14.25pt;\" class=\"et5\" width=\"135\"><p><br></p></td>\n<td style=\"width:116.25pt;\" class=\"et5\" width=\"155\"><p><br></p></td>\n<td style=\"width:109.5pt;\" class=\"et5\" width=\"146\"><p><br></p></td>\n<td style=\"width:111pt;\" class=\"et5\" width=\"148\"><p><br></p></td>\n</tr>\n<tr style=\"height:19;\"><td style=\"height: 14.25pt; word-break: break-all;\" class=\"et6\" colspan=\"4\">\n<p style=\"text-align:center;\"><span style=\"color: rgb(25, 25, 25); font-family: \"><br><br></span></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p style=\"text-align: center;\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/7A1160029226C012BBCE077D0994D28A.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/90D210D525DF4C0B0103B112265E9818.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/5CF5CE0201453F7C967BE369161E4E24.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/213011C74B52F2EA68A562D878965EA0.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/E9928DEE0BB55AE8495ED6EC59B367B8.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/5C77E628EF53BF0E0DB03245596BDDB7.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/34590879EF6CCD9094C089AE275416E9.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/B70771AB2BB81A28250B7DC8D43D09AA.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/DC97F4BE6FF0188B43857770F5E5E0B9.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/6277F7005A68C0D705B6A798B0B72F4B.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/CDCE2F96B4482935D7DA1EEFE9D2A7FA.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/B0903DCFD02FC7AD200309390AC6F491.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/97D5E9847EEB951769B8880B0AB0A3F2.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/C10B843B862825C4E79AA571EE6E746C.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/0AC3FAAA8E4EDDC62DAAEA8C853CA96C.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/DB0B00345088C34F454446DD678CC9A4.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/87CC8E2D5698449322094A7A9B9BE354.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/989423DC5879FD6B41487355667B2116.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/6A6CBAA9909099CB0F743807E1BE2500.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/568932394363163458ECCE292C12583C.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202311/A88D64EF0300EDF3AB1C9B9511464E8A.jpg\"></p>\n</td></tr>\n</tbody>\n</table><p><br>\n </p><p><br></p>",
+  "cataloged_at": "2026-10-26T17:23:30"
+}

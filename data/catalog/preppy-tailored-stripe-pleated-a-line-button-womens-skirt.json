@@ -1,0 +1,216 @@
+{
+  "product_id": "gid://shopify/Product/9751656366319",
+  "handle": "preppy-tailored-stripe-pleated-a-line-button-womens-skirt",
+  "original_title": "Preppy Tailored Stripe Pleated A-Line Button Women's Skirt",
+  "current_title": "Preppy Tailored Stripe Pleated A-Line Button Women's Skirt",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "skirts",
+  "url": "https://nkpfvz-ra.myshopify.com/products/preppy-tailored-stripe-pleated-a-line-button-womens-skirt",
+  "category": null,
+  "colors": [
+    "Gray",
+    "Black",
+    "Coffee"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Gray",
+      "Black",
+      "Coffee"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 48.96,
+  "price_max": 48.96,
+  "cost_min": 13.82,
+  "cost_max": 13.82,
+  "specs": {
+    "Pattern Type": "Stripe, Solid Color",
+    "Skirt Type": "Pleated Half Skirt",
+    "Length": "Mini Skirt",
+    "Color": "Grey, Black, Brown",
+    "Size": "S, M, L",
+    "Fabric": "Polyester, Spandex",
+    "Occasion": "Daily, Casual",
+    "Suitable Body Type": "Apple, Straight, Pear, Inverted Triangle, Rectangle, Hourglass",
+    "Thickness": "Regular",
+    "Stretch": "Non-stretch",
+    "Target Audience": "Youth",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Waist",
+        "Length"
+      ],
+      [
+        "S",
+        "4",
+        "70",
+        "32"
+      ],
+      [
+        "M",
+        "6",
+        "74",
+        "33"
+      ],
+      [
+        "L",
+        "08/10",
+        "78",
+        "34"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0883306BF66343BC9E39BCB7432485DA.jpg?v=1792822470",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7A2CA797EB7915DAFDA340DC1D32D9D9.jpg?v=1792822471",
+      "altText": "",
+      "width": 1919,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/99CFE189FA86C0F7A2C23217B16BA619.jpg?v=1792822484",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/63F900652652F78A5FE4B1BEF8F63166.jpg?v=1792822490",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5F60364FF93CD24F0AB2AB1E5E605CD1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E9D4C5B92E25229A3E01E4841AF9EBDD.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/184B8AE5A876E621686CFDCB43B2D3FF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/15D0FB707BB27DFD2F39219BC603A3D5.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FF4E3996A33CCA53953AE663862105B6.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B40E5B119D04DDD8EA54A0919FF004E5.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/55FB8BA6FA34C8EF7F1039066F1A1032.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/67C93F8D4ED4C4C5095A327AC06B4D15.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EF22A116DF6F9C909C2A22E0A0B84FBC.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AB9D7A9C577A28E568D21995A9F01EAB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D25AD3BDE5D1F0430517EF6B689C21A1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F2E78E98C20B79D1A31DDCBF84951D53.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/865C69F7C0B8B4973C6EB9DF501F023C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D0E49065C1ADA4BF2CE3263C02CC0919.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Gray / S",
+      "sku": "F00FE690074844D89868BD56A61ACE31",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray / M",
+      "sku": "71BE8856C5DC47FA825598684B2DF2B8",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray / L",
+      "sku": "8EAA76FAD23C4F6EB64B7B5213B65A46",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "BACB7EF07C1A4F27AF99DEE8B9C09391",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "656AAD7C8AD44823950A58F26EE7BD9F",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "0357F4882ABC433D89305A2F90BD33D7",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Coffee / S",
+      "sku": "9DE49F51D89049078432409CFCFD9D8F",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Coffee",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Coffee / M",
+      "sku": "792839435EDB4704810400EA62FCB099",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Coffee",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Coffee / L",
+      "sku": "75C6B489F6564A368F9DBB39244FD9CC",
+      "price": "48.96",
+      "cost": "13.82",
+      "options": {
+        "Color": "Coffee",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Pattern Type: Stripe, Solid Color</strong></p><p style=\"font-size: 16px;\"><strong>Skirt Type: Pleated Half Skirt</strong></p><p style=\"font-size: 16px;\"><strong>Length: Mini Skirt</strong></p><p style=\"font-size: 16px;\"><strong>Color: Grey, Black, Brown</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M, L</strong></p><p style=\"font-size: 16px;\"><strong>Fabric: Polyester, Spandex</strong></p><p style=\"font-size: 16px;\"><strong>Occasion: Daily, Casual</strong></p><p style=\"font-size: 16px;\"><strong>Suitable Body Type: Apple, Straight, Pear, Inverted Triangle, Rectangle, Hourglass</strong></p><p style=\"font-size: 16px;\"><strong>Thickness: Regular</strong></p><p style=\"font-size: 16px;\"><strong>Stretch: Non-stretch</strong></p><p style=\"font-size: 16px;\"><strong>Target Audience: Youth</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Waist</th>\n<th>Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>70</td>\n<td>32</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>74</td>\n<td>33</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>78</td>\n<td>34</td>\n</tr>\n</tbody>\n</table><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5F60364FF93CD24F0AB2AB1E5E605CD1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E9D4C5B92E25229A3E01E4841AF9EBDD.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/184B8AE5A876E621686CFDCB43B2D3FF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/15D0FB707BB27DFD2F39219BC603A3D5.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FF4E3996A33CCA53953AE663862105B6.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B40E5B119D04DDD8EA54A0919FF004E5.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/55FB8BA6FA34C8EF7F1039066F1A1032.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/67C93F8D4ED4C4C5095A327AC06B4D15.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EF22A116DF6F9C909C2A22E0A0B84FBC.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AB9D7A9C577A28E568D21995A9F01EAB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D25AD3BDE5D1F0430517EF6B689C21A1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F2E78E98C20B79D1A31DDCBF84951D53.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/865C69F7C0B8B4973C6EB9DF501F023C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D0E49065C1ADA4BF2CE3263C02CC0919.jpg\"> </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

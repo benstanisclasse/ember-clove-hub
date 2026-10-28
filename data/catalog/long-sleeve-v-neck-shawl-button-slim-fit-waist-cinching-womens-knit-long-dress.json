@@ -1,0 +1,234 @@
+{
+  "product_id": "gid://shopify/Product/9751655842031",
+  "handle": "long-sleeve-v-neck-shawl-button-slim-fit-waist-cinching-womens-knit-long-dress",
+  "original_title": "Long Sleeve V-Neck Shawl Button Slim Fit Waist-Cinching Women's Knit Long Dress",
+  "current_title": "Long Sleeve V-Neck Shawl Button Slim Fit Waist-Cinching Women's Knit Long Dress",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://nkpfvz-ra.myshopify.com/products/long-sleeve-v-neck-shawl-button-slim-fit-waist-cinching-womens-knit-long-dress",
+  "category": null,
+  "colors": [
+    "Pink",
+    "Dark Gray",
+    "Black"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Pink",
+      "Dark Gray",
+      "Black"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 58.14,
+  "price_max": 58.14,
+  "cost_min": 14.48,
+  "cost_max": 14.48,
+  "specs": {
+    "Color": "Pink, Dark Gray, Black",
+    "Style": "Sexy / Chic",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Round Neck",
+    "Length": "Maxi",
+    "Closure Type": "Pullover",
+    "Details": "Splicing",
+    "Fit Type": "Slim Fit",
+    "Occasion": "Casual / Daily",
+    "Size": "S, M, L",
+    "Silhouette": "A-Line",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Shoulder Width",
+        "Bust",
+        "Sleeve Length",
+        "Dress Length"
+      ],
+      [
+        "S",
+        "4",
+        "31",
+        "61+",
+        "63",
+        "132"
+      ],
+      [
+        "M",
+        "6",
+        "32",
+        "65+",
+        "64",
+        "133"
+      ],
+      [
+        "L",
+        "08/10",
+        "33",
+        "69+",
+        "65",
+        "134"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C9958C1CBF938D8324A33312CC99610D.jpg?v=1792822464",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/305D43858D70B02F2F3FA33D587B97BF.jpg?v=1792822465",
+      "altText": "",
+      "width": 926,
+      "height": 925
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7E57BC6536DC156B3B814547CA8CEC2D.jpg?v=1792822467",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8F0461B37404659BD465E41024594DA9.jpg?v=1792822469",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8D3B85EC610F230A150C159AE8C59D55.jpg?v=1792822470",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0A7C8880F1E75B258C148AFD9F210B4C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9097C06C6F509C83560551D0D53FB578.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D1583D205D4D5CC177D58FF48EC65067.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/712030B90EA7205691F116CCB3CA31F1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/812B5CF80810F46A3AE0D95E1A63022B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2CBA70E2EA0AD16593430622725A9D44.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/492363E01C81FBAEFE4A8F03DA8922DB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D15A83B4AB9613F5FA4471CBD4200104.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/86062CB76D57AEA40B7906A4D19ABF56.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6C57FDF611D50138E4204D85C9897364.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/521F0339854FFADBC576402079308D9E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7FA2E2339131E96D381F1DB0C8EC1574.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A1DF467CB885A3D4BA1ABFF16D023E5A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7982D668BB71E6A1210E3766C80BE0D1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5FCA0127255CDA77A083F3A562CD18B2.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9B97692E6CD6B79363A944A64F19935B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1467DADDB1321C272663F46DF0FFDC7B.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Pink / S",
+      "sku": "41AF9FCE81014C1DB9742EFF9D913CFD",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Pink",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Pink / M",
+      "sku": "FF204172FB484A88B17CD4B18B69CB9A",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Pink",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Pink / L",
+      "sku": "B0D842863BEF4F20ACC9D845842DEA5D",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Pink",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Dark Gray / S",
+      "sku": "D5FCABD687E4437AA6A3ABE124484603",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Dark Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Dark Gray / M",
+      "sku": "2AB2FDD2A9E44052A4C0815D8F46D0D0",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Dark Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Dark Gray / L",
+      "sku": "AA7489E3D30342978E5FF0D22CFA69E6",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Dark Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "C3899EFBF5EF464ABD4B6FCC44AB1276",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "24134892EF4A4DD0960F3FA8FE390BC5",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "6D61314BCD8041709B7F8AD723DEA017",
+      "price": "58.14",
+      "cost": "14.48",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Color: Pink, Dark Gray, Black</strong></p><p style=\"font-size: 16px;\"><strong>Style: Sexy / Chic</strong></p><p style=\"font-size: 16px;\"><strong>Pattern Type: Solid Color</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length: Long Sleeve</strong></p><p style=\"font-size: 16px;\"><strong>Neckline: Round Neck</strong></p><p style=\"font-size: 16px;\"><strong>Length: Maxi</strong></p><p style=\"font-size: 16px;\"><strong>Closure Type: Pullover</strong></p><p style=\"font-size: 16px;\"><strong>Details: Splicing</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type: Slim Fit</strong></p><p style=\"font-size: 16px;\"><strong>Occasion: Casual / Daily</strong></p><p style=\"font-size: 16px;\"><strong>Size: S, M, L</strong></p><p style=\"font-size: 16px;\"><strong>Silhouette: A-Line</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Shoulder Width</th>\n<th>Bust</th>\n<th>Sleeve Length</th>\n<th>Dress Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>31</td>\n<td>61+</td>\n<td>63</td>\n<td>132</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>32</td>\n<td>65+</td>\n<td>64</td>\n<td>133</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>33</td>\n<td>69+</td>\n<td>65</td>\n<td>134</td>\n</tr>\n</tbody>\n</table><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0A7C8880F1E75B258C148AFD9F210B4C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9097C06C6F509C83560551D0D53FB578.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D1583D205D4D5CC177D58FF48EC65067.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/712030B90EA7205691F116CCB3CA31F1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/812B5CF80810F46A3AE0D95E1A63022B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2CBA70E2EA0AD16593430622725A9D44.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/492363E01C81FBAEFE4A8F03DA8922DB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D15A83B4AB9613F5FA4471CBD4200104.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/86062CB76D57AEA40B7906A4D19ABF56.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6C57FDF611D50138E4204D85C9897364.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/521F0339854FFADBC576402079308D9E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7FA2E2339131E96D381F1DB0C8EC1574.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A1DF467CB885A3D4BA1ABFF16D023E5A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7982D668BB71E6A1210E3766C80BE0D1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5FCA0127255CDA77A083F3A562CD18B2.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9B97692E6CD6B79363A944A64F19935B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1467DADDB1321C272663F46DF0FFDC7B.jpg\"> </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

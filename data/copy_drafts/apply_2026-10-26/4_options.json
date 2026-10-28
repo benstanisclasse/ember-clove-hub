@@ -1,0 +1,391 @@
+{
+ "query": "mutation($pid0: ID!, $opt0: OptionUpdateInput!, $val0: [OptionValueUpdateInput!], $pid1: ID!, $opt1: OptionUpdateInput!, $val1: [OptionValueUpdateInput!], $pid2: ID!, $opt2: OptionUpdateInput!, $val2: [OptionValueUpdateInput!], $pid3: ID!, $opt3: OptionUpdateInput!, $val3: [OptionValueUpdateInput!], $pid4: ID!, $opt4: OptionUpdateInput!, $val4: [OptionValueUpdateInput!], $pid5: ID!, $opt5: OptionUpdateInput!, $val5: [OptionValueUpdateInput!], $pid6: ID!, $opt6: OptionUpdateInput!, $val6: [OptionValueUpdateInput!], $pid7: ID!, $opt7: OptionUpdateInput!, $val7: [OptionValueUpdateInput!], $pid8: ID!, $opt8: OptionUpdateInput!, $val8: [OptionValueUpdateInput!], $pid9: ID!, $opt9: OptionUpdateInput!, $val9: [OptionValueUpdateInput!], $pid10: ID!, $opt10: OptionUpdateInput!, $val10: [OptionValueUpdateInput!], $pid11: ID!, $opt11: OptionUpdateInput!, $val11: [OptionValueUpdateInput!], $pid12: ID!, $opt12: OptionUpdateInput!, $val12: [OptionValueUpdateInput!], $pid13: ID!, $opt13: OptionUpdateInput!, $val13: [OptionValueUpdateInput!], $pid14: ID!, $opt14: OptionUpdateInput!, $val14: [OptionValueUpdateInput!], $pid15: ID!, $opt15: OptionUpdateInput!, $val15: [OptionValueUpdateInput!], $pid16: ID!, $opt16: OptionUpdateInput!, $val16: [OptionValueUpdateInput!], $pid17: ID!, $opt17: OptionUpdateInput!, $val17: [OptionValueUpdateInput!], $pid18: ID!, $opt18: OptionUpdateInput!, $val18: [OptionValueUpdateInput!], $pid19: ID!, $opt19: OptionUpdateInput!, $val19: [OptionValueUpdateInput!], $pid20: ID!, $opt20: OptionUpdateInput!, $val20: [OptionValueUpdateInput!], $pid21: ID!, $opt21: OptionUpdateInput!, $val21: [OptionValueUpdateInput!], $pid22: ID!, $opt22: OptionUpdateInput!, $val22: [OptionValueUpdateInput!], $pid23: ID!, $opt23: OptionUpdateInput!, $val23: [OptionValueUpdateInput!], $pid24: ID!, $opt24: OptionUpdateInput!, $val24: [OptionValueUpdateInput!]) {\n  o0: productOptionUpdate(productId: $pid0, option: $opt0, optionValuesToUpdate: $val0) { product { id } userErrors { field message code } }\n  o1: productOptionUpdate(productId: $pid1, option: $opt1, optionValuesToUpdate: $val1) { product { id } userErrors { field message code } }\n  o2: productOptionUpdate(productId: $pid2, option: $opt2, optionValuesToUpdate: $val2) { product { id } userErrors { field message code } }\n  o3: productOptionUpdate(productId: $pid3, option: $opt3, optionValuesToUpdate: $val3) { product { id } userErrors { field message code } }\n  o4: productOptionUpdate(productId: $pid4, option: $opt4, optionValuesToUpdate: $val4) { product { id } userErrors { field message code } }\n  o5: productOptionUpdate(productId: $pid5, option: $opt5, optionValuesToUpdate: $val5) { product { id } userErrors { field message code } }\n  o6: productOptionUpdate(productId: $pid6, option: $opt6, optionValuesToUpdate: $val6) { product { id } userErrors { field message code } }\n  o7: productOptionUpdate(productId: $pid7, option: $opt7, optionValuesToUpdate: $val7) { product { id } userErrors { field message code } }\n  o8: productOptionUpdate(productId: $pid8, option: $opt8, optionValuesToUpdate: $val8) { product { id } userErrors { field message code } }\n  o9: productOptionUpdate(productId: $pid9, option: $opt9, optionValuesToUpdate: $val9) { product { id } userErrors { field message code } }\n  o10: productOptionUpdate(productId: $pid10, option: $opt10, optionValuesToUpdate: $val10) { product { id } userErrors { field message code } }\n  o11: productOptionUpdate(productId: $pid11, option: $opt11, optionValuesToUpdate: $val11) { product { id } userErrors { field message code } }\n  o12: productOptionUpdate(productId: $pid12, option: $opt12, optionValuesToUpdate: $val12) { product { id } userErrors { field message code } }\n  o13: productOptionUpdate(productId: $pid13, option: $opt13, optionValuesToUpdate: $val13) { product { id } userErrors { field message code } }\n  o14: productOptionUpdate(productId: $pid14, option: $opt14, optionValuesToUpdate: $val14) { product { id } userErrors { field message code } }\n  o15: productOptionUpdate(productId: $pid15, option: $opt15, optionValuesToUpdate: $val15) { product { id } userErrors { field message code } }\n  o16: productOptionUpdate(productId: $pid16, option: $opt16, optionValuesToUpdate: $val16) { product { id } userErrors { field message code } }\n  o17: productOptionUpdate(productId: $pid17, option: $opt17, optionValuesToUpdate: $val17) { product { id } userErrors { field message code } }\n  o18: productOptionUpdate(productId: $pid18, option: $opt18, optionValuesToUpdate: $val18) { product { id } userErrors { field message code } }\n  o19: productOptionUpdate(productId: $pid19, option: $opt19, optionValuesToUpdate: $val19) { product { id } userErrors { field message code } }\n  o20: productOptionUpdate(productId: $pid20, option: $opt20, optionValuesToUpdate: $val20) { product { id } userErrors { field message code } }\n  o21: productOptionUpdate(productId: $pid21, option: $opt21, optionValuesToUpdate: $val21) { product { id } userErrors { field message code } }\n  o22: productOptionUpdate(productId: $pid22, option: $opt22, optionValuesToUpdate: $val22) { product { id } userErrors { field message code } }\n  o23: productOptionUpdate(productId: $pid23, option: $opt23, optionValuesToUpdate: $val23) { product { id } userErrors { field message code } }\n  o24: productOptionUpdate(productId: $pid24, option: $opt24, optionValuesToUpdate: $val24) { product { id } userErrors { field message code } }\n}",
+ "variables": {
+  "pid0": "gid://shopify/Product/9755699970287",
+  "opt0": {
+   "id": "gid://shopify/ProductOption/12375516414191"
+  },
+  "val0": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562453743",
+    "name": "Moss Green"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562486511",
+    "name": "Sky Blue"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562519279",
+    "name": "Black"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562552047",
+    "name": "Orange"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562584815",
+    "name": "Pink"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562617583",
+    "name": "Yellow"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6186562650351",
+    "name": "Wine"
+   }
+  ],
+  "pid1": "gid://shopify/Product/9756887810287",
+  "opt1": {
+   "id": "gid://shopify/ProductOption/12376828477679",
+   "name": "Color"
+  },
+  "val1": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191989948655",
+    "name": "Camel"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191989981423",
+    "name": "Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191990014191",
+    "name": "Slate Blue"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191990046959",
+    "name": "Olive Green"
+   }
+  ],
+  "pid2": "gid://shopify/Product/9756887810287",
+  "opt2": {
+   "id": "gid://shopify/ProductOption/12376828510447",
+   "name": "Size"
+  },
+  "val2": [],
+  "pid3": "gid://shopify/Product/9756888170735",
+  "opt3": {
+   "id": "gid://shopify/ProductOption/12376828936431",
+   "name": "Color"
+  },
+  "val3": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992045807",
+    "name": "Pink Gradient"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992078575",
+    "name": "Lavender Peach"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992111343",
+    "name": "Gray Pink"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992144111",
+    "name": "Aqua Mirror"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992209647",
+    "name": "Blue Gradient"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992242415",
+    "name": "Pink Mirror"
+   }
+  ],
+  "pid4": "gid://shopify/Product/9756888236271",
+  "opt4": {
+   "id": "gid://shopify/ProductOption/12376829001967",
+   "name": "Color"
+  },
+  "val4": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992635631",
+    "name": "Black / Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992668399",
+    "name": "Cognac / Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992701167",
+    "name": "Black / Purple Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992733935",
+    "name": "Tortoise / Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191992766703",
+    "name": "White / Gray"
+   }
+  ],
+  "pid5": "gid://shopify/Product/9756888269039",
+  "opt5": {
+   "id": "gid://shopify/ProductOption/12376829067503",
+   "name": "Color"
+  },
+  "val5": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993028847",
+    "name": "Black / Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993061615",
+    "name": "Black / Ice Blue"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993094383",
+    "name": "Tortoise / Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993127151",
+    "name": "Black / Yellow"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993159919",
+    "name": "Red / Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993192687",
+    "name": "Green / Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993225455",
+    "name": "Caramel / Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993258223",
+    "name": "Amber / Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993290991",
+    "name": "Clear Blue / Gray"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993323759",
+    "name": "Clear Gray / Gray"
+   }
+  ],
+  "pid6": "gid://shopify/Product/9756888432879",
+  "opt6": {
+   "id": "gid://shopify/ProductOption/12376829231343"
+  },
+  "val6": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191993979119",
+    "name": "Sage Green"
+   }
+  ],
+  "pid7": "gid://shopify/Product/9756888596719",
+  "opt7": {
+   "id": "gid://shopify/ProductOption/12376829460719"
+  },
+  "val7": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191995027695",
+    "name": "Sage Green"
+   }
+  ],
+  "pid8": "gid://shopify/Product/9756888760559",
+  "opt8": {
+   "id": "gid://shopify/ProductOption/12376829690095"
+  },
+  "val8": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191996567791",
+    "name": "Sage Green"
+   }
+  ],
+  "pid9": "gid://shopify/Product/9756888498415",
+  "opt9": {
+   "id": "gid://shopify/ProductOption/12376829329647"
+  },
+  "val9": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191994732783",
+    "name": "Red & Navy Stripe"
+   }
+  ],
+  "pid10": "gid://shopify/Product/9756888924399",
+  "opt10": {
+   "id": "gid://shopify/ProductOption/12376829919471"
+  },
+  "val10": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191997944047",
+    "name": "Cream"
+   }
+  ],
+  "pid11": "gid://shopify/Product/9756888989935",
+  "opt11": {
+   "id": "gid://shopify/ProductOption/12376830017775"
+  },
+  "val11": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191998206191",
+    "name": "Cream"
+   }
+  ],
+  "pid12": "gid://shopify/Product/9757005742319",
+  "opt12": {
+   "id": "gid://shopify/ProductOption/12376947753199"
+  },
+  "val12": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192150544623",
+    "name": "Cream"
+   }
+  ],
+  "pid13": "gid://shopify/Product/9756889153775",
+  "opt13": {
+   "id": "gid://shopify/ProductOption/12376830247151"
+  },
+  "val13": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6191999418607",
+    "name": "Pink"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191999451375",
+    "name": "Cream"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191999484143",
+    "name": "Mauve"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6191999516911",
+    "name": "Navy"
+   }
+  ],
+  "pid14": "gid://shopify/Product/9756889252079",
+  "opt14": {
+   "id": "gid://shopify/ProductOption/12376830378223"
+  },
+  "val14": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192000237807",
+    "name": "Olive"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192000270575",
+    "name": "Peach"
+   }
+  ],
+  "pid15": "gid://shopify/Product/9756889612527",
+  "opt15": {
+   "id": "gid://shopify/ProductOption/12376830869743"
+  },
+  "val15": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192002498799",
+    "name": "Mustard"
+   }
+  ],
+  "pid16": "gid://shopify/Product/9756889874671",
+  "opt16": {
+   "id": "gid://shopify/ProductOption/12376831164655"
+  },
+  "val16": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192003645679",
+    "name": "Mustard"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192003711215",
+    "name": "Ivory"
+   }
+  ],
+  "pid17": "gid://shopify/Product/9756890005743",
+  "opt17": {
+   "id": "gid://shopify/ProductOption/12376831328495"
+  },
+  "val17": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192004956399",
+    "name": "Blush"
+   }
+  ],
+  "pid18": "gid://shopify/Product/9756905537775",
+  "opt18": {
+   "id": "gid://shopify/ProductOption/12376847089903"
+  },
+  "val18": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192030482671",
+    "name": "Lime"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192030515439",
+    "name": "Heather Gray"
+   }
+  ],
+  "pid19": "gid://shopify/Product/9756949676271",
+  "opt19": {
+   "id": "gid://shopify/ProductOption/12376891293935"
+  },
+  "val19": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192081436911",
+    "name": "Ivory"
+   }
+  ],
+  "pid20": "gid://shopify/Product/9756981952751",
+  "opt20": {
+   "id": "gid://shopify/ProductOption/12376923734255"
+  },
+  "val20": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192119644399",
+    "name": "Medium Blue"
+   }
+  ],
+  "pid21": "gid://shopify/Product/9756983754991",
+  "opt21": {
+   "id": "gid://shopify/ProductOption/12376925569263"
+  },
+  "val21": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192121905391",
+    "name": "Dark Blue"
+   }
+  ],
+  "pid22": "gid://shopify/Product/9756992045295",
+  "opt22": {
+   "id": "gid://shopify/ProductOption/12376933925103"
+  },
+  "val22": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192131309807",
+    "name": "Light Blue"
+   }
+  ],
+  "pid23": "gid://shopify/Product/9756994306287",
+  "opt23": {
+   "id": "gid://shopify/ProductOption/12376936218863"
+  },
+  "val23": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192133996783",
+    "name": "Black"
+   }
+  ],
+  "pid24": "gid://shopify/Product/9757002268911",
+  "opt24": {
+   "id": "gid://shopify/ProductOption/12376944214255"
+  },
+  "val24": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192143630575",
+    "name": "White"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192143663343",
+    "name": "Burgundy"
+   }
+  ]
+ }
+}

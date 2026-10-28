@@ -1,0 +1,475 @@
+<style>
+/* Metrics: TikTok and the Facebook Page side by side (same look as the control room). */
+.es { display: grid; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); }
+.es-head { display: grid; gap: var(--cds-gap-xs); }
+.es-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.es-take { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+.es-take b { color: var(--color-fg); font-weight: 500; }
+.es-tiles { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); }
+.es-tile, .es-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.es-tile { display: grid; gap: var(--cds-gap-xs); align-content: start; }
+.es-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.es-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.es-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.es-sec { display: grid; gap: var(--cds-gap-md); }
+.es-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.es-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.es-grid2 { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+.es-card { display: grid; gap: var(--cds-gap-sm); align-content: start; }
+.es-weeks { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.es-weeks button { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: 999px; background: var(--color-bg); color: var(--color-fg); cursor: pointer; }
+.es-weeks button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); }
+.es-weeks button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.es-cal { display: grid; gap: var(--cds-gap-sm); grid-template-columns: repeat(7, minmax(0, 1fr)); min-height: 12rem; }
+.es-day { display: grid; gap: var(--cds-gap-xs); align-content: start; min-width: 0; }
+.es-dayname { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+.es-slot { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm); display: grid; gap: 2px; background: var(--color-bg); min-width: 0; border-left-width: 3px; }
+.es-slot .t { font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; color: var(--color-fg-muted); }
+.es-slot .s { font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); overflow-wrap: anywhere; }
+.es-slot .p { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); overflow-wrap: anywhere; }
+.es-pill { white-space: nowrap; justify-self: start; font-size: 0.6875rem; letter-spacing: .02em; padding: 1px 6px; border-radius: 999px; border: 1px solid currentColor; margin-top: 2px; }
+.st-ok { color: var(--color-ok); } .st-warn { color: var(--color-warn); } .st-bad { color: var(--color-bad); } .st-muted { color: var(--color-fg-muted); }
+.es-slot.st-ok { border-left-color: var(--color-ok); } .es-slot.st-warn { border-left-color: var(--color-warn); }
+.es-slot.st-bad { border-left-color: var(--color-bad); } .es-slot.st-muted { border-left-color: var(--color-border-line); }
+.es-slot.st-ok, .es-slot.st-warn, .es-slot.st-bad, .es-slot.st-muted { color: var(--color-fg); }
+.es-chart { position: relative; min-height: 180px; }
+.es-chart svg text { fill: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); }
+.es-empty { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.es-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+.es-tip .d { color: var(--cds-text-secondary); }
+.es-tablewrap { overflow: auto; max-height: 24rem; }
+.es-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.es-table th, .es-table td { text-align: left; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.es-table th { position: sticky; top: 0; background: var(--color-panel); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); }
+.es-table td.n, .es-table th.n { text-align: right; }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 760px) { .es-cal { grid-template-columns: 1fr; } .es-day { grid-template-columns: 4rem 1fr; } .es-day .es-slots { display: grid; gap: var(--cds-gap-xs); } }
+@media (min-width: 761px) { .es-day .es-slots { display: grid; gap: var(--cds-gap-xs); } }
+</style>
+
+<div class="es">
+  <header class="es-head">
+    <h1 class="es-title">Metrics</h1>
+    <p class="es-take">All channels together, paid ads across Meta, TikTok and Microsoft, then TikTok and the Facebook Page on their own.
+      Post numbers come from PostZen and refresh every 15 minutes; ad numbers every few hours. The platforms themselves can lag by a few hours.</p>
+  </header>
+
+  <section class="es-sec" id="all">
+    <h2 class="es-h2">All channels</h2>
+    <div class="es-tiles">
+      <div class="es-tile"><span class="es-label">Followers</span><span class="es-big" id="all-followers">—</span>
+        <span class="es-sub">TikTok + Facebook</span></div>
+      <div class="es-tile"><span class="es-label">Posts live</span><span class="es-big" id="all-posts">—</span>
+        <span class="es-sub">videos and photo posts</span></div>
+      <div class="es-tile"><span class="es-label">Seen</span><span class="es-big" id="all-seen">—</span>
+        <span class="es-sub">TikTok views + Facebook impressions</span></div>
+      <div class="es-tile"><span class="es-label">Engagements</span><span class="es-big" id="all-eng">—</span>
+        <span class="es-sub"><span id="all-rate">—</span> of what was seen</span></div>
+      <div class="es-tile"><span class="es-label">Clicks</span><span class="es-big" id="all-clicks">—</span>
+        <span class="es-sub">all channels</span></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">Seen per day, by channel</h3>
+      <p class="es-note">TikTok views and Facebook impressions, stacked per day.
+        <span style="color:#c2652a">■</span> TikTok &nbsp;<span style="color:#3f7cac">■</span> Facebook</p>
+      <div class="es-chart" id="all-daily"></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">Channels compared</h3>
+      <p class="es-note">Lifetime numbers per channel. "Seen" is views on TikTok and impressions on Facebook.</p>
+      <div class="es-tablewrap"><table class="es-table" id="all-table"><thead><tr><th>Channel</th><th class="n">Followers</th>
+        <th class="n">Posts live</th><th class="n">Seen</th><th class="n">Per post</th><th class="n">Engagements</th>
+        <th class="n">Eng. rate</th><th class="n">Clicks</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+
+  <section class="es-sec" id="ads">
+    <h2 class="es-h2">Paid ads, all platforms</h2>
+    <p class="es-note">Meta, TikTok and Microsoft ad accounts over the last 30 days. Claude refreshes these numbers from each platform every
+      few hours (updated <span id="ads-updated">—</span>); purchases and revenue are what each platform credits to its own ads.</p>
+    <div class="es-tiles">
+      <div class="es-tile"><span class="es-label">Ad spend</span><span class="es-big" id="ads-spend">—</span>
+        <span class="es-sub">last 30 days, all platforms</span></div>
+      <div class="es-tile"><span class="es-label">Purchases</span><span class="es-big" id="ads-purch">—</span>
+        <span class="es-sub">credited to ads</span></div>
+      <div class="es-tile"><span class="es-label">Cost per purchase</span><span class="es-big" id="ads-cpa">—</span>
+        <span class="es-sub">spend ÷ purchases</span></div>
+      <div class="es-tile"><span class="es-label">Return on ad spend</span><span class="es-big" id="ads-roas">—</span>
+        <span class="es-sub">revenue ÷ spend</span></div>
+      <div class="es-tile"><span class="es-label">Clicks</span><span class="es-big" id="ads-clicks">—</span>
+        <span class="es-sub"><span id="ads-cpc">—</span> per click</span></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">Spend per day, by platform</h3>
+      <p class="es-note" id="ads-legend">Daily ad spend, stacked by platform.</p>
+      <div class="es-chart" id="ads-daily"></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">Platforms compared</h3>
+      <p class="es-note">Last 30 days per ad account, with what is running there now.</p>
+      <div class="es-tablewrap"><table class="es-table" id="ads-table"><thead><tr><th>Platform</th><th>Account</th>
+        <th class="n">Live campaigns</th><th class="n">Spend</th><th class="n">Impr.</th><th class="n">Clicks</th><th class="n">Per click</th>
+        <th class="n">Purchases</th><th class="n">Per purchase</th><th class="n">Return</th><th>Now</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+
+  <section class="es-sec" id="tiktok">
+    <h2 class="es-h2">TikTok</h2>
+    <div class="es-tiles">
+      <div class="es-tile"><span class="es-label">Followers</span><span class="es-big" id="tt-followers">—</span>
+        <span class="es-sub">latest count</span></div>
+      <div class="es-tile"><span class="es-label">Videos live</span><span class="es-big" id="tt-posts">—</span>
+        <span class="es-sub">public videos with numbers</span></div>
+      <div class="es-tile"><span class="es-label">Views</span><span class="es-big" id="tt-views">—</span>
+        <span class="es-sub"><span id="tt-avg">—</span> per video</span></div>
+      <div class="es-tile"><span class="es-label">Engagement rate</span><span class="es-big" id="tt-eng">—</span>
+        <span class="es-sub">likes, comments, shares, saves per view</span></div>
+    </div>
+    <div class="es-grid2">
+      <div class="es-card"><h3 class="es-h2">Daily views</h3><p class="es-note">All TikTok videos, per day.</p>
+        <div class="es-chart" id="tt-daily"></div></div>
+      <div class="es-card"><h3 class="es-h2">Followers</h3><p class="es-note">Daily follower count.</p>
+        <div class="es-chart" id="tt-fol"></div></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">Each video</h3><p class="es-note">Lifetime numbers, newest first.</p>
+      <p class="es-empty" id="tt-vempty" hidden>No TikTok videos with numbers yet.</p>
+      <div class="es-tablewrap"><table class="es-table" id="tt-vtable"><thead><tr></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">First week, per video</h3><p class="es-note">Total views at the end of each day after a video went live (Day 1 = its first day), newest video first. One row per video, so you can compare how fast each one takes off.</p>
+      <p class="es-empty" id="tt-tempty" hidden>Nothing yet: a video gets a row once it is live.</p>
+      <div class="es-tablewrap"><table class="es-table" id="tt-ttable"><thead><tr></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+
+  <section class="es-sec" id="fb">
+    <h2 class="es-h2">Facebook Page</h2>
+    <div class="es-tiles">
+      <div class="es-tile"><span class="es-label">Followers</span><span class="es-big" id="fb-followers">—</span>
+        <span class="es-sub">latest count</span></div>
+      <div class="es-tile"><span class="es-label">Posts live</span><span class="es-big" id="fb-posts">—</span>
+        <span class="es-sub">of <span id="fb-planned">—</span> planned</span></div>
+      <div class="es-tile"><span class="es-label">Impressions</span><span class="es-big" id="fb-impr">—</span>
+        <span class="es-sub">reach <span id="fb-reach">—</span></span></div>
+      <div class="es-tile"><span class="es-label">Clicks</span><span class="es-big" id="fb-clicks">—</span>
+        <span class="es-sub">all posts</span></div>
+      <div class="es-tile"><span class="es-label">Engagement rate</span><span class="es-big" id="fb-eng">—</span>
+        <span class="es-sub">likes, comments, shares per impression</span></div>
+    </div>
+    <div class="es-grid2">
+      <div class="es-card"><h3 class="es-h2">Daily impressions</h3><p class="es-note">All Facebook Page posts, per day.</p>
+        <div class="es-chart" id="fb-daily"></div></div>
+      <div class="es-card"><h3 class="es-h2">Followers</h3><p class="es-note">Daily follower count.</p>
+        <div class="es-chart" id="fb-fol"></div></div>
+    </div>
+    <div class="es-card">
+      <h3 class="es-h2">Each post</h3><p class="es-note">Lifetime numbers, newest first.</p>
+      <p class="es-empty" id="fb-pempty" hidden>No Facebook posts with numbers yet.</p>
+      <div class="es-tablewrap"><table class="es-table" id="fb-ptable"><thead><tr></tr></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+</div>
+
+<script>
+const fmt = d3.format(',');
+const pct = v => v == null || !isFinite(v) ? '—' : d3.format('.1%')(v);
+const num = v => v == null || v === '' ? null : Number(v);
+const sum = (rows, k) => rows.reduce((s, r) => s + (num(r[k]) || 0), 0);
+const big = v => v == null ? '—' : v >= 10000 ? d3.format('.3~s')(v) : fmt(v);
+const day = s => d3.utcFormat('%b %-d')(new Date(s + 'T00:00:00Z'));
+const set = (id, v) => { document.getElementById(id).textContent = v; };
+
+function failed(box) {
+  box.replaceChildren();
+  const p = document.createElement('p'); p.className = 'es-empty'; p.textContent = 'Failed to load'; box.append(p);
+}
+
+function tooltip(box) {
+  let tip = box.querySelector('.es-tip');
+  if (!tip) { tip = document.createElement('div'); tip.className = 'es-tip'; tip.hidden = true; box.append(tip); }
+  return tip;
+}
+
+function bars(boxId, d, xKey, yKey, label, empty, color) {
+  const box = document.getElementById(boxId);
+  if (d.status === 'error') return failed(box);
+  box.replaceChildren();
+  if (d.status !== 'ok') return;
+  const rows = d.data.filter(r => num(r[yKey]) != null);
+  if (!rows.length) { const e = document.createElement('p'); e.className = 'es-empty'; e.textContent = empty; box.append(e); return; }
+  const W = Math.max(280, box.clientWidth), H = 180, m = {t: 12, r: 12, b: 26, l: 40};
+  const x = d3.scaleBand(rows.map(r => r[xKey]), [m.l, W - m.r]).padding(0.3);
+  const y = d3.scaleLinear([0, Math.max(d3.max(rows, r => num(r[yKey])), 1)], [H - m.b, m.t]).nice(4);
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r)
+    .attr('y1', v => y(v)).attr('y2', v => y(v)).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', v => y(v) + 4)
+    .attr('text-anchor', 'end').text(fmt);
+  const step = Math.ceil(rows.length / Math.max(1, Math.floor((W - m.l - m.r) / 64)));
+  svg.append('g').selectAll('text').data(rows.filter((r, i) => i % step === 0)).join('text')
+    .attr('x', r => x(r[xKey]) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text(r => day(r[xKey]));
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', r => x(r[xKey]) + Math.max(0, (x.bandwidth() - 32) / 2))
+    .attr('width', Math.min(32, x.bandwidth())).attr('y', r => y(num(r[yKey]))).attr('height', r => y(0) - y(num(r[yKey])))
+    .attr('rx', 4).attr('fill', color);
+  const tip = tooltip(box);
+  svg.selectAll('rect').on('mousemove', (ev, r) => {
+    tip.hidden = false;
+    tip.replaceChildren();
+    const a = document.createElement('div'); a.className = 'd'; a.textContent = day(r[xKey]);
+    const b = document.createElement('div'); b.textContent = `${label}: ${fmt(num(r[yKey]))}`;
+    tip.append(a, b);
+    const [px, py] = d3.pointer(ev, box);
+    tip.style.left = Math.min(px + 12, box.clientWidth - tip.offsetWidth) + 'px';
+    tip.style.top = Math.max(0, py - 40) + 'px';
+  }).on('mouseleave', () => { tip.hidden = true; });
+}
+
+function line(boxId, d, empty, color) {
+  const box = document.getElementById(boxId);
+  if (d.status === 'error') return failed(box);
+  box.replaceChildren();
+  if (d.status !== 'ok') return;
+  if (!d.data.length) { const e = document.createElement('p'); e.className = 'es-empty'; e.textContent = empty; box.append(e); return; }
+  const pts = d.data.map(r => ({x: new Date(r.date + 'T00:00:00Z'), y: num(r.followers)}));
+  const W = Math.max(280, box.clientWidth), H = 180, m = {t: 14, r: 56, b: 26, l: 40};
+  const ext = d3.extent(pts, p => p.x);
+  if (+ext[0] === +ext[1]) { ext[0] = new Date(+ext[0] - 3 * 864e5); ext[1] = new Date(+ext[1] + 3 * 864e5); }
+  const x = d3.scaleUtc(ext, [m.l, W - m.r]);
+  const y = d3.scaleLinear([0, Math.max(d3.max(pts, p => p.y), 10)], [H - m.b, m.t]).nice(4);
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r)
+    .attr('y1', v => y(v)).attr('y2', v => y(v)).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', v => y(v) + 4).attr('text-anchor', 'end').text(fmt);
+  svg.append('g').selectAll('text').data(x.ticks(Math.max(2, Math.floor((W - m.l - m.r) / 80)))).join('text')
+    .attr('x', v => x(v)).attr('y', H - 8).attr('text-anchor', 'middle').text(d3.utcFormat('%b %-d'));
+  svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', color).attr('stroke-width', 2)
+    .attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', d3.line(p => x(p.x), p => y(p.y)));
+  const end = pts[pts.length - 1];
+  svg.append('circle').attr('cx', x(end.x)).attr('cy', y(end.y)).attr('r', 4).attr('fill', color);
+  svg.append('text').attr('x', x(end.x) + 8).attr('y', y(end.y) + 4).text(fmt(end.y));
+}
+
+// cols: [label, value(row), numeric]
+function table(tableId, emptyId, d, cols, sortKey) {
+  const t = document.getElementById(tableId);
+  const head = t.querySelector('thead tr'), body = t.querySelector('tbody');
+  head.replaceChildren(...cols.map(([label, , n]) => { const th = document.createElement('th'); if (n) th.className = 'n'; th.textContent = label; return th; }));
+  body.replaceChildren();
+  document.getElementById(emptyId).hidden = !(d.status === 'ok' && !d.data.length);
+  if (d.status !== 'ok') return;
+  [...d.data].sort((a, b) => String(b[sortKey]).localeCompare(String(a[sortKey]))).forEach(r => {
+    const tr = document.createElement('tr');
+    cols.forEach(([, f, n]) => {
+      const td = document.createElement('td'); if (n) td.className = 'n';
+      const v = f(r); td.textContent = v == null ? '—' : (n && typeof v === 'number' ? fmt(v) : v); tr.append(td);
+    });
+    body.append(tr);
+  });
+}
+
+const engTT = r => num(r.views) ? ((num(r.likes) || 0) + (num(r.comments) || 0) + (num(r.shares) || 0) + (num(r.saves) || 0)) / num(r.views) : null;
+const engFB = r => num(r.impressions) ? ((num(r.likes) || 0) + (num(r.comments) || 0) + (num(r.shares) || 0)) / num(r.impressions) : null;
+const last = rows => rows.length ? num(rows[rows.length - 1].followers) : null;
+
+function stacked(boxId, series, empty) {  // series: [{name, color, rows: [{date, value}]}]
+  const box = document.getElementById(boxId);
+  box.replaceChildren();
+  const dates = [...new Set(series.flatMap(s => s.rows.map(r => r.date)))].sort();
+  if (!dates.length) { const e = document.createElement('p'); e.className = 'es-empty'; e.textContent = empty; box.append(e); return; }
+  const by = series.map(s => Object.fromEntries(s.rows.map(r => [r.date, r.value || 0])));
+  const W = Math.max(280, box.clientWidth), H = 200, m = {t: 12, r: 12, b: 26, l: 40};
+  const x = d3.scaleBand(dates, [m.l, W - m.r]).padding(0.3);
+  const total = dt => by.reduce((s, b) => s + (b[dt] || 0), 0);
+  const y = d3.scaleLinear([0, Math.max(d3.max(dates, total), 1)], [H - m.b, m.t]).nice(4);
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r)
+    .attr('y1', v => y(v)).attr('y2', v => y(v)).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', v => y(v) + 4).attr('text-anchor', 'end').text(fmt);
+  const step = Math.ceil(dates.length / Math.max(1, Math.floor((W - m.l - m.r) / 64)));
+  svg.append('g').selectAll('text').data(dates.filter((dd, i) => i % step === 0)).join('text')
+    .attr('x', dd => x(dd) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text(day);
+  const bw = Math.min(32, x.bandwidth()), off = Math.max(0, (x.bandwidth() - 32) / 2);
+  dates.forEach(dd => {
+    let base = 0;
+    series.forEach((s, i) => {
+      const v = by[i][dd] || 0;
+      if (!v) return;
+      svg.append('rect').attr('x', x(dd) + off).attr('width', bw).attr('y', y(base + v)).attr('height', y(base) - y(base + v))
+        .attr('fill', s.color).datum({dd, name: s.name, v});
+      base += v;
+    });
+  });
+  const tip = tooltip(box);
+  svg.selectAll('rect').on('mousemove', (ev, r) => {
+    tip.hidden = false;
+    tip.replaceChildren();
+    const a = document.createElement('div'); a.className = 'd'; a.textContent = day(r.dd);
+    tip.append(a, ...series.map((s, i) => { const b = document.createElement('div'); b.textContent = `${s.name}: ${fmt(by[i][r.dd] || 0)}`; return b; }));
+    const [px, py] = d3.pointer(ev, box);
+    tip.style.left = Math.min(px + 12, box.clientWidth - tip.offsetWidth) + 'px';
+    tip.style.top = Math.max(0, py - 56) + 'px';
+  }).on('mouseleave', () => { tip.hidden = true; });
+}
+
+// One row per post: its total views at the end of Day 1..7 after it went live (post_timeline rows are cumulative per
+// day), then the latest count. Columns stop at the oldest post's age, so a new account doesn't show empty days.
+function growthTable(tableId, emptyId, d, nameOf, days = 7) {
+  const head = document.querySelector(`#${tableId} thead tr`), body = document.querySelector(`#${tableId} tbody`);
+  head.replaceChildren(); body.replaceChildren();
+  const rows = d.status === 'ok' ? d.data : [];
+  document.getElementById(emptyId).hidden = !(d.status === 'ok' && !rows.length);
+  if (!rows.length) return;
+  const dayMs = 864e5, t = s => new Date(s + 'T00:00:00Z').getTime();
+  const posts = d3.groups(rows, r => r.episode).map(([ep, rs]) => {
+    rs = [...rs].sort((a, b) => a.date.localeCompare(b.date));
+    const first = t(rs[0].date), last = rs[rs.length - 1];
+    const at = k => { // total on day k, carried from the last day reported up to then
+      const r = rs.filter(x => (t(x.date) - first) / dayMs <= k - 1).pop();
+      return r ? Number(r.views) || 0 : null;
+    };
+    return {ep, first: rs[0].date, age: Math.round((t(last.date) - first) / dayMs) + 1, at, now: Number(last.views) || 0, last};
+  }).sort((a, b) => b.first.localeCompare(a.first));
+  const cols = Math.min(days, d3.max(posts, p => p.age));
+  const th = (text, n) => { const e = document.createElement('th'); e.textContent = text; if (n) e.className = 'n'; return e; };
+  head.append(th('Video'), th('Live since'), ...d3.range(1, cols + 1).map(k => th('Day ' + k, 1)), th('Views now', 1));
+  posts.forEach(p => {
+    const tr = document.createElement('tr');
+    const cell = (text, n, title) => { const e = document.createElement('td'); e.textContent = text; if (n) e.className = 'n'; if (title) e.title = title; return e; };
+    tr.append(cell(nameOf(p.ep)), cell(d3.utcFormat('%b %-d')(new Date(t(p.first)))));
+    d3.range(1, cols + 1).forEach(k => {
+      const v = k <= p.age ? p.at(k) : null;
+      tr.append(cell(v == null ? '' : fmt(v), 1));
+    });
+    const now = cell(fmt(p.now), 1, `Likes ${fmt(Number(p.last.likes) || 0)} · Shares ${fmt(Number(p.last.shares) || 0)} · Saves ${fmt(Number(p.last.saves) || 0)}`);
+    now.style.fontWeight = '500';
+    tr.append(now);
+    body.append(tr);
+  });
+}
+
+const ADS = [['meta', 'Meta'], ['tiktok', 'TikTok'], ['microsoft', 'Microsoft']];
+const money = v => v == null || !isFinite(v) ? '—' : d3.format(v >= 1000 ? '$,.0f' : '$,.2f')(v);
+
+function drawAds() {
+  const daily = dash.data('ads_daily'), accts = dash.data('ads_accounts');
+  const rows = daily.status === 'ok' ? daily.data : [], acc = accts.status === 'ok' ? accts.data : [];
+  const latest = rows.length ? d3.max(rows, r => r.date) : null;
+  const since = latest ? d3.utcFormat('%Y-%m-%d')(new Date(new Date(latest + 'T00:00:00Z').getTime() - 29 * 864e5)) : null;
+  const recent = rows.filter(r => since && r.date >= since);
+  const per = ADS.map(([p, name], i) => {
+    const rs = recent.filter(r => r.platform === p), a = acc.find(x => x.platform === p) || {};
+    return {p, name, color: dash.colors[i === 0 ? 1 : i === 1 ? 0 : 2], a, rs, spend: sum(rs, 'spend'), impr: sum(rs, 'impressions'),
+            clicks: sum(rs, 'clicks'), purch: sum(rs, 'purchases'), rev: sum(rs, 'revenue')};
+  });
+  const tot = k => per.reduce((s, x) => s + x[k], 0);
+  const spend = tot('spend'), clicks = tot('clicks'), purch = tot('purch'), rev = tot('rev');
+  set('ads-spend', money(spend));
+  set('ads-purch', fmt(purch));
+  set('ads-cpa', purch ? money(spend / purch) : '—');
+  set('ads-roas', spend ? d3.format('.2f')(rev / spend) + '×' : '—');
+  set('ads-clicks', big(clicks));
+  set('ads-cpc', clicks ? money(spend / clicks) : '—');
+  const when = acc.map(a => a.refreshed_at).filter(Boolean).sort().pop();
+  set('ads-updated', when ? new Date(when).toLocaleString([], {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'}) : 'not yet');
+  const legend = document.getElementById('ads-legend');
+  legend.replaceChildren('Daily ad spend, stacked by platform. ', ...per.flatMap(x => {
+    const s = document.createElement('span'); s.style.color = x.color; s.textContent = '■';
+    return [s, ` ${x.name}  `];
+  }));
+  stacked('ads-daily', per.map(x => ({name: x.name, color: x.color,
+    rows: spend ? x.rs.map(r => ({date: r.date, value: num(r.spend)})) : []})),
+    'No ad spend in the last 30 days.');
+  const body = document.querySelector('#ads-table tbody');
+  body.replaceChildren(...[...per, {name: 'All platforms', a: {}, spend, impr: tot('impr'), clicks, purch, rev, total: true}].map(x => {
+    const tr = document.createElement('tr');
+    const live = x.total ? per.reduce((s, y) => s + (y.a.active_campaigns || 0), 0) : x.a.active_campaigns;
+    [x.name, x.total ? '' : (x.a.account || 'not connected'), live == null ? '—' : fmt(live), money(x.spend), fmt(x.impr), fmt(x.clicks),
+     x.clicks ? money(x.spend / x.clicks) : '—', fmt(x.purch), x.purch ? money(x.spend / x.purch) : '—',
+     x.spend ? d3.format('.2f')(x.rev / x.spend) + '×' : '—', x.total ? '' : (x.a.note || '')].forEach((v, i) => {
+      const td = document.createElement('td');
+      if (i >= 2 && i <= 9) td.className = 'n';
+      td.textContent = v;
+      if (x.total) td.style.fontWeight = '500';
+      tr.append(td);
+    });
+    return tr;
+  }));
+}
+
+function drawAll() {
+  const ok = id => dash.data(id).status === 'ok';
+  const rows = id => ok(id) ? dash.data(id).data : [];
+  const v = rows('tiktok_videos'), p = rows('fb_posts');
+  const ch = [
+    {name: 'TikTok', followers: last(rows('followers')), posts: v.length, seen: sum(v, 'views'),
+     eng: sum(v, 'likes') + sum(v, 'comments') + sum(v, 'shares') + sum(v, 'saves'), clicks: sum(v, 'clicks')},
+    {name: 'Facebook', followers: last(rows('fb_followers')), posts: p.length, seen: sum(p, 'impressions'),
+     eng: sum(p, 'likes') + sum(p, 'comments') + sum(p, 'shares'), clicks: sum(p, 'clicks')},
+  ];
+  const tot = k => ch.reduce((s, c) => s + (c[k] || 0), 0);
+  const seen = tot('seen');
+  set('all-followers', big(tot('followers')));
+  set('all-posts', fmt(tot('posts')));
+  set('all-seen', big(seen));
+  set('all-eng', big(tot('eng')));
+  set('all-rate', seen ? pct(tot('eng') / seen) : '—');
+  set('all-clicks', big(tot('clicks')));
+  const body = document.querySelector('#all-table tbody');
+  body.replaceChildren(...[...ch, {name: 'All channels', followers: tot('followers'), posts: tot('posts'), seen, eng: tot('eng'),
+                                   clicks: tot('clicks'), total: true}].map(c => {
+    const tr = document.createElement('tr');
+    [c.name, fmt(c.followers || 0), fmt(c.posts), fmt(c.seen), c.posts ? fmt(Math.round(c.seen / c.posts)) : '—', fmt(c.eng),
+     c.seen ? pct(c.eng / c.seen) : '—', fmt(c.clicks)].forEach((val, i) => {
+      const td = document.createElement('td'); if (i) td.className = 'n'; td.textContent = val;
+      if (c.total) td.style.fontWeight = '500';
+      tr.append(td);
+    });
+    return tr;
+  }));
+  stacked('all-daily', [
+    {name: 'TikTok views', color: dash.colors[0], rows: rows('daily_metrics').map(r => ({date: r.date, value: num(r.views)}))},
+    {name: 'Facebook impressions', color: dash.colors[1], rows: rows('fb_daily').map(r => ({date: r.date, value: num(r.impressions)}))},
+  ], 'Nothing seen yet.');
+}
+
+dash.onData(() => {
+  drawAll();
+  drawAds();
+  const vids = dash.data('tiktok_videos'), tfol = dash.data('followers'), tday = dash.data('daily_metrics');
+  const tl = dash.data('post_timeline'), sched = dash.data('schedule');
+  const fbp = dash.data('fb_posts'), ffol = dash.data('fb_followers'), fday = dash.data('fb_daily'), fsch = dash.data('fb_schedule');
+
+  const v = vids.status === 'ok' ? vids.data : [];
+  const views = sum(v, 'views');
+  set('tt-followers', tfol.status === 'ok' ? big(last(tfol.data)) : '—');
+  set('tt-posts', vids.status === 'ok' ? fmt(v.length) : '—');
+  set('tt-views', vids.status === 'ok' ? big(views) : '—');
+  set('tt-avg', v.length ? fmt(Math.round(views / v.length)) : '—');
+  set('tt-eng', views ? pct((sum(v, 'likes') + sum(v, 'comments') + sum(v, 'shares') + sum(v, 'saves')) / views) : '—');
+  bars('tt-daily', tday, 'date', 'views', 'Views', 'No views yet.', dash.colors[0]);
+  line('tt-fol', tfol, 'No follower history yet.', dash.colors[0]);
+  const capOf = Object.fromEntries((sched.status === 'ok' ? sched.data : []).map(r => [r.episode, r.caption]));
+  table('tt-vtable', 'tt-vempty', vids, [['Posted', r => r.published], ['Caption', r => r.caption], ['Views', r => num(r.views), 1],
+    ['Impr.', r => num(r.impressions), 1], ['Likes', r => num(r.likes), 1], ['Comments', r => num(r.comments), 1],
+    ['Shares', r => num(r.shares), 1], ['Saves', r => num(r.saves), 1], ['Eng.', r => pct(engTT(r)), 1]], 'published');
+  growthTable('tt-ttable', 'tt-tempty', tl, ep => capOf[ep] || ep);
+
+  const p = fbp.status === 'ok' ? fbp.data : [];
+  const impr = sum(p, 'impressions');
+  set('fb-followers', ffol.status === 'ok' ? big(last(ffol.data)) : '—');
+  set('fb-posts', fbp.status === 'ok' ? fmt(p.length) : '—');
+  set('fb-planned', fsch.status === 'ok' ? fmt(fsch.data.length) : '—');
+  set('fb-impr', fbp.status === 'ok' ? big(impr) : '—');
+  set('fb-reach', fbp.status === 'ok' ? big(sum(p, 'reach')) : '—');
+  set('fb-clicks', fbp.status === 'ok' ? big(sum(p, 'clicks')) : '—');
+  set('fb-eng', impr ? pct((sum(p, 'likes') + sum(p, 'comments') + sum(p, 'shares')) / impr) : '—');
+  bars('fb-daily', fday, 'date', 'impressions', 'Impressions', 'No impressions yet: nothing is live on the Page.', dash.colors[1]);
+  line('fb-fol', ffol, 'No follower history yet.', dash.colors[1]);
+  table('fb-ptable', 'fb-pempty', fbp, [['Posted', r => r.published], ['Caption', r => (r.caption || '').split('\n')[0]],
+    ['Impr.', r => num(r.impressions), 1], ['Reach', r => num(r.reach), 1], ['Likes', r => num(r.likes), 1],
+    ['Comments', r => num(r.comments), 1], ['Shares', r => num(r.shares), 1], ['Clicks', r => num(r.clicks), 1],
+    ['Eng.', r => pct(engFB(r)), 1]], 'published');
+});
+</script>

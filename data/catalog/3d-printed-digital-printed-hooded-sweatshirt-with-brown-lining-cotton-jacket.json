@@ -1,0 +1,375 @@
+{
+  "product_id": "gid://shopify/Product/9756887810287",
+  "handle": "3d-printed-digital-printed-hooded-sweatshirt-with-brown-lining-cotton-jacket",
+  "original_title": "3D printed digital printed hooded sweatshirt with brown lining cotton jacket",
+  "current_title": "3D printed digital printed hooded sweatshirt with brown lining cotton jacket",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "knitwear",
+  "url": "https://emberandclove.com/products/3d-printed-digital-printed-hooded-sweatshirt-with-brown-lining-cotton-jacket",
+  "category": null,
+  "colors": [
+    "Camel color",
+    "gray",
+    "navy blue",
+    "green"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
+    "XXXL"
+  ],
+  "options": {
+    "Color": [
+      "Camel color",
+      "gray",
+      "navy blue",
+      "green"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+    ]
+  },
+  "price_min": 66.3,
+  "price_max": 66.3,
+  "cost_min": 16.4,
+  "cost_max": 16.4,
+  "specs": {
+    "Product Category": "Cotton Clothes/Cotton Robes",
+    "Style": "Basic Volkswagen",
+    "Type": "Loose fit",
+    "Front placket": "zipper",
+    "Is it hooded": "hooded",
+    "Thickness": "Ordinary",
+    "Pattern": "Solid color",
+    "Suitable season": "Winter",
+    "Suitable for": "Youth",
+    "Fabric Name": "Polyester Fiber",
+    "Main fabric composition": "Polyester fiber (polyester)",
+    "Applicable scenarios": "Daily life",
+    "Style details": "Printed",
+    "Clothing hem design": "straight hem",
+    "Craftsmanship": "Digital Printing",
+    "Clothing length": "Long style (80cm",
+    "Clothing pocket style": "3D patch bag",
+    "Colors": "camel, gray, navy blue, green",
+    "Size": "S, M, L, XL, XXL, XXXL",
+    "unit": "CM"
+  },
+  "description_text": [
+    "size"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53457DF984C80C7834BD2E40B4EB871E.jpg?v=1793047943",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/83D65DB616E623F68D23B94DCA71A588.jpg?v=1793047947",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/50C4A300BF6EC6827828C35BCE68A3BA.jpg?v=1793047949",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3C7DB61706B47B469B517D1CA29E72F9.jpg?v=1793047951",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/24F37423CE231BE2CE25BE1405F681B2.jpg?v=1793047953",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6BC8488CB5F97726917C337774BD7C1E.jpg?v=1793047955",
+      "altText": "",
+      "width": 852,
+      "height": 805
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6C8AE9248C0FD42BDF4664E431D74437.jpg?v=1793047958",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/97DDC8FAEFA8066F9D0CC98918B9423F.jpg?v=1793047960",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/58AEF5DF2D5BA892651A2FA09C178B30.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/9BFBBA41AB6AC9CD60EAEDA47DF20B9D.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/B9E9B3889D695E34A5A74E240460ED49.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/E49D19FCDF4C924D9FB32728FA0A1F74.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/20874FD504A459C02F24510EB3770034.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/9BFBBA41AB6AC9CD60EAEDA47DF20B9D.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/20874FD504A459C02F24510EB3770034.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/B9E9B3889D695E34A5A74E240460ED49.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Camel color / S",
+      "sku": "F19E2F34781B48E08DFC77663D3E4D0B",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "Camel color",
+        "size": "S"
+      }
+    },
+    {
+      "title": "Camel color / M",
+      "sku": "B92027586DF44A5DBED01D1112DA2C8A",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "Camel color",
+        "size": "M"
+      }
+    },
+    {
+      "title": "Camel color / L",
+      "sku": "12819E249E6946E783B009CA7BEBB9A0",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "Camel color",
+        "size": "L"
+      }
+    },
+    {
+      "title": "Camel color / XL",
+      "sku": "745194A7E7C94A7E80C70443D9B05D6B",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "Camel color",
+        "size": "XL"
+      }
+    },
+    {
+      "title": "Camel color / XXL",
+      "sku": "4DCA748E2CD940DBB10340DEDB046796",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "Camel color",
+        "size": "XXL"
+      }
+    },
+    {
+      "title": "Camel color / XXXL",
+      "sku": "69063EA8568D41BD8FBCF2E05D54E024",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "Camel color",
+        "size": "XXXL"
+      }
+    },
+    {
+      "title": "gray / S",
+      "sku": "18E69B42A90A4A2F8B9CA0597B66A77B",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "gray",
+        "size": "S"
+      }
+    },
+    {
+      "title": "gray / M",
+      "sku": "82C97F498F334A9CBEE6F39575E9F21F",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "gray",
+        "size": "M"
+      }
+    },
+    {
+      "title": "gray / L",
+      "sku": "511AD10C1E94470C9DA8C3D5C0E238DE",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "gray",
+        "size": "L"
+      }
+    },
+    {
+      "title": "gray / XL",
+      "sku": "340F7A22A4C5461A90427E52D562B4B1",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "gray",
+        "size": "XL"
+      }
+    },
+    {
+      "title": "gray / XXL",
+      "sku": "34C338B2DF544A1390E84B2307861F1B",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "gray",
+        "size": "XXL"
+      }
+    },
+    {
+      "title": "gray / XXXL",
+      "sku": "6BCB274EC06643A8A198CD95846320E2",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "gray",
+        "size": "XXXL"
+      }
+    },
+    {
+      "title": "navy blue / S",
+      "sku": "164ABAC5292742E0B415245B239A0DC9",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "navy blue",
+        "size": "S"
+      }
+    },
+    {
+      "title": "navy blue / M",
+      "sku": "125D9EEFC88C42FB85CC0F19A076C2D7",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "navy blue",
+        "size": "M"
+      }
+    },
+    {
+      "title": "navy blue / L",
+      "sku": "E4647123B80E4EF89C04B2E77A78CEAC",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "navy blue",
+        "size": "L"
+      }
+    },
+    {
+      "title": "navy blue / XL",
+      "sku": "4F4359F6B64B4759A8A4FB9C0BD6A679",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "navy blue",
+        "size": "XL"
+      }
+    },
+    {
+      "title": "navy blue / XXL",
+      "sku": "08A08C86076445F99D597B9A8208243C",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "navy blue",
+        "size": "XXL"
+      }
+    },
+    {
+      "title": "navy blue / XXXL",
+      "sku": "B206B27C6E4440CA9328BFDDD1D89485",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "navy blue",
+        "size": "XXXL"
+      }
+    },
+    {
+      "title": "green / S",
+      "sku": "8D8D71B8525344B4B28738CF957E7B70",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "green",
+        "size": "S"
+      }
+    },
+    {
+      "title": "green / M",
+      "sku": "DA40B988C8584EB18828142AA4BB7CF5",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "green",
+        "size": "M"
+      }
+    },
+    {
+      "title": "green / L",
+      "sku": "41D1D109320D4659AA383D6980AB4E77",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "green",
+        "size": "L"
+      }
+    },
+    {
+      "title": "green / XL",
+      "sku": "79E068AAF6504DBBB04C7A00422783A1",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "green",
+        "size": "XL"
+      }
+    },
+    {
+      "title": "green / XXL",
+      "sku": "9573DC3D40D74127A839A625FE4DCFAF",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "green",
+        "size": "XXL"
+      }
+    },
+    {
+      "title": "green / XXXL",
+      "sku": "F6ABCDAE88F548FE9A1B311F84A77568",
+      "price": "66.30",
+      "cost": "16.4",
+      "options": {
+        "color": "green",
+        "size": "XXXL"
+      }
+    }
+  ],
+  "raw_description_html": "<p><br></p><p><br></p><p><span style=\"font-size: 24px;\">Product Category: Cotton Clothes/Cotton Robes</span></p><p><span style=\"font-size: 24px;\">Style: Basic Volkswagen</span></p><p><span style=\"font-size: 24px;\">Type: Loose fit</span></p><p><span style=\"font-size: 24px;\">Front placket: zipper</span></p><p><span style=\"font-size: 24px;\">Is it hooded: hooded</span></p><p><span style=\"font-size: 24px;\">Thickness: Ordinary</span></p><p><span style=\"font-size: 24px;\">Pattern: Solid color</span></p><p><span style=\"font-size: 24px;\">Suitable season: Winter</span></p><p><span style=\"font-size: 24px;\">Suitable for: Youth</span></p><p><span style=\"font-size: 24px;\">Fabric Name: Polyester Fiber</span></p><p><span style=\"font-size: 24px;\">Main fabric composition: Polyester fiber (polyester)</span></p><p><span style=\"font-size: 24px;\">Applicable scenarios: Daily life</span></p><p><span style=\"font-size: 24px;\">Style details: Printed</span></p><p><span style=\"font-size: 24px;\">Clothing hem design: straight hem</span></p><p><span style=\"font-size: 24px;\">Craftsmanship: Digital Printing</span></p><p><span style=\"font-size: 24px;\">Clothing length: Long style (80cm&lt;clothing length ≤ 100cm)</span></p><p><span style=\"font-size: 24px;\">Clothing pocket style: 3D patch bag</span></p><p><span style=\"font-size: 24px;\">Colors: camel, gray, navy blue, green</span></p><p><span style=\"font-size: 24px;\">Size: S, M, L, XL, XXL, XXXL</span></p><p><span style=\"font-size: 24px;\">size</span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\">unit：CM</span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/58AEF5DF2D5BA892651A2FA09C178B30.jpg\"></span></p><p><span style=\"font-size: 24px;\"><br></span></p><p><span style=\"font-size: 24px;\"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/9BFBBA41AB6AC9CD60EAEDA47DF20B9D.jpg\"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/B9E9B3889D695E34A5A74E240460ED49.jpg\"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/E49D19FCDF4C924D9FB32728FA0A1F74.jpg\"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/20874FD504A459C02F24510EB3770034.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/9BFBBA41AB6AC9CD60EAEDA47DF20B9D.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/20874FD504A459C02F24510EB3770034.jpg\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202411/B9E9B3889D695E34A5A74E240460ED49.jpg\"></span></p><p><br></p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

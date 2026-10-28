@@ -1,0 +1,223 @@
+{
+  "product_id": "gid://shopify/Product/9757098017007",
+  "handle": "striped-dress-sleeveless-dress",
+  "original_title": "Striped dress sleeveless dress",
+  "current_title": "Striped dress sleeveless dress",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://emberandclove.com/products/striped-dress-sleeveless-dress",
+  "category": null,
+  "colors": [
+    "Brown",
+    "Blue"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "options": {
+    "Color": [
+      "Brown",
+      "Blue"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  "price_min": 33.24,
+  "price_max": 33.24,
+  "cost_min": 8.09,
+  "cost_max": 8.09,
+  "specs": {
+    "Style": "Elegant Commute",
+    "Pattern Type": "Stripe/Checkered",
+    "Fabric": "Polyester, Spandex",
+    "Fit Type": "Loose Fit",
+    "Sleeve Length": "Sleeveless",
+    "Neckline": "Collarless",
+    "Dress Length": "Mid-length",
+    "Gender": "Female",
+    "Color": "Coffee, Blue",
+    "Size": "unit: cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Shoulder",
+        "Bust",
+        "Waist",
+        "Length"
+      ],
+      [
+        "S",
+        "33",
+        "94",
+        "92",
+        "93"
+      ],
+      [
+        "M",
+        "34",
+        "98",
+        "96",
+        "94"
+      ],
+      [
+        "L",
+        "35",
+        "104",
+        "102",
+        "95.5"
+      ],
+      [
+        "XL",
+        "36",
+        "110",
+        "108",
+        "97"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/723184E8534B7031A6E048AC100716CB.jpg?v=1793050073",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E53E8E3F1FEA75C7F62F5F4597E3F87B.jpg?v=1793050075",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0BA68EF855977D853AAFED5AD8B6A578.jpg?v=1793050077",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4BA8F74592BDBDBF8F02E8F3D415A8AE.jpg?v=1793050079",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/49E7201880162826BD83491B84D3D947.jpg?v=1793050082",
+      "altText": "",
+      "width": 900,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6A45B4DAD856C3C1FA15877FD837BA05.jpg?v=1793050084",
+      "altText": "",
+      "width": 900,
+      "height": 1200
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/42B38FA60CBE710FF5360AFA87E483C9.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/AF02574CF851CD53CA27BBBCD22FA1EF.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/A345E549DDB7129873914A91BDDCA811.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/BCA4C01336996C19DC21284896A47285.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/A5512BE904E9980113798DB0D4CA6247.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/600CD214FDCED9DC003E2142AAEC3D2E.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/19F8101BFBEB4326B7C7F78DE3641981.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/E389A8E2335AB56F98AAF4674A63B716.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/EDBBB50F37F7FA4E516D5DE5F0093F26.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/4A53F01C9D37077401C933F74E416E94.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Brown / S",
+      "sku": "DEB6C4E47F6148B69DFF0867A2362A1A",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Brown",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Brown / M",
+      "sku": "05739130A50843698FC12B3573206F03",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Brown",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Brown / L",
+      "sku": "C1134F1C9A404167A8F31529B7368F4A",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Brown",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Brown / XL",
+      "sku": "2CB06A25739D47F79644CBA1F1F79609",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Brown",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Blue / S",
+      "sku": "EE2FBEE9EC97480DA4D91816ED8B229E",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Blue / M",
+      "sku": "9587CD4F165B4256AA6E7D80E7B7AD9A",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Blue / L",
+      "sku": "0437AC007B1242DCB6CD07B21165EDF1",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Blue / XL",
+      "sku": "F0E51B8725D743F494DEA2E1FEED8A39",
+      "price": "33.24",
+      "cost": "8.09",
+      "options": {
+        "Color": "Blue",
+        "Size": "XL"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Style: Elegant Commute</strong></p><p><strong>Pattern Type: Stripe/Checkered</strong></p><p><strong>Fabric: Polyester, Spandex</strong></p><p><strong>Fit Type: Loose Fit</strong></p><p><strong>Sleeve Length: Sleeveless</strong></p><p><strong>Neckline: Collarless</strong></p><p><strong>Dress Length: Mid-length</strong></p><p><strong>Gender: Female</strong></p><p><strong>Color: Coffee, Blue</strong></p><p><strong>Size: S, M, L, XL</strong></p><p><strong>Size: unit: cm</strong></p><table width=\"486\">\n<colgroup>\n<col width=\"132\" style=\"width:99.00pt;\">\n<col width=\"140\" style=\"width:105.00pt;\">\n<col width=\"75\" style=\"width:56.25pt;\">\n<col width=\"101\" style=\"width:75.75pt;\">\n<col width=\"201\" style=\"width:150.75pt;\">\n</colgroup>\n<tbody>\n<tr style=\"height:26.00pt;\" class=\"firstRow\">\n<td class=\"et2\" width=\"99\" style=\"background-color: rgb(242, 242, 242);\"><strong>Size</strong></td>\n<td class=\"et2\" width=\"105\" style=\"background-color: rgb(242, 242, 242);\"><strong>Shoulder</strong></td>\n<td class=\"et2\" width=\"56\" style=\"background-color: rgb(242, 242, 242);\"><strong>Bust</strong></td>\n<td class=\"et2\" width=\"75\" style=\"background-color: rgb(242, 242, 242);\"><strong>Waist</strong></td>\n<td class=\"et2\" width=\"150\" style=\"background-color: rgb(242, 242, 242);\"><strong>Length</strong></td>\n</tr>\n<tr style=\"height:19.00pt;\">\n<td class=\"et3\" width=\"99\" style=\"\">S</td>\n<td class=\"et3\" width=\"105\" style=\"\">33</td>\n<td class=\"et3\" width=\"56\" style=\"\">94</td>\n<td class=\"et3\" width=\"75\" style=\"\">92</td>\n<td class=\"et3\" width=\"150\" style=\"\">93</td>\n</tr>\n<tr style=\"height:19.00pt;\">\n<td class=\"et3\" width=\"99\" style=\"\">M</td>\n<td class=\"et3\" width=\"105\" style=\"\">34</td>\n<td class=\"et3\" width=\"56\" style=\"\">98</td>\n<td class=\"et3\" width=\"75\" style=\"\">96</td>\n<td class=\"et3\" width=\"150\" style=\"\">94</td>\n</tr>\n<tr style=\"height:19.00pt;\">\n<td class=\"et3\" width=\"99\" style=\"\">L</td>\n<td class=\"et3\" width=\"105\" style=\"\">35</td>\n<td class=\"et3\" width=\"56\" style=\"\">104</td>\n<td class=\"et3\" width=\"75\" style=\"\">102</td>\n<td class=\"et3\" width=\"150\" style=\"\">95.5</td>\n</tr>\n<tr style=\"height:19.00pt;\">\n<td class=\"et3\" width=\"99\" style=\"\">XL</td>\n<td class=\"et3\" width=\"105\" style=\"\">36</td>\n<td class=\"et3\" width=\"56\" style=\"\">110</td>\n<td class=\"et3\" width=\"75\" style=\"\">108</td>\n<td class=\"et3\" width=\"150\" style=\"\">97</td>\n</tr>\n</tbody>\n</table><p> </p><p><img alt=\"undefined\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/42B38FA60CBE710FF5360AFA87E483C9.jpg\">\n <br>\n <br>\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/AF02574CF851CD53CA27BBBCD22FA1EF.jpg\" alt=\"undefined\">\n <br><br></p><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/A345E549DDB7129873914A91BDDCA811.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/BCA4C01336996C19DC21284896A47285.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/A5512BE904E9980113798DB0D4CA6247.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/600CD214FDCED9DC003E2142AAEC3D2E.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/19F8101BFBEB4326B7C7F78DE3641981.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/E389A8E2335AB56F98AAF4674A63B716.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/EDBBB50F37F7FA4E516D5DE5F0093F26.jpg\"><br><br><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202604/4A53F01C9D37077401C933F74E416E94.jpg\"><br><br></p>",
+  "cataloged_at": "2026-10-26T23:02:48"
+}

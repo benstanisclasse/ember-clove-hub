@@ -1,0 +1,86 @@
+{
+  "product_id": "gid://shopify/Product/9748095729903",
+  "handle": "the-complete-wellness-tea-set",
+  "original_title": "The Complete Wellness Tea Set",
+  "current_title": "The Complete Wellness Tea Set",
+  "vendor": "Camellios",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/the-complete-wellness-tea-set",
+  "category": "Home & Garden > Kitchen & Dining > Tableware > Coffee & Tea Sets > Tea Sets",
+  "colors": [],
+  "sizes": [],
+  "options": {
+    "Title": [
+      "Default Title"
+    ]
+  },
+  "price_min": 55.23,
+  "price_max": 55.23,
+  "cost_min": 49.75,
+  "cost_max": 49.75,
+  "specs": {
+    "Measuring spoon": "stainless steel with a gold-tone finish."
+  },
+  "description_text": [
+    "A cup for every part of your day.",
+    "Three caffeine-free herbal blends, a clear glass teapot and a gold-tone measuring spoon: everything you need for a calming tea ritual from first light to lights out. Lovely on your own counter, and a thoughtful gift.",
+    "What's inside",
+    "Glass teapot (600 ml): heat-resistant borosilicate glass with a removable stainless steel infuser. Safe on a gas stove.",
+    "Three loose-leaf herbal teas (100 g each), all caffeine-free:",
+    "Ginger & Lemongrass, for mornings: bright, zesty and warming.",
+    "Forest Fruits, for afternoons: sweet berries and hibiscus.",
+    "Peachy Chamomile, for evenings: soft, mellow and soothing.",
+    "Made with care",
+    "100% natural loose-leaf ingredients",
+    "No artificial flavors, fillers or additives",
+    "Hand-blended and packed in the UK"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ChatGPTImageMay28_2026_03_35_35PM.png?v=1792764107",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ChatGPT_Image_Sep_9_2026_04_36_01_PM.png?v=1792764107",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ChatGPT_Image_Sep_9_2026_04_59_29_PM.png?v=1792764108",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ChatGPT_Image_Sep_9_2026_05_06_34_PM.png?v=1792764108",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ChatGPT_Image_Sep_9_2026_06_20_58_PM.png?v=1792764109",
+      "altText": "",
+      "width": 1200,
+      "height": 1200
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Default Title",
+      "sku": "CAM-CHTE001",
+      "price": "55.23",
+      "cost": "49.75",
+      "options": {
+        "Title": "Default Title"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>A cup for every part of your day.</strong></p>\n<p>Three caffeine-free herbal blends, a clear glass teapot and a gold-tone measuring spoon: everything you need for a calming tea ritual from first light to lights out. Lovely on your own counter, and a thoughtful gift.</p>\n<h3>What's inside</h3>\n<ul>\n<li>\n<strong>Glass teapot (600 ml):</strong> heat-resistant borosilicate glass with a removable stainless steel infuser. Safe on a gas stove.</li>\n<li>\n<strong>Measuring spoon:</strong> stainless steel with a gold-tone finish.</li>\n<li>\n<strong>Three loose-leaf herbal teas (100 g each), all caffeine-free:</strong>\n<ul>\n<li>\n<strong>Ginger &amp; Lemongrass, for mornings:</strong> bright, zesty and warming.</li>\n<li>\n<strong>Forest Fruits, for afternoons:</strong> sweet berries and hibiscus.</li>\n<li>\n<strong>Peachy Chamomile, for evenings:</strong> soft, mellow and soothing.</li>\n</ul>\n</li>\n</ul>\n<h3>Made with care</h3>\n<ul>\n<li>100% natural loose-leaf ingredients</li>\n<li>No artificial flavors, fillers or additives</li>\n<li>Hand-blended and packed in the UK</li>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

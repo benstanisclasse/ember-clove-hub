@@ -1,0 +1,139 @@
+{
+  "creative_id": "EC-P02-A05-H01-V02",
+  "parent_id": null,
+  "changed_field": null,
+  "experiment_id": "C1-P02-A05",
+  "product_id": "gid://shopify/Product/9751655809263",
+  "platform": "tiktok",
+  "length_s": 15,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "Tights and boots all winter? This is your dress.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "callout",
+    "opening_visual": "product-on-body-turn",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "Whole outfit, three pieces (ICP-P02 A2) - AR-05 outfit build",
+        "icp": "P02 S1 Outfit-formula seeker",
+        "product": "Turtleneck Rib Knit Sweater Dress",
+        "color": "Burgundy",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims; no post-production",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "product_reference": [
+      {
+        "references": [
+          "assets/EC-P02-A03-H01-V01/ref1_dress_neck_down.jpg",
+          "assets/EC-P02-A03-H01-V01/ref2_turtleneck_knit_closeup.jpg"
+        ],
+        "source_photo": "Shopify EB40AEBD79AAF3FECCF037153E856C2F.jpg (burgundy studio shot)",
+        "processing": "cropped below the chin to exclude the supplier model's face",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Tights and boots all winter? This is your dress.",
+          "Slouchy turtleneck, dropped shoulders, loose fit.",
+          "It's a short one, easy over tights and boots.",
+          "It's Ember and Clove, forty-four ninety-nine. Link's right here."
+        ],
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5/reference-to-video",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 15 seconds, four quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is an AI-generated young adult woman (not any real person), friendly and excited, speaking English directly to the camera. Clear natural speech, light room tone, no background music, no on-screen text, no logos.\nThe dress in every shot is the exact burgundy chunky rib-knit turtleneck sweater dress from the reference images: loose slouchy fit that hangs straight from the shoulders with no waist seam, folded turtleneck, dropped shoulders, long full sleeves with ribbed cuffs, ribbed hem, mini length ending at upper-to-mid thigh. It is always worn over opaque black tights (never bare legs). Keep its burgundy color, chunky vertical rib, turtleneck and short length identical to the references; never lengthen it toward the knee and never add a waist or belt.\nShot 1 (0-3 s): the presenter (shoulder-length wavy dark-brown hair, small gold hoop earrings) is already wearing the dress over opaque black tights with black knee-high boots; full-length shot by the arched mirror, she turns from the mirror toward the camera and looks into the lens, saying: \"Tights and boots all winter? This is your dress.\"\nShot 2 (3-7 s): cut to a mid-shot; she folds the turtleneck down once and pushes up the slouchy sleeves; her eyes on the knit, saying: \"Slouchy turtleneck, dropped shoulders, loose fit.\"\nShot 3 (7-11 s): cut to a full-length side view; she picks up a small crossbody bag and walks, the hem sitting at mid-thigh over the tights and clearly visible, saying: \"It's a short one, easy over tights and boots.\"\nShot 4 (11-15 s): she walks up to the camera into a smiling chest-up close-up, saying: \"It's Ember and Clove, forty-four ninety-nine. Link's right here.\"",
+        "duration": 15,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "request_id": "c078e8b0-5d00-4578-9df1-b0d17cd2571e",
+        "status": "completed",
+        "cost_note": "actual: open.higgsfield.ai billing usage -$4.85; balance after $33.24",
+        "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/c078e8b0-5d00-4578-9df1-b0d17cd2571e/1ddca40d-6041-40ae-b618-594fe21cff20.mp4",
+        "recorded_at": "2026-10-25T11:32:17",
+        "credits": 0,
+        "usd": 4.85
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 4.85
+  },
+  "status": "APPROVED",
+  "created_at": "2026-10-25T11:27:37",
+  "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/c078e8b0-5d00-4578-9df1-b0d17cd2571e/1ddca40d-6041-40ae-b618-594fe21cff20.mp4",
+  "local_path": "assets\\EC-P02-A05-H01-V02\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-25T11:34:18",
+    "result": "visual pass; audio for owner to confirm",
+    "notes": "burgundy chunky rib turtleneck, loose fit, dropped shoulders, mid-thigh over black tights and knee-high boots all match. ISSUE: black handbag clasp closely resembles a designer (Celine Triomphe) logo, visible on bench 0-3s and on shoulder 7-15s - trademark risk; owner to decide regenerate vs use",
+    "owner_review": {
+      "approved_at": "2026-10-25T11:40:56",
+      "note": "Owner 2026-10-25: will use. Note: spoken price/delivery lines lock the ad to current price; remake winners without them before any price change."
+    }
+  },
+  "elements": {
+    "observed": {
+      "room": "bedroom",
+      "lighting": "natural_daylight",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "brown",
+      "hair_length": "shoulder",
+      "jewelry": [
+        "hoop_earrings",
+        "rings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "not_visible",
+      "glasses": "false",
+      "worn_with": [
+        "boots",
+        "tights",
+        "bag"
+      ],
+      "color_palette": "neutral_earth",
+      "props": [
+        "mirror",
+        "bag",
+        "plants"
+      ],
+      "camera_style": "mixed",
+      "main_shot_distance": "mixed",
+      "camera_movement": "slight",
+      "actions": [
+        "walking",
+        "turning_twirling",
+        "posing",
+        "hand_detail",
+        "talking_to_camera"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:05:20"
+    }
+  }
+}

@@ -1,0 +1,618 @@
+{
+  "product_id": "gid://shopify/Product/9751717282031",
+  "handle": "open-toe-platform-sandals",
+  "original_title": "Open Toe Platform Sandals",
+  "current_title": "Open Toe Platform Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-platform-sandals",
+  "category": null,
+  "colors": [
+    "Multicolor",
+    "Black",
+    "Red",
+    "White",
+    "Mocha"
+  ],
+  "sizes": [
+    "43",
+    "42",
+    "39",
+    "38",
+    "41",
+    "40",
+    "36",
+    "35",
+    "37"
+  ],
+  "options": {
+    "Color": [
+      "Multicolor",
+      "Black",
+      "Red",
+      "White",
+      "Mocha"
+    ],
+    "Size": [
+      "43",
+      "42",
+      "39",
+      "38",
+      "41",
+      "40",
+      "36",
+      "35",
+      "37"
+    ]
+  },
+  "price_min": 32.46,
+  "price_max": 32.46,
+  "cost_min": 3.85,
+  "cost_max": 3.85,
+  "specs": {
+    "Heel height": "Flats",
+    "Shoe upper material": "PU",
+    "Sole Material": "Rubbe"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "size",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      [
+        "Foot length (cm)",
+        "22.5",
+        "23",
+        "23.5",
+        "24",
+        "24.5",
+        "25",
+        "25.5",
+        "26.5",
+        "26.7"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A8CCC2D287F36EBFB025B8B8CB98991B.jpg?v=1792823490",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FE5C1DCC1A15FB4DFB05DBA96A391535.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A7C73BD55B684404DA0E84781BFFC816.jpg?v=1792823512",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5F84DF0AC90ED8B43EF6F40ADA434775.jpg?v=1792823517",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C8F0E27691E703D13CC9071F21DF1C64.jpg?v=1792823523",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/50D395CED86B5F235E6FFE026CFC6B23.jpg?v=1792823524",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0D352A3FDD6B26340C5ADDC3EE4735AF.jpg?v=1792823544",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/908C29C81C8B03654E7DBF3FCFC1BF8A.jpg?v=1792823546",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/89AC1D3F51CE3D4BA93ED825CA89797A.jpg?v=1792823552",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ACBA0BE6569E033C23F973D80B205F44.jpg?v=1792823554",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FABAD5E5DBE5C9A8634FA560C4FEC36A.jpg?v=1792823556",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F25DD44808C6B4CB3B768B4CFD95D834.jpg?v=1792823560",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Multicolor / 43",
+      "sku": "2CD4EF5865294BAFA10A893ECF642A6C",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Multicolor / 42",
+      "sku": "680E723CAF2241EDB935EAF3CC36F92D",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "263C53C853F144EBAEE0C2CFDE2922F5",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "EEF30624AB92469FB67FDB323682C24E",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "FC1DBC2DCF45418CAC11A10C5ECFC25E",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "1995D9032AD34B04B6A998525DFBFC47",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 43",
+      "sku": "EFA90782EAE54BCC8E531A430CE00DBD",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "EE3E305DB09D41869664411718B25733",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Red / 36",
+      "sku": "584C4AA1ADF34D168294696EEFBDE4AA",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Red / 35",
+      "sku": "43CA8471FFF84C6D87F112F4763DE06C",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Black / 35",
+      "sku": "C110C047CE90403BB6E55F749965AC43",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "E68EECBA8E3D47399A466F6E65CBD154",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "94B230470EE94E7E98ED9BD03A4B864B",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "White / 37",
+      "sku": "4297013B69814B97BB37D7F50006FC3F",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "White / 36",
+      "sku": "BF8D3C8CF3CD475CA4837E22F73A246C",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "White / 39",
+      "sku": "616603431B1747F9BF39A139F2695432",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "White / 38",
+      "sku": "AEB812120EEE4ADC9350C31885050118",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "White / 41",
+      "sku": "E539AEBCBDD54210A0AD5C133B49348F",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "White / 40",
+      "sku": "0287BC0F44794A568C2609DB35B3A487",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "White / 43",
+      "sku": "C2F76E6F6F224AE0A90E8E8E47A8557A",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "White / 42",
+      "sku": "B9C33661237F4AB5BA6DFFF355F8AD64",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Red / 38",
+      "sku": "72D9447478824F0298F4BB0C8D8C527E",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Red / 37",
+      "sku": "A961BF0039764C07A94585DAA7563470",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Red / 40",
+      "sku": "C04E5F88AC50496D809A24CA2B353271",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Red / 39",
+      "sku": "C50F649F1D234FD2A61EAD6C95314677",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Red / 42",
+      "sku": "03AE4DF91B8D488B906BE2F805EFD44C",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Red / 41",
+      "sku": "2234D8C1C6E74D62B1EA1A8E17CC055D",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "White / 35",
+      "sku": "DED92F6A81604770B7D327C265CB4F9A",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "White",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Red / 43",
+      "sku": "8CDE4FE573404D909FE20DB0EE3840B7",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Red",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Multicolor / 35",
+      "sku": "10B756C87F754A5DA4843134AACFC9ED",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Mocha / 43",
+      "sku": "B95F4EF09C4B43FF8269F1A00A81A0CC",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "43"
+      }
+    },
+    {
+      "title": "Multicolor / 37",
+      "sku": "3C14E5E295724B048DBAD1C75448F740",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Multicolor / 36",
+      "sku": "A50053F9030F43E78FCE20DF651ECA01",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Multicolor / 39",
+      "sku": "CBC7CBE87C4C47BF84FFD245A3C606E9",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Multicolor / 38",
+      "sku": "C909B5AB2860431C8F79D447C657A0F6",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Multicolor / 41",
+      "sku": "05BCEA6F815A4A588AF8C628D0C8E02A",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Multicolor / 40",
+      "sku": "D3C5159B57AC44CAA3252464E7D54D6D",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Multicolor",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Mocha / 36",
+      "sku": "A78B1863E48E45298A82BF9CDA7539E4",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Mocha / 35",
+      "sku": "33B5B16FC4FD451E9723BFD9854FC79B",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Mocha / 38",
+      "sku": "9C6D745F7A9744FD89AD0A825CF9C0EA",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Mocha / 37",
+      "sku": "3B92FC06051744CB9D0FF03143EB1758",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Mocha / 40",
+      "sku": "6CB5530B3AC04A93BB3865B5BAF0744B",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Mocha / 39",
+      "sku": "33FFEE253B2145B188C907CDAC6C7AB3",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Mocha / 42",
+      "sku": "AD60033356BA46FF99E3518C17336876",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Mocha / 41",
+      "sku": "443EB499ED1341688935D73F3EAEE39B",
+      "price": "32.46",
+      "cost": "3.85",
+      "options": {
+        "Color": "Mocha",
+        "Size": "41"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Heel height: Flats</p></li>\n<li><p>Shoe upper material: PU</p></li>\n<li><p>Sole Material: Rubbe</p></li>\n<li><p>Product measurements:</p></li>\n<li><table width=\"594\">\n<colgroup>\n<col width=\"101\" style=\"width:75.75pt;\">\n<col width=\"72\" style=\"width:54.00pt;\">\n<col width=\"83\" style=\"width:62.25pt;\">\n<col width=\"75\" style=\"width:56.25pt;\">\n<col width=\"72\" style=\"width:54.00pt;\" span=\"3\">\n<col width=\"101\" style=\"width:75.75pt;\">\n<col width=\"72\" style=\"width:54.00pt;\" span=\"2\">\n</colgroup>\n<tbody>\n<tr style=\"height:47.00pt;\" class=\"firstRow\">\n<td class=\"et3\" width=\"75\" style=\"\">size</td>\n<td class=\"et4\" width=\"54\" style=\"\">35</td>\n<td class=\"et4\" width=\"62\" style=\"\">36</td>\n<td class=\"et4\" width=\"56\" style=\"\">37</td>\n<td class=\"et4\" width=\"54\" style=\"\">38</td>\n<td class=\"et4\" width=\"54\" style=\"\">39</td>\n<td class=\"et4\" width=\"54\" style=\"\">40</td>\n<td class=\"et4\" width=\"75\" style=\"\">41</td>\n<td class=\"et4\" width=\"54\" style=\"\">42</td>\n<td class=\"et4\" width=\"54\" style=\"\">43</td>\n</tr>\n<tr style=\"height:47.00pt;\">\n<td class=\"et5\" width=\"75\" style=\"\">Foot length (cm)</td>\n<td class=\"et4\">22.5</td>\n<td class=\"et4\">23</td>\n<td class=\"et4\">23.5</td>\n<td class=\"et4\">24</td>\n<td class=\"et4\">24.5</td>\n<td class=\"et4\">25</td>\n<td class=\"et4\">25.5</td>\n<td class=\"et4\">26.5</td>\n<td class=\"et4\">26.7</td>\n</tr>\n</tbody>\n</table></li>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

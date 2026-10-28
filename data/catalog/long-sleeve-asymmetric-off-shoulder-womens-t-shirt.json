@@ -1,0 +1,174 @@
+{
+  "product_id": "gid://shopify/Product/9756901933295",
+  "handle": "long-sleeve-asymmetric-off-shoulder-womens-t-shirt",
+  "original_title": "Long Sleeve Asymmetric Off-Shoulder Women's T-Shirt",
+  "current_title": "Long Sleeve Asymmetric Off-Shoulder Women's T-Shirt",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/long-sleeve-asymmetric-off-shoulder-womens-t-shirt",
+  "category": null,
+  "colors": [
+    "White",
+    "Black",
+    "Gray"
+  ],
+  "sizes": [
+    "S",
+    "M"
+  ],
+  "options": {
+    "Color": [
+      "White",
+      "Black",
+      "Gray"
+    ],
+    "Size": [
+      "S",
+      "M"
+    ]
+  },
+  "price_min": 38.44,
+  "price_max": 38.44,
+  "cost_min": 9.27,
+  "cost_max": 9.27,
+  "specs": {
+    "Color": "White, Black, Grey",
+    "Style": "Sweet & Spicy, Elegant",
+    "Pattern Type": "Solid",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Asymmetric Collar",
+    "Length": "Regular (50-65cm)",
+    "Details": "Bound Edge",
+    "Fit Type": "Slim Fit",
+    "Occasion": "Shopping, Daily, Dating",
+    "Gender": "Female",
+    "Size": "S, M",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Length",
+        "Bust",
+        "Sleeve Length"
+      ],
+      [
+        "S",
+        "62",
+        "112",
+        "56"
+      ],
+      [
+        "M",
+        "63",
+        "116",
+        "57"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/DE337C5EDF8C955C4CF10FAC24B9A7A0.jpg?v=1793048055",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6F81020AF9A01DFADDDA9B83A8CBA8AD.jpg?v=1793048059",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C57F6B53430AEAE3321E5543A8CFBEED.jpg?v=1793048087",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/70AD8E0E88577D8AAE75516BA51B0878.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D9D3ACEF1FD1146C23D788FFF03EE728.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/517FFD5D7E0403E82F9FF22487D758D3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1660648433C82BC2BDA648AD4F7388B0.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/56E4AC7CC788AEC80CF890E987FED935.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/59E2787C14EE2CCDD351E69F81725E74.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6CB6694623D810470BACADD941205EDF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/485C794FDD5C09DEEAA62FFA6F9C5E78.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/37DC4912B0D7505012A3BC3DE2630C03.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D41602F36153E1232FC64C6FB8FC90ED.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/41E250B27C96A632C97A94A615CFD323.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/62D08BFF50CD94184EC99AD6382F4B67.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/96A9E1A883ABA463B4105E7E68A4F27D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B31C42BCF820F298A4CF67412A2ACFCA.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5515EA812BB1A2CAAB4DCD5143453882.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F6729158728BA22B555C60C0E2CD9F3D.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White / S",
+      "sku": "D5EB46518FD945FB8111C1E6860FE0E0",
+      "price": "38.44",
+      "cost": "9.27",
+      "options": {
+        "Color": "White",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White / M",
+      "sku": "85408927DD81489EAA386C3F74D8669A",
+      "price": "38.44",
+      "cost": "9.27",
+      "options": {
+        "Color": "White",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "FF6CA543EE1A4AFFB88EE6BED6338BF6",
+      "price": "38.44",
+      "cost": "9.27",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "536E1EDCDE4241E6A4AB62109ACA700C",
+      "price": "38.44",
+      "cost": "9.27",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray / S",
+      "sku": "B7DA7C477C0E43CFAE9364892CD84893",
+      "price": "38.44",
+      "cost": "9.27",
+      "options": {
+        "Color": "Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray / M",
+      "sku": "3CD88ADEC30A45C68CF5CEEB7AE02C36",
+      "price": "38.44",
+      "cost": "9.27",
+      "options": {
+        "Color": "Gray",
+        "Size": "M"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Color: White, Black, Grey</strong></p><p><strong>Style: Sweet &amp; Spicy, Elegant</strong></p><p><strong>Pattern Type: Solid</strong></p><p><strong>Sleeve Length: Long Sleeve</strong></p><p><strong>Neckline: Asymmetric Collar</strong></p><p><strong>Length: Regular (50-65cm)</strong></p><p><strong>Details: Bound Edge</strong></p><p><strong>Fit Type: Slim Fit</strong></p><p><strong>Occasion: Shopping, Daily, Dating</strong></p><p><strong>Gender: Female</strong></p><p><strong>Size: S, M</strong></p><p><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Sleeve Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>62</td>\n<td>112</td>\n<td>56</td>\n</tr>\n<tr>\n<td>M</td>\n<td>63</td>\n<td>116</td>\n<td>57</td>\n</tr>\n</tbody>\n</table><p style=\"text-align: center;\"><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/70AD8E0E88577D8AAE75516BA51B0878.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D9D3ACEF1FD1146C23D788FFF03EE728.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/517FFD5D7E0403E82F9FF22487D758D3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1660648433C82BC2BDA648AD4F7388B0.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/56E4AC7CC788AEC80CF890E987FED935.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/59E2787C14EE2CCDD351E69F81725E74.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6CB6694623D810470BACADD941205EDF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/485C794FDD5C09DEEAA62FFA6F9C5E78.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/37DC4912B0D7505012A3BC3DE2630C03.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D41602F36153E1232FC64C6FB8FC90ED.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/41E250B27C96A632C97A94A615CFD323.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/62D08BFF50CD94184EC99AD6382F4B67.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/96A9E1A883ABA463B4105E7E68A4F27D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B31C42BCF820F298A4CF67412A2ACFCA.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5515EA812BB1A2CAAB4DCD5143453882.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F6729158728BA22B555C60C0E2CD9F3D.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

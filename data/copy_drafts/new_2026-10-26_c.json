@@ -1,0 +1,315 @@
+[
+ {
+  "handle": "premium-asymmetrical-long-sleeve-slim-fit-t-shirt",
+  "product_id": "gid://shopify/Product/9756889153775",
+  "original_title": "Premium Asymmetrical Long Sleeve Slim Fit T-Shirt",
+  "new_title": "Asymmetric Drape Neck Knit Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "knit",
+   "top",
+   "long-sleeve",
+   "asymmetric",
+   "ruched",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A folded drape cuts across the neckline at an angle, with soft gathers at the side waist on a close, fitted knit.</strong></p><ul><li>Soft rayon and cotton blend knit</li><li>Slim fit, asymmetric draped neckline, ruched side waist</li><li>Long sleeves, lettuce-edge hems, length about 20–21 in</li></ul><p>Sizes S–L</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317808570607",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317804474607": "Asymmetric Drape Neck Knit Top in Mauve, shown flat",
+   "gid://shopify/MediaImage/41317806604527": "Asymmetric Drape Neck Knit Top in Black, Navy, Gray, Cream, Pink and Mauve, shown together",
+   "gid://shopify/MediaImage/41317806833903": "Asymmetric Drape Neck Knit Top in Pink, shown flat",
+   "gid://shopify/MediaImage/41317808570607": "Asymmetric Drape Neck Knit Top in Cream, shown flat",
+   "gid://shopify/MediaImage/41317808767215": "Asymmetric Drape Neck Knit Top in Mauve, close-up of the draped neckline",
+   "gid://shopify/MediaImage/41317809094895": "Asymmetric Drape Neck Knit Top in Gray, shown flat",
+   "gid://shopify/MediaImage/41317813485807": "Asymmetric Drape Neck Knit Top in Navy, shown flat",
+   "gid://shopify/MediaImage/41317813944559": "Asymmetric Drape Neck Knit Top in Black, shown flat"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317806604527"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Light Purple": "Mauve",
+   "Rose Red": "Pink",
+   "Apricot": "Cream",
+   "Navy Blue": "Navy"
+  },
+  "option_renames": {},
+  "flags": [],
+  "notes": "Supplier title says 'Premium' and 'T-shirt'; photos show a fitted knit top with a draped asymmetric neckline and ruched side waist. Color renames match the photos: 'Light Purple' is a dusty mauve, 'Rose Red' is a mid pink, 'Apricot' is cream. Listed bust is only 62–70 cm (stretch knit), so the size line gives sizes only, as on the Ruched Mesh Wrap V-Neck Top. Lead moved to the cream flat shot (warm neutral); the six-color collage goes last."
+ },
+ {
+  "handle": "long-sleeve-v-neck-tie-flare-sleeve-ruched-waist-top",
+  "product_id": "gid://shopify/Product/9756889252079",
+  "original_title": "Long Sleeve V-Neck Tie Flare Sleeve Ruched Waist Top",
+  "new_title": "Tie Neck Ruffle Hem Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "knit",
+   "top",
+   "long-sleeve",
+   "tie-neck",
+   "ruffle",
+   "brown",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A slim strap loops around the neck and falls as a long tie over a crossover V, ending in a ruched, ruffled hem.</strong></p><ul><li>Stretch rib knit</li><li>Slim fit, crossover V-neck, ruched side waist</li><li>Long bell-cuff sleeves, asymmetric ruffle hem, length about 23–24 in</li></ul><p>Sizes S–L</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317807325423",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317804179695": "Tie Neck Ruffle Hem Top in Peach, shown flat",
+   "gid://shopify/MediaImage/41317804507375": "Tie Neck Ruffle Hem Top in Black, Coffee, Olive, Peach and Beige, shown together",
+   "gid://shopify/MediaImage/41317807325423": "Tie Neck Ruffle Hem Top in Coffee, shown flat",
+   "gid://shopify/MediaImage/41317807554799": "Tie Neck Ruffle Hem Top in Beige, close-up of the neck strap and tie",
+   "gid://shopify/MediaImage/41317810438383": "Tie Neck Ruffle Hem Top in Beige, shown flat"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317804507375"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Yellow-Green": "Olive",
+   "Orange Pink": "Peach"
+  },
+  "option_renames": {},
+  "flags": [
+   "no single gallery photo for Olive or Black (collage only)"
+  ],
+  "notes": "Supplier title says 'flare sleeve' and specs say 'U-neck'; photos show a crossover V-neck with a neck strap that ends in a long tie, bell cuffs and an asymmetric ruffle peplum hem. Fabric content not listed (size table says 'knitted fabric, elastic'). 'Yellow-Green' is an olive/chartreuse and 'Orange Pink' is peach in the photos. Listed bust 62–70 cm (stretch), so sizes only. Specs call it 'Outerwear' (not accurate)."
+ },
+ {
+  "handle": "double-layer-embossed-long-sleeve-square-neck-t-shirt-for-women",
+  "product_id": "gid://shopify/Product/9756889612527",
+  "original_title": "Double-Layer Embossed Long Sleeve Square Neck T-Shirt for Women",
+  "new_title": "Scalloped Square Neck Lace Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "lace",
+   "top",
+   "square-neck",
+   "long-sleeve",
+   "sheer-sleeve",
+   "yellow",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Floral lace over a nude lining, finished with a scalloped square neckline and long, slightly flared sheer sleeves.</strong></p><ul><li>Nylon floral lace with a nude lining in the body</li><li>Slim fit, square neck with a scalloped lace edge</li><li>Long sheer lace sleeves, length about 19–20 in</li></ul><p>Sizes S–L</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317806342383",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317806342383": "Scalloped Square Neck Lace Top in Mustard, shown flat",
+   "gid://shopify/MediaImage/41317807358191": "Scalloped Square Neck Lace Top in Black, White and Mustard, shown together"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317807358191"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Khaki": "Mustard"
+  },
+  "option_renames": {},
+  "flags": [
+   "photo/title mismatch: listed as double-layer embossed T-shirt, photos show a lace top",
+   "photo color mismatch: Khaki shown as mustard",
+   "only 2 gallery images; White and Black appear only in the collage"
+  ],
+  "notes": "Listed as a 'double-layer embossed square neck T-shirt', but every photo shows a floral lace square-neck top lined in nude (the 'double layer' is lace over lining); copy follows the photos. 'Khaki' is mustard/golden yellow in every photo. Specs say 'Unisex' and 'Outerwear' (ignored). Listed bust 78–86 cm with stretch, so sizes only. The description has clean single-color shots of White and Black that could be added to the gallery later."
+ },
+ {
+  "handle": "asymmetrical-sheer-lace-long-sleeve-womens-shirt",
+  "product_id": "gid://shopify/Product/9756889874671",
+  "original_title": "Asymmetrical Sheer Lace Long Sleeve Women's Shirt",
+  "new_title": "Lace Panel Sheer Chiffon Blouse",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "chiffon",
+   "blouse",
+   "lace",
+   "sheer",
+   "long-sleeve",
+   "black",
+   "spring",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Airy chiffon falls into wide batwing sleeves, with a cream lace V-panel and two ribbon ties down the front.</strong></p><ul><li>Sheer polyester chiffon with lace trim, no stretch</li><li>Loose fit, lace V-panel front, ribbon ties</li><li>Batwing sleeves, gathered cuffs, pointed hem, length about 27–28 in</li></ul><p>Sizes XS–L</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317816828143",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317807522031": "Lace Panel Sheer Chiffon Blouse in Red, shown flat",
+   "gid://shopify/MediaImage/41317807751407": "Lace Panel Sheer Chiffon Blouse in Mustard, Coffee, Black, Red and Ivory, shown together",
+   "gid://shopify/MediaImage/41317816008943": "Lace Panel Sheer Chiffon Blouse in Mustard, shown flat",
+   "gid://shopify/MediaImage/41317816631535": "Lace Panel Sheer Chiffon Blouse in Mustard, shown flat with sleeves spread",
+   "gid://shopify/MediaImage/41317816828143": "Lace Panel Sheer Chiffon Blouse in Black, shown flat",
+   "gid://shopify/MediaImage/41317817680111": "Lace Panel Sheer Chiffon Blouse in Ivory, shown flat",
+   "gid://shopify/MediaImage/41317817876719": "Lace Panel Sheer Chiffon Blouse in Red, shown flat, close view"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317807751407",
+   "gid://shopify/MediaImage/41317816631535"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "As shown in the picture": "Mustard",
+   "White": "Ivory"
+  },
+  "option_renames": {},
+  "flags": [
+   "brand logo: woven neck label on the Mustard image and collage",
+   "variant named 'As shown in the picture' (renamed Mustard)",
+   "no gallery photo for Coffee",
+   "near-duplicate red images"
+  ],
+  "notes": "Supplier title says 'asymmetrical shirt'; photos show a loose sheer chiffon blouse with batwing sleeves, cream lace V-panel, ribbon ties, gathered cuffs and a pointed handkerchief hem. The 'As shown in the picture' variant photo is the mustard one, so it is renamed Mustard; that image (and the collage) shows a readable brand neck label, so both move last. White reads ivory. Coffee only appears in the collage and description. Bust 'reference' of 166–178 cm is the batwing span, so sizes only. Three description close-ups carry 1688.com watermarks (not in gallery). The two red gallery images are the same shot at different crops."
+ },
+ {
+  "handle": "long-sleeve-cross-front-v-neck-slim-fit-womens-top",
+  "product_id": "gid://shopify/Product/9756890005743",
+  "original_title": "Long Sleeve Cross Front V-Neck Slim Fit Women's Top",
+  "new_title": "Crossover Rib Waist Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "knit",
+   "top",
+   "v-neck",
+   "long-sleeve",
+   "cropped",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A crossover V-neck sits above a fitted rib-knit waist panel for a clean empire line and a short, cropped length.</strong></p><ul><li>Soft rayon blend knit</li><li>Slim fit, crossover V-neck, rib-knit waist panel</li><li>Long sleeves with gathered shoulders, cropped length about 18 in</li></ul><p>Sizes S–M</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317812633839",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317812633839": "Crossover Rib Waist Top in Blush, shown flat",
+   "gid://shopify/MediaImage/41317817319663": "Crossover Rib Waist Top in White, shown flat",
+   "gid://shopify/MediaImage/41317818663151": "Crossover Rib Waist Top in Blush, close-up of the crossover neckline",
+   "gid://shopify/MediaImage/41317819449583": "Crossover Rib Waist Top in Black, shown flat"
+  },
+  "media_last": [],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Pink": "Blush"
+  },
+  "option_renames": {},
+  "flags": [
+   "no gallery photo for Gray"
+  ],
+  "notes": "Photos match the supplier title: crossover V-neck, rib-knit waist panel, slight puff at the shoulders. 'Pink' is a pale blush/nude, renamed Blush as on the Ruched Mesh Wrap V-Neck Top. Gray (a dark heather) appears only in the description photos. Specs say 'Unisex' and 'Outerwear' (ignored). Listed bust 70–74 cm (stretch), so sizes only. Title avoids 'Wrap V-Neck Top' to stay clear of the existing Ruched Mesh Wrap V-Neck Top."
+ },
+ {
+  "handle": "long-sleeve-asymmetric-off-shoulder-womens-t-shirt",
+  "product_id": "gid://shopify/Product/9756901933295",
+  "original_title": "Long Sleeve Asymmetric Off-Shoulder Women's T-Shirt",
+  "new_title": "Strappy One-Shoulder Jersey Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "jersey",
+   "top",
+   "one-shoulder",
+   "long-sleeve",
+   "gray",
+   "neutral",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>One bare shoulder with a thin strap on that side and an angled hem give this relaxed long-sleeve tee an easy shape.</strong></p><ul><li>Soft, lightweight jersey knit</li><li>Relaxed fit, one-shoulder neckline with a thin strap</li><li>Long sleeves, asymmetric hem, length about 24–25 in</li></ul><p>Sizes S–M · Bust 44–46 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317820236015",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317820236015": "Strappy One-Shoulder Jersey Top in Gray, shown flat",
+   "gid://shopify/MediaImage/41317820727535": "Strappy One-Shoulder Jersey Top in Black, White and Gray, shown together",
+   "gid://shopify/MediaImage/41317824332015": "Strappy One-Shoulder Jersey Top in Gray, close-up of the shoulder strap"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317820727535"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {},
+  "option_renames": {},
+  "flags": [
+   "fabric content not listed",
+   "White and Black appear only in the collage"
+  ],
+  "notes": "Supplier says 'off-shoulder' and 'slim fit'; photos show a one-shoulder tee with a thin strap over the bare shoulder and a relaxed, dolman-like body (listed bust 112–116 cm). Specs give no fabric; 'jersey knit' is from the photos, please confirm content. 'Sweet & Spicy' style tag ignored."
+ },
+ {
+  "handle": "casual-long-sleeve-off-shoulder-sweatshirt",
+  "product_id": "gid://shopify/Product/9756905537775",
+  "original_title": "Casual Long Sleeve Off-Shoulder Sweatshirt",
+  "new_title": "Boat Neck Cropped Pocket Sweatshirt",
+  "product_type": "Sweaters & Sweatshirts",
+  "tags": [
+   "sweatshirt",
+   "cropped",
+   "boat-neck",
+   "pocket",
+   "long-sleeve",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>A wide boat neck, kangaroo pocket and cropped ribbed hem make an easy weekend sweatshirt.</strong></p><ul><li>Sweatshirt knit with a brushed inside</li><li>Loose fit, dropped shoulders, wide boat neck, front pocket</li><li>Long sleeves with ribbed cuffs, cropped length about 23 in</li></ul><p>Sizes S–M · Bust 43–44 in</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317821546735",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317820924143": "Boat Neck Cropped Pocket Sweatshirt in Lime, shown flat",
+   "gid://shopify/MediaImage/41317821350127": "Boat Neck Cropped Pocket Sweatshirt in Black, Heather Gray and Lime, shown together",
+   "gid://shopify/MediaImage/41317821546735": "Boat Neck Cropped Pocket Sweatshirt in Heather Gray, shown flat",
+   "gid://shopify/MediaImage/41317822890223": "Boat Neck Cropped Pocket Sweatshirt in Black, shown flat",
+   "gid://shopify/MediaImage/41317823250671": "Boat Neck Cropped Pocket Sweatshirt in Lime, close-up of the boat neck"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317821350127"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "Green": "Lime",
+   "White Gray": "Heather Gray"
+  },
+  "option_renames": {},
+  "flags": [
+   "off-brand color: neon lime",
+   "not off-shoulder in photos: wide boat neck",
+   "fabric content not listed"
+  ],
+  "notes": "Supplier title says 'off-shoulder'; photos show a wide boat neck worn on the shoulders, so the copy says boat neck. 'Green' is a bright neon lime (off the store's warm palette); lead moved to Heather Gray. 'White Gray' is a heather gray. Brushed interior is visible at the neckline; fabric content is not listed in specs, please confirm."
+ },
+ {
+  "handle": "sexy-lace-short-sleeve-square-neck-t-top",
+  "product_id": "gid://shopify/Product/9756949676271",
+  "original_title": "Sexy Lace Short Sleeve Square Neck T-Top",
+  "new_title": "Tie-Front Ruffle Lace Top",
+  "product_type": "Tops & Bodysuits",
+  "tags": [
+   "lace",
+   "top",
+   "square-neck",
+   "tie-front",
+   "long-sleeve",
+   "brown",
+   "fall",
+   "ec-collection"
+  ],
+  "description_html": "<p><strong>Rose-pattern lace gathers under a ruffled square neckline with a small front tie, over a nude-lined bust.</strong></p><ul><li>Stretch lace, 90% polyester and 10% spandex</li><li>Slim fit, ruffled square neck, gathered bust with tie</li><li>Sheer long sleeves, lettuce-edge hems, length about 19–20 in</li></ul><p>Sizes S–L</p>",
+  "lead_media_id": "gid://shopify/MediaImage/41317826953455",
+  "media_alts": {
+   "gid://shopify/MediaImage/41317826953455": "Tie-Front Ruffle Lace Top in Coffee, shown flat",
+   "gid://shopify/MediaImage/41317827248367": "Tie-Front Ruffle Lace Top in Black, Burgundy, Ivory and Coffee, shown together",
+   "gid://shopify/MediaImage/41317828034799": "Tie-Front Ruffle Lace Top in Burgundy, shown flat",
+   "gid://shopify/MediaImage/41317828460783": "Tie-Front Ruffle Lace Top in Ivory, shown flat",
+   "gid://shopify/MediaImage/41317828657391": "Tie-Front Ruffle Lace Top in Coffee, close-up of the tie neckline",
+   "gid://shopify/MediaImage/41317830295791": "Tie-Front Ruffle Lace Top in Black, shown flat"
+  },
+  "media_last": [
+   "gid://shopify/MediaImage/41317827248367"
+  ],
+  "add_images_from_description": [],
+  "color_renames": {
+   "White": "Ivory"
+  },
+  "option_renames": {},
+  "flags": [
+   "'Sexy' dropped from title",
+   "title said short sleeve; photos show long sleeves"
+  ],
+  "notes": "Supplier title says 'Sexy' and 'short sleeve'; photos (and specs) show long sleeves. Rose-pattern stretch lace with a ruffled, gathered square neckline, front tie and a nude lining at the bust; lettuce-edge hem and cuffs. 'White' reads ivory. Specs list 'Wine Red' while the option is Burgundy (kept). Listed bust 72–80 cm (stretch), so sizes only. 'Sweet & Spicy, Sexy Chic' style tags ignored."
+ }
+]

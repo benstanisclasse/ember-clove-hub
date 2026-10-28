@@ -1,0 +1,93 @@
+{
+ "query": "mutation($pid0: ID!, $opt0: OptionUpdateInput!, $val0: [OptionValueUpdateInput!], $pid1: ID!, $opt1: OptionUpdateInput!, $val1: [OptionValueUpdateInput!], $pid2: ID!, $opt2: OptionUpdateInput!, $val2: [OptionValueUpdateInput!], $pid3: ID!, $opt3: OptionUpdateInput!, $val3: [OptionValueUpdateInput!], $pid4: ID!, $opt4: OptionUpdateInput!, $val4: [OptionValueUpdateInput!], $pid5: ID!, $opt5: OptionUpdateInput!, $val5: [OptionValueUpdateInput!], $pid6: ID!, $opt6: OptionUpdateInput!, $val6: [OptionValueUpdateInput!], $pid7: ID!, $opt7: OptionUpdateInput!, $val7: [OptionValueUpdateInput!], $pid8: ID!, $opt8: OptionUpdateInput!, $val8: [OptionValueUpdateInput!]) {\n  o0: productOptionUpdate(productId: $pid0, option: $opt0, optionValuesToUpdate: $val0) { product { id } userErrors { field message code } }\n  o1: productOptionUpdate(productId: $pid1, option: $opt1, optionValuesToUpdate: $val1) { product { id } userErrors { field message code } }\n  o2: productOptionUpdate(productId: $pid2, option: $opt2, optionValuesToUpdate: $val2) { product { id } userErrors { field message code } }\n  o3: productOptionUpdate(productId: $pid3, option: $opt3, optionValuesToUpdate: $val3) { product { id } userErrors { field message code } }\n  o4: productOptionUpdate(productId: $pid4, option: $opt4, optionValuesToUpdate: $val4) { product { id } userErrors { field message code } }\n  o5: productOptionUpdate(productId: $pid5, option: $opt5, optionValuesToUpdate: $val5) { product { id } userErrors { field message code } }\n  o6: productOptionUpdate(productId: $pid6, option: $opt6, optionValuesToUpdate: $val6) { product { id } userErrors { field message code } }\n  o7: productOptionUpdate(productId: $pid7, option: $opt7, optionValuesToUpdate: $val7) { product { id } userErrors { field message code } }\n  o8: productOptionUpdate(productId: $pid8, option: $opt8, optionValuesToUpdate: $val8) { product { id } userErrors { field message code } }\n}",
+ "variables": {
+  "pid0": "gid://shopify/Product/9757092315375",
+  "opt0": {
+   "id": "gid://shopify/ProductOption/12377035931887",
+   "name": "Color"
+  },
+  "val0": [],
+  "pid1": "gid://shopify/Product/9757092315375",
+  "opt1": {
+   "id": "gid://shopify/ProductOption/12377035964655",
+   "name": "Size"
+  },
+  "val1": [],
+  "pid2": "gid://shopify/Product/9757092675823",
+  "opt2": {
+   "id": "gid://shopify/ProductOption/12377036357871",
+   "name": "Color"
+  },
+  "val2": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192474620143",
+    "name": "Dark Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192474652911",
+    "name": "Camel"
+   }
+  ],
+  "pid3": "gid://shopify/Product/9757092675823",
+  "opt3": {
+   "id": "gid://shopify/ProductOption/12377036390639",
+   "name": "Size"
+  },
+  "val3": [],
+  "pid4": "gid://shopify/Product/9757095395567",
+  "opt4": {
+   "id": "gid://shopify/ProductOption/12377039143151"
+  },
+  "val4": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192485466351",
+    "name": "Black"
+   }
+  ],
+  "pid5": "gid://shopify/Product/9757098049775",
+  "opt5": {
+   "id": "gid://shopify/ProductOption/12377041993967",
+   "name": "Color"
+  },
+  "val5": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192495755503",
+    "name": "Brown"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192495788271",
+    "name": "White"
+   }
+  ],
+  "pid6": "gid://shopify/Product/9757098049775",
+  "opt6": {
+   "id": "gid://shopify/ProductOption/12377042026735",
+   "name": "Size"
+  },
+  "val6": [],
+  "pid7": "gid://shopify/Product/9757099294959",
+  "opt7": {
+   "id": "gid://shopify/ProductOption/12377043337455"
+  },
+  "val7": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192500474095",
+    "name": "Pink Floral"
+   }
+  ],
+  "pid8": "gid://shopify/Product/9757099819247",
+  "opt8": {
+   "id": "gid://shopify/ProductOption/12377043894511"
+  },
+  "val8": [
+   {
+    "id": "gid://shopify/ProductOptionValue/6192502374639",
+    "name": "Black"
+   },
+   {
+    "id": "gid://shopify/ProductOptionValue/6192502407407",
+    "name": "Emerald Green"
+   }
+  ]
+ }
+}

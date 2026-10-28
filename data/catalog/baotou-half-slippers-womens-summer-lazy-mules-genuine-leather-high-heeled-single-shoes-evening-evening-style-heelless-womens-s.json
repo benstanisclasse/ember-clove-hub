@@ -1,0 +1,309 @@
+{
+  "product_id": "gid://shopify/Product/9757617979631",
+  "handle": "baotou-half-slippers-womens-summer-lazy-mules-genuine-leather-high-heeled-single-shoes-evening-evening-style-heelless-womens-s",
+  "original_title": "Baotou half slippers women's summer lazy mules genuine leather high-heeled single shoes evening evening style heelless women's s",
+  "current_title": "Baotou half slippers women's summer lazy mules genuine leather high-heeled single shoes evening evening style heelless women's s",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://emberandclove.com/products/baotou-half-slippers-womens-summer-lazy-mules-genuine-leather-high-heeled-single-shoes-evening-evening-style-heelless-womens-s",
+  "category": null,
+  "colors": [
+    "Off white",
+    "Black",
+    "Brown"
+  ],
+  "sizes": [
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+  ],
+  "options": {
+    "Color": [
+      "Off white",
+      "Black",
+      "Brown"
+    ],
+    "Size": [
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ]
+  },
+  "price_min": 113.68,
+  "price_max": 113.68,
+  "cost_min": 35.86,
+  "cost_max": 35.86,
+  "specs": {
+    "Sole Material": "Rubber"
+  },
+  "description_text": [
+    "Product Categories Baotou",
+    "Upper material plastic",
+    "Color off-white, black, brown",
+    "Size 34,35,36,37,38,39,40"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/09008B482F0AA9D670EF630581BCC2BE.jpg?v=1793068164",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/01C68BC20443BB5AC11DA03F7C266E33.jpg?v=1793068166",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B83488DBB3B29C627C7AF59C06B8F160.jpg?v=1793068168",
+      "altText": "",
+      "width": 750,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6CD3472016E2629B4A1CAE646858EEC0.jpg?v=1793068169",
+      "altText": "",
+      "width": 750,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/73F5E06EE064B824049999D80AC80BB8.jpg?v=1793068171",
+      "altText": "",
+      "width": 750,
+      "height": 1000
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202405/22B0BD9EFE7A92014D66884C29B051D3.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/F2A6A4EE3C09FDA887B99B0111818429.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/5CFAE7C037BBAA3AE23BF26E4E296D6B.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/71B241DE8DAD48853F9925C43D7FEF95.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/26C566C3B5C16F28E2138E2E650CB5AA.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/906D3FB10A49AEFC26CDADBFCA2CBAC5.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Off white / 34",
+      "sku": "3E6C50AB93DA4D9D829D2A48BE463CD6",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Off white / 35",
+      "sku": "4D70F01301EE4EC897F7483DED18A0B6",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Off white / 36",
+      "sku": "2102B7077D4D44E8BE61863908004111",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Off white / 37",
+      "sku": "7BA2C397DBA241379DC167D0CEA86FC3",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Off white / 38",
+      "sku": "670AFE3F148B4B7D81FAD8267AC38270",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Off white / 39",
+      "sku": "BFA881C95A534B8F8948AF184E0C8CBA",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Off white / 40",
+      "sku": "459C7785F0EC4B579D8D32F54472B64F",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Off white",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 34",
+      "sku": "AC34CB565C7B492FA20256CD1E22AAA4",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Black / 35",
+      "sku": "AAFA71504EE04F54B6719C0A81BA3FED",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "142FBFBF27A8429485ED642A3B0F601A",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "B235AE59248A459F84E36938F0AF6501",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "87B13B8FF8D14CDA9E0202FAE651EB70",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "F415865B87A74D448A80261F40A89643",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "A6D0F0E601604CFE92030FD3C5AE4CBF",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Brown / 34",
+      "sku": "DA977882E337441CA0D39696DC1A034B",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "34"
+      }
+    },
+    {
+      "title": "Brown / 35",
+      "sku": "61EABD32A07B4160B685CAFDEA7A2129",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Brown / 36",
+      "sku": "10EED5643C504E5C81804B5105931392",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Brown / 37",
+      "sku": "9C7080E0852048FD80D0DA5EF22F7A90",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Brown / 38",
+      "sku": "ACF30EA852A94224A8CF21D6DF03D969",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Brown / 39",
+      "sku": "4DACBD71F67345A79CE95C0456FF856B",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Brown / 40",
+      "sku": "F70D99881D934D4DAAC725552C278D9B",
+      "price": "113.68",
+      "cost": "35.86",
+      "options": {
+        "Color": "Brown",
+        "Size": "40"
+      }
+    }
+  ],
+  "raw_description_html": "<p>Product Categories Baotou</p><p><br></p><p>Upper material plastic</p><p><br></p><p>Sole Material: Rubber</p><p><br></p><p>Color off-white, black, brown</p><p><br></p><p>Size 34,35,36,37,38,39,40</p><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202405/22B0BD9EFE7A92014D66884C29B051D3.jpg\" title=\"22B0BD9EFE7A92014D66884C29B051D3.jpg\" alt=\"13.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.42; font-family: \"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/F2A6A4EE3C09FDA887B99B0111818429.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.42; font-family: \"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/5CFAE7C037BBAA3AE23BF26E4E296D6B.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.42; font-family: \"><br></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.42; font-family: \"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/71B241DE8DAD48853F9925C43D7FEF95.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.42; font-family: \"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/26C566C3B5C16F28E2138E2E650CB5AA.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: 1.42; font-family: \"><img class=\"desc-img-loaded\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202405/906D3FB10A49AEFC26CDADBFCA2CBAC5.jpg\"></p><p><br></p>",
+  "cataloged_at": "2026-10-26T22:33:04"
+}

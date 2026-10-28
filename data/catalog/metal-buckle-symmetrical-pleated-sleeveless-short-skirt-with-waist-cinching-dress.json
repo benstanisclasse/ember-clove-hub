@@ -1,0 +1,174 @@
+{
+  "product_id": "gid://shopify/Product/9757098049775",
+  "handle": "metal-buckle-symmetrical-pleated-sleeveless-short-skirt-with-waist-cinching-dress",
+  "original_title": "Metal buckle symmetrical pleated sleeveless short skirt with waist cinching dress",
+  "current_title": "Metal buckle symmetrical pleated sleeveless short skirt with waist cinching dress",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://emberandclove.com/products/metal-buckle-symmetrical-pleated-sleeveless-short-skirt-with-waist-cinching-dress",
+  "category": null,
+  "colors": [
+    "coffee",
+    "white"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "options": {
+    "Color": [
+      "coffee",
+      "white"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  "price_min": 170.16,
+  "price_max": 170.16,
+  "cost_min": 68.17,
+  "cost_max": 68.17,
+  "specs": {
+    "Color": "coffee color, white",
+    "Style": "socialite style",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Sleeveless",
+    "Neckline": "Diagonal collar",
+    "Length": "Short skirt",
+    "Material": "Polyester",
+    "Fabric": "Polyester",
+    "Closure Type": "Sleeve",
+    "Details": "Metal buckle",
+    "Fit Type": "slim fit",
+    "Occasion": "Leisure",
+    "Gender": "Women",
+    "unit": "cm"
+  },
+  "description_text": [
+    "- Size:"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/42A37B2CEF68BC2A5125900FF45C3B34.jpg?v=1793050074",
+      "altText": "",
+      "width": 1170,
+      "height": 1170
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E74992311EF0DC40435D5370103D9AD3.jpg?v=1793050077",
+      "altText": "",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B1AC21C65C8FBBE0D2EF7D3A6C4CE699.jpg?v=1793050079",
+      "altText": "",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F876B025278BA791354EEA5213A6560E.jpg?v=1793050082",
+      "altText": "",
+      "width": 900,
+      "height": 900
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202410/58C9FFFB7C953E76B9F31E0F0419EF1C.png",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/52EBD9DD660CDFB04CEDF400F41C6894.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/DB7356FB94E80C792AB8FD89B09011DD.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/185A724DF34CA93C4DB6ACDC604380FB.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/A381B401544377E2F7247F8F589B3A57.jpg"
+  ],
+  "variants": [
+    {
+      "title": "coffee / S",
+      "sku": "A8DA10CB1A414596BA34BB202EFF2BED",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "coffee",
+        "size": "S"
+      }
+    },
+    {
+      "title": "coffee / M",
+      "sku": "B2B2B564343640DA9725FCF1AA02BADB",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "coffee",
+        "size": "M"
+      }
+    },
+    {
+      "title": "coffee / L",
+      "sku": "29A4A622EB204FC6BE52917CA2086370",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "coffee",
+        "size": "L"
+      }
+    },
+    {
+      "title": "coffee / XL",
+      "sku": "0137BE7E4BBA40E7B49052EFFDDDBF2B",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "coffee",
+        "size": "XL"
+      }
+    },
+    {
+      "title": "white / S",
+      "sku": "2139C2C3B76C41C69BC841F6FCFB4536",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "white",
+        "size": "S"
+      }
+    },
+    {
+      "title": "white / M",
+      "sku": "A7EC461AB0CF4B3B9D3F4C1020B0BFF0",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "white",
+        "size": "M"
+      }
+    },
+    {
+      "title": "white / L",
+      "sku": "0CADFAD384C9448DBAF09B16E4597BCE",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "white",
+        "size": "L"
+      }
+    },
+    {
+      "title": "white / XL",
+      "sku": "FDD326ED04954EE4A7EA0175281E34CB",
+      "price": "170.16",
+      "cost": "68.17",
+      "options": {
+        "color": "white",
+        "size": "XL"
+      }
+    }
+  ],
+  "raw_description_html": "<p><span style=\"text-wrap-mode: nowrap;\">-Color: coffee color, white</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Style: socialite style</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Pattern Type: Solid Color</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Sleeve Length: Sleeveless</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Neckline: Diagonal collar</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Length: Short skirt</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Material: Polyester</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Fabric: Polyester</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Closure Type: Sleeve</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Details: Metal buckle</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Fit Type: slim fit</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">-Occasion: Leisure</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">- Gender: Women</span></p><p><span style=\"text-wrap-mode: nowrap;\"><br></span></p><p><span style=\"text-wrap-mode: nowrap;\">- Size:</span></p><p><span style=\"text-wrap-mode: nowrap;\">unit：cm</span></p><p><span style=\"text-wrap-mode: nowrap;\"><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202410/58C9FFFB7C953E76B9F31E0F0419EF1C.png\" title=\"58C9FFFB7C953E76B9F31E0F0419EF1C.png\" alt=\"image.png\"></span></p><p><img alt=\"gmqWivylydTsOg0UfCeuAxPL8HM2AOvtipqq\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/52EBD9DD660CDFB04CEDF400F41C6894.jpg\"> <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/DB7356FB94E80C792AB8FD89B09011DD.jpg\"> <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/185A724DF34CA93C4DB6ACDC604380FB.jpg\"> <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202410/A381B401544377E2F7247F8F589B3A57.jpg\"><br></p>",
+  "cataloged_at": "2026-10-26T23:02:48"
+}

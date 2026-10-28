@@ -1,0 +1,205 @@
+{
+  "product_id": "gid://shopify/Product/9756981952751",
+  "handle": "women-pant-woman-ripped-jeans-high-waist-denim-pants-wide-leg-denim-clothing-blue-jeans-vintage-casual-fashion-straight-trousers",
+  "original_title": "Women Pant Woman Ripped Jeans High Waist Denim Pants Wide Leg Denim Clothing Blue Jeans Vintage Casual Fashion Straight Trousers",
+  "current_title": "Women Pant Woman Ripped Jeans High Waist Denim Pants Wide Leg Denim Clothing Blue Jeans Vintage Casual Fashion Straight Trousers",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/women-pant-woman-ripped-jeans-high-waist-denim-pants-wide-leg-denim-clothing-blue-jeans-vintage-casual-fashion-straight-trousers",
+  "category": null,
+  "colors": [
+    "deep blue",
+    "Light Blue"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "options": {
+    "Color": [
+      "deep blue",
+      "Light Blue"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  "price_min": 45.7,
+  "price_max": 45.7,
+  "cost_min": 9.16,
+  "cost_max": 9.16,
+  "specs": {},
+  "description_text": [
+    "Article number 58002 # in stock",
+    "Fabric name denim",
+    "Main Fabric Composition Cotton",
+    "Pant length pants",
+    "Waist High Waist",
+    "Moderate thickness",
+    "Fashion elements are worn out",
+    "Color denim blue, light blue",
+    "Sizes S, M, L, XL, XXL",
+    "价格说明"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9E43DCF114B76B1F0961F907C9455292.jpg?v=1793048134",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F3E34FB962ECB1CD52DF8043053C43C4.jpg?v=1793048136",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/853F4C9FA4B8975302C3E4E5B9A9A676.jpg?v=1793048139",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2A1504F03DA1B11EC091F889AEE6D0E9.jpg?v=1793048163",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/34CB067F6382123C3D553AAB3591EDA2.jpg?v=1793048165",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/54ABFBC62D6A54375ECA4AC9E723F760.jpg?v=1793048167",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202310/2277321D47306148025D92A85F2EE752.jpg",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01D7PzLo1fSnVGLm3JX_!!2211343814006-0-cib.jpg?__r__=1690525156212",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01zbKYP11fSnVDyCE7t_!!2211343814006-0-cib.jpg?__r__=1690525182473",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01VOMW1j1fSnUSldOIP_!!2211343814006-0-cib.jpg?__r__=1687524246478",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01UlDgYX1fSnUTzawAn_!!2211343814006-0-cib.jpg?__r__=1687524246478",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01hXrOI61fSnUWxSuEB_!!2211343814006-0-cib.jpg?__r__=1687524246478",
+    "https://cbu01.alicdn.com/img/ibank/O1CN011f8csQ1fSnUYIBujV_!!2211343814006-0-cib.jpg?__r__=1687524246478",
+    "https://cbu01.alicdn.com/img/ibank/O1CN01BepxBG1fSnUa3VbX3_!!2211343814006-0-cib.jpg?__r__=1687524246479"
+  ],
+  "variants": [
+    {
+      "title": "deep blue / S",
+      "sku": "D912DA1CCD674D1F85084F10B6798F95",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "deep blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "deep blue / M",
+      "sku": "B4347F2A2D1D454D97A4EAE6ED5D400A",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "deep blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "deep blue / L",
+      "sku": "3E8550E3A4E142C188E4B0DA6B70E702",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "deep blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "deep blue / XL",
+      "sku": "FE16E704E5324A918ACD90EDF680D5FB",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "deep blue",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "deep blue / XXL",
+      "sku": "A7C01B985EAB474CB7F7D472AC607F8B",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "deep blue",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Light Blue / S",
+      "sku": "0D9D8D5452A44A719F700A1954303B3A",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Light Blue / M",
+      "sku": "C7382FF1481843A7B7F0379A9DE4CA4C",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Light Blue / L",
+      "sku": "45FB92834E89403D877C3F174363EA20",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Light Blue / XL",
+      "sku": "4559EDCDCD6D43EAA1DAB45D759FC519",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Light Blue / XXL",
+      "sku": "A3D85513F08D47CBBE0BEE736D1079C7",
+      "price": "45.70",
+      "cost": "9.16",
+      "options": {
+        "Color": "Light Blue",
+        "Size": "XXL"
+      }
+    }
+  ],
+  "raw_description_html": "<p><span class=\"offer-attr-item-name\"></span></p><p>Article number 58002 # in stock</p><p>Fabric name denim</p><p>Main Fabric Composition Cotton</p><p>Pant length pants</p><p>Waist High Waist</p><p>Moderate thickness</p><p>Fashion elements are worn out</p><p>Color denim blue, light blue</p><p>Sizes S, M, L, XL, XXL</p><p><span class=\"offer-attr-item-value\"></span><br></p><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202310/2277321D47306148025D92A85F2EE752.jpg\" title=\"2277321D47306148025D92A85F2EE752.jpg\" alt=\"1.jpg\"></p><p style=\"box-sizing: border-box; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: 1.42; text-align: center;\"><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01D7PzLo1fSnVGLm3JX_!!2211343814006-0-cib.jpg?__r__=1690525156212\" alt=\"undefined\"><br><br><br><br><br><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01zbKYP11fSnVDyCE7t_!!2211343814006-0-cib.jpg?__r__=1690525182473\" alt=\"O1CN01ML3s4B1fSnV6Dpg4n_!!2211\"><br><br><br><br><br><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01VOMW1j1fSnUSldOIP_!!2211343814006-0-cib.jpg?__r__=1687524246478\" alt=\"IMG_9253\"><br><br><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01UlDgYX1fSnUTzawAn_!!2211343814006-0-cib.jpg?__r__=1687524246478\" alt=\"IMG_9254\"><br><br><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01hXrOI61fSnUWxSuEB_!!2211343814006-0-cib.jpg?__r__=1687524246478\" alt=\"IMG_9255\"><br><br><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN011f8csQ1fSnUYIBujV_!!2211343814006-0-cib.jpg?__r__=1687524246478\" alt=\"IMG_9256\"><br><br><img class=\"desc-img-loaded\" src=\"https://cbu01.alicdn.com/img/ibank/O1CN01BepxBG1fSnUa3VbX3_!!2211343814006-0-cib.jpg?__r__=1687524246479\" alt=\"IMG_9257\"><br><br><br><br></p><p>价格说明</p><p><br></p>",
+  "cataloged_at": "2026-10-26T17:23:30"
+}

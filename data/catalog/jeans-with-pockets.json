@@ -1,0 +1,162 @@
+{
+  "product_id": "gid://shopify/Product/9756983754991",
+  "handle": "jeans-with-pockets",
+  "original_title": "Jeans with Pockets",
+  "current_title": "Jeans with Pockets",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/jeans-with-pockets",
+  "category": null,
+  "colors": [
+    "Dark"
+  ],
+  "sizes": [
+    "XL",
+    "M",
+    "L",
+    "S"
+  ],
+  "options": {
+    "Color": [
+      "Dark"
+    ],
+    "Size": [
+      "XL",
+      "M",
+      "L",
+      "S"
+    ]
+  },
+  "price_min": 49.26,
+  "price_max": 49.26,
+  "cost_min": 10.44,
+  "cost_max": 10.44,
+  "specs": {
+    "Product measurements": "unit：inch",
+    "Features": "Buttoned, Pocketed",
+    "Stretch": "No stretch",
+    "Material composition": "denim",
+    "Care instructions": "Machine wash cold. Tumble dry low."
+  },
+  "description_text": [
+    "Imported"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Bottom Length",
+        "Waist",
+        "Hip"
+      ],
+      [
+        "S",
+        "41.34",
+        "25.98",
+        "35.04"
+      ],
+      [
+        "M",
+        "41.57",
+        "27.95",
+        "37.01"
+      ],
+      [
+        "L",
+        "41.85",
+        "30.31",
+        "39.37"
+      ],
+      [
+        "XL",
+        "42.17",
+        "33.07",
+        "42.13"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E46CB36B0D4D73DE66CD9BB9DF94625E.jpg?v=1793048141",
+      "altText": "",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A3A57568638328C301180DC2BB6CC1AE.jpg?v=1793048144",
+      "altText": "",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2243A6B6BE6BA2593F49E371C694B4D7.jpg?v=1793048156",
+      "altText": "",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7EC056335A0C04BFE8901040A439E734.jpg?v=1793048158",
+      "altText": "",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A81BFCBDE5711DCBA1553E59FD9385B3.jpg?v=1793048162",
+      "altText": "",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/04D5C3020580DBF17CF8B3D910AAA208.jpg?v=1793048168",
+      "altText": "",
+      "width": 1000,
+      "height": 1333
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Dark / XL",
+      "sku": "2BAE20A4672141B98B64EC867E24BADD",
+      "price": "49.26",
+      "cost": "10.44",
+      "options": {
+        "Color": "Dark",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Dark / M",
+      "sku": "A6FD60A2546B4C9D9DB36F9483BA6302",
+      "price": "49.26",
+      "cost": "10.44",
+      "options": {
+        "Color": "Dark",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Dark / L",
+      "sku": "8D52716EAC0446F0B33DA2942DB677A3",
+      "price": "49.26",
+      "cost": "10.44",
+      "options": {
+        "Color": "Dark",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Dark / S",
+      "sku": "89D2F6C63BBF4664A417E67C4962ECCB",
+      "price": "49.26",
+      "cost": "10.44",
+      "options": {
+        "Color": "Dark",
+        "Size": "S"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:unit：inch</p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Bottom Length</th>\n<th style=\"padding: 9px;font-weight: 400;\">Waist</th>\n<th style=\"padding: 9px;font-weight: 400;\">Hip</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">S</th>\n<td style=\"padding: 9px; word-break: break-all;\">41.34</td>\n<td style=\"padding: 9px; word-break: break-all;\">25.98</td>\n<td style=\"padding: 9px; word-break: break-all;\">35.04</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">M</th>\n<td style=\"padding: 9px; word-break: break-all;\">41.57</td>\n<td style=\"padding: 9px; word-break: break-all;\">27.95</td>\n<td style=\"padding: 9px; word-break: break-all;\">37.01</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">L</th>\n<td style=\"padding: 9px; word-break: break-all;\">41.85</td>\n<td style=\"padding: 9px; word-break: break-all;\">30.31</td>\n<td style=\"padding: 9px; word-break: break-all;\">39.37</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">XL</th>\n<td style=\"padding: 9px; word-break: break-all;\">42.17</td>\n<td style=\"padding: 9px; word-break: break-all;\">33.07</td>\n<td style=\"padding: 9px; word-break: break-all;\">42.13</td>\n</tr>\n</tbody>\n</table>\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Features: Buttoned, Pocketed</p></li>\n<li><p>Stretch: No stretch</p></li>\n<li><p>Material composition:denim</p></li>\n<li><p>Care instructions: Machine wash cold. Tumble dry low.</p></li>\n<li><p>Imported</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-26T17:23:30"
+}

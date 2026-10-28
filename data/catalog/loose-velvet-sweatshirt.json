@@ -1,0 +1,560 @@
+{
+  "product_id": "gid://shopify/Product/9751656562927",
+  "handle": "loose-velvet-sweatshirt",
+  "original_title": "Loose velvet sweatshirt",
+  "current_title": "Loose velvet sweatshirt",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "knitwear",
+  "url": "https://nkpfvz-ra.myshopify.com/products/loose-velvet-sweatshirt",
+  "category": null,
+  "colors": [
+    "White",
+    "Pink",
+    "Olive Green",
+    "Black",
+    "Gray",
+    "Orange",
+    "Coffee"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "options": {
+    "Color": [
+      "White",
+      "Pink",
+      "Olive Green",
+      "Black",
+      "Gray",
+      "Orange",
+      "Coffee"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  "price_min": 41.5,
+  "price_max": 41.5,
+  "cost_min": 6.84,
+  "cost_max": 6.84,
+  "specs": {
+    "Fashion Style": "European & American, Elegant Commuter",
+    "Pattern Type": "Print",
+    "Sleeve Length": "Long Sleeved",
+    "Neckline": "Round Neck",
+    "Material": "Polyester",
+    "Fabric": "Sweatshirt Fleece",
+    "Closure Type": "Pullover",
+    "Details": "Lantern Sleeves, Heat Transfer Print",
+    "Fit Type": "Loose",
+    "Occasion": "Daily, Casual",
+    "Gender": "Women",
+    "Colors": "White, Pink, Olive Green, Black, Gray, Orange-red, Coffee",
+    "Sizes": "S, M, L, XL, XXL",
+    "Thickness": "Thick",
+    "unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US",
+        "Shoulder Width(CM)",
+        "Bust(CM)",
+        "Length(CM)",
+        "Sleeve Length(CM)",
+        "Hem Circumference"
+      ],
+      [
+        "S",
+        "4",
+        "56",
+        "108",
+        "65",
+        "53",
+        "90"
+      ],
+      [
+        "M",
+        "6",
+        "58",
+        "112",
+        "67",
+        "54",
+        "94"
+      ],
+      [
+        "L",
+        "8/10",
+        "60",
+        "118",
+        "69",
+        "55",
+        "100"
+      ],
+      [
+        "XL",
+        "12",
+        "62",
+        "124",
+        "71",
+        "56",
+        "106"
+      ],
+      [
+        "2XL",
+        "14",
+        "64",
+        "130",
+        "73",
+        "57",
+        "112"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A4C98E9E4C23B0E6638E862B2E4C24DF.jpg?v=1792822471",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B8FAB7AB7B71581B6AF77BA8BE92B6FF.jpg?v=1792822473",
+      "altText": "",
+      "width": 1800,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6884F9DBC1FA76AE182A5655FC4F40C2.jpg?v=1792822481",
+      "altText": "",
+      "width": 1800,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C4AE924DA8568F6E624B07234A74B789.jpg?v=1792822504",
+      "altText": "",
+      "width": 1800,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/36EEF4FD07C7D100970C5834863C589A.jpg?v=1792822507",
+      "altText": "",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D3757E8C92EAA8B521ED9EE56926129E.jpg?v=1792822515",
+      "altText": "",
+      "width": 1353,
+      "height": 1803
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B1F6A079A6497BF7E5FFA60FDFF184ED.jpg?v=1792822517",
+      "altText": "",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E202C5D4093A3B8A0275D7256C094976.jpg?v=1792822521",
+      "altText": "",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/36F2C114B54C6823FC78DECB2B5442A2.jpg?v=1792822529",
+      "altText": "",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D15D6B94E39B355F2C0BA4DE3D9F8875.jpg?v=1792822531",
+      "altText": "",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/355F14A501DEAE41E5345E298C1AD21D.jpg?v=1792822533",
+      "altText": "",
+      "width": 1353,
+      "height": 1803
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F37F8146AF9B9413A7E324C85F21A60E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/ABFA840C9B94BDC88C5A4E6C76272A19.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CE4EB6E73A2C4C74362EC4649D1BE878.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BE6CA99A0436C2E9107B354B23EAA296.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/92D6CD61EEA9D1AB6BF863646A2F7BA3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/45766ACE5EAAE2E592F03DB599BAE408.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1C3C1F6EC0E6AC3DBF6FB9AD571C178E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0A508F9F3F940BC6CF19E63B4952E932.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/22203F0996EAA16C3DBBC4EE743600D1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/176F87B963C6DDD0D3842B5BFDAB883A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2A6A8B454F9E197AE2A0391CD105A38B.jpg"
+  ],
+  "variants": [
+    {
+      "title": "White / S",
+      "sku": "00EED3DE179A4A399EB7CA7A0010E87F",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "White",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "White / M",
+      "sku": "B012AA9AA7DA4B869FF8F55428DF2F69",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "White",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "White / L",
+      "sku": "25C5D61A921843EEB1B6A66553500052",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "White",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "White / XL",
+      "sku": "0B28690F5F334F1FBB63BCC90BABEB25",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "White",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "White / XXL",
+      "sku": "6C07CDD8CD884F31BD73ABE9B38248A2",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "White",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Pink / S",
+      "sku": "FF11EC08E603433694374FB3AB05315E",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Pink",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Pink / M",
+      "sku": "B5A4618DC50147F58229D2719D226DD8",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Pink",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Pink / L",
+      "sku": "9A8BB7337FC5409D8AA2D4B24D7B9089",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Pink",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Pink / XL",
+      "sku": "C97FF0FFEDC14507A683D7A0202EB107",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Pink",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Pink / XXL",
+      "sku": "81A7393D74724DFCA596C1F8ECBF4270",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Pink",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Olive Green / S",
+      "sku": "EA79F8AD53F1456487AED09ACB2CFDAD",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Olive Green",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Olive Green / M",
+      "sku": "EA049648D92F4CB8963CC16657A57A05",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Olive Green",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Olive Green / L",
+      "sku": "FF6F299C2B574298AF0EDDA3D094913D",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Olive Green",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Olive Green / XL",
+      "sku": "C3A5DDAF612446A79265D49DC65C6BE7",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Olive Green",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Olive Green / XXL",
+      "sku": "84F0CB8850C44F359EB3028B236BD615",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Olive Green",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "DDEBC33E4C2642448185A5CE4456A100",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "E2C9445E77824C23BE5DCC6957848882",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "CCA041B4F8BF4804A9FC5893359A4C9D",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / XL",
+      "sku": "D1CFD363F3F84210A7B994508518779E",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Black",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Black / XXL",
+      "sku": "DBA5C077928241A8B034DC025A00B42C",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Black",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Gray / S",
+      "sku": "D779B68665FD4A0BB53311564038E46A",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray / M",
+      "sku": "79A441FB28ED4DEC8E7E64061F3C629F",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray / L",
+      "sku": "C3FBFD3874BD44E991FB0AFFEADCA01B",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Gray / XL",
+      "sku": "D203B356462B48179C3582BBC7741E4F",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Gray",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Gray / XXL",
+      "sku": "086547628F03498CA4957F11C131C700",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Gray",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Orange / S",
+      "sku": "E81CB56BC1DF4F2F8ABF16CF88B5D442",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Orange",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Orange / M",
+      "sku": "E0443FC567D54B30995DA4D40FA41C4D",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Orange",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Orange / L",
+      "sku": "02E06A9568454D768A11D260D0C81C4B",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Orange",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Orange / XL",
+      "sku": "4664B3C34977468699CB7629082800C8",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Orange",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Orange / XXL",
+      "sku": "3CC73ECFDFBF4772A071D0769E397555",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Orange",
+        "Size": "XXL"
+      }
+    },
+    {
+      "title": "Coffee / S",
+      "sku": "C146AAF476774B9488F55DED46DFC589",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Coffee",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Coffee / M",
+      "sku": "BC4C14A7B9FF4B08AAB96538B69FD402",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Coffee",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Coffee / L",
+      "sku": "B4CB81E160BB474E8DE6BFDA6C6845C6",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Coffee",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Coffee / XL",
+      "sku": "107FA5A514A64EA8AB6BB62A0EDD2EF9",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Coffee",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Coffee / XXL",
+      "sku": "32BA3B8BAAB1437F997A039AC9A5B2B0",
+      "price": "41.50",
+      "cost": "6.84",
+      "options": {
+        "Color": "Coffee",
+        "Size": "XXL"
+      }
+    }
+  ],
+  "raw_description_html": "<p></p><p style=\"white-space: normal;\"><strong>Fashion Style: European &amp; American, Elegant Commuter</strong></p><p style=\"white-space: normal;\"><strong>Pattern Type: Print</strong></p><p style=\"white-space: normal;\"><strong>Sleeve Length: Long Sleeved</strong></p><p style=\"white-space: normal;\"><strong>Neckline: Round Neck</strong></p><p style=\"white-space: normal;\"><strong>Material:  Polyester</strong></p><p style=\"white-space: normal;\"><strong>Fabric: Sweatshirt Fleece</strong></p><p style=\"white-space: normal;\"><strong>Closure Type: Pullover</strong></p><p style=\"white-space: normal;\"><strong>Details: Lantern Sleeves, Heat Transfer Print</strong></p><p style=\"white-space: normal;\"><strong>Fit Type: Loose</strong></p><p style=\"white-space: normal;\"><strong>Occasion: Daily, Casual</strong></p><p style=\"white-space: normal;\"><strong>Gender: Women</strong></p><p style=\"white-space: normal;\"><strong>Colors: White, Pink, Olive Green, Black, Gray, Orange-red, Coffee</strong></p><p style=\"white-space: normal;\"><strong>Sizes: S, M, L, XL, XXL</strong></p><p style=\"white-space: normal;\"><strong>Thickness: Thick</strong></p><p style=\"white-space: normal;\"><strong>unit：cm</strong></p><p style=\"white-space: normal;\"><br></p><table width=\"-599\">\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US</th>\n<th>Shoulder Width<br>(CM)</th>\n<th>Bust<br>(CM)</th>\n<th>Length<br>(CM)</th>\n<th>Sleeve Length<br>(CM)</th>\n<th>Hem Circumference</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>56</td>\n<td>108</td>\n<td>65</td>\n<td>53</td>\n<td>90</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>58</td>\n<td>112</td>\n<td>67</td>\n<td>54</td>\n<td>94</td>\n</tr>\n<tr>\n<td>L</td>\n<td>8/10</td>\n<td>60</td>\n<td>118</td>\n<td>69</td>\n<td>55</td>\n<td>100</td>\n</tr>\n<tr>\n<td>XL</td>\n<td>12</td>\n<td>62</td>\n<td>124</td>\n<td>71</td>\n<td>56</td>\n<td>106</td>\n</tr>\n<tr>\n<td>2XL</td>\n<td>14</td>\n<td>64</td>\n<td>130</td>\n<td>73</td>\n<td>57</td>\n<td style=\"word-break: break-all;\">112</td>\n</tr>\n</tbody>\n</table><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F37F8146AF9B9413A7E324C85F21A60E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/ABFA840C9B94BDC88C5A4E6C76272A19.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CE4EB6E73A2C4C74362EC4649D1BE878.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BE6CA99A0436C2E9107B354B23EAA296.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/92D6CD61EEA9D1AB6BF863646A2F7BA3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/45766ACE5EAAE2E592F03DB599BAE408.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1C3C1F6EC0E6AC3DBF6FB9AD571C178E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0A508F9F3F940BC6CF19E63B4952E932.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/22203F0996EAA16C3DBBC4EE743600D1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/176F87B963C6DDD0D3842B5BFDAB883A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2A6A8B454F9E197AE2A0391CD105A38B.jpg\"> </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

@@ -1,0 +1,457 @@
+{
+  "product_id": "gid://shopify/Product/9751717347567",
+  "handle": "fish-mouth-sandals-for-women-breathable-beach-sandals",
+  "original_title": "Fish mouth sandals for women breathable beach sandals",
+  "current_title": "Fish mouth sandals for women breathable beach sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/fish-mouth-sandals-for-women-breathable-beach-sandals",
+  "category": null,
+  "colors": [
+    "Beige",
+    "Black",
+    "White",
+    "Pink"
+  ],
+  "sizes": [
+    "42",
+    "35",
+    "40",
+    "41",
+    "38",
+    "39",
+    "36",
+    "37"
+  ],
+  "options": {
+    "Color": [
+      "Beige",
+      "Black",
+      "White",
+      "Pink"
+    ],
+    "Size": [
+      "42",
+      "35",
+      "40",
+      "41",
+      "38",
+      "39",
+      "36",
+      "37"
+    ]
+  },
+  "price_min": 36.02,
+  "price_max": 36.02,
+  "cost_min": 6.02,
+  "cost_max": 6.02,
+  "specs": {
+    "size": "unit：MM",
+    "Fit": "True to size, order usual size.",
+    "Includes": "Box not included",
+    "Heel height": "Flats",
+    "Sole Material": "Rubber"
+  },
+  "description_text": [
+    "Product measurements:",
+    "Imported"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35",
+        "225"
+      ],
+      [
+        "36",
+        "230"
+      ],
+      [
+        "37",
+        "235"
+      ],
+      [
+        "38",
+        "240"
+      ],
+      [
+        "39",
+        "245"
+      ],
+      [
+        "40",
+        "250"
+      ],
+      [
+        "41",
+        "255"
+      ],
+      [
+        "42",
+        "260"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0C7B3A1B668888B62D04FA42EB7C42DE.jpg?v=1792823491",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/47D43CD6CA9A140BAB90093F78BD7EE5.jpg?v=1792823494",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A3AFD3F797FA71BEF4F1A70C3591F955.jpg?v=1792823502",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7900BE8F59AB7492541492CAB9B31B16.jpg?v=1792823506",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F66F439B792F5BA6A29B5D280E9CB2C6.jpg?v=1792823511",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Beige / 42",
+      "sku": "CF394E47BF8A41929D8277A83A47C042",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 35",
+      "sku": "7B9B4853FAE34137AF037C653F654B7D",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Beige / 40",
+      "sku": "5972F848997A4CF68DEE25A425377C53",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Beige / 41",
+      "sku": "5748358EF1044447BD540AE01D6D9CAE",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Beige / 38",
+      "sku": "A680F2415C28415797ADFC3069E9B9EF",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Beige / 39",
+      "sku": "690F8F9FCDF046AF83A8426BEAD9EF72",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Beige / 36",
+      "sku": "68E6095865494F3795CF7F197B1980A7",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Beige / 37",
+      "sku": "A8C599A790FD4B00B8C5071FEA2B2B32",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "White / 42",
+      "sku": "50C72CF6081147A3BEC6F44A5B020C58",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Beige / 35",
+      "sku": "6CEA43EAFCA04D39BF2BBC5E40DB90D4",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Beige",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "White / 40",
+      "sku": "9C10A78DA0A641A89F22CB08D09C2EC9",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "White / 41",
+      "sku": "6667FB999D46482BAAB9438E2A322166",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "White / 38",
+      "sku": "7946C302A99B4161BCCC300DAD1EF25D",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "White / 39",
+      "sku": "9EF2916286B24E00A50F2B49E87150F9",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "White / 36",
+      "sku": "67FE3ED350194175BE759E63C061865F",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "White / 37",
+      "sku": "6EECFE70F9F44834B6677BF199867537",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 42",
+      "sku": "B2C0CD52D0754134B2F732C0D29AA01C",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "42CF8CD0630C41B09116EEA18BB57611",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "092C2CF438154F21A7B5B08EF38099F5",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Black / 38",
+      "sku": "44009A5244DA4DBDB256F551457F59AA",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "64AF0816A88D4BD8A6B55D31CBAAA3CD",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "35DD4324E0044331B19CC9E89BCED229",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "5632A80BE25F4820B013C33DC3AAA30E",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Pink / 42",
+      "sku": "D1BEE1C7C8144CF49B85AAAA939DDAB0",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "42"
+      }
+    },
+    {
+      "title": "White / 35",
+      "sku": "015D5758B3A747FFB8FF6CC79199FCF0",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "35"
+      }
+    },
+    {
+      "title": "Pink / 40",
+      "sku": "67523EC0D5F14CBA98BB56973E815F06",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Pink / 41",
+      "sku": "72DD4C13D13F4D9FA01A573950C204E5",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Pink / 38",
+      "sku": "1F26FC673ED04EB7B0D33BE4EE24D8EC",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Pink / 39",
+      "sku": "12300E3B370349749AA70C1DFCBDFB3F",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Pink / 36",
+      "sku": "7C256636758845CCBC63369A1C604996",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Pink / 37",
+      "sku": "BBCE47AA93234B9AA1A2AA63316471C5",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Pink / 35",
+      "sku": "AC5F9B1D5BAF4DDF90874EC3EEFBA6DE",
+      "price": "36.02",
+      "cost": "6.02",
+      "options": {
+        "Color": "Pink",
+        "Size": "35"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<li><p>size：unit：MM<br></p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">35</th>\n<td style=\"padding: 9px; word-break: break-all;\">225</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">36</th>\n<td style=\"padding: 9px; word-break: break-all;\">230</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">37</th>\n<td style=\"padding: 9px; word-break: break-all;\">235</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">38</th>\n<td style=\"padding: 9px; word-break: break-all;\">240</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">39</th>\n<td style=\"padding: 9px; word-break: break-all;\">245</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">40</th>\n<td style=\"padding: 9px; word-break: break-all;\">250</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">41</th>\n<td style=\"padding: 9px; word-break: break-all;\">255</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">42</th>\n<td style=\"padding: 9px; word-break: break-all;\">260</td>\n</tr>\n</tbody>\n</table>\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Includes: Box not included</p></li>\n<li><p>Heel height: Flats</p></li>\n<li><p>Sole Material: Rubber</p></li>\n<li><p>Imported</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

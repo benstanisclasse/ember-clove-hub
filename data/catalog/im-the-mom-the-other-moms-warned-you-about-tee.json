@@ -1,0 +1,324 @@
+{
+  "product_id": "gid://shopify/Product/9751306567919",
+  "handle": "im-the-mom-the-other-moms-warned-you-about-tee",
+  "original_title": "I'm The Mom The Other Moms Warned You About Tee",
+  "current_title": "I'm The Mom The Other Moms Warned You About Tee",
+  "vendor": "MerchMallow",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/im-the-mom-the-other-moms-warned-you-about-tee",
+  "category": "Apparel & Accessories > Clothing > Clothing Tops > T-Shirts",
+  "colors": [
+    "Black",
+    "Athletic Heather",
+    "Mauve",
+    "Mustard"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL"
+  ],
+  "options": {
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "Color": [
+      "Black",
+      "Athletic Heather",
+      "Mauve",
+      "Mustard"
+    ]
+  },
+  "price_min": 16.09,
+  "price_max": 17.2,
+  "cost_min": 14.49,
+  "cost_max": 15.49,
+  "specs": {
+    "Perfect Fit": "Crafted to feel like a well-loved favorite with a retail fit that adapts to any wardrobe.",
+    "Premium Material": "Soft cotton with quality printing ensures lasting comfort and vibrant designs.",
+    "High-Quality Material": "Made from 100% Airlume combed and ring-spun cotton, offering a soft, breathable, and lightweight feel (4.2 oz/yd²).",
+    "Durable & Ethical": "Manufactured sustainably by Bella+Canvas in the US and internationally, adhering to no-sweatshop and humane labor practices (Platinum WRAP Certified).",
+    "o Ribbed Knit Collar": "Elastic and durable, retains shape over time.",
+    "o Shoulder Tape": "Stabilizes the back of the garment and prevents stretching.",
+    "o Side Seams": "Maintain structure and provide long-lasting shape.",
+    "o Sleeve Printing": "High-quality Direct-to-Film (DTF) or Direct-to-Garment (DTG) methods for crisp, vibrant designs.",
+    "o Neck Label Printing": "Detailed and durable designs using DTF or DTG techniques."
+  },
+  "description_text": [
+    "Unisex Jersey Short Sleeve Tee – Timeless Comfort & Style",
+    "• Enhanced Features:",
+    "• Custom Printing Options:",
+    "This versatile tee is ideal for casual wear, layering, and custom printing, making it a go-to favorite for any occasion!"
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-m-the-mom-the-other-moms-warned-you-about-tee-black-s-peachy-sunday-t-shirt-30483298615454.png?v=1792788243",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-m-the-mom-the-other-moms-warned-you-about-tee-athletic-heather-s-peachy-sunday-t-shirt-30483298648222.png?v=1792788243",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-m-the-mom-the-other-moms-warned-you-about-tee-mauve-s-peachy-sunday-t-shirt-30483298549918.png?v=1792788244",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-m-the-mom-the-other-moms-warned-you-about-tee-mustard-s-peachy-sunday-t-shirt-30483298680990.png?v=1792788245",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "S / Black",
+      "sku": "50258245353747",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Black"
+      }
+    },
+    {
+      "title": "M / Black",
+      "sku": "50258245386515",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Black"
+      }
+    },
+    {
+      "title": "L / Black",
+      "sku": "50258245419283",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Black"
+      }
+    },
+    {
+      "title": "XL / Black",
+      "sku": "50258245452051",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Black"
+      }
+    },
+    {
+      "title": "2XL / Black",
+      "sku": "50258245484819",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Black"
+      }
+    },
+    {
+      "title": "3XL / Black",
+      "sku": "50258245517587",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Black"
+      }
+    },
+    {
+      "title": "S / Athletic Heather",
+      "sku": "50258245550355",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Athletic Heather"
+      }
+    },
+    {
+      "title": "M / Athletic Heather",
+      "sku": "50258245583123",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Athletic Heather"
+      }
+    },
+    {
+      "title": "L / Athletic Heather",
+      "sku": "50258245615891",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Athletic Heather"
+      }
+    },
+    {
+      "title": "XL / Athletic Heather",
+      "sku": "50258245648659",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Athletic Heather"
+      }
+    },
+    {
+      "title": "2XL / Athletic Heather",
+      "sku": "50258245681427",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Athletic Heather"
+      }
+    },
+    {
+      "title": "3XL / Athletic Heather",
+      "sku": "50258245714195",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Athletic Heather"
+      }
+    },
+    {
+      "title": "S / Mauve",
+      "sku": "50258245746963",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Mauve"
+      }
+    },
+    {
+      "title": "M / Mauve",
+      "sku": "50258245779731",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Mauve"
+      }
+    },
+    {
+      "title": "L / Mauve",
+      "sku": "50258245812499",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Mauve"
+      }
+    },
+    {
+      "title": "XL / Mauve",
+      "sku": "50258245845267",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Mauve"
+      }
+    },
+    {
+      "title": "2XL / Mauve",
+      "sku": "50258245878035",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Mauve"
+      }
+    },
+    {
+      "title": "3XL / Mauve",
+      "sku": "50258245910803",
+      "price": "17.20",
+      "cost": "15.49",
+      "options": {
+        "Size": "3XL",
+        "Color": "Mauve"
+      }
+    },
+    {
+      "title": "S / Mustard",
+      "sku": "50258245943571",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "S",
+        "Color": "Mustard"
+      }
+    },
+    {
+      "title": "M / Mustard",
+      "sku": "50258245976339",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "M",
+        "Color": "Mustard"
+      }
+    },
+    {
+      "title": "L / Mustard",
+      "sku": "50258246009107",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "L",
+        "Color": "Mustard"
+      }
+    },
+    {
+      "title": "XL / Mustard",
+      "sku": "50258246041875",
+      "price": "16.09",
+      "cost": "14.49",
+      "options": {
+        "Size": "XL",
+        "Color": "Mustard"
+      }
+    },
+    {
+      "title": "2XL / Mustard",
+      "sku": "50258246074643",
+      "price": "16.64",
+      "cost": "14.99",
+      "options": {
+        "Size": "2XL",
+        "Color": "Mustard"
+      }
+    }
+  ],
+  "raw_description_html": "<p>Unisex Jersey Short Sleeve Tee – Timeless Comfort &amp; Style<br>\n• Perfect Fit: Crafted to feel like a well-loved favorite with a retail fit that adapts to any wardrobe.<br>\n• Premium Material: Soft cotton with quality printing ensures lasting comfort and vibrant designs.<br>\n• High-Quality Material: Made from 100% Airlume combed and ring-spun cotton, offering a soft, breathable, and lightweight feel (4.2 oz/yd²).<br>\n• Durable &amp; Ethical: Manufactured sustainably by Bella+Canvas in the US and internationally, adhering to no-sweatshop and humane labor practices (Platinum WRAP Certified).<br>\n• Enhanced Features:<br>\no Ribbed Knit Collar: Elastic and durable, retains shape over time.<br>\no Shoulder Tape: Stabilizes the back of the garment and prevents stretching.<br>\no Side Seams: Maintain structure and provide long-lasting shape.<br>\n• Custom Printing Options:<br>\no Sleeve Printing: High-quality Direct-to-Film (DTF) or Direct-to-Garment (DTG) methods for crisp, vibrant designs.<br>\no Neck Label Printing: Detailed and durable designs using DTF or DTG techniques.<br>\nThis versatile tee is ideal for casual wear, layering, and custom printing, making it a go-to favorite for any occasion!</p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

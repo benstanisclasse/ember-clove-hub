@@ -1,0 +1,384 @@
+{
+  "product_id": "gid://shopify/Product/9756889022703",
+  "handle": "british-commuter-style-chunky-knit-high-neck-open-front-cardigan",
+  "original_title": "British Commuter Style Chunky Knit High Neck Open Front Cardigan",
+  "current_title": "British Commuter Style Chunky Knit High Neck Open Front Cardigan",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "knitwear",
+  "url": "https://emberandclove.com/products/british-commuter-style-chunky-knit-high-neck-open-front-cardigan",
+  "category": null,
+  "colors": [
+    "Off-White",
+    "Gray",
+    "Camel",
+    "Dark Red",
+    "Brown",
+    "Khaki",
+    "Black"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Off-White",
+      "Gray",
+      "Camel",
+      "Dark Red",
+      "Brown",
+      "Khaki",
+      "Black"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 62.56,
+  "price_max": 62.56,
+  "cost_min": 16.01,
+  "cost_max": 16.01,
+  "specs": {
+    "Color": "Beige, Gray, Camel, Dark Red, Coffee, Khaki, Black",
+    "Style": "Mori Style, Fresh & Sweet",
+    "Pattern Type": "Solid",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Stand Collar",
+    "Length": "Regular (50-65cm)",
+    "Material": "Viscose, Polyester, Knitted",
+    "Closure Type": "Single Breasted, Cardigan",
+    "Fit Type": "Loose",
+    "Details": "Soft Texture, Regular Thickness",
+    "Bust": "112-120cm",
+    "Gender": "Youth",
+    "Size": "S, M, L",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Bust",
+        "Shoulder Width",
+        "Sleeve Length",
+        "Length"
+      ],
+      [
+        "/",
+        "/",
+        "/",
+        "/",
+        "/"
+      ],
+      [
+        "S",
+        "112",
+        "53",
+        "54",
+        "56"
+      ],
+      [
+        "M",
+        "116",
+        "54",
+        "55",
+        "57"
+      ],
+      [
+        "L",
+        "120",
+        "55",
+        "56",
+        "58"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/584CD21850EDF51A1F44B6BF1BDDDE87.jpg?v=1793047973",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7FD5559328C17AF77D787DD904FB8A1A.jpg?v=1793047975",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BBE588E731ECC59042AC3B782026DFCA.jpg?v=1793047976",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0726790A5CD896D123BB626AD2D4752D.jpg?v=1793047981",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C287DAF44F415601ED02AF3A7AAD8E4E.jpg?v=1793047982",
+      "altText": "",
+      "width": 1201,
+      "height": 1201
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/05C413F474B2197B435F3E010668FBDE.jpg?v=1793047990",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3BE07C68FF682B51273BAA24B3A43649.jpg?v=1793048014",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/80CE4BC796CBC48552DAAAACD85D4129.jpg?v=1793048015",
+      "altText": "",
+      "width": 1600,
+      "height": 1600
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/96570EC318FE005A756A4F29774A5002.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5642959CC44B01C810E3007E8DCBED7C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4A82AEEEDFC94DBE21BB2F626D3CE063.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/482B58CF2FBCB46881FB3CBCCA7EE7FC.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3A27AA25775F62423C730D33DC3311C5.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D540393F7CA7D8035B69A1DB8388D1D1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B3786E2C1741D5B580D4C5D0ADA08C15.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E472DB341C4EC01098C55A29B041C3A9.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/67AE44206BAFE737D688473B4931282F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AA8DD505C410614ABE2E47AD3AFDF003.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/87CDE329825A21487E3762FD547C5D7A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F6925F4E69341970D51FDE2139DC4416.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F10A32736135AAFA8BD1852D70434072.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BD602E12E1D9124A872F4CE5E969F31A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/75163BF04887D7F3AE950F95C82A93FF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A7AFD018273A0326A132879A380AB7BA.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F07B984210E026D41D9DEE5870E744CF.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Off-White / S",
+      "sku": "47D1F1AB75944CC88C937278DF22E5D6",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Off-White",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Off-White / M",
+      "sku": "4BE467C76F64456185C7558FAA961FD2",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Off-White",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Off-White / L",
+      "sku": "616F25948EEE41FBBAC7343F15E7783A",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Off-White",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Gray / S",
+      "sku": "101B7744DFF14421B154790F84F844EB",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray / M",
+      "sku": "5255FF26BDB849B3A5951E0D89474D98",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray / L",
+      "sku": "0D0DC966CD5C477986C5C2E48342A15C",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Camel / S",
+      "sku": "39AEFEC3F555403682AF8CDEF49D6E02",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Camel",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Camel / M",
+      "sku": "42635DEEB45E40189F2DB6D5C9860211",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Camel",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Camel / L",
+      "sku": "A387924A00714BA4BEB9618418C7AA4B",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Camel",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Dark Red / S",
+      "sku": "3ED8569F306C403594769D98694686A2",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Dark Red",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Dark Red / M",
+      "sku": "15F41651FA6C436D87DF034AE042A611",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Dark Red",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Dark Red / L",
+      "sku": "943614B7AB4B45DBB9258391FF7BC96F",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Dark Red",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Brown / S",
+      "sku": "C72159FA0F334078A29A2486A442E077",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Brown",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Brown / M",
+      "sku": "4E817E7E8C844CFAB4005A21EAC1980F",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Brown",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Brown / L",
+      "sku": "0B81A35F37F74046AA677A95DC83A8FB",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Brown",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Khaki / S",
+      "sku": "2C9D60697E9F4CE8B53426D0D2A4A0E9",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Khaki",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Khaki / M",
+      "sku": "74AAB11C7F354DB0BC4A788A54C55BFC",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Khaki",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Khaki / L",
+      "sku": "39C80364757644D19E2215C1EC14AB28",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Khaki",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "450871DE39F34511ABD817D499813C51",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "895F2D1D47C34B439F1FCDB3C701215B",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "4F1E3F624E304DD1BC3E604E59A914F6",
+      "price": "62.56",
+      "cost": "16.01",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size:16px;\"><strong>Color: Beige, Gray, Camel, Dark Red, Coffee, Khaki, Black</strong></p><p style=\"font-size:16px;\"><strong>Style: Mori Style, Fresh &amp; Sweet</strong></p><p style=\"font-size:16px;\"><strong>Pattern Type: Solid</strong></p><p style=\"font-size:16px;\"><strong>Sleeve Length: Long Sleeve</strong></p><p style=\"font-size:16px;\"><strong>Neckline: Stand Collar</strong></p><p style=\"font-size:16px;\"><strong>Length: Regular (50-65cm)</strong></p><p style=\"font-size:16px;\"><strong>Material: Viscose, Polyester, Knitted</strong></p><p style=\"font-size:16px;\"><strong>Closure Type: Single Breasted, Cardigan</strong></p><p style=\"font-size:16px;\"><strong>Fit Type: Loose</strong></p><p style=\"font-size:16px;\"><strong>Details: Soft Texture, Regular Thickness</strong></p><p style=\"font-size:16px;\"><strong>Bust: 112-120cm</strong></p><p style=\"font-size:16px;\"><strong>Gender: Youth</strong></p><p style=\"font-size:16px;\"><strong>Size: S, M, L</strong></p><p style=\"font-size:16px;\"><strong>Unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>Bust</th>\n<th>Shoulder Width</th>\n<th>Sleeve Length</th>\n<th>Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>/</td>\n<td>/</td>\n<td>/</td>\n<td>/</td>\n<td>/</td>\n</tr>\n<tr>\n<td>S</td>\n<td>112</td>\n<td>53</td>\n<td>54</td>\n<td>56</td>\n</tr>\n<tr>\n<td>M</td>\n<td>116</td>\n<td>54</td>\n<td>55</td>\n<td>57</td>\n</tr>\n<tr>\n<td>L</td>\n<td>120</td>\n<td>55</td>\n<td>56</td>\n<td>58</td>\n</tr>\n</tbody>\n</table><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/96570EC318FE005A756A4F29774A5002.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/5642959CC44B01C810E3007E8DCBED7C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4A82AEEEDFC94DBE21BB2F626D3CE063.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/482B58CF2FBCB46881FB3CBCCA7EE7FC.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3A27AA25775F62423C730D33DC3311C5.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D540393F7CA7D8035B69A1DB8388D1D1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B3786E2C1741D5B580D4C5D0ADA08C15.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E472DB341C4EC01098C55A29B041C3A9.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/67AE44206BAFE737D688473B4931282F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/AA8DD505C410614ABE2E47AD3AFDF003.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/87CDE329825A21487E3762FD547C5D7A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F6925F4E69341970D51FDE2139DC4416.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F10A32736135AAFA8BD1852D70434072.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BD602E12E1D9124A872F4CE5E969F31A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/75163BF04887D7F3AE950F95C82A93FF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A7AFD018273A0326A132879A380AB7BA.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F07B984210E026D41D9DEE5870E744CF.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

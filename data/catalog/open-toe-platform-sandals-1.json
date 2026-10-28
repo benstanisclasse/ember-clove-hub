@@ -1,0 +1,303 @@
+{
+  "product_id": "gid://shopify/Product/9751717576943",
+  "handle": "open-toe-platform-sandals-1",
+  "original_title": "Open Toe Platform Sandals",
+  "current_title": "Open Toe Platform Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/open-toe-platform-sandals-1",
+  "category": null,
+  "colors": [
+    "Black",
+    "Dusty Pink",
+    "Mocha"
+  ],
+  "sizes": [
+    "38",
+    "39",
+    "36",
+    "37",
+    "40",
+    "41"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Dusty Pink",
+      "Mocha"
+    ],
+    "Size": [
+      "38",
+      "39",
+      "36",
+      "37",
+      "40",
+      "41"
+    ]
+  },
+  "price_min": 28.72,
+  "price_max": 28.72,
+  "cost_min": 4.51,
+  "cost_max": 4.51,
+  "specs": {
+    "Size": "unit：cm",
+    "Fit": "True to size, order usual size.",
+    "Includes": "Box not included",
+    "Heel height": "Low heels",
+    "Material": "PU leather, Rubber"
+  },
+  "description_text": [
+    "Product measurements:",
+    "Imported"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "36",
+        "23"
+      ],
+      [
+        "37",
+        "23.5"
+      ],
+      [
+        "38",
+        "24"
+      ],
+      [
+        "39",
+        "24.5"
+      ],
+      [
+        "40",
+        "25"
+      ],
+      [
+        "41",
+        "25.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BAC0E4799A28AD99047BC256603D0B44.jpg?v=1792823493",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7D8279D23C25CB07F32F0E7A28F42331.jpg?v=1792823495",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/15C81596E70FAE2193779180C8F5264C.jpg?v=1792823502",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8DB61ECAD097FE472D39E50037A363ED.jpg?v=1792823515",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D5C0F5364747B3A291813F8DA611FD55.jpg?v=1792823523",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 38",
+      "sku": "49E5411B942D4764A4F27EEAB88F2132",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Black / 39",
+      "sku": "D7CC10FAA6BE4562ADB85A9E56957FE3",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Black / 36",
+      "sku": "DDF821F3438B4592B15C428549A19F00",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Black / 37",
+      "sku": "199FE86ED7DA427EB2C80AC2C9BB9D32",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Dusty Pink / 40",
+      "sku": "938632E900A7436B8EB68E47C4A5943B",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Dusty Pink / 41",
+      "sku": "EF85E903DF724A30945CE66256757DA5",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Dusty Pink / 38",
+      "sku": "D8AE253DB8A84E1AA98F963EE63BFC4E",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Dusty Pink / 39",
+      "sku": "DAACF9D5EBC248AC9C2D3230789AE6D7",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Dusty Pink / 36",
+      "sku": "354A3E6EA20B495DB1620FAF0D73AA36",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Dusty Pink / 37",
+      "sku": "540640BEF53B46B89C202FFBCB8DEAB5",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Dusty Pink",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Mocha / 40",
+      "sku": "B6F1F9B7778D485D9085EDBBE95C84E8",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Mocha",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Mocha / 41",
+      "sku": "34A4725C024249F9BF21DB9B14394010",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Mocha",
+        "Size": "41"
+      }
+    },
+    {
+      "title": "Mocha / 38",
+      "sku": "ACCA2F7EA93D4EC9BE652C86AF1CC21E",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Mocha",
+        "Size": "38"
+      }
+    },
+    {
+      "title": "Mocha / 39",
+      "sku": "3A354CF3FC7745FCB05A600A1111EB82",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Mocha",
+        "Size": "39"
+      }
+    },
+    {
+      "title": "Mocha / 36",
+      "sku": "8909577574034BDBA3E486429A51C193",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Mocha",
+        "Size": "36"
+      }
+    },
+    {
+      "title": "Mocha / 37",
+      "sku": "89D09A7158D445F28712E7EA521FCA3D",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Mocha",
+        "Size": "37"
+      }
+    },
+    {
+      "title": "Black / 40",
+      "sku": "7242EE83D232492186004BF0DA215193",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "40"
+      }
+    },
+    {
+      "title": "Black / 41",
+      "sku": "EE3BA4882BFE45759FD3DC2419E98D6D",
+      "price": "28.72",
+      "cost": "4.51",
+      "options": {
+        "Color": "Black",
+        "Size": "41"
+      }
+    }
+  ],
+  "raw_description_html": "<ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<li><p>Size:unit：cm<br></p></li>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">36</th>\n<td style=\"padding: 9px; word-break: break-all;\">23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">37</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">38</th>\n<td style=\"padding: 9px; word-break: break-all;\">24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">39</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">40</th>\n<td style=\"padding: 9px; word-break: break-all;\">25</td>\n</tr>\n<tr>\n<th style=\"padding: 9px; font-weight: bold; word-break: break-all;\">41</th>\n<td style=\"padding: 9px; word-break: break-all;\">25.5</td>\n</tr>\n</tbody>\n</table>\n<ul class=\" list-paddingleft-2\" style=\"list-style-type: square;\">\n<li><p>Fit: True to size, order usual size.</p></li>\n<li><p>Includes: Box not included</p></li>\n<li><p>Heel height: Low heels</p></li>\n<li><p>Material: PU leather, Rubber</p></li>\n<li><p>Imported</p></li>\n</ul>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

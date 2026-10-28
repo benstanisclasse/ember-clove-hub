@@ -1,0 +1,910 @@
+[
+ {
+  "product_id": "9751656857839",
+  "title": "Floral Rib Knit Bodysuit",
+  "type": "Tops & Bodysuits",
+  "tags": [
+   "knit",
+   "bodysuit",
+   "long-sleeve",
+   "floral",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Apricot": "Cream"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751655809263",
+  "title": "Turtleneck Rib Knit Sweater Dress",
+  "type": "Dresses",
+  "tags": [
+   "knit",
+   "sweater-dress",
+   "turtleneck",
+   "mini",
+   "long-sleeve",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Navy Blue": "Navy"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751655842031",
+  "title": "Henley Tie-Waist Rib Maxi Dress",
+  "type": "Dresses",
+  "tags": [
+   "knit",
+   "maxi",
+   "henley",
+   "long-sleeve",
+   "tie-waist",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751655678191",
+  "title": "Belted Collared Midi Shirt Dress",
+  "type": "Dresses",
+  "tags": [
+   "midi",
+   "shirt-dress",
+   "belted",
+   "long-sleeve",
+   "khaki",
+   "neutral",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751655481583",
+  "title": "Ruffle Hem Mesh Mini Dress",
+  "type": "Dresses",
+  "tags": [
+   "mesh",
+   "mini",
+   "long-sleeve",
+   "ruffle",
+   "orange"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751657021679",
+  "title": "Textured Rib Mock Neck Bodysuit",
+  "type": "Tops & Bodysuits",
+  "tags": [
+   "knit",
+   "bodysuit",
+   "mock-neck",
+   "long-sleeve",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Off-white": "Off-White"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751657152751",
+  "title": "Pheasant Print Crewneck Fleece Sweatshirt",
+  "type": "Sweaters & Sweatshirts",
+  "tags": [
+   "sweatshirt",
+   "fleece",
+   "graphic",
+   "crewneck",
+   "long-sleeve",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751656562927",
+  "title": "Malibu Beach Graphic Sweatshirt",
+  "type": "Sweaters & Sweatshirts",
+  "tags": [
+   "sweatshirt",
+   "fleece",
+   "graphic",
+   "crewneck",
+   "long-sleeve"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751656005871",
+  "title": "Long Pleated Knit Skirt",
+  "type": "Skirts",
+  "tags": [
+   "knit",
+   "pleated",
+   "skirt",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Oats": "Oatmeal",
+     "Off-white": "Off-White"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751656268015",
+  "title": "Asymmetric Faux Suede Midi Skirt",
+  "type": "Skirts",
+  "tags": [
+   "faux-suede",
+   "midi",
+   "asymmetric",
+   "skirt",
+   "brown",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751656104175",
+  "title": "Ruffle Slit Knit Midi Skirt",
+  "type": "Skirts",
+  "tags": [
+   "knit",
+   "midi",
+   "ruffle",
+   "skirt",
+   "neutral",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Off-white": "Off-White",
+     "Apricot": "Oatmeal"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751656366319",
+  "title": "Pinstripe Pleated Mini Skirt",
+  "type": "Skirts",
+  "tags": [
+   "pinstripe",
+   "pleated",
+   "mini",
+   "skirt",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751656923375",
+  "title": "Diagonal Rib Mock Neck Bodysuit",
+  "type": "Tops & Bodysuits",
+  "tags": [
+   "knit",
+   "bodysuit",
+   "mock-neck",
+   "long-sleeve",
+   "base-layer",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751656759535",
+  "title": "Ruched Mesh Wrap V-Neck Top",
+  "type": "Tops & Bodysuits",
+  "tags": [
+   "mesh",
+   "ruched",
+   "wrap",
+   "v-neck",
+   "long-sleeve",
+   "cropped",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Purple": "Lavender",
+     "Apricot": "Cream",
+     "Pink": "Blush"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716856047",
+  "title": "Double Buckle Platform Slingback Sandals",
+  "type": "Sandals",
+  "tags": [
+   "platform",
+   "buckle",
+   "summer",
+   "black",
+   "white",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "40(US9)": "US 9 (EU 40)",
+     "38(US7)": "US 7 (EU 38)",
+     "39(US8)": "US 8 (EU 39)",
+     "36(US5)": "US 5 (EU 36)",
+     "37(US6)": "US 6 (EU 37)",
+     "35(US4)": "US 4 (EU 35)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717347567",
+  "title": "Mesh Knit Chunky Sole Sandals",
+  "type": "Sandals",
+  "tags": [
+   "platform",
+   "knit",
+   "summer",
+   "neutral",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "42": "US 10.5 (EU 42)",
+     "35": "US 4 (EU 35)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716823279",
+  "title": "Rose Accent Strappy Stiletto Sandals",
+  "type": "Sandals",
+  "tags": [
+   "heel",
+   "stiletto",
+   "strappy",
+   "red",
+   "gold",
+   "evening",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)",
+     "35": "US 4 (EU 35)",
+     "43": "US 11 (EU 43)",
+     "42": "US 10.5 (EU 42)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716757743",
+  "title": "Double Band Buckle Flat Sandals",
+  "type": "Sandals",
+  "tags": [
+   "flat",
+   "buckle",
+   "summer",
+   "brown",
+   "black",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "42": "US 10.5 (EU 42)",
+     "43": "US 11 (EU 43)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)",
+     "35": "US 4 (EU 35)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751721443567",
+  "title": "Crisscross Stretch Strap Flat Sandals",
+  "type": "Sandals",
+  "tags": [
+   "flat",
+   "stretch strap",
+   "summer",
+   "black",
+   "pink",
+   "multicolor",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Color": "Multicolor",
+     "Pastel  Blue": "Pastel Blue"
+    }
+   },
+   "Size": {
+    "name": "Size",
+    "values": {
+     "41(US10)": "US 10 (EU 41)",
+     "42(US10.5)": "US 10.5 (EU 42)",
+     "39(US8)": "US 8 (EU 39)",
+     "40(US9)": "US 9 (EU 40)",
+     "37(US6)": "US 6 (EU 37)",
+     "38(US7)": "US 7 (EU 38)",
+     "35(US4)": "US 4 (EU 35)",
+     "36(US5)": "US 5 (EU 36)",
+     "43(US11)": "US 11 (EU 43)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717282031",
+  "title": "Embroidered Band Espadrille Platform Slides",
+  "type": "Sandals",
+  "tags": [
+   "platform",
+   "slide",
+   "embroidered",
+   "summer",
+   "black",
+   "multicolor",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "43": "US 11 (EU 43)",
+     "42": "US 10.5 (EU 42)",
+     "39": "US 8 (EU 39)",
+     "38": "US 7 (EU 38)",
+     "41": "US 10 (EU 41)",
+     "40": "US 9 (EU 40)",
+     "36": "US 5 (EU 36)",
+     "35": "US 4 (EU 35)",
+     "37": "US 6 (EU 37)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717576943",
+  "title": "T-Strap Buckle Platform Sandals",
+  "type": "Sandals",
+  "tags": [
+   "platform",
+   "t-strap",
+   "buckle",
+   "summer",
+   "pink",
+   "black",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717544175",
+  "title": "Croc-Embossed Slingback Stiletto Sandals",
+  "type": "Sandals",
+  "tags": [
+   "heel",
+   "stiletto",
+   "slingback",
+   "black",
+   "evening",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "41": "US 10 (EU 41)",
+     "42": "US 10.5 (EU 42)",
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "37": "US 6 (EU 37)",
+     "38": "US 7 (EU 38)",
+     "35": "US 4 (EU 35)",
+     "36": "US 5 (EU 36)",
+     "43": "US 11 (EU 43)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717150959",
+  "title": "Shimmer Band Platform Wedge Slides",
+  "type": "Sandals",
+  "tags": [
+   "wedge",
+   "platform",
+   "slide",
+   "metallic",
+   "black",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "42(US10.5)": "US 10.5 (EU 42)",
+     "41(US10)": "US 10 (EU 41)",
+     "40(US9)": "US 9 (EU 40)",
+     "39(US8)": "US 8 (EU 39)",
+     "38(US7)": "US 7 (EU 38)",
+     "37(US6)": "US 6 (EU 37)",
+     "36(US5)": "US 5 (EU 36)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716430063",
+  "title": "Paris Knit Band Flat Slides",
+  "type": "Sandals",
+  "tags": [
+   "flat",
+   "slide",
+   "knit",
+   "summer",
+   "pink",
+   "neutral",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Pastel  Blue": "Pastel Blue"
+    }
+   },
+   "Size": {
+    "name": "Size",
+    "values": {
+     "36(US5)": "US 5 (EU 36)",
+     "44(US12)": "US 12 (EU 44)",
+     "38(US7)": "US 7 (EU 38)",
+     "37(US6)": "US 6 (EU 37)",
+     "41(US10)": "US 10 (EU 41)",
+     "40(US9)": "US 9 (EU 40)",
+     "43(US11)": "US 11 (EU 43)",
+     "42(US10.5)": "US 10.5 (EU 42)",
+     "39(US8)": "US 8 (EU 39)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716692207",
+  "title": "Studded Wood-Look Block Heel Sandals",
+  "type": "Sandals",
+  "tags": [
+   "sandals",
+   "block heel",
+   "platform",
+   "ankle strap",
+   "buckle",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "40(US9)": "US 9 (EU 40)",
+     "39(US8)": "US 8 (EU 39)",
+     "38(US7)": "US 7 (EU 38)",
+     "37(US6)": "US 6 (EU 37)",
+     "42(US10.5)": "US 10.5 (EU 42)",
+     "41(US10)": "US 10 (EU 41)",
+     "36(US5)": "US 5 (EU 36)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717019887",
+  "title": "Butterfly Rhinestone Slingback Flats",
+  "type": "Sandals",
+  "tags": [
+   "sandals",
+   "flats",
+   "rhinestone",
+   "butterfly",
+   "clear strap",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "41": "US 10 (EU 41)",
+     "42": "US 10.5 (EU 42)",
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "43": "US 11 (EU 43)",
+     "37": "US 6 (EU 37)",
+     "38": "US 7 (EU 38)",
+     "36": "US 5 (EU 36)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716724975",
+  "title": "Rhinestone H-Band Flat Slides",
+  "type": "Sandals",
+  "tags": [
+   "slides",
+   "flats",
+   "rhinestone",
+   "faux leather",
+   "slip-on",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "36": "US 5 (EU 36)",
+     "43": "US 11 (EU 43)",
+     "38": "US 7 (EU 38)",
+     "37": "US 6 (EU 37)",
+     "40": "US 9 (EU 40)",
+     "39": "US 8 (EU 39)",
+     "42": "US 10.5 (EU 42)",
+     "41": "US 10 (EU 41)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717413103",
+  "title": "Closed Toe Slingback Espadrille Wedges",
+  "type": "Sandals",
+  "tags": [
+   "wedges",
+   "espadrille",
+   "slingback",
+   "closed toe",
+   "sandals",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "37": "US 6 (EU 37)",
+     "38": "US 7 (EU 38)",
+     "36": "US 5 (EU 36)",
+     "43": "US 11 (EU 43)",
+     "41": "US 10 (EU 41)",
+     "42": "US 10.5 (EU 42)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716561135",
+  "title": "Toe Loop Faux Leather Slides",
+  "type": "Sandals",
+  "tags": [
+   "slides",
+   "flats",
+   "toe loop",
+   "faux leather",
+   "gold",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "42(US10.5)": "US 10.5 (EU 42)",
+     "43(US11)": "US 11 (EU 43)",
+     "40(US9)": "US 9 (EU 40)",
+     "41(US10)": "US 10 (EU 41)",
+     "38(US7)": "US 7 (EU 38)",
+     "39(US8)": "US 8 (EU 39)",
+     "36(US5)": "US 5 (EU 36)",
+     "37(US6)": "US 6 (EU 37)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716921583",
+  "title": "Pointed Peep Toe Stiletto Mules",
+  "type": "Sandals",
+  "tags": [
+   "mules",
+   "stilettos",
+   "heels",
+   "pointed toe",
+   "croc-embossed",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Grey": "Gray",
+     "Silver crocodile pattern": "Silver Croc",
+     "Golden crocodile pattern": "Gold Croc"
+    }
+   },
+   "Size": {
+    "name": "Size",
+    "values": {
+     "34": "US 3 (EU 34)",
+     "35": "US 4 (EU 35)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)",
+     "42": "US 10.5 (EU 42)",
+     "43": "US 11 (EU 43)",
+     "44": "US 12 (EU 44)",
+     "45": "US 13 (EU 45)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751716626671",
+  "title": "Metallic Square Toe Heeled Mules",
+  "type": "Sandals",
+  "tags": [
+   "mules",
+   "block heel",
+   "square toe",
+   "metallic",
+   "low heel",
+   "ec-collection"
+  ],
+  "options": {
+   "color": {
+    "name": "Color",
+    "values": {
+     "orange": "Orange"
+    }
+   },
+   "size": {
+    "name": "Size",
+    "values": {
+     "35": "US 4 (EU 35)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751719182575",
+  "title": "Textured Peep Toe Slip-On Flats",
+  "type": "Sandals",
+  "tags": [
+   "flats",
+   "peep toe",
+   "slip-on",
+   "metallic",
+   "sandals",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Light blue": "Light Blue",
+     "Light green": "Light Green",
+     "Light Rose Red": "Light Rose",
+     "Golden": "Gold",
+     "Deep Rose Red": "Deep Rose"
+    }
+   },
+   "Size": {
+    "name": "Size",
+    "values": {
+     "34": "US 3 (EU 34)",
+     "35": "US 4 (EU 35)",
+     "36": "US 5 (EU 36)",
+     "37": "US 6 (EU 37)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)",
+     "42": "US 10.5 (EU 42)",
+     "43": "US 11 (EU 43)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717675247",
+  "title": "Braided Cord Strappy Flat Sandals",
+  "type": "Sandals",
+  "tags": [
+   "sandals",
+   "flats",
+   "braided",
+   "strappy",
+   "toe loop",
+   "ec-collection"
+  ],
+  "options": {
+   "color": {
+    "name": "Color",
+    "values": {
+     "red": "Red",
+     "black": "Black",
+     "blue": "Blue",
+     "light green": "Light Green",
+     "black+white": "Black & White",
+     "black white+green": "Black, White & Green",
+     "green gray+gray": "Green-Gray & Gray"
+    }
+   },
+   "size": {
+    "name": "Size",
+    "values": {
+     "37": "US 6 (EU 37)",
+     "35": "US 4 (EU 35)",
+     "36": "US 5 (EU 36)",
+     "38": "US 7 (EU 38)",
+     "39": "US 8 (EU 39)",
+     "40": "US 9 (EU 40)",
+     "41": "US 10 (EU 41)",
+     "42": "US 10.5 (EU 42)",
+     "43": "US 11 (EU 43)",
+     "44": "US 12 (EU 44)"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751659741423",
+  "title": null,
+  "type": "Sweaters & Sweatshirts",
+  "tags": [
+   "knit",
+   "sweater",
+   "stripe",
+   "polo-collar",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {}
+ },
+ {
+  "product_id": "9751656071407",
+  "title": null,
+  "type": "Dresses",
+  "tags": [
+   "knit",
+   "dress",
+   "midi",
+   "mock-neck",
+   "cable-knit",
+   "fall",
+   "ec-collection"
+  ],
+  "options": {
+   "Color": {
+    "name": "Color",
+    "values": {
+     "Grandma Gray": "Heather Gray",
+     "Purplish Red": "Berry"
+    }
+   }
+  }
+ },
+ {
+  "product_id": "9751717118191",
+  "title": null,
+  "type": "Sandals",
+  "tags": [
+   "wedge",
+   "slides",
+   "platform",
+   "summer",
+   "black",
+   "white",
+   "ec-collection"
+  ],
+  "options": {
+   "Size": {
+    "name": "Size",
+    "values": {
+     "41(US10)": "US 10 (EU 41)",
+     "40(US9)": "US 9 (EU 40)",
+     "39(US8)": "US 8 (EU 39)",
+     "38(US7)": "US 7 (EU 38)",
+     "43(US11)": "US 11 (EU 43)",
+     "42(US10.5)": "US 10.5 (EU 42)",
+     "37(US6)": "US 6 (EU 37)",
+     "36(US5)": "US 5 (EU 36)",
+     "35(US4)": "US 4 (EU 35)"
+    }
+   }
+  }
+ }
+]

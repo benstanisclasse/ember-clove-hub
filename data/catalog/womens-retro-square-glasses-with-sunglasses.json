@@ -1,0 +1,250 @@
+{
+  "product_id": "gid://shopify/Product/9756888269039",
+  "handle": "womens-retro-square-glasses-with-sunglasses",
+  "original_title": "Women's retro square glasses with sunglasses",
+  "current_title": "Women's retro square glasses with sunglasses",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/womens-retro-square-glasses-with-sunglasses",
+  "category": null,
+  "colors": [],
+  "sizes": [],
+  "options": {
+    "Lenses Color": [
+      "BlackGray",
+      "BlackBlue",
+      "LeopardTea",
+      "BlackYellow",
+      "RedGray",
+      "GreenGray",
+      "TeaTea",
+      "OrangeTea",
+      "BlueGray",
+      "GrayGray"
+    ]
+  },
+  "price_min": 12.56,
+  "price_max": 12.56,
+  "cost_min": 1.15,
+  "cost_max": 1.15,
+  "specs": {
+    "Mirror frame material": "PC",
+    "Lens material": "AC"
+  },
+  "description_text": [],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/71F852802A916A8BDE10117BDD8858F9.jpg?v=1793047954",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9367E9C63B5A4368AFC2E35C47EDC7AC.jpg?v=1793047956",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CB4A413D55259BA9F0BAFA4A0D5B49A8.jpg?v=1793047958",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/28004A42FF788323878AFA10BCDEF6F3.jpg?v=1793047960",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/00D020E7A500760669646B7B427C5EA7.jpg?v=1793047962",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8F3C189EF07F7E2C825667E0D050BF1C.jpg?v=1793047964",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53BF0C14395C9B1CB262A244070D239D.jpg?v=1793047965",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2D2A6B1E7F7F728157302BF9BCC9C518.jpg?v=1793047967",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5170E8468A068507F0430F9FFBE11C74.jpg?v=1793047989",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/06E0A6BC077FCAC296C86CC57E9B24B7.jpg?v=1793047997",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B05BB31CA9BE17B27E5F98B0BDC67EEB.jpg?v=1793048001",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/711CCD401870E5154E561366A8908C71.jpg?v=1793048003",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ED2C877072579DB90EC3450117021E1F.jpg?v=1793048005",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A8617A6BC8C50936820DB951DD52BBDB.jpg?v=1793048011",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7CA150A5FE6929E7A680C6165E2EE722.jpg?v=1793048013",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/434BC654EE39DFD3D5C6680CF341C47B.jpg?v=1793048015",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/491E25C8B53C3BF0DB3312451F4F27DB.jpg?v=1793048027",
+      "altText": "",
+      "width": 640,
+      "height": 640
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202404/58DF58BBB20CEAC6CB445476EFD30C0A.png",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/7CFCE50CE7CDDEF7C65DBE0A3C7C60F9.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/CBFC24101A4A94437C80A74C5A53C86F.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/012A6AFBE9ABB51AD5374A810260277E.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/550010015489BDD5BC2E1298257D3C47.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/06D43741C59E3B52008BBF0FA3AE413A.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/9CEFAAAC1879FAB91574B698359300DB.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/816AD6C9440E260EB812D2360E77A40E.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/D691DCB99B0CF8863F3701864FB76DFA.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/9351BBC9EC9A54DE961DC37377725372.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/D6E2A255850A6860851437E5E54CCA08.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/76C91B5E7F4BDCB0CF2AF707C80F4273.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/4203BECAD10D904F43574864005AAEB7.jpg"
+  ],
+  "variants": [
+    {
+      "title": "BlackGray",
+      "sku": "4704846847E04176AAA8E3978032E561",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "BlackGray"
+      }
+    },
+    {
+      "title": "BlackBlue",
+      "sku": "C599F94A85144E08B3196592F9996780",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "BlackBlue"
+      }
+    },
+    {
+      "title": "LeopardTea",
+      "sku": "FBEFDBCF19C34DBFB35A88E538F7C7C9",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "LeopardTea"
+      }
+    },
+    {
+      "title": "BlackYellow",
+      "sku": "F3CABEB04A4F41D294087C42BCEC4B78",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "BlackYellow"
+      }
+    },
+    {
+      "title": "RedGray",
+      "sku": "E1E8A0B4FF914F8787E52217190CB954",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "RedGray"
+      }
+    },
+    {
+      "title": "GreenGray",
+      "sku": "2F6F74D257D64C2CA0E4EF07B58E9306",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "GreenGray"
+      }
+    },
+    {
+      "title": "TeaTea",
+      "sku": "914B064BCD624B8FBD0070264226FD53",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "TeaTea"
+      }
+    },
+    {
+      "title": "OrangeTea",
+      "sku": "766F76AE767944CBB3A355359EED9417",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "OrangeTea"
+      }
+    },
+    {
+      "title": "BlueGray",
+      "sku": "8C7669F93E424A6DAC0544B3E9BB96E1",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "BlueGray"
+      }
+    },
+    {
+      "title": "GrayGray",
+      "sku": "51C839A3B310406E9231D01700A8428A",
+      "price": "12.56",
+      "cost": "1.15",
+      "options": {
+        "Lenses Color": "GrayGray"
+      }
+    }
+  ],
+  "raw_description_html": "<p>Mirror frame material: PC</p><p><br></p><p>Lens material: AC</p><p><img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/image/202404/58DF58BBB20CEAC6CB445476EFD30C0A.png\" title=\"58DF58BBB20CEAC6CB445476EFD30C0A.png\" alt=\"image.png\"></p><p><img width=\"790\" height=\"790\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/7CFCE50CE7CDDEF7C65DBE0A3C7C60F9.jpg\">\n <br>\n <br>\n <br>\n <img width=\"790\" height=\"790\" src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/CBFC24101A4A94437C80A74C5A53C86F.jpg\">\n <br>\n <br>\n <br>\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/012A6AFBE9ABB51AD5374A810260277E.jpg\">\n <br>\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/550010015489BDD5BC2E1298257D3C47.jpg\">\n <br>\n <br>\n \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/06D43741C59E3B52008BBF0FA3AE413A.jpg\">\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/9CEFAAAC1879FAB91574B698359300DB.jpg\">\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/816AD6C9440E260EB812D2360E77A40E.jpg\">\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/D691DCB99B0CF8863F3701864FB76DFA.jpg\">\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/9351BBC9EC9A54DE961DC37377725372.jpg\">\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/D6E2A255850A6860851437E5E54CCA08.jpg\">\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/76C91B5E7F4BDCB0CF2AF707C80F4273.jpg\">\n <br>\n <br>\n <br>\n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202404/4203BECAD10D904F43574864005AAEB7.jpg\"></p><p><br></p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

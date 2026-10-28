@@ -1,0 +1,195 @@
+{
+ "query": "mutation($files: [FileUpdateInput!]!) { fileUpdate(files: $files) { files { id alt } userErrors { field message code } } }",
+ "variables": {
+  "files": [
+   {
+    "id": "gid://shopify/MediaImage/41318188548335",
+    "alt": "3D Rose Blazer Mini Dress in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318188744943",
+    "alt": "3D Rose Blazer Mini Dress in Black, on mannequin, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318189105391",
+    "alt": "3D Rose Blazer Mini Dress in Black, on mannequin, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318189793519",
+    "alt": "3D Rose Blazer Mini Dress in Black, close-up of the roses and lapel"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190416111",
+    "alt": "3D Rose Blazer Mini Dress in Black, on mannequin, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190547183",
+    "alt": "3D Rose Blazer Mini Dress in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318189498607",
+    "alt": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190121199",
+    "alt": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190514415",
+    "alt": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318190874863",
+    "alt": "Notch Lapel Faux Suede Blazer in Dark Brown, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318191431919",
+    "alt": "Notch Lapel Faux Suede Blazer in Dark Brown, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318192021743",
+    "alt": "Notch Lapel Faux Suede Blazer in Dark Brown, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318192185583",
+    "alt": "Notch Lapel Faux Suede Blazer in Camel, shown flat, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318199230703",
+    "alt": "Off-Shoulder Open Back Maxi Dress in Coffee, on mannequin, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318199853295",
+    "alt": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318199951599",
+    "alt": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200279279",
+    "alt": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200606959",
+    "alt": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200738031",
+    "alt": "Off-Shoulder Open Back Maxi Dress in Coffee, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200213743",
+    "alt": "Snap Collar Faux Leather Jacket in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200344815",
+    "alt": "Snap Collar Faux Leather Jacket in Black, on model, three-quarter view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318200672495",
+    "alt": "Snap Collar Faux Leather Jacket in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318201000175",
+    "alt": "Snap Collar Faux Leather Jacket in Black, on model, side view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318201327855",
+    "alt": "Snap Collar Faux Leather Jacket in Black, close-ups of the collar, pockets and cuff"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318201852143",
+    "alt": "Snap Collar Faux Leather Jacket in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318211322095",
+    "alt": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318211911919",
+    "alt": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318212010223",
+    "alt": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318212600047",
+    "alt": "Tiered Stripe Sleeveless Swing Dress in Brown, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318213353711",
+    "alt": "Tiered Stripe Sleeveless Swing Dress in Brown, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318213419247",
+    "alt": "Tiered Stripe Sleeveless Swing Dress in Blue, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318211879151",
+    "alt": "Mock Neck Side-Pleat Mini Dress in Brown, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318211977455",
+    "alt": "Mock Neck Side-Pleat Mini Dress in Brown, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318212567279",
+    "alt": "Mock Neck Side-Pleat Mini Dress in White, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318213320943",
+    "alt": "Mock Neck Side-Pleat Mini Dress in Brown, on model, three-quarter view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318215713007",
+    "alt": "Floral Satin Blazer Mini Set in Pink Floral, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318216007919",
+    "alt": "Floral Satin Blazer Mini Set in Pink Floral, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318216761583",
+    "alt": "Floral Satin Blazer Mini Set in Pink Floral, on model, three-quarter view"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318217056495",
+    "alt": "Floral Satin Blazer Mini Set in Pink Floral, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318217122031",
+    "alt": "Floral Satin Blazer Mini Set in Pink Floral, on mannequin, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318217646319",
+    "alt": "Floral Satin Blazer Mini Set in Pink Floral, on mannequin, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218072303",
+    "alt": "Cowl Neck Satin Maxi Dress in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218367215",
+    "alt": "Cowl Neck Satin Maxi Dress in Black, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218891503",
+    "alt": "Cowl Neck Satin Maxi Dress in Emerald Green, on model, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318218989807",
+    "alt": "Cowl Neck Satin Maxi Dress in Emerald Green, on model, back"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318219677935",
+    "alt": "Cowl Neck Satin Maxi Dress in Black, on mannequin, front"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41318219776239",
+    "alt": "Cowl Neck Satin Maxi Dress in Emerald Green, on mannequin, front"
+   }
+  ]
+ }
+}

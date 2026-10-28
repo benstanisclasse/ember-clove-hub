@@ -1,0 +1,7 @@
+Create one photorealistic vertical 9:16 photo: the opening frame of a phone video. Natural phone-camera look, eye level, {{ lighting }}.
+Person: the woman in image 1 ({{ presenter }}). Keep her face, hair and jewelry exactly as in image 1: {{ character.appearance.hair_color }} {{ character.appearance.hair_length }} hair in {{ character.appearance.hair_style }}, {{ character.appearance.signature_jewelry|join(", ") }}, {{ character.appearance.build }} build.
+Place: {{ "at" if room.outdoor else "in" }} {{ room.description }}. Match the place in image 2 exactly (same building, colors and details).
+{% if store_piece %}She wears {{ store_piece.prompt_description }}, identical to image 3 (same color, shape and details).{% endif %}{% if product %}She wears {{ product.prompt_description }}, identical to the product image.{% endif %}
+{% if outfit %}She {% if store_piece or product %}also {% endif %}wears: {{ outfit|join(", ") }}.{% endif %}
+Moment: {{ first_action }}. She looks toward the camera with a relaxed, natural expression, mouth closed.
+All clothes, bags, shoes and props are plain and unbranded: no logos, no monograms, no readable text anywhere in the image. {{ realism }}

@@ -1,0 +1,68 @@
+{
+  "product_id": "gid://shopify/Product/9751299358959",
+  "handle": "pagua-bay-scent-coin",
+  "original_title": "Pagua Bay Scent Coin",
+  "current_title": "Pagua Bay Scent Coin",
+  "vendor": "Isle de Nature",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/pagua-bay-scent-coin",
+  "category": "Home & Garden > Decor > Home Fragrances > Air Fresheners",
+  "colors": [],
+  "sizes": [],
+  "options": {
+    "Title": [
+      "Default Title"
+    ]
+  },
+  "price_min": 11.1,
+  "price_max": 11.1,
+  "cost_min": 10.0,
+  "cost_max": 10.0,
+  "specs": {},
+  "description_text": [
+    "Welcome to Isle de Nature. A world where luxury and unspoiled nature are one and the same. And it all begins with our signature scent, Pagua Bay. Just a hint of the intoxicating blend is all you'll need to understand why Dominica is known as \"Nature Island.\" The ceramic scent coin is perfect to elevate any small space and bring the beauty of Nature Island home.",
+    "Every purchase of Isle de Nature helps build more beehives in Dominica, the Caribbean island where we get our beeswax and the place that inspired our incredible scent."
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/you_deserve_rounds_isledenature_2009_1_1.jpg?v=1792787988",
+      "altText": "",
+      "width": 1080,
+      "height": 1346
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/wildd.foxx_isledenature_2009_2.jpg?v=1792787988",
+      "altText": "",
+      "width": 1080,
+      "height": 1346
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/Pagua_Bay_Fragrance_Scent_Coin_Isle_de_Nature.jpg?v=1792787989",
+      "altText": "",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/Isle_de_Nature_Pagua_Bay_Scent_Coin.jpg?v=1792787989",
+      "altText": "",
+      "width": 1280,
+      "height": 1280
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Default Title",
+      "sku": "PBSC001",
+      "price": "11.10",
+      "cost": "10.0",
+      "options": {
+        "Title": "Default Title"
+      }
+    }
+  ],
+  "raw_description_html": "<p><span data-preserver-spaces=\"true\">Welcome to Isle de Nature. A world where luxury and unspoiled nature are one and the same. And it all begins with our signature scent, Pagua Bay. </span>Just a hint of the intoxicating blend is all you'll need to understand why Dominica is known as \"Nature Island.\" <meta charset=\"utf-8\"><span data-preserver-spaces=\"true\">The ceramic scent coin is perfect to elevate any small space and bring the beauty of Nature Island home.</span><strong><span data-preserver-spaces=\"true\"></span></strong></p>\n<p>Every purchase of Isle de Nature helps build more beehives in Dominica, the Caribbean island where we get our beeswax and the place that inspired our incredible scent.</p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

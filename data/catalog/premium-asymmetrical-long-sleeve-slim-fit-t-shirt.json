@@ -1,0 +1,346 @@
+{
+  "product_id": "gid://shopify/Product/9756889153775",
+  "handle": "premium-asymmetrical-long-sleeve-slim-fit-t-shirt",
+  "original_title": "Premium Asymmetrical Long Sleeve Slim Fit T-Shirt",
+  "current_title": "Premium Asymmetrical Long Sleeve Slim Fit T-Shirt",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/premium-asymmetrical-long-sleeve-slim-fit-t-shirt",
+  "category": null,
+  "colors": [
+    "Gray",
+    "Rose Red",
+    "Apricot",
+    "Light Purple",
+    "Navy Blue",
+    "Black"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Gray",
+      "Rose Red",
+      "Apricot",
+      "Light Purple",
+      "Navy Blue",
+      "Black"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 32.48,
+  "price_max": 32.48,
+  "cost_min": 8.11,
+  "cost_max": 8.11,
+  "specs": {
+    "Color": "Gray, Rose Red, Apricot, Light Purple, Navy Blue, Black",
+    "Pattern Type": "Solid Color",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Diagonal Collar",
+    "Length": "Regular (50-65cm)",
+    "Fit Type": "Slim Fit",
+    "Fabric": "Rayon, Cotton Blend",
+    "Occasion": "Shopping, Daily, Dating",
+    "Size": "S, M, L",
+    "Care Instructions": "Hand Wash",
+    "Wearing Style": "Outerwear",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Length",
+        "Bust",
+        "Shoulder Width",
+        "Sleeve Length"
+      ],
+      [
+        "S",
+        "52",
+        "62",
+        "32",
+        "57"
+      ],
+      [
+        "M",
+        "53",
+        "66",
+        "33",
+        "58"
+      ],
+      [
+        "L",
+        "54",
+        "70",
+        "34",
+        "59"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EE80E5DDE4A3E85E8E05AF3ED71D8976.jpg?v=1793047979",
+      "altText": "",
+      "width": 1920,
+      "height": 1919
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FACC92CEEDBAD24667778C9C3B044218.jpg?v=1793047990",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2E50CA1CE367C965943544E13140CEA9.jpg?v=1793047991",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E96C0AA397E0EFED18804643C1DC91AD.jpg?v=1793048002",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E90F58D9C807FDC0677461163680304B.jpg?v=1793048003",
+      "altText": "",
+      "width": 1199,
+      "height": 1199
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/886943F6E549F9546D86F7166251B240.jpg?v=1793048005",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8182166237A0E62CF4A64F1837BC7622.jpg?v=1793048009",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FFF3BC13E1C61CA9B46B82F3E7982D44.jpg?v=1793048011",
+      "altText": "",
+      "width": 1919,
+      "height": 1920
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/245020086F95F1D4B953BA480D2A57CD.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/594D459F2D43D0D66DC7561D39CC1661.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1FB90EA48B3DF2EA82C0EB051E66F294.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D4368F51CCED45F6734E4D49A80FB0E5.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/58FB1E954D599841F3E1A202D8A883BF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2A6D63E706A0694D499D15E00C9F541B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F214B23DE4135614B0E4BA247CF48754.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1C99FFA3AE9CBB286211F61CAC78F862.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/975718CB5D4E914D37DDE5D12F130B4B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3E35DF596EB8F410709799FA3514C161.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D3D74155B08510A256EEEA106E3AE5F3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A2FB2772B23CEF8681EFFF964FED3F0D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DEFCE4AD2580288BC78B394C1235A19F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CA0E0EE215AB6405B909F26B25F82CDE.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2452658B42FA302E33388235E5E34324.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/54E2B1CBC23869462061531482B9622D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/867780E306924A3300CA774849E0617C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/18BC57E2794C63B2499C86701BD4F21F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/809206FFC2873699B351832B3D7224A2.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/209560985110251404DC1B4AEABAB7CE.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Gray / S",
+      "sku": "3C4CACA4814145F3B91BEAD616B0479E",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Gray / M",
+      "sku": "A881389705254CCB84058D66CC9A7B1B",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Gray / L",
+      "sku": "1123D7306D2147019E74B6122CFBDC78",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Rose Red / S",
+      "sku": "58CF100DD5BE4630BDC232ADE7150A5C",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Rose Red",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Rose Red / M",
+      "sku": "835A70D820A84114958C8E108189CFE1",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Rose Red",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Rose Red / L",
+      "sku": "4A20385255A24065A6CBA705A9BE9738",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Rose Red",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Apricot / S",
+      "sku": "105574D5DECC43D893CAC72A9C2CF678",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Apricot",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Apricot / M",
+      "sku": "CEB33991D55748A485D8A4ADCEF119A5",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Apricot",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Apricot / L",
+      "sku": "451B648E2456464694F5DE3B40D34CA6",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Apricot",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Light Purple / S",
+      "sku": "00EF335FA1F448EF92AEEF71304F00D3",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Light Purple",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Light Purple / M",
+      "sku": "508DFC5F58D74B4E87EF1076259D4D33",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Light Purple",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Light Purple / L",
+      "sku": "8651B992C3164F6CBF503052F1375674",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Light Purple",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Navy Blue / S",
+      "sku": "42F21EB9978044F4B46ADBB8AA4DCE23",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Navy Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Navy Blue / M",
+      "sku": "D4D0330DCEE54A6F8982A6596AF44526",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Navy Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Navy Blue / L",
+      "sku": "00E55CC39A304D9D9B4947C03F2907C5",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Navy Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / S",
+      "sku": "9338B05E8E974A2996C09DC30B4AE15F",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "8671F6C13F204DDAAF060198C95CFD82",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "7D71C904090E4A8F927D4E9093448F1B",
+      "price": "32.48",
+      "cost": "8.11",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size:16px;\"><strong>Color：Gray, Rose Red, Apricot, Light Purple, Navy Blue, Black</strong></p><p style=\"font-size:16px;\"><strong>Pattern Type：Solid Color</strong></p><p style=\"font-size:16px;\"><strong>Sleeve Length：Long Sleeve</strong></p><p style=\"font-size:16px;\"><strong>Neckline：Diagonal Collar</strong></p><p style=\"font-size:16px;\"><strong>Length：Regular (50-65cm)</strong></p><p style=\"font-size:16px;\"><strong>Fit Type：Slim Fit</strong></p><p style=\"font-size:16px;\"><strong>Fabric：Rayon, Cotton Blend</strong></p><p style=\"font-size:16px;\"><strong>Occasion：Shopping, Daily, Dating</strong></p><p style=\"font-size:16px;\"><strong>Size：S, M, L</strong></p><p style=\"font-size:16px;\"><strong>Care Instructions：Hand Wash</strong></p><p style=\"font-size:16px;\"><strong>Wearing Style：Outerwear</strong></p><p style=\"font-size:16px;\"><strong>Unit：cm</strong></p><table width=\"-76\">\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Shoulder Width</th>\n<th>Sleeve Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>52</td>\n<td>62</td>\n<td>32</td>\n<td>57</td>\n</tr>\n<tr>\n<td>M</td>\n<td>53</td>\n<td>66</td>\n<td>33</td>\n<td>58</td>\n</tr>\n<tr>\n<td>L</td>\n<td>54</td>\n<td>70</td>\n<td>34</td>\n<td>59</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/245020086F95F1D4B953BA480D2A57CD.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/594D459F2D43D0D66DC7561D39CC1661.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1FB90EA48B3DF2EA82C0EB051E66F294.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D4368F51CCED45F6734E4D49A80FB0E5.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/58FB1E954D599841F3E1A202D8A883BF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2A6D63E706A0694D499D15E00C9F541B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F214B23DE4135614B0E4BA247CF48754.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1C99FFA3AE9CBB286211F61CAC78F862.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/975718CB5D4E914D37DDE5D12F130B4B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3E35DF596EB8F410709799FA3514C161.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D3D74155B08510A256EEEA106E3AE5F3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A2FB2772B23CEF8681EFFF964FED3F0D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DEFCE4AD2580288BC78B394C1235A19F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CA0E0EE215AB6405B909F26B25F82CDE.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2452658B42FA302E33388235E5E34324.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/54E2B1CBC23869462061531482B9622D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/867780E306924A3300CA774849E0617C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/18BC57E2794C63B2499C86701BD4F21F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/809206FFC2873699B351832B3D7224A2.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/209560985110251404DC1B4AEABAB7CE.jpg\"> </p>",
+  "cataloged_at": "2026-10-26T17:23:29"
+}

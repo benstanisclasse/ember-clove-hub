@@ -1,0 +1,263 @@
+{
+ "query": "mutation($files: [FileUpdateInput!]!) { fileUpdate(files: $files) { files { id alt } userErrors { field message code } } }",
+ "variables": {
+  "files": [
+   {
+    "id": "gid://shopify/MediaImage/41321339191535",
+    "alt": "Puffy Heart Ball Chain Necklace in Gold Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339388143",
+    "alt": "Puffy Heart Ball Chain Necklace in Gold Necklace and Silver Necklace, styled flat lay"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340141807",
+    "alt": "Puffy Heart Ball Chain Necklace in Silver Necklace, close-up of the heart"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340371183",
+    "alt": "Puffy Heart Ball Chain Necklace in Gold Necklace, full length with extender"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340764399",
+    "alt": "Puffy Heart Ball Chain Necklace in Gold Necklace, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341386991",
+    "alt": "Puffy Heart Ball Chain Necklace in Silver Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341681903",
+    "alt": "Puffy Heart Ball Chain Necklace in Gold Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341976815",
+    "alt": "Puffy Heart Ball Chain Necklace in Gold Bracelet, close-up"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339289839",
+    "alt": "Pearl Daisy Chain Choker in Gold, shown flat with text"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339519215",
+    "alt": "Pearl Daisy Chain Choker in Gold, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340240111",
+    "alt": "Pearl Daisy Chain Choker in Gold, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340469487",
+    "alt": "Pearl Daisy Chain Choker in Gold, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340829935",
+    "alt": "Pearl Daisy Chain Choker in Gold, on model, framed close-up"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341354223",
+    "alt": "Pearl Daisy Chain Choker in Gold, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339257071",
+    "alt": "Oval Stone Curb Chain Choker in Cream, Red and Green, shown flat side by side"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339486447",
+    "alt": "Oval Stone Curb Chain Choker in Green, Red and Cream, styled flat lay"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340305647",
+    "alt": "Oval Stone Curb Chain Choker in Red and Cream, styled flat lay"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340600559",
+    "alt": "Oval Stone Curb Chain Choker in Green and Red, styled flat lay"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340928239",
+    "alt": "Oval Stone Curb Chain Choker in Red, on model"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341518063",
+    "alt": "Oval Stone Curb Chain Choker in Green, close-up with measurements"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341714671",
+    "alt": "Oval Stone Curb Chain Choker in Red, close-up with measurements"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321342468335",
+    "alt": "Oval Stone Curb Chain Choker in Cream, close-up with measurements"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339355375",
+    "alt": "Embrace Figure Pendant Necklace in Silver & Gold Couple, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340109039",
+    "alt": "Embrace Figure Pendant Necklace in Silver & Gold Mother & Child, hanging, framed shot"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340338415",
+    "alt": "Embrace Figure Pendant Necklace in Gold and Silver, pendants without chain, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340535023",
+    "alt": "Embrace Figure Pendant Necklace in Silver & Black Couple, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340961007",
+    "alt": "Embrace Figure Pendant Necklace in Silver Mother & Child, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341485295",
+    "alt": "Embrace Figure Pendant Necklace in Silver & Black Couple, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341747439",
+    "alt": "Embrace Figure Pendant Necklace in Silver Mother & Child, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339453679",
+    "alt": "Beaded Daisy Bracelet & Necklace in Red Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340272879",
+    "alt": "Beaded Daisy Bracelet & Necklace in all colors, bracelets shown side by side"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340502255",
+    "alt": "Beaded Daisy Bracelet & Necklace in Silver Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340862703",
+    "alt": "Beaded Daisy Bracelet & Necklace in Bronze Bracelet, on wrist"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341419759",
+    "alt": "Beaded Daisy Bracelet & Necklace in Red Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341616367",
+    "alt": "Beaded Daisy Bracelet & Necklace in Black Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341878511",
+    "alt": "Beaded Daisy Bracelet & Necklace in Multicolor Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321342599407",
+    "alt": "Beaded Daisy Bracelet & Necklace in Silver Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321342894319",
+    "alt": "Beaded Daisy Bracelet & Necklace in Bronze Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343287535",
+    "alt": "Beaded Daisy Bracelet & Necklace in Green Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343582447",
+    "alt": "Beaded Daisy Bracelet & Necklace in Dark Red Bracelet, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343713519",
+    "alt": "Beaded Daisy Bracelet & Necklace in Black Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344172271",
+    "alt": "Beaded Daisy Bracelet & Necklace in Red Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344237807",
+    "alt": "Beaded Daisy Bracelet & Necklace in Indigo Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344499951",
+    "alt": "Beaded Daisy Bracelet & Necklace in Multicolor Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344827631",
+    "alt": "Beaded Daisy Bracelet & Necklace in Bronze Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344925935",
+    "alt": "Beaded Daisy Bracelet & Necklace in Green Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321345188079",
+    "alt": "Beaded Daisy Bracelet & Necklace in Dark Red Necklace, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321339420911",
+    "alt": "Zodiac Crescent Moon Necklace in Libra, main view with three other signs (collage)"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340207343",
+    "alt": "Zodiac Crescent Moon Necklace in Libra, with measurements"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340403951",
+    "alt": "Zodiac Crescent Moon Necklace in Aquarius, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321340731631",
+    "alt": "Zodiac Crescent Moon Necklace in Gemini, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341321455",
+    "alt": "Zodiac Crescent Moon Necklace in Silver, plain white cabochon with full chain"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321341550831",
+    "alt": "Zodiac Crescent Moon Necklace in Libra, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321342009583",
+    "alt": "Zodiac Crescent Moon Necklace in Aquarius, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321342664943",
+    "alt": "Zodiac Crescent Moon Necklace in Gemini, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321342959855",
+    "alt": "Zodiac Crescent Moon Necklace in Pisces, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343189231",
+    "alt": "Zodiac Crescent Moon Necklace in Cancer, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343549679",
+    "alt": "Zodiac Crescent Moon Necklace in Capricorn, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343680751",
+    "alt": "Zodiac Crescent Moon Necklace in Leo, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321343779055",
+    "alt": "Zodiac Crescent Moon Necklace in Sagittarius, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344205039",
+    "alt": "Zodiac Crescent Moon Necklace in Taurus, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344401647",
+    "alt": "Zodiac Crescent Moon Necklace in Virgo, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344532719",
+    "alt": "Zodiac Crescent Moon Necklace in Aries, shown flat"
+   },
+   {
+    "id": "gid://shopify/MediaImage/41321344860399",
+    "alt": "Zodiac Crescent Moon Necklace in Scorpio, shown flat"
+   }
+  ]
+ }
+}

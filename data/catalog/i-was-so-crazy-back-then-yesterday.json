@@ -1,0 +1,260 @@
+{
+  "product_id": "gid://shopify/Product/9751305453807",
+  "handle": "i-was-so-crazy-back-then-yesterday",
+  "original_title": "I Was So Crazy Back Then Yesterday",
+  "current_title": "I Was So Crazy Back Then Yesterday",
+  "vendor": "Merchmallow",
+  "status": "ACTIVE",
+  "group": "legacy",
+  "url": "https://nkpfvz-ra.myshopify.com/products/i-was-so-crazy-back-then-yesterday",
+  "category": "Apparel & Accessories > Clothing > Clothing Tops > Sweatshirts",
+  "colors": [
+    "Black",
+    "Sport Grey",
+    "Light Pink"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Sport Grey",
+      "Light Pink"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  "price_min": 29.96,
+  "price_max": 31.07,
+  "cost_min": 27.0,
+  "cost_max": 28.0,
+  "specs": {
+    "Material Info": "Cotton/Poly fleece blend. Super warm and cozy fleece lining with an adjustable banded cuffs to keep in the heat.",
+    "The Perfect Cut": "Years of experience & research went into crafting the perfect fit. Check out our size chart to see how this fits on real people!",
+    "The Perfect Weight": "Wear your favorite design on a Hoodie that’s not too thick or heavy.",
+    "Made Fairly": "Made in a safe, friendly, fair-wage factory that is Wrap and Fair Labor certified."
+  },
+  "description_text": [
+    "Shop cool Sweats designed by hundreds of top artists and express who you are."
+  ],
+  "size_tables": [],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-was-so-crazy-back-then-yesterday-sweatshirt-sport-grey-s-peachy-sunday-t-shirt-36371845120158.png?v=1792788196",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-was-so-crazy-back-then-yesterday-sweatshirt-light-pink-s-peachy-sunday-t-shirt-36371845054622.png?v=1792788196",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/i-was-so-crazy-back-then-yesterday-sweatshirt-black-s-peachy-sunday-t-shirt-36371845087390.png?v=1792788197",
+      "altText": "",
+      "width": 1080,
+      "height": 1080
+    }
+  ],
+  "description_images": [
+    "https://cdn.shopify.com/s/files/1/0023/9098/2771/files/2e3f984739acfc9b192e70da2c1650ec_480x480.jpg?v=1629623398"
+  ],
+  "variants": [
+    {
+      "title": "Black / S",
+      "sku": "763192",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "762254",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "950476",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / XL",
+      "sku": "651872",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Black",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Black / 2XL",
+      "sku": "36666",
+      "price": "30.52",
+      "cost": "27.5",
+      "options": {
+        "Color": "Black",
+        "Size": "2XL"
+      }
+    },
+    {
+      "title": "Black / 3XL",
+      "sku": "502617",
+      "price": "31.07",
+      "cost": "28.0",
+      "options": {
+        "Color": "Black",
+        "Size": "3XL"
+      }
+    },
+    {
+      "title": "Sport Grey / S",
+      "sku": "146615",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Sport Grey",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Sport Grey / M",
+      "sku": "126393",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Sport Grey",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Sport Grey / L",
+      "sku": "85206",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Sport Grey",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Sport Grey / XL",
+      "sku": "790830",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Sport Grey",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Sport Grey / 2XL",
+      "sku": "46573",
+      "price": "30.52",
+      "cost": "27.5",
+      "options": {
+        "Color": "Sport Grey",
+        "Size": "2XL"
+      }
+    },
+    {
+      "title": "Sport Grey / 3XL",
+      "sku": "144532",
+      "price": "31.07",
+      "cost": "28.0",
+      "options": {
+        "Color": "Sport Grey",
+        "Size": "3XL"
+      }
+    },
+    {
+      "title": "Light Pink / S",
+      "sku": "972664",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Light Pink",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Light Pink / M",
+      "sku": "805973",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Light Pink",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Light Pink / L",
+      "sku": "613171",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Light Pink",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Light Pink / XL",
+      "sku": "732266",
+      "price": "29.96",
+      "cost": "27.0",
+      "options": {
+        "Color": "Light Pink",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Light Pink / 2XL",
+      "sku": "889641",
+      "price": "30.52",
+      "cost": "27.5",
+      "options": {
+        "Color": "Light Pink",
+        "Size": "2XL"
+      }
+    },
+    {
+      "title": "Light Pink / 3XL",
+      "sku": "904200",
+      "price": "31.07",
+      "cost": "28.0",
+      "options": {
+        "Color": "Light Pink",
+        "Size": "3XL"
+      }
+    }
+  ],
+  "raw_description_html": "<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"><span class=\"h h--6\"><span>Shop cool Sweats designed by hundreds of top artists and express who you are.</span></span></div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"><span class=\"h h--6\"><span></span></span></div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"><span class=\"h h--6\"><span></span></span></div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"><span class=\"h h--6\"><span></span></span></div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"><strong><span class=\"h h--6\"></span></strong></div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\">\n<strong><span class=\"h h--6\">Material Info: </span></strong>Cotton/Poly fleece blend. Super warm and cozy fleece lining with an adjustable banded cuffs to keep in the heat.</div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"></div>\n<div data-toggle=\".jsDesignMaterials\" class=\"m-design__purchase-info-title jsToggleCtrl\"></div>\n<div class=\"m-design__purchase-info-content\">\n<p><strong>The Perfect Cut: </strong>Years of experience &amp; research went into crafting the perfect fit. Check out our size chart to see how this fits on real people!</p>\n<p><strong>The Perfect Weight: </strong>Wear your favorite design on a Hoodie that’s not too thick or heavy.</p>\n<p><strong>Made Fairly: </strong>Made in a safe, friendly, fair-wage factory that is Wrap and Fair Labor certified.</p>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0023/9098/2771/files/2e3f984739acfc9b192e70da2c1650ec_480x480.jpg?v=1629623398\"></p>\n</div>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

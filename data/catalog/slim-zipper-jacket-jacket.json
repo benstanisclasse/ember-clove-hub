@@ -1,0 +1,181 @@
+{
+  "product_id": "gid://shopify/Product/9757095395567",
+  "handle": "slim-zipper-jacket-jacket",
+  "original_title": "Slim zipper jacket jacket",
+  "current_title": "Slim zipper jacket jacket",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/slim-zipper-jacket-jacket",
+  "category": null,
+  "colors": [
+    "25598 Black"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "options": {
+    "Color": [
+      "25598 Black"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  "price_min": 60.42,
+  "price_max": 60.42,
+  "cost_min": 15.33,
+  "cost_max": 15.33,
+  "specs": {
+    "Color": "25598 Black",
+    "Style": "Elegant Commuting",
+    "Pattern Type": "Belted",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Stand Collar",
+    "Material": "Artificial Leather",
+    "Fabric": "PU",
+    "Closure Type": "Zipper",
+    "Fit Type": "Waist-Cinched",
+    "Occasion": "Casual, Commuting",
+    "Gender": "Women",
+    "Size": "unit: cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "International Size",
+        "Shoulder Width",
+        "Sleeve Length",
+        "Bust",
+        "Garment Length",
+        "Front Length"
+      ],
+      [
+        "S",
+        "39",
+        "60",
+        "94",
+        "54",
+        "58.0"
+      ],
+      [
+        "M",
+        "40",
+        "61",
+        "98",
+        "55",
+        "59.0"
+      ],
+      [
+        "L",
+        "41.2",
+        "62",
+        "104",
+        "56.5",
+        "60.0"
+      ],
+      [
+        "XL",
+        "42.4",
+        "63",
+        "110",
+        "58",
+        "61.0"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F14295209D5CF498F14877FE57A0CF8.jpg?v=1793050012",
+      "altText": "",
+      "width": 1066,
+      "height": 1066
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EC5D1B4F8D83274235B56AE03C276B5A.jpg?v=1793050013",
+      "altText": "",
+      "width": 1066,
+      "height": 1066
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C02B46CA6B000069569017DF2C07DA94.jpg?v=1793050015",
+      "altText": "",
+      "width": 1066,
+      "height": 1066
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E70C82FED21028B05D52821F20A2C42C.jpg?v=1793050017",
+      "altText": "",
+      "width": 1066,
+      "height": 1066
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E3D1E5177B57191054F38C630063AF1E.jpg?v=1793050019",
+      "altText": "",
+      "width": 1066,
+      "height": 1066
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/100A2FBB6DCFE282C41A5DB7D20F8CB9.jpg?v=1793050021",
+      "altText": "",
+      "width": 790,
+      "height": 939
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202601/AE0D8B0F30434869F77A1F029A81A4E5.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202601/5CC672799E3ABBF2B36C562DB5DB600F.jpg",
+    "https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202601/49D36848C771881BF0649A4D2C2B0CDD.jpg"
+  ],
+  "variants": [
+    {
+      "title": "25598 Black / S",
+      "sku": "53C8B3156ACD4065BD6A195DFE7263C9",
+      "price": "60.42",
+      "cost": "15.33",
+      "options": {
+        "Color": "25598 Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "25598 Black / M",
+      "sku": "F7C538DCF8BD4759BAB6F520233FD73E",
+      "price": "60.42",
+      "cost": "15.33",
+      "options": {
+        "Color": "25598 Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "25598 Black / L",
+      "sku": "F81340B4D7C140F6BE83B7B61837EAB9",
+      "price": "60.42",
+      "cost": "15.33",
+      "options": {
+        "Color": "25598 Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "25598 Black / XL",
+      "sku": "A3C3CDD3992040B5B63F1AECA668B0C5",
+      "price": "60.42",
+      "cost": "15.33",
+      "options": {
+        "Color": "25598 Black",
+        "Size": "XL"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Color: 25598 Black</strong></p><p><strong>Style: Elegant Commuting</strong></p><p><strong>Pattern Type: Belted</strong></p><p><strong>Sleeve Length: Long Sleeve</strong></p><p><strong>Neckline: Stand Collar</strong></p><p><strong>Material: Artificial Leather</strong></p><p><strong>Fabric: PU</strong></p><p><strong>Closure Type: Zipper</strong></p><p><strong>Fit Type: Waist-Cinched</strong></p><p><strong>Occasion: Casual, Commuting</strong></p><p><strong>Gender: Women</strong></p><p><strong>Size: S , M , L  XL</strong></p><p><strong>Size: unit: cm</strong></p><table width=\"-420\">\n<thead><tr class=\"firstRow\">\n<th>International Size</th>\n<th>Shoulder Width</th>\n<th>Sleeve Length</th>\n<th>Bust</th>\n<th>Garment Length</th>\n<th>Front Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>39</td>\n<td>60</td>\n<td>94</td>\n<td>54</td>\n<td>58.0</td>\n</tr>\n<tr>\n<td>M</td>\n<td>40</td>\n<td>61</td>\n<td>98</td>\n<td>55</td>\n<td>59.0</td>\n</tr>\n<tr>\n<td>L</td>\n<td>41.2</td>\n<td>62</td>\n<td>104</td>\n<td>56.5</td>\n<td>60.0</td>\n</tr>\n<tr>\n<td>XL</td>\n<td>42.4</td>\n<td>63</td>\n<td>110</td>\n<td>58</td>\n<td>61.0</td>\n</tr>\n</tbody>\n</table> <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202601/AE0D8B0F30434869F77A1F029A81A4E5.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202601/5CC672799E3ABBF2B36C562DB5DB600F.jpg\"> \n <img src=\"https://shopifyfile.oss-accelerate.aliyuncs.com/attached/pingtai/202601/49D36848C771881BF0649A4D2C2B0CDD.jpg\"> \n <p><br></p>",
+  "cataloged_at": "2026-10-26T23:02:48"
+}

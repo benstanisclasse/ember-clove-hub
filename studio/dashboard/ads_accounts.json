@@ -1,0 +1,29 @@
+[
+ {
+  "platform": "meta",
+  "account": "Ember & Clove's ad account",
+  "account_id": "XXX",
+  "status": "ACTIVE",
+  "active_campaigns": 1,
+  "note": "EC | Page follows | Test F2 active, no spend yet",
+  "refreshed_at": "2026-10-27T20:34"
+ },
+ {
+  "platform": "tiktok",
+  "account": "DeskConnect IT LLC_adv",
+  "account_id": "XXX",
+  "status": "ACTIVE",
+  "active_campaigns": 0,
+  "note": "EC | Sales | Test C1 is an unpublished draft in Ads Manager",
+  "refreshed_at": "2026-10-27T20:34"
+ },
+ {
+  "platform": "microsoft",
+  "account": "Ember & Clove",
+  "account_id": "XXX",
+  "status": "Active",
+  "active_campaigns": 1,
+  "note": "PMax Ember & Clove active since 10/26, delivering soon (learning)",
+  "refreshed_at": "2026-10-27T20:34"
+ }
+]

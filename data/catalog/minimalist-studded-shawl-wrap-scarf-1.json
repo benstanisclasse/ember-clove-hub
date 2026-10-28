@@ -1,0 +1,180 @@
+{
+  "product_id": "gid://shopify/Product/9756958851311",
+  "handle": "minimalist-studded-shawl-wrap-scarf-1",
+  "original_title": "Minimalist Studded Shawl Wrap Scarf",
+  "current_title": "Minimalist Studded Shawl Wrap Scarf",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "other",
+  "url": "https://emberandclove.com/products/minimalist-studded-shawl-wrap-scarf-1",
+  "category": null,
+  "colors": [
+    "Dark Brown"
+  ],
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Dark Brown"
+    ],
+    "Size": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 38.34,
+  "price_max": 38.34,
+  "cost_min": 11.84,
+  "cost_max": 11.84,
+  "specs": {
+    "Color": "Dark Brown",
+    "Pattern Type": "Plain",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Lapel Collar",
+    "Length": "Regular Length",
+    "Fabric": "Polyester",
+    "Closure Type": "Pullover",
+    "Details": "Bound Edges, Rivets",
+    "Fit Type": "Slim Fit",
+    "Gender": "Unisex",
+    "Size": "XS, S, M, L",
+    "Unit": "cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "US Size",
+        "Length",
+        "Sleeve Length"
+      ],
+      [
+        "XS",
+        "2",
+        "51",
+        "57"
+      ],
+      [
+        "S",
+        "4",
+        "52",
+        "58"
+      ],
+      [
+        "M",
+        "6",
+        "53",
+        "59"
+      ],
+      [
+        "L",
+        "08/10",
+        "54.5",
+        "60.5"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E9E0B125E8482F7835CA720DE1ECA265_148b10f6-c1ab-4307-afdf-74567cd93142.jpg?v=1793048112",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/20F66EEC9946647559B9B0D43E20BD08.jpg?v=1793048114",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C18C6421FB4B945B1731313DBC443252.jpg?v=1793048116",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CD2D07F899D11D72AA64CDDDD8233EC6.jpg?v=1793048118",
+      "altText": "",
+      "width": 1785,
+      "height": 1785
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CB8FA80309C572C769855024F8F516C3.jpg?v=1793048122",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9A2FA0F6AE8DDF7876DC4AF598624B69.jpg?v=1793048123",
+      "altText": "",
+      "width": 1920,
+      "height": 1920
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9C88C50EB72D028FA1F6671D5F4CA1E4.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EE4067148C558085D40155D00C4D3F6A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6125D4A8DAB06BB1BB7DE3DAB195752B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9E9D7BBF02A5C358BC0E1A1C9B0974D7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0689121D7710B6E6340371304C2F267C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8E9AA13336A3155AA5348ED168201486.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7BE3C87CD738BB9A2B6BDB37DA054DC3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/933276E7A33D7DDCBB9E10CABD9FFC50.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/10BAD15311D1CE805D30703EB03C562F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BB5BECE5B5D52353BE85B49EB3A2A17E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7FD786EC4F6C489BCBC90B472A73C398.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/738FB73F9A2DE5520CB232104B8B0499.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Dark Brown / XS",
+      "sku": "9773FEA93B8940D0A0CAB37497F994FB",
+      "price": "38.34",
+      "cost": "11.84",
+      "options": {
+        "Color": "Dark Brown",
+        "Size": "XS"
+      }
+    },
+    {
+      "title": "Dark Brown / S",
+      "sku": "9E2470D505FE4104847C55B53576A4D2",
+      "price": "38.34",
+      "cost": "11.84",
+      "options": {
+        "Color": "Dark Brown",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Dark Brown / M",
+      "sku": "B8A39656E269437CA4D6091127061F3F",
+      "price": "38.34",
+      "cost": "11.84",
+      "options": {
+        "Color": "Dark Brown",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Dark Brown / L",
+      "sku": "EF1CA79904524A01A35AC35F54D625EB",
+      "price": "38.34",
+      "cost": "11.84",
+      "options": {
+        "Color": "Dark Brown",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p style=\"font-size: 16px;\"><strong>Color:Dark Brown</strong></p><p style=\"font-size: 16px;\"><strong>Pattern Type:Plain</strong></p><p style=\"font-size: 16px;\"><strong>Sleeve Length:Long Sleeve</strong></p><p style=\"font-size: 16px;\"><strong>Neckline:Lapel Collar</strong></p><p style=\"font-size: 16px;\"><strong>Length:Regular Length</strong></p><p style=\"font-size: 16px;\"><strong>Fabric:Polyester</strong></p><p style=\"font-size: 16px;\"><strong>Closure Type:Pullover</strong></p><p style=\"font-size: 16px;\"><strong>Details:Bound Edges, Rivets</strong></p><p style=\"font-size: 16px;\"><strong>Fit Type:Slim Fit</strong></p><p style=\"font-size: 16px;\"><strong>Gender:Unisex</strong></p><p style=\"font-size: 16px;\"><strong>Size:XS, S, M, L</strong></p><p style=\"font-size: 16px;\"><strong>Unit：cm</strong></p><table width=\"-76\">\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>US Size</th>\n<th>Length</th>\n<th>Sleeve Length</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>XS</td>\n<td>2</td>\n<td>51</td>\n<td>57</td>\n</tr>\n<tr>\n<td>S</td>\n<td>4</td>\n<td>52</td>\n<td>58</td>\n</tr>\n<tr>\n<td>M</td>\n<td>6</td>\n<td>53</td>\n<td>59</td>\n</tr>\n<tr>\n<td>L</td>\n<td>08/10</td>\n<td>54.5</td>\n<td>60.5</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9C88C50EB72D028FA1F6671D5F4CA1E4.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/EE4067148C558085D40155D00C4D3F6A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6125D4A8DAB06BB1BB7DE3DAB195752B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9E9D7BBF02A5C358BC0E1A1C9B0974D7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0689121D7710B6E6340371304C2F267C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8E9AA13336A3155AA5348ED168201486.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7BE3C87CD738BB9A2B6BDB37DA054DC3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/933276E7A33D7DDCBB9E10CABD9FFC50.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/10BAD15311D1CE805D30703EB03C562F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/BB5BECE5B5D52353BE85B49EB3A2A17E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7FD786EC4F6C489BCBC90B472A73C398.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/738FB73F9A2DE5520CB232104B8B0499.jpg\"></p>",
+  "cataloged_at": "2026-10-26T23:02:47"
+}

@@ -1,0 +1,316 @@
+{
+  "creative_id": "EC-P01-A03-H01-V01",
+  "parent_id": null,
+  "changed_field": null,
+  "experiment_id": "C1-P01-A03",
+  "product_id": "gid://shopify/Product/9751656071407",
+  "platform": "tiktok",
+  "length_s": 15,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "Okay, you need to see this sweater dress.",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "curiosity",
+    "opening_visual": "creator-face",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "UGC try-on haul (modeled on owner's Marketing Studio sample)",
+        "product": "Cable Knit Mock Neck Midi Dress",
+        "color": "Caramel",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims",
+        "recorded_at": "2026-10-24T20:39:03",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "product_reference": [
+      {
+        "references": [
+          "assets\\EC-P01-A02-H01-V01\\ref1_dress_neck_down.jpg",
+          "assets\\EC-P01-A02-H01-V01\\ref2_cable_slit_closeup.jpg"
+        ],
+        "processing": "face-free crops of Shopify 1E3E6FA7B028205FCC94E89C7CF6CC63.jpg (from EC-P01-A02)",
+        "recorded_at": "2026-10-24T20:39:03",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Okay, you need to see this sweater dress.",
+          "It's cable knit, and it's fitted through the hips.",
+          "And the slit means you can actually walk in it.",
+          "It comes in seven colors. Link's right here."
+        ],
+        "recorded_at": "2026-10-24T20:39:03",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5/reference-to-video",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 15 seconds, four quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is an AI-generated young adult woman (not any real person) with long brunette hair, friendly and excited, speaking English directly to the camera. The dress in every shot is the exact caramel-brown cable-knit midi sweater dress from the reference images: mock neck, ribbed waistband, long sleeves with ribbed cuffs, vertical cable-knit pattern down the skirt with a diagonal wrap seam, fitted through the hip, midi length, and a front slit. Keep its color, knit pattern, neckline, waistband and slit identical to the references.\nShot 1 (0-3 s): wearing a casual white tee, she holds the caramel dress on a hanger up to the camera and says: \"Okay, you need to see this sweater dress.\"\nShot 2 (3-7 s): cut to her wearing the dress, mid-shot, smoothing the ribbed waist and turning slightly, saying: \"It's cable knit, and it's fitted through the hips.\"\nShot 3 (7-11 s): cut to a full-length shot in black knee-high boots; she takes big confident steps that open the front slit, then does a little twirl, saying: \"And the slit means you can actually walk in it.\"\nShot 4 (11-15 s): she walks up to the camera into a smiling close-up and says: \"It comes in seven colors. Link's right here.\"\nClear natural speech, light room tone, no background music, no on-screen text, no logos.",
+        "duration": 15,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "request_id": "8fb2b1d6-34a2-4a04-9a50-061caf34a36d",
+        "status": "completed",
+        "cost_note": "actual: open.higgsfield.ai billing 2026-10-25 usage -$5.89 (~$0.39/s); quoted ~$2.63 from the 'from $0.175/s' list price; owner cap was $3.50 -> exceeded by $2.39",
+        "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/8fb2b1d6-34a2-4a04-9a50-061caf34a36d/91408b52-671d-4ca3-9831-ed697e9dd620.mp4",
+        "recorded_at": "2026-10-24T20:44:09",
+        "credits": 0,
+        "usd": 5.89
+      }
+    ],
+    "post_production": [
+      {
+        "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+        "source_video": "assets\\EC-P01-A03-H01-V01\\tryon_raw.mp4",
+        "hook_overlay": null,
+        "captions": [
+          [
+            0.2,
+            2.9,
+            "Okay, you need to see this sweater dress."
+          ],
+          [
+            3.0,
+            6.9,
+            "It's cable knit, and it's fitted through the hips."
+          ],
+          [
+            7.0,
+            11.4,
+            "And the slit means you can actually walk in it."
+          ],
+          [
+            11.5,
+            15.0,
+            "It comes in seven colors. Link's right here."
+          ]
+        ],
+        "end_card": {
+          "product": "Cable Knit Mock Neck Midi Dress",
+          "price": "$52.99",
+          "line1": "7 colors · Sizes S–XL",
+          "line2": "Free US shipping over $70",
+          "cta": "Shop now"
+        },
+        "base_seconds": 15.04,
+        "end_card_seconds": 2.5,
+        "total_seconds": 17.54,
+        "layers": [
+          [
+            0.2,
+            2.9
+          ],
+          [
+            3.0,
+            6.9
+          ],
+          [
+            7.0,
+            11.4
+          ],
+          [
+            11.5,
+            15.0
+          ]
+        ],
+        "music": "none in file; add from TikTok commercial music library at ad creation",
+        "recorded_at": "2026-10-24T20:56:53",
+        "credits": 0,
+        "usd": 0.0,
+        "superseded": true
+      },
+      {
+        "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+        "source_video": "assets\\EC-P01-A03-H01-V01\\tryon_raw.mp4",
+        "hook_overlay": null,
+        "captions": [
+          [
+            0.2,
+            2.9,
+            "Okay, you need to see this sweater dress."
+          ],
+          [
+            3.0,
+            6.9,
+            "It's cable knit, and it's fitted through the hips."
+          ],
+          [
+            7.0,
+            11.4,
+            "And the slit means you can actually walk in it."
+          ],
+          [
+            11.5,
+            15.0,
+            "It comes in seven colors. Link's right here."
+          ]
+        ],
+        "end_card": {
+          "product": "Cable Knit Mock Neck Midi Dress",
+          "price": "$52.99",
+          "line1": "7 colors · Sizes S–XL",
+          "line2": "Free US shipping over $70",
+          "cta": "Shop now"
+        },
+        "base_seconds": 15.04,
+        "end_card_seconds": 2.5,
+        "total_seconds": 17.54,
+        "layers": [
+          [
+            0.2,
+            2.9
+          ],
+          [
+            3.0,
+            6.9
+          ],
+          [
+            7.0,
+            11.4
+          ],
+          [
+            11.5,
+            15.0
+          ]
+        ],
+        "music": "none in file; add from TikTok commercial music library at ad creation",
+        "recorded_at": "2026-10-24T20:58:26",
+        "credits": 0,
+        "usd": 0.0,
+        "superseded": true
+      },
+      {
+        "tool": "ffmpeg 7.1 (imageio-ffmpeg) + Pillow, scripts/ad_edit.py",
+        "source_video": "assets\\EC-P01-A03-H01-V01\\tryon_raw.mp4",
+        "hook_overlay": null,
+        "captions": [
+          [
+            0.2,
+            2.9,
+            "Okay, you need to see this sweater dress."
+          ],
+          [
+            3.0,
+            6.9,
+            "It's cable knit, and it's fitted through the hips."
+          ],
+          [
+            7.0,
+            11.4,
+            "And the slit means you can actually walk in it."
+          ],
+          [
+            11.5,
+            15.0,
+            "It comes in seven colors. Link's right here."
+          ]
+        ],
+        "end_card": {
+          "product": "Cable Knit Mock Neck Midi Dress",
+          "price": "$52.99",
+          "line1": "7 colors · Sizes S–XL",
+          "line2": "Free US shipping over $70",
+          "cta": "Shop now"
+        },
+        "base_seconds": 15.04,
+        "end_card_seconds": 2.5,
+        "total_seconds": 17.54,
+        "layers": [
+          [
+            0.2,
+            2.9
+          ],
+          [
+            3.0,
+            6.9
+          ],
+          [
+            7.0,
+            11.4
+          ],
+          [
+            11.5,
+            15.0
+          ]
+        ],
+        "music": "none in file; add from TikTok commercial music library at ad creation",
+        "recorded_at": "2026-10-24T20:59:18",
+        "credits": 0,
+        "usd": 0.0,
+        "superseded": true
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 5.89
+  },
+  "status": "APPROVED",
+  "created_at": "2026-10-24T20:39:03",
+  "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/8fb2b1d6-34a2-4a04-9a50-061caf34a36d/91408b52-671d-4ca3-9831-ed697e9dd620.mp4",
+  "local_path": "assets/EC-P01-A03-H01-V01/tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-24T20:45:47",
+    "result": "visual pass; audio not verified",
+    "notes": "caramel color, ribbed mock neck, ribbed waistband, cable pattern with diagonal seam, front slit all match; hanger shot matches; 4 beats (hanger 0-3s, fit check 3-7s, full-length walk + twirl in boots 7-11s, selfie close-up 12-15s); AI-generated presenter; audio track present (15.07s) but speech not listened to - owner to confirm lines are clear and correct",
+    "owner_review": {
+      "approved_at": "2026-10-24T20:50:15",
+      "note": "Owner watched and listened 2026-10-24: video and spoken lines good."
+    }
+  },
+  "status_reason": "Raw generated try-on video approved by owner (watched and listened)",
+  "elements": {
+    "observed": {
+      "room": "living_room",
+      "lighting": "natural_daylight",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "brown",
+      "hair_length": "shoulder",
+      "jewelry": [
+        "hoop_earrings",
+        "rings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "true",
+      "glasses": "false",
+      "worn_with": [
+        "boots"
+      ],
+      "color_palette": "neutral_earth",
+      "props": [
+        "none"
+      ],
+      "camera_style": "mixed",
+      "main_shot_distance": "mixed",
+      "camera_movement": "slight",
+      "actions": [
+        "talking_to_camera",
+        "posing",
+        "hand_detail",
+        "turning_twirling",
+        "walking"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:04:54"
+    }
+  }
+}

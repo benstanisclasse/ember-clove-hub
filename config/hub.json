@@ -1,0 +1,153 @@
+{
+  "_note": "Non-secret IDs only. Secrets live in Windows user environment variables named under 'secrets'. Never put key values in this file.",
+  "store": {
+    "name": "Ember & Clove",
+    "shopify_domain": "nkpfvz-ra.myshopify.com",
+    "currency": "USD",
+    "timezone": "America/New_York"
+  },
+  "tiktok": {
+    "advertiser_id": "XXX",
+    "business_center_id": "XXX",
+    "identity_username": "emberandclove",
+    "identity_id": "XXX",
+    "identity_type": "BC_AUTH_TT",
+    "do_not_use_identity_ids": [
+      "XXX"
+    ],
+    "pixel_code": "XXX",
+    "pixel_id": "XXX",
+    "destination": "website",
+    "daily_report_request": {
+      "_note": "Arguments for the TikTok connector's report_integrated_get; save the response to data/inbox/tiktok_report_<date>.json, then run metrics_sync.py.",
+      "report_type": "BASIC",
+      "data_level": "AUCTION_AD",
+      "dimensions": [
+        "ad_id",
+        "stat_time_day"
+      ],
+      "metrics": [
+        "ad_name",
+        "adgroup_id",
+        "campaign_id",
+        "spend",
+        "impressions",
+        "clicks",
+        "ctr",
+        "cpc",
+        "cpm",
+        "video_play_actions",
+        "video_watched_2s",
+        "video_watched_6s",
+        "average_video_play",
+        "onsite_on_web_cart",
+        "checkout",
+        "complete_payment",
+        "complete_payment_roas"
+      ],
+      "page_size": 1000
+    }
+  },
+  "google": {
+    "ga4_measurement_id": "XXX",
+    "merchant_center_id": "XXX"
+  },
+  "higgsfield": {
+    "tiktok_connector_id": "XXX",
+    "api_base": "https://api.higgsfield.ai",
+    "default_video_model": "seedance_2_5",
+    "default_resolution": "720p",
+    "default_aspect_ratio": "9:16"
+  },
+  "secrets": {
+    "higgsfield_api": "HIGGSFIELD_API_KEY",
+    "kalodata_api": "KALODATA_API_KEY",
+    "openrouter_api": "OPENROUTER_API_KEY",
+    "postzen_api": "POSTZEN_API_KEY"
+  },
+  "economics": {
+    "_note": "Assumptions used by economics.py. Change here, then rerun economics.py.",
+    "payment_fee_pct": 0.029,
+    "payment_fee_fixed": 0.3,
+    "refund_rate": 0.05,
+    "default_shipping_cost": null,
+    "target_cpa_ratio": 0.7,
+    "max_loss_multiple": 1.5,
+    "min_max_loss": 20,
+    "desired_break_even_cpa": 20
+  },
+  "rules": {
+    "_note": "Thresholds used by decide.py.",
+    "learning_days": 3,
+    "winner_min_purchases": 3,
+    "promising_cpa_multiple": 1.5,
+    "weak_ratio": 0.7,
+    "tracking_check_clicks": 100
+  },
+  "tags": {
+    "format": [
+      "product",
+      "tutorial",
+      "try-on",
+      "unboxing",
+      "review",
+      "phone",
+      "slideshow"
+    ],
+    "hook_type": [
+      "question",
+      "statement",
+      "pov",
+      "demo-first",
+      "problem-moment",
+      "curiosity",
+      "gift",
+      "callout"
+    ],
+    "opening_visual": [
+      "product-closeup",
+      "hands-in-action",
+      "creator-face",
+      "lifestyle",
+      "text-card",
+      "product-on-body-stride",
+      "product-on-body-turn",
+      "product-on-body-walk",
+      "product-on-body-couch",
+      "product-on-body-occasion"
+    ],
+    "setting": [
+      "bathroom",
+      "kitchen",
+      "bedroom",
+      "desk",
+      "outdoor",
+      "studio",
+      "living-room"
+    ],
+    "creator": [
+      "none",
+      "hands-only",
+      "on-camera"
+    ],
+    "on_screen_text": [
+      "none",
+      "captions",
+      "hook",
+      "step-labels",
+      "captions+hook"
+    ],
+    "voice": [
+      "none",
+      "voiceover",
+      "on-camera"
+    ]
+  },
+  "postzen": {
+    "tiktok_account_id": "XXX",
+    "tiktok_username": "Ember & Clove",
+    "profile_id": "XXX",
+    "facebook_account_id": "XXX",
+    "facebook_page": "Ember & Clove"
+  }
+}

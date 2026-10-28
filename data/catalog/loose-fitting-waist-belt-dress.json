@@ -1,0 +1,171 @@
+{
+  "product_id": "gid://shopify/Product/9751655678191",
+  "handle": "loose-fitting-waist-belt-dress",
+  "original_title": "Loose fitting waist belt dress",
+  "current_title": "Loose fitting waist belt dress",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://nkpfvz-ra.myshopify.com/products/loose-fitting-waist-belt-dress",
+  "category": null,
+  "colors": [
+    "Khaki"
+  ],
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L"
+  ],
+  "options": {
+    "Color": [
+      "Khaki"
+    ],
+    "Size": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  "price_min": 46.72,
+  "price_max": 46.72,
+  "cost_min": 11.4,
+  "cost_max": 11.4,
+  "specs": {
+    "Color": "Khaki",
+    "Style": "European and American style",
+    "Fabric name": "Polyester",
+    "Sleeve length": "Long sleeves",
+    "Skirt type": "A-line skirt",
+    "Size": "unit：cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      [
+        "Shoulder width",
+        "51",
+        "53",
+        "55",
+        "57"
+      ],
+      [
+        "Chest",
+        "86",
+        "90",
+        "94",
+        "98"
+      ],
+      [
+        "Waist",
+        "68",
+        "72",
+        "76",
+        "80"
+      ],
+      [
+        "Length",
+        "125",
+        "126",
+        "127",
+        "128"
+      ],
+      [
+        "Sleeve length",
+        "52",
+        "53",
+        "54",
+        "55"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5C7FABE9FA36996EA75630A20BCA6644.jpg?v=1792822462",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/427A1FB1772541B9EDBEF43E7B8CF1C8.jpg?v=1792822464",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/67CB957785938FBB6C9A1B0946438327.jpg?v=1792822465",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EA257AA8592D54C1E044CAF14DEDEF89.jpg?v=1792822466",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F9D4161C5D8641F1C0645263FA2B172B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8EA74BD938B8A8838A77457AE9C893E8.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/772D98025DD2DEB9D60C90E76B902595.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D8B965E00CF0E718DAA01B89D4BCD18A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2B41F58BE9EB94A6AAA492782DF0A8C7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9A4B59BB39D541F8D75C89FEA246961B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1901A42FED0D57BC983ACC4EB33F738C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3B49A23883D4A7AE744B0CAB1345CC54.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/59E24455B67D003DCDF6B84508887248.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Khaki / XS",
+      "sku": "F87DF147EEE84FE98C642133D507896B",
+      "price": "46.72",
+      "cost": "11.4",
+      "options": {
+        "Color": "Khaki",
+        "Size": "XS"
+      }
+    },
+    {
+      "title": "Khaki / S",
+      "sku": "4AB239AD536E417CAA05645229F1792B",
+      "price": "46.72",
+      "cost": "11.4",
+      "options": {
+        "Color": "Khaki",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Khaki / M",
+      "sku": "001970673369478E8511D950AEDA2FB1",
+      "price": "46.72",
+      "cost": "11.4",
+      "options": {
+        "Color": "Khaki",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Khaki / L",
+      "sku": "0C7B1E42C0DB466CA0FCCD3B1B4B2F4C",
+      "price": "46.72",
+      "cost": "11.4",
+      "options": {
+        "Color": "Khaki",
+        "Size": "L"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Color: Khaki</strong></p><p><strong>Style: European and American style</strong></p><p><strong>Fabric name: Polyester</strong></p><p><strong>Sleeve length: Long sleeves</strong></p><p><strong>Skirt type: A-line skirt</strong></p><p><strong>Size: XS, S, M, L</strong></p><p><strong>Size:unit：cm</strong></p><p></p><table width=\"542\">\n<colgroup>\n<col width=\"150\" style=\"width:150px\">\n<col width=\"89\" style=\"width:89px\">\n<col width=\"101\" style=\"width:101px\" span=\"3\">\n</colgroup>\n<tbody>\n<tr style=\"height:18px\" class=\"firstRow\">\n<td width=\"150\" style=\"background-color: rgb(242, 242, 242);\"><strong>Size</strong></td>\n<td width=\"89\" style=\"background-color: rgb(242, 242, 242);\"><strong>XS</strong></td>\n<td width=\"101\" style=\"background-color: rgb(242, 242, 242);\"><strong>S</strong></td>\n<td width=\"101\" style=\"background-color: rgb(242, 242, 242);\"><strong>M</strong></td>\n<td width=\"101\" style=\"background-color: rgb(242, 242, 242);\"><strong>L</strong></td>\n</tr>\n<tr style=\"height:18px\">\n<td style=\"\">Shoulder width</td>\n<td>51</td>\n<td>53</td>\n<td>55</td>\n<td>57</td>\n</tr>\n<tr style=\"height:18px\">\n<td style=\"\">Chest </td>\n<td>86</td>\n<td>90</td>\n<td>94</td>\n<td>98</td>\n</tr>\n<tr style=\"height:18px\">\n<td style=\"\">Waist </td>\n<td>68</td>\n<td>72</td>\n<td>76</td>\n<td>80</td>\n</tr>\n<tr style=\"height:18px\">\n<td style=\"\">Length</td>\n<td>125</td>\n<td>126</td>\n<td>127</td>\n<td>128</td>\n</tr>\n<tr style=\"height:18px\">\n<td style=\"\">Sleeve length</td>\n<td>52</td>\n<td>53</td>\n<td>54</td>\n<td>55</td>\n</tr>\n</tbody>\n</table><p><br></p><p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F9D4161C5D8641F1C0645263FA2B172B.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8EA74BD938B8A8838A77457AE9C893E8.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/772D98025DD2DEB9D60C90E76B902595.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/D8B965E00CF0E718DAA01B89D4BCD18A.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/2B41F58BE9EB94A6AAA492782DF0A8C7.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9A4B59BB39D541F8D75C89FEA246961B.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/1901A42FED0D57BC983ACC4EB33F738C.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3B49A23883D4A7AE744B0CAB1345CC54.jpg\">\n        \n    \n        \n         <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/59E24455B67D003DCDF6B84508887248.jpg\">         </p>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

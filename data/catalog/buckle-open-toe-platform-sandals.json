@@ -1,0 +1,245 @@
+{
+  "product_id": "gid://shopify/Product/9751716856047",
+  "handle": "buckle-open-toe-platform-sandals",
+  "original_title": "Buckle Open Toe Platform Sandals",
+  "current_title": "Buckle Open Toe Platform Sandals",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "shoes",
+  "url": "https://nkpfvz-ra.myshopify.com/products/buckle-open-toe-platform-sandals",
+  "category": null,
+  "colors": [
+    "Black",
+    "White"
+  ],
+  "sizes": [
+    "40(US9)",
+    "38(US7)",
+    "39(US8)",
+    "36(US5)",
+    "37(US6)",
+    "35(US4)"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Size": [
+      "40(US9)",
+      "38(US7)",
+      "39(US8)",
+      "36(US5)",
+      "37(US6)",
+      "35(US4)"
+    ]
+  },
+  "price_min": 41.4,
+  "price_max": 41.4,
+  "cost_min": 6.02,
+  "cost_max": 6.02,
+  "specs": {
+    "Color": "Black, White",
+    "Style": "Sandal",
+    "Closure Type": "Buckle",
+    "Material": "PU",
+    "Heel Height": "Low Heel",
+    "Sole Material": "Rubber",
+    "Toe Style": "Open Toe",
+    "Occasion": "Casual",
+    "Size": "35，36, 37, 38, 39, 40",
+    "Unit": "cm"
+  },
+  "description_text": [
+    "Product measurements:"
+  ],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Foot length"
+      ],
+      [
+        "35(US4)",
+        "22-22.5"
+      ],
+      [
+        "36(US5)",
+        "22.5-23"
+      ],
+      [
+        "37(US6)",
+        "23-23.5"
+      ],
+      [
+        "38(US7)",
+        "23.5-24"
+      ],
+      [
+        "39(US8)",
+        "24-24.5"
+      ],
+      [
+        "40(US9)",
+        "24.5-25"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8017FC17A333F9BEB1322228CA10201E.jpg?v=1792823487",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4AFF0414CFC31A770FF0334EC1BBB930.jpg?v=1792823488",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B314B3A0B28C6DBE61E55A7247158DD6.jpg?v=1792823490",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/182A9622F3EE2481231E53984ACB8CA9.jpg?v=1792823493",
+      "altText": "",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2577C500DBC1A6CBF1532CF4FAED983C.jpg?v=1792823499",
+      "altText": "",
+      "width": 1000,
+      "height": 1000
+    }
+  ],
+  "description_images": [],
+  "variants": [
+    {
+      "title": "Black / 40(US9)",
+      "sku": "1E63D2A5E7244507A2D1C2E18DB12A52",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Black / 38(US7)",
+      "sku": "674DB65327B24D7C9A000C5D9D62849F",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "Black / 39(US8)",
+      "sku": "53DB0F71A19D42B7A3A9769B58EAD749",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "Black / 36(US5)",
+      "sku": "8BF4F9C0BA244A5F891DFCA715210C7F",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "Black / 37(US6)",
+      "sku": "1A61580DADB44EBDA696D39CFD921B8B",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "White / 40(US9)",
+      "sku": "CD7BB2F0DE9A4537978CAECD7581D05A",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "40(US9)"
+      }
+    },
+    {
+      "title": "Black / 35(US4)",
+      "sku": "0BED79D87C0D4CB799D0603C5A22F4EB",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "Black",
+        "Size": "35(US4)"
+      }
+    },
+    {
+      "title": "White / 38(US7)",
+      "sku": "513868404F58416583080B77C8A50D3E",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "38(US7)"
+      }
+    },
+    {
+      "title": "White / 39(US8)",
+      "sku": "03473B0DE9174D8DB98136BF02C14749",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "39(US8)"
+      }
+    },
+    {
+      "title": "White / 36(US5)",
+      "sku": "8DA25F21B1384E26B73738E5823E3C41",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "36(US5)"
+      }
+    },
+    {
+      "title": "White / 37(US6)",
+      "sku": "5DF38F0550724AF7BE82690EDFDFAE17",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "37(US6)"
+      }
+    },
+    {
+      "title": "White / 35(US4)",
+      "sku": "FB70E7A61FB94A4996BF0054843974EE",
+      "price": "41.40",
+      "cost": "6.02",
+      "options": {
+        "Color": "White",
+        "Size": "35(US4)"
+      }
+    }
+  ],
+  "raw_description_html": "<p>- Color: Black, White</p><p>- Style: Sandal</p><p>- Closure Type: Buckle</p><p>- Material: PU</p><p>- Heel Height: Low Heel</p><p>- Sole Material: Rubber</p><p>- Toe Style: Open Toe</p><p>- Occasion: Casual</p><p>- Size: 35，36, 37, 38, 39, 40</p><p>- Unit: cm</p><ul class=\" list-paddingleft-2\">\n<li><p>Product measurements:</p></li>\n<p><br></p>\n<table style=\"border-collapse: collapse;font-size: 12px;font-family: Helvetica;color: #333;text-align: center;\">\n<thead><tr style=\"background: #eee;color: #333;font-family: Helvetica;font-size: 12px;\" class=\"firstRow\">\n<th style=\"padding: 9px;font-weight: 400;\">Size</th>\n<th style=\"padding: 9px;font-weight: 400;\">Foot length</th>\n</tr></thead>\n<tbody>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">35(US4)</th>\n<td style=\"padding: 9px; word-break: break-all;\">22-22.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">36(US5)</th>\n<td style=\"padding: 9px; word-break: break-all;\">22.5-23</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">37(US6)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23-23.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">38(US7)</th>\n<td style=\"padding: 9px; word-break: break-all;\">23.5-24</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">39(US8)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24-24.5</td>\n</tr>\n<tr>\n<th style=\"padding: 9px;font-weight: bold;\">40(US9)</th>\n<td style=\"padding: 9px; word-break: break-all;\">24.5-25</td>\n</tr>\n</tbody>\n</table>\n</ul>",
+  "cataloged_at": "2026-10-24T02:43:17"
+}

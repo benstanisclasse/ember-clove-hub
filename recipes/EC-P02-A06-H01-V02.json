@@ -1,0 +1,136 @@
+{
+  "creative_id": "EC-P02-A06-H01-V02",
+  "parent_id": null,
+  "changed_field": null,
+  "experiment_id": "C1-P02-A06",
+  "product_id": "gid://shopify/Product/9751655809263",
+  "platform": "tiktok",
+  "length_s": 15,
+  "resolution": "720p",
+  "source": "higgsfield-api",
+  "hook_text": "Living in leggings, but want to look dressed?",
+  "tags": {
+    "format": "try-on",
+    "hook_type": "callout",
+    "opening_visual": "product-on-body-couch",
+    "setting": "living-room",
+    "creator": "on-camera",
+    "on_screen_text": "none",
+    "voice": "on-camera",
+    "pace_cuts_per_15s": 3
+  },
+  "steps": {
+    "concept": [
+      {
+        "angle": "Comfortable, still dressed (ICP-P02 A1) - AR-06 couch-to-door",
+        "icp": "P02 S2 Comfort-first 'pajamas that pass'",
+        "product": "Turtleneck Rib Knit Sweater Dress",
+        "color": "Burgundy",
+        "notes": "AI-generated presenter; label AI on TikTok; no testimonial or purchase claims; no post-production",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "product_reference": [
+      {
+        "references": [
+          "assets/EC-P02-A03-H01-V01/ref1_dress_neck_down.jpg",
+          "assets/EC-P02-A03-H01-V01/ref2_turtleneck_knit_closeup.jpg"
+        ],
+        "source_photo": "Shopify EB40AEBD79AAF3FECCF037153E856C2F.jpg (burgundy studio shot)",
+        "processing": "cropped below the chin to exclude the supplier model's face",
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "script": [
+      {
+        "lines": [
+          "Living in leggings, but want to look dressed?",
+          "It's a loose, slouchy sweater dress with a folded turtleneck.",
+          "Add leggings and boots, and you're out the door dressed.",
+          "It's Ember and Clove, forty-four ninety-nine. Link's right here."
+        ],
+        "recorded_at": "2026-10-25T11:27:37",
+        "credits": 0,
+        "usd": 0.0
+      }
+    ],
+    "clip": [
+      {
+        "model": "bytedance/seedance-2.5/reference-to-video",
+        "prompt": "Vertical 9:16 UGC-style fashion try-on video for social media, 15 seconds, four quick cuts, natural phone-camera look, bright warm apartment with wood floors, an arched mirror and soft daylight. The presenter is an AI-generated young adult woman (not any real person), friendly and excited, speaking English directly to the camera. Clear natural speech, light room tone, no background music, no on-screen text, no logos.\nThe dress in every shot is the exact burgundy chunky rib-knit turtleneck sweater dress from the reference images: loose slouchy fit that hangs straight from the shoulders with no waist seam, folded turtleneck, dropped shoulders, long full sleeves with ribbed cuffs, ribbed hem, mini length ending at upper-to-mid thigh. It is always worn over opaque black leggings (never bare legs). Keep its burgundy color, chunky vertical rib, turtleneck and short length identical to the references; never lengthen it toward the knee and never add a waist or belt.\nShot 1 (0-3 s): the presenter (shoulder-length wavy dark-brown hair, small gold hoop earrings) is already wearing the dress over opaque black leggings, sitting cross-legged on the couch holding a mug; she looks up at the camera, saying: \"Living in leggings, but want to look dressed?\"\nShot 2 (3-7 s): cut to her standing, mid-shot; she pushes up the slouchy sleeves and lets the loose knit fall straight from her shoulders, saying: \"It's a loose, slouchy sweater dress with a folded turtleneck.\"\nShot 3 (7-11 s): cut to a full-length shot by the front door, now in black ankle boots; she grabs her keys and a tote bag, saying: \"Add leggings and boots, and you're out the door dressed.\"\nShot 4 (11-15 s): she walks up to the camera into a smiling close-up, saying: \"It's Ember and Clove, forty-four ninety-nine. Link's right here.\"",
+        "duration": 15,
+        "resolution": "720p",
+        "aspect_ratio": "9:16",
+        "generate_audio": true,
+        "request_id": "c3bb287f-4eec-475c-98c3-b2eee3592532",
+        "status": "completed",
+        "cost_note": "actual: open.higgsfield.ai billing usage -$4.85; balance after $33.24",
+        "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/c3bb287f-4eec-475c-98c3-b2eee3592532/325ad1a9-fb0e-4734-8566-7e7cf65d0543.mp4",
+        "recorded_at": "2026-10-25T11:31:57",
+        "credits": 0,
+        "usd": 4.85
+      }
+    ]
+  },
+  "cost": {
+    "credits": 0,
+    "usd": 4.85
+  },
+  "status": "APPROVED",
+  "created_at": "2026-10-25T11:27:37",
+  "video_url": "https://d3u0tzju9qaucj.cloudfront.net/XXX/c3bb287f-4eec-475c-98c3-b2eee3592532/325ad1a9-fb0e-4734-8566-7e7cf65d0543.mp4",
+  "local_path": "assets\\EC-P02-A06-H01-V02\\tryon_raw.mp4",
+  "qa": {
+    "checked_at": "2026-10-25T11:34:18",
+    "result": "visual pass; audio for owner to confirm",
+    "notes": "burgundy chunky rib turtleneck over black leggings, couch with mug, then front door with ankle boots and tote all match. NOTE: around 3s she lifts the hem showing her midriff and a black crop top (not scripted); owner to judge",
+    "owner_review": {
+      "approved_at": "2026-10-25T11:40:56",
+      "note": "Owner 2026-10-25: will use. Note: spoken price/delivery lines lock the ad to current price; remake winners without them before any price change."
+    }
+  },
+  "elements": {
+    "observed": {
+      "room": "living_room",
+      "lighting": "natural_daylight",
+      "presenter_count": "1",
+      "presenter_presents_as": "woman",
+      "age_group": "25_40",
+      "hair_color": "brown",
+      "hair_length": "shoulder",
+      "jewelry": [
+        "hoop_earrings",
+        "rings"
+      ],
+      "makeup": "moderate",
+      "nails_done": "not_visible",
+      "glasses": "false",
+      "worn_with": [
+        "boots",
+        "bag"
+      ],
+      "color_palette": "mixed",
+      "props": [
+        "mug_or_drink",
+        "bag"
+      ],
+      "camera_style": "mixed",
+      "main_shot_distance": "mixed",
+      "camera_movement": "slight",
+      "actions": [
+        "talking_to_camera",
+        "hand_detail",
+        "walking",
+        "posing"
+      ],
+      "background_people": "false",
+      "visual_quality": "sharp_well_lit",
+      "model": "anthropic/claude-haiku-5.5",
+      "recorded_at": "2026-10-26T15:05:27"
+    }
+  }
+}

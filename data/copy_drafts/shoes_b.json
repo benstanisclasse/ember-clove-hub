@@ -1,0 +1,282 @@
+[
+  {
+    "handle": "peep-toe-block-heel-sandals",
+    "product_id": "gid://shopify/Product/9751716692207",
+    "original_title": "Peep Toe Block Heel Sandals",
+    "new_title": "Studded Wood-Look Block Heel Sandals",
+    "product_type": "Sandals",
+    "tags": [
+      "sandals",
+      "block heel",
+      "platform",
+      "ankle strap",
+      "buckle"
+    ],
+    "description_html": "<p><strong>A grounded wood-look block heel with studded straps, as easy with cropped denim as with a sundress.</strong></p><ul><li>Microfiber straps with stud accents</li><li>Buckled ankle strap, open toe</li><li>Chunky block heel on a wood-grain platform, rubber sole</li></ul><p>US sizes 5–10.5</p>",
+    "image_alt": "Black microfiber ankle-strap sandals with gold studs and a chunky wood-grain block heel, worn with cropped jeans",
+    "color_renames": {},
+    "size_renames": {
+      "36(US5)": "US 5",
+      "37(US6)": "US 6",
+      "38(US7)": "US 7",
+      "39(US8)": "US 8",
+      "40(US9)": "US 9",
+      "41(US10)": "US 10",
+      "42(US10.5)": "US 10.5"
+    },
+    "notes": "Supplier calls it 'peep toe', but the photos show a wide open-toe band. The supplier lists heel height only as 'High Heel', so no measurement is given."
+  },
+  {
+    "handle": "rhinestone-butterfly-flat-sandals",
+    "product_id": "gid://shopify/Product/9751717019887",
+    "original_title": "Rhinestone Butterfly Flat Sandals",
+    "new_title": "Butterfly Rhinestone Slingback Flats",
+    "product_type": "Sandals",
+    "tags": [
+      "sandals",
+      "flats",
+      "rhinestone",
+      "butterfly",
+      "clear strap"
+    ],
+    "description_html": "<p><strong>Sparkling butterflies trail along a clear strap, giving a simple flat a little shine for brunch and beach days.</strong></p><ul><li>Clear PVC strap with rhinestone butterflies</li><li>Elastic slingback strap, square open toe</li><li>Flat sole, rubber outsole</li></ul><p>US sizes 5–11</p>",
+    "image_alt": "Black square-toe flat sandals with a clear strap lined with rhinestone butterflies and an elastic back strap",
+    "color_renames": {},
+    "size_renames": {
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10",
+      "42": "US 10.5",
+      "43": "US 11"
+    },
+    "notes": "Both photos show the Black option, so Beige was not seen in the first two images. Box not included per supplier."
+  },
+  {
+    "handle": "rhinestone-open-toe-flat-sandals",
+    "product_id": "gid://shopify/Product/9751716724975",
+    "original_title": "Rhinestone Open Toe Flat Sandals",
+    "new_title": "Rhinestone H-Band Flat Slides",
+    "product_type": "Sandals",
+    "tags": [
+      "slides",
+      "flats",
+      "rhinestone",
+      "faux leather",
+      "slip-on"
+    ],
+    "description_html": "<p><strong>A clean H-band slide with a strip of rhinestones, polished enough for dinner out and easy enough for errands.</strong></p><ul><li>Faux leather bands with a rhinestone strip</li><li>Slip-on, round open toe</li><li>Flat sole with rhinestone-trimmed edge, rubber outsole</li></ul><p>US sizes 5–11</p>",
+    "image_alt": "White faux leather H-band flat slides with a rhinestone strip across the bands and a rhinestone-trimmed sole",
+    "color_renames": {},
+    "size_renames": {
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10",
+      "42": "US 10.5",
+      "43": "US 11"
+    },
+    "notes": "Photos show a backless slide, so it is named 'Slides' rather than 'Sandals'. The catalog has no size table (only an image in the description), so sizes were converted from EU numbers."
+  },
+  {
+    "handle": "round-toe-wedge-sandals",
+    "product_id": "gid://shopify/Product/9751717413103",
+    "original_title": "Round Toe Wedge Sandals",
+    "new_title": "Closed Toe Slingback Espadrille Wedges",
+    "product_type": "Sandals",
+    "tags": [
+      "wedges",
+      "espadrille",
+      "slingback",
+      "closed toe",
+      "sandals"
+    ],
+    "description_html": "<p><strong>A soft closed-toe slingback on a rope-trimmed wedge, an easy match for jeans and linen on long summer days.</strong></p><ul><li>Fabric upper with an elastic slingback strap</li><li>Slip-on, closed round toe</li><li>Wedge heel with rope-trim platform, rubber sole</li></ul><p>US sizes 5–11</p>",
+    "image_alt": "Red closed-toe slingback wedges with a fabric upper, elastic back strap and rope-trimmed wedge sole, worn with jeans",
+    "color_renames": {},
+    "size_renames": {
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10",
+      "42": "US 10.5",
+      "43": "US 11"
+    },
+    "notes": "Photos show a closed-toe slingback, not an open sandal. The upper looks like faux suede, but specs say only 'cloth surface', so the copy says fabric. Specs list heel as 'Mid heels' with no measurement."
+  },
+  {
+    "handle": "toe-loop-pu-leather-flats-sandals",
+    "product_id": "gid://shopify/Product/9751716561135",
+    "original_title": "Toe Loop PU Leather Flats Sandals",
+    "new_title": "Toe Loop Faux Leather Slides",
+    "product_type": "Sandals",
+    "tags": [
+      "slides",
+      "flats",
+      "toe loop",
+      "faux leather",
+      "gold"
+    ],
+    "description_html": "<p><strong>An asymmetric toe-loop slide with gold-tone buckle details that makes a low-key outfit feel finished.</strong></p><ul><li>Pebbled faux leather strap with buckle accents</li><li>Slip-on, toe loop, open toe</li><li>Flat sole with contrast-stitched edge</li></ul><p>US sizes 5–11</p>",
+    "image_alt": "Metallic gold faux leather toe-loop slides with an asymmetric strap and buckle accents, on a woven mat",
+    "color_renames": {
+      "Pastel Yellow": "Gold"
+    },
+    "size_renames": {
+      "36(US5)": "US 5",
+      "37(US6)": "US 6",
+      "38(US7)": "US 7",
+      "39(US8)": "US 8",
+      "40(US9)": "US 9",
+      "41(US10)": "US 10",
+      "42(US10.5)": "US 10.5",
+      "43(US11)": "US 11"
+    },
+    "notes": "The 'Pastel Yellow' option looks metallic gold in the photos. Renamed to 'Gold' in color_renames, but check the variant image before applying. Buckles look decorative because the specs say slip-on."
+  },
+  {
+    "handle": "womens-fashion-sandals-cross-border-pointed-thin-heel-sandals-shoes",
+    "product_id": "gid://shopify/Product/9751716921583",
+    "original_title": "Women's Fashion Sandals Cross Border Pointed Thin Heel Sandals Shoes",
+    "new_title": "Pointed Peep Toe Stiletto Mules",
+    "product_type": "Sandals",
+    "tags": [
+      "mules",
+      "stilettos",
+      "heels",
+      "pointed toe",
+      "croc-embossed"
+    ],
+    "description_html": "<p><strong>A sleek pointed mule on a slim stiletto, made for weddings, evenings out and anything that calls for heels.</strong></p><ul><li>Faux leather upper in smooth, metallic or croc-embossed finishes</li><li>Slip-on, pointed peep toe, open back</li><li>High stiletto heel, rubber sole</li></ul><p>US sizes 3–13</p>",
+    "image_alt": "Black croc-embossed faux leather mule with a pointed peep toe and a high stiletto heel, shown from the side",
+    "color_renames": {
+      "Grey": "Gray",
+      "Silver crocodile pattern": "Silver Croc",
+      "Golden crocodile pattern": "Gold Croc"
+    },
+    "size_renames": {
+      "34": "US 3",
+      "35": "US 4",
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10",
+      "42": "US 10.5",
+      "43": "US 11",
+      "44": "US 12",
+      "45": "US 13"
+    },
+    "notes": "Price is $86.22 (cost $30.56), far above the rest of this batch. The first photo shows black croc, but there is no 'Black Croc' color, only 'Black'. The second photo shows rose-gold metallic, which may be the 'Gold' option. The size table covers only EU 34-39, but sizes go up to 45. Supplier lists 8-15 days production time, which may lengthen delivery. Specs say the heel is above 8 cm, so the copy says 'high stiletto' with no inches."
+  },
+  {
+    "handle": "womens-sandals-luxury-designer-fashion-gold-chunky-sandals-elegant-square-toe-low-block-heel-sandals",
+    "product_id": "gid://shopify/Product/9751716626671",
+    "original_title": "Women's Sandals Luxury Designer Fashion Gold Chunky Sandals Elegant Square toe Low block-heel Sandals",
+    "new_title": "Metallic Square Toe Heeled Mules",
+    "product_type": "Sandals",
+    "tags": [
+      "mules",
+      "block heel",
+      "square toe",
+      "metallic",
+      "low heel"
+    ],
+    "description_html": "<p><strong>A glossy metallic mule with a squared toe and sculpted low heel, adding polish to denim and slip dresses alike.</strong></p><ul><li>Metallic microfiber upper, microfiber lining</li><li>Slip-on, square open toe</li><li>Low sculpted block heel, rubber sole</li></ul><p>US sizes 4–10</p>",
+    "image_alt": "Pair of metallic orange square-toe mules with a wide strap and a low flared block heel on a white background",
+    "color_renames": {
+      "orange": "Orange"
+    },
+    "size_renames": {
+      "35": "US 4",
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10"
+    },
+    "notes": "The title says 'gold', but the only color is orange and the photos show metallic orange. The photos look like retailer studio shots, with a brand logo visible on the heel caps, so check image rights before using them. There is no size table."
+  },
+  {
+    "handle": "womens-sandals-sleeve-sandals-lightweight-shoes",
+    "product_id": "gid://shopify/Product/9751719182575",
+    "original_title": "Women's Sandals Sleeve Sandals Lightweight Shoes",
+    "new_title": "Textured Peep Toe Slip-On Flats",
+    "product_type": "Sandals",
+    "tags": [
+      "flats",
+      "peep toe",
+      "slip-on",
+      "metallic",
+      "sandals"
+    ],
+    "description_html": "<p><strong>A low-cut peep-toe flat in a crinkled leather-look finish, just right for office days and dinners alike.</strong></p><ul><li>Textured leather-look upper</li><li>Slip-on, peep toe</li><li>Flat heel, rubber sole</li></ul><p>US sizes 3–11</p>",
+    "image_alt": "Feet wearing metallic copper-red peep-toe slip-on flats with a crinkled, leather-look finish",
+    "color_renames": {
+      "Light blue": "Light Blue",
+      "Light green": "Light Green",
+      "Golden": "Gold",
+      "Light Rose Red": "Light Rose",
+      "Deep Rose Red": "Deep Rose"
+    },
+    "size_renames": {
+      "34": "US 3",
+      "35": "US 4",
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10",
+      "42": "US 10.5",
+      "43": "US 11"
+    },
+    "notes": "Specs give no upper material, so the copy says only 'leather-look'. The supplier size table maps China sizes, which disagrees with standard EU sizes, so standard EU-to-US conversion was used. Price varies by variant ($46.24-$48.08). Specs say 'open heel', but the front-view photos cannot confirm it. Specs call the rose colors Light Pink/Dark Pink."
+  },
+  {
+    "handle": "woven-sandals-womens-flat-toe-sandals",
+    "product_id": "gid://shopify/Product/9751717675247",
+    "original_title": "Woven sandals women's flat toe sandals",
+    "new_title": "Braided Cord Strappy Flat Sandals",
+    "product_type": "Sandals",
+    "tags": [
+      "sandals",
+      "flats",
+      "braided",
+      "strappy",
+      "toe loop"
+    ],
+    "description_html": "<p><strong>Braided cords crisscross over the foot for a relaxed, boho flat made for beach towns and summer festivals.</strong></p><ul><li>Braided cord straps</li><li>Toe loop, crisscross straps, slingback heel strap</li><li>Flat sole</li></ul><p>US sizes 4–12</p>",
+    "image_alt": "Feet in turquoise and gray braided cord flat sandals with a toe loop and crisscross straps",
+    "color_renames": {
+      "red": "Red",
+      "black": "Black",
+      "blue": "Blue",
+      "light green": "Light Green",
+      "black+white": "Black & White",
+      "black white+green": "Black, White & Green",
+      "green gray+gray": "Green-Gray & Gray"
+    },
+    "size_renames": {
+      "35": "US 4",
+      "36": "US 5",
+      "37": "US 6",
+      "38": "US 7",
+      "39": "US 8",
+      "40": "US 9",
+      "41": "US 10",
+      "42": "US 10.5",
+      "43": "US 11",
+      "44": "US 12"
+    },
+    "notes": "The supplier text says 'suede' upper, but the photos show braided cord straps. The second photo shows a brand logo on the footbed, so the images may come from another brand; check image rights. There are no specs or size table. Price is $33.76 against a cost of $3.96."
+  }
+]

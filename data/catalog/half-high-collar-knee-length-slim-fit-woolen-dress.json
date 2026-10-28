@@ -1,0 +1,497 @@
+{
+  "product_id": "gid://shopify/Product/9751656071407",
+  "handle": "half-high-collar-knee-length-slim-fit-woolen-dress",
+  "original_title": "Half high collar knee length slim fit woolen dress",
+  "current_title": "Cable Knit Mock Neck Midi Dress",
+  "vendor": "eprolo",
+  "status": "ACTIVE",
+  "group": "dresses",
+  "url": "https://nkpfvz-ra.myshopify.com/products/half-high-collar-knee-length-slim-fit-woolen-dress",
+  "category": null,
+  "colors": [
+    "Black",
+    "Grandma Gray",
+    "Dark Blue",
+    "Caramel",
+    "Red",
+    "Green",
+    "Purplish Red"
+  ],
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "options": {
+    "Color": [
+      "Black",
+      "Grandma Gray",
+      "Dark Blue",
+      "Caramel",
+      "Red",
+      "Green",
+      "Purplish Red"
+    ],
+    "Size": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  "price_min": 52.04,
+  "price_max": 52.04,
+  "cost_min": 10.97,
+  "cost_max": 10.97,
+  "specs": {
+    "Color": "Black, Grey, Navy Blue, Camel, Red, Green, Burgundy",
+    "Style": "European & American, Business Casual",
+    "Pattern Type": "Solid",
+    "Sleeve Length": "Long Sleeve",
+    "Neckline": "Mock Neck",
+    "Material": "Acrylic, Polyester Blend",
+    "Closure Type": "Pullover",
+    "Fit Type": "Slim Fit",
+    "Occasion": "Travel, Casual",
+    "Size": "unit：cm"
+  },
+  "description_text": [],
+  "size_tables": [
+    [
+      [
+        "Size",
+        "Length",
+        "Bust",
+        "Sleeve"
+      ],
+      [
+        "S",
+        "113",
+        "79-106",
+        "55"
+      ],
+      [
+        "M",
+        "115",
+        "83-110",
+        "56"
+      ],
+      [
+        "L",
+        "117",
+        "89-116",
+        "57"
+      ],
+      [
+        "XL",
+        "119",
+        "95-122",
+        "58"
+      ]
+    ]
+  ],
+  "gallery_images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A02E524E5518B5581012D3C06BA3779B.jpg?v=1792822467",
+      "altText": "",
+      "width": 959,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/39E34B59897FEDBCA0FDCF937E07B7D3.jpg?v=1792822468",
+      "altText": "",
+      "width": 959,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7C27F3B51EC9FF1E3F7A50B8E011C6D4.jpg?v=1792822470",
+      "altText": "",
+      "width": 959,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1E3E6FA7B028205FCC94E89C7CF6CC63.jpg?v=1792822471",
+      "altText": "",
+      "width": 959,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/30F9328D3C4BBDAAF666DAD820067D27.jpg?v=1792822473",
+      "altText": "",
+      "width": 959,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F2DBBAD28F9480BDB2430849E31F14A6.jpg?v=1792822474",
+      "altText": "",
+      "width": 720,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/995436DEF5FE390C8D8222B946E7C398.jpg?v=1792822478",
+      "altText": "",
+      "width": 720,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C9B1DD14CBBFCE7C9C260E79920D6EA0.jpg?v=1792822484",
+      "altText": "",
+      "width": 720,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CE1B160000BCABB9F072AB3556CC1997.jpg?v=1792822488",
+      "altText": "",
+      "width": 720,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7672B6424FF31D0385B4C25950F7BCF0.jpg?v=1792822496",
+      "altText": "",
+      "width": 720,
+      "height": 959
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4A714D61A8AAFE4F91386B22EAA8F238.jpg?v=1792822502",
+      "altText": "",
+      "width": 720,
+      "height": 959
+    }
+  ],
+  "description_images": [
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/79A962A9D15BB1C9121CC2691F5B666F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8054A10139C808BBB946A258D8D86F6B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/936245D71EA7483A6F9C0D9107F0C8B7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DD97F2493F23ABDCE671D7C2DA45003E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/04BE93A1F072DFB9739544F3B565E8F5.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/52A21D6F87AA94530BF8FC03D488F18D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6354A69B743B4A0200369FD89981EF5D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E3CB4B9E314D1447881F2DEAB9569E5C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CE478E2766AAC437910D86121A649A67.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/65A73742AA3464A00ADD9F2CBF56496E.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0FD7A21D00A218558839FEAD17FC1A1A.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/190A512F38051CB429768BCC69A20FE1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/49A69E06BD46EA46861036B9EBC3ECE1.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DDBCD8E25913C7A53908FA91FA7D37D7.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/99BE303CD0E23F43E18B17AA79A5771B.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9FAB522EE6D52DEBB5A8DABE556E373F.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/58B8A523D333A837F25EEAFCA123F534.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8EF6E3C986F70C6EC46D5AAE55743E96.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/052683E0B8A015B32D57C267D0D55725.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/33CD77184FC577C6D645EE93E1187CF6.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9B99773B78ADE32C0F279F7AE34978B6.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E2F5BABC19B7E217EF3AF171AABCE7DD.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3E0C5E4BF49D6E7DAABB0DDAA69C8C8C.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4F2CA7A2F77FA14F0DF71A71772BE809.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/52D9DC7A98FAA9772C36991B32B4A374.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FAFF97434D90A89B1B5CA1289A528096.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DB50B2D38AD4E956F636204A1E9DDBE8.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A21A9A4BC32688AFA750A032135FE866.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/12446CE26371982F6A70F9A26A6C227D.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6A8F4F0C01B5C85943F2FC506425BD68.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E648E73B45B4BFC40846493D9B8E8240.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7705F3066D9474D834D1951E713C7FA3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/09A5CF410E7F3D04535C2C536FCB2428.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FC79380FB42711522CCFC02BC5D23AC3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3DEDD401837B8B2FFAD93F9D05D51DAB.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4B01B9B7CD89E3E33FF1A504A60E8AAD.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B7D26FEBA5658AFCFDCAC1B999729409.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/52901E52B123747490FD6C6BE23D9A52.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/02E5DF979F8F38FC1DE4365B89A6D6AF.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/236E3893C4ECEDC35038ACF21923FFD3.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F21101E19BD473B9A5BB3FFA5628F907.jpg",
+    "https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/32BDF7FE17E01F4C882242AC13FBED78.jpg"
+  ],
+  "variants": [
+    {
+      "title": "Black / S",
+      "sku": "4A9028DB93804D8191D82F8BF59A116A",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Black",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Black / M",
+      "sku": "1540A82F06A34D91A2125EB5438AEF85",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Black",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Black / L",
+      "sku": "22EE71A3BB3A4313847409F3D3C07F6A",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Black",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Black / XL",
+      "sku": "1610F77DEA244D5495E93AE65C045DC8",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Black",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Grandma Gray / S",
+      "sku": "C305B81604F942E5A55F54948B63E19F",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Grandma Gray",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Grandma Gray / M",
+      "sku": "13841C0ABF834E5C992940EE2AACD27E",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Grandma Gray",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Grandma Gray / L",
+      "sku": "D60B121D9C4F4FBAA2F113A5D8F0F70E",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Grandma Gray",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Grandma Gray / XL",
+      "sku": "8795F3FEBF2E4CDC804DD5EB4CA9ECCA",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Grandma Gray",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Dark Blue / S",
+      "sku": "03723D5D13F54CA28502756111A04F89",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Dark Blue / M",
+      "sku": "E5D07B9852624EFBB5E7661DDB2FA950",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Dark Blue / L",
+      "sku": "2590F02884E14D308AC5D9676858CA72",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Dark Blue / XL",
+      "sku": "3F896ADA496D46B78B5F44E15C83FA88",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Dark Blue",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Caramel / S",
+      "sku": "64C667A03C794587B4CEFECA19BF17E0",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Caramel",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Caramel / M",
+      "sku": "CCB64820543243FC970106BD4A388134",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Caramel",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Caramel / L",
+      "sku": "4810A623197C40DFBE3BEA3C7B6D8B83",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Caramel",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Caramel / XL",
+      "sku": "07E40A788AAC47659DEC96EEF5A06302",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Caramel",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Red / S",
+      "sku": "B67DC8C563B446CC87F22FE74788F769",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Red",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Red / M",
+      "sku": "3F2F0327FF3C41A3BDDC0B0838C4BF51",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Red",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Red / L",
+      "sku": "4B70C16A292A4B9C83B0CEE5FB79D3F1",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Red",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Red / XL",
+      "sku": "86D1B8FFE681466DB67646354FA4233C",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Red",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Green / S",
+      "sku": "26C1C57F442E4EC78794ACFDF827326C",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Green",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Green / M",
+      "sku": "BCD033519CAE4249A781CFF0614BEB3A",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Green",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Green / L",
+      "sku": "C7E8F02EEAAB412F9447DA2D2C7DFB69",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Green",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Green / XL",
+      "sku": "AADAB480717D458EB72906F1CB0B7795",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Green",
+        "Size": "XL"
+      }
+    },
+    {
+      "title": "Purplish Red / S",
+      "sku": "330D828020284C7E8E4B718D4B5084AB",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Purplish Red",
+        "Size": "S"
+      }
+    },
+    {
+      "title": "Purplish Red / M",
+      "sku": "F8B7414EAB6E4D0184F06424FED03373",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Purplish Red",
+        "Size": "M"
+      }
+    },
+    {
+      "title": "Purplish Red / L",
+      "sku": "617E2D666D5842BDB468F94D2B354871",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Purplish Red",
+        "Size": "L"
+      }
+    },
+    {
+      "title": "Purplish Red / XL",
+      "sku": "9E68A3952EA34B199E5948F4979A4F4D",
+      "price": "52.04",
+      "cost": "10.97",
+      "options": {
+        "Color": "Purplish Red",
+        "Size": "XL"
+      }
+    }
+  ],
+  "raw_description_html": "<p><strong>Color: Black, Grey, Navy Blue, Camel, Red, Green, Burgundy</strong></p><p><strong>Style: European &amp; American, Business Casual</strong></p><p><strong>Pattern Type: Solid</strong></p><p><strong>Sleeve Length: Long Sleeve</strong></p><p><strong>Neckline: Mock Neck</strong></p><p><strong>Material: Acrylic, Polyester Blend</strong></p><p><strong>Closure Type: Pullover</strong></p><p><strong>Fit Type: Slim Fit</strong></p><p><strong>Occasion: Travel, Casual</strong></p><p><strong>Size: S, M, L, XL</strong></p><p><strong>Size:unit：cm</strong></p><table>\n<thead><tr class=\"firstRow\">\n<th>Size</th>\n<th>Length</th>\n<th>Bust</th>\n<th>Sleeve</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>S</td>\n<td>113</td>\n<td>79-106</td>\n<td>55</td>\n</tr>\n<tr>\n<td>M</td>\n<td>115</td>\n<td>83-110</td>\n<td>56</td>\n</tr>\n<tr>\n<td>L</td>\n<td>117</td>\n<td>89-116</td>\n<td>57</td>\n</tr>\n<tr>\n<td>XL</td>\n<td>119</td>\n<td>95-122</td>\n<td>58</td>\n</tr>\n</tbody>\n</table> <p><br></p><img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/79A962A9D15BB1C9121CC2691F5B666F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8054A10139C808BBB946A258D8D86F6B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/936245D71EA7483A6F9C0D9107F0C8B7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DD97F2493F23ABDCE671D7C2DA45003E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/04BE93A1F072DFB9739544F3B565E8F5.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/52A21D6F87AA94530BF8FC03D488F18D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6354A69B743B4A0200369FD89981EF5D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E3CB4B9E314D1447881F2DEAB9569E5C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/CE478E2766AAC437910D86121A649A67.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/65A73742AA3464A00ADD9F2CBF56496E.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/0FD7A21D00A218558839FEAD17FC1A1A.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/190A512F38051CB429768BCC69A20FE1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/49A69E06BD46EA46861036B9EBC3ECE1.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DDBCD8E25913C7A53908FA91FA7D37D7.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/99BE303CD0E23F43E18B17AA79A5771B.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9FAB522EE6D52DEBB5A8DABE556E373F.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/58B8A523D333A837F25EEAFCA123F534.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/8EF6E3C986F70C6EC46D5AAE55743E96.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/052683E0B8A015B32D57C267D0D55725.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/33CD77184FC577C6D645EE93E1187CF6.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/9B99773B78ADE32C0F279F7AE34978B6.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E2F5BABC19B7E217EF3AF171AABCE7DD.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3E0C5E4BF49D6E7DAABB0DDAA69C8C8C.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4F2CA7A2F77FA14F0DF71A71772BE809.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/52D9DC7A98FAA9772C36991B32B4A374.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FAFF97434D90A89B1B5CA1289A528096.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/DB50B2D38AD4E956F636204A1E9DDBE8.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/A21A9A4BC32688AFA750A032135FE866.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/12446CE26371982F6A70F9A26A6C227D.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/6A8F4F0C01B5C85943F2FC506425BD68.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/E648E73B45B4BFC40846493D9B8E8240.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/7705F3066D9474D834D1951E713C7FA3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/09A5CF410E7F3D04535C2C536FCB2428.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/FC79380FB42711522CCFC02BC5D23AC3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/3DEDD401837B8B2FFAD93F9D05D51DAB.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/4B01B9B7CD89E3E33FF1A504A60E8AAD.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/B7D26FEBA5658AFCFDCAC1B999729409.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/52901E52B123747490FD6C6BE23D9A52.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/02E5DF979F8F38FC1DE4365B89A6D6AF.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/236E3893C4ECEDC35038ACF21923FFD3.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/F21101E19BD473B9A5BB3FFA5628F907.jpg\"> \n <img src=\"https://shopifyfile.oss-us-west-1.aliyuncs.com/attached/pingtai/202610/32BDF7FE17E01F4C882242AC13FBED78.jpg\"> \n <p><br></p>",
+  "cataloged_at": "2026-10-24T02:43:17",
+  "listing_history": [
+    {
+      "at": "2026-10-24T02:46:40",
+      "title": "Cable Knit Mock Neck Midi Dress",
+      "change": "renamed + short description (test)"
+    }
+  ]
+}

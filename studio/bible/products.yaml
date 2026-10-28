@@ -1,0 +1,30 @@
+# Products she can show. Facts are the ONLY claims scripts may make about a product (checked by keyword overlap),
+# taken from the Shopify listings. DRAFT until the owner approves.
+status: draft
+approved_by: null
+approved_at: null
+
+items:
+  - id: P01
+    shopify_gid: "gid://shopify/Product/9751656071407"
+    name: Cable Knit Mock Neck Midi Dress
+    prompt_description: >-
+      the exact caramel-brown cable-knit sweater dress from the reference images: mock neck, ribbed waistband, long
+      sleeves with ribbed cuffs, plain knit bodice, vertical cable-knit pattern down the skirt with a diagonal wrap
+      seam, fitted through the hip, below-the-knee length, and a single straight front slit with a clean edge
+    reference_images:
+      - assets/EC-P01-A02-H01-V01/ref1_dress_neck_down.jpg
+      - assets/EC-P01-A02-H01-V01/ref2_cable_slit_closeup.jpg
+    colors_count: 7
+    facts: ["cable knit", "mock neck", "ribbed waist", "front slit", "below-the-knee length", "seven colors", "long sleeves"]
+  - id: P02
+    shopify_gid: "gid://shopify/Product/9751655809263"
+    name: Turtleneck Rib Knit Sweater Dress
+    prompt_description: >-
+      the exact chunky rib-knit turtleneck sweater dress from the reference images: loose slouchy fit, folded
+      turtleneck, dropped shoulders, long full sleeves with ribbed cuffs, ribbed hem, mini length ending at mid-thigh
+    reference_images:
+      - assets/EC-P02-A03-H01-V01/ref1_dress_neck_down.jpg
+      - assets/EC-P02-A03-H01-V01/ref2_turtleneck_knit_closeup.jpg
+    colors_count: null
+    facts: ["rib knit", "turtleneck", "dropped shoulders", "slouchy fit", "mid-thigh length", "long sleeves"]
