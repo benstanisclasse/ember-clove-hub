@@ -42,4 +42,4 @@ All 15 ads re-opened after saving: name, own slideshow video, product-page link 
 ## Published 2026-10-28 ~13:04 CT
 - Campaign XXX live; ad group under TikTok review; 15 ads delivery OK. Balance $1,000.
 - Live differences: budget **$120.34/day** (not $90) and **auto-add creatives ON** on all 15 ads. Left unchanged pending the owner's decision (editing during the 7-day trial cancels the rebate).
-- 7-day trial: no edits, no pausing. Max spend at $120.34/day = ~$842.
+- 7-day trial: no edits, no pausing. Max spend at $120.34/day = ~$842.- Owner decision: "Keep the rebate: leave the $120.34 budget and auto-add on, and check daily which videos TikTok adds." Daily check: DAILY_CHECKS.md.
