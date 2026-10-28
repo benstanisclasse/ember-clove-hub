@@ -1,0 +1,368 @@
+<title>One-Sale Profit Model</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: controls column on the left, an itemised order "receipt" and chart on the right; stacks on phones. */
+:root {
+  --bg: #f5f4f1;
+  --panel: #ffffff;
+  --ink: #2a1e18;       /* clove */
+  --muted: #6f625a;
+  --line: #e2ddd7;
+  --ember: #c4471f;     /* ember accent */
+  --ember-soft: #f6dfd4;
+  --good: #2f7a4f;
+  --good-soft: #dcefe3;
+  --bad: #b3261e;
+  --bad-soft: #f7dcda;
+  --c-product: #8a6a55;
+  --c-ship: #c4471f;
+  --c-fees: #a99a8f;
+  --c-refund: #d2b9a6;
+  --c-ads: #3b5b8c;
+  --c-profit: #2f7a4f;
+  --font-display: "Bricolage Grotesque", "Manrope", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17120f; --panel: #211a16; --ink: #f1e9e3; --muted: #b3a59b; --line: #3a302a;
+    --ember: #ec7a52; --ember-soft: #3f2419; --good: #6cc392; --good-soft: #1d3426; --bad: #f08a80; --bad-soft: #3d1f1c;
+    --c-product: #b8957d; --c-ship: #ec7a52; --c-fees: #8c7f76; --c-refund: #6e5a4c; --c-ads: #7d9fd6; --c-profit: #6cc392;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17120f; --panel: #211a16; --ink: #f1e9e3; --muted: #b3a59b; --line: #3a302a;
+  --ember: #ec7a52; --ember-soft: #3f2419; --good: #6cc392; --good-soft: #1d3426; --bad: #f08a80; --bad-soft: #3d1f1c;
+  --c-product: #b8957d; --c-ship: #ec7a52; --c-fees: #8c7f76; --c-refund: #6e5a4c; --c-ads: #7d9fd6; --c-profit: #6cc392;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 48px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 24px; }
+header h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.7rem, 3.2vw, 2.4rem); line-height: 1.1; margin: 0 0 6px; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 68ch; }
+.grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; min-width: 0; }
+.label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+.stack { display: grid; gap: 18px; }
+.seg { display: grid; gap: 6px; }
+.seg-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font: inherit; font-size: 0.86rem; font-weight: 600; padding: 7px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--ink);
+}
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+.chip:focus-visible, input:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field label { font-size: 0.8rem; color: var(--muted); }
+.field input {
+  font-family: var(--font-num); font-size: 0.95rem; padding: 7px 9px; border-radius: 8px; width: 100%;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+}
+.check { display: flex; gap: 8px; align-items: center; font-size: 0.88rem; }
+.cpa-box { display: grid; gap: 8px; padding: 14px; border-radius: 12px; background: var(--ember-soft); }
+.cpa-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.cpa-val { font-family: var(--font-num); font-size: 1.6rem; font-weight: 600; color: var(--ember); }
+input[type="range"] { width: 100%; accent-color: var(--ember); }
+.hint { font-size: 0.8rem; color: var(--muted); }
+.result { display: grid; gap: 20px; min-width: 0; }
+.verdict { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; }
+.verdict .big { font-family: var(--font-num); font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 600; line-height: 1; }
+.pill { display: inline-block; font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+.pill.good { background: var(--good-soft); color: var(--good); }
+.pill.bad { background: var(--bad-soft); color: var(--bad); }
+.pill.mid { background: var(--ember-soft); color: var(--ember); }
+.bar { display: flex; height: 34px; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.bar span { display: block; height: 100%; transition: width .25s ease; }
+@media (prefers-reduced-motion: reduce) { .bar span { transition: none; } }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.8rem; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.receipt { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.receipt td { padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.receipt td.n { text-align: right; font-family: var(--font-num); white-space: nowrap; }
+.receipt td.p { text-align: right; font-family: var(--font-num); color: var(--muted); width: 62px; white-space: nowrap; }
+.receipt tr.sub td { font-weight: 700; border-bottom: 1px solid var(--ink); }
+.receipt tr.total td { font-weight: 700; font-size: 1.05rem; border-bottom: none; padding-top: 10px; }
+.receipt .note { color: var(--muted); font-size: 0.8rem; display: block; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 560px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.kpi { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 2px; }
+.kpi b { font-family: var(--font-num); font-size: 1.15rem; font-weight: 600; }
+.kpi span { font-size: 0.76rem; color: var(--muted); }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; margin: 0 0 10px; }
+.table-scroll { overflow-x: auto; }
+.cpa-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; min-width: 520px; }
+.cpa-table th, .cpa-table td { padding: 7px 8px; text-align: right; border-bottom: 1px solid var(--line); font-family: var(--font-num); font-size: 0.88rem; }
+.cpa-table th { font-family: var(--font-body); font-weight: 600; color: var(--muted); font-size: 0.78rem; }
+.cpa-table th:first-child, .cpa-table td:first-child { text-align: left; font-family: var(--font-body); }
+.cpa-table td.pos { color: var(--good); }
+.cpa-table td.neg { color: var(--bad); }
+.cpa-table tr.cur td { background: var(--ember-soft); }
+svg text { font-family: var(--font-body); font-size: 11px; fill: var(--muted); }
+.foot { font-size: 0.8rem; color: var(--muted); max-width: 90ch; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>One sale, start to finish</h1>
+    <p>Pick a product and a pricing setup, then slide the ad cost per sale (CPA). Everything left after product,
+      shipping, fees and refunds is your margin. CPA has to fit inside it, and whatever is left is profit.</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel stack" aria-label="Inputs">
+      <div class="seg">
+        <span class="label">Product</span>
+        <div class="seg-row" id="productChips">
+          <button class="chip" type="button" data-product="p01" aria-pressed="true">P01 Cable Knit Midi</button>
+          <button class="chip" type="button" data-product="p02" aria-pressed="false">P02 Turtleneck Dress</button>
+        </div>
+      </div>
+
+      <div class="seg">
+        <span class="label">Pricing &amp; shipping</span>
+        <div class="seg-row" id="scenarioChips">
+          <button class="chip" type="button" data-scenario="now" aria-pressed="true">Now: $8 shipping</button>
+          <button class="chip" type="button" data-scenario="free" aria-pressed="false">Free shipping</button>
+          <button class="chip" type="button" data-scenario="built" aria-pressed="false">Free, $8 in price</button>
+        </div>
+        <span class="hint" id="scenarioHint"></span>
+      </div>
+
+      <div class="cpa-box">
+        <div class="cpa-top">
+          <label class="label" for="cpa">Ad cost per sale (CPA)</label>
+          <span class="cpa-val" id="cpaVal">$20.00</span>
+        </div>
+        <input type="range" id="cpa" min="0" max="50" step="0.5" value="20">
+        <span class="hint" id="cpaHint"></span>
+      </div>
+
+      <div class="seg">
+        <span class="label">Numbers (edit to try your own)</span>
+        <div class="fields">
+          <div class="field"><label for="price">Product price</label><input id="price" type="number" step="0.01" min="0"></div>
+          <div class="field"><label for="cost">Product cost (EPROLO)</label><input id="cost" type="number" step="0.01" min="0"></div>
+          <div class="field"><label for="ship">EPROLO shipping</label><input id="ship" type="number" step="0.01" min="0"></div>
+          <div class="field"><label for="custShip">Shipping charged</label><input id="custShip" type="number" step="0.01" min="0"></div>
+          <div class="field"><label for="refund">Refund allowance %</label><input id="refund" type="number" step="0.5" min="0" max="100"></div>
+          <div class="field"><label for="target">Keep as profit %</label><input id="target" type="number" step="1" min="0" max="100"></div>
+        </div>
+        <span class="hint">Card fees are fixed at 2.9% + $0.30 of what the customer pays (Shopify Payments, Basic plan).</span>
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="panel stack">
+        <div class="verdict">
+          <div>
+            <div class="label">Profit on this sale</div>
+            <div class="big" id="profitBig">$0.00</div>
+          </div>
+          <span class="pill" id="statusPill">-</span>
+        </div>
+
+        <div>
+          <div class="bar" id="bar" role="img" aria-label="Where the customer's money goes"></div>
+          <div class="legend" id="legend"></div>
+        </div>
+
+        <table class="receipt" aria-label="One order, itemised">
+          <tbody id="receipt"></tbody>
+        </table>
+
+        <div class="kpis">
+          <div class="kpi"><b id="kBe">-</b><span>Break-even CPA</span></div>
+          <div class="kpi"><b id="kTgt">-</b><span id="kTgtLabel">Target CPA</span></div>
+          <div class="kpi"><b id="kRoas">-</b><span>ROAS at this CPA</span></div>
+          <div class="kpi"><b id="kBeRoas">-</b><span>Break-even ROAS</span></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Profit per sale as CPA rises</h2>
+        <svg id="chart" viewBox="0 0 640 260" width="100%" role="img" aria-label="Profit per sale against CPA for the three pricing setups"></svg>
+        <div class="legend" id="chartLegend"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Profit at each CPA</h2>
+        <div class="table-scroll"><table class="cpa-table" id="cpaTable"></table></div>
+      </div>
+    </section>
+  </div>
+
+  <p class="foot">Costs from the EPROLO app on 2026-10-25: P01 product $10.97 + shipping $15.05; P02 product $8.77 + shipping $13.35
+    (YANWEN Clothing Line, 8–15 days, same for every colour and size). Shipping charged is $8 on orders under $70 today.
+    Refund allowance assumes 5% of sales are refunded and the goods aren't recovered. Single-item orders; a second item adds
+    roughly $11–17 of margin. Sales tax is passed through and not counted. ROAS = what the customer pays ÷ ad cost.</p>
+</div>
+
+<script>
+(function () {
+  const PRODUCTS = {
+    p01: { name: "P01 Cable Knit Midi", price: 52.99, cost: 10.97, ship: 15.05, built: 59.99 },
+    p02: { name: "P02 Turtleneck Dress", price: 44.99, cost: 8.77, ship: 13.35, built: 52.99 }
+  };
+  const SCEN = {
+    now: { label: "Now: $8 shipping", hint: "Today's setup: $8 shipping under $70, free from $70." },
+    free: { label: "Free shipping", hint: "Same price, shipping free on every order." },
+    built: { label: "Free, $8 in price", hint: "Shipping free, price raised to cover most of it." }
+  };
+  const FEE_PCT = 0.029, FEE_FIX = 0.30, CUST_SHIP = 8;
+  let product = "p01", scenario = "now";
+  const $ = (id) => document.getElementById(id);
+  const money = (v) => (v < 0 ? "−$" : "$") + Math.abs(v).toFixed(2);
+
+  function scenarioValues(p, s) {
+    const d = PRODUCTS[p];
+    if (s === "now") return { price: d.price, custShip: d.price < 70 ? CUST_SHIP : 0 };
+    if (s === "free") return { price: d.price, custShip: 0 };
+    return { price: d.built, custShip: 0 };
+  }
+  function calc(v, cpa) {
+    const rev = v.price + v.custShip;
+    const fees = rev * FEE_PCT + FEE_FIX;
+    const refunds = v.price * v.refund / 100;
+    const margin = rev - v.cost - v.ship - fees - refunds;
+    return { rev, fees, refunds, margin, profit: margin - cpa, target: margin * (1 - v.keep / 100) };
+  }
+  function readInputs() {
+    const n = (id) => { const x = parseFloat($(id).value); return isFinite(x) ? x : 0; };
+    return { price: n("price"), cost: n("cost"), ship: n("ship"), custShip: n("custShip"), refund: n("refund"), keep: n("target") };
+  }
+  function loadDefaults() {
+    const d = PRODUCTS[product], s = scenarioValues(product, scenario);
+    $("price").value = s.price.toFixed(2); $("cost").value = d.cost.toFixed(2); $("ship").value = d.ship.toFixed(2);
+    $("custShip").value = s.custShip.toFixed(2);
+    if (!$("refund").value) $("refund").value = 5;
+    if (!$("target").value) $("target").value = 30;
+    $("scenarioHint").textContent = SCEN[scenario].hint;
+  }
+
+  function render() {
+    const v = readInputs(), cpa = parseFloat($("cpa").value) || 0;
+    const r = calc(v, cpa);
+    $("cpaVal").textContent = money(cpa);
+    $("profitBig").textContent = money(r.profit);
+    $("profitBig").style.color = r.profit >= 0 ? "var(--good)" : "var(--bad)";
+
+    const pill = $("statusPill");
+    if (r.profit < 0) { pill.className = "pill bad"; pill.textContent = "Losing money on this sale"; }
+    else if (cpa > r.target) { pill.className = "pill mid"; pill.textContent = "Profitable, but above target"; }
+    else { pill.className = "pill good"; pill.textContent = "At or under target"; }
+    $("cpaHint").textContent = "Break-even at " + money(r.margin) + " · target " + money(r.target) + " (keeps " + v.keep + "% of margin)";
+
+    const parts = [
+      ["Product", v.cost, "var(--c-product)"], ["EPROLO shipping", v.ship, "var(--c-ship)"],
+      ["Card fees", r.fees, "var(--c-fees)"], ["Refunds", r.refunds, "var(--c-refund)"],
+      ["Ads (CPA)", Math.min(cpa, Math.max(r.margin, 0)), "var(--c-ads)"], ["Profit", Math.max(r.profit, 0), "var(--c-profit)"]
+    ];
+    const total = Math.max(r.rev, 0.01);
+    $("bar").innerHTML = parts.map(p => `<span title="${p[0]} ${money(p[1])}" style="width:${Math.max(p[1], 0) / total * 100}%;background:${p[2]}"></span>`).join("");
+    $("legend").innerHTML = parts.map(p => `<span><i style="background:${p[2]}"></i>${p[0]} ${money(p[1])}</span>`).join("")
+      + (r.profit < 0 ? `<span style="color:var(--bad)">Loss ${money(r.profit)} (ads exceed margin)</span>` : "");
+
+    const pct = (x) => r.rev ? (x / r.rev * 100).toFixed(0) + "%" : "";
+    const row = (label, val, note, cls) => `<tr class="${cls || ""}"><td>${label}${note ? `<span class="note">${note}</span>` : ""}</td><td class="n">${money(val)}</td><td class="p">${pct(Math.abs(val))}</td></tr>`;
+    $("receipt").innerHTML =
+      row("Product price", v.price) +
+      row("Shipping charged", v.custShip, v.custShip ? "" : "free to the customer") +
+      row("Customer pays", r.rev, "", "sub") +
+      row("Product cost", -v.cost, "EPROLO") +
+      row("EPROLO shipping", -v.ship, "to the customer's door") +
+      row("Card fees", -r.fees, "2.9% + $0.30") +
+      row("Refund allowance", -r.refunds, v.refund + "% of price") +
+      row("Margin before ads", r.margin, "= the most you can pay per sale", "sub") +
+      row("Ad cost (CPA)", -cpa, "TikTok spend per sale") +
+      row("Profit", r.profit, "", "total");
+
+    $("kBe").textContent = money(r.margin);
+    $("kTgt").textContent = money(r.target);
+    $("kTgtLabel").textContent = "Target CPA (keep " + v.keep + "%)";
+    $("kRoas").textContent = cpa > 0 ? (r.rev / cpa).toFixed(2) : "–";
+    $("kBeRoas").textContent = r.margin > 0 ? (r.rev / r.margin).toFixed(2) : "–";
+
+    renderTable(v, cpa);
+    renderChart(v, cpa);
+  }
+
+  function scenarioSet(v) {
+    // Lines for the three setups, using the edited cost/shipping/refund inputs for the current product.
+    return Object.keys(SCEN).map(k => {
+      const s = scenarioValues(product, k);
+      const vals = Object.assign({}, v, s);
+      if (k === scenario) { vals.price = v.price; vals.custShip = v.custShip; }
+      return { key: k, label: SCEN[k].label + " ($" + vals.price.toFixed(2) + (vals.custShip ? " + $" + vals.custShip.toFixed(0) : "") + ")", v: vals };
+    });
+  }
+
+  function renderTable(v, cpa) {
+    const cpas = [10, 15, 20, 25, 30, 35, 40];
+    const sets = scenarioSet(v);
+    let h = "<thead><tr><th>Setup</th><th>Margin</th>" + cpas.map(c => `<th>CPA $${c}</th>`).join("") + "</tr></thead><tbody>";
+    sets.forEach(s => {
+      const m = calc(s.v, 0).margin;
+      h += `<tr class="${s.key === scenario ? "cur" : ""}"><td>${s.label}</td><td>${money(m)}</td>` +
+        cpas.map(c => { const p = m - c; return `<td class="${p >= 0 ? "pos" : "neg"}">${money(p)}</td>`; }).join("") + "</tr>";
+    });
+    $("cpaTable").innerHTML = h + "</tbody>";
+  }
+
+  function renderChart(v, cpa) {
+    const W = 640, H = 260, L = 48, R = 16, T = 14, B = 34;
+    const sets = scenarioSet(v);
+    const colors = { now: "var(--ink)", free: "var(--c-ads)", built: "var(--ember)" };
+    const xMax = 50;
+    const margins = sets.map(s => calc(s.v, 0).margin);
+    const yMax = Math.ceil(Math.max(...margins, 5) / 10) * 10;
+    const yMin = Math.floor(Math.min(...margins.map(m => m - xMax), -10) / 10) * 10;
+    const x = (c) => L + c / xMax * (W - L - R);
+    const y = (p) => T + (yMax - p) / (yMax - yMin) * (H - T - B);
+    let g = "";
+    for (let t = yMin; t <= yMax; t += 10) {
+      g += `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)" stroke-width="${t === 0 ? 1.6 : 1}"/>`;
+      g += `<text x="${L - 6}" y="${y(t) + 4}" text-anchor="end">${t < 0 ? "−$" + (-t) : "$" + t}</text>`;
+    }
+    for (let c = 0; c <= xMax; c += 10) g += `<text x="${x(c)}" y="${H - B + 18}" text-anchor="middle">$${c}</text>`;
+    g += `<text x="${(L + W - R) / 2}" y="${H - 4}" text-anchor="middle">Ad cost per sale (CPA)</text>`;
+    g += `<rect x="${L}" y="${y(0)}" width="${W - L - R}" height="${y(yMin) - y(0)}" fill="var(--bad-soft)" opacity="0.55"/>`;
+    sets.forEach((s, i) => {
+      const m = margins[i];
+      const sw = s.key === scenario ? 3 : 1.6;
+      g += `<line x1="${x(0)}" y1="${y(m)}" x2="${x(xMax)}" y2="${y(m - xMax)}" stroke="${colors[s.key]}" stroke-width="${sw}" fill="none"/>`;
+      if (m > 0 && m < xMax) g += `<circle cx="${x(m)}" cy="${y(0)}" r="4" fill="${colors[s.key]}"/>`;
+    });
+    g += `<line x1="${x(cpa)}" x2="${x(cpa)}" y1="${T}" y2="${H - B}" stroke="var(--ember)" stroke-dasharray="4 4" stroke-width="1.2"/>`;
+    const cur = margins[sets.findIndex(s => s.key === scenario)] - cpa;
+    g += `<circle cx="${x(cpa)}" cy="${y(cur)}" r="5" fill="var(--panel)" stroke="var(--ember)" stroke-width="2.5"/>`;
+    $("chart").innerHTML = g;
+    $("chartLegend").innerHTML = sets.map((s, i) => `<span><i style="background:${colors[s.key]}"></i>${s.label}: break-even at ${money(margins[i])}</span>`).join("")
+      + `<span>Shaded = losing money</span>`;
+  }
+
+  function pick(groupId, attr, val) {
+    $(groupId).querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset[attr] === val)));
+  }
+  $("productChips").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    product = b.dataset.product; pick("productChips", "product", product); loadDefaults(); render();
+  });
+  $("scenarioChips").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    scenario = b.dataset.scenario; pick("scenarioChips", "scenario", scenario); loadDefaults(); render();
+  });
+  ["cpa", "price", "cost", "ship", "custShip", "refund", "target"].forEach(id => $(id).addEventListener("input", render));
+  loadDefaults(); render();
+})();
+</script>
