@@ -160,6 +160,7 @@ def _run_generation(con, ep, b, test, g, trial, model, resolution, payload, prom
         hf_api.download((s.get("video") or {})["url"], out)
         content.finish_job(con, job_id, "completed", sub.get("request_id"), cost, "estimate (Higgsfield reports no cost)",
                            output_path=out)
+        out = clean_copy(out)  # QA, approval and publishing all use the clean file; the download is kept
     else:
         r = requests.post(f"{API}/videos", headers=_headers(), json=payload, timeout=60)
         if not r.ok:
@@ -189,6 +190,18 @@ def _run_generation(con, ep, b, test, g, trial, model, resolution, payload, prom
                    duration_s=g.duration_s, attempt=attempt, cost_usd=round(ep["cost_usd"] + cost, 4),
                    video_path=str(out.relative_to(HUB)), test=1 if test else 0,
                    max_attempts=b["rules"].generation.max_attempts)
+
+
+def clean_copy(src):
+    """Higgsfield reference-to-video files decode fine but give an error when opened from TikTok drafts (2026-10-28,
+    three attempts). A standard re-encode of the same picture and sound opened fine, so every such download is
+    re-encoded right away, before QA and the owner's approval. Returns the `_clean.mp4` path."""
+    out = src.with_name(f"{src.stem}_clean.mp4")
+    subprocess.run([vp.FF, "-y", "-hide_banner", "-loglevel", "error", "-i", str(src), "-map", "0:v:0", "-map", "0:a:0",
+                    "-c:v", "libx264", "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p", "-crf", "18",
+                    "-preset", "slow", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+                    "-movflags", "+faststart", "-map_metadata", "-1", str(out)], check=True)
+    return out
 
 
 _WHISPER = None

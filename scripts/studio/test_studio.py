@@ -510,3 +510,17 @@ def test_bible_lock_only_binds_files_older_than_the_approval(tmp_path, monkeypat
     lock = bible.read_lock(folder)
     assert "character" in lock and "templates" in lock and "world" not in lock
     assert not bible.load(folder)["world"].assets_locked
+
+
+def test_higgsfield_downloads_are_cleaned_before_qa(tmp_path):
+    import subprocess
+    from studio import production
+    src = tmp_path / "EW-1_a1_reference-to-video_480p.mp4"
+    subprocess.run([production.vp.FF, "-y", "-loglevel", "error", "-f", "lavfi", "-i", "color=c=red:s=480x854:r=24:d=1",
+                    "-f", "lavfi", "-i", "sine=f=440:sample_rate=32000:d=1", "-shortest", "-c:v", "libx264", str(src)],
+                   check=True)
+    out = production.clean_copy(src)
+    assert out.name == "EW-1_a1_reference-to-video_480p_clean.mp4" and src.exists()
+    info = subprocess.run([production.vp.FF, "-hide_banner", "-i", str(out)], capture_output=True, text=True).stderr
+    assert "480x854" in info and "44100 Hz" in info and "h264 (High)" in info
+    assert out.read_bytes().find(b"moov") < out.read_bytes().find(b"mdat")  # index first (faststart)

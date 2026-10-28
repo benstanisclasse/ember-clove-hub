@@ -505,7 +505,8 @@ def backfill_generation(con):
         by_ep.setdefault(r["episode_id"], []).append(dict(r))
     for ep_id, rows in by_ep.items():
         ep_dir = HUB / "studio" / "episodes" / ep_id
-        videos = sorted(ep_dir.glob(f"{ep_id}_a*.mp4")) if ep_dir.exists() else []
+        videos = sorted(v for v in ep_dir.glob(f"{ep_id}_a*.mp4") if not v.stem.endswith("_clean")) \
+            if ep_dir.exists() else []  # one download per paid job; _clean copies are re-encodes, not jobs
         paid = [r for r in rows if r["usd"] > 0.5]  # video jobs; small amounts are first frames, 0 = failed
         for r in rows:
             vid = videos[paid.index(r)] if r in paid and paid.index(r) < len(videos) else None
