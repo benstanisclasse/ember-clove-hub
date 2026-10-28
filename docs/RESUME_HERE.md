@@ -31,7 +31,7 @@ Phase D (items 1–4) DONE 2026-10-28 (commit 382a7ad): shared rule module (chec
 product availability at publish, Facebook AI-picture weeks in the database (fb_ai.py).
 Phase D items 5–7 DONE 2026-10-28 (commit 1aabcec): approvals cover reference images + prompt templates
 (approved_assets.json), Facebook outfit compatibility + caption rotation, Ember's references library. Phase D complete.
-To resume: "Start Content Studio Phase E" (once ~2 weeks of tagged content exist). Owner: wardrobe.yaml is draft.
+To resume: "Start Content Studio Phase E" (once ~2 weeks of tagged content exist). Wardrobe approved 2026-10-28 (bible fully approved; products.yaml only once selling).
 First real use of fb_ai.py: the AI-picture week from 2026-11-04.
 Note: Dashboard 2.0 Phases E and F were completed in a parallel session.
 Must share Dashboard 2.0's infrastructure: same dashboard, same `studio/analytics.db` history store, same Shopify
