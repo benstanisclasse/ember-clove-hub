@@ -19,7 +19,7 @@ sys.path.insert(0, str(HUB / "scripts"))
 import hub_env  # noqa: E402
 import postzen as pz  # noqa: E402
 
-from studio import db  # noqa: E402
+from studio import content, db  # noqa: E402
 
 OUT = HUB / "studio" / "dashboard"
 SETTINGS = {
@@ -43,18 +43,52 @@ def paused(ep):
     return ep["publish_mode"] == "scheduled" and ep["platform_status"] == "draft"
 
 
-def tiktok_label(ep):
-    """What the dashboard says about an episode's TikTok post."""
+def tiktok_label(ep, live=None):
+    """What the dashboard says about an episode's TikTok post. A draft upload is only "live" with public evidence
+    (views/impressions in PostZen's analytics, `live` = {postzen id: evidence}) or the owner's `posted`: PostZen
+    reports a URL and "published" seconds after a draft lands in the TikTok app (Content Studio audit, 2026-10-27)."""
     status = ep["platform_status"] or ""
-    if ep["publish_mode"] == "draft" and ep["post_url"]:
-        return "live (posted from the TikTok app)"
+    if ep["publish_mode"] == "draft" and ep["postzen_post_id"] in (live or {}):
+        return "live (public views on TikTok)"
+    if ep["publish_mode"] == "draft" and ep["state"] in ("POSTED", "MEASURED"):
+        return "live (you recorded it as posted)"
     if ep["publish_mode"] == "draft" and status == "published":
-        return "in TikTok drafts, waiting for you to post it"
+        due = ep["post_date"] and slot_time_str(ep) <= dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        return ("in your TikTok drafts: its time has passed, post it from the app with the AI label" if due
+                else "in TikTok drafts, waiting for you to post it")
     if ep["publish_mode"] == "draft" and status in ("scheduled", "queued", "pending"):
         return "goes to your TikTok drafts at its time"
     if paused(ep):
         return "paused in PostZen"
     return status or ("posted" if ep["state"] == "POSTED" else "")
+
+
+def slot_time_str(ep):
+    return content.slot_utc(ep["post_date"], ep["slot"])
+
+
+def _send(con, ep, body, key, mode_label, scheduled_for):
+    """Send to PostZen with a publish-job record written before and after the call, so a failure or a crash leaves
+    a trace. The video is uploaded once (content.media_uploads) and reused on retries."""
+    cid = f"TT-{ep['id']}"
+    ccon = content.connect()
+    try:
+        url, digest = content.upload_media(ccon, HUB / ep["video_path"], pz)
+        body["mediaItems"] = [{"url": url}]
+        content.record_publish(ccon, cid, "tiktok", mode_label, key, asset_sha256=digest,
+                               caption_sha256=content.sha256_text(ep["caption"]), scheduled_for=scheduled_for,
+                               submitted_at=content.now_utc(), state="submitting", attempt=1, error=None)
+        try:
+            res = pz.post("posts", body, idempotency_key=key)
+        except Exception as e:
+            content.record_publish(ccon, cid, "tiktok", mode_label, key, state="failed", error=f"{type(e).__name__}: {e}"[:500])
+            raise
+        post = res.get("post") or res.get("existingPost") or {}
+        content.record_publish(ccon, cid, "tiktok", mode_label, key, postzen_post_id=post.get("_id"), state="submitted",
+                               platform_status=post.get("status"), evidence="PostZen accepted the request")
+        return post
+    finally:
+        ccon.close()
 
 
 def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
@@ -84,12 +118,9 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
                     or not (target.get("settings") or {}).get("uploadAsDraft") or post.get("content") != ep["caption"]:
                 raise db.GateError(f"PostZen post {existing} isn't a TikTok draft upload of {ep['id']}'s caption")
         else:
-            url = pz.upload(HUB / ep["video_path"])
             body = {"content": ep["caption"] or "", "publishNow": True, "timezone": b["rules"].posting.timezone,
-                    "mediaItems": [{"url": url}],
                     "platforms": [{"platform": "tiktok", "accountId": account_id(), "settings": SETTINGS[mode]}]}
-            res = pz.post("posts", body, idempotency_key=f"{ep['id']}-draft-now")
-            post = res.get("post") or res.get("existingPost") or {}
+            post = _send(con, ep, body, f"{ep['id']}-draft-now", "tiktok_draft", content.now_utc())
         return db.note(con, ep["id"], f"sent to the TikTok app's drafts now{replaced}",
                        postzen_post_id=post.get("_id"), publish_mode=mode,
                        platform_status=post.get("status") or "queued")
@@ -101,12 +132,9 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
     local, when = slot_time(ep, b)
     if local <= dt.datetime.now(local.tzinfo) + dt.timedelta(minutes=2):
         raise db.GateError(f"{ep['id']}'s slot {local:%Y-%m-%d %H:%M} has passed; re-plan it")
-    url = pz.upload(HUB / ep["video_path"])
     body = {"content": ep["caption"] or "", "scheduledFor": when, "timezone": b["rules"].posting.timezone,
-            "mediaItems": [{"url": url}],
             "platforms": [{"platform": "tiktok", "accountId": account_id(), "settings": SETTINGS[mode]}]}
-    res = pz.post("posts", body, idempotency_key=f"{ep['id']}-{mode}")
-    post = res.get("post") or res.get("existingPost") or {}
+    post = _send(con, ep, body, f"{ep['id']}-{mode}", f"tiktok_{mode}", when)
     reason = (f"sent to PostZen ({mode}) for {local:%a %b %d %H:%M %Z}" + (f" (owner: {quote})" if quote else "")
               + replaced)
     return db.note(con, ep["id"], reason, postzen_post_id=post.get("_id"), publish_mode=mode,
@@ -143,8 +171,13 @@ def sync(con, b):
     now = db.now()
     acc = account_id()
     pulled = pz.sync_external(acc)
-    for ep in [dict(r) for r in con.execute("SELECT * FROM episodes WHERE postzen_post_id IS NOT NULL")]:
-        post = pz.get(f"posts/{ep['postzen_post_id']}").get("post") or {}
+    skipped = []
+    for ep in [dict(r) for r in con.execute("SELECT * FROM episodes WHERE postzen_post_id IS NOT NULL AND test = 0")]:
+        try:  # one failed status check is skipped (and reported), not fatal for the whole sync
+            post = pz.get(f"posts/{ep['postzen_post_id']}").get("post") or {}
+        except RuntimeError as e:
+            skipped.append(f"{ep['id']}: {str(e)[:80]}")
+            continue
         target = next(iter(post.get("platforms") or []), {})
         status = target.get("status") or post.get("status")
         url = target.get("platformPostUrl")
@@ -152,6 +185,7 @@ def sync(con, b):
             db.note(con, ep["id"], f"PostZen status {status}", platform_status=status, post_url=url or ep["post_url"])
 
     eps = [dict(r) for r in con.execute("SELECT * FROM episodes WHERE test = 0 ORDER BY post_date, slot")]
+    live = content.tiktok_live_evidence(OUT)  # public evidence from the last analytics pull
     b_items = {i.id: i for i in b["wardrobe"].items}
     rooms = {r.id: r.name for r in b["world"].rooms}
     series = {s.id: s.name for s in b["series"].items}
@@ -164,7 +198,7 @@ def sync(con, b):
             "weekday": dt.date.fromisoformat(e["post_date"]).strftime("%a"),
             "series": series.get(e["series_id"], e["series_id"]), "location": rooms.get(e["room_id"], e["room_id"]),
             "store_piece": f"{piece.name} ({piece.color})" if piece else "", "stage": e["state"],
-            "tiktok": tiktok_label(e),
+            "tiktok": tiktok_label(e, live),
             "send_mode": e["publish_mode"] or "", "caption": e["caption"] or "", "post_url": e["post_url"] or "",
             "cost_usd": round(e["cost_usd"] or 0, 2)})
     _write("schedule", schedule)
@@ -219,7 +253,8 @@ def sync(con, b):
     _write("caps", [{"cap": "per video", "usd": g.max_usd_per_video}, {"cap": "per day", "usd": g.max_usd_per_day},
                     {"cap": "per week", "usd": g.max_usd_per_week}])
     (OUT / "synced_at.txt").write_text(now, encoding="utf-8")
-    return [f"pulled from TikTok: {pulled}", f"schedule {len(schedule)}", f"followers {len(followers)}",
+    return [f"pulled from TikTok: {pulled}"] + [f"status check skipped {s}" for s in skipped] + [
+            f"schedule {len(schedule)}", f"followers {len(followers)}",
             f"tiktok_videos {len(posts)}",
             f"post_timeline {len(timeline)}",
             f"daily_metrics {len(daily.get('dailyData') or [])}", f"spend {len(spend)}", "caps 3"]

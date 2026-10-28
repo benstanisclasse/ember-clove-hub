@@ -15,8 +15,8 @@
    "photos": [
     "https://media.postzen.dev/users/m97f9nabjkj0qb0effw7w797dn8h0h04/media/38bf4946-91d9-4946-b31e-e39709590557/2566dc6b_01_cat_slippers.png"
    ],
-   "caption": "Embroidered Cat Plush Slippers\n\nFluffy white house slippers with a black cat face on each toe, made for lounging at home.\n\nDressed up or dressed down?",
-   "first_comment": "Shop it here: https://emberandclove.com/products/black-kitten-slipper?utm_source=facebook&utm_medium=social&utm_campaign=fb_photos&utm_content=2026-10-28_0900",
+   "caption": "Embroidered Cat Plush Slippers\n\nFluffy white house slippers with a black cat face on each toe, made for lounging at home.\n\nWho else lives in slippers once it's cold?\n\nShop it here: https://emberandclove.com/products/black-kitten-slipper?utm_source=facebook&utm_medium=social&utm_campaign=fb_photos&utm_content=2026-10-27_now\n\n#aigenerated",
+   "first_comment": null,
    "postzen_post_id": "m172yfps52w625c7gktd9ekb9s8h2cqh",
    "status": "published",
    "posted_early": "2026-10-27 now (owner: \"just post something now on facebook\")",
@@ -27,7 +27,11 @@
     "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8DCF54341FAE86A7CBF6F2FED99C20F2.jpg",
     "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EA242EC100C3A711697568EBE98C74F3.jpg",
     "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A8298F1AD5CCD3C6994DDE34CD89B3C2.jpg"
-   ]
+   ],
+   "caption_planned": "Embroidered Cat Plush Slippers\n\nFluffy white house slippers with a black cat face on each toe, made for lounging at home.\n\nDressed up or dressed down?",
+   "first_comment_planned": "Shop it here: https://emberandclove.com/products/black-kitten-slipper?utm_source=facebook&utm_medium=social&utm_campaign=fb_photos&utm_content=2026-10-28_0900",
+   "ai_picture": "data/media_generated/facebook_2026-10-28/01_cat_slippers.png",
+   "record_note": "caption/first_comment corrected 2026-10-27 to what was actually sent (PostZen post m172yfps52w625c7gktd9ekb9s8h2cqh)"
   },
   {
    "date": "2026-10-28",

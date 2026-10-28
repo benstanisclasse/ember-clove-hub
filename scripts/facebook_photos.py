@@ -1,11 +1,19 @@
-"""Facebook Page photo posts: real product photos only, posted automatically through PostZen.
+"""Facebook Page photo posts through PostZen: real supplier photos or owner-approved AI pictures.
 
 Owner 2026-10-27: the Facebook Page posts pictures only (no videos, no Ember backstory), 2 posts on weekdays and 1 on
-weekends. Products come from the store's public feed (emberandclove.com/products.json). Only the supplier's real photos
-are used (their files have 32-character hex names) and each photo is scanned for AI content credentials and generator
-names before use; the AI-made replacement photos are never posted here, so no AI
-label is needed. Captions use the product's own description, never prices, delivery times or urgency. The store link
-goes in the first comment.
+weekends. Products come from the store's public feed (emberandclove.com/products.json). The planner picks the
+supplier's real photos (32-character hex file names), each scanned for AI content credentials before use.
+Owner 2026-10-27 (Content Studio Phase B): AI pictures are a standard post type, each approved by the owner; any post
+whose photos are not real supplier photos (or that has an `ai_picture`) must carry #aigenerated in its caption, and
+publish refuses it otherwise. Captions use the product's own description, never prices, delivery times or urgency.
+The store link goes in the caption by default (rules.json "link_placement": "caption"; "first_comment" puts it in
+the first comment instead).
+
+Every send is recorded per post: the plan file and history are saved right after each post (atomically), a
+publish job with the caption's hash is written to studio.db (scripts/studio/content.py) before and after the call,
+and a failure is recorded on that job before the error stops the run. Each sent post carries its own approval
+(owner's words, time, caption and photo hashes). `plan` refuses to overwrite a plan file that already has posts in
+PostZen.
 
   python -I scripts/facebook_photos.py plan --start 2026-10-28 --days 7     plan posts + review sheet (nothing sent)
   python -I scripts/facebook_photos.py publish data/facebook/plan_2026-10-28.json --quote "owner's words"
@@ -137,8 +145,10 @@ def question(p, rng):
 
 
 def link(p, rules, day, slot):
-    return (f"{rules['store_url']}/products/{p['handle']}?utm_source=facebook&utm_medium=social"
-            f"&utm_campaign=fb_photos&utm_content={day}_{slot.replace(':', '')}")
+    # Hub tracking convention (scripts/attribution.py): organic_social; posts before 2026-10-28 used "social"
+    from attribution import tag_link
+    return tag_link(f"{rules['store_url']}/products/{p['handle']}", "facebook_organic", "fb_photos",
+                    f"{day}_{slot.replace(':', '')}")
 
 
 def single_post(p, rules, rng, day, slot):
@@ -150,8 +160,12 @@ def single_post(p, rules, rng, day, slot):
     if len(cols) > 1:
         lines.append(f"In {len(cols)} colors." if len(cols) > 3 else f"In {', '.join(cols[:-1])} and {cols[-1]}.")
     lines += ["", question(p, rng)]
+    shop = f"Shop it here: {link(p, rules, day, slot)}"
+    if rules.get("link_placement", "caption") == "caption":
+        return {"kind": "product", "products": [p["handle"]], "titles": [p["title"]], "photos": photos,
+                "caption": "\n".join(lines + ["", shop]), "first_comment": None}
     return {"kind": "product", "products": [p["handle"]], "titles": [p["title"]], "photos": photos,
-            "caption": "\n".join(lines), "first_comment": f"Shop it here: {link(p, rules, day, slot)}"}
+            "caption": "\n".join(lines), "first_comment": shop}
 
 
 def outfit_post(parts, rules, day, slot):
@@ -162,6 +176,8 @@ def outfit_post(parts, rules, day, slot):
     caption = "\n".join(["One outfit, three pieces:", *[f"• {n}" for n in names], "",
                          "Which piece would you wear first?"])
     comment = "Shop the pieces:\n" + "\n".join(f"{p['title']}: {link(p, rules, day, slot)}" for p in parts)
+    if rules.get("link_placement", "caption") == "caption":
+        caption, comment = f"{caption}\n\n{comment}", None
     return {"kind": "outfit", "products": [p["handle"] for p in parts], "titles": names,
             "photos": [f[0] for f in firsts], "caption": caption, "first_comment": comment}
 
@@ -213,7 +229,7 @@ def review_sheet(posts, path):
         cards.append(f'<section><h2>{i}. {dt.date.fromisoformat(p["date"]):%a %b %d} · {p["slot"]} ET '
                      f'<small>{p["kind"]}</small></h2><div class="imgs">{imgs}</div>'
                      f'<pre>{html.escape(p["caption"])}</pre><p class="c">First comment: '
-                     f'{html.escape(p["first_comment"])}</p></section>')
+                     f'{html.escape(p["first_comment"] or "none (link in the caption)")}</p></section>')
     path.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>Facebook posts review</title><style>
 body{{font-family:system-ui,sans-serif;margin:0;padding:16px;background:#f7f5f2;color:#24201d}}
@@ -225,32 +241,65 @@ h2{{font-size:1rem;margin:0 0 8px}} small{{color:#6f665f;font-weight:400}} .imgs
 {''.join(cards)}</body></html>""", encoding="utf-8")
 
 
+def is_ai_post(p):
+    """A post counts as AI-made if it has an ai_picture or any photo that is not a real supplier photo."""
+    return bool(p.get("ai_picture")) or any(not REAL_PHOTO.match(u.split("?")[0].rsplit("/", 1)[-1]) for u in p["photos"])
+
+
 def publish(plan_path, quote):
     import postzen as pz
+    from studio import content
     rules, history = load_rules(), load_history()
     data = json.loads(plan_path.read_text(encoding="utf-8"))
     acc = hub_env.load_config()["postzen"]["facebook_account_id"]
     tz = ZoneInfo(rules["timezone"])
-    for p in data["posts"]:
-        if p.get("postzen_post_id"):
-            continue
-        local = dt.datetime.fromisoformat(f"{p['date']}T{p['slot']}").replace(tzinfo=tz)
-        if local <= dt.datetime.now(tz) + dt.timedelta(minutes=5):
-            print(f"  skip {p['date']} {p['slot']}: slot has passed")
-            continue
-        body = {"content": p["caption"], "scheduledFor": local.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "timezone": rules["timezone"], "mediaItems": [{"url": u} for u in p["photos"]],
-                "platforms": [{"platform": "facebook", "accountId": acc,
-                               "settings": {"firstComment": p["first_comment"]}}]}
-        res = pz.post("posts", body, idempotency_key=f"fb-{p['date']}-{p['slot']}")
-        post = res.get("post") or res.get("existingPost") or {}
-        p.update(postzen_post_id=post.get("_id"), status=post.get("status") or "scheduled")
-        history.append({"date": p["date"], "slot": p["slot"], "products": p["products"],
-                        "postzen_post_id": p["postzen_post_id"]})
-        print(f"  {p['date']} {p['slot']} {p['kind']}: {', '.join(p['titles'])[:70]} -> {p['postzen_post_id']}")
-    data.setdefault("approvals", []).append({"quote": quote, "at": dt.datetime.now().isoformat(timespec="seconds")})
-    plan_path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=1), encoding="utf-8")
+    con = content.connect()
+    sent = 0
+    try:
+        for i, p in enumerate(data["posts"]):
+            if p.get("postzen_post_id"):
+                continue
+            local = dt.datetime.fromisoformat(f"{p['date']}T{p['slot']}").replace(tzinfo=tz)
+            if local <= dt.datetime.now(tz) + dt.timedelta(minutes=5):
+                print(f"  skip {p['date']} {p['slot']}: slot has passed")
+                continue
+            if is_ai_post(p) and "#aigenerated" not in p["caption"].lower():
+                print(f"  refused {p['date']} {p['slot']}: AI picture without #aigenerated in the caption")
+                continue
+            when = local.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+            settings = {"firstComment": p["first_comment"]} if p.get("first_comment") else {}
+            body = {"content": p["caption"], "scheduledFor": when, "timezone": rules["timezone"],
+                    "mediaItems": [{"url": u} for u in p["photos"]],
+                    "platforms": [{"platform": "facebook", "accountId": acc, "settings": settings}]}
+            key, cid = f"fb-{p['date']}-{p['slot']}", f"FB-{data.get('start', plan_path.stem[5:])}-{i:02d}"
+            cap_hash = content.sha256_text(p["caption"])
+            content.record_publish(con, cid, "facebook", "fb_scheduled", key, caption_sha256=cap_hash, scheduled_for=when,
+                                   submitted_at=content.now_utc(), state="submitting", attempt=1, error=None)
+            try:
+                res = pz.post("posts", body, idempotency_key=key)
+            except Exception as e:  # record the failure, keep everything sent so far, then stop
+                content.record_publish(con, cid, "facebook", "fb_scheduled", key, state="failed",
+                                       error=f"{type(e).__name__}: {e}"[:500])
+                raise
+            post = res.get("post") or res.get("existingPost") or {}
+            p.update(postzen_post_id=post.get("_id"), status=post.get("status") or "scheduled",
+                     approval={"quote": quote, "at": dt.datetime.now().isoformat(timespec="seconds"),
+                               "caption_sha256": cap_hash, "photos_sha256": content.sha256_text("\n".join(p["photos"]))})
+            content.record_publish(con, cid, "facebook", "fb_scheduled", key, postzen_post_id=p["postzen_post_id"],
+                                   state="submitted", platform_status=p["status"], evidence="PostZen accepted the request")
+            history.append({"date": p["date"], "slot": p["slot"], "products": p["products"],
+                            "postzen_post_id": p["postzen_post_id"], "ai_picture": is_ai_post(p)})
+            content.atomic_write(plan_path, json.dumps(data, ensure_ascii=False, indent=1))  # saved after every post
+            content.atomic_write(HISTORY, json.dumps(history, ensure_ascii=False, indent=1))
+            sent += 1
+            print(f"  {p['date']} {p['slot']} {p['kind']}: {', '.join(p['titles'])[:70]} -> {p['postzen_post_id']}")
+    finally:
+        con.close()
+    if sent:
+        data.setdefault("approvals", []).append({"quote": quote, "at": dt.datetime.now().isoformat(timespec="seconds"),
+                                                 "posts_sent": sent})
+        content.atomic_write(plan_path, json.dumps(data, ensure_ascii=False, indent=1))
+    print(f"{sent} post(s) sent")
 
 
 METRICS = ("views", "impressions", "reach", "likes", "comments", "shares", "saves", "clicks")  # PostZen AnalyticsMetrics
@@ -277,8 +326,13 @@ def sync_dashboard(out):
         changed = False
         for p in data["posts"]:
             if p.get("postzen_post_id"):
-                post = pz.get(f"posts/{p['postzen_post_id']}").get("post") or {}
+                try:  # one failed status check is skipped, not fatal for the whole sync
+                    post = pz.get(f"posts/{p['postzen_post_id']}").get("post") or {}
+                except RuntimeError:
+                    post = {}
                 target = next(iter(post.get("platforms") or []), {})
+                if not target and not post:
+                    target = {"status": p.get("status"), "platformPostUrl": p.get("post_url")}
                 status, url = target.get("status") or post.get("status"), target.get("platformPostUrl")
                 if status != p.get("status") or (url and url != p.get("post_url")):
                     p.update(status=status, post_url=url or p.get("post_url"))
@@ -288,7 +342,8 @@ def sync_dashboard(out):
                              "products": " + ".join(p["titles"]), "photos": len(p["photos"]),
                              "status": p.get("status") or "not sent", "post_url": p.get("post_url") or ""})
         if changed:
-            path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+            from studio.content import atomic_write
+            atomic_write(path, json.dumps(data, ensure_ascii=False, indent=1))
     schedule.sort(key=lambda r: (r["date"], r["time"]))
     (out / "fb_schedule.json").write_text(json.dumps(schedule, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -323,11 +378,16 @@ def sync_dashboard(out):
 
 
 def make_plan(start, days):
+    path = DIR / f"plan_{start}.json"
+    if path.exists():  # never overwrite a week that already has posts in PostZen (ids, approvals, hand edits)
+        old = json.loads(path.read_text(encoding="utf-8"))
+        sent = [p for p in old.get("posts") or [] if p.get("postzen_post_id")]
+        if sent:
+            raise SystemExit(f"{path.name} already has {len(sent)} post(s) in PostZen; plan a different start date")
     rules, history = load_rules(), load_history()
     posts = plan(start, days, rules, fetch_products(), history)
-    path = DIR / f"plan_{start}.json"
-    path.write_text(json.dumps({"start": start.isoformat(), "days": days, "posts": posts}, ensure_ascii=False, indent=1),
-                    encoding="utf-8")
+    from studio.content import atomic_write
+    atomic_write(path, json.dumps({"start": start.isoformat(), "days": days, "posts": posts}, ensure_ascii=False, indent=1))
     review_sheet(posts, DIR / f"review_{start}.html")
     return path, posts
 

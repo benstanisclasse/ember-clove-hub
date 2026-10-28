@@ -101,6 +101,23 @@
     <div id="cal" data-source="schedule fb_schedule"></div>
   </section>
 
+  <section class="es-sec" id="ready-tiktok">
+    <h2 class="es-h2">Ready for TikTok publication</h2>
+    <p class="es-note">Videos PostZen has put (or will put) in your TikTok drafts. They are not public until you post them from the
+      TikTok app with the <b>AI-generated content</b> label switched on. A video only counts as live once TikTok shows public views.</p>
+    <div class="es-grid3" id="rt-list"></div>
+  </section>
+
+  <section class="es-sec" id="queue">
+    <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Content queue</h2>
+      <button class="es-btn" type="button" id="q-csv">Download CSV</button></div>
+    <p class="es-note">Every TikTok video and Facebook post in one list, with its production stage and honest publishing state
+      (submitted, scheduled, in TikTok drafts, waiting for you to post, public, paused or failed). Click a row for its history.</p>
+    <div class="es-controls"><div class="es-seg" id="q-chan" role="group" aria-label="Channel"></div>
+      <div class="es-seg" id="q-state" role="group" aria-label="State"></div></div>
+    <div class="es-tablewrap"><table class="es-table" id="q-table"></table></div>
+  </section>
+
   <section class="es-sec" id="facebook">
     <h2 class="es-h2">Facebook Page</h2>
     <div class="es-card">
@@ -508,7 +525,64 @@ function drawFacebook() {
   });
 }
 
+// --- Content Studio Phase B: the unified queue and the TikTok manual-publication list -----------------------------
+const Q_STATES = [['open', 'Open'], ['awaiting', 'Needs you'], ['scheduled', 'Scheduled'], ['public', 'Public'], ['all', 'All']];
+const STATE_LABEL = {planned: 'Planned', scripted: 'Scripted', generated: 'Generated', qa_failed: 'QA failed',
+  awaiting_approval: 'Awaiting approval', approved: 'Approved', rejected: 'Rejected', scheduled: 'Scheduled', submitted: 'Submitted',
+  in_tiktok_drafts: 'In TikTok drafts', awaiting_manual_post: 'Post it now (TikTok app)', public: 'Public', measuring: 'Measuring',
+  paused: 'Paused', failed: 'Failed'};
+const qTone = s => s === 'public' ? 'st-ok' : s === 'failed' || s === 'qa_failed' ? 'st-bad'
+  : ['awaiting_manual_post', 'in_tiktok_drafts', 'awaiting_approval'].includes(s) ? 'st-warn' : 'st-muted';
+const queue = {chan: 'all', state: 'open'};
+let qRows = [];
+
+function openContent(r) {
+  const ev = (dash.data('content_events').data || []).filter(e => e.content_id === r.content_id);
+  ui.drawer(r.title || r.content_id, ui.dl([['Content', r.content_id], ['Channel', r.channel === 'tiktok' ? 'TikTok' : 'Facebook'],
+    ['Kind', r.kind], ['When', r.slot_local + ' ET'], ['Stage', STATE_LABEL[r.state] || r.state],
+    ['Publishing', r.publish_state ? `${STATE_LABEL[r.publish_state] || r.publish_state}: ${r.publish_evidence}` : 'not sent'],
+    ['Approved', r.approved ? 'yes' : 'not yet'], ['Products', r.products], ['Link', r.link_placement],
+    ['AI disclosure', r.ai_disclosure ? 'yes' : 'no'], ['Caption', r.caption],
+    ['Post', r.post_url ? ui.el('a', {href: r.post_url, target: '_blank', rel: 'noopener', text: 'Open post'}) : null]]),
+    ui.el('h4', {class: 'es-h2', text: 'History'}),
+    ev.length ? ui.el('ul', {class: 'timeline'}, ev.map(e => ui.el('li', {},
+      ui.el('div', {text: STATE_LABEL[e.to_state] || e.to_state}), ui.el('span', {text: `${new Date(e.at).toLocaleString()} · ${e.actor} · ${e.reason || ''}`}))))
+      : ui.el('p', {class: 'es-note', text: 'No history recorded yet.'}));
+}
+
+function drawQueue() {
+  const rows = ui.rows('content_queue');
+  // Ready for TikTok publication: delivered or about to be delivered to the drafts, not yet public
+  const ready = rows.filter(r => r.channel === 'tiktok' && ['in_tiktok_drafts', 'awaiting_manual_post', 'scheduled', 'submitted'].includes(r.publish_state))
+    .sort((a, b) => (a.scheduled_at || '').localeCompare(b.scheduled_at || '')).slice(0, 9);
+  const rt = document.getElementById('rt-list');
+  rt.replaceChildren(...(ready.length ? ready.map(r => ui.el('div', {class: `es-card`, style: 'cursor:pointer', onclick: () => openContent(r)},
+    r.has_frames ? ui.el('div', {style: `height:150px;border-radius:8px;background:#000 url(/media/frames/${r.episode_id}) 0 0/auto 300% repeat-x`,
+      role: 'img', 'aria-label': 'First frame of the video'}) : null,
+    ui.el('div', {class: 'es-sub', text: `${ui.day(r.slot_local.slice(0, 10))} ${r.slot_local.slice(11)} ET · ${r.series || ''}`}),
+    ui.el('div', {style: 'font-size:.875rem', text: r.caption || '(no caption)'}),
+    ui.el('span', {class: `es-pill ${qTone(r.publish_state)}`, text: STATE_LABEL[r.publish_state] || r.publish_state}),
+    ui.el('div', {class: 'es-note', text: `${r.approved ? 'Approved' : 'NOT approved'} · switch on "AI-generated content" when you post`})))
+    : [ui.el('p', {class: 'es-note', text: 'Nothing waiting for you in the TikTok drafts.'})]));
+
+  ui.segmented(document.getElementById('q-chan'), [['all', 'All'], ['tiktok', 'TikTok'], ['facebook', 'Facebook']], queue.chan, v => { queue.chan = v; drawQueue(); });
+  ui.segmented(document.getElementById('q-state'), Q_STATES, queue.state, v => { queue.state = v; drawQueue(); });
+  const st = r => r.publish_state || r.state;
+  qRows = rows.filter(r => (queue.chan === 'all' || r.channel === queue.chan) && (
+    queue.state === 'all' ? true : queue.state === 'public' ? st(r) === 'public' : queue.state === 'scheduled' ? st(r) === 'scheduled'
+    : queue.state === 'awaiting' ? ['awaiting_manual_post', 'in_tiktok_drafts', 'awaiting_approval', 'failed', 'qa_failed'].includes(st(r))
+    : !['public', 'measuring', 'rejected'].includes(st(r))));
+  ui.table(document.getElementById('q-table'), qRows, QCOLS, {onRow: openContent, empty: 'Nothing in this view.'});
+}
+const QCOLS = [{k: 'slot_local', label: 'When (ET)', f: v => v ? `${ui.day(v.slice(0, 10))} ${v.slice(11)}` : '—'},
+  {k: 'channel', label: 'Channel', f: v => v === 'tiktok' ? 'TikTok' : 'Facebook'}, {k: 'title', label: 'Item', f: (v, r) => v || r.series || r.content_id},
+  {k: 'state', label: 'Stage', f: v => STATE_LABEL[v] || v, cls: r => qTone(r.state)},
+  {k: 'publish_state', label: 'Publishing', f: v => v ? (STATE_LABEL[v] || v) : 'not sent', cls: r => qTone(r.publish_state)},
+  {k: 'approved', label: 'Approved', f: v => v ? 'yes' : '—'}, {k: 'ai_disclosure', label: 'AI label', f: v => Number(v) ? 'yes' : '—'}];
+document.getElementById('q-csv').addEventListener('click', () => ui.csv(`content_queue_${ui.todayET()}.csv`, qRows, QCOLS));
+
 dash.onData(() => {
+  drawQueue();
   drawFacebook();
   ['when', 'series', 'status'].forEach(f => fill('next_post', document.querySelector(`[data-source="next_post"][data-field="${f}"]`), f));
   const h = {followers: fmt, posted: fmt, planned: fmt, views: v => v >= 10000 ? Intl.NumberFormat('en', {notation: 'compact', maximumFractionDigits: 1}).format(v) : fmt(v),

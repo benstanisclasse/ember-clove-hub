@@ -44,8 +44,14 @@ def token():
 def graphql(query, variables=None, tries=5):
     url = f"https://{_shop()}/admin/api/{API_VERSION}/graphql.json"
     for attempt in range(tries):
-        r = requests.post(url, json={"query": query, "variables": variables or {}}, timeout=60,
-                          headers={"X-Shopify-Access-Token": token(), "Content-Type": "application/json"})
+        try:  # read-only queries are safe to repeat: dropped connections are retried like server errors
+            r = requests.post(url, json={"query": query, "variables": variables or {}}, timeout=60,
+                              headers={"X-Shopify-Access-Token": token(), "Content-Type": "application/json"})
+        except (requests.ConnectionError, requests.Timeout):
+            if attempt == tries - 1:
+                raise
+            time.sleep(min(2 ** attempt, 30))
+            continue
         if r.status_code in (429, 500, 502, 503, 504) and attempt < tries - 1:
             time.sleep(min(2 ** attempt, 30))
             continue

@@ -33,7 +33,10 @@ class GateError(Exception):
 
 
 def connect(path=DB):
-    con = sqlite3.connect(path)
+    # The dashboard sync thread and the CLI both write here: wait up to 30 s for a lock, and use WAL so readers and
+    # a writer don't block each other (Content Studio 2.0, Phase B).
+    con = sqlite3.connect(path, timeout=30)
+    con.execute("PRAGMA journal_mode=WAL")
     con.row_factory = sqlite3.Row
     con.executescript("""
     CREATE TABLE IF NOT EXISTS episodes (
