@@ -1,0 +1,19 @@
+# Rendered to shopify.app.toml by scripts/deploy-web-pixel.sh (values come from .env).
+# Deploying pushes this config (scopes!) plus the web pixel extension to your Dev Dashboard app.
+client_id = "__CLIENT_ID__"
+name = "Store Hub"  # Shopify rejects app names containing "Shopify"
+application_url = "__PUBLIC_BASE_URL__"
+embedded = false
+
+[access_scopes]
+# Read-only store data + the two pixel scopes. The hub never writes to your store.
+scopes = "read_products,read_inventory,read_orders,read_customers,write_pixels,read_customer_events"
+
+[auth]
+redirect_urls = ["__PUBLIC_BASE_URL__/oauth/shopify"]
+
+[webhooks]
+api_version = "2026-07"
+
+[build]
+include_config_on_deploy = true

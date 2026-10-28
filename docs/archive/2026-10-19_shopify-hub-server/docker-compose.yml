@@ -1,0 +1,134 @@
+# Shopify hub stack. Start with:   docker compose up -d
+# Public tunnel (needs CLOUDFLARE_TUNNEL_TOKEN in .env):   docker compose --profile tunnel up -d
+#
+# Networks:
+#   backend -- app + data services. Nothing here is published to the host.
+#   edge    -- caddy <-> cloudflared only. cloudflared can't reach Postgres/Redis/Garage.
+# Only Caddy's LAN/admin listener (:8081) is published, on ADMIN_BIND_ADDR.
+
+name: shopify-hub
+
+x-logging: &logging
+  driver: json-file
+  options: { max-size: "20m", max-file: "5" }
+
+x-app: &app
+  build: .
+  image: shopify-hub:latest
+  restart: unless-stopped
+  env_file: .env
+  environment:
+    DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hub}:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@postgres:5432/${POSTGRES_DB:-hub}
+    REDIS_URL: redis://redis:6379/0
+    HUB_ENV_FILE: ""
+  depends_on:
+    postgres: { condition: service_healthy }
+    redis: { condition: service_healthy }
+  networks: [backend]
+  logging: *logging
+
+services:
+  api:
+    <<: *app
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  worker:
+    <<: *app
+    command: ["python", "-m", "app.worker"]
+
+  scheduler:
+    <<: *app
+    command: ["python", "-m", "app.scheduler"]
+
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-hub}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-hub}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    shm_size: 256mb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [backend]
+    logging: *logging
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    # noeviction: the job queue lives here, so never silently drop keys.
+    command: ["redis-server", "--appendonly", "yes", "--maxmemory", "256mb", "--maxmemory-policy", "noeviction"]
+    volumes: [redisdata:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [backend]
+    logging: *logging
+
+  garage:
+    image: dxflrs/garage:${GARAGE_VERSION:-v2.2.0}
+    restart: unless-stopped
+    volumes:
+      - ./deploy/garage/garage.toml:/etc/garage.toml:ro
+      - garage-meta:/var/lib/garage/meta
+      - garage-data:/var/lib/garage/data
+    healthcheck:
+      test: ["CMD", "/garage", "status"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    networks: [backend]
+    logging: *logging
+
+  caddy:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+    ports:
+      - "${ADMIN_BIND_ADDR:-127.0.0.1}:8081:8081"
+    depends_on: [api]
+    networks:
+      backend: {}
+      edge: {}
+    logging: *logging
+
+  cloudflared:
+    image: cloudflare/cloudflared:${CLOUDFLARED_VERSION:-2026.8.1}
+    profiles: ["tunnel"]
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "run"]
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
+    depends_on: [caddy]
+    networks:
+      edge:
+        ipv4_address: 172.31.250.10 # Caddy refuses admin traffic from this address
+    logging: *logging
+
+networks:
+  backend: {}
+  edge:
+    ipam:
+      config:
+        - subnet: 172.31.250.0/24
+
+volumes:
+  pgdata: {}
+  redisdata: {}
+  garage-meta: {}
+  garage-data: {}
+  caddy-data: {}

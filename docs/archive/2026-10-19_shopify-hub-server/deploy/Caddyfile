@@ -1,0 +1,34 @@
+{
+	admin off
+	auto_https off
+	servers {
+		# Requests arrive from cloudflared; use Cloudflare's header for the real client IP.
+		trusted_proxies static private_ranges
+		client_ip_headers Cf-Connecting-Ip X-Forwarded-For
+	}
+}
+
+# PUBLIC entrypoint -- only cloudflared reaches this (edge network; never published).
+# Allow-list: everything not listed here is a 404 from the internet.
+:8080 {
+	request_body {
+		max_size 10MB
+	}
+	header -Server
+
+	@public path /healthz /webhooks/* /oauth/* /collect/* /mcp /mcp/* /.well-known/oauth-authorization-server* /.well-known/oauth-protected-resource*
+	handle @public {
+		reverse_proxy api:8000
+	}
+	handle {
+		respond "Not found" 404
+	}
+}
+
+# LAN / ADMIN entrypoint -- published only on ADMIN_BIND_ADDR:8081.
+# Refuses anything coming from the tunnel container, even if mis-routed to this port.
+:8081 {
+	@from_tunnel remote_ip 172.31.250.10
+	respond @from_tunnel "Forbidden" 403
+	reverse_proxy api:8000
+}

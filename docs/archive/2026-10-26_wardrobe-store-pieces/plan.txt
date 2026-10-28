@@ -1,0 +1,43 @@
+Planned 21 episodes
+  EW-20261102-1 08:30 value   Outfit 1 | living-room | - | New one every morning.
+      wears: ec-lace-shirt, jeans-wide-dark, boots-black-chelsea, bag-black-shoulder
+  EW-20261102-2 12:30 value   Minneapolis weather, outfit 1 | front-steps | - | soft
+      wears: ec-cateye-sunglasses-tortoise, blouse-satin-cream, jeans-straight-light, blazer-oversized-grey, loafers-black
+  EW-20261102-3 19:30 value   Get ready with me 1 | bedroom | - | soft
+      wears: ec-ruffle-skirt, sweater-grey-crew, trench-beige, boots-black-chelsea, bag-brown-tote, tights-black
+  EW-20261103-1 08:30 value   How to wear: TBD | closet | - | Part two tomorrow.
+      wears: ec-cable-knit-dress, sneakers-white, tote-canvas
+  EW-20261103-2 12:30 value   Outfit 2 | front-steps | - | soft
+      wears: ec-rib-button-cardigan, trousers-camel, blazer-oversized-grey, sneakers-white, scarf-oat-wool
+  EW-20261103-3 19:30 value   Minneapolis weather, outfit 2 | sidewalk | - | soft
+      wears: ec-henley-maxi-dress, jacket-leather-black, boots-black-chelsea, tights-black
+  EW-20261104-1 08:30 value   Get ready with me 2 | closet | - | I post one of these every day.
+      wears: ec-pleated-knit-skirt, blouse-satin-cream, trench-beige, boots-black-tall
+  EW-20261104-2 12:30 value   How to wear: TBD | living-room | - | soft
+      wears: ec-floral-bodysuit, skirt-black-knit, jacket-denim, boots-black-tall, tights-black
+  EW-20261104-3 19:30 value   Outfit 3 | bedroom | - | soft
+      wears: ec-asym-top, leggings-black, jacket-denim, loafers-black
+  EW-20261105-1 08:30 value   Minneapolis weather, outfit 3 | entryway | - | New one every morning.
+      wears: ec-ruffle-skirt, sweater-burgundy-vneck, coat-camel, boots-black-chelsea, tote-canvas
+  EW-20261105-2 12:30 value   Get ready with me 3 | bedroom | - | soft
+      wears: ec-suede-skirt, shirt-white-poplin, jacket-leather-black, heels-black-slingback, bag-black-shoulder, tights-black
+  EW-20261105-3 19:30 value   How to wear: TBD | closet | - | soft
+      wears: ec-chunky-cardigan, skirt-denim-long, boots-black-tall, tights-black
+  EW-20261106-1 08:30 value   Outfit 4 | sidewalk | - | Part two tomorrow.
+      wears: ec-cateye-sunglasses-black, bodysuit-black, trousers-grey-pleated, jacket-leather-black, flats-ballet-black, tote-canvas
+  EW-20261106-2 12:30 value   Minneapolis weather, outfit 4 | lake-path | - | soft
+      wears: ec-cateye-sunglasses-tortoise, dress-grey-sweater-mini, jacket-leather-black, sneakers-white
+  EW-20261106-3 19:30 value   Get ready with me 4 | closet | - | soft
+      wears: ec-crossfront-top, jeans-wide-dark, coat-black-wool, loafers-black, scarf-oat-wool
+  EW-20261107-1 08:30 value   How to wear: TBD | living-room | - | I post one of these every day.
+      wears: ec-suede-skirt, turtleneck-black, boots-black-chelsea, scarf-oat-wool
+  EW-20261107-2 12:30 value   Outfit 5 | entryway | - | soft
+      wears: ec-lace-squareneck-top, jeans-black-straight, coat-black-wool, heels-black-slingback
+  EW-20261107-3 19:30 value   Minneapolis weather, outfit 5 | front-steps | - | soft
+      wears: ec-cateye-sunglasses-black, dress-brown-shirt, jacket-leather-black, boots-black-chelsea, bag-brown-tote, tights-black
+  EW-20261108-1 08:30 value   Get ready with me 5 | bedroom | - | New one every morning.
+      wears: ec-stripe-polo-sweater, skirt-satin-champagne, boots-brown-ankle, tights-black
+  EW-20261108-2 12:30 value   How to wear: TBD | living-room | - | soft
+      wears: ec-stripe-cardigan, trousers-grey-pleated, loafers-black, tote-canvas
+  EW-20261108-3 19:30 value   Outfit 6 | front-steps | - | soft
+      wears: ec-cateye-sunglasses-tortoise, sweater-grey-crew, leggings-black, trench-beige, sneakers-white, tote-canvas

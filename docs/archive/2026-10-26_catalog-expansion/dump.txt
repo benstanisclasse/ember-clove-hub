@@ -1,0 +1,196 @@
+﻿["id", "handle", "title", "vendor", "status", "productType", "tags", "onlineStoreUrl", "category", "descriptionHtml", "options", "media", "variants"]
+===== gid://shopify/Product/9756888498415 womens-elegant-color-block-stripe-knit-cardigan-with-lapel-slim-fit-top
+TITLE: Women's Elegant Color-Block Stripe Knit Cardigan with Lapel Slim-Fit Top | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376829329647", "name": "Color", "values": ["Striped"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191994732783", "name": "Striped"}]}, {"id": "gid://shopify/ProductOption/12376829362415", "name": "Size", "values": ["S", "M", "L"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191994765551", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6191994798319", "name": "M"}, {"id": "gid://shopify/ProductOptionValue/6191994831087", "name": "L"}]}]
+ MEDIA {"id": "gid://shopify/MediaImage/41317799624943", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/313D12EE46191CE472979185B2DF2FFE.jpg?v=1793047962", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317800149231", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3A4B8FB0FD40336646CAFC89F91A5DBE.jpg?v=1793047964", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317800509679", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D45BD633D9121F79BA59C47CA939982B.jpg?v=1793047966", "altText": "", "width": 1340, "height": 1340}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317801132271", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BA92D59077EB470DCBA4C66C93CE66CF.jpg?v=1793047967", "altText": "", "width": 1785, "height": 1785}}
+ VAR Striped / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317799624943"}]}
+ VAR Striped / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317799624943"}]}
+ VAR Striped / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317799624943"}]}
+ DESC_IMGS 10
+===== gid://shopify/Product/9756888596719 black-lip-print-loose-womens-fleece-sweatshirt
+TITLE: Black lip print loose women's fleece sweatshirt | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376829460719", "name": "Color", "values": ["White", "Pink", "Olive Green", "Black", "Gray", "Orange", "Coffee"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191994962159", "name": "White"}, {"id": "gid://shopify/ProductOptionValue/6191994994927", "name": "Pink"}, {"id": "gid://shopify/ProductOptionValue/6191995027695", "name": "Olive Green"}, {"id": "gid://shopify/ProductOptionValue/6191995060463", "name": "Black"}, {"id": "gid://shopify/ProductOptionValue/6191995093231", "name": "Gray"}, {"id": "gid://shopify/ProductOptionValue/6191995125999", "name": "Orange"}, {"id": "gid://shopify/ProductOptionValue/6191995158767", "name": "Coffee"}]}, {"id": "gid://shopify/ProductOption/12376829493487", "name": "Size", "values": ["S", "M", "L", "XL", "XXL"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191995191535", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6191995224303", "name": "M"}, {"id": "gid://shopify/ProductOptionValue/6191995257071", "name": "L"}, {"id": "gid://shopify/ProductOptionValue/6191995289839", "name": "XL"}, {"id": "gid://shopify/ProductOptionValue/6191995322607", "name": "XXL"}]}]
+ MEDIA {"id": "gid://shopify/MediaImage/41317799854319", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E187C940B9D159FCAA1F4021C8F83317.jpg?v=1793047963", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317800181999", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9B6909B6468483CF07ED79E7F8BBA0F1.jpg?v=1793047964", "altText": "", "width": 1803, "height": 1803}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317800542447", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9CD27FAF54C5C87A9910933EC2C8B1E6.jpg?v=1793047966", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317801230575", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2ABF731DA3D3C6FF68333522577FD3F4.jpg?v=1793047968", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317801689327", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/DE165EB33D66B2A361A75BC1781A3F96.jpg?v=1793047970", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804703983", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E380F7A25AC2DA8239C26E7C461186E1.jpg?v=1793047981", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317805719791", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/921C5781B2A4044B8D9F8903B33285B6.jpg?v=1793047985", "altText": "", "width": 1353, "height": 1803}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317807390959", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8254B7897877ABA99B8C38CFB6D06691.jpg?v=1793047995", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317808210159", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5F4CA60E1C361D27363CCBF91BC9FC7B.jpg?v=1793047999", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317814141167", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E36ECFD1056A7448DDC1FB3FCB30B7E0.jpg?v=1793048012", "altText": "", "width": 1350, "height": 1800}}
+ VAR White / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317804703983"}]}
+ VAR White / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317804703983"}]}
+ VAR White / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317804703983"}]}
+ VAR White / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317804703983"}]}
+ VAR White / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317804703983"}]}
+ VAR Pink / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317805719791"}]}
+ VAR Pink / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317805719791"}]}
+ VAR Pink / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317805719791"}]}
+ VAR Pink / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317805719791"}]}
+ VAR Pink / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317805719791"}]}
+ VAR Olive Green / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317807390959"}]}
+ VAR Olive Green / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317807390959"}]}
+ VAR Olive Green / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317807390959"}]}
+ VAR Olive Green / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317807390959"}]}
+ VAR Olive Green / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317807390959"}]}
+ VAR Black / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317808210159"}]}
+ VAR Black / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317808210159"}]}
+ VAR Black / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317808210159"}]}
+ VAR Black / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317808210159"}]}
+ VAR Black / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317808210159"}]}
+ VAR Gray / S | {"nodes": []}
+ VAR Gray / M | {"nodes": []}
+ VAR Gray / L | {"nodes": []}
+ VAR Gray / XL | {"nodes": []}
+ VAR Gray / XXL | {"nodes": []}
+ VAR Orange / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317814141167"}]}
+ VAR Orange / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317814141167"}]}
+ VAR Orange / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317814141167"}]}
+ VAR Orange / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317814141167"}]}
+ VAR Orange / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317814141167"}]}
+ VAR Coffee / S | {"nodes": []}
+ VAR Coffee / M | {"nodes": []}
+ VAR Coffee / L | {"nodes": []}
+ VAR Coffee / XL | {"nodes": []}
+ VAR Coffee / XXL | {"nodes": []}
+ DESC_IMGS 11
+===== gid://shopify/Product/9756888760559 round-neck-fleece-sports-hoodie
+TITLE: Round neck fleece sports hoodie | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376829690095", "name": "Color", "values": ["White", "Pink", "Olive Green", "Black", "Gray", "Orange", "Coffee"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191996502255", "name": "White"}, {"id": "gid://shopify/ProductOptionValue/6191996535023", "name": "Pink"}, {"id": "gid://shopify/ProductOptionValue/6191996567791", "name": "Olive Green"}, {"id": "gid://shopify/ProductOptionValue/6191996600559", "name": "Black"}, {"id": "gid://shopify/ProductOptionValue/6191996633327", "name": "Gray"}, {"id": "gid://shopify/ProductOptionValue/6191996666095", "name": "Orange"}, {"id": "gid://shopify/ProductOptionValue/6191996698863", "name": "Coffee"}]}, {"id": "gid://shopify/ProductOption/12376829722863", "name": "Size", "values": ["S", "M", "L", "XL", "XXL"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191996731631", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6191996764399", "name": "M"}, {"id": "gid://shopify/ProductOptionValue/6191996797167", "name": "L"}, {"id": "gid://shopify/ProductOptionValue/6191996829935", "name": "XL"}, {"id": "gid://shopify/ProductOptionValue/6191996862703", "name": "XXL"}]}]
+ MEDIA {"id": "gid://shopify/MediaImage/41317800575215", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0881DD14B36CA000CF3863EEBD6598FF.jpg?v=1793047967", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317801263343", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B2631EF0CC4084E7B4B8258B9C399DAF.jpg?v=1793047968", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317801525487", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/96F0CF0A769DCBEE452BB34AE2A4D9A9.jpg?v=1793047970", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317803098351", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C4D45B97F26235A947DB69EFDD7E03A0.jpg?v=1793047972", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317803884783", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/DE1A0931C1F4986C38DE2747AB29CED9.jpg?v=1793047975", "altText": "", "width": 1800, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804114159", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/80A9BA3B2EDB7D17710B896F2ACB17A9.jpg?v=1793047977", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804376303", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/507ECB92F1EBB231F9FCE8CCD5344DC0.jpg?v=1793047979", "altText": "", "width": 1353, "height": 1803}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317805129967", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/D6D76562383CE582F53FA0C89520631D.jpg?v=1793047983", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317805883631", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E39120FA6AC271BEEBB263148EBB3919.jpg?v=1793047985", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317806276847", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C8CFAEA22C6CB1BD34B5EFD02C0F9040.jpg?v=1793047987", "altText": "", "width": 1350, "height": 1800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317806571759", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1D0F23DC53F8DAB5AA7700720242A9FA.jpg?v=1793047989", "altText": "", "width": 1350, "height": 1800}}
+ VAR White / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317804114159"}]}
+ VAR White / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317804114159"}]}
+ VAR White / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317804114159"}]}
+ VAR White / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317804114159"}]}
+ VAR White / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317804114159"}]}
+ VAR Pink / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317804376303"}]}
+ VAR Pink / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317804376303"}]}
+ VAR Pink / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317804376303"}]}
+ VAR Pink / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317804376303"}]}
+ VAR Pink / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317804376303"}]}
+ VAR Olive Green / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317805129967"}]}
+ VAR Olive Green / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317805129967"}]}
+ VAR Olive Green / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317805129967"}]}
+ VAR Olive Green / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317805129967"}]}
+ VAR Olive Green / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317805129967"}]}
+ VAR Black / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317805883631"}]}
+ VAR Black / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317805883631"}]}
+ VAR Black / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317805883631"}]}
+ VAR Black / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317805883631"}]}
+ VAR Black / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317805883631"}]}
+ VAR Gray / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317806276847"}]}
+ VAR Gray / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317806276847"}]}
+ VAR Gray / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317806276847"}]}
+ VAR Gray / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317806276847"}]}
+ VAR Gray / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317806276847"}]}
+ VAR Orange / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317806571759"}]}
+ VAR Orange / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317806571759"}]}
+ VAR Orange / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317806571759"}]}
+ VAR Orange / XL | {"nodes": [{"id": "gid://shopify/MediaImage/41317806571759"}]}
+ VAR Orange / XXL | {"nodes": [{"id": "gid://shopify/MediaImage/41317806571759"}]}
+ VAR Coffee / S | {"nodes": []}
+ VAR Coffee / M | {"nodes": []}
+ VAR Coffee / L | {"nodes": []}
+ VAR Coffee / XL | {"nodes": []}
+ VAR Coffee / XXL | {"nodes": []}
+ DESC_IMGS 11
+===== gid://shopify/Product/9756888924399 casual-ribbed-v-neck-fake-two-piece-womens-sweater
+TITLE: Casual Ribbed V-Neck Fake Two-Piece Women's Sweater | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376829919471", "name": "Color", "values": ["Gray", "Green", "Khaki", "Apricot"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191997845743", "name": "Gray"}, {"id": "gid://shopify/ProductOptionValue/6191997878511", "name": "Green"}, {"id": "gid://shopify/ProductOptionValue/6191997911279", "name": "Khaki"}, {"id": "gid://shopify/ProductOptionValue/6191997944047", "name": "Apricot"}]}, {"id": "gid://shopify/ProductOption/12376829952239", "name": "Size", "values": ["S", "M"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191997976815", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6191998009583", "name": "M"}]}]
+ MEDIA {"id": "gid://shopify/MediaImage/41317803131119", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C8117A74B9B26638AD81518E62320CC5.jpg?v=1793047972", "altText": "", "width": 1920, "height": 1920}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317805621487", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/977AF9CB36C9F7B1424FBB2B67AFD261.jpg?v=1793047984", "altText": "", "width": 1920, "height": 1920}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317805916399", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2F985B4C288D97CBDD7567269673F258.jpg?v=1793047986", "altText": "", "width": 1920, "height": 1920}}
+ VAR Gray / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317805916399"}]}
+ VAR Gray / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317805916399"}]}
+ VAR Green / S | {"nodes": []}
+ VAR Green / M | {"nodes": []}
+ VAR Khaki / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317803131119"}]}
+ VAR Khaki / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317803131119"}]}
+ VAR Apricot / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317805621487"}]}
+ VAR Apricot / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317805621487"}]}
+ DESC_IMGS 19
+===== gid://shopify/Product/9756888989935 knit-sweater-with-3d-crochet-hollow-out-details-waist-cinching-casual-pullover-top
+TITLE: Knit Sweater with 3D Crochet Hollow-out Details, Waist-Cinching Casual Pullover Top | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376830017775", "name": "Color", "values": ["Black", "Apricot", "Gray", "Red"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191998173423", "name": "Black"}, {"id": "gid://shopify/ProductOptionValue/6191998206191", "name": "Apricot"}, {"id": "gid://shopify/ProductOptionValue/6191998238959", "name": "Gray"}, {"id": "gid://shopify/ProductOptionValue/6191998271727", "name": "Red"}]}, {"id": "gid://shopify/ProductOption/12376830050543", "name": "Size", "values": ["S", "M"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191998304495", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6191998337263", "name": "M"}]}]
+ MEDIA {"id": "gid://shopify/MediaImage/41317803229423", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/473421899FA699DD88585C026C671ADC.jpg?v=1793047973", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317803458799", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/99BD9F112BB2E6C2C3EC4B4B94B87E3A.jpg?v=1793047974", "altText": "", "width": 1200, "height": 1200}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317803917551", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B88243C3148E59DFFA1F446B01B2B219.jpg?v=1793047976", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804146927", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2D9972739F74ED67E828B290744F896D.jpg?v=1793047978", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804769519", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9681DC92FDB87B9A57EE369CFDE2B307.jpg?v=1793047981", "altText": "", "width": 800, "height": 800}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317805097199", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/842D5F91285677CDB325B6FDE5F71CF3.jpg?v=1793047983", "altText": "", "width": 1200, "height": 1200}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317807063279", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/939C780096F96112DB2E2E7B71EAC645.jpg?v=1793047993", "altText": "", "width": 1200, "height": 1200}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317808537839", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/55AD0A1E37E7B6C0CC1E7D6A92D5D47F.jpg?v=1793048001", "altText": "", "width": 1200, "height": 1200}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317809160431", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/95586C53CCE1D70555609351B1B3334B.jpg?v=1793048005", "altText": "", "width": 1200, "height": 1200}}
+ VAR Black / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317805097199"}]}
+ VAR Black / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317805097199"}]}
+ VAR Apricot / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317807063279"}]}
+ VAR Apricot / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317807063279"}]}
+ VAR Gray / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317808537839"}]}
+ VAR Gray / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317808537839"}]}
+ VAR Red / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317809160431"}]}
+ VAR Red / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317809160431"}]}
+ DESC_IMGS 12
+===== gid://shopify/Product/9756889022703 british-commuter-style-chunky-knit-high-neck-open-front-cardigan
+TITLE: British Commuter Style Chunky Knit High Neck Open Front Cardigan | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376830083311", "name": "Color", "values": ["Off-White", "Gray", "Camel", "Dark Red", "Brown", "Khaki", "Black"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191998697711", "name": "Off-White"}, {"id": "gid://shopify/ProductOptionValue/6191998730479", "name": "Gray"}, {"id": "gid://shopify/ProductOptionValue/6191998763247", "name": "Camel"}, {"id": "gid://shopify/ProductOptionValue/6191998796015", "name": "Dark Red"}, {"id": "gid://shopify/ProductOptionValue/6191998828783", "name": "Brown"}, {"id": "gid://shopify/ProductOptionValue/6191998861551", "name": "Khaki"}, {"id": "gid://shopify/ProductOptionValue/6191998894319", "name": "Black"}]}, {"id": "gid://shopify/ProductOption/12376830116079", "name": "Size", "values": ["S", "M", "L"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6191998927087", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6191998959855", "name": "M"}, {"id": "gid://shopify/ProductOptionValue/6191998992623", "name": "L"}]}]
+ MEDIA {"id": "gid://shopify/MediaImage/41317803196655", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/584CD21850EDF51A1F44B6BF1BDDDE87.jpg?v=1793047973", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317803557103", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7FD5559328C17AF77D787DD904FB8A1A.jpg?v=1793047975", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317803950319", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BBE588E731ECC59042AC3B782026DFCA.jpg?v=1793047976", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804736751", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0726790A5CD896D123BB626AD2D4752D.jpg?v=1793047981", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317804998895", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C287DAF44F415601ED02AF3A7AAD8E4E.jpg?v=1793047982", "altText": "", "width": 1201, "height": 1201}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317806637295", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/05C413F474B2197B435F3E010668FBDE.jpg?v=1793047990", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317814370543", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3BE07C68FF682B51273BAA24B3A43649.jpg?v=1793048014", "altText": "", "width": 1600, "height": 1600}}
+ MEDIA {"id": "gid://shopify/MediaImage/41317814993135", "alt": "", "mediaContentType": "IMAGE", "image": {"url": "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/80CE4BC796CBC48552DAAAACD85D4129.jpg?v=1793048015", "altText": "", "width": 1600, "height": 1600}}
+ VAR Off-White / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317803950319"}]}
+ VAR Off-White / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317803950319"}]}
+ VAR Off-White / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317803950319"}]}
+ VAR Gray / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317803196655"}]}
+ VAR Gray / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317803196655"}]}
+ VAR Gray / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317803196655"}]}
+ VAR Camel / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317803196655"}]}
+ VAR Camel / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317803196655"}]}
+ VAR Camel / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317803196655"}]}
+ VAR Dark Red / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317806637295"}]}
+ VAR Dark Red / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317806637295"}]}
+ VAR Dark Red / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317806637295"}]}
+ VAR Brown / S | {"nodes": []}
+ VAR Brown / M | {"nodes": []}
+ VAR Brown / L | {"nodes": []}
+ VAR Khaki / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317814370543"}]}
+ VAR Khaki / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317814370543"}]}
+ VAR Khaki / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317814370543"}]}
+ VAR Black / S | {"nodes": [{"id": "gid://shopify/MediaImage/41317814993135"}]}
+ VAR Black / M | {"nodes": [{"id": "gid://shopify/MediaImage/41317814993135"}]}
+ VAR Black / L | {"nodes": [{"id": "gid://shopify/MediaImage/41317814993135"}]}
+ DESC_IMGS 17
+===== gid://shopify/Product/9757005742319 casual-knitted-women-s-sweater-bandage-spliced-loose-contrast-color-cardigan-fashion
+TITLE: Casual Knitted Women 's Sweater Bandage Spliced Loose Contrast Color Cardigan Fashion | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376947753199", "name": "Color", "values": ["Beige"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6192150544623", "name": "Beige"}]}, {"id": "gid://shopify/ProductOption/12376947785967", "name": "Size", "values": ["S", "M", "L", "XL"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6192150577391", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6192150610159", "name": "M"}, {"id": "gid://shopify/ProductOptionValue/6192150642927", "name": "L"}, {"id": "gid://shopify/ProductOptionValue/6192150675695", "name": "XL"}]}]
+ VAR Beige / S | {"nodes": []}
+ VAR Beige / M | {"nodes": []}
+ VAR Beige / L | {"nodes": []}
+ VAR Beige / XL | {"nodes": []}
+ DESC_IMGS 5
+===== gid://shopify/Product/9757006069999 casual-knitted-women-s-sweater-bandage-spliced-loose-contrast-color-cardigan-fashion-1
+TITLE: Casual Knitted Women 's Sweater Bandage Spliced Loose Contrast Color Cardigan Fashion | type:  | tags: []
+OPTIONS: [{"id": "gid://shopify/ProductOption/12376948146415", "name": "Color", "values": ["Beige"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6192152510703", "name": "Beige"}]}, {"id": "gid://shopify/ProductOption/12376948179183", "name": "Size", "values": ["S", "M", "L", "XL"], "optionValues": [{"id": "gid://shopify/ProductOptionValue/6192152543471", "name": "S"}, {"id": "gid://shopify/ProductOptionValue/6192152576239", "name": "M"}, {"id": "gid://shopify/ProductOptionValue/6192152609007", "name": "L"}, {"id": "gid://shopify/ProductOptionValue/6192152641775", "name": "XL"}]}]
+ VAR Beige / S | {"nodes": []}
+ VAR Beige / M | {"nodes": []}
+ VAR Beige / L | {"nodes": []}
+ VAR Beige / XL | {"nodes": []}
+ DESC_IMGS 5

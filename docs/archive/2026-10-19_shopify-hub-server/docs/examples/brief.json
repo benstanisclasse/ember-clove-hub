@@ -1,0 +1,14 @@
+{
+  "kind": "video",
+  "product_id": 1,
+  "angles": ["saves_time", "better_results"],
+  "hook_types": ["problem_solution", "pov"],
+  "avatar_types": ["woman_25_34", "man_25_34"],
+  "hooks": ["I wasted months before I found this", "POV: your routine just got 10 minutes shorter"],
+  "aspect_ratio": "9:16",
+  "duration_seconds": 8,
+  "voiceover": true,
+  "cta": "shop_now",
+  "reference_image_url": "https://cdn.shopify.com/s/files/your-product-photo.jpg",
+  "extra_params": {}
+}

@@ -1,0 +1,26 @@
+# Secrets -- never commit
+.env
+.env.*
+!.env.example
+deploy/garage/garage.toml
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Local backups / dumps
+backups/
+*.dump
+
+# Shopify app (rendered config, deps)
+shopify-app/shopify.app.toml
+shopify-app/node_modules/
+shopify-app/**/node_modules/
+shopify-app/**/dist/
+.deploy-state/

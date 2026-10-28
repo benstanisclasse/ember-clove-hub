@@ -1,0 +1,817 @@
+diff --git a/.env.example b/.env.example
+index 0dae8bd..71e0dd1 100644
+--- a/.env.example
++++ b/.env.example
+@@ -135,8 +135,13 @@ TIKTOK_APP_SECRET=
+ TIKTOK_ACCESS_TOKEN=
+ TIKTOK_ADVERTISER_ID=
+ TIKTOK_PIXEL_ID=
++# The TikTok account that authors the ads (Spark Ads): TT_USER, or BC_AUTH_TT plus its
++# Business Center id. Custom identities (CUSTOMIZED_USER) can no longer run on TikTok.
+ TIKTOK_IDENTITY_ID=
+-TIKTOK_IDENTITY_TYPE=CUSTOMIZED_USER
++TIKTOK_IDENTITY_TYPE=TT_USER
++TIKTOK_IDENTITY_AUTHORIZED_BC_ID=
++# Dynamic CTA portfolio id; left empty, the hub creates one on the first ad and logs its id
++TIKTOK_CTA_PORTFOLIO_ID=
+ TIKTOK_API_VERSION=v1.3
+ 
+ # --- Phase 3b: conversions (see docs/conversions.md) -----------------------------------
+diff --git a/app/config.py b/app/config.py
+index 06afbe6..fb8273d 100644
+--- a/app/config.py
++++ b/app/config.py
+@@ -111,8 +111,10 @@ class Settings(BaseSettings):
+     tiktok_access_token: SecretStr = SecretStr("")
+     tiktok_advertiser_id: str = ""
+     tiktok_pixel_id: str = ""
+-    tiktok_identity_id: str = ""  # custom identity / BC identity used as the ad's author
+-    tiktok_identity_type: str = "CUSTOMIZED_USER"
++    tiktok_identity_id: str = ""  # TikTok account identity used as the ad's author (Spark Ads)
++    tiktok_identity_type: str = "TT_USER"  # TT_USER or BC_AUTH_TT; custom identities are retired
++    tiktok_identity_authorized_bc_id: str = ""  # Business Center id, for BC_AUTH_TT only
++    tiktok_cta_portfolio_id: str = ""  # dynamic CTA portfolio; created on the first ad if empty
+     tiktok_api_version: str = "v1.3"
+ 
+     # --- Conversions (Phase 3b) ---------------------------------------------------------
+diff --git a/app/integrations/ads/tiktok.py b/app/integrations/ads/tiktok.py
+index efb4b19..c3e87c4 100644
+--- a/app/integrations/ads/tiktok.py
++++ b/app/integrations/ads/tiktok.py
+@@ -7,6 +7,16 @@ Every response is ``{"code": 0, "message": "OK", "data": ...}`` -- HTTP 200 even
+ errors, so the client checks ``code``: 40100 (rate limited) and 5xxxx back off and retry;
+ 401xx token errors fail fast.
+ 
++Creation uses the **Upgraded Smart+** endpoints (``smart_plus/...``): from 2027-01-01 the
++legacy ``campaign/create``, ``adgroup/create`` and ``ad/create`` stop creating non-Search
++Sales, App Promotion and Lead Generation campaigns. The hub creates Smart+ *Web* (Sales)
++campaigns with CBO off, so each ad group keeps its own (dynamic daily) budget.
++
++Reads use the legacy getters, which also return Smart+ campaigns and ad groups. Ads are
++identified by ``ad_id_v2`` (a manual ad id, or a Smart+ ad id) because the legacy ``ad_id``
++of a Smart+ ad is one *creative* inside it. Budget/status writes look up whether the target
++is a Smart+ entity and pick the matching ``smart_plus/...`` or legacy endpoint.
++
+ Metric caveats (documented, not hidden):
+ * TikTok has no 3-second view metric; ``video_watched_2s`` is stored in
+   ``video_3s_views``. Compare hook rates *within* a platform, not across.
+@@ -18,6 +28,7 @@ from __future__ import annotations
+ 
+ import hashlib
+ import json
++import secrets
+ import time
+ from collections.abc import Callable, Iterator
+ from datetime import UTC, date, datetime, timedelta
+@@ -83,6 +94,21 @@ LOCATION_IDS = {
+     "NZ": "2186224",
+     "IE": "2963597",
+ }
++SMART_PLUS = "UPGRADED_SMART_PLUS"
++# Spark Ads identities. TikTok no longer serves non-Spark (CUSTOMIZED_USER) ads on the TikTok
++# placement, and Spark Ads Push (our uploaded video + cover) takes these two types.
++SPARK_IDENTITY_TYPES = ("TT_USER", "BC_AUTH_TT")
++# Legacy getter + id filter used to tell a Smart+ entity from a manual one before a write.
++LOOKUP = {
++    "campaign": ("campaign/get/", "campaign_ids", "campaign_id"),
++    "ad_set": ("adgroup/get/", "adgroup_ids", "adgroup_id"),
++    "ad": ("ad/get/", "ad_ids_v2", "ad_id_v2"),
++}
++
++
++def _request_id() -> str:
++    """Smart+ create idempotency key: a 64-bit integer as a string (same key on retries)."""
++    return str(secrets.randbits(63))
+ 
+ 
+ def _status(node: dict[str, Any]) -> EntityStatus:
+@@ -139,6 +165,7 @@ class TikTokAds(AdPlatform):
+         self.base = f"https://business-api.tiktok.com/open_api/{s.tiktok_api_version}"
+         self.advertiser_id = s.tiktok_advertiser_id
+         self.account_external_id = s.tiktok_advertiser_id
++        self._cta_portfolio_id = s.tiktok_cta_portfolio_id
+ 
+     # --- transport ------------------------------------------------------------------------
+ 
+@@ -302,11 +329,35 @@ class TikTokAds(AdPlatform):
+                     a.get("optimization_goal"),
+                 )
+             )
++        # Manual ads from ad/get. It lists a Smart+ ad as one row per creative (ad_id = the
++        # creative), so those rows are skipped and the ads come from smart_plus/ad/get instead,
++        # keyed like the report's ad_id_v2.
+         ads = [
+             AdInfo(str(a["ad_id"]), str(a["adgroup_id"]), a.get("ad_name"), _status(a))
+             for a in self._paged(
+                 "ad/get/",
+-                fields=["ad_id", "adgroup_id", "ad_name", "operation_status", "secondary_status"],
++                fields=[
++                    "ad_id",
++                    "adgroup_id",
++                    "ad_name",
++                    "operation_status",
++                    "secondary_status",
++                    "campaign_automation_type",
++                ],
++            )
++            if not str(a.get("campaign_automation_type") or "").startswith(SMART_PLUS)
++        ]
++        ads += [
++            AdInfo(str(a["smart_plus_ad_id"]), str(a["adgroup_id"]), a.get("ad_name"), _status(a))
++            for a in self._paged(
++                "smart_plus/ad/get/",
++                fields=[
++                    "smart_plus_ad_id",
++                    "adgroup_id",
++                    "ad_name",
++                    "operation_status",
++                    "secondary_status",
++                ],
+             )
+         ]
+         return Structure(account, campaigns, ad_sets, ads)
+@@ -320,7 +371,8 @@ class TikTokAds(AdPlatform):
+                 "report/integrated/get/",
+                 report_type="BASIC",
+                 data_level="AUCTION_AD",
+-                dimensions=["ad_id", "stat_time_day"],
++                # ad_id_v2: the manual ad id, or the Smart+ ad id (ad_id would be per creative)
++                dimensions=["ad_id_v2", "stat_time_day"],
+                 metrics=METRICS,
+                 start_date=chunk_start.isoformat(),
+                 end_date=chunk_end.isoformat(),
+@@ -329,7 +381,7 @@ class TikTokAds(AdPlatform):
+                 spend = as_decimal(m.get("spend"))
+                 out.append(
+                     DailyMetric(
+-                        ad_external_id=str(dims["ad_id"]),
++                        ad_external_id=str(dims["ad_id_v2"]),
+                         date=date.fromisoformat(str(dims["stat_time_day"])[:10]),
+                         spend=spend,
+                         impressions=as_int(m.get("impressions")),
+@@ -347,6 +399,13 @@ class TikTokAds(AdPlatform):
+     # --- writes ---------------------------------------------------------------------------
+ 
+     def _create_campaign(self, spec: CampaignSpec) -> CreatedCampaign:
++        """An Upgraded Smart+ Web (Sales) campaign plus one ad group, both disabled."""
++        objective = spec.objective or "WEB_CONVERSIONS"
++        if objective != "WEB_CONVERSIONS":
++            raise ValueError(
++                f"TikTok campaigns are created as Upgraded Smart+ Sales (WEB_CONVERSIONS) "
++                f"campaigns; objective {objective} is not supported"
++            )
+         pixel = self.settings.tiktok_pixel_id
+         if not pixel:
+             raise ValueError("TIKTOK_PIXEL_ID is required to create a conversion campaign")
+@@ -358,37 +417,43 @@ class TikTokAds(AdPlatform):
+             ) from None
+         campaign = self._request(
+             "POST",
+-            "campaign/create/",
++            "smart_plus/campaign/create/",
+             json_body={
+                 "advertiser_id": self.advertiser_id,
++                "request_id": _request_id(),
+                 "campaign_name": spec.name,
+-                "objective_type": spec.objective or "WEB_CONVERSIONS",
+-                "budget_mode": "BUDGET_MODE_INFINITE",  # budget lives on the ad group
++                "objective_type": objective,
++                "sales_destination": "WEBSITE",
++                "budget_optimize_on": False,  # no CBO: the budget lives on the ad group
+                 "operation_status": "DISABLE",
+             },
+         )
+         start = (datetime.now(UTC) + timedelta(minutes=15)).strftime("%Y-%m-%d %H:%M:%S")
++        targeting: dict[str, Any] = {"location_ids": locations}
++        if spec.age_min or spec.age_max:  # age ranges need custom (MANUAL) targeting
++            targeting["age_groups"] = age_groups(spec.age_min, spec.age_max)
+         group: dict[str, Any] = {
+             "advertiser_id": self.advertiser_id,
++            "request_id": _request_id(),
+             "campaign_id": campaign["campaign_id"],
+             "adgroup_name": f"{spec.name} - ad group",
+             "promotion_type": "WEBSITE",
+-            "placement_type": "PLACEMENT_TYPE_AUTOMATIC",
+-            "location_ids": locations,
+             "pixel_id": pixel,
+             "optimization_goal": "CONVERT",
+             "optimization_event": "COMPLETE_PAYMENT",
+             "billing_event": "OCPM",
+             "bid_type": "BID_TYPE_NO_BID",
+-            "budget_mode": "BUDGET_MODE_DAY",
++            # Smart+ ad groups have no fixed daily mode: a dynamic daily budget averages over
++            # the week and may spend up to 125% of it on a single day.
++            "budget_mode": "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
+             "budget": float(spec.daily_budget),
+             "schedule_type": "SCHEDULE_FROM_NOW",
+             "schedule_start_time": start,
++            "targeting_optimization_mode": "MANUAL" if "age_groups" in targeting else "AUTOMATIC",
++            "targeting_spec": targeting,
+             "operation_status": "DISABLE",
+-        }
+-        if spec.age_min or spec.age_max:
+-            group["age_groups"] = age_groups(spec.age_min, spec.age_max)
+-        ad_group = self._request("POST", "adgroup/create/", json_body=group)
++        }  # placement left unset = Automatic Placement
++        ad_group = self._request("POST", "smart_plus/adgroup/create/", json_body=group)
+         return CreatedCampaign(
+             campaign_id=str(campaign["campaign_id"]), ad_set_id=str(ad_group["adgroup_id"])
+         )
+@@ -421,69 +486,153 @@ class TikTokAds(AdPlatform):
+         )
+         return str(data["image_id"])
+ 
++    def _cta_portfolio(self) -> str:
++        """A dynamic CTA (CTA creative portfolio). Spark Ads in Smart+ Sales campaigns on
++        Automatic Placement must use one instead of a fixed call-to-action."""
++        if self._cta_portfolio_id:
++            return self._cta_portfolio_id
++        data = (
++            self._request(
++                "GET",
++                "creative/cta/recommend/",
++                params={
++                    "advertiser_id": self.advertiser_id,
++                    "new_version": True,
++                    "objective_type": "WEB_CONVERSIONS",
++                    "promotion_type": "WEBSITE",
++                    "language": "en",
++                },
++            )
++            or {}
++        )
++        content = [
++            {"asset_content": a.get("asset_content"), "asset_ids": a["asset_ids"]}
++            for a in data.get("recommend_assets") or []
++            if a.get("asset_ids")
++        ]
++        if not content:
++            raise IntegrationError(
++                "TikTok recommended no CTAs; create a dynamic CTA portfolio in Ads Manager "
++                "and set TIKTOK_CTA_PORTFOLIO_ID"
++            )
++        created = self._request(
++            "POST",
++            "creative/portfolio/create/",
++            json_body={
++                "advertiser_id": self.advertiser_id,
++                "creative_portfolio_type": "CTA",
++                "portfolio_content": content,
++            },
++        )
++        self._cta_portfolio_id = str(created["creative_portfolio_id"])
++        log.info(
++            "tiktok_cta_portfolio_created",
++            portfolio_id=self._cta_portfolio_id,
++            hint="set TIKTOK_CTA_PORTFOLIO_ID to reuse it",
++        )
++        return self._cta_portfolio_id
++
+     def _create_ad(self, spec: AdSpec) -> str:
+-        identity = self.settings.tiktok_identity_id
++        """An Upgraded Smart+ ad with one Spark Ads Push creative (our video + cover).
++
++        ``spec.call_to_action`` is not used: TikTok only accepts a dynamic CTA here.
++        """
++        s = self.settings
++        identity = s.tiktok_identity_id
+         if not identity:
+             raise ValueError(
+-                "TIKTOK_IDENTITY_ID is required (the account shown as the ad's author)"
++                "TIKTOK_IDENTITY_ID is required (the TikTok account shown as the ad's author)"
++            )
++        if s.tiktok_identity_type not in SPARK_IDENTITY_TYPES:
++            raise ValueError(
++                f"TIKTOK_IDENTITY_TYPE={s.tiktok_identity_type} can't author ads on TikTok any "
++                f"more (custom identities were retired); use a TikTok account identity: "
++                f"{' or '.join(SPARK_IDENTITY_TYPES)}"
+             )
+         if not spec.video_asset_id or not spec.image_asset_id:
+             raise ValueError("TikTok video ads need video_asset_id and a cover image_asset_id")
++        creative: dict[str, Any] = {
++            "ad_format": "SINGLE_VIDEO",
++            "video_info": {"video_id": spec.video_asset_id},
++            "image_info": [{"web_uri": spec.image_asset_id}],
++            "identity_type": s.tiktok_identity_type,
++            "identity_id": identity,
++        }
++        if s.tiktok_identity_type == "BC_AUTH_TT":
++            if not s.tiktok_identity_authorized_bc_id:
++                raise ValueError(
++                    "TIKTOK_IDENTITY_AUTHORIZED_BC_ID is required when TIKTOK_IDENTITY_TYPE "
++                    "is BC_AUTH_TT"
++                )
++            creative["identity_authorized_bc_id"] = s.tiktok_identity_authorized_bc_id
+         data = self._request(
+             "POST",
+-            "ad/create/",
++            "smart_plus/ad/create/",
+             json_body={
+                 "advertiser_id": self.advertiser_id,
+                 "adgroup_id": spec.ad_set_id,
+-                "creatives": [
+-                    {
+-                        "ad_name": spec.name,
+-                        "identity_type": self.settings.tiktok_identity_type,
+-                        "identity_id": identity,
+-                        "ad_format": "SINGLE_VIDEO",
+-                        "video_id": spec.video_asset_id,
+-                        "image_ids": [spec.image_asset_id],
+-                        "ad_text": spec.primary_text,
+-                        "call_to_action": spec.call_to_action,
+-                        "landing_page_url": spec.landing_url,
+-                    }
+-                ],
++                "ad_name": spec.name,
++                "operation_status": "DISABLE",
++                "creative_list": [{"creative_info": creative}],
++                "ad_text_list": [{"ad_text": spec.primary_text}],
++                "landing_page_url_list": [{"landing_page_url": spec.landing_url}],
++                "ad_configuration": {"call_to_action_id": self._cta_portfolio()},
+             },
+         )
+-        return str((data.get("ad_ids") or [None])[0])
++        return str(data["smart_plus_ad_id"])
++
++    def _is_smart_plus(self, level: Level, external_id: str) -> bool:
++        """Whether the entity belongs to an Upgraded Smart+ campaign (they have their own
++        update endpoints). Ad ids are ``ad_id_v2`` values, as synced."""
++        path, key, id_field = LOOKUP[level]
++        data = (
++            self._request(
++                "GET",
++                path,
++                params={
++                    "advertiser_id": self.advertiser_id,
++                    "filtering": {key: [external_id]},
++                    "fields": [id_field, "campaign_automation_type"],
++                },
++            )
++            or {}
++        )
++        return any(r.get("campaign_automation_type") == SMART_PLUS for r in data.get("list") or [])
+ 
+     def _update_budget(self, level: Level, external_id: str, daily_budget: Decimal) -> None:
++        if level == "ad":
++            raise ValueError("TikTok budgets live on campaigns or ad groups, not ads")
++        prefix = "smart_plus/" if self._is_smart_plus(level, external_id) else ""
+         if level == "campaign":
+             self._request(
+                 "POST",
+-                "campaign/update/",
++                f"{prefix}campaign/update/",
+                 json_body={
+                     "advertiser_id": self.advertiser_id,
+                     "campaign_id": external_id,
+                     "budget": float(daily_budget),
+                 },
+             )
+-        elif level == "ad_set":
++        else:
+             self._request(
+                 "POST",
+-                "adgroup/budget/update/",
++                f"{prefix}adgroup/budget/update/",
+                 json_body={
+                     "advertiser_id": self.advertiser_id,
+                     "budget": [{"adgroup_id": external_id, "budget": float(daily_budget)}],
+                 },
+             )
+-        else:
+-            raise ValueError("TikTok budgets live on campaigns or ad groups, not ads")
+ 
+     def _set_status(self, level: Level, external_id: str, status: EntityStatus) -> None:
++        smart_plus = self._is_smart_plus(level, external_id)
+         path, key = {
+             "campaign": ("campaign/status/update/", "campaign_ids"),
+             "ad_set": ("adgroup/status/update/", "adgroup_ids"),
+-            "ad": ("ad/status/update/", "ad_ids"),
++            "ad": ("ad/status/update/", "smart_plus_ad_ids" if smart_plus else "ad_ids"),
+         }[level]
+         self._request(
+             "POST",
+-            path,
++            f"smart_plus/{path}" if smart_plus else path,
+             json_body={
+                 "advertiser_id": self.advertiser_id,
+                 key: [external_id],
+diff --git a/docs/ad-platforms.md b/docs/ad-platforms.md
+index dee2326..a272c5f 100644
+--- a/docs/ad-platforms.md
++++ b/docs/ad-platforms.md
+@@ -87,7 +87,9 @@ an **identity** for ads, and a **Pixel**.
+ 
+ 1. business-api.tiktok.com > *Become a developer*. This is reviewed, typically in a few business days.
+ 2. *My apps > Create app*, with these permission scopes: Ad Account Management, Ads Management, Reporting,
+-   Creative Management, Pixel Management. Set the redirect URL to `https://hub.my-domain.com/oauth/tiktok`
++   Creative Management, Pixel Management (plus Measurement > Report Pixel Event for conversions). Tick each
++   top-level box so every sub-permission is included: the Smart+ endpoints sit under Ads Management, and
++   the dynamic-CTA endpoints under Creative Management > Creative Recommendation. Set the redirect URL to `https://hub.my-domain.com/oauth/tiktok`
+    (any HTTPS URL you control works; you only need the `auth_code` from it). App review can take days to weeks.
+ 3. Put the app's id and secret in `TIKTOK_APP_ID` / `TIKTOK_APP_SECRET`. Open the app's **advertiser
+    authorization URL**, sign in, and pick your ad account. The browser lands on your redirect URL.
+@@ -96,10 +98,32 @@ an **identity** for ads, and a **Pixel**.
+    docker compose exec api python -m app.cli ads tiktok-token <AUTH_CODE>
+    ```
+    It prints the `TIKTOK_ACCESS_TOKEN` and `TIKTOK_ADVERTISER_ID` lines to paste into `.env`.
+-4. **Identity**: Ads Manager > *Assets > Identities*. Create a custom identity (name + avatar) or link your
+-   TikTok account, then copy its id into `TIKTOK_IDENTITY_ID`. Set `TIKTOK_IDENTITY_TYPE` to match
+-   (`CUSTOMIZED_USER`, `TT_USER` or `BC_AUTH_TT`).
++4. **Identity**: Ads Manager > *Assets > Identities*. Link the store's TikTok account, then copy its id
++   into `TIKTOK_IDENTITY_ID`. Set `TIKTOK_IDENTITY_TYPE` to `TT_USER`, or to `BC_AUTH_TT` for an account
++   linked through Business Center (then also set `TIKTOK_IDENTITY_AUTHORIZED_BC_ID`). Ads run as
++   **Spark Ads**: the uploaded video is posted to that account in ads-only mode. TikTok retired
++   custom identities (`CUSTOMIZED_USER`) for the TikTok placement, so the hub refuses them.
+ 5. **Pixel**: *Assets > Events > Web events*. Copy the pixel id into `TIKTOK_PIXEL_ID`.
++6. **Call to action** (optional): Spark Ads in Smart+ campaigns need a *dynamic CTA* portfolio. If
++   `TIKTOK_CTA_PORTFOLIO_ID` is empty, the hub builds one from TikTok's recommended CTAs on the first
++   ad and logs `tiktok_cta_portfolio_created` with its id. Put that id in `.env` to reuse it.
++
++**Campaign type.** The hub creates **Upgraded Smart+ Sales (website) campaigns** through the
++`smart_plus/...` endpoints, because from 2027-01-01 TikTok's legacy `campaign/create`, `adgroup/create`
++and `ad/create` stop creating Sales, App Promotion and Lead Generation campaigns. Each campaign has
++CBO off and one ad group that optimises for Complete Payment on your pixel, on Automatic Placement.
++Without an age range, targeting is automatic (locations only); an age range switches to custom
++targeting. The `AdSpec.call_to_action` value is ignored on TikTok: the dynamic CTA picks the button.
++
++**Budgets.** Smart+ ad groups have no fixed daily budget, only a *dynamic daily* one. It averages
++over the week, so a single day can spend up to **125%** of the number the hub sets. The guardrail
++limits compare against the number you set, not that daily peak.
++
++**Ids.** Reads still use `campaign/get`, `adgroup/get` and `ad/get`, which also return Smart+
++campaigns and ad groups. TikTok's `ad/get` lists a Smart+ ad once per creative, so the hub reads
++Smart+ ads from `smart_plus/ad/get` instead. Reports are keyed by `ad_id_v2`: a manual ad's id, or
++a Smart+ ad's id. Budget and status changes check each target's `campaign_automation_type` first
++and call the `smart_plus/...` endpoint for Smart+ entities and the legacy one for older ones.
+ 
+ Notes: TikTok has no 3-second-view metric, so its **2-second** views are stored in `video_3s_views`.
+ Compare hook rates within one platform, not across platforms. Targeting uses TikTok location ids:
+diff --git a/tests/ads_mock.py b/tests/ads_mock.py
+index e34d2ce..0e5874f 100644
+--- a/tests/ads_mock.py
++++ b/tests/ads_mock.py
+@@ -14,7 +14,10 @@ Handler = Callable[[httpx.Request], httpx.Response | dict[str, Any]]
+ 
+ class MockHTTP:
+     """Route by (method, substring of path). First match wins; responses can be a
+-    dict (200 JSON), an httpx.Response, or a list consumed one item per call."""
++    dict (200 JSON), an httpx.Response, or a list consumed one item per call.
++
++    When one path contains another (TikTok ``smart_plus/ad/get`` contains ``ad/get``), anchor
++    the shorter one (``/v1.3/ad/get``) so it can't catch the longer path's calls."""
+ 
+     def __init__(self) -> None:
+         self.routes: list[tuple[str, str, Any]] = []
+diff --git a/tests/test_ads_tiktok.py b/tests/test_ads_tiktok.py
+index 20702c4..416829b 100644
+--- a/tests/test_ads_tiktok.py
++++ b/tests/test_ads_tiktok.py
+@@ -13,10 +13,12 @@ from pydantic import SecretStr
+ 
+ from app.config import Settings
+ from app.integrations.ads.base import AdSpec, CampaignSpec, MediaUpload
+-from app.integrations.ads.tiktok import TikTokAds, age_groups
++from app.integrations.ads.tiktok import SMART_PLUS, TikTokAds, age_groups
+ from app.integrations.http import IntegrationError
+ from app.models import EntityStatus
+ 
++V = "/v1.3/"  # pins a legacy path: "smart_plus/ad/get" also contains "ad/get"
++
+ 
+ def ok(data: object) -> dict[str, object]:
+     return {"code": 0, "message": "OK", "request_id": "r", "data": data}
+@@ -106,7 +108,7 @@ def test_structure_paging_and_status_mapping() -> None:
+     )
+     mock.on(
+         "GET",
+-        "ad/get",
++        V + "ad/get",
+         ok(
+             {
+                 "list": [
+@@ -115,6 +117,32 @@ def test_structure_paging_and_status_mapping() -> None:
+                         "adgroup_id": 10,
+                         "operation_status": "ENABLE",
+                         "secondary_status": "AD_STATUS_NOT_APPROVED",
++                        "campaign_automation_type": "MANUAL",
++                    },
++                    {  # one creative of the Smart+ ad below, not an ad of its own
++                        "ad_id": 901,
++                        "smart_plus_ad_id": "sp1",
++                        "adgroup_id": 11,
++                        "operation_status": "ENABLE",
++                        "campaign_automation_type": "UPGRADED_SMART_PLUS_CREATIVE",
++                    },
++                ],
++                "page_info": {"total_page": 1},
++            }
++        ),
++    )
++    mock.on(
++        "GET",
++        "smart_plus/ad/get",
++        ok(
++            {
++                "list": [
++                    {
++                        "smart_plus_ad_id": "sp1",
++                        "adgroup_id": "11",
++                        "ad_name": "Hook A",
++                        "operation_status": "DISABLE",
++                        "secondary_status": "AD_STATUS_DISABLE",
+                     }
+                 ],
+                 "page_info": {"total_page": 1},
+@@ -127,14 +155,19 @@ def test_structure_paging_and_status_mapping() -> None:
+         ("1", EntityStatus.ACTIVE, D("50")),
+         ("2", EntityStatus.PAUSED, None),
+     ]
+-    assert st.ads[0].status == EntityStatus.REJECTED
++    assert [(a.external_id, a.ad_set_external_id, a.status) for a in st.ads] == [
++        ("100", "10", EntityStatus.REJECTED),
++        ("sp1", "11", EntityStatus.PAUSED),
++    ]
+     assert mock.calls[0].headers["Access-Token"] == "tt-token"
+     assert json.loads(query(mock.find("GET", "campaign/get")[0])["fields"])[0] == "campaign_id"
++    ad_fields = json.loads(query(mock.find("GET", V + "ad/get")[0])["fields"])
++    assert "campaign_automation_type" in ad_fields
+ 
+ 
+ def test_report_metrics_mapping_and_30_day_chunks() -> None:
+     row = {
+-        "dimensions": {"ad_id": 100, "stat_time_day": "2026-10-01 00:00:00"},
++        "dimensions": {"ad_id_v2": 100, "stat_time_day": "2026-10-01 00:00:00"},
+         "metrics": {
+             "spend": "20.00",
+             "impressions": "5000",
+@@ -156,6 +189,7 @@ def test_report_metrics_mapping_and_30_day_chunks() -> None:
+         "2026-08-30",
+         "AUCTION_AD",
+     )
++    assert json.loads(q["dimensions"]) == ["ad_id_v2", "stat_time_day"]  # Smart+ ad, not creative
+     m = metrics[0]
+     assert (m.ad_external_id, m.date, m.spend, m.video_3s_views, m.purchases) == (
+         "100",
+@@ -183,57 +217,233 @@ def test_rate_limit_code_retries_and_auth_code_fails_fast() -> None:
+         tt2.get_account()
+ 
+ 
+-def test_writes_payloads(writes_on) -> None:  # type: ignore[no-untyped-def]
+-    mock = (
++def automation(kind: str) -> dict[str, object]:
++    """A legacy getter's answer to the Smart+-or-manual lookup made before a write."""
++    return ok({"list": [{"campaign_automation_type": kind}], "page_info": {"total_page": 1}})
++
++
++CTA_RECOMMEND = ok(
++    {
++        "recommend_assets": [
++            {"asset_ids": ["201902", "201404"], "asset_content": "Shop now"},
++            {"asset_ids": ["202114"], "asset_content": "Learn more"},
++            {"asset_ids": [], "asset_content": "empty"},
++        ]
++    }
++)
++
++
++def smart_plus_mock() -> MockHTTP:
++    return (
+         MockHTTP()
+-        .on("POST", "campaign/create", ok({"campaign_id": "c1"}))
+-        .on("POST", "adgroup/create", ok({"adgroup_id": "g1"}))
++        .on("POST", "smart_plus/campaign/create", ok({"campaign_id": "c1"}))
++        .on("POST", "smart_plus/adgroup/create", ok({"adgroup_id": "g1"}))
+         .on("POST", "file/video/ad/upload", ok([{"video_id": "v1"}]))
+         .on("POST", "file/image/ad/upload", ok({"image_id": "i1"}))
+-        .on("POST", "ad/create", ok({"ad_ids": ["a1"]}))
+-        .on("POST", "adgroup/budget/update", ok({}))
+-        .on("POST", "ad/status/update", ok({}))
++        .on("GET", "creative/cta/recommend", CTA_RECOMMEND)
++        .on("POST", "creative/portfolio/create", ok({"creative_portfolio_id": "p1"}))
++        .on(
++            "POST",
++            "smart_plus/ad/create",
++            [ok({"smart_plus_ad_id": "sp1"}), ok({"smart_plus_ad_id": "sp2"})],
++        )
+     )
++
++
++def ad_spec(**kw: object) -> AdSpec:
++    return AdSpec(
++        **{
++            "ad_set_id": "g1",
++            "name": "Hook A",
++            "landing_url": "https://shop.com",
++            "primary_text": "Try",
++            "video_asset_id": "v1",
++            "image_asset_id": "i1",
++            **kw,
++        }
++    )  # type: ignore[arg-type]
++
++
++def test_creates_use_upgraded_smart_plus(writes_on) -> None:  # type: ignore[no-untyped-def]
++    mock = smart_plus_mock()
+     tt, _ = client(mock, session_factory=writes_on)
+     created = tt.create_campaign(
+         CampaignSpec(name="UGC", daily_budget=D("30"), countries=["US"], age_min=25, age_max=44)
+     )
+     assert (created.campaign_id, created.ad_set_id) == ("c1", "g1")
+-    group = body(mock.find("POST", "adgroup/create")[0])
+-    assert (
+-        group["location_ids"] == ["6252001"]
+-        and group["budget"] == 30.0
+-        and group["operation_status"] == "DISABLE"
++    # nothing goes to the legacy create endpoints that stop on 2027-01-01
++    assert not mock.find("POST", V + "campaign/create")
++    assert not mock.find("POST", V + "adgroup/create")
++
++    camp = body(mock.find("POST", "smart_plus/campaign/create")[0])
++    assert {k: v for k, v in camp.items() if k != "request_id"} == {
++        "advertiser_id": "700",
++        "campaign_name": "UGC",
++        "objective_type": "WEB_CONVERSIONS",
++        "sales_destination": "WEBSITE",
++        "budget_optimize_on": False,
++        "operation_status": "DISABLE",
++    }
++    group = body(mock.find("POST", "smart_plus/adgroup/create")[0])
++    assert camp["request_id"].isdigit() and group["request_id"].isdigit()
++    assert camp["request_id"] != group["request_id"]
++    assert (group["campaign_id"], group["promotion_type"], group["pixel_id"]) == (
++        "c1",
++        "WEBSITE",
++        "px1",
++    )
++    assert (group["optimization_goal"], group["optimization_event"], group["billing_event"]) == (
++        "CONVERT",
++        "COMPLETE_PAYMENT",
++        "OCPM",
++    )
++    assert (group["budget_mode"], group["budget"], group["operation_status"]) == (
++        "BUDGET_MODE_DYNAMIC_DAILY_BUDGET",
++        30.0,
++        "DISABLE",
+     )
+-    assert group["age_groups"] == ["AGE_25_34", "AGE_35_44"]
++    assert group["targeting_optimization_mode"] == "MANUAL"
++    assert group["targeting_spec"] == {
++        "location_ids": ["6252001"],
++        "age_groups": ["AGE_25_34", "AGE_35_44"],
++    }
++    assert "placement_type" not in group  # Automatic Placement
+ 
+     vid = tt.upload_video(MediaUpload("hook.mp4", b"video-bytes", "video/mp4"))
+     img = tt.upload_image(MediaUpload("cover.jpg", b"img", "image/jpeg"))
+-    ad_id = tt.create_ad(
+-        AdSpec(
+-            ad_set_id="g1",
+-            name="Hook A",
+-            landing_url="https://shop.com",
+-            primary_text="Try",
+-            video_asset_id=vid,
+-            image_asset_id=img,
+-        )
++    assert (vid, img) == ("v1", "i1")
++    assert tt.create_ad(ad_spec(video_asset_id=vid, image_asset_id=img)) == "sp1"
++    assert not mock.find("POST", V + "ad/create")
++    assert body(mock.find("POST", "smart_plus/ad/create")[0]) == {
++        "advertiser_id": "700",
++        "adgroup_id": "g1",
++        "ad_name": "Hook A",
++        "operation_status": "DISABLE",
++        "creative_list": [
++            {
++                "creative_info": {
++                    "ad_format": "SINGLE_VIDEO",
++                    "video_info": {"video_id": "v1"},
++                    "image_info": [{"web_uri": "i1"}],
++                    "identity_type": "TT_USER",
++                    "identity_id": "id1",
++                }
++            }
++        ],
++        "ad_text_list": [{"ad_text": "Try"}],
++        "landing_page_url_list": [{"landing_page_url": "https://shop.com"}],
++        "ad_configuration": {"call_to_action_id": "p1"},
++    }
++    q = query(mock.find("GET", "creative/cta/recommend")[0])
++    assert (q["new_version"], q["objective_type"], q["promotion_type"]) == (
++        "true",
++        "WEB_CONVERSIONS",
++        "WEBSITE",
+     )
+-    assert (vid, img, ad_id) == ("v1", "i1", "a1")
+-    creative = body(mock.find("POST", "ad/create")[0])["creatives"][0]
+-    assert creative["identity_id"] == "id1" and creative["image_ids"] == ["i1"]
++    assert body(mock.find("POST", "creative/portfolio/create")[0]) == {
++        "advertiser_id": "700",
++        "creative_portfolio_type": "CTA",
++        "portfolio_content": [
++            {"asset_content": "Shop now", "asset_ids": ["201902", "201404"]},
++            {"asset_content": "Learn more", "asset_ids": ["202114"]},
++        ],
++    }
++    # the dynamic CTA is built once per client, then reused
++    assert tt.create_ad(ad_spec(name="Hook B")) == "sp2"
++    assert len(mock.find("POST", "creative/portfolio/create")) == 1
++
++
++def test_configured_cta_portfolio_and_bc_identity(writes_on) -> None:  # type: ignore[no-untyped-def]
++    mock = smart_plus_mock()
++    tt, _ = client(
++        mock,
++        session_factory=writes_on,
++        tiktok_cta_portfolio_id="p9",
++        tiktok_identity_type="BC_AUTH_TT",
++        tiktok_identity_authorized_bc_id="bc1",
++    )
++    tt.create_ad(ad_spec())
++    ad = body(mock.find("POST", "smart_plus/ad/create")[0])
++    assert ad["ad_configuration"] == {"call_to_action_id": "p9"}
++    assert ad["creative_list"][0]["creative_info"]["identity_authorized_bc_id"] == "bc1"
++    assert not mock.find("GET", "creative/cta/recommend")
++
++
++@pytest.mark.parametrize(
++    ("settings", "match"),
++    [
++        ({"tiktok_identity_type": "CUSTOMIZED_USER"}, "custom identities were retired"),
++        ({"tiktok_identity_type": "BC_AUTH_TT"}, "TIKTOK_IDENTITY_AUTHORIZED_BC_ID"),
++        ({"tiktok_identity_id": ""}, "TIKTOK_IDENTITY_ID"),
++    ],
++)
++def test_ad_identity_errors(writes_on, settings: dict[str, str], match: str) -> None:  # type: ignore[no-untyped-def]
++    mock = smart_plus_mock()
++    tt, _ = client(mock, session_factory=writes_on, **settings)
++    with pytest.raises(ValueError, match=match):
++        tt.create_ad(ad_spec())
++    assert not mock.find("POST", "smart_plus/ad/create")
++
+ 
++def test_no_recommended_ctas_is_a_clear_error(writes_on) -> None:  # type: ignore[no-untyped-def]
++    mock = MockHTTP().on("GET", "creative/cta/recommend", ok({"recommend_assets": []}))
++    tt, _ = client(mock, session_factory=writes_on)
++    with pytest.raises(IntegrationError, match="TIKTOK_CTA_PORTFOLIO_ID"):
++        tt.create_ad(ad_spec())
++
++
++def test_only_the_sales_objective(writes_on) -> None:  # type: ignore[no-untyped-def]
++    tt, _ = client(MockHTTP(), session_factory=writes_on)
++    with pytest.raises(ValueError, match="WEB_CONVERSIONS"):
++        tt.create_campaign(CampaignSpec(name="x", daily_budget=D("10"), objective="TRAFFIC"))
++
++
++def test_updates_route_smart_plus_and_legacy_entities(writes_on) -> None:  # type: ignore[no-untyped-def]
++    mock = (
++        MockHTTP()
++        .on("GET", V + "adgroup/get", [automation(SMART_PLUS), automation("MANUAL")])
++        .on("GET", V + "ad/get", [automation(SMART_PLUS), automation("MANUAL")])
++        .on("GET", V + "campaign/get", automation(SMART_PLUS))
++        .on("POST", "smart_plus/adgroup/budget/update", ok({}))
++        .on("POST", V + "adgroup/budget/update", ok({}))
++        .on("POST", "smart_plus/ad/status/update", ok({}))
++        .on("POST", V + "ad/status/update", ok({}))
++        .on("POST", "smart_plus/campaign/status/update", ok({}))
++    )
++    tt, _ = client(mock, session_factory=writes_on)
+     seed_entity(writes_on, "tiktok", "c1", ad_set_id="g1", ad_set_budget="40")
+-    tt.update_budget("ad_set", "g1", D("45"))
+-    assert body(mock.find("POST", "adgroup/budget/update")[0])["budget"] == [
+-        {"adgroup_id": "g1", "budget": 45.0}
++    seed_entity(writes_on, "tiktok", "c2", ad_set_id="g2", ad_set_budget="40")
++
++    tt.update_budget("ad_set", "g1", D("45"))  # a Smart+ ad group
++    lookup = query(mock.find("GET", V + "adgroup/get")[0])
++    assert json.loads(lookup["filtering"]) == {"adgroup_ids": ["g1"]}
++    assert "campaign_automation_type" in json.loads(lookup["fields"])
++    assert body(mock.find("POST", "smart_plus/adgroup/budget/update")[0]) == {
++        "advertiser_id": "700",
++        "budget": [{"adgroup_id": "g1", "budget": 45.0}],
++    }
++    tt.update_budget("ad_set", "g2", D("45"))  # a manual ad group keeps the legacy endpoint
++    assert body(mock.find("POST", V + "adgroup/budget/update")[0])["budget"] == [
++        {"adgroup_id": "g2", "budget": 45.0}
+     ]
++
++    tt.set_status("ad", "sp1", EntityStatus.PAUSED)
++    assert json.loads(query(mock.find("GET", V + "ad/get")[0])["filtering"]) == {
++        "ad_ids_v2": ["sp1"]
++    }
++    assert body(mock.find("POST", "smart_plus/ad/status/update")[0]) == {
++        "advertiser_id": "700",
++        "smart_plus_ad_ids": ["sp1"],
++        "operation_status": "DISABLE",
++    }
+     tt.set_status("ad", "a1", EntityStatus.PAUSED)
+-    assert body(mock.find("POST", "ad/status/update")[0]) == {
++    assert body(mock.find("POST", V + "ad/status/update")[0]) == {
+         "advertiser_id": "700",
+         "ad_ids": ["a1"],
+         "operation_status": "DISABLE",
+     }
++    tt.set_status("campaign", "c1", EntityStatus.PAUSED)
++    assert body(mock.find("POST", "smart_plus/campaign/status/update")[0])["campaign_ids"] == ["c1"]
+ 
+ 
+ def test_unknown_country_is_a_clear_error(writes_on) -> None:  # type: ignore[no-untyped-def]

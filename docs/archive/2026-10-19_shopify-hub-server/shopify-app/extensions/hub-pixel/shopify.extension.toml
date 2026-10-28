@@ -1,0 +1,19 @@
+type = "web_pixel_extension"
+name = "hub-pixel"
+runtime_context = "strict"
+
+# Shopify enforces the shopper's consent: the pixel only runs when analytics + marketing
+# are allowed, and not after an opt-out of data sale/sharing.
+[customer_privacy]
+analytics = true
+marketing = true
+preferences = false
+sale_of_data = "enabled"
+
+[settings]
+type = "object"
+
+[settings.fields.collectUrl]
+name = "Collect URL"
+description = "The hub endpoint that receives storefront events (set by the hub)."
+type = "single_line_text_field"
