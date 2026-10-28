@@ -458,3 +458,6 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 
 ## 2026-10-27 ~21:45 ET — Dashboard 2.0 Phase C done (owner: "Yes, build the rest of Phase C now: the Shopify sync, Store Analytics page, product economics, bot-traffic flag and the reconciliation check.")
 - shopify_sync job (15 min) -> analytics.db store tables; new Store page /store; product economics for 92 products (profitability_model basis); bot flag (10/24 only); reconciliation 5/5 OK. 54/54 tests. Report: docs/DASHBOARD_IMPLEMENTATION_PLAN.md "Phase C report". Note for owner: ~70 products have un-rounded prices (e.g. $35.78); nothing changed.
+
+## 2026-10-27 ~22:30 ET — Dashboard 2.0 Phase D done (owner: "Yes, start Phase D: the shared design system, sidebar navigation with the six sections, the Overview page and the improved content calendar.")
+- Sidebar with Overview, Content Studio (+ Performance), Advertising, Store, Intelligence, Operations; dark-first brand theme; Overview KPIs with previous-period comparison; calendar week/month/day/list + filters + detail drawer with production history; old URLs redirect. 57/57 tests. Report: docs/DASHBOARD_IMPLEMENTATION_PLAN.md "Phase D report". Seen on the live data: Meta campaign started delivering ($0.44, 16 impressions); 8 videos waiting in TikTok drafts.
