@@ -1,0 +1,285 @@
+{
+ "B": "",
+ "style": "Photorealistic premium fashion advertising photo, vertical 9:16, natural light, true-to-life fabric and color, realistic skin texture. Late November in the US (autumn turning to winter). The garment must match the reference images exactly: same color, cut, length, details and hardware; do not invent or remove any detail. Natural relaxed pose, legs uncrossed, both feet naturally placed, anatomically correct arms, hands and fingers. Keep the top fifth of the frame calm (plain background or sky) for a headline. No text, no logos, no watermarks, no brand labels, no coffee cups.",
+ "jobs": [
+  {
+   "key": "P001_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4f0c3826-8d35-42f6-b7be-38b5df3b9a11.png",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F876B025278BA791354EEA5213A6560E.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Three-quarter-length shot of a fictional woman in her late 20s with a sleek dark low bun standing in the brown sleeveless mini dress from the references: high mock neck, fitted bodice with princess seams, sculpted pleats that flare out from a small metal ring at each hip, smooth matte polyester, above-knee length, face turned slightly away, the dress filling most of the frame, the hip pleats and metal rings clearly visible."
+  },
+  {
+   "key": "P001_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4f0c3826-8d35-42f6-b7be-38b5df3b9a11.png",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F876B025278BA791354EEA5213A6560E.jpg"
+   ],
+   "prompt": "Evening holiday dinner in a warm restaurant with soft string lights and a decorated table, a fictional woman in her late 20s with a sleek dark low bun standing by the table wearing the brown sleeveless mini dress from the references: high mock neck, fitted bodice with princess seams, sculpted pleats that flare out from a small metal ring at each hip, smooth matte polyester, above-knee length with sheer black tights and black knee-high boots, smiling, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P001_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4f0c3826-8d35-42f6-b7be-38b5df3b9a11.png",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F876B025278BA791354EEA5213A6560E.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Three-quarter shot from the head to just below the hem of a fictional woman in her late 20s with a sleek dark low bun wearing the brown sleeveless mini dress from the references (high mock neck, princess seams, sculpted pleats that flare out from a small metal ring at each hip), turned slightly to the side and stepping forward so one hip ring and its pleat fan are large, sharp and close to the camera. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P003_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8635ED9D89BCFA7732E4141BA7C60F60.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F09E6F95E086632D9FA65883A4BFC767.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/207CCDA563C573FE694F31B971C8C1D7.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-length shot of a fictional woman in her early 30s with shoulder-length straight black hair wearing the black blazer mini dress from the references: structured suiting, puffed shoulders, notch lapels, single-breasted black buttons, flap pockets, long sleeves, fitted waist, red 3D fabric roses on long green stems climbing the front exactly as placed in the references with sheer black tights and black heels, standing straight, roses fully visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P003_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8635ED9D89BCFA7732E4141BA7C60F60.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F09E6F95E086632D9FA65883A4BFC767.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/207CCDA563C573FE694F31B971C8C1D7.jpg"
+   ],
+   "prompt": "Office holiday party in the evening, warm lights and a subtle decorated tree in the background, a fictional woman in her early 30s with shoulder-length straight black hair wearing the black blazer mini dress from the references: structured suiting, puffed shoulders, notch lapels, single-breasted black buttons, flap pockets, long sleeves, fitted waist, red 3D fabric roses on long green stems climbing the front exactly as placed in the references with sheer black tights and black heels, holding a glass of sparkling water, smiling at colleagues out of focus, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P003_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8635ED9D89BCFA7732E4141BA7C60F60.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F09E6F95E086632D9FA65883A4BFC767.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/207CCDA563C573FE694F31B971C8C1D7.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Waist-up shot of a fictional woman in her early 30s with shoulder-length straight black hair wearing the black blazer mini dress from the references, standing close to the camera so the red 3D fabric roses on long green stems, the notch lapels and the black buttons are large and sharp. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P006_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BBE588E731ECC59042AC3B782026DFCA.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C287DAF44F415601ED02AF3A7AAD8E4E.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3BE07C68FF682B51273BAA24B3A43649.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Waist-up shot of a fictional woman in her early 30s with wavy auburn shoulder-length hair wearing the off-white chunky rib-knit cardigan from the references: high stand collar that buttons off-center, small button tabs on the shoulders, full button front with dark buttons, loose fit, dropped shoulders, banded hem at the hip, long sleeves buttoned, over a plain cream top, the chunky rib texture, stand collar and shoulder button tabs filling most of the frame. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P006_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BBE588E731ECC59042AC3B782026DFCA.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C287DAF44F415601ED02AF3A7AAD8E4E.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3BE07C68FF682B51273BAA24B3A43649.jpg"
+   ],
+   "prompt": "Saturday morning at an outdoor farmers market in late November, bare trees, crates of apples and squash, a fictional woman in her early 30s with wavy auburn shoulder-length hair wearing the off-white chunky rib-knit cardigan from the references: high stand collar that buttons off-center, small button tabs on the shoulders, full button front with dark buttons, loose fit, dropped shoulders, banded hem at the hip, long sleeves open over a white tee with straight blue jeans, carrying a canvas tote, three-quarter body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P006_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BBE588E731ECC59042AC3B782026DFCA.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C287DAF44F415601ED02AF3A7AAD8E4E.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3BE07C68FF682B51273BAA24B3A43649.jpg"
+   ],
+   "prompt": "Outdoors on a crisp late-November street, a fictional woman in her early 30s with wavy auburn shoulder-length hair wearing the off-white chunky rib-knit cardigan from the references: high stand collar that buttons off-center, small button tabs on the shoulders, full button front with dark buttons, loose fit, dropped shoulders, banded hem at the hip, long sleeves fully buttoned up with the stand collar closed at the neck like a jacket, black trousers, hands relaxed, three-quarter body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P007_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8305EE48900D4E9F867B35CCC9FAD59D.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2445A9A5D792281B59146FBFE6266EAD.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Three-quarter-length shot of a fictional woman in her late 20s with a light brown curtain-bang bob wearing the camel faux suede blazer from the references: relaxed fit, notch lapels, yoke seam across the chest, three-button front, flap hip pockets, long sleeves, hip length, matte suede texture open over a black turtleneck, the suede texture, lapels and yoke seam clearly visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P007_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8305EE48900D4E9F867B35CCC9FAD59D.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2445A9A5D792281B59146FBFE6266EAD.jpg"
+   ],
+   "prompt": "Late-November city street with brick shop fronts and bare trees, a fictional woman in her late 20s with a light brown curtain-bang bob walking in the camel faux suede blazer from the references: relaxed fit, notch lapels, yoke seam across the chest, three-button front, flap hip pockets, long sleeves, hip length, matte suede texture over a black turtleneck and straight blue jeans with brown loafers, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P007_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8305EE48900D4E9F867B35CCC9FAD59D.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2445A9A5D792281B59146FBFE6266EAD.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-body outfit photo of a fictional woman in her late 20s with a light brown curtain-bang bob: the camel faux suede blazer from the references: relaxed fit, notch lapels, yoke seam across the chest, three-button front, flap hip pockets, long sleeves, hip length, matte suede texture worn open over a black ribbed turtleneck with straight light-blue jeans and brown loafers, standing naturally, the three pieces clearly readable as one outfit. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P009_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53457DF984C80C7834BD2E40B4EB871E.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Three-quarter-length shot of a fictional woman in her mid 30s with a dark blonde ponytail wearing the camel utility zip jacket from the references: canvas-look shell, full front zip, dark brown contrast collar, drawstring hood lined with plush dark fleece, zip chest pocket, slant side pockets, hip length, worn as a relaxed oversized fit on a woman unzipped over a gray knit, hood down so the plush fleece lining shows, collar and chest pocket clearly visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P009_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53457DF984C80C7834BD2E40B4EB871E.jpg"
+   ],
+   "prompt": "Frosty late-November morning in a park, pale sun, frost on the grass, a fictional woman in her mid 30s with a dark blonde ponytail walking a golden retriever on a leash, wearing the camel utility zip jacket from the references: canvas-look shell, full front zip, dark brown contrast collar, drawstring hood lined with plush dark fleece, zip chest pocket, slant side pockets, hip length, worn as a relaxed oversized fit on a woman zipped halfway over a gray knit with dark jeans and boots, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P009_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53457DF984C80C7834BD2E40B4EB871E.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Waist-up shot of a fictional woman in her mid 30s with a dark blonde ponytail wearing the camel utility zip jacket from the references unzipped, holding the hood open with one hand so the plush dark fleece lining is large and clearly visible, dark brown contrast collar and zip chest pocket in frame, relaxed oversized fit. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P011_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C02B46CA6B000069569017DF2C07DA94.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E3D1E5177B57191054F38C630063AF1E.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F14295209D5CF498F14877FE57A0CF8.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Three-quarter-length shot of a fictional woman in her late 20s with a sharp jaw-length platinum-blonde bob wearing the black faux leather moto jacket from the references: smooth PU with a soft sheen, snap-tab stand collar, center zip, zip chest pocket, zip side pockets, shaped seams through the waist, fitted hip length, long sleeves zipped up, with black straight trousers, the snap-tab collar and zip pockets clearly visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P011_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C02B46CA6B000069569017DF2C07DA94.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E3D1E5177B57191054F38C630063AF1E.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F14295209D5CF498F14877FE57A0CF8.jpg"
+   ],
+   "prompt": "Evening downtown street in late November, warm shop lights and a restaurant entrance, a fictional woman in her late 20s with a sharp jaw-length platinum-blonde bob wearing the black faux leather moto jacket from the references: smooth PU with a soft sheen, snap-tab stand collar, center zip, zip chest pocket, zip side pockets, shaped seams through the waist, fitted hip length, long sleeves open over a caramel cable-knit midi dress with black knee-high boots, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P011_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C02B46CA6B000069569017DF2C07DA94.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E3D1E5177B57191054F38C630063AF1E.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F14295209D5CF498F14877FE57A0CF8.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-body outfit photo of a fictional woman in her late 20s with a sharp jaw-length platinum-blonde bob wearing the black faux leather moto jacket from the references: smooth PU with a soft sheen, snap-tab stand collar, center zip, zip chest pocket, zip side pockets, shaped seams through the waist, fitted hip length, long sleeves open over a caramel cable-knit midi sweater dress with black knee-high boots, standing naturally. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P012_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1957376338C4C7282CD3D4B0307BDB8C.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/73F44085D55752FA302084E900AA8179.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2F7E73C7870D96AD19812BE2928A6DF8.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Product still life: the pair of beige knee-high boots from the references standing upright side by side on a low cream plinth, slightly angled, smooth faux leather, wide fold-over cuff with the vertical row of small brass snap buttons facing the camera, 2.8 inch block heel, rounded toe, no person. The boots fill the lower 70% of the frame; the upper 28% is empty cream backdrop continuing naturally (no bands or edges)."
+  },
+  {
+   "key": "P012_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1957376338C4C7282CD3D4B0307BDB8C.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/73F44085D55752FA302084E900AA8179.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2F7E73C7870D96AD19812BE2928A6DF8.jpg"
+   ],
+   "prompt": "Late-November city sidewalk with fallen leaves, a fictional woman in her early 30s walking in the beige knee-high boots from the references: smooth faux leather, wide fold-over cuff at the top with a vertical row of small brass snap buttons, 2.8 inch block heel, rounded toe, about 14 inch shaft with a caramel cable-knit midi sweater dress whose front slit shows the boot shaft, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P012_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1957376338C4C7282CD3D4B0307BDB8C.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/73F44085D55752FA302084E900AA8179.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2F7E73C7870D96AD19812BE2928A6DF8.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-body photo of a fictional woman in her early 30s wearing the beige knee-high boots from the references: smooth faux leather, wide fold-over cuff at the top with a vertical row of small brass snap buttons, 2.8 inch block heel, rounded toe, about 14 inch shaft with a black mini skirt, sheer black tights and a cream knit sweater, standing naturally, boots clearly visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P013_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CE1B160000BCABB9F072AB3556CC1997.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1E3E6FA7B028205FCC94E89C7CF6CC63.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-length shot of a fictional woman in her early 30s with long chestnut hair worn loose wearing the caramel cable-knit sweater dress from the references: mock neck, long sleeves, ribbed waist, fitted through the hip, midi length to mid-calf, front slit from the hem, vertical cable pattern with black knee-high boots, standing naturally, the cable knit and midi length clearly visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P013_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CE1B160000BCABB9F072AB3556CC1997.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1E3E6FA7B028205FCC94E89C7CF6CC63.jpg"
+   ],
+   "prompt": "Warm family holiday dinner at home in late November, candles and a set table, a fictional woman in her early 30s with long chestnut hair worn loose standing beside the table wearing the caramel cable-knit sweater dress from the references: mock neck, long sleeves, ribbed waist, fitted through the hip, midi length to mid-calf, front slit from the hem, vertical cable pattern with black knee-high boots, smiling, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P013_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CE1B160000BCABB9F072AB3556CC1997.jpg",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1E3E6FA7B028205FCC94E89C7CF6CC63.jpg"
+   ],
+   "prompt": "Late-November tree-lined residential street with brownstone steps and fallen leaves, soft overcast light, a fictional woman in her early 30s with long chestnut hair worn loose, mid-stride in the caramel cable-knit sweater dress from the references (mock neck, long sleeves, ribbed waist, midi length, front slit), the slit opening naturally over black knee-high boots, hands free, no sunglasses, no handbag, full body visible, the slit drawn exactly as in the reference. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P014_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/70E85101CDDBC7F183BB234ADBA11C19.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Waist-up shot of a fictional woman in her late 20s with short curly dark hair wearing the navy and bright green wide-striped knit sweater from the references: open polo collar in navy, relaxed fit with dropped shoulders, ribbed cuffs and hem, long sleeves; stripes alternate navy and green exactly as in the reference, the stripes and open polo collar filling most of the frame. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P014_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/70E85101CDDBC7F183BB234ADBA11C19.jpg"
+   ],
+   "prompt": "Weekend late-November morning on a neighborhood street with bare trees, a fictional woman in her late 20s with short curly dark hair walking in the navy and bright green wide-striped knit sweater from the references: open polo collar in navy, relaxed fit with dropped shoulders, ribbed cuffs and hem, long sleeves; stripes alternate navy and green exactly as in the reference with straight blue jeans and brown loafers, carrying a small bunch of flowers, full body visible. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P014_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/70E85101CDDBC7F183BB234ADBA11C19.jpg"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-body outfit photo of a fictional woman in her late 20s with short curly dark hair wearing the navy and bright green wide-striped knit sweater from the references: open polo collar in navy, relaxed fit with dropped shoulders, ribbed cuffs and hem, long sleeves; stripes alternate navy and green exactly as in the reference tucked into a black midi skirt with black knee-high boots, standing naturally. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P005_A",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/007C8A370F5CE2D8666C3F2D90984412.jpg?v=1793062195",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E64B6E03E9691C96A0BCFBCF8618523C.jpg?v=1793062197",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FBF75EF033A6C14110CFD93CCA98C2A2.jpg?v=1793062202"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-length shot of a fictional woman in her early 30s with shoulder-length dark brown hair wearing the deep burgundy brushed wool-look coat from the references: below-knee length, oversized relaxed fit with dropped shoulders, wide notch lapels, two-button front, flap hip pockets, black lining, buttoned, over black trousers and black ankle boots, standing naturally, the coat filling most of the frame. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P005_C",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/007C8A370F5CE2D8666C3F2D90984412.jpg?v=1793062195",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E64B6E03E9691C96A0BCFBCF8618523C.jpg?v=1793062197",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FBF75EF033A6C14110CFD93CCA98C2A2.jpg?v=1793062202"
+   ],
+   "prompt": "Plain warm cream seamless studio backdrop (#F4E9DA tone), soft even light, nothing else in frame. Full-length shot of a fictional woman in her early 30s with shoulder-length dark brown hair wearing the deep burgundy brushed wool-look coat from the references: below-knee length, oversized relaxed fit with dropped shoulders, wide notch lapels, two-button front, flap hip pockets, black lining open over a caramel cable-knit midi sweater dress and black knee-high boots, showing the roomy coat layered over the knit dress. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  },
+  {
+   "key": "P005_B",
+   "aspect": "9:16",
+   "refs": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/007C8A370F5CE2D8666C3F2D90984412.jpg?v=1793062195",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E64B6E03E9691C96A0BCFBCF8618523C.jpg?v=1793062197",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FBF75EF033A6C14110CFD93CCA98C2A2.jpg?v=1793062202"
+   ],
+   "prompt": "Full-length vertical photo of a fictional woman in her early 30s with shoulder-length dark brown hair, walking toward the camera on a quiet city sidewalk in late November: overcast sky, bare trees with a few last brown leaves, damp pavement. She wears exactly the coat in the reference images: deep burgundy brushed wool-look coat, below-knee length, oversized relaxed fit with dropped shoulders, wide notch lapels, two-button front, flap hip pockets, black lining, worn open over a cream ribbed turtleneck sweater and black straight-leg trousers with black leather ankle boots. Natural mid-stride pose, arms relaxed at her sides, legs uncrossed and anatomically natural, both feet on the ground in a normal walking step, hands with five fingers. The coat fills most of the frame and is the clear focus; its color, length, lapels, buttons and pockets match the references exactly. Frame her from a little further away so her head sits below the top fifth of the frame, with overcast sky and tree branches above her. COMPOSITION (strict): wide vertical frame. The upper 28% of the image is calm, uncluttered background only (plain backdrop, sky, wall or ceiling; no head, hair, faces or busy objects) so a headline can sit there; the top of her head is at about 30% from the top edge. The rest of the figure fits in the lower 70% of the frame."
+  }
+ ]
+}

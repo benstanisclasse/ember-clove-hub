@@ -1,0 +1,165 @@
+<title>TikTok Test 01 Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: one product per section; three concept columns that stack on phones; decisions pinned under each picture. */
+:root {
+  --paper: #f7f1ea; --card: #fffaf4; --ink: #2b2522; --muted: #6f665f; --line: #e4d8ca;
+  --accent: #9a3f22; --ok: #2f6b45; --warn: #9a6a12; --bad: #a3322a; --info: #3f5f8a;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #1d1916; --card: #26211d; --ink: #f1e8dd; --muted: #b3a79a; --line: #3a322c;
+  --accent: #e08a62; --ok: #7cc49a; --warn: #e2b55a; --bad: #ec8a80; --info: #9db8de; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #1d1916; --card: #26211d; --ink: #f1e8dd; --muted: #b3a79a; --line: #3a322c;
+  --accent: #e08a62; --ok: #7cc49a; --warn: #e2b55a; --bad: #ec8a80; --info: #9db8de; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 64px; display: grid; gap: 40px; }
+h1, h2 { font-family: var(--display); font-weight: 650; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.1; }
+h2 { font-size: 1.35rem; }
+.lede { color: var(--muted); max-width: 68ch; margin: 8px 0 0; }
+.tally { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.chip { font-size: 12.5px; font-weight: 600; letter-spacing: .03em; padding: 3px 10px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--muted); background: var(--card); white-space: nowrap; }
+.chip[data-d="approve"] { color: var(--ok); border-color: currentColor; }
+.chip[data-d="revise"], .chip[data-d="regenerate"] { color: var(--warn); border-color: currentColor; }
+.chip[data-d="reject"] { color: var(--bad); border-color: currentColor; }
+.chip[data-d="later"] { color: var(--info); border-color: currentColor; }
+.chip[data-d="stale"] { color: var(--bad); border-style: dashed; }
+.note { font-size: 13px; color: var(--muted); }
+.product { display: grid; gap: 14px; padding-top: 22px; border-top: 1px solid var(--line); }
+.phead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 18px; align-items: baseline; }
+.facts { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.facts a { color: var(--accent); }
+.concepts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 860px) { .concepts { grid-template-columns: 1fr; max-width: 460px; } }
+.concept { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.concept img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); background: var(--card); display: block; }
+.ctop { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.label { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.concept p { margin: 0; font-size: 14px; }
+.concept .k { font-weight: 600; }
+.caption { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13.5px; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.actions button { font: inherit; font-size: 13px; font-weight: 600; padding: 6px 11px; border-radius: 7px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+.actions button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.actions button:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+textarea { font: inherit; font-size: 13.5px; width: 100%; box-sizing: border-box; min-height: 58px; padding: 7px 9px; border-radius: 7px;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink); resize: vertical; }
+.meta { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.banner { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 13.5px; }
+@media (prefers-reduced-motion: no-preference) { .actions button { transition: background .15s, color .15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>TikTok image test 01: 30 concept prototypes</h1>
+    <p class="lede">Ten products, three ideas each: <b>A</b> the product on its own, <b>B</b> worn in a real November moment, <b>C</b> one concrete reason to buy. These are first pictures (slide 1 of each ad) to choose directions; approved concepts get their full 3-picture carousel next. Mark each one and add a note if something needs changing.</p>
+    <div class="tally" id="tally"></div>
+    <p class="banner" id="status" hidden></p>
+  </header>
+  <main id="list" style="display:grid; gap:40px"></main>
+  <p class="note">Every decision is saved against the exact picture version (its file hash). If a picture is remade, its earlier decision shows as "needs re-review". AI disclosure is TikTok's AI-generated label on each post plus #aigenerated in the caption; nothing is written on the pictures for it.</p>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const DECISIONS = [['approve','Approve'],['revise','Request revision'],['regenerate','Regenerate'],['reject','Reject'],['later','Save for later']];
+const LABEL = Object.fromEntries(DECISIONS);
+let reviews = {}; let db = null; let me = null; let canWrite = false;
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) { if (k === 'text') e.textContent = v; else e.setAttribute(k, v); }
+  for (const c of kids) if (c) e.append(c);
+  return e;
+}
+function stateOf(ad) {
+  const r = reviews[ad.ad_name];
+  if (!r) return null;
+  if (r.prototype_sha256 !== ad.prototype_sha256) return 'stale';
+  return r.decision || null;
+}
+function renderTally() {
+  const t = document.getElementById('tally'); t.textContent = '';
+  const counts = {}; let open = 0;
+  for (const p of DATA.products) for (const a of p.ads) { const s = stateOf(a); if (s) counts[s] = (counts[s] || 0) + 1; else open++; }
+  t.append(el('span', {class: 'chip', text: `${open} to review`}));
+  for (const [k, lbl] of [...DECISIONS, ['stale', 'Needs re-review']]) if (counts[k]) t.append(el('span', {class: 'chip', 'data-d': k, text: `${counts[k]} ${lbl.toLowerCase()}`}));
+}
+function renderAd(ad) {
+  const s = stateOf(ad); const r = reviews[ad.ad_name];
+  const card = el('article', {class: 'concept', id: ad.ad_name});
+  card.append(el('img', {src: ad.image, alt: `${ad.concept} prototype for ${ad.product}: ${ad.headline}`, loading: 'lazy'}));
+  const top = el('div', {class: 'ctop'}, el('span', {class: 'label', text: ad.concept}));
+  if (s) top.append(el('span', {class: 'chip', 'data-d': s, text: s === 'stale' ? 'Needs re-review' : LABEL[s]}));
+  card.append(top);
+  card.append(el('p', {}, el('span', {class: 'k', text: 'Tests: '}), document.createTextNode(ad.learning)));
+  card.append(el('p', {}, el('span', {class: 'k', text: 'Buyer motive: '}), document.createTextNode(ad.motivation)));
+  card.append(el('p', {}, el('span', {class: 'k', text: 'Slides: '}), document.createTextNode(ad.slides)));
+  card.append(el('div', {class: 'caption', text: ad.caption}));
+  const acts = el('div', {class: 'actions', role: 'group', 'aria-label': 'Decision'});
+  const note = el('textarea', {id: 'c-' + ad.ad_name, placeholder: 'Comment (optional)', 'aria-label': 'Comment for ' + ad.ad_name});
+  note.value = r && r.prototype_sha256 === ad.prototype_sha256 ? (r.comment || '') : '';
+  for (const [k, lbl] of DECISIONS) {
+    const b = el('button', {type: 'button', 'aria-pressed': String(s === k), text: lbl});
+    b.disabled = !canWrite;
+    b.addEventListener('click', () => save(ad, k, note.value.trim()));
+    acts.append(b);
+  }
+  note.disabled = !canWrite;
+  note.addEventListener('change', () => { const cur = stateOf(ad); if (cur && cur !== 'stale') save(ad, cur, note.value.trim()); });
+  card.append(acts, note);
+  const meta = r ? `Recorded ${new Date(r.at).toLocaleString()} for version ${String(r.prototype_sha256).slice(0, 10)}` : '';
+  card.append(el('p', {class: 'meta', text: `${ad.ad_name} · v${ad.version} · ${ad.prototype_sha256.slice(0, 10)}${meta ? ' · ' + meta : ''}`}));
+  return card;
+}
+function render() {
+  const list = document.getElementById('list'); list.textContent = '';
+  for (const p of DATA.products) {
+    const sec = el('section', {class: 'product', id: p.id});
+    const facts = el('div', {class: 'facts'},
+      el('span', {text: `$${p.price.toFixed(2)}`}),
+      el('span', {text: `Break-even ad cost $${p.breakeven.toFixed(2)}`}),
+      el('span', {text: `Kept at $20 ad cost $${p.kept.toFixed(2)}`}),
+      el('span', {text: `Shown in ${p.variant}`}));
+    const a = el('a', {href: p.url, target: '_blank', rel: 'noopener', text: 'Product page'}); facts.append(a);
+    sec.append(el('div', {class: 'phead'}, el('h2', {text: `${p.id} ${p.title}`}), facts));
+    const grid = el('div', {class: 'concepts'});
+    for (const ad of p.ads) grid.append(renderAd(ad));
+    sec.append(grid); list.append(sec);
+  }
+  renderTally();
+}
+async function save(ad, decision, comment) {
+  if (!db) return;
+  const body = {decision, comment, ad_name: ad.ad_name, product_id: ad.product_id, version: ad.version,
+    prototype_sha256: ad.prototype_sha256, reviewer: me || 'owner', at: new Date().toISOString()};
+  reviews = {...reviews, [ad.ad_name]: body}; render();
+  try { await db.collection('reviews').doc(ad.ad_name).set(body); }
+  catch (e) { showStatus(`Not saved: ${e && e.message ? e.message : 'the store refused the write'}. Your other decisions are unaffected.`); }
+}
+function showStatus(msg) { const s = document.getElementById('status'); s.textContent = msg; s.hidden = !msg; }
+
+render();
+(async () => {
+  try {
+    const user = await claude.use('user');
+    if (user) { me = await user.id(); canWrite = user.isOwner ? await user.isOwner() : false; }
+    db = await claude.use('db');
+    if (!db) { showStatus('Decisions can be recorded only by the owner, signed in, in the Claude app or claude.ai.'); canWrite = false; render(); return; }
+    if (!canWrite) showStatus('You can look through the prototypes; only the store owner records decisions.');
+    db.collection('reviews').onSnapshot(snap => {
+      const next = {}; for (const d of snap.docs) next[d.id] = d.data();
+      reviews = next; render();
+    }, () => showStatus('Live updates stopped. Reload the page to see the latest decisions.'));
+  } catch (e) { showStatus('Decisions could not be loaded. Reload the page to try again.'); }
+})();
+</script>

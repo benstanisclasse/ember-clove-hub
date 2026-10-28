@@ -567,3 +567,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Cost probe: 1 Higgsfield flare picture (P005 coat, 9:16, 752x1344, 30 s) in data/media_generated/tiktok_test_01/cost_probe/. Flare is priced per token; no per-request cost or balance via API; estimate ~$0.20-0.30 per picture (unverified). Connected Higgsfield app balance unchanged (separate account).
 - Files: PHASE_B_EXPERIMENT_PLAN.md, creative_matrix.csv (30 ads, captions <= 88 chars incl. #aigenerated, tracked URLs), products.json updated. Memory: words on image ads allowed; ICP exception for this test.
 - Nothing published or spent; no store edits. Next: owner reviews the plan, then Phase C (30 hero prototypes, est. $6-9).
+
+## 2026-10-28 — TikTok image-ad test 01, Phase C prototypes (owner: "Yes, start Phase C: make the 30 hero prototypes and the review sheets.")
+- 30 hero pictures (Higgsfield Flare, 9:16, product photos as refs) + headline overlay, 10 contact sheets, overview sheet, manifest with SHA-256 per prototype. Owner feedback applied: no "AI-generated" text on pictures (memory saved); headlines only in empty space. Framing fix and 9 remakes (see PHASE_C_PROTOTYPES.md). Owner asked for parallel generation: 5 at a time.
+- Review page (private artifact): https://claude.ai/artifact/Gy4ik4p3dPwRBWXCkr346b — decisions stored per ad with the prototype hash.
+- Cost estimate ~$10-14 (48 requests, 30 kept). Nothing published to TikTok, no ad spend, no store edits.
