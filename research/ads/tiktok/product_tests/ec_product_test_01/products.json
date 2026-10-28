@@ -1,0 +1,478 @@
+{
+ "test_id": "ec_product_test_01",
+ "created": "2026-10-28",
+ "phase": "A",
+ "selection": "10 highest kept-after-$20-CPA products (owner question 2026-10-28)",
+ "products": [
+  {
+   "test_product_id": "P001",
+   "shopify_product_id": "9757098049775",
+   "title": "Mock Neck Side-Pleat Mini Dress",
+   "handle": "metal-buckle-symmetrical-pleated-sleeveless-short-skirt-with-waist-cinching-dress",
+   "url": "https://emberandclove.com/products/metal-buckle-symmetrical-pleated-sleeveless-short-skirt-with-waist-cinching-dress",
+   "status": "ACTIVE",
+   "product_type": "Dresses",
+   "price": 170.16,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Brown",
+     "White"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   },
+   "variants": 8,
+   "variants_available": 8,
+   "image_count": 3,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F876B025278BA791354EEA5213A6560E.jpg?v=1793050082",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4f0c3826-8d35-42f6-b7be-38b5df3b9a11.png?v=1793076169",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/98255e0d-7193-48bf-9196-4a0c3f7297a9.png?v=1793076168"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 68.17,
+    "supplier_shipping_est": 18.75,
+    "payment_fees": 5.23,
+    "refund_allowance": 8.51,
+    "contribution_before_ads": 69.49,
+    "breakeven_cpa": 69.49,
+    "breakeven_roas": 2.45,
+    "target_cpa_70pct": 48.64,
+    "kept_after_20_cpa": 49.49,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P002",
+   "shopify_product_id": "9757092479215",
+   "title": "Shiny rhinestone button waist cinching neck mini black dress playful small fragrance party bandage dress",
+   "handle": "shiny-rhinestone-button-waist-cinching-neck-mini-black-dress-playful-small-fragrance-party-bandage-dress",
+   "url": "https://emberandclove.com/products/shiny-rhinestone-button-waist-cinching-neck-mini-black-dress-playful-small-fragrance-party-bandage-dress",
+   "status": "ACTIVE",
+   "product_type": "",
+   "price": 123.18,
+   "compare_at": null,
+   "options": {
+    "color": [
+     "Black",
+     "Rose Red"
+    ],
+    "size": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
+   },
+   "variants": 8,
+   "variants_available": 8,
+   "image_count": 7,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/22AB8FA1B8FB9954EA5BF870C652DFC9.jpg?v=1793049946",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A6FEB50595634B91DAA4145DD1916EE7.jpg?v=1793049948",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6F3744786E20FF5C0C16A3EDE38F792B.jpg?v=1793049949",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0696BCA0DC269DD3312CE8F6E3B1E82C.jpg?v=1793049951",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7014D0E567E5565C62A6B2A6E7DE81B8.jpg?v=1793049953",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4DC9D0BC9E11B7A78160A3DC23C27038.jpg?v=1793049956",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A42C6633370C1190CEF3038989B42355.jpg?v=1793049959"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 47.3,
+    "supplier_shipping_est": 14.89,
+    "payment_fees": 3.87,
+    "refund_allowance": 6.16,
+    "contribution_before_ads": 50.96,
+    "breakeven_cpa": 50.96,
+    "breakeven_roas": 2.42,
+    "target_cpa_70pct": 35.67,
+    "kept_after_20_cpa": 30.96,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P003",
+   "shopify_product_id": "9757092315375",
+   "title": "3D Rose Blazer Mini Dress",
+   "handle": "three-dimensional-rose-contrasting-dress-niche-design-fashionable-lapel-off-shoulder-temperament-commuting-suit-skirt",
+   "url": "https://emberandclove.com/products/three-dimensional-rose-contrasting-dress-niche-design-fashionable-lapel-off-shoulder-temperament-commuting-suit-skirt",
+   "status": "ACTIVE",
+   "product_type": "Dresses",
+   "price": 122.32,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Black"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   },
+   "variants": 4,
+   "variants_available": 4,
+   "image_count": 6,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8635ED9D89BCFA7732E4141BA7C60F60.jpg?v=1793049953",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/207CCDA563C573FE694F31B971C8C1D7.jpg?v=1793049944",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F09E6F95E086632D9FA65883A4BFC767.jpg?v=1793049951",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C88634DDAB226BD92F0D576D61B0678A.jpg?v=1793049955",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/980B38EE234D142061091EEABFA0B593.jpg?v=1793049946",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/AC87C9C674B054A2AD9FA6B2A15BE1D3.jpg?v=1793049949"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 46.87,
+    "supplier_shipping_est": 14.89,
+    "payment_fees": 3.85,
+    "refund_allowance": 6.12,
+    "contribution_before_ads": 50.59,
+    "breakeven_cpa": 50.59,
+    "breakeven_roas": 2.42,
+    "target_cpa_70pct": 35.41,
+    "kept_after_20_cpa": 30.59,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P004",
+   "shopify_product_id": "9757617979631",
+   "title": "Metal Toe Cap Wedge Mules",
+   "handle": "baotou-half-slippers-womens-summer-lazy-mules-genuine-leather-high-heeled-single-shoes-evening-evening-style-heelless-womens-s",
+   "url": "https://emberandclove.com/products/baotou-half-slippers-womens-summer-lazy-mules-genuine-leather-high-heeled-single-shoes-evening-evening-style-heelless-womens-s",
+   "status": "ACTIVE",
+   "product_type": "Sandals",
+   "price": 113.68,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Ivory",
+     "Black",
+     "Cognac"
+    ],
+    "Size": [
+     "US 4 (EU 34)",
+     "US 5 (EU 35)",
+     "US 5.5 (EU 36)",
+     "US 6 (EU 37)",
+     "US 7 (EU 38)",
+     "US 8 (EU 39)",
+     "US 8.5 (EU 40)"
+    ]
+   },
+   "variants": 21,
+   "variants_available": 21,
+   "image_count": 5,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/09008B482F0AA9D670EF630581BCC2BE.jpg?v=1793068164",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/B83488DBB3B29C627C7AF59C06B8F160.jpg?v=1793068168",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6CD3472016E2629B4A1CAE646858EEC0.jpg?v=1793068169",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/73F5E06EE064B824049999D80AC80BB8.jpg?v=1793068171",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/01C68BC20443BB5AC11DA03F7C266E33.jpg?v=1793068166"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 35.86,
+    "supplier_shipping_est": 20.3,
+    "payment_fees": 3.6,
+    "refund_allowance": 5.68,
+    "contribution_before_ads": 48.24,
+    "breakeven_cpa": 48.24,
+    "breakeven_roas": 2.36,
+    "target_cpa_70pct": 33.77,
+    "kept_after_20_cpa": 28.24,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P005",
+   "shopify_product_id": "9757276700911",
+   "title": "Two-Button Notch Lapel Long Coat",
+   "handle": "long-coat",
+   "url": "https://emberandclove.com/products/long-coat",
+   "status": "ACTIVE",
+   "product_type": "Outerwear",
+   "price": 100.04,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Burgundy"
+    ],
+    "Size": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
+   },
+   "variants": 4,
+   "variants_available": 4,
+   "image_count": 6,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/007C8A370F5CE2D8666C3F2D90984412.jpg?v=1793062195",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E64B6E03E9691C96A0BCFBCF8618523C.jpg?v=1793062197",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/5F3BB001C248C809624CF3615D3B96BA.jpg?v=1793062200",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FBF75EF033A6C14110CFD93CCA98C2A2.jpg?v=1793062202",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/66C931D5FDF7C5B4818B0FB7EBE71CF4.jpg?v=1793062204",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C41806139CAE68FE74523FC0887AB2F2.jpg?v=1793062205"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 21.73,
+    "supplier_shipping_est": 29.57,
+    "payment_fees": 3.2,
+    "refund_allowance": 5.0,
+    "contribution_before_ads": 40.54,
+    "breakeven_cpa": 40.54,
+    "breakeven_roas": 2.47,
+    "target_cpa_70pct": 28.38,
+    "kept_after_20_cpa": 20.54,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P006",
+   "shopify_product_id": "9756889022703",
+   "title": "Stand Collar Chunky Knit Cardigan",
+   "handle": "british-commuter-style-chunky-knit-high-neck-open-front-cardigan",
+   "url": "https://emberandclove.com/products/british-commuter-style-chunky-knit-high-neck-open-front-cardigan",
+   "status": "ACTIVE",
+   "product_type": "Sweaters & Sweatshirts",
+   "price": 62.56,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Off-White",
+     "Gray",
+     "Camel",
+     "Dark Red",
+     "Brown",
+     "Khaki",
+     "Black"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   },
+   "variants": 21,
+   "variants_available": 21,
+   "image_count": 8,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3BE07C68FF682B51273BAA24B3A43649.jpg?v=1793048014",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C287DAF44F415601ED02AF3A7AAD8E4E.jpg?v=1793047982",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/05C413F474B2197B435F3E010668FBDE.jpg?v=1793047990",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/80CE4BC796CBC48552DAAAACD85D4129.jpg?v=1793048015",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/584CD21850EDF51A1F44B6BF1BDDDE87.jpg?v=1793047973",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7FD5559328C17AF77D787DD904FB8A1A.jpg?v=1793047975",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/BBE588E731ECC59042AC3B782026DFCA.jpg?v=1793047976",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0726790A5CD896D123BB626AD2D4752D.jpg?v=1793047981"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 16.01,
+    "supplier_shipping_est": 15.36,
+    "payment_fees": 2.11,
+    "refund_allowance": 3.13,
+    "contribution_before_ads": 33.72,
+    "breakeven_cpa": 33.72,
+    "breakeven_roas": 2.09,
+    "target_cpa_70pct": 23.6,
+    "kept_after_20_cpa": 13.72,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P007",
+   "shopify_product_id": "9757092675823",
+   "title": "Notch Lapel Faux Suede Blazer",
+   "handle": "retro-suede-jacket-jacket",
+   "url": "https://emberandclove.com/products/retro-suede-jacket-jacket",
+   "status": "ACTIVE",
+   "product_type": "Outerwear",
+   "price": 60.9,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Dark Brown",
+     "Camel"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   },
+   "variants": 6,
+   "variants_available": 6,
+   "image_count": 7,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E97C7E32EFEEA203A08C28C000726339.jpg?v=1793049960",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F03F8203746D5250C0CFEF9DC1B740EE.jpg?v=1793049950",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/ECF3575CCC5BB7D8B577E45D3B41FFA8.jpg?v=1793049952",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F4D07DAF7A580B72D36D801805FE4BD6.jpg?v=1793049954",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0652C4A5F66629840E3E2CF128384592.jpg?v=1793049956",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2445A9A5D792281B59146FBFE6266EAD.jpg?v=1793049958",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/8305EE48900D4E9F867B35CCC9FAD59D.jpg?v=1793049962"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 14.49,
+    "supplier_shipping_est": 15.36,
+    "payment_fees": 2.07,
+    "refund_allowance": 3.04,
+    "contribution_before_ads": 33.71,
+    "breakeven_cpa": 33.71,
+    "breakeven_roas": 2.04,
+    "target_cpa_70pct": 23.6,
+    "kept_after_20_cpa": 13.71,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P008",
+   "shopify_product_id": "9756888727791",
+   "title": "Retro Character Graphic Print Distressed Wash Long Sleeve Crew Neck Men's Loose Casual Sweatshirt",
+   "handle": "retro-character-graphic-print-distressed-wash-long-sleeve-crew-neck-mens-loose-casual-sweatshirt",
+   "url": "https://emberandclove.com/products/retro-character-graphic-print-distressed-wash-long-sleeve-crew-neck-mens-loose-casual-sweatshirt",
+   "status": "ACTIVE",
+   "product_type": "",
+   "price": 63.54,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Gray",
+     "Black",
+     "Rose Red"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
+   },
+   "variants": 15,
+   "variants_available": 15,
+   "image_count": 5,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4F01CFFDB96F2FE97F462EC17A2E2BFB.jpg?v=1793047965",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E612ED3DE41FC623D1F34AAA62133BC3.jpg?v=1793047967",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/96441E27C8EB21ADD5890D2A673C1FFC.jpg?v=1793047971",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FADCF9C161A6C557A647D2816FAB0FCC.jpg?v=1793047984",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/173E9DA8380226EFDBAE01703D07337F.jpg?v=1793047988"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 17.39,
+    "supplier_shipping_est": 14.89,
+    "payment_fees": 2.14,
+    "refund_allowance": 3.18,
+    "contribution_before_ads": 33.71,
+    "breakeven_cpa": 33.71,
+    "breakeven_roas": 2.12,
+    "target_cpa_70pct": 23.6,
+    "kept_after_20_cpa": 13.71,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P009",
+   "shopify_product_id": "9756887810287",
+   "title": "Fleece-Lined Hooded Zip Jacket",
+   "handle": "3d-printed-digital-printed-hooded-sweatshirt-with-brown-lining-cotton-jacket",
+   "url": "https://emberandclove.com/products/3d-printed-digital-printed-hooded-sweatshirt-with-brown-lining-cotton-jacket",
+   "status": "ACTIVE",
+   "product_type": "Outerwear",
+   "price": 66.3,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Camel",
+     "Gray",
+     "Slate Blue",
+     "Olive Green"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "XXXL"
+    ]
+   },
+   "variants": 24,
+   "variants_available": 24,
+   "image_count": 8,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/53457DF984C80C7834BD2E40B4EB871E.jpg?v=1793047943",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/83D65DB616E623F68D23B94DCA71A588.jpg?v=1793047947",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/50C4A300BF6EC6827828C35BCE68A3BA.jpg?v=1793047949",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3C7DB61706B47B469B517D1CA29E72F9.jpg?v=1793047951",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/24F37423CE231BE2CE25BE1405F681B2.jpg?v=1793047953",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6BC8488CB5F97726917C337774BD7C1E.jpg?v=1793047955",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/6C8AE9248C0FD42BDF4664E431D74437.jpg?v=1793047958",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/97DDC8FAEFA8066F9D0CC98918B9423F.jpg?v=1793047960"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 16.4,
+    "supplier_shipping_est": 18.6,
+    "payment_fees": 2.22,
+    "refund_allowance": 3.31,
+    "contribution_before_ads": 33.53,
+    "breakeven_cpa": 33.53,
+    "breakeven_roas": 2.22,
+    "target_cpa_70pct": 23.47,
+    "kept_after_20_cpa": 13.53,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  },
+  {
+   "test_product_id": "P010",
+   "shopify_product_id": "9757099294959",
+   "title": "Floral Satin Blazer Mini Set",
+   "handle": "european-and-american-fashion-loose-suit-skirt-two-piece-set-long-sleeved-lapel-top-printed-high-waisted-short-skirt",
+   "url": "https://emberandclove.com/products/european-and-american-fashion-loose-suit-skirt-two-piece-set-long-sleeved-lapel-top-printed-high-waisted-short-skirt",
+   "status": "ACTIVE",
+   "product_type": "Skirts",
+   "price": 61.46,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Pink Floral"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   },
+   "variants": 3,
+   "variants_available": 3,
+   "image_count": 6,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/AFCC39FB4D0ADAB863C74B64FD0CBBD4.jpg?v=1793050107",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/9B963D7D63F9101C6AED62DC04BE61B6.jpg?v=1793050101",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/14CA3F99F7CE7ECB5DABE94F5BC45B14.jpg?v=1793050102",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CB1751409201987656AAB7343CF0D799.jpg?v=1793050104",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/504B170D49FCF4BCD1A2F8D570B62D51.jpg?v=1793050106",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4130FCE6CAE0D7A8AA648C122D4A927B.jpg?v=1793050109"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 19.6,
+    "supplier_shipping_est": 11.8,
+    "payment_fees": 2.08,
+    "refund_allowance": 3.07,
+    "contribution_before_ads": 32.67,
+    "breakeven_cpa": 32.67,
+    "breakeven_roas": 2.13,
+    "target_cpa_70pct": 22.87,
+    "kept_after_20_cpa": 12.67,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   }
+  }
+ ]
+}
