@@ -55,9 +55,10 @@
     "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4C1BD9074AEFA2A2749D5FECE3D2471F.jpg"
    ],
    "postzen_post_id": "m172xtfhmsn4aa87gfaw8s52d58h4ta7",
-   "status": "scheduled",
+   "status": "published",
    "ai_picture": "data\\media_generated\\facebook_2026-10-28\\02_crossover_top.png",
-   "record_note": "2026-10-28: #aigenerated removed (owner: \"Yes, remove #aigenerated from the Facebook posts already scheduled in PostZen.\")"
+   "record_note": "2026-10-28: #aigenerated removed (owner: \"Yes, remove #aigenerated from the Facebook posts already scheduled in PostZen.\")",
+   "post_url": "https://www.facebook.com/XXX_122098732947528852"
   },
   {
    "date": "2026-10-29",

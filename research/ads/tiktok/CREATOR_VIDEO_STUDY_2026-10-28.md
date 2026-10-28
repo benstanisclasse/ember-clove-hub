@@ -63,7 +63,7 @@ Avoid for us: price hooks ("I saw the price and I'm mad"), which break our no-pr
 2. **Hooks to rotate in captions now** (caption text only, no on-screen text): body callout, season prediction, who
    it's for, touch/feel. These fit TikTok's 5-caption rotation we already use.
 3. **Where the talking videos come from** (owner decision): real UGC creators with product samples (TikTok Creator
-   Marketplace or a UGC platform, about $100-300 per video, plus sample orders from EPROLO), the owner or a friend
+   Marketplace or a UGC platform; rates not checked yet, get quotes; plus sample orders from EPROLO), the owner or a friend
    filming, or an AI presenter. AI is the riskiest choice: the owner judged earlier AI videos as looking AI, and
    winners here look unmistakably real.
 4. Always state fit facts. Every talking winner but two did.
