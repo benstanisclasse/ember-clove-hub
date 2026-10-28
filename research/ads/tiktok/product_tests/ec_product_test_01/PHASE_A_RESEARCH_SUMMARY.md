@@ -1,7 +1,7 @@
 # TikTok image-ad test 01 — Phase A: inspection and research
 
 Date: 2026-10-28. Brief: owner's "Ember & Clove — TikTok Product Advertising System, Phase 1" master prompt.
-Status: **Phase A done; stopped for owner decisions before Phase B.** Nothing generated, published, spent or edited
+Status: **Phase A done.** Owner decisions received 2026-10-28 (P002/P004/P008/P010 swapped for P011–P014; see PHASE_B_EXPERIMENT_PLAN.md). Nothing generated, published, spent or edited
 on the store. Product snapshot (live Shopify + economics): `products.json` in this folder.
 
 Selection used: the 10 products with the most profit left after a $20 CPA (owner's question earlier on 2026-10-28;

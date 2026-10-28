@@ -89,3 +89,58 @@ Most research is about video; image transfer is noted where it matters. Evidence
 - AI pictures must match the garment and carry TikTok's AI disclosure.
 - Suggested late-autumn priority: P005, P006, P009 (after fit check), then P003 + P001 as a time-boxed holiday pair; hold P004/P010;
   hold P002 (IP) and P008 (men's) pending the owner.
+
+---
+
+# Replacement products (added 2026-10-28 after the owner swapped out P002, P004, P008, P010)
+
+Kalodata "slots" = product-month entries in the Womenswear/Shoes top-500 lists, matched by name keywords (approximate).
+
+## P011 Snap Collar Faux Leather Jacket ($60.42; Black; PU; S–XL; break-even CPA $31.50)
+- Motivations: versatility (over knits and dresses), identity (edgy-polished), seasonal (between-seasons layer), outfit completion.
+- Appeal: a fitted black moto whose snap-tab stand collar reads more polished than a biker jacket.
+- Objections: price (6 top-500 faux leather jackets, median $37.20, none above ~$65; nearest analog "Faux Leather Stand Collar
+  Moto Jacket" $39.30, $850K); fitted cut (bust 37–43 in) vs oversized leaders; lining not stated; "does PU look cheap".
+- Demand: small but steady — 3–4 slots ~$0.5–0.6M/month Nov–Dec 2025, 5 slots $0.80M in Sep 2026.
+- Angles: black jacket over a sweater dress with boots; collar detail first; one jacket, three outfits.
+- Evidence: weak–moderate. Meta "Like Page" ad since 10/27 measures follows, not buying intent.
+- Risks: "faux leather"/"PU" only; no warmth/waterproof/windproof claims; no belt (spec says belted, photos show none);
+  supplier model photos look AI and one is a collage; organic Facebook post 10/29.
+
+## P012 Snap Button Fold-Over Knee Boots ($91.16–94.10; Beige/Black/White; US 5–11; break-even CPA $29.90)
+- Motivations: seasonal (strongest), outfit completion, visual (brass snaps, cuff), versatility.
+- Demand: women's boots are the biggest seasonal set — 113 slots/$7.8M Nov 2025, 122/$6.6M Dec, 31/$1.0M May; knee/tall
+  boots 47/$2.9M Nov, 41/$2.9M Sep 2026.
+- Objections: price (knee boots median $51.53, IQR $44–63, 14/102 ≥ $80; fold-over analogs median $46); calf width not
+  published; no half sizes 6.5/7.5/9; heel comfort.
+- Angles: the boots your sweater dress needs (with P013); snap and cuff detail first; one pair, three outfits.
+- Evidence: moderate for season and price band, weak for the item.
+- Risks: Shopify type is "Sandals"; small gold leopard-head charm on the cuff kept these out of Meta ads 10-27 (keep it
+  small, check it doesn't read as a brand mark); "faux leather" only; side zip not visible in photos; no comfort or
+  wide-calf claims.
+
+## P013 Cable Knit Mock Neck Midi Dress ($52.99; 7 colours; S–XL; break-even CPA $30.25)
+- ICP (reports/icp_P01_cable-knit-midi_2026-10-24.md): segments Boot-Season Outfit Builder, Holiday-Gathering Dresser,
+  Covered-but-Shapely. Ranked angles: "the dress your tall boots need" (4.0/5), "holiday plans, one dress" (3.7, ~mid-Nov
+  deadline), "covered up, still shapely" (3.3), walkable slit (3.1). Ruled out: warmth, wool, maternity, quality claims.
+- Kalodata: sweater/knit dresses median $31.81 (4 of 20 ≥ $50); 8 slots/$0.94M Nov 2025; 13/$2.14M Sep 2026. Analog
+  complaints: runs small/short (17), itchy (10), clingy, "looks different from photos" (17).
+- Already made: 6 cycle-1 Seedance videos (TikTok draft Test C1); owner found AI look and slit flaws.
+- Angles: tall boots, finished (with P012); holiday plans, one dress (stop ~Nov 15–20); covered, still shapely.
+- Evidence: moderate (only one of the four with an ICP report and creative history).
+- Risks: never wool/warm/slimming; show the slit accurately; midi not mini; Berry had no photo, featured image looked
+  red/coral rather than camel — check the Caramel photo.
+
+## P014 Striped Polo Collar Knit Sweater ($53.99; 11 colour combos; S–L; break-even CPA $30.48)
+- Motivations: visual (stripes + collar), identity (preppy/rugby trend), versatility, differentiation.
+- Objections: price (collared/polo sweaters median $32.63; striped sweaters $25.55, none ≥ $50; analogs $36–43);
+  oversized fit (bust 46–49 in) with narrow S–L range; colour accuracy across 11 combos.
+- Trend: polo sweaters 2 slots Nov–Dec 2025 vs 16 Aug / 12 Sep 2026 — a 2026 rise, one year of data.
+- Angles: polo sweater + jeans + blazer (with P007); collar and stripe detail first; weekend to office.
+- Evidence: weak. All store photos are flat lays/hangers, so on-body cards must be AI.
+- Risks: handle says "cardigan"/"slimming", spec says slim fit — it's a relaxed pullover: never "slimming" or "wool";
+  neck labels/watermarks not yet checked.
+
+## Cross-sells
+P012 boots with P013, P001, P003; P005 coat over boots; P011 over P013 or P001 (over P014 the collars clash); P014 with
+P007 or under P005; P013 under P005 or P006. The $70 free-shipping threshold stays out of ads (price talk).

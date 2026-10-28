@@ -561,3 +561,9 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Files: research/ads/tiktok/product_tests/ec_product_test_01/ (PHASE_A_RESEARCH_SUMMARY.md, CREATIVE_RESEARCH_BRIEFS.md, products.json).
 - Key: P002 is under the owner's 10-26 designer look-alike hold and P008 is a men's item the owner skipped; P004/P010 are off-season; carousels must run as Spark Ads from @emberandclove (custom identity gone since Jan 2026), music required, AI disclosure required; ad-group minimum $20/day (10 products = $200/day); Higgsfield cost per image not reported; contact email is bridgemarkservices. Stopped for owner decisions D1-D8 before Phase B.
 - Nothing generated, published, spent, or edited on the store.
+
+## 2026-10-28 — TikTok image-ad test 01, Phase B design (owner: "Swap P002, P004, P008 and P010 for the in-season replacements and go to Phase B"; answers: words on images OK, use today's research briefs, AI models OK, one test picture OK, budget at the end)
+- Swapped in P011 Snap Collar Faux Leather Jacket, P012 Snap Button Fold-Over Knee Boots, P013 Cable Knit Mock Neck Midi Dress, P014 Striped Polo Collar Knit Sweater (all ACTIVE, pages 200); briefs appended (subagent, read-only).
+- Cost probe: 1 Higgsfield flare picture (P005 coat, 9:16, 752x1344, 30 s) in data/media_generated/tiktok_test_01/cost_probe/. Flare is priced per token; no per-request cost or balance via API; estimate ~$0.20-0.30 per picture (unverified). Connected Higgsfield app balance unchanged (separate account).
+- Files: PHASE_B_EXPERIMENT_PLAN.md, creative_matrix.csv (30 ads, captions <= 88 chars incl. #aigenerated, tracked URLs), products.json updated. Memory: words on image ads allowed; ICP exception for this test.
+- Nothing published or spent; no store edits. Next: owner reviews the plan, then Phase C (30 hero prototypes, est. $6-9).

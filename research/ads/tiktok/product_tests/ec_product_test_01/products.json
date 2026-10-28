@@ -2,7 +2,7 @@
  "test_id": "ec_product_test_01",
  "created": "2026-10-28",
  "phase": "A",
- "selection": "10 highest kept-after-$20-CPA products (owner question 2026-10-28)",
+ "selection": "10 highest kept-after-$20-CPA products (owner question 2026-10-28); swapped 2026-10-28 for in-season P011-P014",
  "products": [
   {
    "test_product_id": "P001",
@@ -45,7 +45,8 @@
     "target_cpa_70pct": 48.64,
     "kept_after_20_cpa": 49.49,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "active"
   },
   {
    "test_product_id": "P002",
@@ -92,7 +93,9 @@
     "target_cpa_70pct": 35.67,
     "kept_after_20_cpa": 30.96,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "retired 2026-10-28",
+   "retired_reason": "Owner hold 10-26: designer look-alike, monogram bag in photos"
   },
   {
    "test_product_id": "P003",
@@ -137,7 +140,8 @@
     "target_cpa_70pct": 35.41,
     "kept_after_20_cpa": 30.59,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "active"
   },
   {
    "test_product_id": "P004",
@@ -186,7 +190,9 @@
     "target_cpa_70pct": 33.77,
     "kept_after_20_cpa": 28.24,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "retired 2026-10-28",
+   "retired_reason": "Off-season (backless mule) - hold for spring"
   },
   {
    "test_product_id": "P005",
@@ -231,7 +237,8 @@
     "target_cpa_70pct": 28.38,
     "kept_after_20_cpa": 20.54,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "active"
   },
   {
    "test_product_id": "P006",
@@ -283,7 +290,8 @@
     "target_cpa_70pct": 23.6,
     "kept_after_20_cpa": 13.72,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "active"
   },
   {
    "test_product_id": "P007",
@@ -329,7 +337,8 @@
     "target_cpa_70pct": 23.6,
     "kept_after_20_cpa": 13.71,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "active"
   },
   {
    "test_product_id": "P008",
@@ -376,7 +385,9 @@
     "target_cpa_70pct": 23.6,
     "kept_after_20_cpa": 13.71,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "retired 2026-10-28",
+   "retired_reason": "Men's item; owner said skip men's items (10-26)"
   },
   {
    "test_product_id": "P009",
@@ -428,7 +439,8 @@
     "target_cpa_70pct": 23.47,
     "kept_after_20_cpa": 13.53,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "active"
   },
   {
    "test_product_id": "P010",
@@ -472,7 +484,231 @@
     "target_cpa_70pct": 22.87,
     "kept_after_20_cpa": 12.67,
     "basis": "Estimate (store_products.csv, 2026-10-28)"
-   }
+   },
+   "status_in_test": "retired 2026-10-28",
+   "retired_reason": "Off-season (pastel satin set) - hold for spring"
+  },
+  {
+   "test_product_id": "P011",
+   "shopify_product_id": "9757095395567",
+   "title": "Snap Collar Faux Leather Jacket",
+   "handle": "slim-zipper-jacket-jacket",
+   "url": "https://emberandclove.com/products/slim-zipper-jacket-jacket",
+   "status": "ACTIVE",
+   "product_type": "Outerwear",
+   "price": 60.42,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Black"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   },
+   "variants": 4,
+   "variants_available": 4,
+   "image_count": 6,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F14295209D5CF498F14877FE57A0CF8.jpg?v=1793050012",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/EC5D1B4F8D83274235B56AE03C276B5A.jpg?v=1793050013",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C02B46CA6B000069569017DF2C07DA94.jpg?v=1793050015",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E70C82FED21028B05D52821F20A2C42C.jpg?v=1793050017",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/100A2FBB6DCFE282C41A5DB7D20F8CB9.jpg?v=1793050021",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E3D1E5177B57191054F38C630063AF1E.jpg?v=1793050019"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 15.33,
+    "supplier_shipping_est": 16.28,
+    "payment_fees": 2.05,
+    "refund_allowance": 3.02,
+    "contribution_before_ads": 31.5,
+    "breakeven_cpa": 31.5,
+    "breakeven_roas": 2.17,
+    "target_cpa_70pct": 22.05,
+    "kept_after_20_cpa": 11.5,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   },
+   "status_in_test": "active",
+   "added": "2026-10-28 (owner: swap P002/P004/P008/P010 for in-season products)"
+  },
+  {
+   "test_product_id": "P012",
+   "shopify_product_id": "9757625188591",
+   "title": "Snap Button Fold-Over Knee Boots",
+   "handle": "autumn-and-winter-high-heels-thick-heels-one-foot-stomping-warehouse-tube-high-pass-boots-for-women",
+   "url": "https://emberandclove.com/products/autumn-and-winter-high-heels-thick-heels-one-foot-stomping-warehouse-tube-high-pass-boots-for-women",
+   "status": "ACTIVE",
+   "product_type": "Sandals",
+   "price": 91.16,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Beige",
+     "Black",
+     "White"
+    ],
+    "Size": [
+     "US 5 (EU 35)",
+     "US 5.5 (EU 36)",
+     "US 6 (EU 37)",
+     "US 7 (EU 38)",
+     "US 8 (EU 39)",
+     "US 8.5 (EU 40)",
+     "US 9.5 (EU 41)",
+     "US 10 (EU 42)",
+     "US 11 (EU 43)"
+    ]
+   },
+   "variants": 27,
+   "variants_available": 27,
+   "image_count": 8,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1957376338C4C7282CD3D4B0307BDB8C.jpg?v=1793068348",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/E00B56D0783C19DB14858341368BC9A3.jpg?v=1793068338",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A708FB481C4469FEA280FB4582ED6B68.jpg?v=1793068340",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/73F44085D55752FA302084E900AA8179.jpg?v=1793068342",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F9FA136AC751B67993B28D1BA252B26E.jpg?v=1793068344",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/2F7E73C7870D96AD19812BE2928A6DF8.jpg?v=1793068346",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F738DCFADBC0B6533A0C3A3B8C875936.jpg?v=1793068351",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/55B752BC36D3F1D8B011E6FFD730D81B.jpg?v=1793068353"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 23.42,
+    "supplier_shipping_est": 30.34,
+    "payment_fees": 2.94,
+    "refund_allowance": 4.56,
+    "contribution_before_ads": 29.9,
+    "breakeven_cpa": 29.9,
+    "breakeven_roas": 3.05,
+    "target_cpa_70pct": 20.93,
+    "kept_after_20_cpa": 9.9,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   },
+   "status_in_test": "active",
+   "added": "2026-10-28 (owner: swap P002/P004/P008/P010 for in-season products)"
+  },
+  {
+   "test_product_id": "P013",
+   "shopify_product_id": "9751656071407",
+   "title": "Cable Knit Mock Neck Midi Dress",
+   "handle": "half-high-collar-knee-length-slim-fit-woolen-dress",
+   "url": "https://emberandclove.com/products/half-high-collar-knee-length-slim-fit-woolen-dress",
+   "status": "ACTIVE",
+   "product_type": "Dresses",
+   "price": 52.99,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "Black",
+     "Heather Gray",
+     "Dark Blue",
+     "Caramel",
+     "Red",
+     "Green",
+     "Berry"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   },
+   "variants": 28,
+   "variants_available": 28,
+   "image_count": 11,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A02E524E5518B5581012D3C06BA3779B.jpg?v=1792822467",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/39E34B59897FEDBCA0FDCF937E07B7D3.jpg?v=1792822468",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7C27F3B51EC9FF1E3F7A50B8E011C6D4.jpg?v=1792822470",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/1E3E6FA7B028205FCC94E89C7CF6CC63.jpg?v=1792822471",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/30F9328D3C4BBDAAF666DAD820067D27.jpg?v=1792822473",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F2DBBAD28F9480BDB2430849E31F14A6.jpg?v=1792822474",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/995436DEF5FE390C8D8222B946E7C398.jpg?v=1792822478",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/C9B1DD14CBBFCE7C9C260E79920D6EA0.jpg?v=1792822484",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/CE1B160000BCABB9F072AB3556CC1997.jpg?v=1792822488",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/7672B6424FF31D0385B4C25950F7BCF0.jpg?v=1792822496",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/4A714D61A8AAFE4F91386B22EAA8F238.jpg?v=1792822502"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 10.97,
+    "supplier_shipping_est": 15.05,
+    "payment_fees": 1.84,
+    "refund_allowance": 2.65,
+    "contribution_before_ads": 30.25,
+    "breakeven_cpa": 30.25,
+    "breakeven_roas": 2.02,
+    "target_cpa_70pct": 21.17,
+    "kept_after_20_cpa": 10.25,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   },
+   "status_in_test": "active",
+   "added": "2026-10-28 (owner: swap P002/P004/P008/P010 for in-season products)"
+  },
+  {
+   "test_product_id": "P014",
+   "shopify_product_id": "9751659741423",
+   "title": "Striped Polo Collar Knit Sweater",
+   "handle": "elegant-contrast-stripe-knit-cardigan-womens-top-with-lapel-collar-slimming-fit",
+   "url": "https://emberandclove.com/products/elegant-contrast-stripe-knit-cardigan-womens-top-with-lapel-collar-slimming-fit",
+   "status": "ACTIVE",
+   "product_type": "Sweaters & Sweatshirts",
+   "price": 53.99,
+   "compare_at": null,
+   "options": {
+    "Color": [
+     "White Collar",
+     "Light Blue Collar",
+     "Yellow Collar Contrast Gray",
+     "Rose Red & Red Contrast",
+     "Blue & Red Color Block",
+     "Brown and Blue Color-block",
+     "Navy & Green Color Block",
+     "Gray and Green",
+     "Coffee & Red",
+     "Pink & Coffee Color Block",
+     "Gray Collar & Yellow Contrast"
+    ],
+    "Size": [
+     "S",
+     "M",
+     "L"
+    ]
+   },
+   "variants": 33,
+   "variants_available": 33,
+   "image_count": 11,
+   "image_urls": [
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/842EA21E3A1B64FC99B6CC4C03967FAD.jpg?v=1792822522",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/70E85101CDDBC7F183BB234ADBA11C19.jpg?v=1792822550",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/FB08DD3A614A92955370ECDDD29E7964.jpg?v=1792822552",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/A7F6D70EC0737A3BB6B3A4DEBB44085F.jpg?v=1792822554",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/880F35E52133D9974D39C2051002E605.jpg?v=1792822558",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F23F04E2A8160EBF9A5E80930A621F6A.jpg?v=1792822560",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/F5938F0F00B7D0D53652F356AD7E140E.jpg?v=1792822562",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/13FEC3E9CC683DF1D3C7FF2FF1ECACF2.jpg?v=1792822575",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/0F88FD58FBE56409EBAB49B5DC0F0AFA.jpg?v=1792822576",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/101098D7B69C11BFE26E6C48D8B5B5FB.jpg?v=1792822578",
+    "https://cdn.shopify.com/s/files/1/0845/4665/0351/files/3B1B939BAB148ACF8885987FB3FD0E00.jpg?v=1792822580"
+   ],
+   "economics": {
+    "unit_cost_max_variant": 12.13,
+    "supplier_shipping_est": 14.58,
+    "payment_fees": 1.87,
+    "refund_allowance": 2.7,
+    "contribution_before_ads": 30.48,
+    "breakeven_cpa": 30.48,
+    "breakeven_roas": 2.03,
+    "target_cpa_70pct": 21.34,
+    "kept_after_20_cpa": 10.48,
+    "basis": "Estimate (store_products.csv, 2026-10-28)"
+   },
+   "status_in_test": "active",
+   "added": "2026-10-28 (owner: swap P002/P004/P008/P010 for in-season products)"
   }
  ]
 }
