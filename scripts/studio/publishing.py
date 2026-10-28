@@ -19,7 +19,7 @@ sys.path.insert(0, str(HUB / "scripts"))
 import hub_env  # noqa: E402
 import postzen as pz  # noqa: E402
 
-from studio import content, db  # noqa: E402
+from studio import checks, content, db  # noqa: E402
 
 OUT = HUB / "studio" / "dashboard"
 SETTINGS = {
@@ -91,6 +91,30 @@ def _send(con, ep, body, key, mode_label, scheduled_for):
         ccon.close()
 
 
+def store_pieces(ep, b):
+    """Shopify product ids of the Ember & Clove pieces in the episode (outfit store pieces and the product)."""
+    pieces = content._wardrobe_products(b)
+    out = [pieces[o][0] for o in json.loads(ep["outfit_json"] or "[]") if o in pieces]
+    prod = next((p for p in b["products"].items if p.id == ep["product_id"]), None) if ep["product_id"] else None
+    return out + ([prod.shopify_gid] if prod else [])
+
+
+def release_checks(con, ep, b):
+    """Content Studio Phase D, right before anything goes to PostZen: the video and caption are exactly the ones
+    approved (sha256 bound at `approve` and `schedule`), the caption passes the shared rules (scripts/studio/checks.py)
+    and every store piece is live and in stock. Critical findings block; high ones block unless the owner accepted
+    them for this exact file and caption."""
+    f = HUB / (ep["video_path"] or "").replace("\\", "/")
+    asset = content.sha256_file(f) if ep["video_path"] and f.exists() else None
+    cap = content.sha256_text(ep["caption"]) if ep["caption"] else None
+    found = (checks.binding_findings(json.loads(ep["approval_json"] or "null"), asset, cap)
+             + checks.text_findings(ep["caption"] or "") + checks.availability(store_pieces(ep, b)))
+    content.ensure_schema(con)  # the content tables live in the same studio.db
+    blocking = checks.unresolved(found, checks.overrides(con, f"TT-{ep['id']}"), asset, cap)
+    if blocking:
+        raise db.GateError(f"{ep['id']} held: {checks.describe(blocking)}")
+
+
 def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
     """now (draft mode only): send it to the TikTok app's drafts right away instead of at the slot. A paused post can
     go to TikTok drafts (now or at its slot); its paused PostZen draft stays as it is. existing: a PostZen post
@@ -118,6 +142,7 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
                     or not (target.get("settings") or {}).get("uploadAsDraft") or post.get("content") != ep["caption"]:
                 raise db.GateError(f"PostZen post {existing} isn't a TikTok draft upload of {ep['id']}'s caption")
         else:
+            release_checks(con, ep, b)
             body = {"content": ep["caption"] or "", "publishNow": True, "timezone": b["rules"].posting.timezone,
                     "platforms": [{"platform": "tiktok", "accountId": account_id(), "settings": SETTINGS[mode]}]}
             post = _send(con, ep, body, f"{ep['id']}-draft-now", "tiktok_draft", content.now_utc())
@@ -132,6 +157,7 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
     local, when = slot_time(ep, b)
     if local <= dt.datetime.now(local.tzinfo) + dt.timedelta(minutes=2):
         raise db.GateError(f"{ep['id']}'s slot {local:%Y-%m-%d %H:%M} has passed; re-plan it")
+    release_checks(con, ep, b)
     body = {"content": ep["caption"] or "", "scheduledFor": when, "timezone": b["rules"].posting.timezone,
             "platforms": [{"platform": "tiktok", "accountId": account_id(), "settings": SETTINGS[mode]}]}
     post = _send(con, ep, body, f"{ep['id']}-{mode}", f"tiktok_{mode}", when)

@@ -3,9 +3,14 @@
 Owner 2026-10-27: the Facebook Page posts pictures only (no videos, no Ember backstory), 2 posts on weekdays and 1 on
 weekends. Products come from the store's public feed (emberandclove.com/products.json). The planner picks the
 supplier's real photos (32-character hex file names), each scanned for AI content credentials before use.
-Owner 2026-10-27 (Content Studio Phase B): AI pictures are a standard post type, each approved by the owner; any post
-whose photos are not real supplier photos (or that has an `ai_picture`) must carry #aigenerated in its caption, and
-publish refuses it otherwise. Captions use the product's own description, never prices, delivery times or urgency.
+Owner 2026-10-27 (Content Studio Phase B): AI pictures are a standard post type; any post whose photos are not real
+supplier photos (or that has an `ai_picture`) must carry #aigenerated in its caption, and publish refuses it
+otherwise. Later that day the owner dropped per-picture approval ("i dont need to approve every image i approve do
+it"): Claude checks each picture. Since Phase D, AI-picture weeks are made in the database with
+scripts/studio/fb_ai.py (no plan file, no hand edits); this script keeps the supplier-photo weeks.
+Captions use the product's own description and pass the shared rules in scripts/studio/checks.py (no prices, delivery
+times, urgency or unsupported claims); `publish` re-checks the caption and that every product is still ACTIVE and in
+stock right before each send.
 The store link goes in the caption by default (rules.json "link_placement": "caption"; "first_comment" puts it in
 the first comment instead).
 
@@ -34,6 +39,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hub_env  # noqa: E402
+from studio import checks  # noqa: E402  shared caption rules (Content Studio Phase D)
 
 HUB = Path(__file__).resolve().parent.parent
 DIR = HUB / "data" / "facebook"
@@ -41,7 +47,6 @@ RULES = DIR / "rules.json"
 HISTORY = DIR / "history.json"
 FEED = "https://emberandclove.com/products.json?limit=250&page={}"
 REAL_PHOTO = re.compile(r"^[0-9A-Fa-f]{32}(_[0-9a-f-]+)?\.(jpe?g|png|webp)$")
-NO_CAPTION = re.compile(r"\$|\bship|\bdeliver|\bsale\b|\bhurry\b|\blimited\b|\btoday only\b", re.I)
 
 
 def load_rules():
@@ -66,7 +71,7 @@ def fetch_products():
 def lead_sentence(body):
     text = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body or ""))).strip()
     first = re.split(r"(?<=[.!?])\s", text, maxsplit=1)[0].strip()
-    return "" if not first or NO_CAPTION.search(first) or len(first) > 220 else first
+    return "" if not first or not checks.text_ok(first) or len(first) > 220 else first
 
 
 def real_photos(p):
@@ -266,16 +271,21 @@ def publish(plan_path, quote):
             if local <= dt.datetime.now(tz) + dt.timedelta(minutes=5):
                 print(f"  skip {p['date']} {p['slot']}: slot has passed")
                 continue
-            if is_ai_post(p) and "#aigenerated" not in p["caption"].lower():
-                print(f"  refused {p['date']} {p['slot']}: AI picture without #aigenerated in the caption")
+            key, cid = f"fb-{p['date']}-{p['slot']}", f"FB-{data.get('start', plan_path.stem[5:])}-{i:02d}"
+            cap_hash = content.sha256_text(p["caption"])
+            # shared rules (Phase D): caption and comment wording, AI disclosure, and each product live and in stock now
+            found = (checks.text_findings(f"{p['caption']}\n{p.get('first_comment') or ''}")
+                     + checks.disclosure_findings(p["caption"], is_ai_post(p)) + checks.availability(p["products"]))
+            photos_hash = content.sha256_text("\n".join(p["photos"]))
+            blocking = checks.unresolved(found, checks.overrides(con, cid), photos_hash, cap_hash)
+            if blocking:
+                print(f"  refused {p['date']} {p['slot']}: {checks.describe(blocking)}")
                 continue
             when = local.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             settings = {"firstComment": p["first_comment"]} if p.get("first_comment") else {}
             body = {"content": p["caption"], "scheduledFor": when, "timezone": rules["timezone"],
                     "mediaItems": [{"url": u} for u in p["photos"]],
                     "platforms": [{"platform": "facebook", "accountId": acc, "settings": settings}]}
-            key, cid = f"fb-{p['date']}-{p['slot']}", f"FB-{data.get('start', plan_path.stem[5:])}-{i:02d}"
-            cap_hash = content.sha256_text(p["caption"])
             content.record_publish(con, cid, "facebook", "fb_scheduled", key, caption_sha256=cap_hash, scheduled_for=when,
                                    submitted_at=content.now_utc(), state="submitting", attempt=1, error=None)
             try:
@@ -287,7 +297,7 @@ def publish(plan_path, quote):
             post = res.get("post") or res.get("existingPost") or {}
             p.update(postzen_post_id=post.get("_id"), status=post.get("status") or "scheduled",
                      approval={"quote": quote, "at": dt.datetime.now().isoformat(timespec="seconds"),
-                               "caption_sha256": cap_hash, "photos_sha256": content.sha256_text("\n".join(p["photos"]))})
+                               "caption_sha256": cap_hash, "photos_sha256": photos_hash})
             content.record_publish(con, cid, "facebook", "fb_scheduled", key, postzen_post_id=p["postzen_post_id"],
                                    state="submitted", platform_status=p["status"], evidence="PostZen accepted the request")
             history.append({"date": p["date"], "slot": p["slot"], "products": p["products"],
@@ -347,6 +357,13 @@ def sync_dashboard(out):
         if changed:
             from studio.content import atomic_write
             atomic_write(path, json.dumps(data, ensure_ascii=False, indent=1))
+    from studio import content, fb_ai  # AI-picture posts made in the database (Content Studio Phase D)
+    con = content.connect()
+    try:
+        refreshed = fb_ai.refresh(con, pz)
+        schedule += fb_ai.schedule_rows(con)
+    finally:
+        con.close()
     schedule.sort(key=lambda r: (r["date"], r["time"]))
     (out / "fb_schedule.json").write_text(json.dumps(schedule, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -377,7 +394,7 @@ def sync_dashboard(out):
     (out / "fb_followers.json").write_text(json.dumps([{"date": s["date"][:10], "followers": s["followers"]}
                                                        for s in stats]), encoding="utf-8")
     return [f"pulled from Facebook: {pulled}", f"fb_schedule {len(schedule)}", f"fb_posts {len(posts)}", f"fb_daily {len(daily)}",
-            f"fb_followers {len(stats)}"]
+            f"fb_followers {len(stats)}", f"database AI posts with a new status {refreshed}"]
 
 
 def make_plan(start, days):

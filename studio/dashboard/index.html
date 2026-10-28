@@ -54,7 +54,7 @@
 
 <div class="es">
   <header class="es-head">
-    <h1 class="es-title" id="top">Ember Studio Control Room</h1>
+    <h1 class="es-title" id="top">Content Studio</h1>
     <p class="es-take">Next up: <b data-source="next_post" data-field="when" data-row="0" class="dash-skeleton">—</b> ·
       <span data-source="next_post" data-field="series" data-row="0">—</span> ·
       <span data-source="next_post" data-field="status" data-row="0">—</span></p>
@@ -529,10 +529,11 @@ function drawFacebook() {
 // --- Content Studio Phase B: the unified queue and the TikTok manual-publication list -----------------------------
 const Q_STATES = [['open', 'Open'], ['awaiting', 'Needs you'], ['scheduled', 'Scheduled'], ['public', 'Public'], ['all', 'All']];
 const STATE_LABEL = {planned: 'Planned', scripted: 'Scripted', generated: 'Generated', qa_failed: 'QA failed',
+  image_generated: 'Picture made', fidelity_failed: 'Picture failed check', captioned: 'Picture checked',
   awaiting_approval: 'Awaiting approval', approved: 'Approved', rejected: 'Rejected', scheduled: 'Scheduled', submitted: 'Submitted',
   in_tiktok_drafts: 'In TikTok drafts', awaiting_manual_post: 'Post it now (TikTok app)', public: 'Public', measuring: 'Measuring',
   paused: 'Paused', failed: 'Failed'};
-const qTone = s => s === 'public' ? 'st-ok' : s === 'failed' || s === 'qa_failed' ? 'st-bad'
+const qTone = s => s === 'public' ? 'st-ok' : ['failed', 'qa_failed', 'fidelity_failed'].includes(s) ? 'st-bad'
   : ['awaiting_manual_post', 'in_tiktok_drafts', 'awaiting_approval'].includes(s) ? 'st-warn' : 'st-muted';
 const queue = {chan: 'all', state: 'open'};
 let qRows = [];
@@ -542,7 +543,10 @@ function openContent(r) {
   ui.drawer(r.title || r.content_id, ui.dl([['Content', r.content_id], ['Channel', r.channel === 'tiktok' ? 'TikTok' : 'Facebook'],
     ['Kind', r.kind], ['When', r.slot_local + ' ET'], ['Stage', STATE_LABEL[r.state] || r.state],
     ['Publishing', r.publish_state ? `${STATE_LABEL[r.publish_state] || r.publish_state}: ${r.publish_evidence}` : 'not sent'],
-    ['Approved', r.approved ? 'yes' : 'not yet'], ['Products', r.products], ['Link', r.link_placement],
+    ['Approved', r.approved ? (r.approval_bound ? 'yes, bound to this exact file and caption' : 'yes (given before approvals named the file)') : 'not yet'],
+    ['Checks now', (r.checks || []).length ? ui.el('ul', {}, r.checks.map(f => ui.el('li',
+      {class: ['critical', 'high'].includes(f.severity) ? 'st-bad' : 'st-warn', text: `${f.severity}: ${f.check} (${f.detail})`}))) : 'all clear'],
+    ['Products', r.products], ['Link', r.link_placement],
     ['AI disclosure', r.ai_disclosure ? 'yes' : 'no'], ['Caption', r.caption],
     ['Post', r.post_url ? ui.el('a', {href: r.post_url, target: '_blank', rel: 'noopener', text: 'Open post'}) : null]]),
     ui.el('h4', {class: 'es-h2', text: 'History'}),
@@ -571,7 +575,7 @@ function drawQueue() {
   const st = r => r.publish_state || r.state;
   qRows = rows.filter(r => (queue.chan === 'all' || r.channel === queue.chan) && (
     queue.state === 'all' ? true : queue.state === 'public' ? st(r) === 'public' : queue.state === 'scheduled' ? st(r) === 'scheduled'
-    : queue.state === 'awaiting' ? ['awaiting_manual_post', 'in_tiktok_drafts', 'awaiting_approval', 'failed', 'qa_failed'].includes(st(r))
+    : queue.state === 'awaiting' ? r.held || ['awaiting_manual_post', 'in_tiktok_drafts', 'awaiting_approval', 'failed', 'qa_failed', 'fidelity_failed'].includes(st(r))
     : !['public', 'measuring', 'rejected'].includes(st(r))));
   ui.table(document.getElementById('q-table'), qRows, QCOLS, {onRow: openContent, empty: 'Nothing in this view.'});
 }
@@ -579,7 +583,9 @@ const QCOLS = [{k: 'slot_local', label: 'When (ET)', f: v => v ? `${ui.day(v.sli
   {k: 'channel', label: 'Channel', f: v => v === 'tiktok' ? 'TikTok' : 'Facebook'}, {k: 'title', label: 'Item', f: (v, r) => v || r.series || r.content_id},
   {k: 'state', label: 'Stage', f: v => STATE_LABEL[v] || v, cls: r => qTone(r.state)},
   {k: 'publish_state', label: 'Publishing', f: v => v ? (STATE_LABEL[v] || v) : 'not sent', cls: r => qTone(r.publish_state)},
-  {k: 'approved', label: 'Approved', f: v => v ? 'yes' : '—'}, {k: 'ai_disclosure', label: 'AI label', f: v => Number(v) ? 'yes' : '—'}];
+  {k: 'approved', label: 'Approved', f: v => v ? 'yes' : '—'}, {k: 'ai_disclosure', label: 'AI label', f: v => Number(v) ? 'yes' : '—'},
+  {k: 'held', label: 'Checks', f: (v, r) => v ? `held: ${r.checks.filter(f => ['critical', 'high'].includes(f.severity)).map(f => f.check).join(', ')}`
+    : (r.checks || []).length ? `${r.checks.length} note(s)` : 'clear', cls: r => r.held ? 'st-bad' : ''}];
 document.getElementById('q-csv').addEventListener('click', () => ui.csv(`content_queue_${ui.todayET()}.csv`, qRows, QCOLS));
 
 // Data-quality checks from content.py (duplicate PostZen ids, AI picture without disclosure, untracked links, stuck jobs)

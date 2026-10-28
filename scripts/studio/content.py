@@ -75,6 +75,15 @@ CREATE TABLE IF NOT EXISTS content_marks (
   content_id TEXT, mark TEXT, anchor_at TEXT, anchor_basis TEXT, snapshot_at TEXT, views REAL, impressions REAL,
   reach REAL, likes REAL, comments REAL, shares REAL, saves REAL, clicks REAL, PRIMARY KEY (content_id, mark));
 CREATE TABLE IF NOT EXISTS content_links (content_id TEXT, utm_content TEXT, url TEXT, PRIMARY KEY (content_id, utm_content));
+-- Phase D: owner overrides of high findings (bound to the file and caption), Facebook AI-picture posts made here
+CREATE TABLE IF NOT EXISTS overrides (
+  id INTEGER PRIMARY KEY, content_id TEXT, check_name TEXT, asset_sha256 TEXT, caption_sha256 TEXT, quote TEXT,
+  actor TEXT, at TEXT);
+CREATE TABLE IF NOT EXISTS fb_ai_posts (
+  content_id TEXT PRIMARY KEY, week TEXT, date TEXT, slot TEXT, kind TEXT, products TEXT, titles TEXT,
+  supplier_photos TEXT, scene TEXT, prompt TEXT, prompt_hash TEXT, image_path TEXT, image_sha256 TEXT, image_url TEXT,
+  caption TEXT, first_comment TEXT, fidelity_json TEXT, checks_json TEXT, approval_json TEXT, postzen_post_id TEXT,
+  status TEXT, post_url TEXT);
 """
 MARKS = (("24h", 24), ("48h", 48), ("7d", 168))
 MARK_WINDOW_H = 6  # a mark uses the first snapshot taken within 6 hours after it; otherwise it stays empty
@@ -86,7 +95,10 @@ WORKFLOWS = {
                      "scheduled", "submitted", "in_tiktok_drafts", "awaiting_manual_post", "public", "measuring",
                      "failed"],
     "fb_photo": ["planned", "awaiting_approval", "scheduled", "paused", "submitted", "public", "failed"],
-    "fb_ai_picture": ["planned", "awaiting_approval", "scheduled", "paused", "submitted", "public", "failed"],
+    # Phase D: AI-picture posts made in the database (scripts/studio/fb_ai.py) walk every step; older plan-file
+    # posts show only planned/awaiting_approval and the publish states.
+    "fb_ai_picture": ["planned", "image_generated", "fidelity_failed", "captioned", "qa_failed", "awaiting_approval",
+                      "approved", "scheduled", "paused", "submitted", "public", "failed"],
 }
 STATES_PUBLISH = {
     "submitted": "PostZen accepted the request",
@@ -719,7 +731,33 @@ def quality_checks(con):
     for r in con.execute("SELECT job_id, content_ref FROM generation_jobs WHERE status = 'running' AND started_at < ?",
                          ((dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=2)).strftime("%Y-%m-%dT%H:%M:%SZ"),)):
         issues.append({"severity": "medium", "check": "generation job never finished", "detail": f"job {r['job_id']} {r['content_ref']}"})
+    for cid, found in upcoming_checks(con).items():
+        issues += [{**f, "detail": f"{cid}: {f['detail']}"} for f in found if f["severity"] in ("critical", "high")]
     return issues
+
+
+UPCOMING = ("captioned", "awaiting_approval", "approved", "scheduled", "submitted", "paused", "in_tiktok_drafts",
+            "awaiting_manual_post")
+
+
+def upcoming_checks(con, analytics_path=None):
+    """Phase D: every item not yet public, re-checked now with the shared rules: caption wording, AI disclosure for
+    AI pictures, and each product still ACTIVE and in stock. Items already with PostZen are flagged here, never
+    changed or cancelled automatically (the owner decides: pause, replace or let it run)."""
+    from studio import checks
+    out = {}
+    cutoff = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    for it in con.execute(f"SELECT * FROM content_items WHERE test = 0 AND archived = 0 AND state IN "
+                          f"({', '.join('?' * len(UPCOMING))}) AND (scheduled_at IS NULL OR scheduled_at >= ?)",
+                          (*UPCOMING, cutoff)):
+        handles = [r["handle"] for r in con.execute("SELECT handle FROM content_products WHERE content_id = ?",
+                                                    (it["content_id"],))]
+        found = (checks.text_findings(it["caption"] or "")
+                 + checks.disclosure_findings(it["caption"], it["kind"] == "fb_ai_picture")
+                 + checks.availability(handles, analytics_path))
+        if found:
+            out[it["content_id"]] = found
+    return out
 
 
 # --- dashboard files -----------------------------------------------------------------------------------------------
@@ -756,10 +794,13 @@ def write_dashboard_files(con, out=DASH):
         marks.setdefault(r["content_id"], {})[r["mark"]] = dict(r)
     costs = dict(con.execute("SELECT content_ref, ROUND(SUM(COALESCE(cost_usd, 0)), 2) FROM generation_jobs GROUP BY content_ref"))
     store = store_sessions_by_content(con)
+    upcoming = upcoming_checks(con)
     rows = []
     for it in con.execute("SELECT * FROM content_items WHERE archived = 0 AND test = 0 ORDER BY scheduled_at"):
         it = dict(it)
         j = jobs.get(it["content_id"]) or {}
+        approval = json.loads(it["approval_json"] or "{}")
+        found = upcoming.get(it["content_id"], [])
         frames = None
         if it["episode_id"]:
             ep = con.execute("SELECT video_path FROM episodes WHERE id = ?", (it["episode_id"],)).fetchone()
@@ -771,6 +812,9 @@ def write_dashboard_files(con, out=DASH):
                      "slot_local": it["slot_local"], "scheduled_at": it["scheduled_at"],
                      "link_placement": it["link_placement"], "ai_disclosure": it["ai_disclosure"],
                      "approved": bool(it["approval_json"]), "products": ", ".join(prods.get(it["content_id"], [])),
+                     # Phase D: approval bound to the exact file/caption; current findings from the shared rules
+                     "approval_bound": bool(approval.get("asset_sha256") or approval.get("photos_sha256")),
+                     "checks": found, "held": any(f["severity"] in ("critical", "high") for f in found),
                      "publish_state": j.get("state") or "", "publish_evidence": j.get("evidence") or "",
                      "postzen_post_id": j.get("postzen_post_id") or "", "post_url": j.get("platform_post_url") or "",
                      "episode_id": it["episode_id"] or "", "has_frames": bool(frames),

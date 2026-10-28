@@ -405,3 +405,58 @@ def test_shoe_rotation_and_store_shoes(con, b):
         if gates.is_outdoor(e, b):
             assert not any(items[x].open_toe for x in o)
     assert gates.check_calendar(eps, b) == []
+
+
+# --- Phase D: approvals bound to the video and caption ------------------------------------------------------------
+
+def _approved_episode(con, b, tmp_path, monkeypatch):
+    from studio import checks, publishing
+    monkeypatch.setattr(cli, "HUB", tmp_path)
+    monkeypatch.setattr(publishing, "HUB", tmp_path)
+    monkeypatch.setattr(checks, "availability", lambda handles, *a, **k: [])
+    ep = planned(con, b)[0]
+    video = tmp_path / "v.mp4"
+    video.write_bytes(b"approved video")
+    con.execute("UPDATE episodes SET state = 'QA_PASSED', video_path = 'v.mp4', qa_json = ? WHERE id = ?",
+                (json.dumps({"passed": True}), ep["id"]))
+    cli.cmd_owner(con, b, argparse.Namespace(episode=ep["id"], quote="approved", actor="owner"), "APPROVED")
+    return ep["id"], video
+
+
+def test_approval_names_the_video_and_schedule_the_caption(con, b, tmp_path, monkeypatch):
+    from studio import content
+    ep_id, video = _approved_episode(con, b, tmp_path, monkeypatch)
+    approval = json.loads(db.get(con, ep_id)["approval_json"])
+    assert approval["asset_sha256"] == content.sha256_file(video)
+    with pytest.raises(db.GateError, match="price"):
+        cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Only $20! #aigenerated", actor="claude"))
+    cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Errand day. #aigenerated", actor="claude"))
+    assert json.loads(db.get(con, ep_id)["approval_json"])["caption_sha256"] == content.sha256_text("Errand day. #aigenerated")
+
+
+def test_publishing_refuses_a_changed_video(con, b, tmp_path, monkeypatch):
+    from studio import publishing
+    ep_id, video = _approved_episode(con, b, tmp_path, monkeypatch)
+    cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Errand day. #aigenerated", actor="claude"))
+    publishing.release_checks(con, db.get(con, ep_id), b)  # unchanged: passes
+    video.write_bytes(b"re-rendered")
+    with pytest.raises(db.GateError, match="media_changed"):
+        publishing.release_checks(con, db.get(con, ep_id), b)
+    con.execute("UPDATE episodes SET caption = 'Edited. #aigenerated' WHERE id = ?", (ep_id,))
+    with pytest.raises(db.GateError, match="caption_changed"):
+        publishing.release_checks(con, db.get(con, ep_id), b)
+
+
+def test_old_approvals_are_bound_only_to_unchanged_files(con, b, tmp_path, monkeypatch):
+    import os
+    monkeypatch.setattr(cli, "HUB", tmp_path)
+    eps = planned(con, b)[:2]
+    for i, ep in enumerate(eps):
+        (tmp_path / f"v{i}.mp4").write_bytes(b"v")
+        con.execute("UPDATE episodes SET state = 'APPROVED', video_path = ?, approval_json = ? WHERE id = ?",
+                    (f"v{i}.mp4", json.dumps({"owner_quote": "ok", "at": "2026-10-26T20:00:00"}), ep["id"]))
+    os.utime(tmp_path / "v0.mp4", (1761500000, 1761500000))  # 2025-10-26: before the approval
+    con.commit()
+    cli.cmd_bind_approvals(con, b, argparse.Namespace(actor="claude"))  # v1 was written just now: after the approval
+    assert json.loads(db.get(con, eps[0]["id"])["approval_json"]).get("asset_sha256")
+    assert not json.loads(db.get(con, eps[1]["id"])["approval_json"]).get("asset_sha256")

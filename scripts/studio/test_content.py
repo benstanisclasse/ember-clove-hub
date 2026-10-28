@@ -354,3 +354,240 @@ def test_facebook_link_carries_the_content_id():
     url = facebook_photos.link({"handle": "soft-top"}, rules, "2099-01-01", "09:00", "FB-2099-01-01-00")
     assert "utm_content=FB-2099-01-01-00" in url and "utm_campaign=fb_photos" in url
     assert "utm_content=2099-01-01_0900" in facebook_photos.link({"handle": "soft-top"}, rules, "2099-01-01", "09:00")
+
+
+# --- Phase D: shared rules, availability, media-bound approvals, Facebook AI-picture workflow -------------------------
+
+from studio import checks, fb_ai  # noqa: E402
+
+
+@pytest.mark.parametrize("text, expect", [
+    ("Only $20 today!", {"price"}), ("Free shipping, arrives in 3 days.", {"delivery"}),
+    ("Limited stock, hurry.", {"urgency"}), ("I ordered two.", {"testimonial"}),
+    ("Keeps you warm.", {"claim"}), ("A soft knit top for cool days.", set()),
+    ("Shop it here: https://emberandclove.com/products/relationship-sale-top?utm_content=x", set())])
+def test_caption_rules(text, expect):
+    assert {f["check"] for f in checks.text_findings(text)} == expect
+
+
+def test_caption_rule_severities():
+    sev = {f["check"]: f["severity"] for f in checks.text_findings("Was $40. Keeps you warm. Follow me!")}
+    assert sev == {"price": "critical", "claim": "high", "cta": "medium"}
+
+
+def test_script_rules_keep_their_old_messages():
+    assert checks.script_errors("it ships fast for $5", ["ships"], [r"\$\s?\d"]) == ["banned phrase: 'ships'",
+                                                                                   "banned pattern: \\$\\s?\\d"]
+
+
+def _store(path, products):
+    import sqlite3
+    a = sqlite3.connect(path)
+    a.execute("CREATE TABLE products (product_id TEXT, title TEXT, handle TEXT, status TEXT, product_type TEXT, image TEXT, "
+              "inventory INT, fetched_at TEXT)")
+    a.execute("CREATE TABLE variants (variant_id TEXT, product_id TEXT, title TEXT, price REAL, unit_cost REAL, grams REAL, "
+              "inventory INT)")
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    for i, (handle, status, inv) in enumerate(products):
+        a.execute("INSERT INTO products VALUES (?,?,?,?,?,?,?,?)", (f"gid://shopify/Product/{i}", handle, handle, status,
+                                                                    "Tops", None, inv, now))
+        a.execute("INSERT INTO variants VALUES (?,?,?,?,?,?,?)", (f"v{i}", f"gid://shopify/Product/{i}", "S", 10, 3, 1, inv))
+    a.commit()
+    a.close()
+    return path
+
+
+def test_availability(tmp_path):
+    path = _store(tmp_path / "a.db", [("live", "ACTIVE", 100), ("gone", "ARCHIVED", 100), ("empty", "ACTIVE", 0)])
+    got = {f["check"]: f["severity"] for f in checks.availability(["live", "gone", "empty", "missing"], path)}
+    assert got == {"product_unavailable": "critical", "out_of_stock": "critical", "product_unknown": "high"}
+    assert checks.availability(["gid://shopify/Product/0"], path) == []  # wardrobe pieces are stored as gids
+
+
+def test_binding_and_overrides(tmpdb):
+    assert checks.binding_findings(None, "a", "c")[0]["check"] == "not_approved"
+    assert checks.binding_findings({"quote": "ok"}, "a", "c")[0]["check"] == "approval_unbound"
+    ok = {"asset_sha256": "a", "caption_sha256": "c"}
+    assert checks.binding_findings(ok, "a", "c") == []
+    assert {f["check"] for f in checks.binding_findings(ok, "b", "d")} == {"media_changed", "caption_changed"}
+    con = content.connect()
+    high = [checks.finding("high", "claim", "'warm' (claim)"), checks.finding("critical", "price", "'$4'")]
+    with pytest.raises(ValueError):
+        checks.record_override(con, "TT-1", "claim", "a", "c", "fine by me", "claude")
+    with pytest.raises(ValueError):
+        checks.record_override(con, "TT-1", "price", "a", "c", "fine by me", "owner")
+    checks.record_override(con, "TT-1", "claim", "a", "c", "fine by me", "owner")
+    assert [f["check"] for f in checks.unresolved(high, checks.overrides(con, "TT-1"), "a", "c")] == ["price"]
+    assert len(checks.unresolved(high, checks.overrides(con, "TT-1"), "a", "OTHER")) == 2  # bound to the caption
+
+
+def test_upcoming_items_are_flagged_when_a_product_goes_inactive(tmpdb, tmp_path):
+    con = content.connect()
+    content.upsert_item(con, {"content_id": "FB-x", "channel": "facebook", "kind": "fb_photo", "workflow": "fb_photo",
+                              "state": "scheduled", "caption": "A soft knit top.", "scheduled_at": FUTURE})
+    content.set_children(con, "FB-x", [("gone", None, "featured")], [])
+    path = _store(tmp_path / "a.db", [("gone", "DRAFT", 5)])
+    assert content.upcoming_checks(con, path)["FB-x"][0]["check"] == "product_unavailable"
+
+
+def test_facebook_publish_refuses_an_inactive_product(tmpdb, tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(facebook_photos, "HISTORY", tmp_path / "history.json")
+    monkeypatch.setattr(checks, "availability", lambda handles, *a, **k: [checks.finding("critical", "out_of_stock", "h")])
+    monkeypatch.setattr(facebook_photos.hub_env, "load_config", lambda: {"postzen": {"facebook_account_id": "acc"}})
+    monkeypatch.setattr(facebook_photos, "load_rules", lambda: {"timezone": "America/New_York"})
+    path = tmp_path / "plan_2099-05-01.json"
+    path.write_text(json.dumps({"start": "2099-05-01", "posts": [
+        {"date": "2099-05-01", "slot": "09:00", "kind": "product", "products": ["h"], "titles": ["T"],
+         "photos": ["https://cdn/" + "A" * 32 + ".jpg"], "caption": "A soft top.", "first_comment": None}]}), encoding="utf-8")
+    facebook_photos.publish(path, "go")
+    out = capsys.readouterr().out
+    assert "refused" in out and "out_of_stock" in out
+    assert not json.loads(path.read_text(encoding="utf-8"))["posts"][0].get("postzen_post_id")
+
+
+# --- the Facebook AI-picture workflow, end to end with fake providers --------------------------------------------------
+
+FB_RULES = {"vendor": "EC", "skip_handles": [], "cold_season": ["10-01", "03-31"], "warm_only_types": [],
+            "warm_only_tags": [], "warm_only_title_words": [], "cold_only_tags": [], "slots_weekday": ["09:00"],
+            "slots_weekend": ["10:00"], "outfit_every": 99, "no_repeat_days": 14, "max_photos": 4,
+            "store_url": "https://emberandclove.com", "link_placement": "caption", "timezone": "America/New_York"}
+
+
+def _feed(n=2):
+    return [{"handle": f"top-{i}", "title": f"Soft Top {i}", "vendor": "EC", "product_type": "Tops & Bodysuits",
+             "tags": [], "options": [], "body_html": "<p>A soft knit top for cool days.</p>",
+             "images": [{"src": f"https://cdn/{'A' * 31}{i}.jpg"}]} for i in range(n)]
+
+
+class FakeHF:
+    def __init__(self):
+        self.n = 0
+
+    def submit(self, path, payload):
+        self.payload = payload
+        return {"status_url": "s", "request_id": f"r{self.n}"}
+
+    def wait(self, url, every, timeout_s):
+        self.n += 1
+        return {"status": "completed", "images": [{"url": f"https://hf/img{self.n}.png"}]}
+
+    def download(self, url, dest):
+        Path(dest).write_bytes(b"png " + url.encode())
+
+
+class FakePZ:
+    def __init__(self):
+        self.sent = []
+
+    def upload(self, path):
+        return "https://media.postzen.dev/pic.png"
+
+    def post(self, path, body, idempotency_key=None):
+        self.sent.append((body, idempotency_key))
+        return {"post": {"_id": f"pz{len(self.sent)}", "status": "scheduled"}}
+
+
+@pytest.fixture
+def fbweek(tmpdb, tmp_path, monkeypatch):
+    for mod in (fb_ai, content):
+        monkeypatch.setattr(mod, "HUB", tmp_path)
+    monkeypatch.setattr(fb_ai, "OUT", tmp_path / "media")
+    monkeypatch.setattr(facebook_photos, "no_ai_marker", lambda u: True)
+    monkeypatch.setattr(facebook_photos, "DIR", tmp_path)
+    monkeypatch.setattr(facebook_photos, "HISTORY", tmp_path / "history.json")
+    con = content.connect()
+    posts = fb_ai.plan_week(con, dt.date(2099, 1, 5), 2, _feed(), FB_RULES, [])
+    store = _store(tmp_path / "a.db", [("top-0", "ACTIVE", 100), ("top-1", "ACTIVE", 100)])
+    return con, [p["content_id"] for p in posts], store
+
+
+def test_ai_week_is_made_in_the_database(fbweek):
+    con, ids, _ = fbweek
+    assert ids == ["FB-2099-01-05-00", "FB-2099-01-05-01"]
+    rows = {r["content_id"]: dict(r) for r in con.execute("SELECT * FROM content_items")}
+    assert all(r["state"] == "planned" and r["kind"] == "fb_ai_picture" and r["plan_file"] is None for r in rows.values())
+    cap = rows[ids[0]]["caption"]
+    assert cap.endswith("#aigenerated") and "utm_content=FB-2099-01-05-00" in cap
+    with pytest.raises(SystemExit):
+        fb_ai.plan_week(con, dt.date(2099, 1, 5), 2, _feed(), FB_RULES, [])  # never planned twice
+
+
+def test_ai_post_walks_every_step_and_is_sent_once(fbweek):
+    con, ids, store = fbweek
+    cid, hf, pz = ids[0], FakeHF(), FakePZ()
+    fb_ai.generate(con, cid, hf)
+    assert "Copy every product exactly" in hf.payload["prompt"] and hf.payload["image_urls"][0].startswith("https://cdn/")
+    job = con.execute("SELECT * FROM generation_jobs WHERE content_ref = ?", (cid,)).fetchone()
+    assert job["status"] == "completed" and job["template"] == "fb_ai_picture.j2" and job["cost_basis"] == "not reported"
+    with pytest.raises(SystemExit):
+        fb_ai.qa(con, cid, store)  # no fidelity verdict yet
+    fb_ai.verdict(con, cid, True)
+    assert fb_ai.qa(con, cid, store) == []
+    with pytest.raises(SystemExit):
+        fb_ai.approve(con, cid, "looks good")  # Claude only under the owner's standing instruction
+    fb_ai.approve(con, cid, "Owner 2026-10-27: i dont need to approve every image i approve do it")
+    post = fb_ai.schedule(con, cid, pz, FB_RULES, "acc", store)
+    assert post["_id"] == "pz1" and pz.sent[0][1] == f"fbai-{cid}"
+    assert pz.sent[0][0]["mediaItems"] == [{"url": "https://media.postzen.dev/pic.png"}]
+    assert con.execute("SELECT state FROM content_items WHERE content_id = ?", (cid,)).fetchone()[0] == "scheduled"
+    with pytest.raises(SystemExit):
+        fb_ai.schedule(con, cid, pz, FB_RULES, "acc", store)  # already sent
+    steps = [r[0] for r in con.execute("SELECT to_state FROM content_events WHERE content_id = ? ORDER BY id", (cid,))]
+    assert steps == ["planned", "image_generated", "captioned", "awaiting_approval", "approved", "scheduled"]
+
+
+def test_failed_fidelity_holds_the_picture_until_a_new_one(fbweek):
+    con, ids, store = fbweek
+    cid = ids[0]
+    fb_ai.generate(con, cid, FakeHF())
+    fb_ai.verdict(con, cid, False, "print is wrong", failed_checks=["product_match"])
+    with pytest.raises(SystemExit):
+        fb_ai.qa(con, cid, store)
+    fb_ai.generate(con, cid, FakeHF())
+    assert con.execute("SELECT fidelity_json FROM fb_ai_posts WHERE content_id = ?", (cid,)).fetchone()[0] is None
+
+
+def _approved(fbweek):
+    con, ids, store = fbweek
+    cid = ids[0]
+    fb_ai.generate(con, cid, FakeHF())
+    fb_ai.verdict(con, cid, True)
+    fb_ai.qa(con, cid, store)
+    fb_ai.approve(con, cid, "the owner approves", actor="owner")
+    return con, cid, store
+
+
+def test_a_changed_picture_cannot_go_out_under_the_old_approval(fbweek, tmp_path):
+    con, cid, store = _approved(fbweek)
+    (tmp_path / con.execute("SELECT image_path FROM fb_ai_posts WHERE content_id = ?", (cid,)).fetchone()[0]).write_bytes(b"edited")
+    pz = FakePZ()
+    with pytest.raises(SystemExit, match="media_changed"):
+        fb_ai.schedule(con, cid, pz, FB_RULES, "acc", store)
+    assert pz.sent == []
+
+
+def test_a_changed_caption_cannot_go_out_under_the_old_approval(fbweek):
+    con, cid, store = _approved(fbweek)
+    con.execute("UPDATE fb_ai_posts SET caption = caption || ' New line.' WHERE content_id = ?", (cid,))
+    with pytest.raises(SystemExit, match="caption_changed"):
+        fb_ai.schedule(con, cid, FakePZ(), FB_RULES, "acc", store)
+
+
+def test_an_out_of_stock_product_blocks_its_post(fbweek, tmp_path):
+    con, cid, _ = _approved(fbweek)
+    empty = _store(tmp_path / "b.db", [("top-0", "ACTIVE", 0), ("top-1", "ACTIVE", 0)])
+    with pytest.raises(SystemExit, match="out_of_stock"):
+        fb_ai.schedule(con, cid, FakePZ(), FB_RULES, "acc", empty)
+    assert con.execute("SELECT state FROM content_items WHERE content_id = ?", (cid,)).fetchone()[0] == "approved"
+
+
+def test_refresh_records_public(fbweek):
+    con, cid, store = _approved(fbweek)
+    fb_ai.schedule(con, cid, FakePZ(), FB_RULES, "acc", store)
+
+    class StatusPZ:
+        def get(self, path):
+            return {"post": {"platforms": [{"status": "published", "platformPostUrl": "https://fb/p/1"}]}}
+    assert fb_ai.refresh(con, StatusPZ()) == 1
+    assert con.execute("SELECT state FROM content_items WHERE content_id = ?", (cid,)).fetchone()[0] == "public"
+    assert fb_ai.schedule_rows(con)[0]["post_url"] == "https://fb/p/1"

@@ -11,6 +11,10 @@
   python scripts/studio/cli.py reschedule EP=2026-10-27@12:30 ... --reason "..."  (whole calendar re-checked)
   python scripts/studio/cli.py posted EP --url https://...
   python scripts/studio/cli.py board                              where every episode is
+  python scripts/studio/cli.py bind-approvals                     one-time (Phase D): bind older approvals to their file
+
+Approvals are bound to the media (Phase D): `approve` stores the video's sha256 and `schedule` the caption's (after
+the shared caption rules in checks.py pass); publishing re-hashes both and refuses anything changed since.
   python scripts/studio/cli.py bible-approve FILE --quote "owner's words"
 """
 import argparse
@@ -24,7 +28,9 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from studio import bible, db, gates  # noqa: E402
+from studio import bible, checks, content, db, gates  # noqa: E402
+
+HUB = Path(__file__).resolve().parents[2]
 
 
 def cmd_validate(con, b, args):
@@ -200,15 +206,38 @@ def cmd_accept(con, b, args):
     return 0
 
 
+def _video_sha(ep):
+    f = HUB / (ep["video_path"] or "").replace("\\", "/")
+    return content.sha256_file(f) if ep["video_path"] and f.exists() else None
+
+
 def cmd_owner(con, b, args, to):
-    approval = json.dumps({"owner_quote": args.quote, "at": db.now()}, ensure_ascii=False)
-    ep = db.move(con, args.episode, to, args.actor, f"owner: {args.quote}", approval_json=approval)
+    approval = {"owner_quote": args.quote, "at": db.now()}
+    if to == "APPROVED":  # Phase D: the approval names the exact video file; publishing checks it again
+        digest = _video_sha(db.get(con, args.episode))
+        if not digest:
+            raise db.GateError(f"{args.episode}: no video file to approve")
+        approval.update(asset_sha256=digest)
+    ep = db.move(con, args.episode, to, args.actor, f"owner: {args.quote}",
+                 approval_json=json.dumps(approval, ensure_ascii=False))
     print(f"{ep['id']}: {ep['state']}")
     return 0
 
 
 def cmd_schedule(con, b, args):
-    ep = db.move(con, args.episode, "SCHEDULED", args.actor, "scheduled", caption=args.caption)
+    """The caption is checked with the shared rules and its sha256 is added to the approval: from here on a changed
+    caption (or video) can't go out under this approval."""
+    ep = db.get(con, args.episode)
+    cap = content.sha256_text(args.caption)
+    content.ensure_schema(con)  # the content tables live in the same studio.db
+    blocking = checks.unresolved(checks.text_findings(args.caption), checks.overrides(con, f"TT-{ep['id']}"),
+                                 _video_sha(ep), cap)
+    if blocking:
+        raise db.GateError(f"{ep['id']}: caption refused: {checks.describe(blocking)}")
+    approval = json.loads(ep["approval_json"] or "{}")
+    approval.update(caption_sha256=cap, caption_bound_at=db.now())
+    ep = db.move(con, args.episode, "SCHEDULED", args.actor, "scheduled", caption=args.caption,
+                 approval_json=json.dumps(approval, ensure_ascii=False))
     print(f"{ep['id']}: SCHEDULED for {ep['post_date']} {ep['slot']}")
     return 0
 
@@ -256,6 +285,36 @@ def cmd_posted(con, b, args):
     ep = db.move(con, args.episode, "POSTED", args.actor, "posted; disclosed as AI",
                  post_url=args.url, ai_label_on=args.ai_label_on)
     print(f"{ep['id']}: POSTED")
+    return 0
+
+
+def cmd_bind_approvals(con, b, args):
+    """Phase D, one-time: approvals given before approvals named the file get the file's sha256, but only when the
+    file has not been modified since the approval (file mtime earlier than the approval time). Others stay unbound
+    and are held at publishing until the owner approves the file again. Already-scheduled captions are bound too."""
+    bound, held = [], []
+    for ep in con.execute("SELECT * FROM episodes WHERE state IN ('APPROVED', 'SCHEDULED') AND test = 0"):
+        approval = json.loads(ep["approval_json"] or "{}")
+        if approval.get("asset_sha256") or not approval.get("owner_quote"):
+            continue
+        f = HUB / (ep["video_path"] or "").replace("\\", "/")
+        at = approval.get("at")
+        if not (ep["video_path"] and f.exists() and at
+                and dt.datetime.fromtimestamp(f.stat().st_mtime) <= dt.datetime.fromisoformat(at)):
+            held.append(ep["id"])
+            continue
+        approval.update(asset_sha256=content.sha256_file(f), bound_at=db.now(),
+                        bound_note="bound in Phase D to the file approved earlier (unchanged since the approval)")
+        if ep["state"] == "SCHEDULED" and ep["caption"]:
+            approval.update(caption_sha256=content.sha256_text(ep["caption"]), caption_bound_at=db.now())
+        con.execute("UPDATE episodes SET approval_json = ?, updated_at = ? WHERE id = ?",
+                    (json.dumps(approval, ensure_ascii=False), db.now(), ep["id"]))
+        con.execute("INSERT INTO transitions (episode_id, from_state, to_state, actor, reason, at) VALUES (?,?,?,?,?,?)",
+                    (ep["id"], ep["state"], ep["state"], args.actor, "approval bound to the approved file (Phase D)", db.now()))
+        bound.append(ep["id"])
+    con.commit()
+    print(f"bound {len(bound)}: {', '.join(bound) or '-'}")
+    print(f"held (file changed after approval, or missing): {', '.join(held) or '-'}")
     return 0
 
 
@@ -341,6 +400,7 @@ def main():
     p.add_argument("--url", required=True)
     p.add_argument("--ai-label-on", action="store_true", help="the post is disclosed as AI (TikTok's label or a caption disclosure)")
     sub.add_parser("board")
+    sub.add_parser("bind-approvals")
     p = sub.add_parser("bible-approve")
     p.add_argument("file", choices=bible.FILES)
     p.add_argument("--quote", required=True)
@@ -356,7 +416,8 @@ def main():
                    "sync": cmd_sync, "set-line": cmd_set_line, "reschedule": cmd_reschedule,
                    "qa": cmd_qa, "approve": lambda c, bb, a: cmd_owner(c, bb, a, "APPROVED"),
                    "reject": lambda c, bb, a: cmd_owner(c, bb, a, "REJECTED"), "schedule": cmd_schedule,
-                   "posted": cmd_posted, "board": cmd_board, "bible-approve": cmd_bible_approve}[args.cmd]
+                   "posted": cmd_posted, "board": cmd_board, "bible-approve": cmd_bible_approve,
+                   "bind-approvals": cmd_bind_approvals}[args.cmd]
         sys.exit(handler(con, b, args))
     except (bible.BibleError, db.GateError) as e:
         print(f"REFUSED: {e}")

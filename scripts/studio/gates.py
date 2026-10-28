@@ -17,6 +17,7 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 HUB = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(HUB / "scripts"))
 from prompt_style import PRESENTER, REALISM  # noqa: E402
+from studio import checks  # noqa: E402
 
 PIXELS = {"480p": (480, 854), "720p": (720, 1280)}
 
@@ -34,12 +35,7 @@ def check_script(script, ep, b):
         errs.append(f"needs exactly {r.script.lines} lines and {r.script.lines} shot actions")
     text = " ".join(lines).lower()
     every = (text + " " + " ".join(actions).lower() + " " + script.get("caption", "").lower())
-    for p in r.banned_phrases + ch.never_says:
-        if p.lower() in every:
-            errs.append(f"banned phrase: {p!r}")
-    for rx in r.banned_regex:
-        if re.search(rx, every, re.I):
-            errs.append(f"banned pattern: {rx}")
+    errs += checks.script_errors(every, r.banned_phrases + ch.never_says, r.banned_regex)  # shared rule module
     for w in r.tts_avoid:
         if w.lower() in text:
             errs.append(f"the video voice mispronounces {w!r}: rephrase")
