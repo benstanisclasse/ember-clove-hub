@@ -21,10 +21,10 @@ TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group →
 
 Open owner decisions carried over: none blocking Phase E. Microsoft PMax still learning; TikTok sales campaign still a draft.
 
-## 2. Content Studio 2.0 ("Autonomous Content Studio 2.0" master prompt) — STARTED 2026-10-27
+## 2. Content Studio 2.0 ("Autonomous Content Studio 2.0" master prompt) — Phase D items 1–4 done 2026-10-28; next D 5–7 or E
 
 Phase A audit DONE → `CONTENT_STUDIO_AUDIT.md`, `CONTENT_STUDIO_ARCHITECTURE_V2.md`, `CONTENT_STUDIO_ROADMAP.md`.
-Phase B DONE 2026-10-27 (report at the end of CONTENT_STUDIO_ROADMAP.md). Next: Content Studio Phase C.
+Phase B DONE 2026-10-27 (report at the end of CONTENT_STUDIO_ROADMAP.md): unified content records, honest publish states.
 Phase C DONE 2026-10-27 (commit 97f7869; report at the end of CONTENT_STUDIO_ROADMAP.md): generation/asset records,
 content features, 24h/48h/7d marks, utm_content=<content id>, performance + production-cost views.
 Phase D (items 1–4) DONE 2026-10-28 (commit 382a7ad): shared rule module (checks.py), media-bound approvals,
