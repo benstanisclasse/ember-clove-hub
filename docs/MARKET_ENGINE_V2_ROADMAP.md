@@ -199,3 +199,194 @@ committed steps, after checking the other sessions aren't mid-change.
 | D6 | Widen the breakout population with sales ranks 501–1,000 (needs credits) | Later, after Phase B shows what the current population supports |
 
 **Approve Phase B0 + B to start.** B0 and B spend no credits.
+
+---
+
+## 6. Phase B report (2026-10-28)
+
+Owner approval: "Yes, start Market Engine Phase B0 and B. Use your recommendations for decisions D1-D6." (2026-10-28).
+This section covers Phase B items 2-8 and B0 items 5-6. No paid or external calls were made: everything ran on the
+stored database. Commits: `7772346` (code and tests), `628b04b` (results, offline shortlist).
+
+### 6.1 What was built
+
+| Piece | File | What it does |
+|---|---|---|
+| Point-in-time dataset | `scripts/market_data.py` | One row per product-month from the monthly lists, using only months ≤ the cutoff. Exclusions and flags below. Writes a versioned snapshot (`research/kalodata/snapshots/<name>/`: parquet + `manifest.json` with cutoff, exclusions and reasons, feature and label definitions, row counts, code commit, pulls fingerprint) |
+| Evaluation harness | `scripts/market_eval.py` | Rolling origin, expanding window, embargo = horizon, at least 2 training months. Four tasks, nine rankers, metrics, month-block bootstrap CIs, calibration check, decision rule, registry, frozen holdout, versioned `model_v2_<date>/` (refuses an existing folder) |
+| Run registry | `research_runs` table in `kalodata.db` | One row per task per run: question, snapshot, cutoff, features, params, seed, commit, design, results, decision, `holdout_used`. A task whose holdout month is spent can't be run in `final` mode again |
+| v1 pin | `train_product_model.py`, `score_breakouts.py`, `explain_breakouts.py` | Risers selected by pull kind `risers` (positions 1-200), so the deep Sep pages can't leak in; `--out` must be a new folder. v1 was not rerun |
+| Weekly report | `scripts/weekly_breakout_report.py` | "Research shortlist — not a forecast" (6.5) |
+| Tests | `scripts/test_market.py` | 11 tests on a synthetic database: nothing after the cutoff reaches a row, exclusions, dedupe and split-sum, embargo and label maturity, decision rule, registry and spent holdout, v1 refusal, offline report with no forecast wording. `pytest -q scripts/test_market.py`: 11 passed; `pytest -q scripts/studio`: 166 passed |
+
+**Snapshot `pit_2026-09_v1`:** 232,467 product-months, 127,048 products, Nov 2025-Sep 2026. 2,576 list pulls used;
+48 left out (27 failed calls, 7 rolling-window keyword/price pulls, 3 page-size-10 probes, 1 page-11 probe, 10
+duplicate Womenswear Aug/Sep pilot pages). Oct 2025 (19,600 rows) excluded; Nov 2025 lag features missing (18,938
+rows flagged). Virtual Products had no rows. 150 split product-months summed (the other 9 of the 159 were in Oct).
+1,000 rows flagged `q_dedup`, 7,765 Kalodata growth placeholders set missing. Thin flag: Pre-Owned, Muslim Fashion
+and, by the "$2,000 500th-place" rule, Kids' Fashion (22,789 rows); flagged, not dropped. The Sep deep riser rows
+(21,602) are their own population and never train or score in the 1-200 tasks.
+
+**Features (18):** sales, units, price, channel shares, sales ÷ category 500th-place sales, price vs category, our own
+month-on-month growth, listed last month, top 500 last month, months already listed, Kalodata growth (labelled,
+placeholder = missing), sales rank, riser position, seller's top-500 count and share, category growth. Never used:
+commission, SKU count, launch date / age, review count, names (today's values; kept in `attributes_current` for
+report filters only). AI-video flag: unknown before Jun 2026 (no video feature is in this panel yet).
+
+**Tasks** (definitions are written into every results file): holders_1m / holders_3m on the top-500 population;
+breakout_1m / breakout_3m on risers 1-200 outside every top 500. Labels are membership of any top 500 in later months;
+top-500 lists are complete, so absence means "below the 500th product". A label that needs a month after the cutoff
+is missing, not 0. Origins: Jan-Aug 2026 (1-month tasks), Mar-Jun 2026 (3-month). Frozen holdouts: Aug 2026 (1m),
+Jun 2026 (3m); selection used only the months before.
+
+### 6.2 Results
+
+All numbers are month means over every evaluated month (selection + holdout) with month-block 95% CIs. "Top 10/cat"
+= hit rate of each category's 10 highest-ranked products (the decision metric); "lift@20" = hit rate of the 20
+highest across all categories ÷ base rate. Results file: `research/kalodata/evals/20261028-005841_final.json`.
+
+**Breakouts, 3 months** (20,714 rows, base 5.3%)
+
+| Ranker | AUC | Top 10/cat | Top 3/cat | Lift@20 | Holdout (Jun) top 10/cat |
+|---|---|---|---|---|---|
+| HGB (cleaned features) | 0.883 [0.874-0.898] | 33.4% [31.2-36.2] | 40.5% | 9.1 [7.1-10.5] | 30.4% |
+| **Logistic (adopted)** | 0.885 [0.871-0.897] | **34.7%** [32.7-37.7] | 45.2% | 10.9 [9.4-11.9] | 32.9% |
+| Floor ratio (best single rule) | 0.877 [0.869-0.886] | 32.9% [30.8-35.8] | 43.8% | 7.7 [6.1-9.5] | 30.4% |
+| Persistence | 0.562 | 14.1% | 23.5% | 10.2 [8.4-13.5] | 16.8% |
+| Riser rank / Kalodata growth | 0.614 / 0.521 | 14.0% / 14.1% | 20.2% | 4.1 / 2.8 | 15.0% |
+| Momentum (our MoM) | 0.482 | 5.8% | 8.3% | 2.6 | 6.1% |
+| Random | 0.496 | 4.7% | 4.8% | 0.9 | 5.0% |
+
+**Breakouts, 1 month** (41,620 rows, base 3.7%)
+
+| Ranker | AUC | Top 10/cat | Top 3/cat | Lift@20 | Holdout (Aug) top 10/cat |
+|---|---|---|---|---|---|
+| HGB | 0.901 [0.896-0.907] | 28.4% [25.9-31.0] | 36.6% | 11.6 [10.0-13.6] | 23.6% |
+| **Logistic (adopted)** | 0.905 [0.899-0.911] | **28.3%** [26.0-30.4] | 40.3% | 14.2 [11.8-16.4] | 22.9% |
+| Floor ratio | 0.896 [0.888-0.902] | 27.1% [25.1-28.9] | 38.2% | 10.7 [8.8-13.0] | 21.8% |
+| Persistence | 0.563 | 9.5% | 17.0% | 9.2 | 6.8% |
+| Random | 0.502 | 4.6% | 3.1% | 1.0 | 6.4% |
+
+**Holders, 1 month** (111,900 rows, base 30.3%)
+
+| Ranker | AUC | Top 10/cat | Top 3/cat | Lift@20 | Holdout (Aug) top 10/cat |
+|---|---|---|---|---|---|
+| HGB | 0.673 [0.661-0.685] | 51.4% [46.7-55.6] | 53.0% | 1.9 | 51.8% |
+| **Logistic (adopted)** | 0.667 [0.652-0.682] | **53.7%** [48.3-58.0] | 58.5% | 1.9 | 55.0% |
+| Kalodata growth (best single rule) | 0.653 [0.641-0.664] | 41.1% [37.0-44.9] | 44.2% | 1.5 | 40.7% |
+| Persistence | 0.561 | 36.1% | 37.0% | 1.2 | 30.0% |
+| Floor ratio / rank / sales | ~0.50 | 26.9% | 26.3% | 0.7-0.8 | 23.6% |
+| Random | 0.501 | 30.0% | 31.2% | 1.0 | 24.6% |
+
+**Holders, 3 months** (55,953 rows, base 46.5%)
+
+| Ranker | AUC | Top 10/cat | Top 3/cat | Lift@20 | Holdout (Jun) top 10/cat |
+|---|---|---|---|---|---|
+| HGB | 0.790 [0.783-0.796] | 89.7% [88.7-90.5] | 92.9% | 2.1 | 88.2% |
+| **Logistic (adopted)** | 0.787 [0.776-0.797] | **89.7%** [88.9-90.8] | 89.9% | 2.0 | 91.4% |
+| Floor ratio = rank = sales (same order in a category) | 0.72 / 0.71 / 0.66 | 82.4% [81.2-83.1] | 81.6% | 1.7-1.8 | 83.2% |
+| Persistence | 0.724 | 74.2% | 75.0% | 1.6 | 79.6% |
+| Random | 0.496 | 47.0% | 47.6% | 1.0 | 45.7% |
+
+**Decision tests** (difference in the monthly metric, month-block CI over all evaluated months, plus the holdout
+month on its own):
+
+| Task | HGB vs best baseline | Logistic vs best single rule | Adopted |
+|---|---|---|---|
+| breakout_3m | top 10/cat −1.3 pts [−2.1, −0.5] vs logistic; lift@20 −1.8 [−4.8, +0.8] | top 10/cat +1.9 pts [+1.1, +2.4] vs floor ratio, holdout +2.5 | logistic |
+| breakout_1m | top 10/cat +0.1 [−1.2, +1.7] vs logistic; lift@20 −2.6 [−4.1, −1.2] | top 10/cat +1.2 [+0.3, +2.1] vs floor ratio, holdout +1.1; lift@20 +5.0 [+2.3, +7.5] vs persistence | logistic |
+| holders_1m | top 10/cat −2.3 [−4.7, −0.5] vs logistic | top 10/cat +12.6 [+10.4, +14.8] vs Kalodata growth, holdout +14.3 | logistic |
+| holders_3m | top 10/cat 0.0 [−2.2, +1.5], holdout −3.2 vs logistic | top 10/cat +7.3 [+6.2, +8.2] vs floor ratio, holdout +8.2 | logistic |
+
+**Calibration:** neither isotonic nor Platt (fitted on a held-out month) lowered the next-month Brier score on any
+task (e.g. breakouts 1m: raw 0.0315, isotonic 0.0325, Platt 0.0319; climatology 0.0365), so none is kept. For the
+3-month tasks only one month (May) could be checked. The raw HGB scores are still overconfident at the top
+(breakouts 3m: scores 0.3-0.5 averaged 0.39 and came true 0.28; 0.5-0.7 averaged 0.56 and came true 0.49), which is
+another reason the weekly report shows no probabilities.
+
+**Per category:** the gains are averages. In Womenswear (our category) every breakout ranker is weak: top 10/cat
+over the four 3-month origins was 17.5% for the floor ratio, 15% for logistic and 12.5% for HGB (40 picks each;
+base 2.8%). Holders 1m in Womenswear: logistic 52.5% vs Kalodata growth 36%.
+
+### 6.3 Decisions
+
+| Task | Adopted ranker | Historical top 10 per category (all evaluated months) | Registry run |
+|---|---|---|---|
+| breakout_3m | logistic regression, 18 cleaned features | 34.7% (389 of 1,120); top 3: 45.2% | `20261028-005841-final-breakout_3m` |
+| breakout_1m | logistic regression | 28.3% (634 of 2,240); top 3: 40.3% | `20261028-005841-final-breakout_1m` |
+| holders_1m | logistic regression | 53.7% (1,202 of 2,240); top 3: 58.5% | `20261028-005841-final-holders_1m` |
+| holders_3m | logistic regression | 89.7% (1,005 of 1,120); top 3: 89.9% | `20261028-005841-final-holders_3m` |
+
+Artefacts: `research/kalodata/model_v2_2026-10-28/` (one joblib per task, trained on every matured row, plus a
+manifest with each ranker's hit rates). All four holdouts are marked spent in `research_runs`.
+
+**HGB is not adopted anywhere.** On no task did it beat the best baseline with a CI above zero. The roadmap rule says
+the fallback is "the best transparent baseline". Logistic regression was itself one of the baselines, and on every
+task it beat the best single rule with a CI above zero and did not lose on the holdout. I therefore read the rule as
+a ladder: single rule → logistic (linear, inspectable) → HGB, where each step must beat the one before by the same
+test. **This is my interpretation, for the owner to confirm.** Under the literal rule (single rule only), the adopted
+rankers would be the floor ratio for both breakout tasks (32.9% / 27.1% top 10/cat), Kalodata growth for holders 1m
+(41.1%) and the floor ratio (= sales rank within a category) for holders 3m (82.4%). Switching is one argument
+(`decide(..., middle=None)`) and a new final run once the next month exists.
+
+For breakouts the honest summary from the audit still holds: logistic adds about 1-2 points of top-10 hit rate over
+"sort by sales as a share of the 500th-place sales" (32.9% → 34.7%). It is a better sort, not a different kind of
+signal.
+
+**Disclosure:** before the registered final run, I ran the identical final code once on a scratch copy of the
+registry (development check of the artefact and report path). That run saw the holdout months. Nothing in the design
+was changed afterwards. The ladder and all settings were fixed on the selection months, and the registered run
+reproduced the same numbers. Strictly, the holdouts were looked at twice with the same code.
+
+### 6.4 What changed in v1
+
+- `train_product_model.py` loads risers by `pulls.kind = 'risers'`; a rerun gives the 230,052-row history v1 was
+  trained on, not 251,654. It, `score_breakouts.py` and `explain_breakouts.py` take `--out` and refuse an existing
+  folder. `model_v1_2026-10-25/` was not touched and v1 was not rerun.
+- The old weekly report cached a retrained model into the v1 folder (`breakout_models.joblib`). The new report
+  doesn't train anything.
+
+### 6.5 What changed in the weekly report (B0 item 5, decision D5)
+
+- Title "Research shortlist — not a forecast". There are no probabilities, no "chance" wording and no `--min-chance`
+  filter. A built-in check refuses to write a PDF whose own wording mentions chance, probability or forecasts
+  (product titles and buyer comments are exempt).
+- Ranking: the adopted `breakout_3m` ranker from the newest `model_v2_*`. Each pick shows its rank in its category
+  and the ranker's back-test hit rate: a category's top 10 entered a top 500 within 3 months 35% of the time (389 of
+  1,120), and its top 3 45% (152 of 336). The category's own rate is shown where available (40 picks each).
+- Picking: each category's top K by rank (`--top-k`, default 10), then the existing price, sales, steady, not-fallen
+  and commission/unbranded filters, ≤ 3 per category. The report says the filters were not part of the back-test.
+- Population stated on page 1: risers 1-200 outside every top 500. Sep riser positions 201-1,000 appear only in a
+  separate "outside the tested range" table with no hit rate.
+- Commission, variants and age are labelled "as of the pull date". Growth shown is our own month-on-month change.
+- `--offline`: no Kalodata call, no TikTok link check and no balance call. Enrichment is read from what is already
+  stored in `kalodata.db`, or shown as "not stored". `--scan --offline` is refused. `--riser-pages` now defaults to
+  2 (the tested range).
+- Offline edition generated: `weekly/research_shortlist_2026-10-28.pdf` (+ `.csv`, 10 picks logged in
+  `history.csv` with ranker and model version). It ran with network access and the Kalodata client blocked.
+
+### 6.6 Known limits
+
+- Ten usable months. The 3-month tasks have four origins (Mar-Jun), so their month-block CIs rest on four numbers.
+  No holiday month has been forward-tested.
+- The breakout population (risers 1-200) is where only about 4% of new top-500 products come from. Widening it with
+  sales ranks 501-1,000 (D6) needs credits.
+- Kalodata figures are estimates measured retrospectively on one day. Live scans see first estimates.
+- `seller_id` is used only as an identity key for the seller features (assumed static; not tested).
+- The weekly filters, the deep riser list and the `--scan` path are unvalidated. `--scan` was adapted to the new
+  builder but was not run, because it makes paid calls. Scan windows (last 30 days) are labelled as the calendar
+  month, as before.
+- Spent holdouts: Aug 2026 (1m tasks), Jun 2026 (3m tasks). The next honest test is Sep 2026 for the 1-month tasks
+  once October's lists exist, and the live picks in `weekly/history.csv` (10/26 and 10/28).
+- Within a category, floor ratio, sales and sales rank give the same order, so their top-10 hit rates are identical.
+
+### 6.7 What Phase C needs
+
+- A prediction registry in the database: the weekly `history.csv` rows (product, date, ranker, model version,
+  population, rank) should move into a table, never overwritten, with outcomes filled when labels mature.
+- Quality flags as a database view (they exist only in snapshots today) and listing identity / relist clusters
+  (seller + title), so relisted products don't look new.
+- October 2026 lists (Phase B item 9, about 1.5 credits per category, or the Phase G refresh): they mature the Sep
+  1-month labels (a new untouched holdout) and let the 10/26 and 10/28 picks be checked.
+- After each new month: rebuild the snapshot, run `market_eval.py select`, then `final` on the new holdout month. The
+  registry refuses a spent holdout.
