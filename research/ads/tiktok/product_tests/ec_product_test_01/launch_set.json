@@ -35,7 +35,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/cc87ce51-ca92-4c0b-92ec-2ad89ed5277c.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P001_A_PRODUCT.mp4",
    "video_sha256": "2d57980f8bc4219e369b9d3646dd50249b94acc745db721f17b5209e3da4c8a9",
-   "video_bytes": 581172
+   "video_bytes": 581172,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Mock neck, fitted bodice and a skirt that flares out from metal rings at the hip."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Got a holiday party on the calendar? This brown mini is the whole outfit."
+    },
+    {
+     "angle": "question",
+     "text": "Fitted on top, flared at the hip. Tights and boots, or heels?"
+    },
+    {
+     "angle": "styling",
+     "text": "Wear it with black tights and knee boots now, a blazer over it later."
+    },
+    {
+     "angle": "short",
+     "text": "A mini with metal-ring detail at each hip."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P001_B_LIFESTYLE",
@@ -63,7 +85,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ba3a3cce-e93f-458e-8fd5-1cd721a899b8.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P001_B_LIFESTYLE.mp4",
    "video_sha256": "85e711a7a19e2c2d581e7ce300af14c13009d3e5afe2506d5c7e02b7ac2459cc",
-   "video_bytes": 1017028
+   "video_bytes": 1017028,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "One dress for the holiday party. Add tights and boots and you are ready."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Going to a holiday dinner this year? Start with this dress."
+    },
+    {
+     "angle": "question",
+     "text": "What are you wearing to the holiday party this year?"
+    },
+    {
+     "angle": "styling",
+     "text": "Brown mini, black tights, tall boots. Done."
+    },
+    {
+     "angle": "short",
+     "text": "Holiday party, one dress."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P001_C_BENEFIT",
@@ -91,7 +135,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/db3cfde8-2c4f-4d98-93ca-dc4004ea9b85.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P001_C_BENEFIT.mp4",
    "video_sha256": "a6ddd63becf087c4876cabf864d804ad80c45bef9b16ff4ecbf9096835eab277",
-   "video_bytes": 1111298
+   "video_bytes": 1111298,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "The detail that makes it: a full flare fanned out from metal ring hardware."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "If you love a dress with one standout detail, look at the hips."
+    },
+    {
+     "angle": "question",
+     "text": "Plain little dress? Look again at the metal rings at each hip."
+    },
+    {
+     "angle": "styling",
+     "text": "Keep the jewelry simple and let the hip hardware do the talking."
+    },
+    {
+     "angle": "short",
+     "text": "Metal rings, full flare."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P005_A_PRODUCT",
@@ -119,7 +185,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/8d00a852-c719-4cdf-beb4-f72dfca7578d.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P005_A_PRODUCT.mp4",
    "video_sha256": "1148789b095b366cccde0cc1f41701fdb219769b4b72e4da7d9bcae4490b9592",
-   "video_bytes": 1316164
+   "video_bytes": 1316164,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Long burgundy coat with wide notch lapels and dropped shoulders."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Tired of black coats? This one is burgundy and falls below the knee."
+    },
+    {
+     "angle": "question",
+     "text": "Burgundy or black for your long coat this year?"
+    },
+    {
+     "angle": "styling",
+     "text": "Throw it over a cream knit and jeans and the outfit is done."
+    },
+    {
+     "angle": "short",
+     "text": "A long coat in burgundy."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P005_B_LIFESTYLE",
@@ -147,7 +235,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ba8d461e-1c13-4772-86b8-aff54861a4eb.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P005_B_LIFESTYLE.mp4",
    "video_sha256": "9d407a7f902ba28ff3ea6ab59214f8f0f3411c2437a6e033ef8bcd7cc0ba2297",
-   "video_bytes": 1177858
+   "video_bytes": 1177858,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "The long coat for November city days, over your favorite knit."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Walk everywhere in the city? This long coat goes over everything you own."
+    },
+    {
+     "angle": "question",
+     "text": "What do you throw on over a chunky knit?"
+    },
+    {
+     "angle": "styling",
+     "text": "Burgundy coat, cream sweater, blue jeans, black boots."
+    },
+    {
+     "angle": "short",
+     "text": "City walks, long coat."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P005_C_BENEFIT",
@@ -175,7 +285,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/90aa25f0-e683-41aa-a710-62fa339b2710.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P005_C_BENEFIT.mp4",
    "video_sha256": "368cc04204463d13328b99a7947df4828d5d0c6007fe47106946603787b102ff",
-   "video_bytes": 658920
+   "video_bytes": 658920,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Cut roomy and long to layer over knits, dresses and work clothes."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Layer lovers: this coat is cut roomy enough to go over a chunky knit."
+    },
+    {
+     "angle": "question",
+     "text": "Does your coat fit over your thickest sweater?"
+    },
+    {
+     "angle": "styling",
+     "text": "Over a knit dress, over a blazer, over a hoodie. One coat."
+    },
+    {
+     "angle": "short",
+     "text": "Roomy, long and easy to layer."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P006_A_PRODUCT",
@@ -203,7 +335,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0a59870b-9815-4bd9-a26f-574f38f99b20.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P006_A_PRODUCT.mp4",
    "video_sha256": "a6889cac91c5753a93c67536e8263931296321f511ea77691a2711cbf18dc9fe",
-   "video_bytes": 1279037
+   "video_bytes": 1279037,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Chunky rib knit with a high stand collar and button-tab shoulders."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Love a cardigan you can button all the way up? Look at this collar."
+    },
+    {
+     "angle": "question",
+     "text": "Cardigan or jacket? This chunky knit can be both."
+    },
+    {
+     "angle": "styling",
+     "text": "Off-white chunky knit with jeans and loafers for the weekend."
+    },
+    {
+     "angle": "short",
+     "text": "Chunky rib, high collar."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P006_B_LIFESTYLE",
@@ -231,7 +385,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/7a79fd9f-1c30-4399-a399-656a160f9150.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P006_B_LIFESTYLE.mp4",
    "video_sha256": "5e7ebb61827837502bbaeaa4151ec35c217142edede176ff551ded83551d6087",
-   "video_bytes": 1309723
+   "video_bytes": 1309723,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "The cardigan for slow weekends: chunky rib, easy fit."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Weekend errands and bookshop runs? This is the cardigan for it."
+    },
+    {
+     "angle": "question",
+     "text": "What's your go-to weekend layer?"
+    },
+    {
+     "angle": "styling",
+     "text": "Wear it open over a white tee and jeans."
+    },
+    {
+     "angle": "short",
+     "text": "Your weekend knit."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P006_C_BENEFIT",
@@ -259,7 +435,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/bc050ea4-5c3d-49e4-a921-9de9b8154031.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P006_C_BENEFIT.mp4",
    "video_sha256": "64879f32134e936203a56d6b183321f4e251e3e14fdda0ae5c401cd8717c06b0",
-   "video_bytes": 1172644
+   "video_bytes": 1172644,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Button the stand collar up and wear it like a jacket."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Want one knit that works as a jacket too? Button the collar up."
+    },
+    {
+     "angle": "question",
+     "text": "Open over a tee or buttoned up like a jacket. Which way?"
+    },
+    {
+     "angle": "styling",
+     "text": "Buttoned up over a black midi dress with knee boots."
+    },
+    {
+     "angle": "short",
+     "text": "Button it up, wear it out."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P012_A_PRODUCT",
@@ -287,7 +485,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/33be55a9-6ef8-4797-b253-9e38c3a62793.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P012_A_PRODUCT.mp4",
    "video_sha256": "e9994c81aa7971f4882ab946fbbec247e7cc1240e2c7a22e74df4baf93762348",
-   "video_bytes": 787194
+   "video_bytes": 787194,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Knee-high boots with a fold-over cuff, brass snaps and a block heel."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Own a sweater dress? These knee boots go right with it."
+    },
+    {
+     "angle": "question",
+     "text": "Beige, black or white: which knee boots would you pick?"
+    },
+    {
+     "angle": "styling",
+     "text": "Beige knee boots under a caramel knit dress."
+    },
+    {
+     "angle": "short",
+     "text": "Fold-over cuff, brass snaps."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P012_B_LIFESTYLE",
@@ -315,7 +535,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/55d2b89f-4bf1-4a23-a1ee-e6ebc5961dcc.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P012_B_LIFESTYLE.mp4",
    "video_sha256": "fde4ce11f9a7bdffe7273dbba238c66d4ae80428bee5e647b9b779cda2024172",
-   "video_bytes": 1600690
+   "video_bytes": 1600690,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "The knee boots your sweater dresses have been waiting for."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Sweater dress fans, these are your boots."
+    },
+    {
+     "angle": "question",
+     "text": "Sweater dress season is here. Do you have the boots for it?"
+    },
+    {
+     "angle": "styling",
+     "text": "Midi knit dress plus knee boots: the easiest outfit of the season."
+    },
+    {
+     "angle": "short",
+     "text": "Knee boots for knit dresses."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P012_C_BENEFIT",
@@ -343,7 +585,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/093c70e0-7f1d-490b-9a72-e23c5bca02d1.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P012_C_BENEFIT.mp4",
    "video_sha256": "50fe04641d12276f4ffd320ec184b98298fae6ed2524ef855535edf576e64dd1",
-   "video_bytes": 630339
+   "video_bytes": 630339,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "One pair, three outfits: midi dress, mini and jeans."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Want one pair of boots for everything this season? Start here."
+    },
+    {
+     "angle": "question",
+     "text": "Dress, mini or jeans: how would you wear them first?"
+    },
+    {
+     "angle": "styling",
+     "text": "Tuck skinny jeans in, or let them peek out of a midi slit."
+    },
+    {
+     "angle": "short",
+     "text": "One pair, three outfits."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P013_A_PRODUCT",
@@ -371,7 +635,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/29a39fdc-e4ae-4f69-a988-ed6396ffcb01.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P013_A_PRODUCT.mp4",
    "video_sha256": "df98b52fed10db6cbcfaa720ed311a4682850f8a60e431a046f3668eaccd5c44",
-   "video_bytes": 1589791
+   "video_bytes": 1589791,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "Cable knit sweater dress with a mock neck, long sleeves and midi length."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Own tall boots? This cable knit midi is the dress for them."
+    },
+    {
+     "angle": "question",
+     "text": "Midi or mini for sweater dress season?"
+    },
+    {
+     "angle": "styling",
+     "text": "Caramel cable knit with beige knee boots."
+    },
+    {
+     "angle": "short",
+     "text": "Cable knit, mock neck, midi length."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P013_B_LIFESTYLE",
@@ -399,7 +685,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0e9ae5e2-61dc-40bb-9c93-933b4510a8a2.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P013_B_LIFESTYLE.mp4",
    "video_sha256": "5aeb3d693659ee4322c7f02a1a152cd01d40f25f69b1463a0f0f99f40a82d856",
-   "video_bytes": 1334220
+   "video_bytes": 1334220,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "One dress for every holiday plan: dinners, visits and photos."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Holiday dinners and family photos coming up? One dress covers them."
+    },
+    {
+     "angle": "question",
+     "text": "What are you wearing to family dinner this year?"
+    },
+    {
+     "angle": "styling",
+     "text": "Add tall boots and gold earrings and you're ready for the holidays."
+    },
+    {
+     "angle": "short",
+     "text": "Holiday plans, one dress."
+    }
+   ]
   },
   {
    "ad_name": "EC_TT_P013_C_BENEFIT",
@@ -427,7 +735,29 @@
    "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/9d231e04-a7ef-49f1-8682-95f09d2bccbc.jpeg",
    "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P013_C_BENEFIT.mp4",
    "video_sha256": "4c6b9056fc1626ed5ca5264c77130a3f8b55db9274170db61927f4f11f94b00f",
-   "video_bytes": 1423233
+   "video_bytes": 1423233,
+   "caption_variants": [
+    {
+     "angle": "original",
+     "text": "A front slit that shows off tall boots and keeps you moving."
+    },
+    {
+     "angle": "buyer_callout",
+     "text": "Like a midi you can actually walk in? This one has a front slit."
+    },
+    {
+     "angle": "question",
+     "text": "A sweater dress you can walk in? The front slit helps."
+    },
+    {
+     "angle": "styling",
+     "text": "Let the slit show your boots: knee-high, any color."
+    },
+    {
+     "angle": "short",
+     "text": "Covered up, still shapely."
+    }
+   ]
   }
  ],
  "music": {
@@ -441,5 +771,17 @@
   "owner": "Turn each ad's two pictures into a short slideshow video and use those.",
   "reason": "TikTok Ads Manager Sales (website) flow accepts only uploaded videos, not image carousels",
   "spec": "1080x1920, 30 fps, slide1 0-4 s, 0.4 s fade, slide2 to 7.6 s, silent AAC track"
+ },
+ "caption_test": {
+  "requested": "owner 2026-10-28: \"you should be testing more captions\"",
+  "setup": "5 texts per ad (TikTok's max); TikTok rotates them and reports per text. Same 5 angles on every ad so results can be compared by angle.",
+  "angles": [
+   "original",
+   "buyer_callout",
+   "question",
+   "styling",
+   "short"
+  ],
+  "status": "variants 2-5 drafted by Claude; owner reviews them in the draft before publishing"
  }
 }
