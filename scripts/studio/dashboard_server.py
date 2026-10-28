@@ -42,7 +42,7 @@ DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_me
             "profit_daily", "profit_products", "profit_summary", "cost_ledger", "content_jobs", "content_quality",
             "character_refs", "bible_locks"]
 JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "content": "Content queue", "ads:meta": "Meta ads",
-              "ads:tiktok": "TikTok ads", "ads:microsoft": "Microsoft ads"}
+              "ads:tiktok": "TikTok ads"}
 # path -> (file, title, nav key). Six sections (Phase D); old addresses redirect.
 PAGES = {"/": ("overview.html", "Overview · Ember & Clove", "overview"),
          "/content": ("index.html", "Content Studio · Ember & Clove", "content"),

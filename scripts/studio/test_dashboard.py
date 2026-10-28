@@ -243,7 +243,7 @@ def test_tag_link_uses_the_convention_and_replaces_old_tags():
     url = attribution.tag_link("https://emberandclove.com/products/x?variant=1&utm_source=old", "facebook_organic", "fb_photos", "2026-10-28_0900")
     assert url == ("https://emberandclove.com/products/x?variant=1&utm_source=facebook&utm_medium=organic_social"
                    "&utm_campaign=fb_photos&utm_content=2026-10-28_0900")
-    assert "utm_medium=paid_search" in attribution.tag_link("https://e.com", "microsoft_ads", "pmax")
+    assert "utm_medium=paid_social" in attribution.tag_link("https://e.com", "tiktok_ads", "c1")
 
 
 @pytest.mark.parametrize("args,expect", [
@@ -253,7 +253,7 @@ def test_tag_link_uses_the_convention_and_replaces_old_tags():
     (("instagram", "cpc"), ("meta_ads", "Directly tracked")),
     (("tiktok", "paid"), ("tiktok_ads", "Directly tracked")),
     (("tiktok", "organic_social"), ("tiktok_organic", "Directly tracked")),
-    (("bing", "cpc"), ("microsoft_ads", "Directly tracked")),
+    (("bing", "cpc"), ("search", "Directly tracked")),  # no Microsoft ads since 2026-10-28
     (("newsletter", "email"), ("email", "Directly tracked")),
     (("", "", "social", "facebook"), ("facebook_organic", "Inferred")),
     (("", "", "social", "tiktok"), ("tiktok_organic", "Inferred")),
@@ -283,9 +283,9 @@ def test_order_channel_prefers_last_visit_tags():
 def test_ads_entities_replace_per_platform(tmp_path, monkeypatch):
     monkeypatch.setattr(ads_snapshot, "ENTITIES", tmp_path / "ads_entities.json")
     ads_snapshot.merge_entities("meta", [{"level": "campaign", "id": 1, "name": "A", "spend": "1.5"}], "p")
-    ads_snapshot.merge_entities("microsoft", [{"level": "asset_group", "id": "2", "parent_id": "9", "name": "B"}], "p")
+    ads_snapshot.merge_entities("tiktok", [{"level": "adgroup", "id": "2", "parent_id": "9", "name": "B"}], "p")
     ads_snapshot.merge_entities("meta", [{"level": "ad", "id": "3", "parent_id": "1", "name": "C"}], "p")
     e = json.loads((tmp_path / "ads_entities.json").read_text(encoding="utf-8"))
-    assert sorted((x["platform"], x["id"]) for x in e) == [("meta", "3"), ("microsoft", "2")]
+    assert sorted((x["platform"], x["id"]) for x in e) == [("meta", "3"), ("tiktok", "2")]
     with pytest.raises(SystemExit):
         ads_snapshot.merge_entities("meta", [{"level": "keyword", "id": "4"}], "p")

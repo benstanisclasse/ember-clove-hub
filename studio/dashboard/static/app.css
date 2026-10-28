@@ -9,7 +9,7 @@
   --cds-chart-grid: #2b2825; --cds-chart-axis: #4a443f; --cds-chart-reference: #a59c93; --cds-chart-status-critical: #ef7a6f;
   --cds-surface-popover: #26221f; --cds-border: #3d3833; --cds-shadow-popover: 0 8px 24px rgba(0, 0, 0, .45);
   --cds-text-secondary: #a59c93; --shadow-card: 0 1px 0 rgba(255, 255, 255, .03) inset, 0 1px 2px rgba(0, 0, 0, .35);
-  --ch-tiktok: #d9773a; --ch-facebook: #5b93c7; --ch-microsoft: #8bb04a; --ch-meta: #5b93c7; --ch-store: #c9a24a;
+  --ch-tiktok: #d9773a; --ch-facebook: #5b93c7; --ch-meta: #5b93c7; --ch-store: #c9a24a;
   color-scheme: dark;
 }
 :root[data-theme="light"] {
@@ -19,7 +19,7 @@
   --cds-chart-grid: #ece7e1; --cds-chart-axis: #c9c1b8; --cds-chart-reference: #8a7f75; --cds-chart-status-critical: #c0392b;
   --cds-surface-popover: #ffffff; --cds-border: #ddd5cc; --cds-shadow-popover: 0 4px 16px rgba(36, 32, 29, .12);
   --cds-text-secondary: #6f665f; --shadow-card: 0 1px 2px rgba(36, 32, 29, .06);
-  --ch-tiktok: #c2652a; --ch-facebook: #3f7cac; --ch-microsoft: #6d8c2e; --ch-meta: #3f7cac; --ch-store: #a8842e;
+  --ch-tiktok: #c2652a; --ch-facebook: #3f7cac; --ch-meta: #3f7cac; --ch-store: #a8842e;
   color-scheme: light;
 }
 :root {

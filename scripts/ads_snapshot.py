@@ -1,15 +1,15 @@
-"""Paid-ads numbers for the dashboard's Ads section (Meta, TikTok, Microsoft), saved by the scheduled refresh task.
+"""Paid-ads numbers for the dashboard's Ads section (Meta, TikTok), saved by the scheduled refresh task.
 
 The scheduled task "ads-dashboard-refresh" reads each platform through Claude's ad connectors (read-only) and hands the
 numbers to this script, one platform at a time, as a JSON file:
-  {"platform": "meta" | "tiktok" | "microsoft", "account": "...", "account_id": "...", "status": "ACTIVE",
+  {"platform": "meta" | "tiktok", "account": "...", "account_id": "...", "status": "ACTIVE",
    "active_campaigns": 0, "note": "",
    "days": [{"date": "YYYY-MM-DD", "spend": 0, "impressions": 0, "clicks": 0, "purchases": 0, "revenue": 0}]}
 Rows for that platform and those dates replace the old ones; other platforms and older days are kept.
 
 Optional (Phase E drill-down): "entities": the platform's own structure with totals for "entities_period"
 (e.g. "last_7d"), one record per campaign, ad set / ad group / asset group, and ad:
-  {"level": "campaign" | "adset" | "adgroup" | "asset_group" | "ad", "id": "...", "parent_id": "..." (the level above),
+  {"level": "campaign" | "adset" | "adgroup" | "ad", "id": "...", "parent_id": "..." (the level above),
    "name": "...", "status": "...", "delivery": "...", "objective": "...", "daily_budget": 0,
    "spend": 0, "impressions": 0, "clicks": 0, "purchases": 0, "revenue": 0, "url_tags": "..." (optional)}
 Each platform's list replaces its previous list; every fetch is also kept in analytics.db (ad_entities).
@@ -30,9 +30,9 @@ from studio import analytics  # noqa: E402
 
 OUT =Path(__file__).resolve().parent.parent / "studio" / "dashboard"
 DAILY, ACCOUNTS, ENTITIES = OUT / "ads_daily.csv", OUT / "ads_accounts.json", OUT / "ads_entities.json"
-PLATFORMS = ("meta", "tiktok", "microsoft")
+PLATFORMS = ("meta", "tiktok")  # Microsoft removed 2026-10-28 (account suspended)
 COLS = ["date", "platform", "spend", "impressions", "clicks", "purchases", "revenue"]
-LEVELS = ("campaign", "adset", "adgroup", "asset_group", "ad")
+LEVELS = ("campaign", "adset", "adgroup", "ad")
 ENTITY_FIELDS = ("level", "id", "parent_id", "name", "status", "delivery", "objective", "daily_budget", "url_tags")
 
 

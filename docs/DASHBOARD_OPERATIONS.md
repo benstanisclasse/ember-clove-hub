@@ -9,7 +9,7 @@ Architecture and metric definitions: `DASHBOARD_ARCHITECTURE_V2.md`. Phase histo
 |---|---|---|
 | Dashboard server (`scripts/studio/dashboard_server.py`) | Windows task **Ember Studio Dashboard** (runs `scripts/studio/run_dashboard.cmd`) | Starts ~1 min after boot; restarts 3× (5 min apart) if it crashes |
 | Sync jobs inside the server: TikTok, Facebook, Shopify (+ attribution + profit), Content, History | same process | Every 15 min; each job independent |
-| Ads refresh (Meta, TikTok, Microsoft) | Claude scheduled task **ads-dashboard-refresh** (Claude app, Auto mode, read-only) | Every 3 h at :20, only while the Claude app is open |
+| Ads refresh (Meta, TikTok; Microsoft removed 2026-10-28) | Claude scheduled task **ads-dashboard-refresh** (Claude app, Auto mode, read-only) | Every 3 h at :20, only while the Claude app is open |
 | Nightly backup (`scripts/backup_hub.py`) | Windows task **Ember Hub Nightly Backup** | 02:30 daily; retries 2× (15 min apart) |
 
 Pages (home network only): `http://192.168.1.215:8790/` — Overview, `/content` (+ `/content/performance`), `/ads`,

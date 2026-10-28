@@ -535,3 +535,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Meta F2 page-likes test (since 10/27, $5/day): $2.96, 139 impressions, 34 Page likes (~$0.09 each), 26 clicks. Turtleneck ad took most delivery. Shopify Advantage+ Sales campaign still paused, $0.
 - TikTok: no campaigns have ever spent; Test C1 still an unpublished draft. Shopify: 0 orders since 10/20.
 - Read-only; no ad, store or account changes.
+
+## 2026-10-28 ~08:10 ET — Microsoft Advertising removed from the Hub (owner: "No remove Microsoft from our system")
+- Scheduled task ads-dashboard-refresh: Microsoft steps removed (Meta + TikTok only). ads_snapshot.py PLATFORMS = meta, tiktok. attribution.py: no microsoft_ads channel; Bing/Microsoft visits count as Search. Dashboard Ads/Overview pages, alerts, colours and sync-health label: Microsoft removed. Tests updated.
+- Data: ads:microsoft sync_runs (4), ad_daily (37, all $0) and ad_entities (4) rows deleted from studio/analytics.db (copy kept in the session scratchpad); Microsoft rows dropped from ads_accounts.json, ads_entities.json, ads_daily.csv. The one 10/27 store visit from a Microsoft referrer stays (Shopify traffic data).
+- recipes/microsoft_uet_custom_pixel.js moved to docs/archive/2026-10-28_microsoft-ads/ with a README. Not touched: the "Microsoft UET" custom pixel still installed in Shopify, and the Microsoft Ads connector in Claude settings (owner's call).

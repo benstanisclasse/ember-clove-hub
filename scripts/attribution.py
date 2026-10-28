@@ -20,10 +20,9 @@ CONVENTION = {
     "tiktok_organic": ("tiktok", "organic_social"),
     "meta_ads": ("facebook", "paid_social"),
     "tiktok_ads": ("tiktok", "paid_social"),
-    "microsoft_ads": ("microsoft", "paid_search"),
 }
 LABELS = {"facebook_organic": "Facebook organic", "instagram_organic": "Instagram organic", "tiktok_organic": "TikTok organic",
-          "meta_ads": "Meta ads", "tiktok_ads": "TikTok ads", "microsoft_ads": "Microsoft ads", "search": "Search",
+          "meta_ads": "Meta ads", "tiktok_ads": "TikTok ads", "search": "Search",
           "direct": "Direct", "email": "Email", "other_tagged": "Other tagged links", "other": "Other referrers"}
 DIRECT, INFERRED, NONE = "Directly tracked", "Inferred", "Unattributed"
 MACRO = re.compile(r"__[A-Z_]+__|\{\{[^}]+\}\}|\{[A-Za-z_]+\}")
@@ -59,8 +58,8 @@ def channel_of(utm_source="", utm_medium="", referrer_source="", referrer_name="
             return ("instagram_organic" if s in ("instagram", "ig") else "facebook_organic"), DIRECT
         if s == "tiktok":
             return ("tiktok_ads" if paid else "tiktok_organic"), DIRECT
-        if s in ("microsoft", "bing", "msn"):
-            return ("microsoft_ads" if paid or not m else "search"), DIRECT
+        if s in ("microsoft", "bing", "msn"):  # we run no Microsoft ads (removed 2026-10-28)
+            return "search", DIRECT
         if s in ("email", "klaviyo", "shopify_email") or m == "email":
             return "email", DIRECT
         return "other_tagged", DIRECT
@@ -79,5 +78,5 @@ def channel_of(utm_source="", utm_medium="", referrer_source="", referrer_name="
     if rs == "email":
         return "email", INFERRED
     if "microsoft" in rn or "bing" in rn:
-        return "search", INFERRED  # an untagged Bing visit can be an ad or organic search; we can't tell
+        return "search", INFERRED
     return "other", INFERRED

@@ -84,7 +84,7 @@ def test_report_profit_after_marketing(tmp_path, monkeypatch):
     con.execute("INSERT INTO generation_costs VALUES ('studio','1','2026-11-18','OpenRouter','video','',1.44,'')")
     con.commit()
     (tmp_path / "ads_daily.csv").write_text("date,platform,spend,impressions,clicks,purchases,revenue\n"
-                                            "2026-11-18,meta,10,0,0,0,0\n2026-11-18,microsoft,5,0,0,0,0\n", encoding="utf-8")
+                                            "2026-11-18,meta,10,0,0,0,0\n2026-11-18,tiktok,5,0,0,0,0\n", encoding="utf-8")
     monkeypatch.setattr(profit, "_econ", lambda: ECON)
     monkeypatch.setattr(profit, "budgets", lambda: dict(profit.DEFAULT_BUDGETS))
     profit.report(con, tmp_path, days=7, today=TODAY)

@@ -195,7 +195,7 @@ window.ui = (() => {
     const ads = rows('ads_daily'), accts = rows('ads_accounts');
     accts.forEach(a => {
       const recent = sumIn(ads.filter(r => r.platform === a.platform), 'spend', [window.ui.addDays(todayET(), -2), todayET()]);
-      if (num(a.active_campaigns) > 0 && !recent) out.push({sev: 'info', title: `${a.platform === 'meta' ? 'Meta' : a.platform === 'tiktok' ? 'TikTok' : 'Microsoft'}: campaign live but not delivering`,
+      if (num(a.active_campaigns) > 0 && !recent) out.push({sev: 'info', title: `${a.platform === 'meta' ? 'Meta' : 'TikTok'}: campaign live but not delivering`,
         why: 'A live campaign with no spend for 3 days is usually in review, learning or blocked.', ev: a.note || '', act: 'Check delivery status in that ad account.', href: '/ads'});
     });
     if ((c.spend || 0) >= 40 && !c.orders) out.push({sev: 'warn', title: 'Ad spend without orders', why: 'Spend is at least twice the $20 planning cost per order with no sales.',

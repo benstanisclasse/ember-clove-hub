@@ -79,7 +79,7 @@
       kpi({label: 'Orders', value: c.orders, prev: p.orders, format: fmt, spark: series(store, 'orders', P.cur), color: 'var(--ch-store)',
            source: 'Shopify', job: 'shopify', state: noStore, sub: c.orders === 0 ? 'No orders yet' : null, tip: 'Orders placed (Shopify sales report).'}),
       kpi({label: 'Ad spend', value: c.spend, prev: p.spend, format: usd, invert: true, spark: series(ads, 'spend', P.cur),
-           source: 'Meta · TikTok · Microsoft', job: 'ads:*', lateMin: 420, state: !c.hasAds ? 'Not connected' : null,
+           source: 'Meta · TikTok', job: 'ads:*', lateMin: 420, state: !c.hasAds ? 'Not connected' : null,
            tip: 'Total spend across the three ad accounts (refreshed every 3 hours by Claude).'}),
       kpi({label: 'MER', value: c.spend ? c.net / c.spend : null, prev: p.spend ? p.net / p.spend : null, format: v => d3.format('.2f')(v) + '×',
            source: 'Shopify ÷ ads', state: !c.spend ? 'No ad spend yet' : null,
@@ -169,7 +169,6 @@
       {channel: 'TikTok organic', seen: sumIn(rows('daily_metrics'), 'views', P.cur), visits: visits(r => r.campaign === 'tiktok' && r.source === 'social')},
       {channel: 'Facebook organic', seen: sumIn(rows('fb_daily'), 'impressions', P.cur), visits: visits(r => r.campaign === 'facebook' && r.source === 'social')},
       {...adRow('meta', 'Meta ads')}, {...adRow('tiktok', 'TikTok ads'), visits: utmVisits(r => r.source === 'tiktok' && /paid/.test(r.medium))},
-      {...adRow('microsoft', 'Microsoft ads'), visits: visits(r => r.campaign === 'microsoft')},
       {channel: 'Direct', visits: visits(r => r.source === 'direct')}, {channel: 'Search', visits: visits(r => r.source === 'search')},
     ];
     const opt = v => v == null ? '—' : fmt(v);

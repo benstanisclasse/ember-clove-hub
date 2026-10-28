@@ -1,5 +1,5 @@
 <style>
-/* Advertising: Meta, TikTok and Microsoft ad accounts side by side (account level; campaign drill-down comes in Phase E). */
+/* Advertising: Meta and TikTok ad accounts side by side (account level; campaign drill-down comes in Phase E). */
 .ad-kpis { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); }
 .ad-plat { display: grid; gap: 4px; }
 .ad-plat .name { display: flex; align-items: center; gap: 8px; font-weight: 500; }
@@ -9,7 +9,7 @@
 <div class="es">
   <header class="es-head" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:end">
     <div class="es-head"><h1 class="es-title">Advertising</h1>
-      <p class="es-take">Meta, TikTok and Microsoft ad accounts. Claude refreshes these numbers every 3 hours while the Claude app is open
+      <p class="es-take">Meta and TikTok ad accounts. Claude refreshes these numbers every 3 hours while the Claude app is open
         (read-only). Purchases and revenue are what each platform credits to its own ads; platforms can claim the same sale.</p></div>
     <div class="es-seg" id="ad-range" role="group" aria-label="Period"></div>
   </header>
@@ -27,8 +27,8 @@
   </section>
   <section class="es-card">
     <h2 class="es-h2">Campaigns, ad sets and ads</h2>
-    <p class="es-note" id="ad-tree-note">Each platform's own structure: Meta campaign → ad set → ad; TikTok campaign → ad group → ad;
-      Microsoft campaign → ad group, or asset group for Performance Max. Click + to open a campaign.<span id="ad-tree-period"></span></p>
+    <p class="es-note" id="ad-tree-note">Each platform's own structure: Meta campaign → ad set → ad; TikTok campaign → ad group → ad.
+      Click + to open a campaign.<span id="ad-tree-period"></span></p>
     <div class="es-tablewrap"><table class="es-table" id="ad-tree"></table></div>
   </section>
   <section class="es-card">
@@ -44,7 +44,7 @@
 <script>
 (() => {
   const {el, num, usd, pct, fmt, big, rows, status, periods, sumIn, series, kpi, bars, table, day} = ui;
-  const PLAT = [['meta', 'Meta', 'var(--ch-meta)'], ['tiktok', 'TikTok', 'var(--ch-tiktok)'], ['microsoft', 'Microsoft', 'var(--ch-microsoft)']];
+  const PLAT = [['meta', 'Meta', 'var(--ch-meta)'], ['tiktok', 'TikTok', 'var(--ch-tiktok)']];
   let n = 30, lastRows = [], COLS;
   const ratio = (a, b) => b ? a / b : null;
 
@@ -120,7 +120,7 @@
 
   // Drill-down: campaign rows open to their ad sets / ad groups / asset groups and ads.
   const open = new Set();
-  const LEVEL = {campaign: 'Campaign', adset: 'Ad set', adgroup: 'Ad group', asset_group: 'Asset group', ad: 'Ad'};
+  const LEVEL = {campaign: 'Campaign', adset: 'Ad set', adgroup: 'Ad group', ad: 'Ad'};
   function drawTree() {
     const ents = rows('ads_entities'), tbl = document.getElementById('ad-tree');
     const kids = id => ents.filter(e => e.parent_id === id && e.parent_id);
