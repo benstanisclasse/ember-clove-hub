@@ -49,13 +49,36 @@ shipping/returns fixes in `log.md`. An archived 2026-10-19 server project has a 
 - Campaign: approved — Performance Max, about $15/day, built paused; enabled only after products are
   approved in Merchant Center and the purchase conversion exists.
 
-## Status
+## Status (updated 2026-10-28 evening)
 
-- [ ] Owner creates the Ember & Clove Ads account in the Shopify Google & YouTube app (and billing)
-- [ ] Verify: `AW-` ID in the storefront `webPixelsConfigList`; "Purchase" conversion action primary
-- [ ] Merchant Center linked to the new account (XXX-XXX-XXXX link left alone unless the owner asks)
-- [ ] PMax built paused, $15/day, US; ad text checked against the rules
-- [ ] Products approved in Merchant Center → owner turns the campaign on
+What actually happened: in Shopify > Google & YouTube > Performance Max setup the owner **connected the
+existing account XXX-XXX-XXXX** (BridgeMark login) rather than creating a new one, and the app's wizard
+completed all 4 tasks: Google Ads account, conversion measurement, enhanced conversions, and a campaign.
+Owner then: "can you make a campagin".
+
+- [x] Tracking: storefront `webPixelsConfigList` (Google & YouTube pixel XXX) now has `AW-XXX`
+  with labels for purchase (`_2ZRCNTvo60dEI3MhJBC`), add_to_cart, begin_checkout, add_payment_info,
+  view_item, page_view and search. XXX-XXX-XXXX now has sales goals Page views / Add to cart / Purchases.
+  Merchant Center says the tags are **not verified yet** (normal for a few hours); purchase can only verify
+  after the first order (0 orders so far).
+- [x] Merchant Center XXX linked to XXX-XXX-XXXX (it already was).
+- [x] Campaign **Performance Max-1** (ID XXX) in XXX-XXX-XXXX, created by the Shopify wizard as
+  **Enabled, $30/day, all countries, account-default goals (BridgeMark lead goals)**. Spend $0. Changed by
+  Claude to match the approved plan, each verified on screen:
+  - status Enabled -> **Paused**
+  - budget $30 -> **$15/day**
+  - conversion goals account-default (Contacts, Phone call leads, ...) -> **campaign-specific: Purchases**
+  - locations All countries and territories -> **United States, Presence** (people in or regularly in the US)
+  - unchanged: Maximize conversion value (no target), MC XXX all products, all languages,
+    start 2026-10-28, no end date; asset optimization (text customization, final URL expansion + 2 more) on.
+- Asset group "Performance Max-1": feed-only ("Products from Ember & Clove"), no headlines/images/videos,
+  no audience signal, Ad strength Poor. Ads would be product (Shopping) ads from the feed.
+- [ ] Owner decision: turn off text customization / final URL expansion (Google-written text could mention
+  shipping, which the ad rules forbid)?
+- [ ] Wait: Merchant Center items are 0 approved / 1,585 "Available soon"; the campaign can't serve products
+  until approved. Then the owner switches the campaign on.
+- Note: the account still holds BridgeMark's two paused Smart campaigns and its lead goals; ads will run
+  under the account's advertiser name (check Advertiser verification name before launch).
 
 ## Proposed plan (as first written)
 
