@@ -466,3 +466,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Saved resume point: docs/RESUME_HERE.md (Dashboard 2.0 paused after Phase D, next E).
 - Wrote docs/CONTENT_STUDIO_AUDIT.md, _ARCHITECTURE_V2.md, _ROADMAP.md (no code changed). Key findings: all 12 queued Facebook posts were hand-edited (AI pictures, link in caption, #aigenerated) while the planner code still assumes real photos + first-comment links; re-planning overwrites plan files; a TikTok draft upload returned a URL + "published" within 2 s, so the dashboard's draft-vs-live label is unreliable; approvals not bound to media; no PostZen/Higgsfield retries; generation and image metadata thin; metrics/MEASURED unused; wardrobe.yaml currently draft (blocks real generation); face reference off.
 - Noted: another session is adding Dashboard Phase E code to ads_snapshot.py/analytics.py at the same time; left untouched.
+
+## 2026-10-28 ~00:15 ET — Dashboard 2.0 Phase E done (owner: "can we contineue on")
+- Tracking convention + channel mapping (scripts/attribution.py); store attribution in shopify_sync; campaign drill-down (ads_entities) + 3-hour task prompt updated; Advertising page tree + three lenses; alerts for unfilled/missing tags. 74/74 tests. Report: docs/DASHBOARD_IMPLEMENTATION_PLAN.md "Phase E report".
+- Findings: Meta Page-follows campaign delivered 10/27 ($1.19, 50 impr., 11 clicks; Like-Page ads, no store link). Microsoft PMax has no tracking tags (URL suffix empty) - adding one needs owner OK. TikTok __CAMPAIGN_NAME__ unfilled on 3 preview visits.
+- facebook_photos.py link() now uses attribution.tag_link (organic_social); left uncommitted with the Content Studio session's changes to that file.
