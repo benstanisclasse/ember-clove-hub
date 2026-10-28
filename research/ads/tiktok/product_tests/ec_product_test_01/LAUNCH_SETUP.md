@@ -80,3 +80,10 @@ Differences from the plan above:
 - **Before it can spend:** ad account balance $0 and no payment method.
 - **Owner changes (2026-10-28, afternoon):** ad groups $30/day each ($150/day; up to $37.50 per group on some days); automatic targeting on all 5 ad groups (US only; no age/gender limit and, at the owner's request, no audience suggestions, so TikTok picks the audience entirely).
 - **Captions:** 5 texts per ad (original + buyer callout, question, styling, short), from launch_set.json caption_variants.
+
+## Rebuilt with the rebate (2026-10-28 afternoon) — supersedes the 5-ad-group layout above
+- Owner: "Rebuild the TikTok draft with 5 ad groups but i woulld like you make sure you meet the rrequiremtns for the rebate"; TikTok allows the rebate with one ad group only; owner: "Keep the rebate: put all 15 ads (5 products x 3) in the one ad group, each ad promoting its own product."
+- Campaign budget $90/day (rebate tier: 10 conversions in 7 days; credits = shortfall x spend / 10). TikTok decides how the $90 is split across the 15 ads.
+- One ad group EC_TT_ProductTest01_AllProducts; rebate criteria 7/7: Conversions, Purchase, 7-day click / 1-day view, no target cost, budget >= $30/day, continuous >= 7 days, all day.
+- Rebate terms: keep enough balance; after launch do not edit (budget, targeting, creatives) or pause for 7 days.
+- Per-ad status: BUILD_STATUS.md.
