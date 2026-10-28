@@ -2,7 +2,7 @@
 
 Two development programs run side by side. Each has its own documents in `docs/`.
 
-## 1. Dashboard 2.0 ("Marketing Intelligence & Operations Dashboard 2.0" master prompt) — PAUSED after Phase D
+## 1. Dashboard 2.0 ("Marketing Intelligence & Operations Dashboard 2.0" master prompt) — Phase E done 2026-10-28; next F
 
 | Phase | Status | Report |
 |---|---|---|
@@ -10,12 +10,12 @@ Two development programs run side by side. Each has its own documents in `docs/`
 | B Reliability (git, backups, history db, sync health, honest states, local d3) | done | `DASHBOARD_IMPLEMENTATION_PLAN.md` → "Phase B report" |
 | C Shopify (read-only app, sync, Store page, product economics, bot flag, reconciliation) | done | "Phase C report" |
 | D Design system, six-section sidebar, Overview, Ads/Intelligence/Ops pages, calendar views | done | "Phase D report" |
-| **E Attribution** | **next** (approved order B→C→D→E) | plan in `DASHBOARD_IMPLEMENTATION_PLAN.md` |
-| F Profitability | after first orders | |
+| E Attribution (tracking convention, store attribution, campaign drill-down, three lenses) | done | "Phase E report" |
+| **F Profitability** | **next** (engine can be built before orders) | |
 | G Intelligence | after ~2 weeks of history | |
 | H Hardening | last | |
 
-To resume: "Continue Dashboard 2.0 with Phase E." Phase E = one UTM convention for new links, launch-day check that
+To resume: "Continue Dashboard 2.0 with Phase F." Phase E = one UTM convention for new links, launch-day check that
 TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group → ad drill-down, three lenses
 (platform-claimed / Shopify-attributed / blended). Meta began delivering on 10/27 ($0.44, 16 impressions).
 

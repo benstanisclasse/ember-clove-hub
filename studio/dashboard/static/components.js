@@ -210,6 +210,15 @@ window.ui = (() => {
     if (drafts.length) out.push({sev: 'warn', title: `${drafts.length} video${drafts.length > 1 ? 's' : ''} waiting in your TikTok drafts`,
       why: 'They only go live once you post them from the TikTok app (with the AI-generated label).', ev: drafts.map(r => `${day(r.date)} ${r.time} ${r.series}`).join('; '),
       act: 'Open TikTok → Inbox or Drafts and post them.', href: '/content'});
+    const attr = rows('store_attribution')[0];
+    (attr && attr.tag_issues || []).forEach(t => out.push({sev: 'warn', title: `Tracking tags arrived unfilled (${t.source})`,
+      why: 'Visits from this link can’t be tied to a campaign. Ad previews often do this; live clicks should not.',
+      ev: `${t.macros.join(', ')} on ${t.sessions} visit${t.sessions === 1 ? '' : 's'} (campaign "${t.campaign}")`,
+      act: 'If it keeps happening after launch, fix the URL parameters in that ad (needs your OK).', href: '/ads'}));
+    rows('ads_entities').filter(e => e.level === 'campaign' && /^active/i.test(e.status || '') && /^none/i.test(e.url_tags || '')
+      && !/Like Page/i.test(e.url_tags || '')).forEach(e => out.push({sev: 'warn', title: `${e.name}: links carry no tracking tags`,
+      why: 'Store visits and orders from this campaign will look like ordinary search or direct traffic.', ev: e.url_tags,
+      act: 'Add a final URL suffix with utm_source/utm_medium/utm_campaign (a change to a live campaign: needs your OK).', href: '/ads'}));
     return out;
   }
 

@@ -22,8 +22,22 @@
   <section class="es-card">
     <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Platforms compared</h2>
       <button class="es-btn" type="button" id="ad-csv">Download CSV</button></div>
-    <p class="es-note">Selected period. Campaign, ad set and ad drill-down arrives once campaigns deliver (Phase E).</p>
+    <p class="es-note">Selected period.</p>
     <div class="es-tablewrap"><table class="es-table" id="ad-table"></table></div>
+  </section>
+  <section class="es-card">
+    <h2 class="es-h2">Campaigns, ad sets and ads</h2>
+    <p class="es-note" id="ad-tree-note">Each platform's own structure: Meta campaign → ad set → ad; TikTok campaign → ad group → ad;
+      Microsoft campaign → ad group, or asset group for Performance Max. Click + to open a campaign.<span id="ad-tree-period"></span></p>
+    <div class="es-tablewrap"><table class="es-table" id="ad-tree"></table></div>
+  </section>
+  <section class="es-card">
+    <h2 class="es-h2">Three ways to count sales</h2>
+    <p class="es-note">Kept side by side and never added together. <b>Platform claims</b> are what each ad platform credits to its ads
+      (several can claim the same order). <b>Store-tracked</b> are Shopify orders and visits whose tracking tags point to that platform.
+      <b>Blended</b> is every store order against all ad spend.</p>
+    <div class="es-tablewrap"><table class="es-table" id="ad-lenses"></table></div>
+    <p class="es-note" id="ad-lens-note"></p>
   </section>
 </div>
 
@@ -100,6 +114,64 @@
       {k: 'ctr', label: 'CTR', n: 1, f: opt(pct)}, {k: 'cpc', label: 'CPC', n: 1, f: opt(usd)}, {k: 'cpm', label: 'CPM', n: 1, f: opt(usd)},
       {k: 'purchases', label: 'Claimed purchases', n: 1, f: opt(fmt)}, {k: 'cpa', label: 'CPA', n: 1, f: opt(usd)}, {k: 'roas', label: 'ROAS', n: 1, f: opt(v => d3.format('.2f')(v) + '×')}];
     table(document.getElementById('ad-table'), lastRows, COLS, {total: T, sortKey: 'spend'});
+    drawTree();
+    drawLenses(P, c);
+  }
+
+  // Drill-down: campaign rows open to their ad sets / ad groups / asset groups and ads.
+  const open = new Set();
+  const LEVEL = {campaign: 'Campaign', adset: 'Ad set', adgroup: 'Ad group', asset_group: 'Asset group', ad: 'Ad'};
+  function drawTree() {
+    const ents = rows('ads_entities'), tbl = document.getElementById('ad-tree');
+    const kids = id => ents.filter(e => e.parent_id === id && e.parent_id);
+    const out = [];
+    const walk = (e, depth) => { out.push({...e, depth}); if (open.has(e.platform + e.id)) kids(e.id).forEach(k => walk(k, depth + 1)); };
+    ents.filter(e => e.level === 'campaign').forEach(e => walk(e, 0));
+    const periods = [...new Set(ents.map(e => e.period))].join(', ');
+    document.getElementById('ad-tree-period').textContent = ` Totals cover ${periods || 'the latest refresh'}.`;
+    const opt = f => v => num(v) == null ? '—' : f(num(v));
+    tbl.replaceChildren(el('thead', {}, el('tr', {}, ['Name', 'Level', 'Status', 'Budget/day', 'Spend', 'Impr.', 'Clicks', 'CTR', 'CPC', 'Claimed purchases', 'Tracking tags']
+      .map((h, i) => el('th', {class: i >= 3 && i <= 9 ? 'n' : null, text: h})))),
+      el('tbody', {}, out.length ? out.map(e => {
+        const hasKids = kids(e.id).length > 0, key = e.platform + e.id;
+        const name = el('td', {style: `padding-left:${8 + e.depth * 18}px`},
+          hasKids ? el('button', {class: 'es-btn', type: 'button', style: 'padding:0 6px;margin-right:6px', 'aria-expanded': String(open.has(key)),
+            text: open.has(key) ? '−' : '+', onclick: () => { open.has(key) ? open.delete(key) : open.add(key); drawTree(); }}) : null,
+          el('span', {style: e.depth ? null : 'font-weight:500', text: e.name}),
+          e.depth === 0 ? el('span', {class: 'es-sub', text: ` · ${PLAT.find(p => p[0] === e.platform)[1]}`}) : null);
+        return el('tr', {}, name, el('td', {text: LEVEL[e.level] || e.level}),
+          el('td', {class: /active|eligible/i.test(e.delivery || e.status) ? 'st-ok' : 'st-warn', text: e.delivery || e.status}),
+          el('td', {class: 'n', text: num(e.daily_budget) ? usd(num(e.daily_budget)) : '—'}), el('td', {class: 'n', text: opt(usd)(e.spend)}),
+          el('td', {class: 'n', text: opt(fmt)(e.impressions)}), el('td', {class: 'n', text: opt(fmt)(e.clicks)}),
+          el('td', {class: 'n', text: num(e.impressions) ? pct(num(e.clicks) / num(e.impressions)) : '—'}),
+          el('td', {class: 'n', text: num(e.clicks) ? usd(num(e.spend) / num(e.clicks)) : '—'}), el('td', {class: 'n', text: opt(fmt)(e.purchases)}),
+          el('td', {class: /^none/i.test(e.url_tags || '') && !/Like Page/i.test(e.url_tags) ? 'st-warn' : null, text: e.url_tags || '—'}));
+      }) : [el('tr', {}, el('td', {colspan: 11, class: 'es-empty', text: 'No campaigns recorded yet (the 3-hour refresh adds them).'}))]));
+  }
+
+  // The three lenses, per platform.
+  function drawLenses(P, c) {
+    const ads = rows('ads_daily'), attr = rows('store_attribution')[0] || {orders: [], tagged_visits: []};
+    const store = rows('store_daily').map(r => ({...r, date: r.day}));
+    const byCh = (list, ch, k) => d3.sum((list || []).filter(r => r.channel === ch), r => num(r[k]) || 0);
+    const data = PLAT.map(([k, name]) => {
+      const ch = k === 'meta' ? 'meta_ads' : `${k}_ads`, r = ads.filter(x => x.platform === k);
+      return {platform: name, spend: sumIn(r, 'spend', P.cur), claimed: sumIn(r, 'purchases', P.cur), claimed_rev: sumIn(r, 'revenue', P.cur),
+        visits: byCh(attr.tagged_visits, ch, 'sessions'), orders: byCh(attr.orders, ch, 'orders'), sales: byCh(attr.orders, ch, 'net_sales')};
+    });
+    const orders = sumIn(store, 'orders', P.cur), net = sumIn(store, 'net_sales', P.cur);
+    const total = {platform: 'Blended (all ads vs whole store)', spend: c.spend, claimed: c.pur, claimed_rev: c.rev, visits: null,
+      orders: orders, sales: net};
+    const opt = f => v => v == null ? '—' : f(v);
+    table(document.getElementById('ad-lenses'), data, [{k: 'platform', label: 'Platform'}, {k: 'spend', label: 'Spend', n: 1, f: opt(usd)},
+      {k: 'claimed', label: 'Platform-claimed purchases', n: 1, f: opt(fmt)}, {k: 'claimed_rev', label: 'Claimed revenue', n: 1, f: opt(usd)},
+      {k: 'visits', label: 'Store visits with its tags (30 d)', n: 1, f: opt(fmt)}, {k: 'orders', label: 'Store orders with its tags (30 d)', n: 1, f: opt(fmt)},
+      {k: 'sales', label: 'Their net sales', n: 1, f: opt(usd)}], {total});
+    const claimed = c.pur || 0;
+    document.getElementById('ad-lens-note').textContent = (claimed > (orders || 0)
+      ? `Platforms claim ${fmt(claimed)} purchases but the store recorded ${fmt(orders || 0)} orders in this period: claims overlap or include view-through credit. `
+      : '') + `Blended cost per order: ${orders && c.spend ? usd(c.spend / orders) : '—'}; MER: ${c.spend ? d3.format('.2f')((net || 0) / c.spend) + '×' : '—'}. `
+      + `Of ${fmt(attr.orders_total || 0)} store orders in the last 30 days, ${fmt(attr.orders_tracked || 0)} carried tracking tags.`;
   }
   document.getElementById('ad-csv').addEventListener('click', () => ui.csv(`ads_${ui.todayET()}.csv`, lastRows, COLS));
   dash.onData(draw);

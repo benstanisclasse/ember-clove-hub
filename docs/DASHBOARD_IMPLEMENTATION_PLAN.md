@@ -233,3 +233,37 @@ keeps 90 days for comparisons), `test_dashboard.py`.
 
 **Next: Phase E (attribution)** as ads deliver: UTM convention for new links, launch-day macro check, campaign/ad-level
 drill-down, and the three lenses (platform-claimed, Shopify-attributed, blended).
+
+---
+
+## Phase E report (2026-10-28, owner: "can we contineue on" — continuing the approved order B → C → D → E)
+
+**Implemented**
+- E1 Tracking convention: `scripts/attribution.py` — `tag_link()` (facebook/instagram/tiktok organic = `organic_social`,
+  Meta/TikTok = `paid_social`, Microsoft = `paid_search`), `channel_of()` (UTM first, referrer second, with confidence
+  Directly tracked / Inferred / Unattributed; the old `social` medium maps to organic), `unfilled_macros()`. The
+  Facebook planner's links now use it (uncommitted in `facebook_photos.py` together with the Content Studio session's
+  work on that file — that session commits it).
+- E2 Store-side attribution in `shopify_sync`: each order gets a channel and confidence (last visit's UTM, then first,
+  then visit source); tagged visits by channel; unfilled tags reported → `store_attribution.json`. Alerts for unfilled
+  tags and for live campaigns whose links carry no tags.
+- E3 Drill-down: `ads_snapshot.py` accepts each platform's structure (campaign → ad set / ad group / asset group → ad)
+  with totals and tracking-tag status → `ads_entities.json`, history in `analytics.db` (`ad_entities`). The 3-hour
+  Claude task now collects it (prompt updated). Advertising page: expandable campaign tree with status, budget, spend,
+  CTR, CPC, claims and tags.
+- E4 Three lenses on the Advertising page: platform-claimed purchases/revenue, store visits and orders carrying that
+  platform's tags, and blended (all ad spend vs whole store: cost per order, MER) — never added together.
+
+**Findings from the first pull**
+- Meta "EC | Page follows | Test F2" ($5/day) delivered on 10/27: $1.19–1.22, 50–51 impressions, 11 clicks (CTR 21.6%,
+  $0.11/click); Turtleneck sweater dress ad took $0.95. These are Like-Page ads: no store link, so no tags needed and no
+  store visits expected.
+- Microsoft "PMax Ember & Clove" ($20.80/day) has **no tracking tags** (URL suffix and tracking template empty): its
+  store visits will look like ordinary search/direct. Fix = add a final URL suffix, e.g.
+  `utm_source=microsoft&utm_medium=paid_search&utm_campaign={CampaignId}` — a change to a live campaign, **needs owner OK**.
+- TikTok: 3 visits with an unfilled `__CAMPAIGN_NAME__` (likely previews of the unpublished draft); check on launch.
+
+**Tests:** 17 new (link builder, 13 channel cases, macros, order channel, entity merge) — **74/74 pass.** Verified live:
+Advertising page tree and lenses, new alerts, no console errors.
+
+**Next:** F (profitability engine — can be built now and lights up with the first orders), then H, then G.

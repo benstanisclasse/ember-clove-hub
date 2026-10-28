@@ -7,9 +7,17 @@ numbers to this script, one platform at a time, as a JSON file:
    "days": [{"date": "YYYY-MM-DD", "spend": 0, "impressions": 0, "clicks": 0, "purchases": 0, "revenue": 0}]}
 Rows for that platform and those dates replace the old ones; other platforms and older days are kept.
 
+Optional (Phase E drill-down): "entities": the platform's own structure with totals for "entities_period"
+(e.g. "last_7d"), one record per campaign, ad set / ad group / asset group, and ad:
+  {"level": "campaign" | "adset" | "adgroup" | "asset_group" | "ad", "id": "...", "parent_id": "..." (the level above),
+   "name": "...", "status": "...", "delivery": "...", "objective": "...", "daily_budget": 0,
+   "spend": 0, "impressions": 0, "clicks": 0, "purchases": 0, "revenue": 0, "url_tags": "..." (optional)}
+Each platform's list replaces its previous list; every fetch is also kept in analytics.db (ad_entities).
+
   python -I scripts/ads_snapshot.py merge <file.json>
-Writes studio/dashboard/ads_daily.csv (one row per platform per day) and ads_accounts.json (one row per platform),
-and appends the same days to studio/analytics.db (ad_daily, kept per fetch) with a sync_runs row "ads:<platform>".
+Writes studio/dashboard/ads_daily.csv (one row per platform per day), ads_accounts.json (one row per platform) and
+ads_entities.json (drill-down), and appends the same days to studio/analytics.db (ad_daily, kept per fetch) with a
+sync_runs row "ads:<platform>".
 """
 import csv
 import datetime as dt
@@ -21,9 +29,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from studio import analytics  # noqa: E402
 
 OUT =Path(__file__).resolve().parent.parent / "studio" / "dashboard"
-DAILY, ACCOUNTS = OUT / "ads_daily.csv", OUT / "ads_accounts.json"
+DAILY, ACCOUNTS, ENTITIES = OUT / "ads_daily.csv", OUT / "ads_accounts.json", OUT / "ads_entities.json"
 PLATFORMS = ("meta", "tiktok", "microsoft")
 COLS = ["date", "platform", "spend", "impressions", "clicks", "purchases", "revenue"]
+LEVELS = ("campaign", "adset", "adgroup", "asset_group", "ad")
+ENTITY_FIELDS = ("level", "id", "parent_id", "name", "status", "delivery", "objective", "daily_budget", "url_tags")
 
 
 def _num(x):
@@ -57,7 +67,25 @@ def merge(snap):
                           "status": snap.get("status", ""), "active_campaigns": int(snap.get("active_campaigns") or 0),
                           "note": snap.get("note", ""), "refreshed_at": dt.datetime.now().isoformat(timespec="minutes")}
     ACCOUNTS.write_text(json.dumps([accounts[p] for p in PLATFORMS if p in accounts], indent=1), encoding="utf-8")
-    return f"{platform}: {len(days)} days saved, {len(rows)} rows in ads_daily.csv"
+    msg = f"{platform}: {len(days)} days saved, {len(rows)} rows in ads_daily.csv"
+    if "entities" in snap:
+        msg += f"; {merge_entities(platform, snap['entities'], snap.get('entities_period', 'last_7d'))} entities"
+    return msg
+
+
+def merge_entities(platform, entities, period):
+    """Replace this platform's drill-down list in ads_entities.json (other platforms are kept)."""
+    for e in entities:
+        if e.get("level") not in LEVELS or not e.get("id"):
+            raise SystemExit(f"bad entity {e!r}: level must be one of {', '.join(LEVELS)} and id is required")
+    fetched = dt.datetime.now().isoformat(timespec="minutes")
+    keep = [e for e in (json.loads(ENTITIES.read_text(encoding="utf-8")) if ENTITIES.exists() else [])
+            if e.get("platform") != platform]
+    new = [{"platform": platform, **{k: e.get(k) for k in ENTITY_FIELDS}, "id": str(e["id"]),
+            "parent_id": str(e.get("parent_id") or ""), **{k: _num(e.get(k)) for k in COLS[2:]},
+            "period": period, "refreshed_at": fetched} for e in entities]
+    ENTITIES.write_text(json.dumps(keep + new, indent=1, ensure_ascii=False), encoding="utf-8")
+    return len(new)
 
 
 if __name__ == "__main__":
@@ -68,4 +96,6 @@ if __name__ == "__main__":
         print(merge(snap))
         run["rows"] = analytics.record_ad_days(snap["platform"], snap.get("days") or [], "account",
                                                snap.get("account_id", ""))
+        run["rows"] += analytics.record_ad_entities(snap["platform"], snap.get("entities") or [],
+                                                    snap.get("entities_period", "last_7d"))
         run["detail"] = snap.get("note", "")

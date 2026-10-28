@@ -232,3 +232,60 @@ def test_every_page_has_the_sidebar_and_shared_assets(server):
 def test_data_includes_new_datasets(server):
     j = json.loads(get(server + "/data")[2])
     assert {"system_info", "episode_history", "store_daily"} <= set(j["datasets"])
+
+
+# --- Phase E: attribution ------------------------------------------------------------------------------------------
+
+import attribution  # noqa: E402
+
+
+def test_tag_link_uses_the_convention_and_replaces_old_tags():
+    url = attribution.tag_link("https://emberandclove.com/products/x?variant=1&utm_source=old", "facebook_organic", "fb_photos", "2026-10-28_0900")
+    assert url == ("https://emberandclove.com/products/x?variant=1&utm_source=facebook&utm_medium=organic_social"
+                   "&utm_campaign=fb_photos&utm_content=2026-10-28_0900")
+    assert "utm_medium=paid_search" in attribution.tag_link("https://e.com", "microsoft_ads", "pmax")
+
+
+@pytest.mark.parametrize("args,expect", [
+    (("facebook", "social"), ("facebook_organic", "Directly tracked")),         # posts before 10/28
+    (("facebook", "organic_social"), ("facebook_organic", "Directly tracked")),
+    (("fb", "paid_social"), ("meta_ads", "Directly tracked")),
+    (("instagram", "cpc"), ("meta_ads", "Directly tracked")),
+    (("tiktok", "paid"), ("tiktok_ads", "Directly tracked")),
+    (("tiktok", "organic_social"), ("tiktok_organic", "Directly tracked")),
+    (("bing", "cpc"), ("microsoft_ads", "Directly tracked")),
+    (("newsletter", "email"), ("email", "Directly tracked")),
+    (("", "", "social", "facebook"), ("facebook_organic", "Inferred")),
+    (("", "", "social", "tiktok"), ("tiktok_organic", "Inferred")),
+    (("", "", "search", "google"), ("search", "Inferred")),
+    (("", "", "direct", ""), ("direct", "Unattributed")),
+    ((), ("direct", "Unattributed")),
+])
+def test_channel_of(args, expect):
+    assert attribution.channel_of(*args) == expect
+
+
+def test_unfilled_macros():
+    assert attribution.unfilled_macros("__CAMPAIGN_NAME__", "x") == ["__CAMPAIGN_NAME__"]
+    assert attribution.unfilled_macros("{{campaign.name}}", "{AdId}", "fb_photos") == ["{AdId}", "{{campaign.name}}"]
+    assert attribution.unfilled_macros("fb_photos", "", None) == []
+
+
+def test_order_channel_prefers_last_visit_tags():
+    from studio import shopify_sync
+    base = {f"{p}_{k}": "" for p in ("first", "last") for k in ("utm_source", "utm_medium", "source")}
+    assert shopify_sync.order_channel({**base, "first_utm_source": "facebook", "first_utm_medium": "social",
+                                       "last_utm_source": "tiktok", "last_utm_medium": "paid"}) == ("tiktok_ads", "Directly tracked")
+    assert shopify_sync.order_channel({**base, "last_source": "Instagram"}) == ("instagram_organic", "Inferred")
+    assert shopify_sync.order_channel(base) == ("direct", "Unattributed")
+
+
+def test_ads_entities_replace_per_platform(tmp_path, monkeypatch):
+    monkeypatch.setattr(ads_snapshot, "ENTITIES", tmp_path / "ads_entities.json")
+    ads_snapshot.merge_entities("meta", [{"level": "campaign", "id": 1, "name": "A", "spend": "1.5"}], "p")
+    ads_snapshot.merge_entities("microsoft", [{"level": "asset_group", "id": "2", "parent_id": "9", "name": "B"}], "p")
+    ads_snapshot.merge_entities("meta", [{"level": "ad", "id": "3", "parent_id": "1", "name": "C"}], "p")
+    e = json.loads((tmp_path / "ads_entities.json").read_text(encoding="utf-8"))
+    assert sorted((x["platform"], x["id"]) for x in e) == [("meta", "3"), ("microsoft", "2")]
+    with pytest.raises(SystemExit):
+        ads_snapshot.merge_entities("meta", [{"level": "keyword", "id": "4"}], "p")

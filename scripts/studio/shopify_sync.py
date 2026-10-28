@@ -23,6 +23,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import attribution  # noqa: E402  (channel mapping and tracking-tag checks)
 import pricing_study  # noqa: E402  (CPA planning figure and the per-order 'kept' model used for prices)
 import profitability_model  # noqa: E402  (EPROLO shipping and contribution before ads)
 import shopify_api  # noqa: E402
@@ -330,6 +331,58 @@ def run_reconciliation(con, a, b, rows, out=DASH):
     return rec
 
 
+def order_channel(o):
+    """Channel and confidence for one stored order: last visit's UTM, then first visit's, then the visit source."""
+    for p in ("last", "first"):
+        if o[f"{p}_utm_source"]:
+            return attribution.channel_of(o[f"{p}_utm_source"], o[f"{p}_utm_medium"])
+    src = (o["last_source"] or o["first_source"] or "").lower()
+    if not src:
+        return attribution.channel_of()
+    kind = ("social" if any(x in src for x in ("facebook", "instagram", "tiktok", "meta")) else
+            "search" if any(x in src for x in ("google", "bing", "duckduckgo", "yahoo")) else
+            "direct" if src == "direct" else "other")
+    return attribution.channel_of("", "", kind, src)
+
+
+def attribution_report(con, a):
+    """Store-side attribution for the last 30 days: orders by channel with confidence, tagged visits by channel,
+    and links whose tags arrived unfilled. Orders are counted once each, never added to platform claims."""
+    by = {}
+    orders = con.execute("SELECT * FROM orders WHERE cancelled = 0 AND test = 0 AND substr(created_at, 1, 10) >= ?",
+                         (a,)).fetchall()
+    for o in orders:
+        ch, conf = order_channel(o)
+        r = by.setdefault((ch, conf), {"channel": ch, "label": attribution.LABELS[ch], "confidence": conf,
+                                       "orders": 0, "net_sales": 0.0, "campaigns": {}})
+        r["orders"] += 1
+        r["net_sales"] = round(r["net_sales"] + (o["subtotal"] or 0) - (o["refunded"] or 0), 2)
+        camp = o["last_utm_campaign"] or o["first_utm_campaign"]
+        if camp:
+            r["campaigns"][camp] = r["campaigns"].get(camp, 0) + 1
+    visits, issues = {}, []
+    for s in con.execute("""SELECT source, medium, campaign, content, SUM(sessions) sessions, SUM(cart_sessions) carts,
+                            SUM(completed_sessions) completed FROM store_sources_daily WHERE kind = 'utm' AND day >= ?
+                            GROUP BY source, medium, campaign, content""", (a,)):
+        if not s["source"]:
+            continue  # untagged visits: see the referrer table
+        ch, _ = attribution.channel_of(s["source"], s["medium"])
+        v = visits.setdefault(ch, {"channel": ch, "label": attribution.LABELS[ch], "sessions": 0, "carts": 0, "completed": 0})
+        v["sessions"] += s["sessions"] or 0
+        v["carts"] += s["carts"] or 0
+        v["completed"] += s["completed"] or 0
+        bad = attribution.unfilled_macros(s["source"], s["medium"], s["campaign"], s["content"])
+        if bad:
+            issues.append({"source": s["source"], "medium": s["medium"], "campaign": s["campaign"],
+                           "content": s["content"], "sessions": s["sessions"], "macros": bad})
+    n = len(orders)
+    tracked = sum(r["orders"] for r in by.values() if r["confidence"] == attribution.DIRECT)
+    return {"from": a, "orders_total": n, "orders_tracked": tracked,
+            "orders_unattributed": sum(r["orders"] for r in by.values() if r["confidence"] == attribution.NONE),
+            "orders": sorted(by.values(), key=lambda r: -r["orders"]),
+            "tagged_visits": sorted(visits.values(), key=lambda r: -r["sessions"]), "tag_issues": issues}
+
+
 def sync(out=DASH, db_path=None):
     fetched_at = analytics.now_utc()
     con = analytics.connect(db_path)
@@ -341,12 +394,14 @@ def sync(out=DASH, db_path=None):
         con.commit()
         a, b, rows, n_prod = write_dashboard_files(con, out)
         rec = run_reconciliation(con, a, b, rows, out)
+        attr = attribution_report(con, a)
+        (out / "store_attribution.json").write_text(json.dumps(attr, indent=1), encoding="utf-8")
     finally:
         con.close()
     flagged = sum(r["bot_flag"] for r in rows)
     return [f"store days/sources {n_store}", f"orders {n_orders}", f"products+variants {n_catalog}",
             f"products priced {n_prod}", f"bot-flagged days {flagged}",
-            f"reconciliation {'OK' if rec['ok'] else 'MISMATCH'}"]
+            f"reconciliation {'OK' if rec['ok'] else 'MISMATCH'}", f"tag issues {len(attr['tag_issues'])}"]
 
 
 if __name__ == "__main__":

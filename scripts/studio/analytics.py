@@ -42,6 +42,10 @@ CREATE TABLE IF NOT EXISTS ad_daily (
   platform TEXT NOT NULL, level TEXT NOT NULL, entity_id TEXT NOT NULL, day TEXT NOT NULL, fetched_at TEXT NOT NULL,
   spend REAL, impressions REAL, clicks REAL, purchases REAL, revenue REAL,
   PRIMARY KEY (platform, level, entity_id, day, fetched_at));
+CREATE TABLE IF NOT EXISTS ad_entities (
+  platform TEXT NOT NULL, level TEXT NOT NULL, entity_id TEXT NOT NULL, fetched_at TEXT NOT NULL, parent_id TEXT,
+  name TEXT, status TEXT, delivery TEXT, period TEXT, spend REAL, impressions REAL, clicks REAL, purchases REAL,
+  revenue REAL, PRIMARY KEY (platform, level, entity_id, fetched_at));
 CREATE VIEW IF NOT EXISTS ad_daily_latest AS
   SELECT a.* FROM ad_daily a JOIN (SELECT platform, level, entity_id, day, MAX(fetched_at) AS f FROM ad_daily
     GROUP BY platform, level, entity_id, day) m
@@ -163,6 +167,20 @@ def record_ad_days(platform, days, level="account", entity_id="", fetched_at=Non
     con.commit()
     con.close()
     return len(days)
+
+
+def record_ad_entities(platform, entities, period, fetched_at=None, path=None):
+    """Campaign / ad set / ad group / asset group / ad totals as each platform reported them at this fetch."""
+    fetched_at = fetched_at or now_utc()
+    con = connect(path)
+    for e in entities:
+        con.execute("INSERT OR IGNORE INTO ad_entities VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (platform, e["level"], str(e["id"]), fetched_at, str(e.get("parent_id") or ""), e.get("name") or "",
+                     e.get("status") or "", e.get("delivery") or "", period,
+                     *[_num(e.get(k)) or 0.0 for k in AD_METRICS]))
+    con.commit()
+    con.close()
+    return len(entities)
 
 
 def snapshot_dashboard_files(out=DASH, path=None):

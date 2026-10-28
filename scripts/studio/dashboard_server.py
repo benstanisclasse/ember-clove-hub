@@ -29,7 +29,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import facebook_photos  # noqa: E402
-from studio import analytics, bible, db, publishing, shopify_sync  # noqa: E402
+from studio import analytics, bible, content, db, publishing, shopify_sync  # noqa: E402
 
 OUT = publishing.OUT
 STATIC = OUT / "static"
@@ -37,8 +37,8 @@ LOG = logging.getLogger("dashboard")
 DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_metrics", "spend", "caps",
             "fb_schedule", "fb_posts", "fb_daily", "fb_followers", "ads_daily", "ads_accounts", "sync_health",
             "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation", "system_info",
-            "episode_history"]
-JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "ads:meta": "Meta ads",
+            "episode_history", "ads_entities", "store_attribution", "content_queue", "content_events"]
+JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "content": "Content queue", "ads:meta": "Meta ads",
               "ads:tiktok": "TikTok ads", "ads:microsoft": "Microsoft ads"}
 # path -> (file, title, nav key). Six sections (Phase D); old addresses redirect.
 PAGES = {"/": ("overview.html", "Overview · Ember & Clove", "overview"),
@@ -191,9 +191,26 @@ def write_system_info():
     (OUT / "system_info.json").write_text(json.dumps(info), encoding="utf-8")
 
 
+def episode_frames(episode_id):
+    """Path of a real (non-test) episode's frame sheet, looked up by id in studio.db; None for anything else."""
+    if not re.fullmatch(r"[A-Z]{2}-\d{8}-\d+", episode_id or ""):
+        return None
+    con = db.connect()
+    try:
+        row = con.execute("SELECT video_path FROM episodes WHERE id = ? AND test = 0", (episode_id,)).fetchone()
+    finally:
+        con.close()
+    if not row or not row["video_path"]:
+        return None
+    video = OUT.parents[1] / row["video_path"].replace("\\", "/")
+    f = video.with_name(video.stem + "_frames.jpg")
+    return f if f.is_file() else None
+
+
 JOBS = [("tiktok", _tiktok), ("facebook", lambda: facebook_photos.sync_dashboard(OUT)),
         ("shopify", lambda: shopify_sync.sync(OUT)),
-        ("snapshots", lambda: [f"{analytics.snapshot_dashboard_files(OUT)} rows"])]
+        ("snapshots", lambda: [f"{analytics.snapshot_dashboard_files(OUT)} rows"]),
+        ("content", lambda: content.sync(OUT))]  # Content Studio: one queue for TikTok + Facebook (after their syncs)
 
 
 def sync_once():
@@ -265,6 +282,10 @@ def make_handler(every):
                     ctype = mimetypes.guess_type(f.name)[0] or "application/octet-stream"
                     # only the third-party library is cached; our own CSS/JS change with every release
                     return self._send_bytes(200, f.read_bytes(), ctype, cache=f.name == "d3.min.js")
+            if path.startswith("/media/frames/"):  # a real episode's QA frame sheet, used as its thumbnail
+                frames = episode_frames(path[len("/media/frames/"):])
+                if frames:
+                    return self._send_bytes(200, frames.read_bytes(), "image/jpeg")
             return self._send(404, "Not found", "text/plain")
 
         def _send_bytes(self, code, data, ctype, cache=False):
