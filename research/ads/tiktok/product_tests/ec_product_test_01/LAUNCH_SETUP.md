@@ -61,3 +61,20 @@ Format **Carousel**, pictures in order slide 1 → slide 2 · Music: **Cozy Autu
 - Payment method set on the ad account (balance shows $0).
 - Total at the minimum: 5 ad groups × $20/day = **$100/day** (~$700 for 7 days). Owner approves the amount and the switch-on.
 - Decision rules after launch (PHASE_B_EXPERIMENT_PLAN.md §5): stop an ad group at 1× break-even CPA with no add-to-cart or 2× with no purchase; winner only at ≥ 3 store-tracked purchases under break-even.
+
+## As built in Ads Manager (2026-10-28, unpublished draft, "Publish all" not clicked)
+
+Built through the owner's Chrome (owner: "Build the campaign yourself in TikTok Ads Manager through my Chrome, switched off, then show me before anything spends.").
+Draft: campaign EC_TT_ProductTest01 (draft id XXX); ad groups EC_TT_P001_MockNeckDress, EC_TT_P005_LongCoat, EC_TT_P006_Cardigan, EC_TT_P012_KneeBoots, EC_TT_P013_CableKnitDress; 3 ads each (A_PRODUCT, B_LIFESTYLE, C_BENEFIT).
+
+Differences from the plan above:
+- **Format:** TikTok's Sales/Website flow only takes videos (pictures only from the catalog or from TikTok posts). Owner: "Turn each ad's two pictures into a short slideshow video and use those." Each ad is one 7.6 s 1080x1920 video (slide 1 for 4 s, 0.4 s fade, slide 2), silent, in `data/media_generated/tiktok_test_01/final_video/`.
+- **Placement:** this flow can't be limited to TikTok only; it runs on TikTok + TikTok Ad Network.
+- **Bidding:** Maximum results (no cost cap).
+- **Music:** the videos are silent; the "Music refresh" enhancement is on so TikTok adds music. Translate & dub and Video quality are off.
+- **Promoted product (one per ad group):** P001 Brown/L 51285015003375; P005 Burgundy/M 51285661614319; P006 Off-White/M 51284656947439; P012 Beige/US 7 51286174892271; P013 Caramel/M 51263562154223.
+- **Product cards:** product information (price, strikethrough price, discount, free shipping) all turned off (no price or delivery in ads). Catalog creatives not included; Shopping Assistant off; add-on enhancements off; CTA Shop now.
+- **Per ad:** own video only, caption from launch_set.json, destination = product page with utm_source=tiktok, utm_medium=paid_social, utm_campaign=ec_product_test_01, utm_content=<p0xx_a/b/c>, utm_id and tt_campaignid = __CAMPAIGN_ID__; "This ad contains AI-generated content" ticked for the video.
+- **Catalog status (23:15 UTC):** the five SKUs are approved-pending ("processing"), ad_creation_eligible NOT_AVAILABLE; catalog prices match Shopify. TikTok lists the boots under "Sandals".
+- **Budget:** $20/day per ad group = $100/day for the 5 groups; TikTok notes a group can spend up to $25 on some days (about $140 per group per week, ~$700/week total).
+- **Before it can spend:** ad account balance $0 and no payment method.

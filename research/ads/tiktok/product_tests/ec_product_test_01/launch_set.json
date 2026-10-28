@@ -32,7 +32,10 @@
    "slide1_bytes": 185294,
    "slide2_bytes": 173017,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/7d985e28-709b-4311-8810-c5732a790614.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/cc87ce51-ca92-4c0b-92ec-2ad89ed5277c.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/cc87ce51-ca92-4c0b-92ec-2ad89ed5277c.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P001_A_PRODUCT.mp4",
+   "video_sha256": "2d57980f8bc4219e369b9d3646dd50249b94acc745db721f17b5209e3da4c8a9",
+   "video_bytes": 581172
   },
   {
    "ad_name": "EC_TT_P001_B_LIFESTYLE",
@@ -57,7 +60,10 @@
    "slide1_bytes": 327285,
    "slide2_bytes": 386119,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ac4e8e8d-1648-42c1-88df-7207dc68b5df.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ba3a3cce-e93f-458e-8fd5-1cd721a899b8.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ba3a3cce-e93f-458e-8fd5-1cd721a899b8.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P001_B_LIFESTYLE.mp4",
+   "video_sha256": "85e711a7a19e2c2d581e7ce300af14c13009d3e5afe2506d5c7e02b7ac2459cc",
+   "video_bytes": 1017028
   },
   {
    "ad_name": "EC_TT_P001_C_BENEFIT",
@@ -82,7 +88,10 @@
    "slide1_bytes": 245834,
    "slide2_bytes": 433824,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/53a277ca-1b99-4f7e-b82a-aec7a02a4191.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/db3cfde8-2c4f-4d98-93ca-dc4004ea9b85.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/db3cfde8-2c4f-4d98-93ca-dc4004ea9b85.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P001_C_BENEFIT.mp4",
+   "video_sha256": "a6ddd63becf087c4876cabf864d804ad80c45bef9b16ff4ecbf9096835eab277",
+   "video_bytes": 1111298
   },
   {
    "ad_name": "EC_TT_P005_A_PRODUCT",
@@ -107,7 +116,10 @@
    "slide1_bytes": 196734,
    "slide2_bytes": 391820,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/33e7d35c-eaa6-4711-9c6f-a671bf007998.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/8d00a852-c719-4cdf-beb4-f72dfca7578d.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/8d00a852-c719-4cdf-beb4-f72dfca7578d.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P005_A_PRODUCT.mp4",
+   "video_sha256": "1148789b095b366cccde0cc1f41701fdb219769b4b72e4da7d9bcae4490b9592",
+   "video_bytes": 1316164
   },
   {
    "ad_name": "EC_TT_P005_B_LIFESTYLE",
@@ -132,7 +144,10 @@
    "slide1_bytes": 375510,
    "slide2_bytes": 384051,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/10411b3e-04c1-40e0-ae8d-f8f6af9263eb.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ba8d461e-1c13-4772-86b8-aff54861a4eb.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/ba8d461e-1c13-4772-86b8-aff54861a4eb.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P005_B_LIFESTYLE.mp4",
+   "video_sha256": "9d407a7f902ba28ff3ea6ab59214f8f0f3411c2437a6e033ef8bcd7cc0ba2297",
+   "video_bytes": 1177858
   },
   {
    "ad_name": "EC_TT_P005_C_BENEFIT",
@@ -157,7 +172,10 @@
    "slide1_bytes": 209396,
    "slide2_bytes": 206936,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/d0304ea3-d81e-4869-8d11-f4f4b80da4ad.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/90aa25f0-e683-41aa-a710-62fa339b2710.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/90aa25f0-e683-41aa-a710-62fa339b2710.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P005_C_BENEFIT.mp4",
+   "video_sha256": "368cc04204463d13328b99a7947df4828d5d0c6007fe47106946603787b102ff",
+   "video_bytes": 658920
   },
   {
    "ad_name": "EC_TT_P006_A_PRODUCT",
@@ -182,7 +200,10 @@
    "slide1_bytes": 311076,
    "slide2_bytes": 514249,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/d6a1f06b-1376-429f-b4c7-7453977ab2ae.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0a59870b-9815-4bd9-a26f-574f38f99b20.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0a59870b-9815-4bd9-a26f-574f38f99b20.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P006_A_PRODUCT.mp4",
+   "video_sha256": "a6889cac91c5753a93c67536e8263931296321f511ea77691a2711cbf18dc9fe",
+   "video_bytes": 1279037
   },
   {
    "ad_name": "EC_TT_P006_B_LIFESTYLE",
@@ -207,7 +228,10 @@
    "slide1_bytes": 416888,
    "slide2_bytes": 504329,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0f1478a3-0441-4eb5-8cd9-22a2113c47da.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/7a79fd9f-1c30-4399-a399-656a160f9150.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/7a79fd9f-1c30-4399-a399-656a160f9150.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P006_B_LIFESTYLE.mp4",
+   "video_sha256": "5e7ebb61827837502bbaeaa4151ec35c217142edede176ff551ded83551d6087",
+   "video_bytes": 1309723
   },
   {
    "ad_name": "EC_TT_P006_C_BENEFIT",
@@ -232,7 +256,10 @@
    "slide1_bytes": 361708,
    "slide2_bytes": 438315,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/51511028-bd89-47a1-9af3-88dbcba01ae6.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/bc050ea4-5c3d-49e4-a921-9de9b8154031.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/bc050ea4-5c3d-49e4-a921-9de9b8154031.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P006_C_BENEFIT.mp4",
+   "video_sha256": "64879f32134e936203a56d6b183321f4e251e3e14fdda0ae5c401cd8717c06b0",
+   "video_bytes": 1172644
   },
   {
    "ad_name": "EC_TT_P012_A_PRODUCT",
@@ -257,7 +284,10 @@
    "slide1_bytes": 222034,
    "slide2_bytes": 255440,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/724b054b-227e-42b2-8cd2-d9cd5e5f76ae.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/33be55a9-6ef8-4797-b253-9e38c3a62793.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/33be55a9-6ef8-4797-b253-9e38c3a62793.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P012_A_PRODUCT.mp4",
+   "video_sha256": "e9994c81aa7971f4882ab946fbbec247e7cc1240e2c7a22e74df4baf93762348",
+   "video_bytes": 787194
   },
   {
    "ad_name": "EC_TT_P012_B_LIFESTYLE",
@@ -282,7 +312,10 @@
    "slide1_bytes": 373850,
    "slide2_bytes": 565790,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/36e04dbc-1231-4f5f-b65a-9c74d619a39b.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/55d2b89f-4bf1-4a23-a1ee-e6ebc5961dcc.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/55d2b89f-4bf1-4a23-a1ee-e6ebc5961dcc.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P012_B_LIFESTYLE.mp4",
+   "video_sha256": "fde4ce11f9a7bdffe7273dbba238c66d4ae80428bee5e647b9b779cda2024172",
+   "video_bytes": 1600690
   },
   {
    "ad_name": "EC_TT_P012_C_BENEFIT",
@@ -307,7 +340,10 @@
    "slide1_bytes": 198052,
    "slide2_bytes": 197408,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/1529a50d-b491-4a88-9d88-6503027f9efd.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/093c70e0-7f1d-490b-9a72-e23c5bca02d1.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/093c70e0-7f1d-490b-9a72-e23c5bca02d1.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P012_C_BENEFIT.mp4",
+   "video_sha256": "50fe04641d12276f4ffd320ec184b98298fae6ed2524ef855535edf576e64dd1",
+   "video_bytes": 630339
   },
   {
    "ad_name": "EC_TT_P013_A_PRODUCT",
@@ -332,7 +368,10 @@
    "slide1_bytes": 248824,
    "slide2_bytes": 641964,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/eda7ad4e-861f-4828-8ca8-15f3844a672f.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/29a39fdc-e4ae-4f69-a988-ed6396ffcb01.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/29a39fdc-e4ae-4f69-a988-ed6396ffcb01.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P013_A_PRODUCT.mp4",
+   "video_sha256": "df98b52fed10db6cbcfaa720ed311a4682850f8a60e431a046f3668eaccd5c44",
+   "video_bytes": 1589791
   },
   {
    "ad_name": "EC_TT_P013_B_LIFESTYLE",
@@ -357,7 +396,10 @@
    "slide1_bytes": 425394,
    "slide2_bytes": 469533,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/1ec448fa-c7f8-49bb-b910-7d82c542cbc8.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0e9ae5e2-61dc-40bb-9c93-933b4510a8a2.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/0e9ae5e2-61dc-40bb-9c93-933b4510a8a2.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P013_B_LIFESTYLE.mp4",
+   "video_sha256": "5aeb3d693659ee4322c7f02a1a152cd01d40f25f69b1463a0f0f99f40a82d856",
+   "video_bytes": 1334220
   },
   {
    "ad_name": "EC_TT_P013_C_BENEFIT",
@@ -382,7 +424,10 @@
    "slide1_bytes": 446626,
    "slide2_bytes": 520334,
    "slide1_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/999f3e86-52c9-4cd5-857e-8fcbf7fcbfaa.jpeg",
-   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/9d231e04-a7ef-49f1-8682-95f09d2bccbc.jpeg"
+   "slide2_public_url": "https://d3snorpfx4xhv8.cloudfront.net/XXX/9d231e04-a7ef-49f1-8682-95f09d2bccbc.jpeg",
+   "video": "data/media_generated/tiktok_test_01/final_video/EC_TT_P013_C_BENEFIT.mp4",
+   "video_sha256": "4c6b9056fc1626ed5ca5264c77130a3f8b55db9274170db61927f4f11f94b00f",
+   "video_bytes": 1423233
   }
  ],
  "music": {
@@ -390,5 +435,11 @@
   "name": "Cozy Autumn Morning",
   "author": "Brian Streicher",
   "source": "TikTok Commercial Music Library (CAROUSEL_ADS)"
+ },
+ "format_change": {
+  "date": "2026-10-28",
+  "owner": "Turn each ad's two pictures into a short slideshow video and use those.",
+  "reason": "TikTok Ads Manager Sales (website) flow accepts only uploaded videos, not image carousels",
+  "spec": "1080x1920, 30 fps, slide1 0-4 s, 0.4 s fade, slide2 to 7.6 s, silent AAC track"
  }
 }
