@@ -10,8 +10,10 @@ edited by hand and every step is recorded as a content_event:
   generate  image_generated    Higgsfield image from the post's supplier photos (template studio/templates/
                                fb_ai_picture.j2); the generation job is recorded (Phase C)
   review    -                  side-by-side sheet: each AI picture next to the product's supplier photos
-  verdict   captioned |        product-fidelity check of this exact file (sha256): product matches, no added text or
-            fidelity_failed    logos, no face that looks like a real person. Owner 2026-10-27: "i dont need to approve
+  verdict   captioned |        picture check of this exact file (sha256): product matches, no added text or logos, no
+            fidelity_failed    face that looks like a real person, a body that is anatomically possible (legs, knees,
+                               hands, fingers: owner caught crossed legs bent the wrong way on 2026-10-28), and a
+                               scene that fits the post date (no summer clothes in November). Owner 2026-10-27: "i dont need to approve
                                every image i approve do it" -> Claude checks; a failed picture is held, `generate`
                                makes a new one
   qa        awaiting_approval  shared rules (scripts/studio/checks.py): caption wording, #aigenerated, every product
@@ -47,7 +49,7 @@ TEMPLATE = "fb_ai_picture.j2"
 MODEL = "flare"
 OUT = HUB / "data" / "media_generated" / "fb_ai"
 STANDING_QUOTE = "i dont need to approve every image i approve do it"  # owner, 2026-10-27 (memory + log.md)
-FIDELITY_CHECKS = ("product_match", "no_text_or_logos", "no_real_person_face")
+FIDELITY_CHECKS = ("product_match", "no_text_or_logos", "no_real_person_face", "anatomy", "fits_post_date")
 SETTINGS = ["standing by a big window in a bright apartment with plants",
             "walking along a leafy city sidewalk on a crisp autumn afternoon",
             "sitting at a small café table by the window",
@@ -184,8 +186,8 @@ def generate(con, cid, hf=None, model=MODEL):
 
 def verdict(con, cid, passed, reason=None, actor="claude", failed_checks=()):
     p = _row(con, cid)
-    if _state(con, cid) not in ("image_generated", "fidelity_failed", "captioned", "qa_failed"):
-        raise SystemExit(f"{cid} is {_state(con, cid)}; a verdict needs a generated picture")
+    if _state(con, cid) not in ("image_generated", "fidelity_failed", "captioned", "qa_failed", "awaiting_approval"):
+        raise SystemExit(f"{cid} is {_state(con, cid)}; a verdict needs a generated picture not yet approved")
     f = HUB / (p["image_path"] or "")
     if not p["image_path"] or not f.exists() or content.sha256_file(f) != p["image_sha256"]:
         raise SystemExit(f"{cid}: the picture is missing or changed since it was generated; generate again")
