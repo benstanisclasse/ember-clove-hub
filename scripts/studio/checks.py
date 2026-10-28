@@ -95,8 +95,9 @@ def text_ok(text):
 
 
 def disclosure_findings(caption, ai):
-    if ai and "#aigenerated" not in (caption or "").lower():
-        return [finding("critical", "ai_disclosure", "AI-made media needs #aigenerated in the caption")]
+    # Owner 2026-10-28: captions no longer carry #aigenerated (TikTok's own AI label discloses); flag it if it creeps back
+    if "#aigenerated" in (caption or "").lower():
+        return [finding("medium", "ai_disclosure", "owner asked for no #aigenerated in captions (2026-10-28)")]
     return []
 
 

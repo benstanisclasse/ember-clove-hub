@@ -4,8 +4,8 @@ Owner 2026-10-27: the Facebook Page posts pictures only (no videos, no Ember bac
 weekends. Products come from the store's public feed (emberandclove.com/products.json). The planner picks the
 supplier's real photos (32-character hex file names), each scanned for AI content credentials before use.
 Owner 2026-10-27 (Content Studio Phase B): AI pictures are a standard post type; any post whose photos are not real
-supplier photos (or that has an `ai_picture`) must carry #aigenerated in its caption, and publish refuses it
-otherwise. Later that day the owner dropped per-picture approval ("i dont need to approve every image i approve do
+supplier photos (or that has an `ai_picture`) carried #aigenerated in its caption until the owner dropped the tag
+on 2026-10-28 ("stop adding # ai generated"). Later on 2026-10-27 the owner dropped per-picture approval ("i dont need to approve every image i approve do
 it"): Claude checks each picture. Since Phase D, AI-picture weeks are made in the database with
 scripts/studio/fb_ai.py (no plan file, no hand edits); this script keeps the supplier-photo weeks.
 Captions use the product's own description and pass the shared rules in scripts/studio/checks.py (no prices, delivery

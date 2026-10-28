@@ -340,13 +340,15 @@ def test_links_and_store_sessions_by_content_id(tmpdb, tmp_path):
     assert got == {"FB-2099-01-01-00": {"sessions": 6, "cart_sessions": 1, "checkout_sessions": 1, "completed_sessions": 0}}
 
 
-def test_quality_flags_ai_picture_without_disclosure(tmpdb):
+def test_ai_picture_needs_no_caption_tag(tmpdb):
+    # owner 2026-10-28: no #aigenerated in captions, so an AI picture without it is not an issue
     con = content.connect()
     content.ensure_schema(con)
     content.upsert_item(con, {"content_id": "FB-x", "channel": "facebook", "kind": "fb_ai_picture", "workflow": "fb",
                               "state": "scheduled", "ai_disclosure": 0})
-    checks = {i["check"]: i["severity"] for i in content.quality_checks(con)}
-    assert checks["AI picture without #aigenerated"] == "critical"
+    assert not any("aigenerated" in i["check"] for i in content.quality_checks(con))
+    assert checks.disclosure_findings("Soft knit. #aigenerated", True)[0]["severity"] == "medium"
+    assert checks.disclosure_findings("Soft knit.", True) == []
 
 
 def test_facebook_link_carries_the_content_id():
@@ -507,7 +509,7 @@ def test_ai_week_is_made_in_the_database(fbweek):
     rows = {r["content_id"]: dict(r) for r in con.execute("SELECT * FROM content_items")}
     assert all(r["state"] == "planned" and r["kind"] == "fb_ai_picture" and r["plan_file"] is None for r in rows.values())
     cap = rows[ids[0]]["caption"]
-    assert cap.endswith("#aigenerated") and "utm_content=FB-2099-01-05-00" in cap
+    assert "#aigenerated" not in cap and "utm_content=FB-2099-01-05-00" in cap
     with pytest.raises(SystemExit):
         fb_ai.plan_week(con, dt.date(2099, 1, 5), 2, _feed(), FB_RULES, [])  # never planned twice
 

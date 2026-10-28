@@ -151,9 +151,10 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
                        platform_status=post.get("status") or "queued")
     if mode == "scheduled" and (actor != "owner" or not quote):
         raise db.GateError("scheduled mode posts publicly by itself: owner only, with their words")
-    # Owner 2026-10-27: every post carries the AI disclosure; PostZen can't set is_aigc, so the caption does.
-    if mode == "scheduled" and "#aigenerated" not in (ep["caption"] or "").lower():
-        raise db.GateError(f"{ep['id']}: the caption needs #aigenerated (PostZen can't set TikTok's AI flag)")
+    # PostZen can't set TikTok's AI-generated label and captions no longer carry #aigenerated (owner 2026-10-28),
+    # so AI videos go to drafts, where the owner switches the label on when posting.
+    if mode == "scheduled":
+        raise db.GateError(f"{ep['id']}: a scheduled post can't carry TikTok's AI label; send it to drafts instead")
     local, when = slot_time(ep, b)
     if local <= dt.datetime.now(local.tzinfo) + dt.timedelta(minutes=2):
         raise db.GateError(f"{ep['id']}'s slot {local:%Y-%m-%d %H:%M} has passed; re-plan it")

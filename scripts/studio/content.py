@@ -735,8 +735,6 @@ def quality_checks(con):
     for r in con.execute("SELECT content_id FROM content_items WHERE content_id NOT IN (SELECT content_id FROM content_products) "
                          "AND state NOT IN ('planned')"):
         issues.append({"severity": "low", "check": "no product linked", "detail": r["content_id"]})
-    for r in con.execute("SELECT content_id FROM content_items WHERE kind = 'fb_ai_picture' AND ai_disclosure = 0"):
-        issues.append({"severity": "critical", "check": "AI picture without #aigenerated", "detail": r["content_id"]})
     for r in con.execute("SELECT content_id FROM content_items WHERE channel = 'facebook' AND state NOT IN ('planned') "
                          "AND content_id NOT IN (SELECT content_id FROM content_links)"):
         issues.append({"severity": "medium", "check": "Facebook post without a tracked store link", "detail": r["content_id"]})

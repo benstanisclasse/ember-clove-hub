@@ -5,7 +5,7 @@ JSON by hand). Every post is a row in studio.db (`fb_ai_posts` + `content_items`
 edited by hand and every step is recorded as a content_event:
 
   plan      planned            products, slots and captions from facebook_photos.plan (same rules: season, no repeats,
-                               outfit every Nth post); caption ends #aigenerated; scene from the product type
+                               outfit every Nth post); no #aigenerated (owner 2026-10-28); scene from the product type
   scene     planned            optional: a custom scene for one post (the rest of the prompt is the template)
   generate  image_generated    Higgsfield image from the post's supplier photos (template studio/templates/
                                fb_ai_picture.j2); the generation job is recorded (Phase C)
@@ -16,7 +16,7 @@ edited by hand and every step is recorded as a content_event:
                                scene that fits the post date (no summer clothes in November). Owner 2026-10-27: "i dont need to approve
                                every image i approve do it" -> Claude checks; a failed picture is held, `generate`
                                makes a new one
-  qa        awaiting_approval  shared rules (scripts/studio/checks.py): caption wording, #aigenerated, every product
+  qa        awaiting_approval  shared rules (scripts/studio/checks.py): caption wording (no #aigenerated), every product
             | qa_failed        ACTIVE and in stock, the file present and the one that passed the fidelity check
   approve   approved           {quote, actor, at, asset_sha256, caption_sha256}: bound to this file and caption
   schedule  scheduled          hashes and availability checked again, image uploaded once, sent to PostZen
@@ -130,7 +130,7 @@ def plan_week(con, start, days, products, rules, history):
     posts = fp.plan(start, days, rules, products, history)
     types = {p["handle"]: p["product_type"] for p in products}
     for n, p in enumerate(posts):
-        caption = p["caption"].rstrip() + "\n\n#aigenerated"
+        caption = p["caption"].rstrip()  # no #aigenerated (owner, 2026-10-28)
         con.execute("INSERT INTO fb_ai_posts (content_id, week, date, slot, kind, products, titles, supplier_photos, "
                     "scene, caption, first_comment, caption_format, question) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (p["content_id"], week, p["date"], p["slot"], p["kind"], json.dumps(p["products"]),
