@@ -5,3 +5,5 @@ On 2026-10-28 the account was found suspended (manager account K120006X8A, "poli
 spent. Owner: "remove Microsoft from our system". Removed from the ads refresh task, ads_snapshot.py, attribution
 (Bing visits now count as Search), the dashboard pages and analytics.db. `microsoft_uet_custom_pixel.js` is the code
 that was installed as the Shopify custom pixel "Microsoft UET"; kept here for the record only.
+
+2026-10-28 ~08:30 ET: the "Microsoft UET" custom pixel (XXX) was disconnected and deleted in Shopify at the owner's request.
