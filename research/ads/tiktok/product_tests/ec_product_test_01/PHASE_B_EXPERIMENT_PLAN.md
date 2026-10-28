@@ -93,9 +93,9 @@ Shared hypotheses: **A product-first** - the product's own look, shown large on 
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P001_A_PRODUCT | Visual attraction | Sculpted pleats, clean lines | 1 Model in the brown dress, studio cream backdrop, dress fills frame | 2 Side profile: mock neck and fitted bodice | 3 Pleats flaring at the hip, mid-step | Mock neck, fitted bodice and pleats that flare from metal rings at the hip. #aigenerated | Can a premium dress sell on silhouette alone? |
+| EC_TT_P001_A_PRODUCT | Visual attraction | Sculpted pleats, clean lines | 1 Model in the brown dress, studio cream backdrop, dress fills frame | 2 Side profile: mock neck and fitted bodice | 3 Pleats flaring at the hip, mid-step | Mock neck, fitted bodice and a skirt that flares out from metal rings at the hip. #aigenerated | Can a premium dress sell on silhouette alone? |
 | EC_TT_P001_B_LIFESTYLE | Occasion need | Holiday party, one piece | 1 Evening holiday dinner, warm lights, dress with sheer black tights and knee boots | 2 At the table with friends, dress visible | 3 Leaving with a long coat over the dress | One dress for the holiday party. Add tights and boots and you are ready. #aigenerated | Does a party occasion beat the dress shown on its own? |
-| EC_TT_P001_C_BENEFIT | Differentiation | The detail: metal ring pleats | 1 Macro of the metal ring and pleat fan | 2 Mid-shot of the bodice and mock neck | 3 Full look, walking, pleats moving | The detail that makes it: pleats fanned out from metal ring hardware. #aigenerated | Does calling out the signature detail beat mood and occasion? |
+| EC_TT_P001_C_BENEFIT | Differentiation | The detail: metal ring pleats | 1 Macro of the metal ring and pleat fan | 2 Mid-shot of the bodice and mock neck | 3 Full look, walking, pleats moving | The detail that makes it: a full flare fanned out from metal ring hardware. #aigenerated | Does calling out the signature detail beat mood and occasion? |
 
 ### P003 3D Rose Blazer Mini Dress (variant shown: Black)
 
