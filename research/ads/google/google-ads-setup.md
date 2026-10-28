@@ -73,8 +73,14 @@ Owner then: "can you make a campagin".
     start 2026-10-28, no end date; asset optimization (text customization, final URL expansion + 2 more) on.
 - Asset group "Performance Max-1": feed-only ("Products from Ember & Clove"), no headlines/images/videos,
   no audience signal, Ad strength Poor. Ads would be product (Shopping) ads from the feed.
-- [ ] Owner decision: turn off text customization / final URL expansion (Google-written text could mention
-  shipping, which the ad rules forbid)?
+- [x] Owner: "Yes, turn off text customization and final URL expansion on Performance Max-1." Done; the
+  Asset optimization row now reads "Video enhancement and image enhancement are turned on" (text
+  customization and final URL expansion off).
+- [ ] Owner asked to expand to English-speaking countries (UK, Australia, US). Not done: the store sells to
+  the US only (Shopify: one shipping zone "Domestic" = US; one market "United States"; Merchant Center
+  shipping/returns are US only). UK/AU first need Shopify Markets + shipping rates (supplier delivery to
+  UK/AU), returns terms, and Merchant Center shipping/returns for those countries; only then add the
+  campaign locations. Waiting on the owner.
 - [ ] Wait: Merchant Center items are 0 approved / 1,585 "Available soon"; the campaign can't serve products
   until approved. Then the owner switches the campaign on.
 - Note: the account still holds BridgeMark's two paused Smart campaigns and its lead goals; ads will run
