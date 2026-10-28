@@ -86,6 +86,33 @@
 
   <p class="es-note">Paid ads moved to <a href="/ads">Advertising</a>.</p>
 
+  <section class="es-sec" id="perpost">
+    <h2 class="es-h2">Post performance, compared fairly</h2>
+    <div class="es-card">
+      <p class="es-note">Each live post at the same ages: 24 hours, 48 hours and 7 days after it went live, plus now. Values come only from
+        snapshots the dashboard actually took (every 15 minutes since Oct 27); a mark stays empty until it has happened and been
+        captured, nothing is estimated. Videos you post by hand from the TikTok drafts are timed from the first snapshot that showed
+        views. "Per 1k" = per 1,000 impressions. Store visits come from the post's tracking tag in Shopify.</p>
+      <div class="es-tablewrap"><table class="es-table" id="pp-table"></table></div>
+    </div>
+    <div class="es-card">
+      <div class="es-controls" style="justify-content:space-between"><h3 class="es-h2">Compare by feature</h3>
+        <select class="es-select" id="pp-feature" aria-label="Feature to compare"></select></div>
+      <p class="es-note" id="pp-feature-note">Groups with fewer than 5 posts are marked: too few to compare.</p>
+      <div class="es-tablewrap"><table class="es-table" id="pp-groups"></table></div>
+    </div>
+  </section>
+
+  <section class="es-sec" id="production">
+    <h2 class="es-h2">Production cost</h2>
+    <div class="es-card">
+      <p class="es-note">Every AI generation job: videos, first frames and images. Cost basis says how each cost is known (billed by the
+        provider, an estimate, or not reported). Higgsfield does not report image costs, so those stay empty rather than guessed.</p>
+      <div class="es-tiles" id="pc-tiles"></div>
+      <div class="es-tablewrap"><table class="es-table" id="pc-table"></table></div>
+    </div>
+  </section>
+
   <section class="es-sec" id="tiktok">
     <h2 class="es-h2">TikTok</h2>
     <div class="es-tiles">
@@ -396,4 +423,85 @@ dash.onData(() => {
     ['Comments', r => num(r.comments), 1], ['Shares', r => num(r.shares), 1], ['Clicks', r => num(r.clicks), 1],
     ['Eng.', r => pct(engFB(r)), 1]], 'published');
 });
+
+// --- Content Studio Phase C: fair per-post comparison, feature groups, production cost -----------------------------
+(() => {
+  const {el, num, fmt, usd} = ui;
+  const FEATURES = [['series', 'Series'], ['hook_type', 'Hook type'], ['weekday', 'Weekday'], ['slot', 'Time slot'],
+    ['product_category', 'Product category'], ['cta_type', 'Call to action'], ['room', 'Room'], ['post_kind', 'Facebook post kind'],
+    ['caption_question', 'Caption asks a question'], ['ai_picture', 'AI picture']];
+  let feature = 'series';
+  const opt = v => v == null || v === '' ? '—' : fmt(Math.round(num(v)));
+  const seen = (r, m) => r.channel === 'tiktok' ? r[`views_${m}`] : (r[`impressions_${m}`] ?? r[`views_${m}`]);
+
+  function drawPerPost() {
+    const live = ui.rows('content_queue').filter(r => r.publish_state === 'public');
+    ui.table(document.getElementById('pp-table'), live, [
+      {k: 'slot_local', label: 'Live', f: v => v ? ui.day(v.slice(0, 10)) : '—'},
+      {k: 'channel', label: 'Channel', f: v => v === 'tiktok' ? 'TikTok' : 'Facebook'},
+      {k: 'title', label: 'Post', f: (v, r) => (r.caption || v || '').split('\n')[0].slice(0, 60)},
+      {k: 'v24', label: 'Seen 24h', n: 1, f: (v, r) => opt(seen(r, '24h'))},
+      {k: 'v48', label: '48h', n: 1, f: (v, r) => opt(seen(r, '48h'))},
+      {k: 'v7d', label: '7d', n: 1, f: (v, r) => opt(seen(r, '7d'))},
+      {k: 'vnow', label: 'Now', n: 1, f: (v, r) => opt(seen(r, 'latest'))},
+      {k: 'eng_per_1k_latest', label: 'Eng. per 1k', n: 1, f: v => v == null ? '—' : String(v)},
+      {k: 'clicks_per_1k_latest', label: 'Clicks per 1k', n: 1, f: v => v == null ? '—' : String(v)},
+      {k: 'store_sessions', label: 'Store visits', n: 1, f: v => v == null ? '—' : fmt(v)},
+      {k: 'gen_cost_usd', label: 'Made for', n: 1, f: v => v == null ? '—' : usd(num(v))}],
+      {empty: 'No live posts yet.', sortKey: 'slot_local'});
+
+    const sel = document.getElementById('pp-feature');
+    if (sel.options.length !== FEATURES.length) {
+      sel.replaceChildren(...FEATURES.map(([v, l]) => el('option', {value: v, text: l})));
+      sel.onchange = () => { feature = sel.value; drawPerPost(); };
+    }
+    sel.value = feature;
+    const groups = d3.groups(live, r => (r.features || {})[feature] ?? '(not set)').map(([k, rs]) => {
+      const now = rs.map(r => num(seen(r, 'latest'))).filter(v => v != null);
+      const d1 = rs.map(r => num(seen(r, '24h'))).filter(v => v != null);
+      const eng = rs.map(r => num(r.eng_per_1k_latest)).filter(v => v != null);
+      return {group: k === '1' ? 'yes' : k === '0' ? 'no' : k, posts: rs.length, median_24h: d1.length ? d3.median(d1) : null,
+              median_now: now.length ? d3.median(now) : null, eng: eng.length ? d3.mean(eng) : null,
+              visits: d3.sum(rs, r => num(r.store_sessions) || 0), enough: rs.length >= 5 ? 'yes' : 'too few to compare'};
+    });
+    ui.table(document.getElementById('pp-groups'), groups, [{k: 'group', label: FEATURES.find(f => f[0] === feature)[1]},
+      {k: 'posts', label: 'Live posts', n: 1, f: fmt}, {k: 'median_24h', label: 'Median seen 24h', n: 1, f: opt},
+      {k: 'median_now', label: 'Median seen now', n: 1, f: opt}, {k: 'eng', label: 'Avg eng. per 1k', n: 1, f: v => v == null ? '—' : v.toFixed(1)},
+      {k: 'visits', label: 'Store visits', n: 1, f: fmt}, {k: 'enough', label: 'Sample', cls: r => r.posts >= 5 ? 'st-ok' : 'st-warn'}],
+      {empty: 'No live posts yet.', sortKey: 'posts'});
+  }
+
+  function drawProduction() {
+    const d = dash.data('content_jobs'), tiles = document.getElementById('pc-tiles'), tbl = document.getElementById('pc-table');
+    if (d.status !== 'ok') {
+      tiles.replaceChildren(el('p', {class: 'es-empty', text: d.status === 'loading' ? 'Loading…' : 'Not connected yet (the dashboard server does not serve content_jobs yet).'}));
+      tbl.replaceChildren(); return;
+    }
+    const jobs = d.data, q = ui.rows('content_queue');
+    const done = jobs.filter(j => j.status === 'completed'), failed = jobs.filter(j => j.status !== 'completed' && j.status !== 'running');
+    const total = d3.sum(jobs, j => num(j.cost_usd) || 0);
+    const published = q.filter(r => r.publish_state === 'public'), costed = published.filter(r => num(r.gen_cost_usd) != null);
+    tiles.replaceChildren(
+      ui.kpi({label: 'Recorded generation cost', value: total, format: usd, sub: `${jobs.length} jobs`, source: 'generation_jobs'}),
+      ui.kpi({label: 'Failed or unknown jobs', value: failed.length, format: fmt, sub: jobs.length ? `${Math.round(100 * failed.length / jobs.length)}% of jobs` : '', source: 'generation_jobs'}),
+      ui.kpi({label: 'Cost per live post', value: costed.length ? d3.mean(costed, r => num(r.gen_cost_usd)) : null, format: usd,
+              sub: `${costed.length} of ${published.length} live posts have a recorded cost`, source: 'image costs not reported'}),
+      ui.kpi({label: 'Images with no recorded cost', value: jobs.filter(j => j.kind === 'image' && j.cost_usd == null).length, format: fmt,
+              sub: 'Higgsfield does not report image cost', source: 'generation_jobs'}));
+    const groups = d3.groups(jobs, j => `${j.kind} · ${j.provider || 'unknown'} · ${j.model || 'unknown'}`).map(([k, js]) => {
+      const ok = js.filter(j => j.status === 'completed'), known = js.some(j => num(j.cost_usd) != null);
+      const cost = known ? d3.sum(js, j => num(j.cost_usd) || 0) : null;
+      return {group: k, jobs: js.length, completed: ok.length, failed: js.length - ok.length, cost,
+              per_asset: ok.length && known ? cost / ok.length : null,
+              basis: [...new Set(js.map(j => j.cost_basis || 'not recorded'))].join(', ')};
+    });
+    ui.table(tbl, groups, [{k: 'group', label: 'Kind · provider · model'}, {k: 'jobs', label: 'Jobs', n: 1, f: fmt},
+      {k: 'completed', label: 'Completed', n: 1, f: fmt}, {k: 'failed', label: 'Failed', n: 1, f: fmt},
+      {k: 'cost', label: 'Cost', n: 1, f: v => v == null ? 'not recorded' : usd(v)}, {k: 'per_asset', label: 'Per finished asset', n: 1, f: v => v == null ? '—' : usd(v)},
+      {k: 'basis', label: 'Cost basis'}], {sortKey: 'cost', total: {group: 'All', jobs: jobs.length, completed: done.length,
+      failed: jobs.length - done.length, cost: total, per_asset: null, basis: ''}});
+  }
+
+  dash.onData(() => { drawPerPost(); drawProduction(); });
+})();
 </script>

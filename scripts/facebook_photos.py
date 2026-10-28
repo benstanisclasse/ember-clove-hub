@@ -144,14 +144,16 @@ def question(p, rng):
     return rng.choice(pool)
 
 
-def link(p, rules, day, slot):
-    # Hub tracking convention (scripts/attribution.py): organic_social; posts before 2026-10-28 used "social"
+def link(p, rules, day, slot, content_id=None):
+    # Hub tracking convention (scripts/attribution.py): organic_social; posts before 2026-10-28 used "social".
+    # utm_content = the post's content id (Content Studio Phase C), so store visits map straight back to the post;
+    # older posts carry <date>_<HHMM>, which content.collect_links still maps.
     from attribution import tag_link
     return tag_link(f"{rules['store_url']}/products/{p['handle']}", "facebook_organic", "fb_photos",
-                    f"{day}_{slot.replace(':', '')}")
+                    content_id or f"{day}_{slot.replace(':', '')}")
 
 
-def single_post(p, rules, rng, day, slot):
+def single_post(p, rules, rng, day, slot, content_id=None):
     photos = clean_photos(p, rules["max_photos"])
     if not photos:
         return None
@@ -160,7 +162,7 @@ def single_post(p, rules, rng, day, slot):
     if len(cols) > 1:
         lines.append(f"In {len(cols)} colors." if len(cols) > 3 else f"In {', '.join(cols[:-1])} and {cols[-1]}.")
     lines += ["", question(p, rng)]
-    shop = f"Shop it here: {link(p, rules, day, slot)}"
+    shop = f"Shop it here: {link(p, rules, day, slot, content_id)}"
     if rules.get("link_placement", "caption") == "caption":
         return {"kind": "product", "products": [p["handle"]], "titles": [p["title"]], "photos": photos,
                 "caption": "\n".join(lines + ["", shop]), "first_comment": None}
@@ -168,14 +170,14 @@ def single_post(p, rules, rng, day, slot):
             "caption": "\n".join(lines), "first_comment": shop}
 
 
-def outfit_post(parts, rules, day, slot):
+def outfit_post(parts, rules, day, slot, content_id=None):
     firsts = [clean_photos(p, 1) for p in parts]
     if not all(firsts):
         return None
     names = [p["title"] for p in parts]
     caption = "\n".join(["One outfit, three pieces:", *[f"• {n}" for n in names], "",
                          "Which piece would you wear first?"])
-    comment = "Shop the pieces:\n" + "\n".join(f"{p['title']}: {link(p, rules, day, slot)}" for p in parts)
+    comment = "Shop the pieces:\n" + "\n".join(f"{p['title']}: {link(p, rules, day, slot, content_id)}" for p in parts)
     if rules.get("link_placement", "caption") == "caption":
         caption, comment = f"{caption}\n\n{comment}", None
     return {"kind": "outfit", "products": [p["handle"] for p in parts], "titles": names,
@@ -202,15 +204,16 @@ def plan(start, days, rules, products, history, seed=None):
         slots = rules["slots_weekend"] if day.weekday() >= 5 else rules["slots_weekday"]
         for slot in slots:
             post = None
+            cid = f"FB-{start.isoformat()}-{len(posts):02d}"  # the id content.py gives this post (plan start + index)
             if len(posts) % rules["outfit_every"] == rules["outfit_every"] - 1:
                 parts = pick_outfit(pool, rng, used)
-                post = parts and outfit_post(parts, rules, day.isoformat(), slot)
+                post = parts and outfit_post(parts, rules, day.isoformat(), slot, cid)
             if not post:
                 fresh = [p for p in pool if p["handle"] not in used and p["product_type"] != last_type]
                 if not fresh:
                     fresh = [p for p in pool if p["handle"] not in used] or pool
                 for p in rng.sample(fresh, len(fresh)):  # first product with a usable photo
-                    post = single_post(p, rules, rng, day.isoformat(), slot)
+                    post = single_post(p, rules, rng, day.isoformat(), slot, cid)
                     if post:
                         last_type = p["product_type"]
                         break
@@ -218,7 +221,7 @@ def plan(start, days, rules, products, history, seed=None):
                     print(f"  {day} {slot}: no product with a usable photo; slot left empty")
                     continue
             used |= set(post["products"])
-            posts.append({"date": day.isoformat(), "slot": slot, **post})
+            posts.append({"date": day.isoformat(), "slot": slot, "content_id": cid, **post})
     return posts
 
 

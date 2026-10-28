@@ -15,7 +15,7 @@ import hf_api  # noqa: E402
 import hub_env  # noqa: E402
 import video_pilot as vp  # noqa: E402
 
-from studio import db, gates  # noqa: E402
+from studio import content, db, gates  # noqa: E402
 
 API = "https://openrouter.ai/api/v1"
 EPISODES = HUB / "studio" / "episodes"
@@ -105,7 +105,14 @@ def generate(con, ep, b, test, trial_model=None, video_cap=None, frame=None, day
     if trial and trial["frames_only"]:
         if frame is None:  # otherwise reuse the preview still the owner already saw
             frame = out_dir / f"{ep['id']}_a{ep['attempt'] + 1}_first_frame.png"
-            frame_cost = first_frame(ep, script, b, frame)
+            fjob = content.start_job(con, f"TT-{ep['id']}", "image", "openrouter", FRAME_MODEL,
+                                     {"purpose": "first_frame"}, "first_frame.j2")
+            try:
+                frame_cost = first_frame(ep, script, b, frame)
+            except Exception as e:
+                content.finish_job(con, fjob, "failed", error=f"{type(e).__name__}: {e}")
+                raise
+            content.finish_job(con, fjob, "completed", cost_usd=frame_cost, cost_basis="billed", output_path=frame)
             con.execute("INSERT INTO spend (episode_id, usd, at) VALUES (?,?,?)", (ep["id"], frame_cost, db.now()))
             con.commit()
         payload["frame_images"] = [{"type": "image_url", "image_url": {"url": hf_api.upload(frame)},
@@ -115,6 +122,24 @@ def generate(con, ep, b, test, trial_model=None, video_cap=None, frame=None, day
         payload["input_references"] = [{"type": "image_url", "image_url": {"url": u}} for u in urls]
     attempt = ep["attempt"] + 1
     out = out_dir / f"{ep['id']}_a{attempt}_{model.split('/')[-1]}_{resolution}.mp4"
+    # Content Studio Phase C: every attempt is recorded (provider, model, template version, prompt, references,
+    # timings, cost and how the cost is known) and never overwritten.
+    provider = "higgsfield" if (trial or {}).get("provider") == "higgsfield" else "openrouter"
+    refs = [str(frame)] if trial and trial["frames_only"] else list(gates.reference_images(ep, b, face_ref))
+    job_id = content.start_job(con, f"TT-{ep['id']}", "video", provider, model,
+                               {"resolution": resolution, "duration_s": g.duration_s, "face_ref": face_ref,
+                                "trial": bool(trial), "attempt": attempt}, template, phash, prompt, refs)
+    try:
+        return _run_generation(con, ep, b, test, g, trial, model, resolution, payload, prompt, phash, est, out,
+                               attempt, job_id, urls if not (trial and trial["frames_only"]) else None)
+    except Exception as e:
+        row = con.execute("SELECT status FROM generation_jobs WHERE job_id = ?", (job_id,)).fetchone()
+        if row and row["status"] == "running":
+            content.finish_job(con, job_id, "failed", error=f"{type(e).__name__}: {e}")
+        raise
+
+
+def _run_generation(con, ep, b, test, g, trial, model, resolution, payload, prompt, phash, est, out, attempt, job_id, urls):
     if (trial or {}).get("provider") == "higgsfield":
         hf_model = model.split(":", 1)[1]
         try:
@@ -129,8 +154,12 @@ def generate(con, ep, b, test, trial_model=None, video_cap=None, frame=None, day
         con.execute("INSERT INTO spend (episode_id, usd, at) VALUES (?,?,?)", (ep["id"], cost, db.now()))
         con.commit()
         if not done:
+            content.finish_job(con, job_id, s.get("status") or "failed", sub.get("request_id"), 0.0, "estimate",
+                               error=str(s.get("error") or s)[:300])
             raise db.GateError(f"Generation ended {s.get('status')}: {str(s.get('error') or s)[:300]}")
         hf_api.download((s.get("video") or {})["url"], out)
+        content.finish_job(con, job_id, "completed", sub.get("request_id"), cost, "estimate (Higgsfield reports no cost)",
+                           output_path=out)
     else:
         r = requests.post(f"{API}/videos", headers=_headers(), json=payload, timeout=60)
         if not r.ok:
@@ -141,14 +170,19 @@ def generate(con, ep, b, test, trial_model=None, video_cap=None, frame=None, day
             s = requests.get(job["polling_url"], headers=_headers(), timeout=60).json()
             if s.get("status") in ("completed", "failed") or time.time() - start > 1800:
                 break
-        cost = float((s.get("usage") or {}).get("cost") or (est if s.get("status") == "completed" else 0))
+        billed = (s.get("usage") or {}).get("cost")
+        cost = float(billed or (est if s.get("status") == "completed" else 0))
+        basis = "billed" if billed else "estimate"
         con.execute("INSERT INTO spend (episode_id, usd, at) VALUES (?,?,?)", (ep["id"], cost, db.now()))
         con.commit()
         if s.get("status") != "completed":
+            content.finish_job(con, job_id, s.get("status") or "timeout", job.get("id"), cost, basis,
+                               error=str(s.get("error") or s)[:300])
             raise db.GateError(f"Generation failed: {str(s.get('error') or s)[:300]}")
-        content = requests.get(s["unsigned_urls"][0], headers=_headers(), timeout=300)
-        content.raise_for_status()
-        out.write_bytes(content.content)
+        resp = requests.get(s["unsigned_urls"][0], headers=_headers(), timeout=300)
+        resp.raise_for_status()
+        out.write_bytes(resp.content)
+        content.finish_job(con, job_id, "completed", job.get("id"), cost, basis, output_path=out)
     (out.parent / f"{out.stem}.prompt.txt").write_text(prompt, encoding="utf-8")
     return db.move(con, ep["id"], "GENERATED", "studio", f"generated attempt {attempt} (${cost:.2f})",
                    prompt_text=prompt, prompt_hash=phash, model=model, resolution=resolution,

@@ -182,7 +182,7 @@ def _product():
 
 def test_link_goes_in_caption_by_default(monkeypatch):
     monkeypatch.setattr(facebook_photos, "clean_photos", lambda p, n: ["https://x/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.jpg"])
-    monkeypatch.setattr(facebook_photos, "link", lambda p, rules, day, slot: "https://shop/link")
+    monkeypatch.setattr(facebook_photos, "link", lambda p, rules, day, slot, cid=None: "https://shop/link")
     post = facebook_photos.single_post(_product(), {"max_photos": 4}, random.Random(1), "2099-01-01", "09:00")
     assert post["first_comment"] is None and post["caption"].endswith("Shop it here: https://shop/link")
     post = facebook_photos.single_post(_product(), {"max_photos": 4, "link_placement": "first_comment"}, random.Random(1),
@@ -221,3 +221,136 @@ def test_frame_route_only_serves_real_episode_ids():
     from studio import dashboard_server
     for bad in ("../../config/hub", "EW-20261103-1/../../x", "", "TT-EW-20261103-1", "EW-20261102-2-T1"):
         assert dashboard_server.episode_frames(bad) is None
+
+
+# --- Phase C: generation records, features, marks, links ------------------------------------------------------------
+
+def test_generation_job_lifecycle(tmpdb, tmp_path, monkeypatch):
+    monkeypatch.setattr(content, "HUB", tmp_path)
+    con = content.connect()
+    jid = content.start_job(con, "TT-EW-1", "video", "openrouter", "bytedance/seedance-2.5", {"resolution": "480p"},
+                            prompt_hash="abc", prompt_text="p", refs=["https://x/a.jpg", "https://x/b.jpg"])
+    assert con.execute("SELECT status FROM generation_jobs WHERE job_id = ?", (jid,)).fetchone()[0] == "running"
+    out = tmp_path / "v.mp4"
+    out.write_bytes(b"video")
+    aid = content.finish_job(con, jid, "completed", "or-1", 1.44, "billed", output_path=out)
+    j = con.execute("SELECT * FROM generation_jobs WHERE job_id = ?", (jid,)).fetchone()
+    assert (j["status"], j["provider_job_id"], j["cost_usd"], j["asset_id"]) == ("completed", "or-1", 1.44, aid)
+    assert con.execute("SELECT sha256 FROM assets WHERE asset_id = ?", (aid,)).fetchone()[0] == content.sha256_file(out)
+    assert con.execute("SELECT COUNT(*) FROM asset_refs WHERE job_id = ?", (jid,)).fetchone()[0] == 2
+
+
+def test_failed_job_keeps_no_cost(tmpdb):
+    con = content.connect()
+    jid = content.start_job(con, "IMG-x/1", "image", "higgsfield", "flare")
+    content.finish_job(con, jid, "failed", error="TimeoutError: slow")
+    j = con.execute("SELECT status, cost_usd, error, asset_id FROM generation_jobs WHERE job_id = ?", (jid,)).fetchone()
+    assert tuple(j) == ("failed", None, "TimeoutError: slow", None)
+
+
+def test_backfill_is_idempotent(tmpdb, tmp_path, monkeypatch):
+    monkeypatch.setattr(content, "HUB", tmp_path)
+    con = content.connect()
+    _episode(con, model="bytedance/seedance-2.5")
+    ep_dir = tmp_path / "studio" / "episodes" / "EW-20990101-1"
+    ep_dir.mkdir(parents=True)
+    (ep_dir / "EW-20990101-1_a1.mp4").write_bytes(b"v")
+    con.executemany("INSERT INTO spend (episode_id, usd, at) VALUES (?,?,?)",
+                    [("EW-20990101-1", 0.07, "t1"), ("EW-20990101-1", 1.44, "t2"), ("EW-20990101-1", 0, "t3")])
+    con.commit()
+    assert content.backfill_generation(con) == 3
+    assert content.backfill_generation(con) == 0
+    rows = {r["cost_usd"]: (r["kind"], r["status"]) for r in con.execute("SELECT * FROM generation_jobs")}
+    assert rows == {0.07: ("image", "completed"), 1.44: ("video", "completed"), 0: ("video", "failed_or_unknown")}
+
+
+def test_owner_features_are_never_overwritten(tmpdb):
+    con = content.connect()
+    content.ensure_schema(con)
+    content.set_feature(con, "TT-1", "hook_type", "pov", source="owner")
+    content.set_feature(con, "TT-1", "hook_type", "question")
+    content.set_feature(con, "TT-1", "room", "closet")
+    got = {r[0]: r[1] for r in con.execute("SELECT feature, value FROM content_features WHERE content_id = ?", ("TT-1",))}
+    assert got == {"hook_type": "pov", "room": "closet"}
+
+
+@pytest.mark.parametrize("line, expect", [("POV: you overslept", "pov"), ("Can you wear this?", "question"),
+                                          ("Three ways to style it.", "statement"), ("", None)])
+def test_hook_type(line, expect):
+    assert content.hook_type(line) == expect
+
+
+def _analytics(path, snaps=(), sources=()):
+    import sqlite3
+    a = sqlite3.connect(path)
+    a.execute("CREATE TABLE post_snapshots (post_id TEXT, fetched_at TEXT, views INT, impressions INT, reach INT, likes INT, "
+              "comments INT, shares INT, saves INT, clicks INT)")
+    a.execute("CREATE TABLE store_sources_daily (day TEXT, kind TEXT, content TEXT, sessions INT, cart_sessions INT, "
+              "checkout_sessions INT, completed_sessions INT)")
+    a.executemany("INSERT INTO post_snapshots VALUES (?,?,?,?,0,0,0,0,0,0)", snaps)
+    a.executemany("INSERT INTO store_sources_daily VALUES (?,?,?,?,?,?,?)", sources)
+    a.commit()
+    a.close()
+    return path
+
+
+def _marks(con, cid):
+    return {r["mark"]: r for r in con.execute("SELECT * FROM content_marks WHERE content_id = ?", (cid,))}
+
+
+def test_marks_only_from_real_snapshots_in_the_window(tmpdb, tmp_path):
+    con = content.connect()
+    content.ensure_schema(con)
+    content.record_publish(con, "FB-1", "facebook", "facebook_scheduled", "k1", state="public", postzen_post_id="fb1",
+                           scheduled_for="2026-10-20T13:00:00Z")
+    # 24h: a snapshot 2 h after the mark is used. 48h: only one 8 h late, so it stays empty. 7d: not reached yet.
+    path = _analytics(tmp_path / "a.db", [("fb1", "2026-10-20T14:00:00Z", 5, 9), ("fb1", "2026-10-21T15:00:00Z", 40, 80),
+                                          ("fb1", "2026-10-22T21:00:00Z", 60, 120)])
+    content.compute_marks(con, path)
+    marks = _marks(con, "FB-1")
+    assert set(marks) == {"24h", "latest"}
+    assert marks["24h"]["snapshot_at"] == "2026-10-21T15:00:00Z" and marks["latest"]["snapshot_at"] == "2026-10-22T21:00:00Z"
+    assert marks["24h"]["anchor_basis"] == "scheduled publish time"
+
+
+def test_hand_posted_draft_is_timed_from_first_views(tmpdb, tmp_path):
+    con = content.connect()
+    content.ensure_schema(con)
+    content.record_publish(con, "TT-1", "tiktok", "tiktok_draft", "k1", state="public", postzen_post_id="tt1",
+                           scheduled_for="2026-10-20T12:00:00Z")
+    path = _analytics(tmp_path / "a.db", [("tt1", "2026-10-20T12:15:00Z", 0, 0), ("tt1", "2026-10-21T09:00:00Z", 3, 3),
+                                          ("tt1", "2026-10-22T10:00:00Z", 50, 50)])
+    content.compute_marks(con, path)
+    m = _marks(con, "TT-1")["24h"]
+    assert m["anchor_at"] == "2026-10-21T09:00:00Z" and m["snapshot_at"] == "2026-10-22T10:00:00Z"
+    assert "posted by hand" in m["anchor_basis"]
+
+
+def test_links_and_store_sessions_by_content_id(tmpdb, tmp_path):
+    con = content.connect()
+    content.ensure_schema(con)
+    content.upsert_item(con, {"content_id": "FB-2099-01-01-00", "channel": "facebook", "kind": "fb_photo", "workflow": "fb",
+                              "state": "scheduled", "caption": "Soft top.\nShop it here: https://emberandclove.com/products/h"
+                              "?utm_source=facebook&utm_content=FB-2099-01-01-00"})
+    assert content.collect_links(con) == 1
+    path = _analytics(tmp_path / "a.db", sources=[("2099-01-01", "utm", "FB-2099-01-01-00", 4, 1, 1, 0),
+                                                  ("2099-01-02", "utm", "FB-2099-01-01-00", 2, 0, 0, 0),
+                                                  ("2099-01-02", "utm", "other", 9, 9, 9, 9)])
+    got = content.store_sessions_by_content(con, path)
+    assert got == {"FB-2099-01-01-00": {"sessions": 6, "cart_sessions": 1, "checkout_sessions": 1, "completed_sessions": 0}}
+
+
+def test_quality_flags_ai_picture_without_disclosure(tmpdb):
+    con = content.connect()
+    content.ensure_schema(con)
+    content.upsert_item(con, {"content_id": "FB-x", "channel": "facebook", "kind": "fb_ai_picture", "workflow": "fb",
+                              "state": "scheduled", "ai_disclosure": 0})
+    checks = {i["check"]: i["severity"] for i in content.quality_checks(con)}
+    assert checks["AI picture without #aigenerated"] == "critical"
+
+
+def test_facebook_link_carries_the_content_id():
+    rules = {"store_url": "https://emberandclove.com"}
+    url = facebook_photos.link({"handle": "soft-top"}, rules, "2099-01-01", "09:00", "FB-2099-01-01-00")
+    assert "utm_content=FB-2099-01-01-00" in url and "utm_campaign=fb_photos" in url
+    assert "utm_content=2099-01-01_0900" in facebook_photos.link({"handle": "soft-top"}, rules, "2099-01-01", "09:00")

@@ -113,6 +113,7 @@
       <button class="es-btn" type="button" id="q-csv">Download CSV</button></div>
     <p class="es-note">Every TikTok video and Facebook post in one list, with its production stage and honest publishing state
       (submitted, scheduled, in TikTok drafts, waiting for you to post, public, paused or failed). Click a row for its history.</p>
+    <div class="es-card" id="q-quality" hidden></div>
     <div class="es-controls"><div class="es-seg" id="q-chan" role="group" aria-label="Channel"></div>
       <div class="es-seg" id="q-state" role="group" aria-label="State"></div></div>
     <div class="es-tablewrap"><table class="es-table" id="q-table"></table></div>
@@ -581,8 +582,22 @@ const QCOLS = [{k: 'slot_local', label: 'When (ET)', f: v => v ? `${ui.day(v.sli
   {k: 'approved', label: 'Approved', f: v => v ? 'yes' : '—'}, {k: 'ai_disclosure', label: 'AI label', f: v => Number(v) ? 'yes' : '—'}];
 document.getElementById('q-csv').addEventListener('click', () => ui.csv(`content_queue_${ui.todayET()}.csv`, qRows, QCOLS));
 
+// Data-quality checks from content.py (duplicate PostZen ids, AI picture without disclosure, untracked links, stuck jobs)
+function drawQuality() {
+  const box = document.getElementById('q-quality'), d = dash.data('content_quality');
+  const issues = d.status === 'ok' ? [...d.data] : [];
+  box.hidden = !issues.length;
+  if (!issues.length) return;
+  const order = {critical: 0, high: 1, medium: 2, low: 3};
+  issues.sort((a, b) => (order[a.severity] ?? 9) - (order[b.severity] ?? 9));
+  box.replaceChildren(ui.el('h3', {class: 'es-h2', text: `${issues.length} content record ${issues.length === 1 ? 'issue' : 'issues'}`}),
+    ui.el('ul', {class: 'es-note'}, issues.slice(0, 12).map(i => ui.el('li', {class: ['critical', 'high'].includes(i.severity) ? 'st-bad' : 'st-warn',
+      text: `${i.check}: ${i.detail}`}))));
+}
+
 dash.onData(() => {
   drawQueue();
+  drawQuality();
   drawFacebook();
   ['when', 'series', 'status'].forEach(f => fill('next_post', document.querySelector(`[data-source="next_post"][data-field="${f}"]`), f));
   const h = {followers: fmt, posted: fmt, planned: fmt, views: v => v >= 10000 ? Intl.NumberFormat('en', {notation: 'compact', maximumFractionDigits: 1}).format(v) : fmt(v),
