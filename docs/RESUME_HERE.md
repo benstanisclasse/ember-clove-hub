@@ -37,12 +37,15 @@ Note: Dashboard 2.0 Phases E and F were completed in a parallel session.
 Must share Dashboard 2.0's infrastructure: same dashboard, same `studio/analytics.db` history store, same Shopify
 connector (`scripts/shopify_api.py`), same sync-health and backup jobs. No second dashboard or connector.
 
-## 3. Market Intelligence Engine 2.0 ("Market Intelligence Engine 2.0" master prompt) — Phase A done 2026-10-28; waiting for owner approval
+## 3. Market Intelligence Engine 2.0 ("Market Intelligence Engine 2.0" master prompt) — Phases A, B0, B done 2026-10-28; next C (with D)
 
 Phase A audit DONE → `MARKET_ENGINE_AUDIT.md`, `MARKET_DATA_QUALITY_REPORT.md`, `MARKET_MODEL_VALIDATION_AUDIT.md`,
-`MARKET_CREATIVE_COMPETITIVE_AUDIT.md`, `MARKET_ENGINE_V2_ROADMAP.md` (re-analysis script and coverage matrix in
-`research/kalodata/audit/`, which is outside git and backups until B0).
-Next: B0 (protect & correct) + B (data quality & model validation), both 0 credits, after owner approval and decisions
-D1–D6 in the roadmap. Shares the Hub's backup job, cost ledger, sync_runs, dashboard (Intelligence section), findings
-table and experiment registry; no parallel systems.
-To resume: "Start Market Engine Phase B0".
+`MARKET_CREATIVE_COMPETITIVE_AUDIT.md`, `MARKET_ENGINE_V2_ROADMAP.md`.
+B0 DONE (commits 8c598e9, 1edfe2b, a3dbec6): research/ in backups and git (reports), checksum reload + pull metadata,
+buyer identities stripped, 280 videos to the Recycle Bin, correction notes, credit budget in config (D1=30/month).
+B DONE (commits 7772346, 628b04b, 1e45b59; report = roadmap section 6): `scripts/market_data.py` point-in-time builder,
+`scripts/market_eval.py` rolling-origin harness + `research_runs` registry, model_v2 = logistic for all four tasks,
+v1 pinned, weekly report is now an offline-capable "Research shortlist — not a forecast". Tests: `scripts/test_market.py`.
+Next untouched test: Sep 2026 outcomes for the 1-month tasks once October lists exist (needs ~1.5 credits/category).
+Shares the Hub's backup job, cost ledger, sync_runs, dashboard (Intelligence section), findings table and experiment
+registry; no parallel systems. To resume: "Start Market Engine Phase C".

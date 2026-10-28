@@ -198,7 +198,13 @@ committed steps, after checking the other sessions aren't mid-change.
 | D5 | Use the weekly breakout report until Phase B is done? | Keep it as a ranked research shortlist without probabilities |
 | D6 | Widen the breakout population with sales ranks 501–1,000 (needs credits) | Later, after Phase B shows what the current population supports |
 
-**Approve Phase B0 + B to start.** B0 and B spend no credits.
+**Decided 2026-10-28:** the owner approved B0 + B with all six recommendations ("Yes, start Market Engine Phase B0 and
+B. Use your recommendations for decisions D1-D6."). D1 is in `config/hub.json` → `kalodata`; D2 done (videos to the
+Recycle Bin, buyer identities stripped); D3 recorded in `learnings.md` and the study's correction note (no rule
+changed); D4 applies in Phase H; D5 done (research shortlist); D6 deferred.
+
+**Adopted rankers (Phase B):** logistic regression for all four tasks. It was listed among the transparent baselines,
+and it beat the best single-number rule with a CI above zero; the gradient-boosted model never did, so it is not used.
 
 ---
 
