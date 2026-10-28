@@ -16,7 +16,7 @@ Date: 2026-10-28. Status: **30 prototypes ready for owner review.** Nothing publ
   Shopify photos as references (watermarked and creator photos excluded). Run 5 jobs in parallel (~8 min for 26).
 - Headline: Georgia Bold 58 px, one size for the whole set, ink on light / cream on dark, centred in the empty top band
   (y≈175 px of 1920, below TikTok's top tabs). **No disclosure text on pictures** (owner 2026-10-28); AI disclosure =
-  TikTok AI label on the Spark post + #aigenerated in the caption.
+  TikTok AI label on the Spark post only (no caption hashtag, owner 2026-10-28).
 - Framing fix: first pictures put heads where the headline goes; prompts now require the upper ~28% to be calm
   background. Close-up/macro slide-1 shots could not leave headline space without a visible seam, so C slide 1 for P001,
   P003, P009 became medium shots with the detail large (macros move to slide 2), and P012 A became a still life.

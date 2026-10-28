@@ -10,7 +10,7 @@ or spent.** Matrix (30 rows): `creative_matrix.csv`. Per-product hypotheses and 
 | Product list | Swap P002, P004, P008, P010 for in-season products | P002/P004/P008/P010 retired (reasons kept in Phase A); added P011 Snap Collar Faux Leather Jacket, P012 Snap Button Fold-Over Knee Boots, P013 Cable Knit Mock Neck Midi Dress, P014 Striped Polo Collar Knit Sweater |
 | Text on images | "yes you can add words" | Short headline on slide 1, optional short line on slides 2–3, added by us after generation (never baked in by the AI model) |
 | Buyer research | Use today's research briefs | No new ICP reports; briefs in `CREATIVE_RESEARCH_BRIEFS.md` |
-| AI models | OK in paid ads | AI people allowed; every ad labelled AI-generated (TikTok AIGC label on the Spark post + "#aigenerated" in the caption) |
+| AI models | OK in paid ads | AI people allowed; every ad labelled AI-generated with TikTok's AI label on the Spark post (no caption hashtag: owner, 2026-10-28) |
 | Picture cost | One test picture first | Done: see section 8 |
 | Budget | Set at the end | Section 5 gives the structure and the formula; amounts left blank |
 
@@ -48,7 +48,7 @@ Objective (Sales, website, purchase event), landing page (the product page), var
 section 7), price and offer (none in ads), audience (US women 25–45, broad, same for all products), placement
 (TikTok), attribution window (TikTok default, recorded at launch), CTA button ("Shop now"), identity
 (@emberandclove Spark Push, ads-only posts), music (one Commercial Music Library track per product, same for A/B/C),
-caption structure (one sentence + #aigenerated), launch date and measurement window.
+caption structure (one sentence +), launch date and measurement window.
 
 ## 5. Campaign structure and testing sequence (proposal; budget amounts set by owner at the end)
 
@@ -93,81 +93,81 @@ Shared hypotheses: **A product-first** - the product's own look, shown large on 
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P001_A_PRODUCT | Visual attraction | Sculpted pleats, clean lines | 1 Model in the brown dress, studio cream backdrop, dress fills frame | 2 Side profile: mock neck and fitted bodice | 3 Pleats flaring at the hip, mid-step | Mock neck, fitted bodice and a skirt that flares out from metal rings at the hip. #aigenerated | Can a premium dress sell on silhouette alone? |
-| EC_TT_P001_B_LIFESTYLE | Occasion need | Holiday party, one piece | 1 Evening holiday dinner, warm lights, dress with sheer black tights and knee boots | 2 At the table with friends, dress visible | 3 Leaving with a long coat over the dress | One dress for the holiday party. Add tights and boots and you are ready. #aigenerated | Does a party occasion beat the dress shown on its own? |
-| EC_TT_P001_C_BENEFIT | Differentiation | The detail: metal ring pleats | 1 Macro of the metal ring and pleat fan | 2 Mid-shot of the bodice and mock neck | 3 Full look, walking, pleats moving | The detail that makes it: a full flare fanned out from metal ring hardware. #aigenerated | Does calling out the signature detail beat mood and occasion? |
+| EC_TT_P001_A_PRODUCT | Visual attraction | Sculpted pleats, clean lines | 1 Model in the brown dress, studio cream backdrop, dress fills frame | 2 Side profile: mock neck and fitted bodice | 3 Pleats flaring at the hip, mid-step | Mock neck, fitted bodice and a skirt that flares out from metal rings at the hip. | Can a premium dress sell on silhouette alone? |
+| EC_TT_P001_B_LIFESTYLE | Occasion need | Holiday party, one piece | 1 Evening holiday dinner, warm lights, dress with sheer black tights and knee boots | 2 At the table with friends, dress visible | 3 Leaving with a long coat over the dress | One dress for the holiday party. Add tights and boots and you are ready. | Does a party occasion beat the dress shown on its own? |
+| EC_TT_P001_C_BENEFIT | Differentiation | The detail: metal ring pleats | 1 Macro of the metal ring and pleat fan | 2 Mid-shot of the bodice and mock neck | 3 Full look, walking, pleats moving | The detail that makes it: a full flare fanned out from metal ring hardware. | Does calling out the signature detail beat mood and occasion? |
 
 ### P003 3D Rose Blazer Mini Dress (variant shown: Black)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P003_A_PRODUCT | Visual attraction | A blazer dress with roses | 1 Model in the dress, plain warm backdrop, roses fully visible | 2 Three-quarter view: puffed shoulders and lapels | 3 Back view of the tailored fit | Black blazer dress with red 3D roses on long green stems. #aigenerated | Is the statement look enough on its own? |
-| EC_TT_P003_B_LIFESTYLE | Occasion need | The office party dress | 1 Office holiday party, warm evening light, dress with sheer tights and heels | 2 Toasting with colleagues | 3 Walking out with a clutch | The office holiday party dress: tailored, long-sleeved, roses up front. #aigenerated | Does the office-party setting lift purchase intent? |
-| EC_TT_P003_C_BENEFIT | Outfit completion | Blazer and dress in one | 1 Macro of the 3D roses on the black suiting | 2 Lapels, buttons and flap pockets | 3 Full look: no extra layer needed | Blazer and dress in one piece. Nothing else to plan. #aigenerated | Does 'outfit done' beat the look and the occasion? |
+| EC_TT_P003_A_PRODUCT | Visual attraction | A blazer dress with roses | 1 Model in the dress, plain warm backdrop, roses fully visible | 2 Three-quarter view: puffed shoulders and lapels | 3 Back view of the tailored fit | Black blazer dress with red 3D roses on long green stems. | Is the statement look enough on its own? |
+| EC_TT_P003_B_LIFESTYLE | Occasion need | The office party dress | 1 Office holiday party, warm evening light, dress with sheer tights and heels | 2 Toasting with colleagues | 3 Walking out with a clutch | The office holiday party dress: tailored, long-sleeved, roses up front. | Does the office-party setting lift purchase intent? |
+| EC_TT_P003_C_BENEFIT | Outfit completion | Blazer and dress in one | 1 Macro of the 3D roses on the black suiting | 2 Lapels, buttons and flap pockets | 3 Full look: no extra layer needed | Blazer and dress in one piece. Nothing else to plan. | Does 'outfit done' beat the look and the occasion? |
 
 ### P005 Two-Button Notch Lapel Long Coat (variant shown: Burgundy)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P005_A_PRODUCT | Visual attraction | The long burgundy coat | 1 Full-length coat on a model, studio cream backdrop | 2 Wide notch lapel and brushed texture close-up | 3 Back view: dropped shoulders, below-knee length | Long burgundy coat with wide notch lapels and dropped shoulders. #aigenerated | Does the coat's color and length sell it alone? |
-| EC_TT_P005_B_LIFESTYLE | Seasonal relevance | Made for cold-week walks | 1 November city sidewalk, coat open over a cream turtleneck (cost-probe picture) | 2 Crossing the street, coat moving | 3 Arriving at a doorway, hands in pockets | The long coat for November city days, over your favorite knit. #aigenerated | Does a real cold-season setting lift intent? |
-| EC_TT_P005_C_BENEFIT | Versatility | Cut roomy to layer | 1 Coat over a cable-knit midi dress and boots | 2 Same coat over jeans and a sweater | 3 Same coat over black trousers for work | Cut roomy and long to layer over knits, dresses and work clothes. #aigenerated | Does the layering benefit beat the look? |
+| EC_TT_P005_A_PRODUCT | Visual attraction | The long burgundy coat | 1 Full-length coat on a model, studio cream backdrop | 2 Wide notch lapel and brushed texture close-up | 3 Back view: dropped shoulders, below-knee length | Long burgundy coat with wide notch lapels and dropped shoulders. | Does the coat's color and length sell it alone? |
+| EC_TT_P005_B_LIFESTYLE | Seasonal relevance | Made for cold-week walks | 1 November city sidewalk, coat open over a cream turtleneck (cost-probe picture) | 2 Crossing the street, coat moving | 3 Arriving at a doorway, hands in pockets | The long coat for November city days, over your favorite knit. | Does a real cold-season setting lift intent? |
+| EC_TT_P005_C_BENEFIT | Versatility | Cut roomy to layer | 1 Coat over a cable-knit midi dress and boots | 2 Same coat over jeans and a sweater | 3 Same coat over black trousers for work | Cut roomy and long to layer over knits, dresses and work clothes. | Does the layering benefit beat the look? |
 
 ### P006 Stand Collar Chunky Knit Cardigan (variant shown: Off-White)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P006_A_PRODUCT | Visual attraction | Chunky rib, high collar | 1 Model in the off-white cardigan, studio, rib texture filling frame | 2 Stand collar and off-center buttons close-up | 3 Shoulder button tabs detail | Chunky rib knit with a high stand collar and button-tab shoulders. #aigenerated | Does the knit texture alone create interest? |
-| EC_TT_P006_B_LIFESTYLE | Seasonal relevance | Your weekend knit | 1 Saturday farmers market, cardigan over jeans | 2 Browsing a bookshop | 3 Walking home, collar up | The cardigan for slow weekends: chunky rib, easy fit. #aigenerated | Does a cozy weekend scene beat the knit on its own? |
-| EC_TT_P006_C_BENEFIT | Practical value | Button it up like a jacket | 1 Collar buttoned up, worn as an outer layer outdoors | 2 Worn open over a dress | 3 Full button front close-up | Button the stand collar up and wear it like a jacket. #aigenerated | Does a 'two ways to wear it' benefit beat texture and mood? |
+| EC_TT_P006_A_PRODUCT | Visual attraction | Chunky rib, high collar | 1 Model in the off-white cardigan, studio, rib texture filling frame | 2 Stand collar and off-center buttons close-up | 3 Shoulder button tabs detail | Chunky rib knit with a high stand collar and button-tab shoulders. | Does the knit texture alone create interest? |
+| EC_TT_P006_B_LIFESTYLE | Seasonal relevance | Your weekend knit | 1 Saturday farmers market, cardigan over jeans | 2 Browsing a bookshop | 3 Walking home, collar up | The cardigan for slow weekends: chunky rib, easy fit. | Does a cozy weekend scene beat the knit on its own? |
+| EC_TT_P006_C_BENEFIT | Practical value | Button it up like a jacket | 1 Collar buttoned up, worn as an outer layer outdoors | 2 Worn open over a dress | 3 Full button front close-up | Button the stand collar up and wear it like a jacket. | Does a 'two ways to wear it' benefit beat texture and mood? |
 
 ### P007 Notch Lapel Faux Suede Blazer (variant shown: Camel)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P007_A_PRODUCT | Visual attraction | Soft faux suede, notch lapels | 1 Model in the camel blazer, studio, suede texture visible | 2 Yoke seam and lapels close-up | 3 Flap pockets and three-button front | Relaxed faux suede blazer with notch lapels and a yoke seam. #aigenerated | Does the suede look sell itself? |
-| EC_TT_P007_B_LIFESTYLE | Identity | Weekend in the city | 1 Late-autumn city street, blazer over a turtleneck and jeans | 2 Window table in a cafe (no mug in hand) | 3 Walking past shop fronts | Faux suede over a turtleneck and jeans: the easy city look. #aigenerated | Does a lifestyle scene lift intent over the product? |
-| EC_TT_P007_C_BENEFIT | Outfit completion | Turtleneck + jeans + this | 1 The three pieces shown as an outfit formula | 2 Same blazer over a striped polo sweater | 3 Same blazer with trousers for work | Turtleneck, jeans and this blazer: an outfit in three pieces. #aigenerated | Does an outfit formula beat the look and mood? |
+| EC_TT_P007_A_PRODUCT | Visual attraction | Soft faux suede, notch lapels | 1 Model in the camel blazer, studio, suede texture visible | 2 Yoke seam and lapels close-up | 3 Flap pockets and three-button front | Relaxed faux suede blazer with notch lapels and a yoke seam. | Does the suede look sell itself? |
+| EC_TT_P007_B_LIFESTYLE | Identity | Weekend in the city | 1 Late-autumn city street, blazer over a turtleneck and jeans | 2 Window table in a cafe (no mug in hand) | 3 Walking past shop fronts | Faux suede over a turtleneck and jeans: the easy city look. | Does a lifestyle scene lift intent over the product? |
+| EC_TT_P007_C_BENEFIT | Outfit completion | Turtleneck + jeans + this | 1 The three pieces shown as an outfit formula | 2 Same blazer over a striped polo sweater | 3 Same blazer with trousers for work | Turtleneck, jeans and this blazer: an outfit in three pieces. | Does an outfit formula beat the look and mood? |
 
 ### P009 Fleece-Lined Hooded Zip Jacket (variant shown: Camel)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P009_A_PRODUCT | Visual attraction | Plush-lined hood, utility zip | 1 Model in the camel jacket, studio, hood lining visible | 2 Contrast collar and zip chest pocket close-up | 3 Back view of the relaxed, oversized fit | Utility zip jacket with a plush-lined hood and contrast collar. #aigenerated | Does the utility look sell on its own? |
-| EC_TT_P009_B_LIFESTYLE | Practical value | Cold-morning errands | 1 Frosty morning walking a dog in a park, hood down | 2 Loading a grocery bag into a car | 3 Hood up against the wind | The easy top layer for cold mornings and quick errands. #aigenerated | Does an everyday cold-weather moment beat the product shot? |
-| EC_TT_P009_C_BENEFIT | Practical value | Lined where it counts | 1 Hood turned out to show the plush lining | 2 Inside front showing the fleece lining | 3 Zipped up over a knit, oversized fit | Plush fleece lining in the hood and body, oversized over your knits. #aigenerated | Does showing the lining (a concrete feature) beat look and mood? |
+| EC_TT_P009_A_PRODUCT | Visual attraction | Plush-lined hood, utility zip | 1 Model in the camel jacket, studio, hood lining visible | 2 Contrast collar and zip chest pocket close-up | 3 Back view of the relaxed, oversized fit | Utility zip jacket with a plush-lined hood and contrast collar. | Does the utility look sell on its own? |
+| EC_TT_P009_B_LIFESTYLE | Practical value | Cold-morning errands | 1 Frosty morning walking a dog in a park, hood down | 2 Loading a grocery bag into a car | 3 Hood up against the wind | The easy top layer for cold mornings and quick errands. | Does an everyday cold-weather moment beat the product shot? |
+| EC_TT_P009_C_BENEFIT | Practical value | Lined where it counts | 1 Hood turned out to show the plush lining | 2 Inside front showing the fleece lining | 3 Zipped up over a knit, oversized fit | Plush fleece lining in the hood and body, oversized over your knits. | Does showing the lining (a concrete feature) beat look and mood? |
 
 ### P011 Snap Collar Faux Leather Jacket (variant shown: Black)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P011_A_PRODUCT | Visual attraction | Black moto, polished collar | 1 Model in the zipped black jacket, studio | 2 Snap-tab stand collar close-up | 3 Zip pockets and shaped waist seams | Fitted faux leather moto jacket with a snap-tab stand collar. #aigenerated | Does the jacket's look alone create interest? |
-| EC_TT_P011_B_LIFESTYLE | Identity | Dinner downtown | 1 Evening street, jacket over a knit dress and knee boots | 2 At a restaurant door | 3 Walking with a friend, city lights | A black moto over your knit dress for dinner downtown. #aigenerated | Does an evening lifestyle scene lift intent? |
-| EC_TT_P011_C_BENEFIT | Versatility | One jacket, three outfits | 1 Over a cable-knit midi dress with boots | 2 Over a sweater and jeans | 3 Over a black mini with tights | One black jacket, three outfits: dresses, jeans and minis. #aigenerated | Does showing versatility beat look and mood? |
+| EC_TT_P011_A_PRODUCT | Visual attraction | Black moto, polished collar | 1 Model in the zipped black jacket, studio | 2 Snap-tab stand collar close-up | 3 Zip pockets and shaped waist seams | Fitted faux leather moto jacket with a snap-tab stand collar. | Does the jacket's look alone create interest? |
+| EC_TT_P011_B_LIFESTYLE | Identity | Dinner downtown | 1 Evening street, jacket over a knit dress and knee boots | 2 At a restaurant door | 3 Walking with a friend, city lights | A black moto over your knit dress for dinner downtown. | Does an evening lifestyle scene lift intent? |
+| EC_TT_P011_C_BENEFIT | Versatility | One jacket, three outfits | 1 Over a cable-knit midi dress with boots | 2 Over a sweater and jeans | 3 Over a black mini with tights | One black jacket, three outfits: dresses, jeans and minis. | Does showing versatility beat look and mood? |
 
 ### P012 Snap Button Fold-Over Knee Boots (variant shown: Beige)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P012_A_PRODUCT | Visual attraction | Fold-over cuff, brass snaps | 1 Boots worn, knees down, studio backdrop, snaps and cuff in focus | 2 Side view of the 2.8 in block heel | 3 The pair standing side by side | Knee-high boots with a fold-over cuff, brass snaps and a block heel. #aigenerated | Do the boots sell on their design? |
-| EC_TT_P012_B_LIFESTYLE | Outfit completion | Boots for every dress | 1 Walking in a caramel cable-knit midi dress and the boots | 2 Sitting on a step, slit showing the shaft | 3 Climbing stairs, hem and boots in frame | The knee boots your sweater dresses have been waiting for. #aigenerated | Does a styled outfit moment beat the product shot? |
-| EC_TT_P012_C_BENEFIT | Versatility | One pair, three outfits | 1 With a midi knit dress | 2 With a mini skirt and tights | 3 With straight jeans over the shaft | One pair, three outfits: midi dress, mini and jeans. #aigenerated | Does versatility beat the design and the outfit moment? |
+| EC_TT_P012_A_PRODUCT | Visual attraction | Fold-over cuff, brass snaps | 1 Boots worn, knees down, studio backdrop, snaps and cuff in focus | 2 Side view of the 2.8 in block heel | 3 The pair standing side by side | Knee-high boots with a fold-over cuff, brass snaps and a block heel. | Do the boots sell on their design? |
+| EC_TT_P012_B_LIFESTYLE | Outfit completion | Boots for every dress | 1 Walking in a caramel cable-knit midi dress and the boots | 2 Sitting on a step, slit showing the shaft | 3 Climbing stairs, hem and boots in frame | The knee boots your sweater dresses have been waiting for. | Does a styled outfit moment beat the product shot? |
+| EC_TT_P012_C_BENEFIT | Versatility | One pair, three outfits | 1 With a midi knit dress | 2 With a mini skirt and tights | 3 With straight jeans over the shaft | One pair, three outfits: midi dress, mini and jeans. | Does versatility beat the design and the outfit moment? |
 
 ### P013 Cable Knit Mock Neck Midi Dress (variant shown: Caramel)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P013_A_PRODUCT | Visual attraction | Cable knit, mock neck, midi | 1 Model in the caramel dress, studio, full length | 2 Cable knit and mock neck close-up | 3 Back view of the fitted shape | Cable knit sweater dress with a mock neck, long sleeves and midi length. #aigenerated | Does the dress sell on its look alone? |
-| EC_TT_P013_B_LIFESTYLE | Occasion need | Holiday plans, one dress | 1 Family holiday dinner, warm light, dress with knee boots | 2 Greeting guests at the door | 3 By a window during a toast | One dress for every holiday plan: dinners, visits and photos. #aigenerated | Does a holiday occasion beat the plain look? |
-| EC_TT_P013_C_BENEFIT | Outfit completion | The slit makes boots work | 1 Mid-stride, front slit opening over tall boots | 2 Slit and boot shaft close-up | 3 Full look, seated | A front slit that shows off tall boots and keeps you moving. #aigenerated | Does the boots-and-slit benefit beat look and occasion? |
+| EC_TT_P013_A_PRODUCT | Visual attraction | Cable knit, mock neck, midi | 1 Model in the caramel dress, studio, full length | 2 Cable knit and mock neck close-up | 3 Back view of the fitted shape | Cable knit sweater dress with a mock neck, long sleeves and midi length. | Does the dress sell on its look alone? |
+| EC_TT_P013_B_LIFESTYLE | Occasion need | Holiday plans, one dress | 1 Family holiday dinner, warm light, dress with knee boots | 2 Greeting guests at the door | 3 By a window during a toast | One dress for every holiday plan: dinners, visits and photos. | Does a holiday occasion beat the plain look? |
+| EC_TT_P013_C_BENEFIT | Outfit completion | The slit makes boots work | 1 Mid-stride, front slit opening over tall boots | 2 Slit and boot shaft close-up | 3 Full look, seated | A front slit that shows off tall boots and keeps you moving. | Does the boots-and-slit benefit beat look and occasion? |
 
 ### P014 Striped Polo Collar Knit Sweater (variant shown: Navy & Green Color Block)
 
 | Ad | Motivation | Slide 1 headline | Slides | Caption (≤100 chars) | What we learn |
 |---|---|---|---|---|---|
-| EC_TT_P014_A_PRODUCT | Visual attraction | Stripes with a polo collar | 1 Model in the sweater, studio, stripes and collar fill frame | 2 Open polo collar close-up | 3 Ribbed cuffs and hem | Bold stripes and a soft open polo collar in a relaxed knit. #aigenerated | Does the striped look sell alone? |
-| EC_TT_P014_B_LIFESTYLE | Identity | Easy weekend, put-together | 1 Weekend brunch walk, sweater with jeans and loafers | 2 Choosing flowers at a market stall | 3 Laughing on a bench | Stripes and a polo collar: weekend easy, still put-together. #aigenerated | Does a weekend scene lift intent over the product? |
-| EC_TT_P014_C_BENEFIT | Versatility | Jeans to skirt to office | 1 With straight jeans | 2 Tucked into a midi skirt | 3 Under a faux suede blazer for work | One sweater, three outfits: jeans, a skirt or under a blazer. #aigenerated | Does versatility beat look and mood? |
+| EC_TT_P014_A_PRODUCT | Visual attraction | Stripes with a polo collar | 1 Model in the sweater, studio, stripes and collar fill frame | 2 Open polo collar close-up | 3 Ribbed cuffs and hem | Bold stripes and a soft open polo collar in a relaxed knit. | Does the striped look sell alone? |
+| EC_TT_P014_B_LIFESTYLE | Identity | Easy weekend, put-together | 1 Weekend brunch walk, sweater with jeans and loafers | 2 Choosing flowers at a market stall | 3 Laughing on a bench | Stripes and a polo collar: weekend easy, still put-together. | Does a weekend scene lift intent over the product? |
+| EC_TT_P014_C_BENEFIT | Versatility | Jeans to skirt to office | 1 With straight jeans | 2 Tucked into a midi skirt | 3 Under a faux suede blazer for work | One sweater, three outfits: jeans, a skirt or under a blazer. | Does versatility beat look and mood? |
 
 ## 8. Production plan and cost
 
