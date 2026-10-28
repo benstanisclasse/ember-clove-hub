@@ -289,3 +289,71 @@ def test_ads_entities_replace_per_platform(tmp_path, monkeypatch):
     assert sorted((x["platform"], x["id"]) for x in e) == [("meta", "3"), ("tiktok", "2")]
     with pytest.raises(SystemExit):
         ads_snapshot.merge_entities("meta", [{"level": "keyword", "id": "4"}], "p")
+
+
+# --- Advertising > TikTok tests ------------------------------------------------------------------------------------
+
+from studio import ad_tests  # noqa: E402
+
+
+def _test_folder(tmp_path):
+    t = tmp_path / "tests" / "t1"
+    t.mkdir(parents=True)
+    (t / "live.json").write_text(json.dumps({
+        "test": "t1", "name": "Test one", "platform": "tiktok", "campaign_id": "c1", "campaign_name": "C", "adgroup_id": "g1",
+        "launched_at": "2026-10-28T13:04:00-05:00", "daily_budget": 120.34, "angles": {"A": "Product", "B": "Lifestyle"},
+        "rebate": {"target_conversions": 10, "trial_ends_at": "2026-11-04T12:04:00-06:00", "rule": "No edits."},
+        "auto_add_creatives": True}), encoding="utf-8")
+    (t / "products.json").write_text(json.dumps({"products": [{"test_product_id": "P001", "title": "Dress"}]}), encoding="utf-8")
+    (t / "launch_set.json").write_text(json.dumps({"ads": [
+        {"ad_name": "EC_TT_P001_A_PRODUCT", "product_id": "P001", "video": "x/EC_TT_P001_A_PRODUCT.mp4",
+         "caption_variants": [{"text": "one"}, {"text": "two"}]},
+        {"ad_name": "EC_TT_P001_B_LIFESTYLE", "product_id": "P001", "video": "x/EC_TT_P001_B_LIFESTYLE.mp4", "caption": "solo"}]}),
+        encoding="utf-8")
+    (t / "DAILY_CHECKS.md").write_text("# x\n\n| Date | Status | Spend | Impressions | Clicks | Purchases | Videos added by TikTok |\n"
+                                       "|---|---|---|---|---|---|---|\n| 2026-10-29 | active | 12.50 | 900 | 20 | 0 | none |\n",
+                                       encoding="utf-8")
+    (t.parent / "draft_only").mkdir()  # no live.json: ignored
+    return t.parent
+
+
+def test_ad_tests_match_tiktok_names_and_find_added_videos(tmp_path):
+    out = tmp_path / "out"
+    out.mkdir()
+    (out / "ads_entities.json").write_text(json.dumps([
+        {"platform": "tiktok", "level": "ad", "name": "EC_TT_P001_A_PRODUCT_A36d.mp4_EC_TT_P001_A_PRODUCT", "parent_id": "g1",
+         "spend": 4.5, "impressions": 300, "clicks": 9, "purchases": 1, "revenue": 170.16, "period": "2026-10-22..2026-10-28",
+         "refreshed_at": "2026-10-28T15:00"},
+        {"platform": "tiktok", "level": "ad", "name": "EC-P01-A06-H01-V02.mp4", "parent_id": "g1", "spend": 1},
+        {"platform": "tiktok", "level": "ad", "name": "other campaign ad", "parent_id": "g9", "spend": 2},
+        {"platform": "meta", "level": "ad", "name": "EC_TT_P001_B_LIFESTYLE", "parent_id": "g1", "spend": 3}]), encoding="utf-8")
+    assert ad_tests.build(out, _test_folder(tmp_path)) == ["ad_tests 2", "ad_test_info 1", "ad_test_checks 1"]
+    ads = {r["ad_name"]: r for r in json.loads((out / "ad_tests.json").read_text(encoding="utf-8"))}
+    a, b = ads["EC_TT_P001_A_PRODUCT"], ads["EC_TT_P001_B_LIFESTYLE"]
+    assert a["spend"] == 4.5 and a["purchases"] == 1 and a["product"] == "Dress" and a["angle"] == "A Product"
+    assert a["captions"] == 2 and a["caption_all"] == "one\ntwo" and a["video"] == "EC_TT_P001_A_PRODUCT.mp4"
+    assert b["spend"] is None and b["reported"] is False and b["captions"] == 1  # unknown stays null; Meta row ignored
+    info = json.loads((out / "ad_test_info.json").read_text(encoding="utf-8"))[0]
+    assert info["added_by_tiktok"] == 1 and info["added_names"] == "EC-P01-A06-H01-V02.mp4"  # other ad group not counted
+    assert info["ads_reported"] == 1 and info["period"] == "2026-10-22..2026-10-28" and info["rebate_target"] == 10
+    checks = json.loads((out / "ad_test_checks.json").read_text(encoding="utf-8"))
+    assert checks == [{"test": "t1", "date": "2026-10-29", "status": "active", "spend": "12.50", "impressions": "900",
+                       "clicks": "20", "purchases": "0", "added": "none"}]
+
+
+def test_ad_tests_without_numbers_or_live_tests(tmp_path):
+    out = tmp_path / "out"
+    out.mkdir()  # no ads_entities.json at all
+    assert ad_tests.build(out, _test_folder(tmp_path))[0] == "ad_tests 2"
+    assert all(r["spend"] is None for r in json.loads((out / "ad_tests.json").read_text(encoding="utf-8")))
+    empty = tmp_path / "none"
+    empty.mkdir()
+    assert ad_tests.build(out, empty) == ["ad_tests 0", "ad_test_info 0", "ad_test_checks 0"]
+
+
+def test_tiktok_tests_page_is_a_sub_page_of_advertising(server):
+    code, ctype, body = get(server + "/ads/tests")
+    text = body.decode("utf-8")
+    assert code == 200 and ctype.startswith("text/html") and 'id="tt-ads"' in text
+    assert "TikTok tests" in text.split('aria-current="page"')[1].split("</a>")[0]
+    assert {"ad_tests", "ad_test_info", "ad_test_checks"} <= set(json.loads(get(server + "/data")[2])["datasets"])

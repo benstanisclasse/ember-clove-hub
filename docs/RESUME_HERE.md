@@ -19,7 +19,7 @@ To resume: "Continue Dashboard 2.0 with Phase G." Phase E = one UTM convention f
 TikTok/Meta/Microsoft URL macros fill, campaign → ad set/group/asset group → ad drill-down, three lenses
 (platform-claimed / Shopify-attributed / blended). Meta began delivering on 10/27 ($0.44, 16 impressions).
 
-Open owner decisions carried over: none blocking Phase E. TikTok sales campaign still a draft.
+Open owner decisions carried over: none blocking Phase E. TikTok test 01 LIVE since 2026-10-28 (rebate trial, no edits until 2026-11-04 12:04 CST); dashboard page Advertising > TikTok tests (/ads/tests, scripts/studio/ad_tests.py).
 **Microsoft Advertising removed 2026-10-28** (account suspended; owner: "remove Microsoft from our system"). Ads = Meta + TikTok only.
 
 ## 2. Content Studio 2.0 ("Autonomous Content Studio 2.0" master prompt) — Phase D done 2026-10-28; next E (~2 weeks of tagged content)

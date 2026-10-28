@@ -30,7 +30,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import facebook_photos  # noqa: E402
-from studio import analytics, bible, content, db, publishing, shopify_sync  # noqa: E402
+from studio import ad_tests, analytics, bible, content, db, publishing, shopify_sync  # noqa: E402
 
 OUT = publishing.OUT
 STATIC = OUT / "static"
@@ -40,14 +40,15 @@ DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_me
             "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation", "system_info",
             "episode_history", "ads_entities", "store_attribution", "content_queue", "content_events",
             "profit_daily", "profit_products", "profit_summary", "cost_ledger", "content_jobs", "content_quality",
-            "character_refs", "bible_locks"]
-JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "content": "Content queue", "ads:meta": "Meta ads",
+            "character_refs", "bible_locks", "ad_tests", "ad_test_info", "ad_test_checks"]
+JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "content": "Content queue", "ad_tests": "Ad tests", "ads:meta": "Meta ads",
               "ads:tiktok": "TikTok ads"}
 # path -> (file, title, nav key). Six sections (Phase D); old addresses redirect.
 PAGES = {"/": ("overview.html", "Overview · Ember & Clove", "overview"),
          "/content": ("index.html", "Content Studio · Ember & Clove", "content"),
          "/content/performance": ("metrics.html", "Content performance · Ember & Clove", "performance"),
          "/ads": ("ads.html", "Advertising · Ember & Clove", "ads"),
+         "/ads/tests": ("ad_tests.html", "TikTok tests · Ember & Clove", "tests"),
          "/store": ("store.html", "Store · Ember & Clove", "store"),
          "/intelligence": ("intelligence.html", "Intelligence · Ember & Clove", "intelligence"),
          "/ops": ("ops.html", "Operations · Ember & Clove", "ops")}
@@ -57,11 +58,13 @@ ICON = {  # 16px line icons (Lucide-style paths, drawn inline)
     "content": '<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
     "performance": '<path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/>',
     "ads": '<path d="M3 11l18-8v18L3 13z"/><path d="M7 13v5a2 2 0 0 0 4 0v-3"/>',
+    "tests": '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3M7.5 14h9"/>',
     "store": '<path d="M3 9l1.5-5h15L21 9M3 9h18v11H3zM9 20v-6h6v6"/>',
     "intelligence": '<path d="M12 3a6 6 0 0 0-3.5 10.9V17h7v-3.1A6 6 0 0 0 12 3zM9.5 21h5"/>',
     "ops": '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'}
 NAV = [("/", "overview", "Overview", False), ("/content", "content", "Content Studio", False),
        ("/content/performance", "performance", "Performance", True), ("/ads", "ads", "Advertising", False),
+       ("/ads/tests", "tests", "TikTok tests", True),
        ("/store", "store", "Store", False), ("/intelligence", "intelligence", "Intelligence", False),
        ("/ops", "ops", "Operations", False)]
 STATE = {"last_sync": None, "last_error": None}
@@ -250,7 +253,8 @@ def ref_image(ref_id):
 JOBS = [("tiktok", _tiktok), ("facebook", lambda: facebook_photos.sync_dashboard(OUT)),
         ("shopify", lambda: shopify_sync.sync(OUT)),
         ("snapshots", lambda: [f"{analytics.snapshot_dashboard_files(OUT)} rows"]),
-        ("content", lambda: content.sync(OUT))]  # Content Studio: one queue for TikTok + Facebook (after their syncs)
+        ("content", lambda: content.sync(OUT)),  # Content Studio: one queue for TikTok + Facebook (after their syncs)
+        ("ad_tests", lambda: ad_tests.build(OUT))]  # Advertising > TikTok tests (Hub test folders + ads_entities.json)
 
 
 def sync_once():

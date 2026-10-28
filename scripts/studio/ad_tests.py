@@ -1,0 +1,104 @@
+"""Paid-ad tests for the dashboard's Advertising > TikTok tests page. Run on every dashboard sync; read-only.
+
+A test is a folder under research/ads/tiktok/product_tests/ with a live.json (the published campaign's facts: ids,
+launch time, budget, rebate trial). For each live test this joins:
+  launch_set.json      the ads as built: name, product, angle (A Product / B Lifestyle / C Benefit), captions, video
+  products.json        product titles
+  ads_entities.json    TikTok's own per-ad totals, written by the ads refresh task (scripts/ads_snapshot.py). TikTok
+                       names an ad "<video file>_<our ad name>", so ads are matched by our name; ads in the test's ad
+                       group that match none of ours were added by TikTok (auto-add creatives).
+  DAILY_CHECKS.md      the daily read-only check's table (scheduled task tiktok-test01-daily-check)
+
+Writes studio/dashboard/ad_tests.json (one row per ad), ad_test_info.json (one row per test) and
+ad_test_checks.json (one row per daily check). Numbers are unknown (null), never 0, until TikTok reports the ad.
+"""
+import json
+import re
+from pathlib import Path
+
+from studio import analytics
+
+TESTS = analytics.HUB / "research" / "ads" / "tiktok" / "product_tests"
+METRICS = ("spend", "impressions", "clicks", "purchases", "revenue")
+CHECK_COLS = ("date", "status", "spend", "impressions", "clicks", "purchases", "added")
+
+
+def _load(path, default):
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return default
+
+
+def _checks(path):
+    """Rows of the table in DAILY_CHECKS.md (lines starting with a date cell)."""
+    try:
+        lines = Path(path).read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return []
+    rows = []
+    for line in lines:
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) >= len(CHECK_COLS) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", cells[0]):
+            rows.append(dict(zip(CHECK_COLS, cells[:len(CHECK_COLS)])))
+    return rows
+
+
+def build_test(folder, entities):
+    """(ad rows, info row, check rows) for one test folder with a live.json; None when the test isn't live."""
+    live = _load(folder / "live.json", None)
+    if not live:
+        return None
+    launch = _load(folder / "launch_set.json", {})
+    titles = {p.get("test_product_id"): p.get("title") for p in _load(folder / "products.json", {}).get("products", [])
+              if isinstance(p, dict)}
+    angles = live.get("angles", {})
+    group = str(live.get("adgroup_id", ""))
+    tt_ads = [e for e in entities if e.get("platform") == live.get("platform", "tiktok") and e.get("level") == "ad"]
+    ours = [a["ad_name"] for a in launch.get("ads", [])]
+    rows, matched = [], set()
+    for a in launch.get("ads", []):
+        name = a["ad_name"]
+        hit = [e for e in tt_ads if name in str(e.get("name", ""))]
+        matched.update(id(e) for e in hit)
+        letter = name.split("_")[3] if name.count("_") >= 3 else ""
+        caps = [c["text"] for c in a.get("caption_variants", [])] or [a.get("caption", "")]
+        row = {"test": live["test"], "ad_name": name, "product_id": a.get("product_id"),
+               "product": titles.get(a.get("product_id"), a.get("product_id")),
+               "angle": f"{letter} {angles.get(letter, '')}".strip(), "captions": len(caps), "caption_1": caps[0],
+               "caption_all": "\n".join(caps),
+               "video": Path(a.get("video", "")).name, "reported": bool(hit)}
+        for k in METRICS:
+            row[k] = round(sum(float(e.get(k) or 0) for e in hit), 2) if hit else None
+        rows.append(row)
+    added = [e for e in tt_ads if id(e) not in matched and str(e.get("parent_id", "")) == group
+             and not any(n in str(e.get("name", "")) for n in ours)]
+    period = next((e.get("period") for e in tt_ads if e.get("period")), None)
+    refreshed = max((e.get("refreshed_at") or "" for e in tt_ads), default="") or None
+    reb = live.get("rebate", {})
+    info = {"test": live["test"], "name": live.get("name"), "campaign_name": live.get("campaign_name"),
+            "campaign_id": live.get("campaign_id"), "adgroup_name": live.get("adgroup_name"),
+            "launched_at": live.get("launched_at"), "daily_budget": live.get("daily_budget"),
+            "budget_note": live.get("budget_note"), "rebate_target": reb.get("target_conversions"),
+            "trial_ends_at": reb.get("trial_ends_at"), "rebate_rule": reb.get("rule"),
+            "auto_add_creatives": live.get("auto_add_creatives"), "owner_decision": live.get("owner_decision"),
+            "balance_loaded": live.get("balance_loaded"), "ads": len(rows), "ads_reported": sum(r["reported"] for r in rows),
+            "added_by_tiktok": len(added), "added_names": "; ".join(str(e.get("name")) for e in added),
+            "period": period, "refreshed_at": refreshed}
+    checks = [{"test": live["test"], **c} for c in _checks(folder / "DAILY_CHECKS.md")]
+    return rows, info, checks
+
+
+def build(out, tests_dir=TESTS):
+    """Write the three datasets for every live test; return summary lines for the sync log."""
+    entities = _load(Path(out) / "ads_entities.json", [])
+    ads, infos, checks = [], [], []
+    for folder in sorted(p for p in Path(tests_dir).glob("*") if p.is_dir()):
+        got = build_test(folder, entities)
+        if got:
+            ads += got[0]
+            infos.append(got[1])
+            checks += got[2]
+    for name, data in (("ad_tests", ads), ("ad_test_info", infos), ("ad_test_checks", checks)):
+        analytics.write_text_atomic(Path(out) / f"{name}.json", json.dumps(data, ensure_ascii=False))
+    return [f"ad_tests {len(ads)}", f"ad_test_info {len(infos)}", f"ad_test_checks {len(checks)}"]

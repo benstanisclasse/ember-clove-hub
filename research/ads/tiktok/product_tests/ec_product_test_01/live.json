@@ -1,0 +1,25 @@
+{
+ "test": "ec_product_test_01",
+ "name": "TikTok product test 01",
+ "platform": "tiktok",
+ "advertiser_id": "XXX",
+ "campaign_id": "XXX",
+ "campaign_name": "EC_TT_ProductTest01",
+ "adgroup_id": "XXX",
+ "adgroup_name": "EC_TT_ProductTest01_AllProducts",
+ "launched_at": "2026-10-28T13:04:00-05:00",
+ "daily_budget": 120.34,
+ "budget_note": "Campaign budget shared across all 15 ads (TikTok decides the split). Set to $120.34 by a TikTok recommendation at publish; kept at the owner's request to keep the rebate.",
+ "rebate": {
+  "offer": "New advertiser campaign rebate",
+  "target_conversions": 10,
+  "trial_days": 7,
+  "trial_ends_at": "2026-11-04T12:04:00-06:00",
+  "rule": "No edits (budget, targeting, captions, videos) and no pausing until the trial ends; keep enough balance."
+ },
+ "balance_loaded": 1000,
+ "auto_add_creatives": true,
+ "owner_decision": "Keep the rebate: leave the $120.34 budget and auto-add on, and check daily which videos TikTok adds.",
+ "angles": {"A": "Product", "B": "Lifestyle", "C": "Benefit"},
+ "caption_angles": ["original", "buyer_callout", "question", "styling", "short"]
+}
