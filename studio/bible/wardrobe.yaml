@@ -3,9 +3,10 @@
 # rules.outfits.no_repeat_outfit_days). Owner 2026-10-26: "always one item from ember & clove": every outfit has exactly
 # one store piece (the ec- items at the end, rules.outfits.store_pieces_per_outfit); the rest are her plain, unbranded
 # basics. Store pieces carry the Shopify product, one color's listing photo, and a description written from that photo.
-status: draft
-approved_by: null
-approved_at: null
+status: approved
+approved_by: owner
+approved_at: "2026-10-28T00:10:38"
+approved_hash: "298b46cbe6cee756"
 
 items:
   # tops
