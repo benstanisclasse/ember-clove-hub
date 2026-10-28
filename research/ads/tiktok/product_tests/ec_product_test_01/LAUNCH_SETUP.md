@@ -78,5 +78,5 @@ Differences from the plan above:
 - **Catalog status (23:15 UTC):** the five SKUs are approved-pending ("processing"), ad_creation_eligible NOT_AVAILABLE; catalog prices match Shopify. TikTok lists the boots under "Sandals".
 - **Budget:** $20/day per ad group = $100/day for the 5 groups; TikTok notes a group can spend up to $25 on some days (about $140 per group per week, ~$700/week total).
 - **Before it can spend:** ad account balance $0 and no payment method.
-- **Owner changes (2026-10-28, afternoon):** ad groups $30/day each ($150/day; up to $37.50 per group on some days); automatic targeting on all 5 ad groups (US; no age/gender limit; women 25-34/35-44 kept as audience suggestions only). P006 switched by Claude at the owner's request.
+- **Owner changes (2026-10-28, afternoon):** ad groups $30/day each ($150/day; up to $37.50 per group on some days); automatic targeting on all 5 ad groups (US only; no age/gender limit and, at the owner's request, no audience suggestions, so TikTok picks the audience entirely).
 - **Captions:** 5 texts per ad (original + buyer callout, question, styling, short), from launch_set.json caption_variants.
