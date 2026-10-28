@@ -153,3 +153,47 @@ frame route) — full suite 101/101 at the time of the run.
 
 **Next: Phase C** (generation/asset records, content features, 24 h/48 h/7 d marks, `utm_content=<content_id>` with
 the attribution convention now in `scripts/attribution.py`).
+
+## Phase C report (2026-10-27, commit 97f7869)
+
+Owner: "Yes, start Content Studio Phase C: generation and asset records, content features, 24h/48h/7-day performance
+marks and utm_content with the content id."
+
+**Built**
+- **Generation records** (studio.db `generation_jobs`, `assets`, `asset_refs`): `production.py` opens a job before every
+  video and first-frame call and closes it with status, provider request id, cost and cost basis (Higgsfield video =
+  "estimate", OpenRouter = billed when reported); any exception marks the job failed. `hf_image_batch.py` records every
+  image job (model, prompt, references, request id, output file and URL); Higgsfield reports no image cost, so it stays
+  empty ("not reported"). Assets are hashed (sha256) and de-duplicated by path.
+- **Backfill** (idempotent): 46 historical jobs from the spend table, episode videos and the image job files.
+  Higgsfield video 7 jobs $29.40 (estimate), OpenRouter video 6 jobs $8.98, first frame $0.07, 3 failed/unknown,
+  29 images with cost "not recorded". Recorded total $38.45.
+- **Content features** (`content_features`, 489 values): slot, weekday, series, room, CTA, hook type and text, words,
+  duration, outfit pieces, store piece and product category, model, attempts; for Facebook post kind, AI picture,
+  caption asks a question, caption length, products. Owner-set values (`source='owner'`) are never overwritten.
+- **Performance marks** (`content_marks`): 24 h / 48 h / 7 d / latest from real `post_snapshots` only, using the first
+  snapshot within 6 h after the mark; otherwise the mark stays empty. Anchor = scheduled time for PostZen posts, or
+  the first snapshot with views for TikTok drafts posted by hand (the exact posting time is unknown; the basis is shown).
+- **utm_content = content id**: Facebook plans now give each post `content_id` `FB-<week start>-<nn>` and its link
+  carries `utm_content=<content_id>` (older posts keep their date_slot value). `content_links` maps every link to its
+  item; Shopify UTM sessions (cart/checkout/completed) are credited per item.
+- **Quality checks** (`content_quality.json`): duplicate PostZen ids, public without a link, no product, AI picture
+  without #aigenerated (critical), Facebook post without a tracked link, generation job stuck over 2 h. Currently 0.
+- **Dashboard**: Content performance page gained "Post performance, compared fairly" (per live post: seen at
+  24h/48h/7d/now, engagement and clicks per 1,000 impressions, store visits, generation cost), "Compare by feature"
+  (10 features, groups under 5 posts marked "too few to compare") and "Production cost" (by kind/provider/model with
+  cost basis; unknown costs show "not recorded", never $0). Content Studio page shows a data-quality notice when any
+  check fails. Datasets `content_jobs` and `content_quality` are served (added by the Dashboard session).
+
+**Tests:** 13 new in `scripts/studio/test_content.py` (job lifecycle and hashing, failed job keeps no cost, backfill
+idempotency, owner features preserved, hook types, marks only inside the window, hand-posted anchor, links + store
+sessions, AI-disclosure check, link content id). Full suite 121/121.
+
+**Limits**
+- Only 3 posts are live, so no 24 h mark has been captured yet (snapshots began 10/27) and every feature group is
+  "too few to compare". The comparison becomes useful after ~2 weeks of posting.
+- Image costs are unknown (Higgsfield does not report them); cost per live post covers videos only.
+- TikTok captions carry no store link, so TikTok store visits can't be credited per video (bio link only).
+
+**Next: Phase D** (production quality: Facebook AI-picture workflow in the database, shared rule module, product
+availability at publish, media-bound approvals).

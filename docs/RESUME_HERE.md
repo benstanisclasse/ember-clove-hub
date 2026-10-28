@@ -25,6 +25,9 @@ Open owner decisions carried over: none blocking Phase E. Microsoft PMax still l
 
 Phase A audit DONE → `CONTENT_STUDIO_AUDIT.md`, `CONTENT_STUDIO_ARCHITECTURE_V2.md`, `CONTENT_STUDIO_ROADMAP.md`.
 Phase B DONE 2026-10-27 (report at the end of CONTENT_STUDIO_ROADMAP.md). Next: Content Studio Phase C.
-Note: Dashboard 2.0 Phase E was completed in a parallel session (commit 189074b); Phase F (profitability) is in progress there.
+Phase C DONE 2026-10-27 (commit 97f7869; report at the end of CONTENT_STUDIO_ROADMAP.md): generation/asset records,
+content features, 24h/48h/7d marks, utm_content=<content id>, performance + production-cost views.
+To resume: "Start Content Studio Phase D."
+Note: Dashboard 2.0 Phases E and F were completed in a parallel session.
 Must share Dashboard 2.0's infrastructure: same dashboard, same `studio/analytics.db` history store, same Shopify
 connector (`scripts/shopify_api.py`), same sync-health and backup jobs. No second dashboard or connector.
