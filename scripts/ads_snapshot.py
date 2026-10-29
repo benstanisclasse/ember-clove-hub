@@ -24,6 +24,10 @@ Each row is kept whole in analytics.db (ad_metrics_daily.metrics) and mapped to 
 (analytics.AD_FUNNEL, see FUNNEL_FIELDS); studio/dashboard/ads_funnel.json is rebuilt from the newest fetch of every
 ad-day. Days are each ad account's own reporting day.
 
+Optional (TikTok audience splits): "breakdowns": {"age": [...], "gender": [...], "country_code": [...], "placement": [...]},
+each the "list" of a report_integrated_get AUDIENCE report at data_level AUCTION_CAMPAIGN with dimensions
+["campaign_id", "stat_time_day", <that dimension>], as returned. Kept in analytics.db (ad_breakdown_daily).
+
   python -I scripts/ads_snapshot.py merge <file.json>
   python -I scripts/ads_snapshot.py funnel        rebuild ads_funnel.json from analytics.db
 Writes studio/dashboard/ads_daily.csv (one row per platform per day), ads_accounts.json (one row per platform) and
@@ -102,6 +106,28 @@ def ad_days(platform, raw):
     return out
 
 
+BREAKDOWNS = ("age", "gender", "country_code", "placement")
+ID_LEVEL = {"campaign_id": "campaign", "adgroup_id": "adgroup", "ad_id": "ad"}
+
+
+def breakdowns(raw):
+    """{"age": [report rows], ...} -> [{level, id, date, dimension, value, metrics}] (TikTok AUDIENCE reports)."""
+    out = []
+    for dim, rows in (raw or {}).items():
+        if dim not in BREAKDOWNS:
+            raise SystemExit(f"breakdown must be one of {', '.join(BREAKDOWNS)}, not {dim!r}")
+        for r in rows:
+            dims = r.get("dimensions") or {}
+            key = next((k for k in ID_LEVEL if dims.get(k)), None)
+            day = (dims.get("stat_time_day") or "")[:10]
+            dt.date.fromisoformat(day)  # splits are stored per day
+            if not key or dims.get(dim) in (None, ""):
+                raise SystemExit(f"{dim} row needs an id and a {dim} value: {r!r}"[:300])
+            out.append({"level": ID_LEVEL[key], "id": str(dims[key]), "date": day, "dimension": dim,
+                        "value": str(dims[dim]), "metrics": r.get("metrics") or {}})
+    return out
+
+
 def write_funnel(path=None):
     """studio/dashboard/ads_funnel.json from the newest fetch of every ad-day in analytics.db."""
     rows = analytics.ad_funnel_rows(path)
@@ -163,8 +189,10 @@ if __name__ == "__main__":
         raise SystemExit(__doc__)
     snap = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
     ads = ad_days(snap.get("platform"), snap.get("ad_days") or []) if snap.get("platform") in PLATFORMS else []
+    splits = breakdowns(snap.get("breakdowns")) if snap.get("platform") in PLATFORMS else []
     with analytics.job(f"ads:{snap.get('platform')}") as run:  # sync health + append-only history
-        print(merge(snap) if snap.get("days") or "entities" in snap or not ads else f"{snap['platform']}: full metrics only")
+        print(merge(snap) if snap.get("days") or "entities" in snap or not (ads or splits)
+              else f"{snap['platform']}: per-ad metrics / splits only (no daily totals in this file)")
         run["rows"] = analytics.record_ad_days(snap["platform"], snap.get("days") or [], "account",
                                                snap.get("account_id", ""))
         run["rows"] += analytics.record_ad_entities(snap["platform"], snap.get("entities") or [],
@@ -172,4 +200,7 @@ if __name__ == "__main__":
         if ads:
             run["rows"] += analytics.record_ad_metrics(snap["platform"], ads)
             print(f"{snap['platform']}: {len(ads)} ad-days of full metrics; ads_funnel.json {write_funnel()} ad-days")
+        if splits:
+            run["rows"] += analytics.record_ad_breakdowns(snap["platform"], splits)
+            print(f"{snap['platform']}: {len(splits)} audience split rows ({', '.join(sorted({s['dimension'] for s in splits}))})")
         run["detail"] = snap.get("note", "")

@@ -12,6 +12,9 @@ so it can be rebuilt from the platforms and a bad change here never touches the 
                   the platform's own fields as JSON, `funnel` the same day mapped to AD_FUNNEL (one shape for
                   Meta and TikTok); the view ad_metrics_latest keeps the newest fetch per platform/ad/day. Days are
                   each ad account's own reporting day.
+  ad_breakdown_daily  the same per day split by one audience dimension (age, gender, country_code, placement) at
+                  campaign level, at every fetch (append-only; view ad_breakdown_latest). `metrics` is the platform's
+                  own fields as JSON (TikTok splits omit add to cart, checkout and completed payment).
 
 Times are stored in UTC (ISO 8601, 'Z'). Reporting days are Eastern (America/New_York): use local_day().
 """
@@ -64,6 +67,15 @@ CREATE VIEW IF NOT EXISTS ad_metrics_latest AS
   SELECT a.* FROM ad_metrics_daily a JOIN (SELECT platform, ad_id, day, MAX(fetched_at) AS f FROM ad_metrics_daily
     GROUP BY platform, ad_id, day) m
   ON a.platform = m.platform AND a.ad_id = m.ad_id AND a.day = m.day AND a.fetched_at = m.f;
+CREATE TABLE IF NOT EXISTS ad_breakdown_daily (
+  platform TEXT NOT NULL, level TEXT NOT NULL, entity_id TEXT NOT NULL, day TEXT NOT NULL, dimension TEXT NOT NULL,
+  value TEXT NOT NULL, fetched_at TEXT NOT NULL, metrics TEXT,
+  PRIMARY KEY (platform, level, entity_id, day, dimension, value, fetched_at));
+CREATE VIEW IF NOT EXISTS ad_breakdown_latest AS
+  SELECT a.* FROM ad_breakdown_daily a JOIN (SELECT platform, level, entity_id, day, dimension, MAX(fetched_at) AS f
+    FROM ad_breakdown_daily GROUP BY platform, level, entity_id, day, dimension) m
+  ON a.platform = m.platform AND a.level = m.level AND a.entity_id = m.entity_id AND a.day = m.day
+    AND a.dimension = m.dimension AND a.fetched_at = m.f;
 """
 
 
@@ -222,6 +234,20 @@ def record_ad_metrics(platform, rows, fetched_at=None, path=None):
                     (platform, str(r["id"]), r["date"], fetched_at, str(r.get("campaign_id") or ""),
                      str(r.get("group_id") or ""), r.get("name") or "", json.dumps(r.get("metrics") or {}, sort_keys=True),
                      json.dumps({k: (r.get("funnel") or {}).get(k) for k in AD_FUNNEL})))
+    con.commit()
+    con.close()
+    return len(rows)
+
+
+def record_ad_breakdowns(platform, rows, fetched_at=None, path=None):
+    """rows: dicts with level, id, date, dimension, value, metrics (as built by ads_snapshot.py). Append-only. The
+    newest fetch of a day and dimension replaces the whole split (a value that drops out is gone from the view)."""
+    fetched_at = fetched_at or now_utc()
+    con = connect(path)
+    for r in rows:
+        con.execute("INSERT OR IGNORE INTO ad_breakdown_daily VALUES (?,?,?,?,?,?,?,?)",
+                    (platform, r["level"], str(r["id"]), r["date"], r["dimension"], str(r["value"]), fetched_at,
+                     json.dumps(r.get("metrics") or {}, sort_keys=True)))
     con.commit()
     con.close()
     return len(rows)

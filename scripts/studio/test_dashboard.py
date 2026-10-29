@@ -135,6 +135,24 @@ def test_full_ad_metrics_map_both_platforms_to_one_funnel(tmp_path, monkeypatch)
         ads_snapshot.ad_days("meta", [{**meta[0], "date_start": ""}])
 
 
+def test_audience_splits_keep_the_newest_split_per_day(tmp_path):
+    db = tmp_path / "a.db"
+    row = lambda v, spend: {"dimensions": {"campaign_id": "c1", "stat_time_day": "2026-10-28 00:00:00", "age": v},
+                            "metrics": {"spend": spend, "purchase": "0"}}
+    first = ads_snapshot.breakdowns({"age": [row("AGE_25_34", "60"), row("AGE_35_44", "40")]})
+    assert first[0] == {"level": "campaign", "id": "c1", "date": "2026-10-28", "dimension": "age", "value": "AGE_25_34",
+                        "metrics": {"spend": "60", "purchase": "0"}}
+    analytics.record_ad_breakdowns("tiktok", first, "2026-10-29T01:00:00Z", db)
+    analytics.record_ad_breakdowns("tiktok", ads_snapshot.breakdowns({"age": [row("AGE_25_34", "100")]}), "2026-10-29T04:00:00Z", db)
+    con = analytics.connect(db)
+    assert [tuple(r) for r in con.execute("SELECT value, metrics FROM ad_breakdown_latest")] == [
+        ("AGE_25_34", json.dumps({"purchase": "0", "spend": "100"}))]
+    with pytest.raises(SystemExit):
+        ads_snapshot.breakdowns({"interests": [row("x", "1")]})
+    with pytest.raises(ValueError):
+        ads_snapshot.breakdowns({"age": [{"dimensions": {"campaign_id": "c1", "age": "AGE_25_34"}, "metrics": {}}]})
+
+
 # --- server ----------------------------------------------------------------------------------------------------------
 
 @pytest.fixture()
