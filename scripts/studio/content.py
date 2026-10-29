@@ -107,8 +107,8 @@ WORKFLOWS = {
 STATES_PUBLISH = {
     "submitted": "PostZen accepted the request",
     "scheduled": "PostZen will send it at the slot",
-    "in_tiktok_drafts": "Delivered to the owner's TikTok drafts; not public yet",
-    "awaiting_manual_post": "In the TikTok drafts and its slot has passed: post it from the app with the AI label",
+    "in_tiktok_drafts": "Delivered to the owner's TikTok inbox (a notification to tap); not public yet",
+    "awaiting_manual_post": "In the TikTok inbox and its slot has passed: open the notification and post it from the app with the AI label",
     "public": "Live and visible (public evidence or the owner's confirmation)",
     "paused": "Held in PostZen as a PostZen draft; will not go out by itself",
     "failed": "PostZen or the platform reported a failure",
@@ -245,11 +245,11 @@ def tiktok_publish_state(mode, platform_status, postzen_id, scheduled_for, live,
     if s == "draft":
         return "paused", "PostZen draft (paused)"
     if s in ("scheduled", "queued", "pending", ""):
-        return "scheduled", "goes to the TikTok drafts at its slot"
+        return "scheduled", "goes to the TikTok inbox at its slot"
     if s == "published":  # delivered to the owner's TikTok drafts
         due = scheduled_for and scheduled_for <= now_utc()
         return ("awaiting_manual_post" if due else "in_tiktok_drafts",
-                "PostZen delivered it to the TikTok drafts; no public views yet")
+                "PostZen delivered it to the TikTok inbox; no public views yet")
     return "submitted", f"PostZen status {platform_status}"
 
 

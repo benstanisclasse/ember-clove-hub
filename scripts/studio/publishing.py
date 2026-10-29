@@ -54,10 +54,10 @@ def tiktok_label(ep, live=None):
         return "live (you recorded it as posted)"
     if ep["publish_mode"] == "draft" and status == "published":
         due = ep["post_date"] and slot_time_str(ep) <= dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        return ("in your TikTok drafts: its time has passed, post it from the app with the AI label" if due
-                else "in TikTok drafts, waiting for you to post it")
+        return ("in your TikTok inbox (tap the notification): its time has passed, post it from the app with the AI label" if due
+                else "in your TikTok inbox, waiting for you to post it (tap the notification)")
     if ep["publish_mode"] == "draft" and status in ("scheduled", "queued", "pending"):
-        return "goes to your TikTok drafts at its time"
+        return "goes to your TikTok inbox at its time"
     if paused(ep):
         return "paused in PostZen"
     return status or ("posted" if ep["state"] == "POSTED" else "")

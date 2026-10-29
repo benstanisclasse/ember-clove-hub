@@ -132,7 +132,7 @@
     const today = todayET();
     const sch = rows('schedule'), fbs = rows('fb_schedule');
     const ttToday = sch.filter(r => r.date === today), fbToday = fbs.filter(r => r.date === today);
-    const drafts = sch.filter(r => /TikTok drafts/.test(r.tiktok || ''));
+    const drafts = sch.filter(r => /TikTok (inbox|drafts)/.test(r.tiktok || ''));
     const approve = sch.filter(r => r.stage === 'QA_PASSED' || r.stage === 'GENERATED');
     const failed = sch.filter(r => /fail|error/i.test(r.tiktok || '')).length + fbs.filter(r => /fail|error/i.test(r.status || '')).length;
     const live = d3.sum(rows('ads_accounts'), r => num(r.active_campaigns) || 0);
@@ -143,7 +143,7 @@
     const item = (label, count, href, cls) => el('li', {}, el('a', {href, text: label}), el('span', {class: `count ${cls || ''}`, text: String(count)}));
     document.getElementById('ov-today').replaceChildren(
       item('Posts scheduled today', ttToday.length + fbToday.length, '/content'),
-      item('Videos waiting in your TikTok drafts', drafts.length, '/content', drafts.length ? 'st-warn' : ''),
+      item('Videos waiting in your TikTok inbox', drafts.length, '/content', drafts.length ? 'st-warn' : ''),
       item('Videos waiting for approval', approve.length, '/content', approve.length ? 'st-warn' : ''),
       item('Failed posts', failed, '/content', failed ? 'st-bad' : ''),
       item('Live ad campaigns', live, '/ads'),

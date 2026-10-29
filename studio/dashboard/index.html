@@ -103,7 +103,7 @@
 
   <section class="es-sec" id="ready-tiktok">
     <h2 class="es-h2">Ready for TikTok publication</h2>
-    <p class="es-note">Videos PostZen has put (or will put) in your TikTok drafts. They are not public until you post them from the
+    <p class="es-note">Videos PostZen has put (or will put) in your TikTok inbox: each arrives as a notification in the TikTok app's Inbox (not the Drafts folder); tap it to open the video, paste the caption and post. They are not public until you post them from the
       TikTok app with the <b>AI-generated content</b> label switched on. A video only counts as live once TikTok shows public views.</p>
     <div class="es-grid3" id="rt-list"></div>
   </section>
@@ -112,7 +112,7 @@
     <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Content queue</h2>
       <button class="es-btn" type="button" id="q-csv">Download CSV</button></div>
     <p class="es-note">Every TikTok video and Facebook post in one list, with its production stage and honest publishing state
-      (submitted, scheduled, in TikTok drafts, waiting for you to post, public, paused or failed). Click a row for its history.</p>
+      (submitted, scheduled, in the TikTok inbox, waiting for you to post, public, paused or failed). Click a row for its history.</p>
     <div class="es-card" id="q-quality" hidden></div>
     <div class="es-controls"><div class="es-seg" id="q-chan" role="group" aria-label="Channel"></div>
       <div class="es-seg" id="q-state" role="group" aria-label="State"></div></div>
@@ -222,14 +222,14 @@ dash.calc('headline', {
 });
 
 dash.calc('next_post', {
-  title: 'Next post', description: 'The earliest planned post that is not live yet and whose slot is still ahead (or that waits in TikTok drafts), with where it stands.',
+  title: 'Next post', description: 'The earliest planned post that is not live yet and whose slot is still ahead (or that waits in the TikTok inbox), with where it stands.',
   inputs: ['schedule'],
   fn: (schedule) => {
     // Eastern "YYYY-MM-DD HH:MM", the same clock as the schedule's slots.
     const nowET = new Intl.DateTimeFormat('sv-SE', {timeZone: 'America/New_York', year: 'numeric', month: '2-digit',
       day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23'}).format(new Date());
     const open = schedule.filter(r => r.stage !== 'POSTED' && r.stage !== 'MEASURED')
-      .filter(r => `${r.date} ${r.time}` > nowET || /TikTok drafts/.test(r.tiktok || ''))
+      .filter(r => `${r.date} ${r.time}` > nowET || /TikTok (inbox|drafts)/.test(r.tiktok || ''))
       .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
     if (!open.length) return [];
     const r = open[0];
@@ -545,7 +545,7 @@ const Q_STATES = [['open', 'Open'], ['awaiting', 'Needs you'], ['scheduled', 'Sc
 const STATE_LABEL = {planned: 'Planned', scripted: 'Scripted', generated: 'Generated', qa_failed: 'QA failed',
   image_generated: 'Picture made', fidelity_failed: 'Picture failed check', captioned: 'Picture checked',
   awaiting_approval: 'Awaiting approval', approved: 'Approved', rejected: 'Rejected', scheduled: 'Scheduled', submitted: 'Submitted',
-  in_tiktok_drafts: 'In TikTok drafts', awaiting_manual_post: 'Post it now (TikTok app)', public: 'Public', measuring: 'Measuring',
+  in_tiktok_drafts: 'In TikTok inbox', awaiting_manual_post: 'Post it now (TikTok app)', public: 'Public', measuring: 'Measuring',
   paused: 'Paused', failed: 'Failed'};
 const qTone = s => s === 'public' ? 'st-ok' : ['failed', 'qa_failed', 'fidelity_failed'].includes(s) ? 'st-bad'
   : ['awaiting_manual_post', 'in_tiktok_drafts', 'awaiting_approval'].includes(s) ? 'st-warn' : 'st-muted';
@@ -582,7 +582,7 @@ function drawQueue() {
     ui.el('div', {style: 'font-size:.875rem', text: r.caption || '(no caption)'}),
     ui.el('span', {class: `es-pill ${qTone(r.publish_state)}`, text: STATE_LABEL[r.publish_state] || r.publish_state}),
     ui.el('div', {class: 'es-note', text: `${r.approved ? 'Approved' : 'NOT approved'} · switch on "AI-generated content" when you post`})))
-    : [ui.el('p', {class: 'es-note', text: 'Nothing waiting for you in the TikTok drafts.'})]));
+    : [ui.el('p', {class: 'es-note', text: 'Nothing waiting for you in the TikTok inbox.'})]));
 
   ui.segmented(document.getElementById('q-chan'), [['all', 'All'], ['tiktok', 'TikTok'], ['facebook', 'Facebook']], queue.chan, v => { queue.chan = v; drawQueue(); });
   ui.segmented(document.getElementById('q-state'), Q_STATES, queue.state, v => { queue.state = v; drawQueue(); });
