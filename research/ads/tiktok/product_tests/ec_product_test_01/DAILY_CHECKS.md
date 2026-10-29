@@ -10,3 +10,4 @@ EC_TT_P001_A/B/C, EC_TT_P005_A/B/C, EC_TT_P006_A/B/C, EC_TT_P012_A/B/C, EC_TT_P0
 
 | Date | Status | Spend | Impressions | Clicks | Purchases | Videos added by TikTok |
 |---|---|---|---|---|---|---|
+| 2026-10-29 | Campaign ENABLE (budget $120.34/day, dynamic); ad group delivering; all 33 ads AD_STATUS_DELIVERY_OK | 231.28 | 16,932 | 138 | 0 | 18 added, all delivering OK, none EC-P01/EC-P02. 10-28 22:47 on P005_A: AI Generated Video-1..7; Long Coat-Music_Refresh-1-12, -4-9, -10-10; Auto-generated-Add_Text_Sticker_Retrieve-13-13, -12-14; 2 re-cuts of our P005_A (…_1200101-2, -3). 10-29 12:44 on P001_B: 4 re-cuts of our P001 videos (…_1200101-1/-2/-2/-3). |
