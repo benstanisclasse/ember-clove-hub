@@ -699,3 +699,10 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - discountAutomaticDeactivate: status now EXPIRED, endsAt 2026-10-29T14:47:55Z. Not deleted; can be reactivated in Shopify admin > Discounts.
 - Owner then asked for a new 50% off everything, shown to visitors, no end date. Not created: a permanent store-wide 50% off on prices doubled the same day is the same made-up "was" price. Options offered instead (see chat).
 - Not changed: "Shopify Collabs Tier Codes" discount, prices, compare-at prices, theme.
+
+## 2026-10-29 ~11:30 ET — Price doubling reverted (owner: "first revert prices")
+- Owner decided the doubled prices weren't working and asked to revert before planning a discount.
+- productVariantsBulkUpdate on all 92 ACTIVE products / 1657 variants, back to the exact pre-doubling prices from reports/redesign/prices_before_2026-10-29_double.json (cross-checked against old_price in data/price_double_2026-10-29.csv: 0 mismatches). Sent via the Shopify connector in 7 aliased batches (bulkOperationRunMutation is blocked by the connector; documents are capped at 16 KB, so data went in variables). 0 userErrors.
+- Verified via Admin API: all 92 active products' min/max variant prices equal the originals; range $31.99-$170.16 again. Compare-at prices untouched (still empty).
+- Not changed: 17 draft + 2 archived products, discounts (50% Sale still off), shipping, theme.
+- Knock-on: the $70 free-shipping line again sits above most single items; Meta/TikTok/Google catalogs pick up the reverted prices on their next sync. No discount created yet.
