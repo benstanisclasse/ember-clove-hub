@@ -68,3 +68,13 @@ Not changed: nothing in the campaign (rebate trial, no edits until 2026-11-04 12
     possibly gift-shoppers. Too few to act on; keep women-only as a round-2 option, not a decision.
 
 Raw numbers for 13–16 added to `early_insights_2026-10-29.json` under "added_2026-10-29_14ET".
+
+## Added 2026-10-29 ~08:30 ET (owner: "i see the click rate is improving for last night ?")
+
+17. **Click rate rose through the night.** TikTok hourly report (ET): launch hour 7 p.m. 0.48% (5,840 views,
+    28 clicks); 8–11 p.m. 1.09% (1,380 / 15); midnight–2 a.m. 0.74% (4,984 / 37); 2–4 a.m. 0.76% (1,849 / 14);
+    4–7 a.m. 1.73% (2,086 / 36), with 6 a.m. at 2.42% (660 / 16). Day totals: 10-28 0.59% (7,265 / 43, $142.46);
+    10-29 to ~8 a.m. 0.96% (9,194 / 88, $75.91). CPM climbed from $3.33 at midnight to ~$22 by 6–7 a.m., so cost
+    per click stayed ~$0.80–0.95. Both of today's add-to-carts (midi dress, ~2 a.m. and ~4 a.m.) fell in this stretch.
+    Hourly samples are small and the audience differs by hour; treat "early morning converts best" as a hypothesis
+    to check across the full week, not a finding.
