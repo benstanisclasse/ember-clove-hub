@@ -811,3 +811,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Variants (Length): 45 cm SKU CJLX150422501AZ, 50 cm SKU CJLX150422502BY, both $39.99 as a PLACEHOLDER (owner has not picked a price). Cost per item 6.29 / 8.29, weight 24 g / 35 g, origin CN, HS 711719 (from CJ). Inventory not tracked.
 - No image: CJ's only photo shows another brand's tag (ORNAMENTUS); waiting for a sample/own photo. Description is factual (alloy, silver-tone, lengths); no brand names, prices or delivery claims.
 - Not done (need owner decision): price, going live, photos, linking to CJ for fulfilment (create_product_connection would route this product's orders to CJ; EPROLO fulfils everything else), sample order.
+- 2026-10-29 ~15:30 ET: priced and discounted (owner: "no list it for 80$ and give a 20% discount"; chose "Automatic 20% discount"; then "make sure on this item to show a 20% discount").
+  - Both variants $80.00 (no compare-at price). Automatic discount gid://shopify/DiscountAutomaticNode/1633869758703 "Silver Barbed Wire Necklace 20% off": 20% on this product only, starts 2026-10-29 19:30 UTC, no end date, combines with shipping discounts only. Shopper pays $64.00. Was SCHEDULED at last check; it switches on by itself. The store had no other automatic discounts (only the Shopify Collabs code).
+  - Live theme "Ember & Clove – free shipping + trust" snippets/price.liquid only shows compare-at prices, so the automatic discount shows in cart/checkout, not on the product page. Added a first description line: "20% off: taken off automatically in your cart, no code needed."
+  - Per order at $64 (pricing_study model, $20 CPA): 45 cm keeps $27.53, 50 cm $25.53.
+  - Product still DRAFT, no photo, not linked to CJ.
