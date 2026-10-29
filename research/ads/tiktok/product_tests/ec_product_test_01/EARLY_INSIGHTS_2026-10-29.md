@@ -49,3 +49,22 @@ these earlier insights are key for round 2".
 - Consider narrowing to women (and possibly 35+) once purchase data exists; for now the data says men rarely click.
 
 Not changed: nothing in the campaign (rebate trial, no edits until 2026-11-04 12:04 CST).
+
+## Added 2026-10-29 afternoon (owner: "are there any other insights")
+
+13. **Two thirds of all spend went in one hour.** Ads cleared review and started serving properly at 7 p.m. ET on
+    launch day; that hour alone spent $121.64 (66% of the $184 total) at a $20.83 CPM for 28 clicks ($4.34 each). The
+    day's budget was gone by ~9 p.m., so delivery stalled until midnight. **Since that burst: $62 for 72 clicks, about
+    $0.87 per click**, half the blended $1.84. Round 2: expect a launch burst; start with a lower budget or launch in
+    the morning, and judge cost per click on the days after launch, not the blended number.
+14. **Older viewers cost far more to reach.** CPM by age: 18–24 $5, 25–34 $10, 35–44 $16, 45–54 $23, 55+ $35. Click
+    rate rises with age (0.10% → 0.87%), but not enough: cost per click 25–34 $1.71, 35–44 $2.66, 45–54 $3.70,
+    55+ $4.01. Whether older buyers are worth it depends on who actually purchases. Recheck once purchases exist.
+    18–24 is near-dead: 1,046 views, 1 click (only $5 spent, so not costly yet).
+15. **Product appeal by age (clicks / views):** the cable knit midi drew clicks evenly from 25–34, 45–54 and 55+.
+    Boots clicked steadily at every age from 25 up. The cardigan drew no clicks under 35. The pleat mini drew clicks
+    only from 35+ (7 of 7).
+16. **Men:** ~22% of views; their few clicks went to lifestyle ads (boots B 3, cardigan B 2, coat B/C, midi C 1 each),
+    possibly gift-shoppers. Too few to act on; keep women-only as a round-2 option, not a decision.
+
+Raw numbers for 13–16 added to `early_insights_2026-10-29.json` under "added_2026-10-29_14ET".
