@@ -805,3 +805,9 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
   - CJ option 1 CJLX1504225: alloy ("metal", no plating stated), 45/50 cm = necklace not choker, one photo only (the ORNAMENTUS-tag photo), 0 reviews, since 2022. $11.11 landed.
   - CJ option 4 CJLX1482119 "Thorns Necklace" (no heart): chunkier figure-8 barbed chain with extender, sits as a choker, $0.71 + $5.13 CJPacket Sensitive Pro (5-11 d) = $5.84 landed, listed 63, 0 reviews. More punk than the dainty winner.
   - Kept after $20 CPA: opt1 $0.82 @34.99, $5.42 @39.99, $12.79 @47.99; opt4 $1.48 @29.99, $6.09 @34.99, $10.69 @39.99. Comparison image in data/kalo_cj/photo_check/silver_compare.jpg (not in git).
+
+## 2026-10-29 ~15:20 ET — Silver Barbed Wire Necklace added to Shopify as a DRAFT (owner: "lets add option 1" then "add the item to the store can you do that?")
+- Product gid://shopify/Product/9790822056175, handle silver-barbed-wire-necklace, status DRAFT (verified: no online store URL, not visible to shoppers). Vendor Ember & Clove, type Accessories, tags alloy / barbed wire / cj / edgy / jewelry / necklace / silver-tone; no ec-collection tag yet.
+- Variants (Length): 45 cm SKU CJLX150422501AZ, 50 cm SKU CJLX150422502BY, both $39.99 as a PLACEHOLDER (owner has not picked a price). Cost per item 6.29 / 8.29, weight 24 g / 35 g, origin CN, HS 711719 (from CJ). Inventory not tracked.
+- No image: CJ's only photo shows another brand's tag (ORNAMENTUS); waiting for a sample/own photo. Description is factual (alloy, silver-tone, lengths); no brand names, prices or delivery claims.
+- Not done (need owner decision): price, going live, photos, linking to CJ for fulfilment (create_product_connection would route this product's orders to CJ; EPROLO fulfils everything else), sample order.
