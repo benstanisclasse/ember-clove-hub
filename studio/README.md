@@ -53,8 +53,11 @@ comments, turns the file back to draft until the owner approves it again, so nob
 
 - `cli.py publish EP --mode draft|scheduled` sends an approved, scheduled episode to PostZen (api.postzen.dev) for its
   planned slot on the Ember & Clove TikTok account. `draft`: at the slot time it lands in the TikTok app's drafts and the
-  owner posts it there with TikTok's AI-generated label on. `scheduled`: PostZen posts it publicly by itself; PostZen
-  cannot set TikTok's AI flag (is_aigc), so the caption must disclose it; owner-only (`--actor owner --quote`).
+  owner posts it there with TikTok's AI-generated label on. `scheduled`: PostZen posts it publicly by itself with
+  TikTok's AI-generated label on (`settings.isAigc`); owner-only (`--actor owner --quote`) unless autopilot is on.
+- Autopilot (`config/hub.json` `postzen.autopilot`, on since 2026-10-29): `schedule` sends the episode to PostZen as a
+  public post for its slot straight away, and `publish EP --mode scheduled` switches a draft upload still waiting for
+  its slot to a public post (same PostZen post, settings swapped and read back).
 - `cli.py sync` pulls post status, TikTok video metrics, followers and daily totals from PostZen and writes the
   dashboard's data files to `studio/dashboard/` (schedule, followers, spend, caps as JSON; tiktok_videos, post_timeline and
   daily_metrics as CSV so an empty table keeps its columns).

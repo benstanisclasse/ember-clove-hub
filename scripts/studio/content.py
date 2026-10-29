@@ -312,7 +312,8 @@ def mirror_tiktok(con, b=None, out=DASH):
                           "state": state, "title": ep["title"], "series": ep["series_id"], "concept": ep["pillar"],
                           "hook_text": (script.get("lines") or [None])[0], "cta_type": ep["cta_type"],
                           "caption": ep["caption"], "link_placement": None,
-                          "ai_disclosure": int("#aigenerated" in (ep["caption"] or "").lower() or ep["publish_mode"] == "draft"),
+                          "ai_disclosure": int("#aigenerated" in (ep["caption"] or "").lower()
+                                                or ep["publish_mode"] in ("draft", "scheduled")),
                           "scheduled_at": sched, "slot_local": f"{ep['post_date']} {ep['slot']}", "episode_id": ep["id"],
                           "approval_json": ep["approval_json"], "test": 0})
         products = []

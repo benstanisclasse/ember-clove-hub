@@ -150,7 +150,12 @@
     "tiktok_username": "Ember & Clove",
     "profile_id": "XXX",
     "facebook_account_id": "XXX",
-    "facebook_page": "Ember & Clove"
+    "facebook_page": "Ember & Clove",
+    "autopilot": {
+      "on": true,
+      "since": "2026-10-29",
+      "owner": "can you put the posting back on full autopilot"
+    }
   },
   "budgets": {
     "_note": "Display and alerts only (Dashboard Phase F); nothing changes campaigns. null = no budget set. target_cpa is the planning figure, not measured.",

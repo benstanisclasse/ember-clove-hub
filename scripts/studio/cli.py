@@ -247,6 +247,13 @@ def cmd_schedule(con, b, args):
     ep = db.move(con, args.episode, "SCHEDULED", args.actor, "scheduled", caption=args.caption,
                  approval_json=json.dumps(approval, ensure_ascii=False))
     print(f"{ep['id']}: SCHEDULED for {ep['post_date']} {ep['slot']}")
+    from studio import publishing
+    if publishing.autopilot():  # autopilot: it goes to PostZen as a public post for its slot right away
+        try:
+            ep = publishing.publish(con, ep, b, "scheduled", args.actor, None)
+            print(f"{ep['id']}: autopilot sent it to PostZen ({ep['postzen_post_id']}), public at its slot")
+        except db.GateError as e:
+            print(f"{ep['id']}: autopilot held it: {e}")
     return 0
 
 
@@ -460,7 +467,7 @@ def main():
     p = sub.add_parser("publish")
     p.add_argument("episode")
     p.add_argument("--mode", required=True, choices=["draft", "scheduled"])
-    p.add_argument("--quote", help="owner's words (required for --mode scheduled)")
+    p.add_argument("--quote", help="owner's words (required for --mode scheduled unless autopilot is on)")
     p.add_argument("--now", action="store_true", help="draft mode: into the TikTok app's drafts right away")
     p.add_argument("--existing", metavar="POSTZEN_ID", help="with --now: record a draft upload already sent")
     p.add_argument("--resend", action="store_true",

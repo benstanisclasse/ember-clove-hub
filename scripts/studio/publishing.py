@@ -3,8 +3,9 @@
 publish(): an episode the owner approved and scheduled goes to PostZen for its planned slot, in one of two modes:
   draft      at the slot time PostZen puts it in the TikTok app's drafts; the owner posts it there with TikTok's
              AI-generated label on (PostZen can't set that label).
-  scheduled  PostZen posts it publicly at the slot time by itself. PostZen can't set TikTok's AI flag (is_aigc), so the
-             caption has to disclose it; an unlabelled post was flagged as a violation (2026-10-27). Owner-only, with their words.
+  scheduled  PostZen posts it publicly at the slot time by itself, with TikTok's AI-generated label on (settings.isAigc,
+             which PostZen added after an unlabelled post was flagged as a violation on 2026-10-27). Owner-only, with their
+             words, or on autopilot (config/hub.json postzen.autopilot, the owner's standing go-ahead).
 sync(): post statuses, TikTok video metrics, followers and daily totals from PostZen, plus the conveyor's own
 calendar and spend, written as JSON rows to studio/dashboard/ for the Ember Studio dashboard.
 """
@@ -24,12 +25,20 @@ from studio import checks, content, db  # noqa: E402
 OUT = HUB / "studio" / "dashboard"
 SETTINGS = {
     "draft": {"uploadAsDraft": True},
-    "scheduled": {"privacyLevel": "publicToEveryone", "allowComments": True, "allowDuet": True, "allowStitch": True},
+    "scheduled": {"privacyLevel": "publicToEveryone", "allowComments": True, "allowDuet": True, "allowStitch": True,
+                  "isAigc": True},
 }
 
 
 def account_id():
     return hub_env.load_config()["postzen"]["tiktok_account_id"]
+
+
+def autopilot():
+    """The owner's standing words when TikTok posting is on autopilot (scheduled episodes go out publicly by
+    themselves), else None."""
+    ap = hub_env.load_config()["postzen"].get("autopilot") or {}
+    return ap.get("owner") if ap.get("on") else None
 
 
 def slot_time(ep, b):
@@ -134,6 +143,12 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None, resend=Fal
     if ep["state"] != "SCHEDULED" or ep["test"]:
         raise db.GateError(f"{ep['id']} is {ep['state']}{' (test)' if ep['test'] else ''}; only approved, scheduled "
                            "episodes go to TikTok")
+    if mode == "scheduled" and not (actor == "owner" and quote):
+        quote = autopilot()
+        if not quote:
+            raise db.GateError("scheduled mode posts publicly by itself: owner only, with their words (or autopilot)")
+    if mode == "scheduled" and ep["publish_mode"] == "draft" and ep["postzen_post_id"] and not now:
+        return go_public(con, ep, b, quote)
     replaced = ""
     if ep["postzen_post_id"]:
         if resend and ep["publish_mode"] == "draft":
@@ -161,12 +176,6 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None, resend=Fal
         return db.note(con, ep["id"], f"sent to the TikTok app's drafts now{replaced}",
                        postzen_post_id=post.get("_id"), publish_mode=mode,
                        platform_status=post.get("status") or "queued")
-    if mode == "scheduled" and (actor != "owner" or not quote):
-        raise db.GateError("scheduled mode posts publicly by itself: owner only, with their words")
-    # PostZen can't set TikTok's AI-generated label and captions no longer carry #aigenerated (owner 2026-10-28),
-    # so AI videos go to drafts, where the owner switches the label on when posting.
-    if mode == "scheduled":
-        raise db.GateError(f"{ep['id']}: a scheduled post can't carry TikTok's AI label; send it to drafts instead")
     local, when = slot_time(ep, b)
     if local <= dt.datetime.now(local.tzinfo) + dt.timedelta(minutes=2):
         raise db.GateError(f"{ep['id']}'s slot {local:%Y-%m-%d %H:%M} has passed; re-plan it")
@@ -178,6 +187,37 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None, resend=Fal
               + replaced)
     return db.note(con, ep["id"], reason, postzen_post_id=post.get("_id"), publish_mode=mode,
                    platform_status=post.get("status") or "scheduled")
+
+
+def go_public(con, ep, b, quote):
+    """A draft upload still waiting in PostZen for its slot becomes a public post with the AI label: the same PostZen
+    post, its TikTok settings swapped (PUT), then read back to make sure the label is on and the inbox upload is off."""
+    local, when = slot_time(ep, b)
+    if local <= dt.datetime.now(local.tzinfo) + dt.timedelta(minutes=2):
+        raise db.GateError(f"{ep['id']}'s slot {local:%Y-%m-%d %H:%M} has passed; re-plan it")
+    post = pz.get(f"posts/{ep['postzen_post_id']}").get("post") or {}
+    status = post.get("status")
+    if status != "scheduled":
+        raise db.GateError(f"{ep['id']}: PostZen post {ep['postzen_post_id']} is {status}, not waiting for its slot")
+    release_checks(con, ep, b)
+    target = {"platform": "tiktok", "accountId": account_id(), "settings": SETTINGS["scheduled"]}
+    pz.put(f"posts/{ep['postzen_post_id']}", {"platforms": [target]})
+    post = pz.get(f"posts/{ep['postzen_post_id']}").get("post") or {}
+    settings = (next(iter(post.get("platforms") or []), {}).get("settings") or {})
+    if not settings.get("isAigc") or settings.get("uploadAsDraft") or post.get("status") != "scheduled":
+        raise RuntimeError(f"{ep['id']}: PostZen post {ep['postzen_post_id']} didn't take the public settings "
+                           f"(status {post.get('status')}, settings {settings}); check it before its slot")
+    ccon = content.connect()
+    try:
+        content.record_publish(ccon, f"TT-{ep['id']}", "tiktok", "tiktok_scheduled", f"{ep['id']}-scheduled",
+                               postzen_post_id=ep["postzen_post_id"], caption_sha256=content.sha256_text(ep["caption"]),
+                               scheduled_for=when, submitted_at=content.now_utc(), state="submitted",
+                               platform_status=post.get("status"), evidence="draft upload switched to a public post")
+    finally:
+        ccon.close()
+    return db.note(con, ep["id"], f"switched from TikTok inbox upload to public post with the AI label for "
+                   f"{local:%a %b %d %H:%M %Z} (owner: {quote})", publish_mode="scheduled",
+                   platform_status=post.get("status"))
 
 
 METRICS = ("views", "impressions", "reach", "likes", "comments", "shares", "saves", "clicks")  # PostZen AnalyticsMetrics

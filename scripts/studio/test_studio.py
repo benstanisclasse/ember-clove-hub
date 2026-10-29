@@ -20,6 +20,13 @@ def con(tmp_path):
     return db.connect(tmp_path / "test.db")
 
 
+@pytest.fixture(autouse=True)
+def no_autopilot(monkeypatch):
+    """The owner's live autopilot setting (config/hub.json) never sends a test episode to PostZen."""
+    from studio import publishing
+    monkeypatch.setattr(publishing, "autopilot", lambda: None)
+
+
 @pytest.fixture
 def selling(b, monkeypatch):
     """Rules as they will be once the owner turns selling on."""
@@ -549,3 +556,44 @@ def test_higgsfield_downloads_are_cleaned_before_qa(tmp_path):
     info = subprocess.run([production.vp.FF, "-hide_banner", "-i", str(out)], capture_output=True, text=True).stderr
     assert "480x854" in info and "44100 Hz" in info and "h264 (High)" in info
     assert out.read_bytes().find(b"moov") < out.read_bytes().find(b"mdat")  # index first (faststart)
+
+
+def test_autopilot_sends_scheduled_posts_public_with_the_ai_label(con, b, tmp_path, monkeypatch):
+    from studio import publishing
+    ep_id, _ = _approved_episode(con, b, tmp_path, monkeypatch)
+    sent = []
+    monkeypatch.setattr(publishing, "autopilot", lambda: "put the posting on autopilot")
+    monkeypatch.setattr(publishing, "account_id", lambda: "acc")
+    monkeypatch.setattr(publishing, "_send", lambda c, e, body, key, *a: sent.append(body) or {"_id": "pz3",
+                                                                                              "status": "scheduled"})
+    cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Errand day.", actor="claude"))
+    ep = db.get(con, ep_id)
+    assert ep["publish_mode"] == "scheduled" and ep["postzen_post_id"] == "pz3"
+    settings = sent[0]["platforms"][0]["settings"]
+    assert settings["isAigc"] is True and settings["privacyLevel"] == "publicToEveryone"
+    assert "uploadAsDraft" not in settings and "scheduledFor" in sent[0]
+
+
+def test_a_waiting_draft_upload_goes_public_in_place(con, b, tmp_path, monkeypatch):
+    from studio import content, publishing
+    import postzen as pz
+    ep_id, _ = _approved_episode(con, b, tmp_path, monkeypatch)
+    cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Errand day.", actor="claude"))
+    db.note(con, ep_id, "x", postzen_post_id="pz1", publish_mode="draft", platform_status="scheduled")
+    orig = content.connect
+    monkeypatch.setattr(content, "connect", lambda path=None: orig(tmp_path / "c.db"))
+    monkeypatch.setattr(publishing, "account_id", lambda: "acc")
+    stored = {"status": "scheduled", "platforms": [{"settings": {"uploadAsDraft": True}}]}
+    puts = []
+    monkeypatch.setattr(pz, "get", lambda path, **k: {"post": stored})
+    monkeypatch.setattr(pz, "put", lambda path, body: puts.append((path, body))
+                        or stored.update(platforms=[{"settings": body["platforms"][0]["settings"]}]))
+    with pytest.raises(db.GateError, match="owner only"):
+        publishing.publish(con, db.get(con, ep_id), b, "scheduled", "claude", None)
+    ep = publishing.publish(con, db.get(con, ep_id), b, "scheduled", "owner", "go public")
+    assert puts[0][0] == "posts/pz1" and puts[0][1]["platforms"][0]["settings"]["isAigc"] is True
+    assert ep["publish_mode"] == "scheduled" and ep["postzen_post_id"] == "pz1"
+    stored["status"] = "published"  # already delivered to the inbox: too late to switch
+    db.note(con, ep_id, "x", publish_mode="draft")
+    with pytest.raises(db.GateError, match="not waiting"):
+        publishing.publish(con, db.get(con, ep_id), b, "scheduled", "owner", "go public")
