@@ -6,7 +6,7 @@ Setup is basically done. Almost everything now waits on Google/TikTok reviews or
 
 | Channel | State | Next |
 |---|---|---|
-| TikTok | EC_TT_ProductTest01 LIVE, $120.34/day, 15 ads, rebate trial to 2026-11-04 12:04 CST | Hands off; daily check 9:00; credit (if any) by ~11-18; don't edit TikTok account info until then |
+| TikTok | EC_TT_ProductTest01 LIVE, $120.34/day, 15 ads, rebate trial to 2026-11-04 12:04 CST | Hands off; daily check 9:00; credit (if any) by ~11-18; don't edit TikTok account info until then. Round 2 starts from `research/ads/tiktok/product_tests/ec_product_test_01/EARLY_INSIGHTS_2026-10-29.md` (+ re-check at trial end) |
 | Meta | Page-likes test F2 turned off by owner 10-29 (follows/reach, not sales; $7.10 spent); Shopify Advantage+ Sales paused | Decide whether to start a sales campaign after TikTok's first week. Before that: the Meta dataset "Shopify data" got only 12 events 10-27/28 and none since 10-28 16:06 PDT; check Events Manager first |
 | Google | Performance Max-1 (account XXX-XXX-XXXX = BridgeMark's account) PAUSED, $15/day, US + Australia, Purchases goal | Wait for Merchant Center approval (0 of 3.17K approved), check advertiser name, then owner switches on |
 | Store | Sells to US + Australia (same shipping); pixels: TikTok, Meta, Google all firing | First order verifies Purchase on all three |

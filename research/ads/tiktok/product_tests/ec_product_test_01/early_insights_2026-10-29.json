@@ -1,0 +1,368 @@
+{
+ "test": "ec_product_test_01",
+ "captured_at": "2026-10-29T09:45Z",
+ "window": "2026-10-28 13:04 CDT launch -> 2026-10-29 ~05:00 ET (~16 h of delivery)",
+ "source": "TikTok Marketing API report/integrated/get (synchronous) + Shopify ShopifyQL sessions; pulled by Claude 2026-10-29",
+ "caveats": [
+  "~14.7k impressions, 100 clicks, 0 purchases: directional only",
+  "AUDIENCE age x gender covered ~7.2k of 14.7k impressions at pull time (lag)",
+  "reach field reported 13 (not yet computed) - ignore",
+  "Shopify sessions include ~290 non-human sessions (TikTok review/preview bursts), so Shopify bounce/duration is unreliable; single-page sessions show 0 s"
+ ],
+ "totals": {
+  "spend": 184.03,
+  "impressions": 14716,
+  "clicks": 100,
+  "landing_page_views": 65,
+  "add_to_cart_shopify": 3,
+  "checkouts": 0,
+  "purchases": 0,
+  "placement": "TikTok feed only, US",
+  "day1_cpm": 19.61,
+  "day2_cpm_so_far": 5.29
+ },
+ "by_ad": {
+  "P005_B": [
+   2357,
+   14,
+   20.3,
+   2315,
+   653,
+   439,
+   374,
+   335,
+   2,
+   9,
+   5.76
+  ],
+  "P012_B": [
+   1317,
+   10,
+   21.5,
+   1292,
+   262,
+   110,
+   76,
+   58,
+   1,
+   7,
+   6.52
+  ],
+  "P005_A": [
+   1295,
+   4,
+   21.96,
+   1272,
+   189,
+   82,
+   61,
+   50,
+   1,
+   3,
+   2.77
+  ],
+  "P013_C": [
+   1277,
+   14,
+   18.1,
+   1232,
+   522,
+   316,
+   239,
+   188,
+   5,
+   11,
+   10.76
+  ],
+  "P006_C": [
+   1229,
+   5,
+   23.58,
+   1207,
+   316,
+   135,
+   103,
+   90,
+   1,
+   3,
+   3.43
+  ],
+  "P005_C": [
+   1121,
+   8,
+   16.86,
+   1088,
+   270,
+   168,
+   125,
+   108,
+   0,
+   6,
+   3.41
+  ],
+  "P013_B": [
+   1024,
+   10,
+   10.57,
+   970,
+   364,
+   225,
+   171,
+   139,
+   5,
+   8,
+   7.76
+  ],
+  "P012_C": [
+   946,
+   5,
+   11.32,
+   926,
+   235,
+   157,
+   112,
+   98,
+   0,
+   4,
+   3.77
+  ],
+  "P006_B": [
+   826,
+   4,
+   9.15,
+   805,
+   222,
+   129,
+   101,
+   83,
+   2,
+   3,
+   3.89
+  ],
+  "P012_A": [
+   764,
+   6,
+   5.21,
+   746,
+   195,
+   137,
+   105,
+   82,
+   0,
+   6,
+   8.94
+  ],
+  "P001_B": [
+   723,
+   7,
+   9.97,
+   702,
+   248,
+   145,
+   122,
+   93,
+   1,
+   2,
+   3.67
+  ],
+  "P006_A": [
+   532,
+   0,
+   5.49,
+   498,
+   147,
+   110,
+   94,
+   80,
+   0,
+   1,
+   6.46
+  ],
+  "P001_A": [
+   478,
+   4,
+   2.56,
+   469,
+   92,
+   59,
+   45,
+   34,
+   0,
+   1,
+   3.05
+  ],
+  "P001_C": [
+   438,
+   3,
+   4.28,
+   422,
+   79,
+   46,
+   35,
+   33,
+   0,
+   1,
+   2.49
+  ],
+  "P013_A": [
+   338,
+   5,
+   2.34,
+   320,
+   107,
+   68,
+   57,
+   48,
+   1,
+   0,
+   6.96
+  ]
+ },
+ "by_ad_columns": [
+  "impressions",
+  "clicks",
+  "spend",
+  "video_plays",
+  "p25",
+  "p50",
+  "p75",
+  "p100",
+  "likes",
+  "landing_page_views",
+  "avg_watch_s"
+ ],
+ "tiktok_auto_added_creatives": {
+  "count": 14,
+  "impressions_total": 61,
+  "spend_total": 0.86,
+  "note": "AI Generated Video / Long Coat Music_Refresh / Add_Text_Sticker variants of P005_A, auto-added by TikTok; barely served"
+ },
+ "age_gender": {
+  "F 18-24": [
+   723,
+   1,
+   3.58
+  ],
+  "F 25-34": [
+   875,
+   7,
+   9.72
+  ],
+  "F 35-44": [
+   1090,
+   6,
+   18.18
+  ],
+  "F 45-54": [
+   1415,
+   11,
+   34.57
+  ],
+  "F 55+": [
+   1061,
+   10,
+   40.36
+  ],
+  "M 18-24": [
+   294,
+   0,
+   1.59
+  ],
+  "M 25-34": [
+   302,
+   0,
+   2.11
+  ],
+  "M 35-44": [
+   364,
+   3,
+   5.7
+  ],
+  "M 45-54": [
+   484,
+   1,
+   9.71
+  ],
+  "M 55+": [
+   538,
+   4,
+   15.75
+  ],
+  "unknown": [
+   90,
+   0,
+   0.58
+  ]
+ },
+ "device": {
+  "IPHONE": [
+   5926,
+   31,
+   112.22
+  ],
+  "ANDROID": [
+   935,
+   10,
+   23.22
+  ],
+  "IPAD": [
+   375,
+   2,
+   6.37
+  ]
+ },
+ "top_states_impressions": {
+  "CA": 836,
+  "TX": 703,
+  "FL": 626,
+  "NY": 595,
+  "GA": 278,
+  "NJ": 276,
+  "PA": 256,
+  "IL": 243,
+  "NC": 234,
+  "VA": 216,
+  "OH": 185,
+  "MA": 166
+ },
+ "shopify_landing_pages_tiktok": {
+  "cable knit midi (P013)": [
+   65,
+   2,
+   0.91,
+   19.9
+  ],
+  "long coat (P005)": [
+   95,
+   1,
+   0.96,
+   0.7
+  ],
+  "pleat mini (P001)": [
+   64,
+   0,
+   1.0,
+   0.0
+  ],
+  "fold-over boots (P012)": [
+   57,
+   0,
+   0.95,
+   1.9
+  ],
+  "chunky cardigan (P006)": [
+   53,
+   0,
+   1.0,
+   0.0
+  ]
+ },
+ "model_age_in_creatives": "all 15 ads: AI models that look ~25-32 (see review/tiktok_test01_ad_pictures.jpg)",
+ "products": {
+  "P001": "Mock Neck Side-Pleat Mini Dress $170.16, 3 photos",
+  "P005": "Two-Button Notch Lapel Long Coat $100.04, 6 photos",
+  "P006": "Stand Collar Chunky Knit Cardigan $62.56, 8 photos",
+  "P012": "Snap Button Fold-Over Knee Boots $91.16, 8 photos",
+  "P013": "Cable Knit Mock Neck Midi Dress $52.99, 11 photos, longest description"
+ }
+}
