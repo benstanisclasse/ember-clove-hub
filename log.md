@@ -714,3 +714,10 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Tested in preview: 24/24 cards on /collections/all show sale + crossed-out price; 3D Rose Blazer Mini Dress page shows $97.86 / $122.32; cart via /cart.js charged $97.86 with discount "20% off everything" (-$24.46). Test cart cleared.
 - Not changed: blocks/_featured-product-price.liquid "From $X" text for products with varying prices (only used in featured-product sections). Prices, compare-at prices, shipping untouched.
 - Owner to publish 'Ember & Clove – 20% off'. Until then the discount applies at cart but product pages show full prices.
+
+## 2026-10-29 ~11:35 ET — Profit check: 10% sitewide discount (owner: "what happens to the profit if 10% site wide discount"), read-only
+- Model = scripts/pricing_study.py kept(): cost + EPROLO shipping + 2.9%+$0.30 + 5% refunds + $20 CPA, standard shipping free on every order (since 09:30 today). Live prices/costs from analytics.db sync 15:25 UTC (after the revert; a few 15:27 .99 tweaks not in it). 92/92 active products have cost data. Single-item orders.
+- Per order after a $20 CPA: no discount avg $1.79 (median $1.00), 37 of 92 lose money; 10% off avg -$2.89 (median -$3.87), 81 lose money; 20% off (live automatic discount) avg -$7.56, 87 lose money. Each 10% costs about $4.67 per order.
+- Before ads: avg $21.79 kept per order at full price, $17.11 at 10% off, $12.44 at 20% off (= break-even CPA).
+- Only dresses, outerwear and heels/mules stay positive on average at 10% off. Worst: block-heel/slingback sandals, clog slippers, knit cardigan, cheap tops (-$9 to -$11).
+- Table: data/discount10_2026-10-29.csv. Nothing in the store changed.
