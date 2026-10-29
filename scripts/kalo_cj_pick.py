@@ -11,7 +11,7 @@ Step 2 (done by agents with the CJ MCP, read-only): for each winner, closest CJ 
 Step 3 `build`: joins both and prices each match with the same per-order model as scripts/pricing_study.py
 (price - cost - shipping - 2.9% - $0.30 - 5% refunds - $20 CPA, free shipping to the customer). Our test price is
 the Kalodata average selling price (what TikTok buyers paid); price_for_10 is the lowest .99 price keeping $10 after
-the CPA. Hand corrections go in data/kalo_cj/cj_fixes.jsonl (read last, so they win). Writes data/kalo_cj/picking_sheet_<date>.csv and .xlsx.
+the CPA. Photo verdicts: data/kalo_cj/photo_check_*.csv (side-by-side sheets in photo_check/, not in git). Hand corrections go in data/kalo_cj/cj_fixes.jsonl (read last, so they win). Writes data/kalo_cj/picking_sheet_<date>.csv and .xlsx.
 
 Kalodata revenue and units are third-party estimates. CJ "listed" = how many CJ stores listed the item (competition
 and seller interest), not sales. Changes nothing anywhere.
@@ -106,9 +106,13 @@ def build():
             if line.strip():
                 o = json.loads(line)
                 cj[o["k"]] = o  # last row for a product wins (an agent may have retried)
+    photo = {}  # side-by-side photo checks (TikTok main image vs CJ main image), newest file wins
+    for path in sorted(glob.glob(os.path.join(DIR, "photo_check_*.csv"))):
+        photo.update({r["k"]: r for r in csv.DictReader(open(path, encoding="utf-8"))})
     rows = []
     for w in wins:
         o = cj.get(w["k"], {})
+        p = photo.get(w["k"], {})
         price = float(w["kalo_price"])
         cost, ship = o.get("cj_cost_max"), o.get("ship15_price") or o.get("cheapest_price")
         usable = o.get("match") in ("high", "medium") and cost and ship
@@ -118,7 +122,8 @@ def build():
             k=w["k"], group=w["group"], rank=int(w["rank"]), product=w["kalo_name"],
             kalo_revenue=float(w["kalo_revenue"]), kalo_units=int(w["kalo_units"] or 0), kalo_price=price,
             kalo_growth_pct=w["kalo_growth_pct"], seller=w["seller"], tiktok_url=w["tiktok_url"],
-            match=o.get("match", "not checked"), cj_name=o.get("cj_name"), cj_sku=o.get("cj_sku"),
+            match=o.get("match", "not checked"), photo_verdict=p.get("photo_verdict", "not checked"),
+            photo_note=p.get("photo_note"), cj_name=o.get("cj_name"), cj_sku=o.get("cj_sku"),
             cj_url=o.get("cj_url"), cj_cost=cost, cj_weight_g=o.get("weight_g"), ship_from=o.get("ship_from"),
             cj_ship=ship, ship_method=o.get("ship15_name") or o.get("cheapest_name"),
             ship_days=o.get("ship15_days") or o.get("cheapest_days"),
@@ -168,7 +173,8 @@ def write_xlsx(rows, path):
         v = r["kept_per_order"]
         if v is not None:
             ws.cell(ws.max_row, kept_col).fill = green if v > 0 else red
-    widths = {"product": 50, "cj_name": 40, "tiktok_url": 18, "cj_url": 18, "note": 50, "review_note": 40}
+    widths = {"product": 50, "cj_name": 40, "tiktok_url": 18, "cj_url": 18, "note": 50, "review_note": 40,
+              "photo_note": 50}
     for i, c in enumerate(cols, 1):
         ws.column_dimensions[get_column_letter(i)].width = widths.get(c, 12)
     ws.freeze_panes = "E2"
@@ -189,7 +195,8 @@ def write_xlsx(rows, path):
         "cj_listed: how many CJ stores listed this item (seller interest / competition), not sales.",
         "cj_stock: CJ warehouse stock, all warehouses. cj_us_stock: US warehouse stock.",
         "cj_reviews / cj_avg_rating: CJ buyer reviews (often few or none).",
-        "Matches were judged from CJ titles and variants, not photos. Check photos before listing anything.",
+        "match was judged from CJ titles and variants. photo_verdict (match / partial / no) compares the TikTok and "
+        "CJ main photos side by side; only the 12 picks within 20% of the TikTok price were checked.",
     ]:
         notes.append([line])
     notes.column_dimensions["A"].width = 120
