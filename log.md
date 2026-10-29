@@ -721,3 +721,10 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Before ads: avg $21.79 kept per order at full price, $17.11 at 10% off, $12.44 at 20% off (= break-even CPA).
 - Only dresses, outerwear and heels/mules stay positive on average at 10% off. Worst: block-heel/slingback sandals, clog slippers, knit cardigan, cheap tops (-$9 to -$11).
 - Table: data/discount10_2026-10-29.csv. Nothing in the store changed.
+
+## 2026-10-29 ~11:45 ET — Every active price ends in .99; draft shows price + "20% off in cart" label (owner: "every price needs to end in .99", "i would like the 20% to be displayed on the item itself and we will control the discount in shopify")
+- productVariantsBulkUpdate on 608 variants / 44 active products whose price did not end in .99: rounded DOWN to the nearest $X.99 (avg -$0.48, max -$0.93), so no shown price is above what was charged before. Old -> new: data/price_round99_2026-10-29.csv. 2 batches, 0 userErrors. Verified: all 92 active products' min/max prices end in .99; range $31.99-$169.99.
+- DRAFT 'Ember & Clove – 20% off' (165840322799): snippets/price.liquid no longer computes a crossed-out sale price; it shows the regular .99 price plus a small "{{ ec_sale_percent }}% off in cart" tag (#A84A1C) on product cards and product pages (ec_sale_percent = 20; set to 0 when the discount ends). Announcement bar unchanged ("20% off everything, applied automatically in your cart").
+- Discount still the automatic "20% off everything" (DiscountAutomaticNode/1633791410415); final cart prices are 80% of the .99 price, so they don't end in .99 (e.g. $121.99 -> $97.60).
+- Tested in preview: 24/24 cards show a .99 price and the tag; cart for the $121.99 dress = $97.60 with "20% off everything" (-$24.39). Test cart cleared.
+- Owner to publish 'Ember & Clove – 20% off'.
