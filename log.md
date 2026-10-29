@@ -758,3 +758,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Live prices, no 2-3 item order loses: only "2nd item 20% off" + "$10 off $100+" (worst +$1.55) and + "$25 off $150+" (worst +$0.01). 1-item orders still 42% losing.
 - Floor prices: also 2nd item 20% + $10 off $75+; 10% off 2+ + $10 off $75+/$100+; 10%/20% tiered + $10 off $75+/$100+ (worst +$4.39); no 1-item order loses. 49 other stacks lose on some orders (all with 30-40% 2nd item, 15-20% off 2+, or $15+/% order offers).
 - Nothing in the store changed.
+
+## 2026-10-29 ~12:40 ET — CJ Dropshipping MCP connected (owner: "now we have the cjdroppshipping mcp ... tell me what is possible"), read-only check
+- CJ MCP logged in as CJ4598996 (URL token mode). Shops on the CJ account: "Ember & Clove" Shopify store (linked 2026-10-29 15:46 UTC; inventory sync on at 50%; CJ has Shopify delivery-profile scopes, no CJ shipping profile exists yet) + an older API shop (2025-08-10).
+- Test quote, CJ "Mock Neck Cable-knit Sweater" (CJMY2554687, $10.53, 540 g) to US from CN: 1 item $11.93 cheapest (LuWei Ordinary US, 5-11 days), YunExpress Clothing Line $13.19; 2 items in one parcel $19.22 ($9.61 each). Our model for 540 g = $13.19 one item / $21.54 two in one parcel, so the quotes match closely and one-parcel savings are real.
+- Rate limit 1 request/second. Nothing ordered, published, connected or changed in CJ or Shopify.
