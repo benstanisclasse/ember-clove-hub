@@ -21,7 +21,7 @@ Product: Silver Barbed Wire Necklace, Shopify `gid://shopify/Product/97908220561
 | First picture decides: ~75% drop before ~2 s | The necklace is large and in focus in slide 1 of every ad; no wide shots first |
 | Plain studio shots had the lowest click rate (0.56% vs ~0.7%) | No studio-only ad; every angle is a real setting or a worn close-up |
 | Real-life scenes worked (midi "slit + boots" street, holiday table) | Every angle is a specific moment: knit day, night out, office, gifting |
-| Clickers skewed older than the models (27 of 35 female clicks 35+) | One angle uses a model who looks 40–50; the others 28–38 |
+| Clickers skewed older than the models (27 of 35 female clicks 35+) | Planned one 40–50 model; the owner chose younger models for all angles, so model age is not tested in this round |
 | 18–24 near-dead; men ~22% of views, few clicks | Women only, age 25+ (TikTok's buckets 25–34, 35–44, 45–54, 55+) |
 | Two thirds of day-1 spend went in one launch hour at a high CPM | Launch in the morning; minimum budget; judge cost per click from day 2 |
 | Click rate ~doubled overnight as delivery settled | Don't judge before 48 h |
@@ -37,7 +37,7 @@ slide 2 = macro detail of the barbs on skin. No text on pictures.
 | EC_TT_BW_D_SOFTEDGE | Soft knit, sharp necklace | Close crop: necklace over a cream chunky cable-knit, warm window light | Soft knit, sharp necklace. |
 | EC_TT_BW_E_STACK | Stack it | Neckline close-up: barbed wire with two fine silver chains, white tee | Wear it on its own or stack it with your finer chains. |
 | EC_TT_BW_F_NIGHTOUT | Night out | Black top + leather jacket, low warm bar light, necklace sharp | The one piece that makes a plain black top look planned. |
-| EC_TT_BW_G_40S | Grown-up edge (model looks 40–50) | Camel blazer, open collar, city street at dusk | Sharp enough for weekends, easy enough for Monday. |
+| EC_TT_BW_G_40S | Grown-up edge (model now looks ~30, owner 2026-10-29: "make the women more youthful ... only 13 and 14") | Camel blazer, open collar, city street at dusk | Sharp enough for weekends, easy enough for Monday. |
 | EC_TT_BW_H_GIFT | For the friend with an edge | Hands opening a small kraft box, necklace lifted out, holiday table blur | For the friend who skips hearts and flowers. |
 
 ## Pictures (4K, Higgsfield Marketing Studio, CJ photo as the product reference)
