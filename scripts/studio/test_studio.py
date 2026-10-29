@@ -447,6 +447,31 @@ def test_publishing_refuses_a_changed_video(con, b, tmp_path, monkeypatch):
         publishing.release_checks(con, db.get(con, ep_id), b)
 
 
+def test_resend_draft_is_owner_only_and_checks_the_file(con, b, tmp_path, monkeypatch):
+    from studio import publishing
+    ep_id, video = _approved_episode(con, b, tmp_path, monkeypatch)
+    cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Errand day. #aigenerated", actor="claude"))
+    sent = []
+    monkeypatch.setattr(publishing, "account_id", lambda: "acc")
+    monkeypatch.setattr(publishing, "_send", lambda c, e, body, key, *a: sent.append(key) or {"_id": "pz2"})
+    with pytest.raises(db.GateError, match="hasn't been sent"):
+        publishing.publish(con, db.get(con, ep_id), b, "draft", "owner", "send it", now=True, resend=True)
+    db.note(con, ep_id, "x", postzen_post_id="pz1", publish_mode="draft", platform_status="published")
+    with pytest.raises(db.GateError, match="already with PostZen"):
+        publishing.publish(con, db.get(con, ep_id), b, "draft", "claude", None, now=True)
+    with pytest.raises(db.GateError, match="owner only"):
+        publishing.publish(con, db.get(con, ep_id), b, "draft", "claude", None, now=True, resend=True)
+    with pytest.raises(db.GateError, match="goes with --now"):
+        publishing.publish(con, db.get(con, ep_id), b, "draft", "owner", "send it", resend=True)
+    video.write_bytes(b"re-rendered")
+    with pytest.raises(db.GateError, match="media_changed"):
+        publishing.publish(con, db.get(con, ep_id), b, "draft", "owner", "send it", now=True, resend=True)
+    assert not sent
+    video.write_bytes(b"approved video")
+    ep = publishing.publish(con, db.get(con, ep_id), b, "draft", "owner", "send it", now=True, resend=True)
+    assert ep["postzen_post_id"] == "pz2" and sent[0].startswith(f"{ep_id}-draft-resend-")
+
+
 def test_old_approvals_are_bound_only_to_unchanged_files(con, b, tmp_path, monkeypatch):
     import os
     monkeypatch.setattr(cli, "HUB", tmp_path)

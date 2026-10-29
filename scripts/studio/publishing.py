@@ -115,24 +115,35 @@ def release_checks(con, ep, b):
         raise db.GateError(f"{ep['id']} held: {checks.describe(blocking)}")
 
 
-def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
+def publish(con, ep, b, mode, actor, quote, now=False, existing=None, resend=False):
     """now (draft mode only): send it to the TikTok app's drafts right away instead of at the slot. A paused post can
     go to TikTok drafts (now or at its slot); its paused PostZen draft stays as it is. existing: a PostZen post
-    already sent to drafts, recorded instead of sending again."""
+    already sent to drafts, recorded instead of sending again. resend (with now, owner only): a draft upload that
+    never showed up in the TikTok app goes to the drafts again, after the same file and caption checks; the earlier
+    PostZen post is kept."""
     if mode not in SETTINGS:
         raise db.GateError(f"mode must be one of {', '.join(SETTINGS)}")
     if (now or existing) and mode != "draft":
         raise db.GateError("only draft mode can go now; scheduled mode posts publicly at its slot")
     if existing and not now:
         raise db.GateError("--existing goes with --now")
+    if resend and (not now or existing):
+        raise db.GateError("--resend goes with --now, without --existing")
+    if resend and (actor != "owner" or not quote):
+        raise db.GateError("resending a draft is owner only, with their words")
     if ep["state"] != "SCHEDULED" or ep["test"]:
         raise db.GateError(f"{ep['id']} is {ep['state']}{' (test)' if ep['test'] else ''}; only approved, scheduled "
                            "episodes go to TikTok")
     replaced = ""
     if ep["postzen_post_id"]:
-        if not (mode == "draft" and paused(ep)):
+        if resend and ep["publish_mode"] == "draft":
+            replaced = f"; resent (owner: {quote}), earlier PostZen draft upload {ep['postzen_post_id']} kept"
+        elif not (mode == "draft" and paused(ep)):
             raise db.GateError(f"{ep['id']} is already with PostZen ({ep['postzen_post_id']}, {ep['publish_mode']})")
-        replaced = f"; paused PostZen draft {ep['postzen_post_id']} kept"
+        else:
+            replaced = f"; paused PostZen draft {ep['postzen_post_id']} kept"
+    elif resend:
+        raise db.GateError(f"{ep['id']} hasn't been sent yet; use --now without --resend")
     if now:
         if existing:
             post = pz.get(f"posts/{existing}").get("post") or {}
@@ -145,7 +156,8 @@ def publish(con, ep, b, mode, actor, quote, now=False, existing=None):
             release_checks(con, ep, b)
             body = {"content": ep["caption"] or "", "publishNow": True, "timezone": b["rules"].posting.timezone,
                     "platforms": [{"platform": "tiktok", "accountId": account_id(), "settings": SETTINGS[mode]}]}
-            post = _send(con, ep, body, f"{ep['id']}-draft-now", "tiktok_draft", content.now_utc())
+            key = f"{ep['id']}-draft-resend-{content.now_utc()}" if resend else f"{ep['id']}-draft-now"
+            post = _send(con, ep, body, key, "tiktok_draft", content.now_utc())
         return db.note(con, ep["id"], f"sent to the TikTok app's drafts now{replaced}",
                        postzen_post_id=post.get("_id"), publish_mode=mode,
                        platform_status=post.get("status") or "queued")

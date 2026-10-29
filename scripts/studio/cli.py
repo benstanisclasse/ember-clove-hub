@@ -274,7 +274,7 @@ def cmd_set_line(con, b, args):
 def cmd_publish(con, b, args):
     from studio import publishing
     ep = publishing.publish(con, db.get(con, args.episode), b, args.mode, args.actor, args.quote,
-                            now=args.now, existing=args.existing)
+                            now=args.now, existing=args.existing, resend=args.resend)
     when = "now" if args.now else f"for {ep['post_date']} {ep['slot']}"
     print(f"{ep['id']}: sent to PostZen as {ep['publish_mode']} {when} "
           f"({ep['postzen_post_id']}); TikTok status {ep['platform_status']}")
@@ -463,6 +463,8 @@ def main():
     p.add_argument("--quote", help="owner's words (required for --mode scheduled)")
     p.add_argument("--now", action="store_true", help="draft mode: into the TikTok app's drafts right away")
     p.add_argument("--existing", metavar="POSTZEN_ID", help="with --now: record a draft upload already sent")
+    p.add_argument("--resend", action="store_true",
+                   help="with --now, owner only (--quote): send a draft upload that never reached TikTok again")
     sub.add_parser("sync")
     p = sub.add_parser("reschedule")
     p.add_argument("moves", nargs="+", metavar="EP=YYYY-MM-DD@HH:MM")
