@@ -658,3 +658,9 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Not copied from the competitor: 90-day guarantee (ours is 7 days), "350K+ customers" and Trustpilot stars (0 orders, no reviews), "ships from US in 1–2 days", their pre-ticked "free club" subscription line. Checkout itself can't be customized on the Basic plan (checkout blocks are Plus-only).
 - Found, not changed: Shopify Settings > Policies > Return rules say "30-day returns" while the written return policy and product pages say 7 days.
 - scripts/test_product_economics.py: CUSTOMER_SHIPPING 8 -> 0 (planning model); dated CSV output left as it was. test_profit / test_dashboard pass.
+
+## 2026-10-29 ~10:15 ET — Trust line: "30-day guarantee" (draft theme)
+- Owner: "use 30 day guarantee". The live written return policy already says 30 days with free return shipping and a prepaid label (changed earlier today, not by this session; Shopify return rules also say 30 days).
+- Draft theme 165834326255: trust line 2 is now "30-day guarantee" / "Not the right fit? Return it within 30 days of delivery. Return shipping is free." (blocks/ec-trust.liquid defaults); home and product promise rows "7-day returns" -> "30-day guarantee"; product Returns accordion now 30 days with a free prepaid return label. No "7 day" text left in those files; JSON valid; preview checked.
+- Merchant Center return policies still say 7 days, customer pays: US form filled (30 days, Download and print label, no cost) but not saved; saving needs the owner to tick "I confirm the information I entered matches the return policy on my website". Australia not started.
+- Cost note: EPROLO accepts returns only within 7 days ("Supports 7-day unconditional returns"), so returns on days 8–30 and every return label are on us.
