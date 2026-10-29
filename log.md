@@ -680,3 +680,8 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Not copied from chillvibe: star ratings / review counts, "until midnight" price, "stock running out", mystery-discount pop-up, 5–8 day delivery.
 - Cost note: EPROLO only takes returns within 7 days; full refunds plus free labels on days 8–30 are ours.
 - 2026-10-29 09:31 ET: Check of the overnight ads refresh (owner: "Yes, check tomorrow that the overnight refresh saved the extra TikTok purchase metrics and the age/gender/country/placement splits."): PASS - 3 refreshes since 03:00Z (04:37, 07:39, 10:36Z) all ok, 107 TikTok per-ad rows for 10-28/10-29 all carry purchase, on_web_order, total_on_web_order_value and real_time_conversion (all 0; 10-28 spend $142.46, 43 clicks, 32 landing views), and splits saved for country (100% US) and placement (100% TikTok) on both days plus age and gender for 10-28 (gender 75% female by spend; 55+ and 45-54 the top age spend), age/gender for 10-29 not filled in yet.
+
+## 2026-10-29 ~11:40 ET — Draft theme published by owner; live check
+- MAIN theme is now 165834326255 "Ember & Clove – free shipping + trust" (previous live 165828329711 "no upsell" kept as fallback).
+- All 5 TikTok test landing pages return 200 with ?utm_source=tiktok: trust lines present (3 items), "money-back guarantee" shown, no "$70" or "7-day returns" text, TikTok pixel XXX present in the web pixel config (app pixels are theme-independent).
+- Homepage: new announcement and promise rows live. Remaining "$70": the homepage SEO meta description (Online Store > Preferences; used for Google and link previews). Not changed yet: Chrome stopped responding (screenshot / navigate timeouts).
