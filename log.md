@@ -751,3 +751,10 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - New scripts/offer_study.py -> data/offer_study_2026-10-29.csv: 21 offers (none, 2nd item X% off, X% off 2+/3+, tiered, $ off over $Y, % off over $Y) on every 1-, 2- and 3-item order (92 / 4,278 / 134,044), same model as the bundle study ($20 CPA, one parcel, free shipping).
 - Live prices: 42% of 1-item orders lose money (worst -$7.50) and no offer changes that. Zero losing 2- and 3-item orders with: 2nd item 20% off, 10% off 2+, 20% off 3+, 10%/20% tiered, $10 off $75+, $10/$15 off $100+, $20 off $120+, $25 off $150+, 15% off $100+, 20% off $120+. Loses on some orders: 2nd item 30-50% off, 15-25% off 2+.
 - "Floor" prices (39 products raised to the lowest .99 where a 1-item order keeps >= $0; avg +$4.62, max +$9): no 1-item order loses, and 2nd item up to 40% off, up to 20% off 2+, 15%/25% tiered and all threshold offers keep every 1-3 item order profitable. Floor list is a draft only; nothing in the store changed.
+
+## 2026-10-29 ~12:20 ET — Stack study: which two offers can run together (owner: "if i wanted to apply both of these which ones can i add"), read-only
+- Shopify docs (DiscountCombinesWith): non-Plus stores apply only one product discount per item; a product discount and an order discount combine when both allow it. So a stack = 1 product offer + 1 order offer.
+- New scripts/stack_study.py -> data/stack_study_2026-10-29.csv: 8 product offers x 7 order offers on every 1-3 item order, live and floor prices, spend threshold checked before the product discount (worst case).
+- Live prices, no 2-3 item order loses: only "2nd item 20% off" + "$10 off $100+" (worst +$1.55) and + "$25 off $150+" (worst +$0.01). 1-item orders still 42% losing.
+- Floor prices: also 2nd item 20% + $10 off $75+; 10% off 2+ + $10 off $75+/$100+; 10%/20% tiered + $10 off $75+/$100+ (worst +$4.39); no 1-item order loses. 49 other stacks lose on some orders (all with 30-40% 2nd item, 15-20% off 2+, or $15+/% order offers).
+- Nothing in the store changed.
