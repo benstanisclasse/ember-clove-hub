@@ -1,7 +1,7 @@
 """Unit economics for the current apparel/shoe catalog and test-product shortlist (2026-10-24).
 
 Contribution per single-item order, before ads:
-  price + customer shipping ($8 if price < $70, else $0)
+  price + customer shipping (free on every order since 2026-10-29; was $8 if price < $70)
   - unit cost (Shopify unitCost, from EPROLO)
   - estimated EPROLO shipping (weight-based estimate; EPROLO's real rate is not on record)
   - card fees 2.9% of (price + customer shipping) + $0.30
@@ -14,7 +14,9 @@ import os
 HUB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 FREE_SHIP_AT = 70.0
-CUSTOMER_SHIPPING = 8.0
+# Standard shipping is free on every order since 2026-10-29 (was $8 under $70). Express ($5, US only) is
+# optional and left out; it covers only part of EPROLO's USPS surcharge (~$9 on a 660 g dress).
+CUSTOMER_SHIPPING = 0.0
 FEE_PCT, FEE_FIXED, REFUND_PCT = 0.029, 0.30, 0.05
 # EPROLO China->US standard line, rough: base + per-kg. Mid is used for ranking; high is the stress case.
 SHIP_MID = (3.50, 10.0)

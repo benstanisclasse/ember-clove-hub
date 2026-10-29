@@ -1,0 +1,5 @@
+{"saved":"2026-10-29","profile":"General profile gid://shopify/DeliveryProfile/115326222575",
+ "zones":{
+  "Domestic (US)":[{"name":"Standard","price":8.0,"condition":"none","transit":"9-20 business days (custom)"},{"name":"Standard","price":0.0,"condition":"order total >= 70 (rate range on method 894703436015)"}],
+  "Australia":[{"name":"Standard","price":8.0,"condition":"none"},{"name":"Standard","price":0.0,"condition":"order total >= 70"}]},
+ "note":"Owner 2026-10-29: 'do free + 5$' -> Standard free on every order, Express $5."}
