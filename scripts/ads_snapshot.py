@@ -50,8 +50,10 @@ FUNNEL = OUT / "ads_funnel.json"
 # link clicks, not clicks (all)). Purchases and revenue are what the platform credits to its ads.
 FUNNEL_FIELDS = {
     "tiktok": {"spend": "spend", "impressions": "impressions", "reach": "reach", "clicks": "clicks",
-               "landing_page_views": "total_landing_page_view", "add_to_cart": "onsite_on_web_cart",
-               "checkout": "checkout", "purchases": "complete_payment", "revenue": "total_purchase_value",
+               # website pixel events (web_event_add_to_cart, initiate_checkout); onsite_on_web_cart and checkout
+               # are TikTok's in-app (TikTok Shop) events and stay 0 for a website (found 2026-10-29)
+               "landing_page_views": "total_landing_page_view", "add_to_cart": "web_event_add_to_cart",
+               "checkout": "initiate_checkout", "purchases": "complete_payment", "revenue": "total_purchase_value",
                "video_plays": "video_play_actions", "video_completes": "video_views_p100",
                "engaged_views": "engaged_view", "likes": "likes", "comments": "comments", "follows": "follows"},
     "meta": {"spend": "amount_spent", "impressions": "impressions", "reach": "reach", "clicks": "link_click",

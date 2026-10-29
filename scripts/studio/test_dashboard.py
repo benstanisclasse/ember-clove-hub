@@ -113,7 +113,8 @@ def test_full_ad_metrics_map_both_platforms_to_one_funnel(tmp_path, monkeypatch)
     monkeypatch.setattr(ads_snapshot, "FUNNEL", tmp_path / "ads_funnel.json")
     tiktok = [{"dimensions": {"ad_id": "XXX", "stat_time_day": "2026-10-28 00:00:00"},
                "metrics": {"ad_name": "P012_B", "campaign_id": "c1", "adgroup_id": "g1", "spend": "20.30", "clicks": "8",
-                           "total_landing_page_view": "6", "onsite_on_web_cart": "0", "complete_payment": "0",
+                           "total_landing_page_view": "6", "onsite_on_web_cart": "0", "web_event_add_to_cart": "2",
+                           "initiate_checkout": "1", "complete_payment": "0",
                            "video_views_p25": "229", "average_video_play": "3.26"}}]
     meta = [{"date_start": "2026-10-28", "date_stop": "2026-10-28", "id": "1209", "name": "Turtleneck",
              "campaign_id": "c2", "adset_id": "s2", "amount_spent": {"value": "4.31", "unit": "USD"}, "clicks": "42",
@@ -121,6 +122,8 @@ def test_full_ad_metrics_map_both_platforms_to_one_funnel(tmp_path, monkeypatch)
              "results": {"indicator": "actions:like", "values": [{"value": "48"}]}}]
     tt, mt = ads_snapshot.ad_days("tiktok", tiktok), ads_snapshot.ad_days("meta", meta)
     assert tt[0]["funnel"]["clicks"] == 8 and tt[0]["funnel"]["landing_page_views"] == 6 and tt[0]["group_id"] == "g1"
+    # website pixel events, not TikTok Shop's in-app onsite_on_web_cart / checkout
+    assert tt[0]["funnel"]["add_to_cart"] == 2 and tt[0]["funnel"]["checkout"] == 1
     assert tt[0]["metrics"]["video_views_p25"] == "229"  # every field kept, not only the funnel ones
     assert mt[0]["funnel"]["spend"] == 4.31 and mt[0]["funnel"]["clicks"] == 4  # link clicks, not clicks (all)
     assert mt[0]["funnel"]["follows"] == 48 and mt[0]["funnel"]["landing_page_views"] is None
