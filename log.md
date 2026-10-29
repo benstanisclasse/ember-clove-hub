@@ -664,3 +664,9 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Draft theme 165834326255: trust line 2 is now "30-day guarantee" / "Not the right fit? Return it within 30 days of delivery. Return shipping is free." (blocks/ec-trust.liquid defaults); home and product promise rows "7-day returns" -> "30-day guarantee"; product Returns accordion now 30 days with a free prepaid return label. No "7 day" text left in those files; JSON valid; preview checked.
 - Merchant Center return policies still say 7 days, customer pays: US form filled (30 days, Download and print label, no cost) but not saved; saving needs the owner to tick "I confirm the information I entered matches the return policy on my website". Australia not started.
 - Cost note: EPROLO accepts returns only within 7 days ("Supports 7-day unconditional returns"), so returns on days 8–30 and every return label are on us.
+
+## 2026-10-29 ~10:45 ET — Checkout branding (live)
+- Owner: "do this" (checkout look and feel). Checkout editor, active configuration "My Store configuration 2" (profile XXX), saved:
+  logo = ember-clove-favicon.png (E&C on terracotta, per brand guide), ~56 px, left; main + header background #FBF6EF; header accent, accent and button #A84A1C; headings Playfair Display, body Inter (same as the storefront theme). Applies to checkout, thank-you and order-status pages. Screenshot reports/redesign/checkout_branding_2026-10-29.jpg (gitignored).
+- Thank-you page message: not added. On the Basic plan the thank-you / order-status "Add block" list only offers app blocks (only google-customer-reviews is installed); there is no built-in text block. Options: a free app that adds a text block, or the order confirmation email (Settings > Notifications), which every buyer gets.
+- Brand guide PDF (brand/Ember-and-Clove-Brand-Guide.pdf) still lists the old policies ($70 free shipping, 7-day returns); now outdated.
