@@ -8,6 +8,10 @@ so it can be rebuilt from the platforms and a bad change here never touches the 
   account_daily   followers per account per day (latest reading of that day kept)
   ad_daily        each ad platform's daily numbers at every fetch (append-only; platforms revise conversions);
                   the view ad_daily_latest keeps the newest fetch per platform/level/entity/day
+  ad_metrics_daily  every metric each platform reports per ad per day, at every fetch (append-only): `metrics` is
+                  the platform's own fields as JSON, `funnel` the same day mapped to AD_FUNNEL (one shape for
+                  Meta and TikTok); the view ad_metrics_latest keeps the newest fetch per platform/ad/day. Days are
+                  each ad account's own reporting day.
 
 Times are stored in UTC (ISO 8601, 'Z'). Reporting days are Eastern (America/New_York): use local_day().
 """
@@ -26,6 +30,8 @@ DASH = HUB / "studio" / "dashboard"
 REPORT_TZ = ZoneInfo("America/New_York")
 POST_METRICS = ("views", "impressions", "reach", "likes", "comments", "shares", "saves", "clicks")
 AD_METRICS = ("spend", "impressions", "clicks", "purchases", "revenue")
+AD_FUNNEL = ("spend", "impressions", "reach", "clicks", "landing_page_views", "add_to_cart", "checkout", "purchases",
+             "revenue", "video_plays", "video_completes", "engaged_views", "likes", "comments", "follows")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS sync_runs (
@@ -51,6 +57,13 @@ CREATE VIEW IF NOT EXISTS ad_daily_latest AS
   SELECT a.* FROM ad_daily a JOIN (SELECT platform, level, entity_id, day, MAX(fetched_at) AS f FROM ad_daily
     GROUP BY platform, level, entity_id, day) m
   ON a.platform = m.platform AND a.level = m.level AND a.entity_id = m.entity_id AND a.day = m.day AND a.fetched_at = m.f;
+CREATE TABLE IF NOT EXISTS ad_metrics_daily (
+  platform TEXT NOT NULL, ad_id TEXT NOT NULL, day TEXT NOT NULL, fetched_at TEXT NOT NULL, campaign_id TEXT,
+  group_id TEXT, ad_name TEXT, metrics TEXT, funnel TEXT, PRIMARY KEY (platform, ad_id, day, fetched_at));
+CREATE VIEW IF NOT EXISTS ad_metrics_latest AS
+  SELECT a.* FROM ad_metrics_daily a JOIN (SELECT platform, ad_id, day, MAX(fetched_at) AS f FROM ad_metrics_daily
+    GROUP BY platform, ad_id, day) m
+  ON a.platform = m.platform AND a.ad_id = m.ad_id AND a.day = m.day AND a.fetched_at = m.f;
 """
 
 
@@ -197,6 +210,31 @@ def record_ad_entities(platform, entities, period, fetched_at=None, path=None):
     con.commit()
     con.close()
     return len(entities)
+
+
+def record_ad_metrics(platform, rows, fetched_at=None, path=None):
+    """rows: dicts with date, id, name, campaign_id, group_id, metrics (the platform's fields) and funnel (AD_FUNNEL),
+    as built by ads_snapshot.py. Append-only."""
+    fetched_at = fetched_at or now_utc()
+    con = connect(path)
+    for r in rows:
+        con.execute("INSERT OR IGNORE INTO ad_metrics_daily VALUES (?,?,?,?,?,?,?,?,?)",
+                    (platform, str(r["id"]), r["date"], fetched_at, str(r.get("campaign_id") or ""),
+                     str(r.get("group_id") or ""), r.get("name") or "", json.dumps(r.get("metrics") or {}, sort_keys=True),
+                     json.dumps({k: (r.get("funnel") or {}).get(k) for k in AD_FUNNEL})))
+    con.commit()
+    con.close()
+    return len(rows)
+
+
+def ad_funnel_rows(path=None):
+    """Newest fetch of every ad-day, flattened for the dashboard: platform, date, ad, parents and AD_FUNNEL."""
+    con = connect(path)
+    out = [{"platform": r["platform"], "date": r["day"], "ad_id": r["ad_id"], "ad_name": r["ad_name"],
+            "campaign_id": r["campaign_id"], "group_id": r["group_id"], **json.loads(r["funnel"] or "{}")}
+           for r in con.execute("SELECT * FROM ad_metrics_latest ORDER BY day, platform, ad_id")]
+    con.close()
+    return out
 
 
 def snapshot_dashboard_files(out=DASH, path=None):

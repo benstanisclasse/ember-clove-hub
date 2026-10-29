@@ -107,6 +107,34 @@ def test_ads_merge_replaces_only_that_platform_and_days(tmp_path, monkeypatch):
         ads_snapshot.merge({"platform": "meta", "days": [day("10/28/2026", 1)]})
 
 
+def test_full_ad_metrics_map_both_platforms_to_one_funnel(tmp_path, monkeypatch):
+    db = tmp_path / "a.db"
+    monkeypatch.setattr(ads_snapshot, "OUT", tmp_path)
+    monkeypatch.setattr(ads_snapshot, "FUNNEL", tmp_path / "ads_funnel.json")
+    tiktok = [{"dimensions": {"ad_id": "XXX", "stat_time_day": "2026-10-28 00:00:00"},
+               "metrics": {"ad_name": "P012_B", "campaign_id": "c1", "adgroup_id": "g1", "spend": "20.30", "clicks": "8",
+                           "total_landing_page_view": "6", "onsite_on_web_cart": "0", "complete_payment": "0",
+                           "video_views_p25": "229", "average_video_play": "3.26"}}]
+    meta = [{"date_start": "2026-10-28", "date_stop": "2026-10-28", "id": "1209", "name": "Turtleneck",
+             "campaign_id": "c2", "adset_id": "s2", "amount_spent": {"value": "4.31", "unit": "USD"}, "clicks": "42",
+             "link_click": "4", "ctr": "19.63%", "like": "48", "landing_page_view": None,
+             "results": {"indicator": "actions:like", "values": [{"value": "48"}]}}]
+    tt, mt = ads_snapshot.ad_days("tiktok", tiktok), ads_snapshot.ad_days("meta", meta)
+    assert tt[0]["funnel"]["clicks"] == 8 and tt[0]["funnel"]["landing_page_views"] == 6 and tt[0]["group_id"] == "g1"
+    assert tt[0]["metrics"]["video_views_p25"] == "229"  # every field kept, not only the funnel ones
+    assert mt[0]["funnel"]["spend"] == 4.31 and mt[0]["funnel"]["clicks"] == 4  # link clicks, not clicks (all)
+    assert mt[0]["funnel"]["follows"] == 48 and mt[0]["funnel"]["landing_page_views"] is None
+    assert ads_snapshot.value("19.63%") == 19.63 and ads_snapshot.value({"value": "Not available"}) is None
+    analytics.record_ad_metrics("tiktok", tt, "2026-10-29T09:00:00Z", db)
+    analytics.record_ad_metrics("tiktok", [{**tt[0], "funnel": {**tt[0]["funnel"], "clicks": 9}}], "2026-10-29T12:00:00Z", db)
+    analytics.record_ad_metrics("meta", mt, "2026-10-29T09:00:00Z", db)
+    rows = analytics.ad_funnel_rows(db)
+    assert [(r["platform"], r["clicks"]) for r in rows] == [("meta", 4), ("tiktok", 9)]  # newest fetch wins
+    assert ads_snapshot.write_funnel(db) == 2 and json.loads((tmp_path / "ads_funnel.json").read_text())[1]["ad_name"] == "P012_B"
+    with pytest.raises(ValueError):
+        ads_snapshot.ad_days("meta", [{**meta[0], "date_start": ""}])
+
+
 # --- server ----------------------------------------------------------------------------------------------------------
 
 @pytest.fixture()

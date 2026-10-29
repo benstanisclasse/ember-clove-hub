@@ -4,6 +4,14 @@
 .ad-plat { display: grid; gap: 4px; }
 .ad-plat .name { display: flex; align-items: center; gap: 8px; font-weight: 500; }
 .ad-plat .name i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+/* Funnel: one row per step, bar length on a log scale so 7,000 impressions and 1 purchase both stay visible. */
+.fn { display: grid; gap: 6px; }
+.fn-row { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr minmax(4rem, auto) minmax(7rem, auto); gap: 10px; align-items: center; }
+.fn-bar { height: 18px; border-radius: 4px; background: var(--cds-chart-grid); overflow: hidden; }
+.fn-bar i { display: block; height: 100%; border-radius: 4px; }
+.fn-row .n { text-align: right; font-variant-numeric: tabular-nums; }
+.fn-row .es-sub { white-space: nowrap; }
+@media (max-width: 560px) { .fn-row { grid-template-columns: 1fr auto; } .fn-row .fn-bar { grid-column: 1 / -1; order: 3; } }
 </style>
 
 <div class="es">
@@ -19,6 +27,20 @@
     <div class="es-chart" id="ad-chart"></div>
   </section>
   <section class="es-grid3" id="ad-platforms"></section>
+  <section class="es-card">
+    <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Funnel: from ad to order</h2>
+      <div class="es-seg" id="fn-plat" role="group" aria-label="Platform"></div></div>
+    <p class="es-note">Each step as the ad platform reports it, per ad per day (every metric each platform returns is kept in history).
+      Clicks are clicks to the store; store visits are pages that finished loading. Bars use a log scale; percentages are of the step above.
+      <span id="fn-note"></span></p>
+    <div class="fn" id="fn"></div>
+  </section>
+  <section class="es-card">
+    <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Ads compared</h2>
+      <button class="es-btn" type="button" id="fn-csv">Download CSV</button></div>
+    <p class="es-note">Selected period and platform. Watched to end = video plays to 100% ÷ video plays.</p>
+    <div class="es-tablewrap"><table class="es-table" id="fn-ads"></table></div>
+  </section>
   <section class="es-card">
     <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">Platforms compared</h2>
       <button class="es-btn" type="button" id="ad-csv">Download CSV</button></div>
@@ -114,9 +136,58 @@
       {k: 'ctr', label: 'CTR', n: 1, f: opt(pct)}, {k: 'cpc', label: 'CPC', n: 1, f: opt(usd)}, {k: 'cpm', label: 'CPM', n: 1, f: opt(usd)},
       {k: 'purchases', label: 'Claimed purchases', n: 1, f: opt(fmt)}, {k: 'cpa', label: 'CPA', n: 1, f: opt(usd)}, {k: 'roas', label: 'ROAS', n: 1, f: opt(v => d3.format('.2f')(v) + '×')}];
     table(document.getElementById('ad-table'), lastRows, COLS, {total: T, sortKey: 'spend'});
+    drawFunnel(P);
     drawTree();
     drawLenses(P, c);
   }
+
+  // Funnel (ads_funnel.json: newest fetch of every ad-day, both platforms mapped to the same steps).
+  let fnPlat = 'all', fnRows = [], FN_COLS;
+  const STEPS = [['impressions', 'Impressions'], ['clicks', 'Clicks to store'], ['landing_page_views', 'Store visits'],
+    ['add_to_cart', 'Add to cart'], ['checkout', 'Checkout'], ['purchases', 'Purchases']];
+  function drawFunnel(P) {
+    ui.segmented(document.getElementById('fn-plat'), [['all', 'All'], ...PLAT.map(([k, name]) => [k, name])], fnPlat, v => { fnPlat = v; drawFunnel(P); });
+    const all = rows('ads_funnel').filter(r => fnPlat === 'all' || r.platform === fnPlat);
+    const s = k => sumIn(all, k, P.cur) || 0, spend = s('spend');
+    const col = fnPlat === 'all' ? 'var(--ch-store)' : PLAT.find(p => p[0] === fnPlat)[2];
+    const box = document.getElementById('fn');
+    if (!all.some(r => r.date >= P.cur[0] && r.date <= P.cur[1])) {
+      box.replaceChildren(el('p', {class: 'es-empty', text: status('ads_funnel') === 'loading' ? 'Loading…' : 'No per-ad numbers in this period yet (the 3-hour refresh adds them).'}));
+    } else {
+      const vals = STEPS.map(([k]) => s(k)), top = Math.log10(Math.max(10, vals[0]) + 1);
+      box.replaceChildren(...STEPS.map(([k, label], i) => {
+        const v = vals[i], prev = i ? vals[i - 1] : null;
+        return el('div', {class: 'fn-row'}, el('span', {text: label}),
+          el('div', {class: 'fn-bar'}, el('i', {style: `width:${v ? Math.max(1.5, 100 * Math.log10(v + 1) / top) : 0}%;background:${col}`})),
+          el('span', {class: 'n', text: fmt(v)}),
+          el('span', {class: 'es-sub', text: [i ? (prev ? pct(v / prev) : '—') : null, v && spend ? `${usd(spend / v)} each` : null].filter(Boolean).join(' · ')}));
+      }));
+    }
+    const extra = ['video_plays', 'engaged_views', 'likes', 'follows'].map(k => [k, s(k)]);
+    document.getElementById('fn-note').textContent = `Spend ${usd(spend)}; ` + extra.map(([k, v]) => `${fmt(v)} ${k.replace('_', ' ')}`).join(', ') + '.';
+
+    // per-ad totals for the period
+    const by = new Map();
+    all.filter(r => r.date >= P.cur[0] && r.date <= P.cur[1]).forEach(r => {
+      // TikTok names carry the uploaded file name ("EC_TT_P006_C_BENEFIT_8U6N.mp4_EC_TT_P006_C_BENEFIT"): keep the part after it
+      const name = (r.ad_name || r.ad_id).replace(/^.*\.mp4_/, '');
+      const key = r.platform + r.ad_id, o = by.get(key) || {platform: PLAT.find(p => p[0] === r.platform)?.[1] || r.platform, ad: name};
+      ['spend', 'impressions', 'clicks', 'landing_page_views', 'add_to_cart', 'checkout', 'purchases', 'video_plays', 'video_completes', 'engaged_views', 'likes', 'follows']
+        .forEach(k => { o[k] = (o[k] || 0) + (num(r[k]) || 0); });
+      by.set(key, o);
+    });
+    fnRows = [...by.values()].map(o => ({...o, ctr: ratio(o.clicks, o.impressions), cpv: ratio(o.spend, o.landing_page_views), done: ratio(o.video_completes, o.video_plays)}));
+    const opt = f => v => v == null ? '—' : f(v);
+    FN_COLS = [{k: 'platform', label: 'Platform'}, {k: 'ad', label: 'Ad'}, {k: 'spend', label: 'Spend', n: 1, f: opt(usd)},
+      {k: 'impressions', label: 'Impr.', n: 1, f: opt(fmt)}, {k: 'clicks', label: 'Clicks', n: 1, f: opt(fmt)}, {k: 'ctr', label: 'CTR', n: 1, f: opt(pct)},
+      {k: 'landing_page_views', label: 'Store visits', n: 1, f: opt(fmt)}, {k: 'cpv', label: 'Cost / visit', n: 1, f: opt(usd)},
+      {k: 'add_to_cart', label: 'Add to cart', n: 1, f: opt(fmt)}, {k: 'checkout', label: 'Checkout', n: 1, f: opt(fmt)},
+      {k: 'purchases', label: 'Purchases', n: 1, f: opt(fmt)}, {k: 'video_plays', label: 'Video plays', n: 1, f: opt(fmt)},
+      {k: 'done', label: 'Watched to end', n: 1, f: opt(pct)}, {k: 'engaged_views', label: 'Engaged', n: 1, f: opt(fmt)},
+      {k: 'likes', label: 'Likes', n: 1, f: opt(fmt)}, {k: 'follows', label: 'Follows', n: 1, f: opt(fmt)}];
+    table(document.getElementById('fn-ads'), fnRows, FN_COLS, {sortKey: 'spend'});
+  }
+  document.getElementById('fn-csv').addEventListener('click', () => ui.csv(`ads_by_ad_${ui.todayET()}.csv`, fnRows, FN_COLS));
 
   // Drill-down: campaign rows open to their ad sets / ad groups / asset groups and ads.
   const open = new Set();
