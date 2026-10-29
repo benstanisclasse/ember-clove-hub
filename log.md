@@ -685,3 +685,11 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - MAIN theme is now 165834326255 "Ember & Clove – free shipping + trust" (previous live 165828329711 "no upsell" kept as fallback).
 - All 5 TikTok test landing pages return 200 with ?utm_source=tiktok: trust lines present (3 items), "money-back guarantee" shown, no "$70" or "7-day returns" text, TikTok pixel XXX present in the web pixel config (app pixels are theme-independent).
 - Homepage: new announcement and promise rows live. Remaining "$70": the homepage SEO meta description (Online Store > Preferences; used for Google and link previews). Not changed yet: Chrome stopped responding (screenshot / navigate timeouts).
+
+## 2026-10-29 ~12:30 ET — All active prices doubled, ending in .99 (owner: "just raise the prices 100%", "make sure every price ends with a .99")
+- Earlier in the same chat the owner asked to "raise all the price by 100% and then discount all the prices by 50%". Not done: that would show a made-up "was" price (FTC 16 CFR 233.1). Showed it as an on-screen-only browser preview instead; nothing in the store changed for that. Owner then chose a plain increase with no discount.
+- productVariantsBulkUpdate on all 92 ACTIVE products / 1657 variants: new price = 2 x old, rounded to the nearest $X.99 (e.g. 46.99 -> 93.99, 41.50 -> 82.99, 37.36 -> 74.99). Range now $63.99-$339.99 (was $31.99-$170.16). No userErrors.
+- Originals (all 111 products, every variant, compare-at empty everywhere): reports/redesign/prices_before_2026-10-29_double.json. Old -> new per variant: data/price_double_2026-10-29.csv (+ .jsonl).
+- Verified via Admin API: 1657/1657 at the new price, 0 compare-at prices set. Storefront /collections/all shows the new prices with no strikethrough.
+- Not changed: 17 draft + 2 archived products, compare-at prices, shipping, discounts, inventory.
+- Knock-on effects: nearly every single item is now over the $70 free-shipping line, so almost every order ships free; the margin numbers in data/profitability_* and price_proposal_* are out of date; Meta/TikTok/Google catalogs pick up the new prices on their next sync.
