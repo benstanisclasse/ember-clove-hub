@@ -693,3 +693,9 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Verified via Admin API: 1657/1657 at the new price, 0 compare-at prices set. Storefront /collections/all shows the new prices with no strikethrough.
 - Not changed: 17 draft + 2 archived products, compare-at prices, shipping, discounts, inventory.
 - Knock-on effects: nearly every single item is now over the $70 free-shipping line, so almost every order ships free; the margin numbers in data/profitability_* and price_proposal_* are out of date; Meta/TikTok/Google catalogs pick up the new prices on their next sync.
+
+## 2026-10-29 ~10:48 ET — "50% Sale" automatic discount turned off (owner chose "Turn it off")
+- Found an ACTIVE automatic discount "50% Sale" (DiscountAutomaticNode/1633772667119, 50% off New Arrivals, Home page, Dresses, Sweaters & Knitwear, Skirts; started 2026-10-29 14:39 UTC, no end, 0 uses, not created by any logged session). On top of the doubled prices it showed the old prices as "50% off" (FTC 16 CFR 233.1).
+- discountAutomaticDeactivate: status now EXPIRED, endsAt 2026-10-29T14:47:55Z. Not deleted; can be reactivated in Shopify admin > Discounts.
+- Owner then asked for a new 50% off everything, shown to visitors, no end date. Not created: a permanent store-wide 50% off on prices doubled the same day is the same made-up "was" price. Options offered instead (see chat).
+- Not changed: "Shopify Collabs Tier Codes" discount, prices, compare-at prices, theme.
