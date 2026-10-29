@@ -641,3 +641,9 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Owner asked why TikTok visitors leave (Oct 28: ~270 TikTok sessions on the 5 pages, 95-100% bounce, 1 add-to-cart). Opened each page at 375x812 in the built-in browser; nothing changed. Live theme is 'Ember & Clove – no upsell' (role main).
 - Findings: prices $170.16 (P001 pleated mini dress), $100.04 (P005 coat), $91.16 (P012 boots), $62.56 (P006 cardigan), $52.99 (P013 cable knit dress), odd cents, no compare-at; no reviews or ratings on any page; P013 ads show the dress in caramel/brown but the page opens on Black with a different street photo; P005/P006/P012 pages open on flat product shots while the ads show a model; 7-day returns, customer pays return shipping; Add to cart sits below the first screen (normal for the theme). Page loaded in ~1.1 s on a fast connection; slow-network speed not tested (PageSpeed API quota exceeded).
 - My page visits add ~6 direct sessions to Shopify analytics for 10-29.
+
+## 2026-10-29 ~01:50 ET — Cable knit dress (P013) now opens on Caramel to match its TikTok ads
+- Owner: "ok do it" (after confirming the URL and the TikTok ads stay unchanged). Store-only change on product 9751656071407; TikTok campaign untouched.
+- productOptionsReorder: Color order now Caramel, Black, Heather Gray, Dark Blue, Red, Green, Berry (was Black first, Caramel 4th); variants follow, so Caramel / S is the default.
+- productReorderMedia: Caramel variant photo (MediaImage 41293110247663) to position 1 and the full-length caramel street photo (41293106544879) to position 2; it is also the featured image now, so collection cards and catalog feeds show caramel. Previous first image was 41293105004783 (red on white).
+- Checked on the live page at 375x812: opens on Caramel / S with the caramel photo, same URL. Undo: move Black back to the top of Color and 41293105004783 back to position 1.
