@@ -672,3 +672,10 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Brand guide PDF (brand/Ember-and-Clove-Brand-Guide.pdf) still lists the old policies ($70 free shipping, 7-day returns); now outdated.
 - ~10:55 ET, owner: "google pay and apple remove paypal". Settings > Payments > Shopify Payments > Payment methods: PayPal Wallet disabled (confirmed in dialog). Apple Pay and Google Pay were already enabled (Apple Pay only shows on Apple devices / Safari). Shop Pay and Amazon Pay remain disabled; "Managed payment methods" is on.
 - ~11:00 ET, owner: "turn on Shop Pay". Shopify Payments > Payment methods: Shop Pay enabled (toast "Shop Pay is enabled."). Shop Pay Installments left disabled.
+
+## 2026-10-29 ~11:20 ET — "30-day money-back guarantee, no questions asked"
+- Owner (after comparing chillvibe.co): "you can add this" (no questions asked / full refund).
+- Return and refund policy (live, admin editor): new first paragraph "30-day money-back guarantee. Not happy with your order? Return it within 30 days of delivery for a full refund of the item price. No questions asked: you don't need to give a reason."; removed "We may reduce your refund if the item has been used, damaged, or handled more than necessary."; condition kept: unworn and unused, tags attached, original packaging. Before: reports/redesign/refund_policy_before_2026-10-29_guarantee.html. Live page checked.
+- Draft theme 165834326255: trust line "30-day money-back guarantee" / "Not happy? Return it within 30 days for a full refund. No questions asked, and return shipping is free."; home and product promise rows "30-day money-back guarantee" / "Full refund within 30 days, no questions asked."; product Returns accordion starts "30-day money-back guarantee: return any item within 30 days of delivery for a full refund, no questions asked." JSON valid, preview checked. Still unpublished (owner publishes).
+- Not copied from chillvibe: star ratings / review counts, "until midnight" price, "stock running out", mystery-discount pop-up, 5–8 day delivery.
+- Cost note: EPROLO only takes returns within 7 days; full refunds plus free labels on days 8–30 are ours.
