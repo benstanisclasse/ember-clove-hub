@@ -728,3 +728,7 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 - Discount still the automatic "20% off everything" (DiscountAutomaticNode/1633791410415); final cart prices are 80% of the .99 price, so they don't end in .99 (e.g. $121.99 -> $97.60).
 - Tested in preview: 24/24 cards show a .99 price and the tag; cart for the $121.99 dress = $97.60 with "20% off everything" (-$24.39). Test cart cleared.
 - Owner to publish 'Ember & Clove – 20% off'.
+
+## 2026-10-29 ~11:40 ET — 20% off everything removed (owner, in chat: "i removed the discount")
+- Owner ended the automatic discount themself. Verified via Admin API: "20% off everything" (DiscountAutomaticNode/1633791410415) EXPIRED, ended 2026-10-29 15:32:06 UTC (live ~16 min). "50% Sale" also expired. Only active discount: "Shopify Collabs Tier Codes - Ember & Clove" (code-based, affiliates).
+- Live theme is still 'Ember & Clove – free shipping + trust' (165834326255), so no sale price was ever shown on product pages. Draft 'Ember & Clove – 20% off' (165840322799) still has ec_sale_percent = 20: do not publish it unless that is set to 0 (it would show crossed-out prices with no discount behind them).
