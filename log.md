@@ -732,3 +732,11 @@ Checked ~8:13 PM ET (automated recheck). **Result: working.**
 ## 2026-10-29 ~11:40 ET — 20% off everything removed (owner, in chat: "i removed the discount")
 - Owner ended the automatic discount themself. Verified via Admin API: "20% off everything" (DiscountAutomaticNode/1633791410415) EXPIRED, ended 2026-10-29 15:32:06 UTC (live ~16 min). "50% Sale" also expired. Only active discount: "Shopify Collabs Tier Codes - Ember & Clove" (code-based, affiliates).
 - Live theme is still 'Ember & Clove – free shipping + trust' (165834326255), so no sale price was ever shown on product pages. Draft 'Ember & Clove – 20% off' (165840322799) still has ec_sale_percent = 20: do not publish it unless that is set to 0 (it would show crossed-out prices with no discount behind them).
+
+## 2026-10-29 ~11:50 ET — Bundle study: 50% off when buying any 2 items (owner: "do a study on if i give a 50% discount if any 2 items are bought"), read-only
+- New scripts/bundle_study.py -> data/bundle_study_2026-10-29.csv: all 4278 two-item pairs of the 92 active products (analytics.db sync 15:34 UTC), one $20 CPA per order, free shipping, fees, 5% refunds, EPROLO in one parcel (separate-parcel worst case also shown).
+- Per order after CPA: 1 item full price avg $1.57 (42% lose); 2 items full price $28.29 (0% lose).
+- A. Both items half price: avg -$18.23, 99.7% of pairs lose money (-$23.08 if shipped separately). Gives away ~$50 per order.
+- B. Cheaper item half price (buy 1, get 2nd 50% off): avg $9.30, 11% lose (separate parcels $4.45, 37% lose). Gives away ~$21 per order. Worst pairs: two pairs of shoes; best: big dress + jewelry.
+- Same-cost alternative: 20% off a 2-item order keeps avg $9.68 (4% lose); 25% $5.03; 30% breaks even; 40%+ loses.
+- B beats a 1-item order only if it creates 2-item orders: it pays off while fewer than ~29% of the offer orders would have been 2 items anyway. No orders yet, so no basket data. Nothing in the store changed.
