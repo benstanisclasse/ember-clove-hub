@@ -2,7 +2,13 @@
 
 Date: 2026-10-29. Owner: "take what we have learned from the tiktok ads campagin and build another campagin just for this
 product but with differernt angles? i also need you to make 4k pictures for the shop and the ads".
-Status: **plan only.** Nothing generated, built or spent.
+Status (2026-10-29 ~15:45 ET): **pictures made, awaiting owner review.** 6 shop (2880×2880) + 10 ad (2160×3840)
+pictures in `data/media_generated/tiktok_test_02_barbed_wire/out/` (not in git), via the Higgsfield developer API
+(owner: "Use the api"), Flare at 4K, reference = CJ photo with the ORNAMENTUS tag removed (`ref/clean_ref.png`, Qwen
+edit). Prompts: `jobs_4k_template.json`. Remade: ad_F_nightout_s2 (provider's nsfw filter on a collarbone close-up;
+re-worded to the jacket collar, no skin), ad_D_softedge_s2 (came out as a collage), ad_H_gift_s2 (showed two
+necklaces). Shop 5 is a stack shot; shop 6 came out as a close neck shot rather than a true macro. Campaign not built,
+nothing uploaded or spent on ads.
 
 Product: Silver Barbed Wire Necklace, Shopify `gid://shopify/Product/9790822056175` (DRAFT), $80 with an automatic 20% off
 (shopper pays $64), CJ CJLX1504225 (45 cm $6.29 / 50 cm $8.29, + $4.82 freight). Per order at $64 before ads ≈ $47.53

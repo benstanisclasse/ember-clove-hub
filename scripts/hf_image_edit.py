@@ -5,6 +5,7 @@ low-quality product photos; every output is compared against the saved originals
 goes on the store.
 Run: python -I scripts/hf_image_edit.py <model> <out.png> <aspect> "<prompt>" <ref_url> [<ref_url> ...]
   model: qwen (alibaba/qwen-image-3/edit, 1-3 refs) | flare (marketing-studio/image/flare, up to 16 refs)
+         | flare4k (same, 4K output)
 """
 import sys
 from pathlib import Path
@@ -20,6 +21,9 @@ MODELS = {
     "flare": ("marketing-studio/image/flare",
               lambda p, refs, ar: {"prompt": p, "image_urls": refs[:16], "resolution": "1k", "aspect_ratio": ar,
                                    "quality": "high", "enhance_prompt": False}),
+    "flare4k": ("marketing-studio/image/flare",
+                lambda p, refs, ar: {"prompt": p, "image_urls": refs[:16], "resolution": "4k", "aspect_ratio": ar,
+                                     "quality": "high", "enhance_prompt": False}),
 }
 
 

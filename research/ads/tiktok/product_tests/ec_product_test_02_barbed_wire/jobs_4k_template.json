@@ -1,0 +1,134 @@
+{
+  "B": "",
+  "style": "Photorealistic commercial photo. The necklace is exactly the one in the reference image: a silver-tone barbed-wire chain made of thin twisted wire links with small wrapped barbs, each barb with short spikes, spaced evenly all the way round, and a small lobster clasp. No pendant, no tag, no charm, no logo, no text, no watermark anywhere in the image. Keep its real size: about 4 mm thick, a 45 cm necklace that sits on the collarbone. Natural skin texture, realistic hands and anatomy, November season styling.",
+  "jobs": [
+    {
+      "key": "shop_1_slate",
+      "aspect": "1:1",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Top-down flat lay of the necklace laid in a loose open circle on dark charcoal slate stone, soft diffused daylight from the left, every barb crisp, nothing else in the frame."
+    },
+    {
+      "key": "shop_2_linen",
+      "aspect": "1:1",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Flat lay of the necklace in a loose S-curve on oatmeal linen fabric beside a small handmade ceramic dish, soft window light, warm neutral tones, the necklace fills most of the frame."
+    },
+    {
+      "key": "shop_3_whitetee",
+      "aspect": "1:1",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of a woman wearing the necklace with a plain white crew-neck t-shirt, framed from just below the lips to mid-chest, necklace resting on the collarbone, plain light grey background, soft even light."
+    },
+    {
+      "key": "shop_4_black",
+      "aspect": "1:1",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of a woman wearing the necklace over a black fitted scoop-neck top, framed from the chin to the chest, warm soft light, plain warm grey background."
+    },
+    {
+      "key": "shop_5_stack",
+      "aspect": "1:1",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of a woman's neckline wearing the necklace layered with one very fine plain silver chain sitting slightly higher, white ribbed tank top, natural daylight, framed chin to chest."
+    },
+    {
+      "key": "shop_6_macro",
+      "aspect": "1:1",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Macro close-up of three barbs of the necklace resting on the skin of a woman's collarbone, very shallow depth of field, soft daylight, the metal twists and spikes razor sharp."
+    },
+    {
+      "key": "ad_D_softedge_s1",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close crop of a woman about 30 in a cream chunky cable-knit crewneck sweater, the necklace worn over the sweater's neckline, warm late-afternoon window light in a cosy apartment, framed from the lips down to the chest, the necklace large and sharp in the middle of the frame."
+    },
+    {
+      "key": "ad_D_softedge_s2",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "One single photograph, not a collage or grid: extreme close-up macro of a few barbs of the necklace lying across cream chunky cable-knit wool, warm window light, shallow depth of field."
+    },
+    {
+      "key": "ad_E_stack_s1",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of the neckline of a woman about 30 in a plain white t-shirt wearing the necklace with two very fine plain silver chains layered above it, natural daylight, framed chin to chest, the barbed-wire necklace large and sharp."
+    },
+    {
+      "key": "ad_E_stack_s2",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of a woman's hand with thin silver rings adjusting the necklace among two fine chains on her collarbone, white t-shirt, natural daylight, shallow depth of field."
+    },
+    {
+      "key": "ad_F_nightout_s1",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "A woman about 32 in a black fitted top and a black leather jacket at a dimly lit bar in the evening, warm amber light and soft bokeh behind her, the necklace sharp and catching the light at her collarbone, framed from the lips down to the waist."
+    },
+    {
+      "key": "ad_F_nightout_s2",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Macro of the necklace draped over the collar of a black leather jacket lying on a dark wooden bar counter, warm amber bar light, soft bokeh of bottles behind."
+    },
+    {
+      "key": "ad_G_grownup_s1",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "A stylish woman who looks 45 to 50 with natural grey-streaked hair, wearing a camel blazer over a white open-collar shirt, the necklace at her collarbone, city street at dusk with warm street lights, framed from the eyes down to the waist, the necklace sharp and clearly visible."
+    },
+    {
+      "key": "ad_G_grownup_s2",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of the necklace on a woman in her late 40s at the open collar of a white shirt under a camel blazer lapel, soft dusk light, shallow depth of field."
+    },
+    {
+      "key": "ad_H_gift_s1",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Close-up of a woman's hands lifting the necklace out of a small open kraft-paper gift box with cream tissue paper, on a wooden table, a blurred holiday dinner table and warm candlelight behind, the necklace large and sharp."
+    },
+    {
+      "key": "ad_H_gift_s2",
+      "aspect": "9:16",
+      "refs": [
+        "REF"
+      ],
+      "prompt": "Top-down view of exactly one necklace (a single strand, one loop only) coiled once inside a small open kraft gift box on cream tissue paper, warm candlelight, a sprig of pine beside the box. Only one necklace in the image."
+    }
+  ]
+}
