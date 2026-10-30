@@ -12,10 +12,17 @@ The Hub has five parts:
 | **Store and products** | Supplier details, sizes, costs, prices and profit per sale for every product; break-even ad cost and loss limit per product; pricing, offer and supplier (CJ vs EPROLO) studies | `data/`, `reports/` |
 | **Ad testing engine** | Every ad test and creative on record; daily TikTok/Meta numbers; each ad labelled (winner candidate, weak, stop-loss, ...); patterns by tag feed the playbook | `data/experiments.csv`, `learnings.md` |
 | **Ember Studio** | The content conveyor for the AI character account: plan → script → generate → QA → owner approval → schedule → post → measure, enforced in code | `studio/README.md` |
-| **Dashboard** | Local web dashboard (overview, content, ads, profit), synced from TikTok, Facebook and Shopify every 15 minutes, with history | `docs/DASHBOARD_OPERATIONS.md` |
+| **Dashboard** | Local web dashboard (overview, content, ads, profit), synced from TikTok, Facebook and Shopify every 15 minutes, with history | [`docs/DASHBOARD_TOUR.md`](docs/DASHBOARD_TOUR.md) (screenshots), `docs/DASHBOARD_OPERATIONS.md` |
 | **Market research** | Kalodata (TikTok Shop US) data, product models, weekly breakout report, winning-video studies, Meta Ad Library and TikTok Top Ads notes | `research/README.md` |
 
 Where things stand and what's next: `docs/RESUME_HERE.md`.
+
+## The dashboard
+
+[![Dashboard overview](docs/gui/1_overview.jpg)](docs/DASHBOARD_TOUR.md)
+
+Eight read-only pages: Overview, Content Studio, Content performance, Advertising, TikTok tests, Store,
+Intelligence and Operations. Each is shown and explained in the [dashboard tour](docs/DASHBOARD_TOUR.md).
 
 ## Layout
 

@@ -67,7 +67,7 @@
     const sys = rows('system_info')[0] || {};
     kv('ops-backups', [['Latest snapshot', sys.latest_backup || 'none yet'], ['Snapshots kept', sys.backup_count != null ? `${sys.backup_count} (up to 14)` : '—'],
       ['Media mirror', sys.mirror_files != null ? `${fmt(sys.mirror_files)} files` : '—'], ['Location', sys.backup_dir || 'backups/ in the Hub'],
-      ['Code history', 'local git repository in the Hub']]);
+      ['Code history', 'git in the Hub; GitHub: private full copy + public XXX copy']]);
 
     const sp = rows('spend'), caps = rows('caps');
     const cap = k => { const c = caps.find(x => x.cap === k); return c && c.usd != null && c.usd !== '' ? Number(c.usd) : null; };
