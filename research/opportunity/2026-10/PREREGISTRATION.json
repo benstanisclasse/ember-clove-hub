@@ -1,0 +1,60 @@
+{
+  "written_at_utc": "2026-10-30T03:45:00Z",
+  "written_before_results": true,
+  "code_commit_at_writing": "2911196",
+  "dataset": {
+    "panel": "research/kalodata/snapshots/pit_2026-09_v1/panel.parquet (point-in-time, built from kalodata.db, read-only)",
+    "attributes": "research/kalodata/snapshots/pit_2026-09_v1/attributes_current.parquet (names/sellers as of 2026-10-25, never used as features)",
+    "source_db_access": "read-only (sqlite mode=ro); no Kalodata downloads, no credits"
+  },
+  "primary_outcome": {
+    "name": "S3_sustained",
+    "definition": "For a product listed at month t (any category top 500, or riser list positions 1-200): 1 if it is in any category top 500 in at least 2 of the months t+1, t+2, t+3; else 0. NaN if any of those months is after 2026-09 or missing.",
+    "why": "A product we would test needs demand that lasts through sourcing (~2-4 weeks) and a test month; a one-month spike is not an opportunity.",
+    "absence_rule": "Top-500 lists are complete, so absence from a month's top 500 means 'below the 500th product' (valid 0); absence never means zero sales."
+  },
+  "evaluation": {
+    "population": "all products listed at t (top500 + risers 1-200; deep risers 201-1,000 excluded because they exist only in Sep 2026)",
+    "test_months": ["2026-03", "2026-04", "2026-05", "2026-06"],
+    "transparent_rankers_also_reported_for": ["2026-01", "2026-02"],
+    "training": "rolling origin, expanding window, embargo 3 months: a model scored at t is trained only on rows with month <= t-3 (labels fully known by t)",
+    "metrics": ["p@10", "p@20", "p@50 overall", "lift vs base rate", "recall@50", "p_cat@10 (mean hit rate of each category's top 10)", "p@10 inside store-fit categories"],
+    "uncertainty": "month-block bootstrap (2000 draws) of the difference vs the best baseline",
+    "no_weight_tuning": "composite weights below are fixed in advance and are not changed after seeing results"
+  },
+  "rankers": {
+    "B1_sales": "revenue in month t",
+    "B2_growth": "mom_growth = ln(revenue_t/revenue_t-1) when listed both months; missing ranks last",
+    "B3_consistency": "number of months listed among t-2, t-1, t; ties broken by revenue_t",
+    "A_emerging": "z(mom_growth clipped to [-2, 3]) + z(log10 of positive dollar growth) + 0.5 if grew in both t-1 and t; products with revenue_t < $5,000 rank last",
+    "B_underserved": "z(category top-500 revenue growth t/t-1) - z(category seller HHI at t) - z(product's seller share of category) + 0.5*z(log revenue_t)",
+    "M4_existing_spec": "logistic regression on the 18 model_v2 features (scripts behind model_v2_2026-10-28), retrained rolling on S3_sustained",
+    "M5_composite": "mean of within-month percentile ranks of M4, A_emerging, B3_consistency and B1_sales (equal weights, fixed in advance)",
+    "not_backtestable": {
+      "C_repeatable_video": "per-product video data exists only for Sep 2026 (123 products)",
+      "D_organic_vs_paid": "same as C",
+      "E_margin": "supplier costs exist only for 50 Sep 2026 products",
+      "F_bundles": "no co-purchase data in the dataset"
+    }
+  },
+  "current_screen": {
+    "month": "2026-09",
+    "store_fit_categories": {
+      "601152": "Womenswear & Underwear",
+      "601352": "Shoes",
+      "605248": "Fashion Accessories",
+      "953224": "Jewelry Accessories & Derivatives",
+      "824584": "Luggage & Bags"
+    },
+    "store_fit_reason": "Ember & Clove is a women's fashion and accessories store; a product outside this range would need its own store and brand. Market-wide lists are still reported.",
+    "commercial_eligibility": "listed in Sep 2026, TikTok unit price $15-$120, Sep revenue >= $5,000",
+    "hard_flags": ["brand or trademark in the product name (IP risk for a lookalike)", "regulated or claims-heavy item (shapewear medical claims, supplements, cosmetics)", "no supplier match or a failed photo match", "negative contribution before ads"],
+    "score_weights": {"market_demand": 0.15, "growth_potential": 0.20, "creative_potential": 0.20, "profitability": 0.25, "competitive_opportunity": 0.10, "fulfillment_quality": 0.10},
+    "missing_components": "Provisional market score renormalises weights over the components that exist; a commercial score is given only where supplier economics exist. Missing is never scored as bad.",
+    "economics": {
+      "formula": "contribution = price - supplier cost - shipping - (2.9% * price + $0.30) - refund reserve (5% of price); break-even CAC = contribution; break-even ROAS = price / contribution; target CAC = contribution - 20% * price; target ROAS = price / target CAC",
+      "price_used": "TikTok Sep 2026 unit price (revenue/units) as the reference selling price",
+      "source": "saved CJ quotes from 2026-10-29 only; no invented costs"
+    }
+  }
+}
