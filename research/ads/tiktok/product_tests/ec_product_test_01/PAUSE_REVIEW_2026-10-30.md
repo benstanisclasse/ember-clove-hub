@@ -39,8 +39,31 @@ under the product they promote.
 **Overall:** the instinct was right for three products, but pausing the whole campaign during the rebate trial was not
 justified on the money. The cable knit dress lost its test, and the rebate credit is most likely gone.
 
-Caveat: the break-even CPAs come from the 10-28 plan. Free shipping (10-29) lowers them a little, which makes the three
-stops more justified, not less.
+Caveat: the break-even CPAs come from the 10-28 plan, which assumed customers paid $8 shipping. Free shipping started
+on 10-29 at 09:30 ET.
+
+## Correction (2026-10-30, after the owner asked for the cable knit dress economics)
+With free shipping, the cable knit dress keeps **$22.48** per order, not $30.25:
+
+| | Amount |
+|---|---|
+| Price | $52.99 |
+| CJ cost | −$10.97 |
+| Shipping | −$15.05 |
+| Fees | −$1.84 |
+| 5% refunds | −$2.65 |
+| **Kept per order** | **$22.48** |
+
+- **Break-even:** ROAS 2.36. At $0.99 per click, 4.4% of clicks must buy.
+- **Stop rule:** its $57.26 of spend is 2.55× break-even, past the 2× stop rule ($44.97). So by the rules it was also a
+  stop.
+- **What that changes:** the money case for pausing rests on the rebate alone (point 3), not on the cable knit dress.
+- **Its real signal is strong interest:** 6 add-to-carts from 41 page views (14.6%; 5–10% is typical) at $0.99 clicks.
+  But the cart lost everyone.
+- **What it would take to profit:**
+  - A higher price: $59.99 keeps $28.93 and needs 3.4% of clicks to buy.
+  - Cheaper shipping than the $15.05 estimate.
+  - Or fixing whatever stops carts reaching checkout.
 
 ## For the necklace campaign (owner: let it run a week)
 - No rebate this time, so a week at $100/day is about $700 of real money.
