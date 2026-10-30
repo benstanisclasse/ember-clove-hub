@@ -19,8 +19,8 @@ ECON = (0.029, 0.30, 0.05)
 TODAY = dt.date(2026, 11, 20)
 
 
-def order(**k):
-    return {"order_id": "o1", "created_at": "2026-11-18T15:00:00Z", "subtotal": 45.0, "shipping": 8.0, "refunded": 0.0, **k}
+def order(**k):  # standard shipping is free since 2026-10-29; express ($5) is passed explicitly
+    return {"order_id": "o1", "created_at": "2026-11-18T15:00:00Z", "subtotal": 45.0, "shipping": 0.0, "refunded": 0.0, **k}
 
 
 VARIANTS = {"v1": {"unit_cost": 14.0, "grams": 400, "product_id": "p1"}, "v2": {"unit_cost": None, "grams": 100, "product_id": "p2"}}
@@ -31,7 +31,9 @@ def test_single_item_order_matches_the_profitability_model():
     e = profit.order_economics(order(), [{"variant_id": "v1", "product_id": "p1", "quantity": 1}], VARIANTS, TITLES, TODAY, ECON)
     expect = profitability_model.contribution("Test Dress", 45.0, 14.0, 400)  # same formula the prices were set with
     assert e["contribution"] == round(expect, 2)
-    assert e["revenue"] == 53.0 and e["fees"] == round(53 * 0.029 + 0.30, 2) and e["refund_allowance"] == 2.25
+    assert e["revenue"] == 45.0 and e["fees"] == round(45 * 0.029 + 0.30, 2) and e["refund_allowance"] == 2.25
+    express = profit.order_economics(order(shipping=5.0), [{"variant_id": "v1", "product_id": "p1", "quantity": 1}], VARIANTS, TITLES, TODAY, ECON)
+    assert express["revenue"] == 50.0 and express["fees"] == round(50 * 0.029 + 0.30, 2)  # express fee counts as revenue
     assert e["cost_complete"] is True and e["day"] == "2026-11-18"
 
 
@@ -40,7 +42,7 @@ def test_multi_item_orders_refunds_and_old_orders():
     e = profit.order_economics(order(subtotal=90.0, shipping=0.0), lines, VARIANTS, TITLES, TODAY, ECON)
     assert e["cogs"] == 28.0 and e["supplier_shipping"] == round(2 * profitability_model.ship("Test Dress", 400), 2)
     refunded = profit.order_economics(order(refunded=45.0), lines[:1], VARIANTS, TITLES, TODAY, ECON)
-    assert refunded["refund_allowance"] == 0 and refunded["revenue"] == 8.0  # actual refund replaces the allowance
+    assert refunded["refund_allowance"] == 0 and refunded["revenue"] == 0.0  # actual refund replaces the allowance
     old = profit.order_economics(order(created_at="2026-09-01T15:00:00Z"), lines, VARIANTS, TITLES, TODAY, ECON)
     assert old["refund_allowance"] == 0  # past the 30-day return window
 
@@ -77,7 +79,7 @@ def test_report_profit_after_marketing(tmp_path, monkeypatch):
     con.execute("INSERT INTO products (product_id, title) VALUES ('p1', 'Test Dress')")
     con.execute("INSERT INTO variants (variant_id, product_id, unit_cost, grams) VALUES ('v1', 'p1', 14.0, 400)")
     con.execute("INSERT INTO orders (order_id, created_at, cancelled, test, subtotal, shipping, refunded) "
-                "VALUES ('o1', '2026-11-18T15:00:00Z', 0, 0, 45, 8, 0), ('o2', '2026-11-18T16:00:00Z', 1, 0, 99, 0, 0)")
+                "VALUES ('o1', '2026-11-18T15:00:00Z', 0, 0, 45, 0, 0), ('o2', '2026-11-18T16:00:00Z', 1, 0, 99, 0, 0)")
     con.execute("INSERT INTO order_lines (line_id, order_id, product_id, variant_id, quantity, unit_price, discount) "
                 "VALUES ('l1', 'o1', 'p1', 'v1', 1, 45, 0)")
     con.executescript(profit.SCHEMA)
@@ -94,7 +96,7 @@ def test_report_profit_after_marketing(tmp_path, monkeypatch):
     assert day["profit_after_marketing"] == round(c - 15 - 1.44, 2)
     s = json.loads((tmp_path / "profit_summary.json").read_text(encoding="utf-8"))
     assert s["basis"] == "orders" and s["allowable_cpa"] == round(c - 10, 2)
-    assert s["breakeven_roas"] == round(53 / c, 2)
+    assert s["breakeven_roas"] == round(45 / c, 2)
     assert json.loads((tmp_path / "profit_products.json").read_text(encoding="utf-8"))[0]["units"] == 1
 
 
