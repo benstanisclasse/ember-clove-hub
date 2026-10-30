@@ -1,0 +1,72 @@
+{% doc %}
+  Free-shipping banner for the cart drawer and cart page.
+  Shipping is free on every order (Standard, US and Australia, since 2026-10-29), so it always shows as unlocked.
+{% enddoc %}
+
+{%- if cart.item_count > 0 -%}
+  <div class="ec-ship ec-ship--done" role="status">
+    <p class="ec-ship__msg">
+      You've unlocked <strong>free shipping</strong> on every order
+    </p>
+    <div class="ec-ship__track" aria-hidden="true">
+      <span class="ec-ship__fill" style="width: 100%;"></span>
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .ec-ship {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: #f1e6d8;
+  }
+
+  .cart-drawer__content > .ec-ship {
+    margin: 0 var(--cart-drawer-padding) var(--gap-xl);
+  }
+
+  .cart-page__items .ec-ship {
+    margin-block-end: var(--margin-lg);
+  }
+
+  .ec-ship__msg {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--color-foreground);
+  }
+
+  .ec-ship__msg strong {
+    color: #a84a1c;
+    font-weight: 600;
+  }
+
+  .ec-ship__track {
+    position: relative;
+    height: 6px;
+    border-radius: 999px;
+    background: #e2d2bf;
+    overflow: hidden;
+  }
+
+  .ec-ship__fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    border-radius: inherit;
+    background: #a84a1c;
+    transition: width 0.4s ease;
+  }
+
+  .ec-ship--done .ec-ship__fill {
+    background: #5a3e2e;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ec-ship__fill {
+      transition: none;
+    }
+  }
+{% endstylesheet %}
