@@ -20,6 +20,18 @@
  "balance_loaded": 1000,
  "auto_add_creatives": true,
  "owner_decision": "Keep the rebate: leave the $120.34 budget and auto-add on, and check daily which videos TikTok adds.",
- "angles": {"A": "Product", "B": "Lifestyle", "C": "Benefit"},
- "caption_angles": ["original", "buyer_callout", "question", "styling", "short"]
+ "angles": {
+  "A": "Product",
+  "B": "Lifestyle",
+  "C": "Benefit"
+ },
+ "caption_angles": [
+  "original",
+  "buyer_callout",
+  "question",
+  "styling",
+  "short"
+ ],
+ "status": "paused",
+ "status_note": "campaign switched off in TikTok on 2026-10-30 at 02:39 ET (read from TikTok at 09:17 ET). The rebate trial rule said no pausing before Nov 4 12:04 CST, so the rebate may be lost."
 }

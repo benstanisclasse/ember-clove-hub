@@ -1,5 +1,16 @@
 # TikTok test 02 — Barbed wire necklace: Ads Manager build status
 
+## LIVE since 2026-10-30 07:30 ET (read from TikTok at 09:17 ET; facts in `live.json`, numbers on the Hub's TikTok tests page)
+- Campaign EC_TT_BarbedWire01 ENABLE; ad group EC_TT_BarbedWire01_All ENABLE, "review partially approved", budget
+  **$118.96/day** (dynamic daily), scheduled from now. The draft below had $100/day from Nov 5: both changed when it was
+  published (not by Claude).
+- 30 ads delivering: our 15, plus **15 variants TikTok made of ad M2** at 08:49 ET (Music_Refresh, New_Hook, AI Generated
+  Video). Several are named "Barbed Wire Necklace with Crystal Accents": the necklace has no crystals. $0 on them so far.
+  Owner to review and switch off any that misdescribe the necklace.
+- First numbers (Oct 30, to 09:22 ET): $2.14, 124 impressions, 1 click (J selfie), 0 purchases.
+- Test 01 (EC_TT_ProductTest01) was switched off in TikTok at 02:39 ET the same day, before its rebate trial ended
+  (Nov 4); the rebate may be lost.
+
 Owner, 2026-10-29 ~20:00 ET: "Can you set up set up a new ad campagin on tiktok for hte necklace but i need you to make more
 angle can you take what is working in the currecnt campagin and us it here". Nothing is published or spending.
 

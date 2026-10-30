@@ -10,9 +10,9 @@
 
 <div class="es">
   <header class="es-head"><h1 class="es-title">TikTok tests</h1>
-    <p class="es-take">The live TikTok product test: 5 products, each with three ad angles (A Product, B Lifestyle, C Benefit), 15 slideshow ads with
-      5 captions each. Numbers are TikTok's own and arrive with the ads refresh every 3 hours while the Claude app is open. Purchases are
-      what TikTok credits to its ads. Nothing on this page changes the campaign.</p></header>
+    <p class="es-take">Our published TikTok tests, one at a time (pick one below), and the next tests waiting to go live. Numbers are TikTok's own
+      and arrive with the ads refresh every 3 hours while the Claude app is open. Purchases are what TikTok credits to its ads. Ads TikTok made
+      itself are counted apart from ours. Nothing on this page changes a campaign.</p></header>
 
   <section class="es-card">
     <h2 class="es-h2">Next tests (not published)</h2>
@@ -20,29 +20,31 @@
     <div class="es-tablewrap"><table class="es-table" id="tt-drafts"></table></div>
   </section>
 
+  <div class="es-controls"><label for="tt-pick">Test</label> <select class="es-select" id="tt-pick"></select></div>
   <section class="es-card tt-trial" id="tt-trial"></section>
   <section class="es-tiles" id="tt-kpis"></section>
 
   <section class="es-grid2">
-    <div class="es-card"><h2 class="es-h2">By product</h2><p class="es-note">All three angles of each product added together.</p>
+    <div class="es-card"><h2 class="es-h2">By product</h2><p class="es-note">Our ads for each product added together.</p>
       <div class="es-tablewrap"><table class="es-table" id="tt-products"></table></div></div>
-    <div class="es-card"><h2 class="es-h2">By angle</h2><p class="es-note">The same angle across all five products.</p>
+    <div class="es-card"><h2 class="es-h2">By angle</h2><p class="es-note">The same angle across the test's products.</p>
       <div class="es-tablewrap"><table class="es-table" id="tt-angles"></table></div></div>
   </section>
 
   <section class="es-card">
-    <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2">All 15 ads</h2>
+    <div class="es-controls" style="justify-content:space-between"><h2 class="es-h2" id="tt-ads-title">Our ads</h2>
       <button class="es-btn" type="button" id="tt-csv">Download CSV</button></div>
-    <p class="es-note">Click an ad to see its five captions. TikTok rotates the captions and decides how the shared budget is split between ads.<span id="tt-period"></span></p>
+    <p class="es-note">Click an ad to see its captions. TikTok rotates the captions and decides how the budget is split between ads.<span id="tt-period"></span></p>
     <div class="es-tablewrap"><table class="es-table" id="tt-ads"></table></div>
   </section>
 
   <section class="es-grid2">
-    <div class="es-card"><h2 class="es-h2">Videos TikTok added</h2>
-      <p class="es-note">Auto-add creatives is on (kept to protect the rebate), so TikTok may mix in other videos from the library.</p>
+    <div class="es-card"><h2 class="es-h2">Ads TikTok made or added</h2>
+      <p class="es-note">Everything in the test's ad group that isn't one of our uploaded videos: library videos it mixed in, and its own variants of our ads
+        (new music, new hook, AI-generated video). We didn't approve these; check what they say.</p>
       <div id="tt-added"></div></div>
     <div class="es-card"><h2 class="es-h2">Daily checks</h2>
-      <p class="es-note">Read-only check every morning at 9:00 (scheduled task "TikTok test 01 daily check"). It never edits or pauses anything.</p>
+      <p class="es-note">Read-only daily checks recorded in the test folder's DAILY_CHECKS.md. They never edit or pause anything.</p>
       <div class="es-tablewrap"><table class="es-table" id="tt-checks"></table></div></div>
   </section>
 </div>
@@ -64,35 +66,55 @@
     return {...o, ctr: ratio(o.clicks, o.impressions), cpa: o.purchases ? o.spend / o.purchases : null};
   });
 
+  const when = v => new Date(v).toLocaleString([], {weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short'});
   function trialCard(info) {
     const box = document.getElementById('tt-trial');
     if (!info) { box.replaceChildren(el('p', {class: 'es-empty', text: status('ad_test_info') === 'loading' ? 'Loading…' : 'No live TikTok test.'})); return; }
-    const end = new Date(info.trial_ends_at), left = end - Date.now();
+    const paused = info.status === 'paused';
+    const end = info.trial_ends_at ? new Date(info.trial_ends_at) : null, left = end ? end - Date.now() : 0;
     const days = Math.floor(left / 864e5), hours = Math.floor((left % 864e5) / 36e5);
-    const endTxt = end.toLocaleString([], {weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short'});
-    box.replaceChildren(
+    const pill = paused ? ['st-warn', 'Paused in TikTok'] : end ? (left > 0 ? ['st-warn', 'Rebate trial running'] : ['st-ok', 'Rebate trial over']) : ['st-ok', 'Running'];
+    const headline = paused ? `Paused: ${info.status_note || 'campaign switched off in TikTok.'}`
+      : end ? (left > 0 ? `Don’t edit or pause the campaign: ${days} d ${hours} h left (until ${when(end)})` : `Trial ended ${when(end)}. Edits no longer affect the rebate.`)
+      : `Running since ${when(info.launched_at)}`;
+    box.replaceChildren(...[  // replaceChildren would print a null as text
       el('div', {class: 'es-controls', style: 'justify-content:space-between'}, el('h2', {class: 'es-h2', text: `${info.name} · ${info.campaign_name}`}),
-        el('span', {class: `es-pill ${left > 0 ? 'st-warn' : 'st-ok'}`, text: left > 0 ? 'Rebate trial running' : 'Rebate trial over'})),
-      el('div', {class: 'big', text: left > 0 ? `Don’t edit or pause the campaign: ${days} d ${hours} h left (until ${endTxt})`
-                                               : `Trial ended ${endTxt}. Edits no longer affect the rebate.`}),
+        el('span', {class: `es-pill ${pill[0]}`, text: pill[1]})),
+      el('div', {class: 'big', text: headline}),
       el('div', {class: 'tt-facts'},
         el('span', {}, 'Launched ', el('b', {text: new Date(info.launched_at).toLocaleString([], {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'})})),
         el('span', {}, 'Budget ', el('b', {text: `${usd(num(info.daily_budget))}/day`}), ' shared by all ads'),
-        el('span', {}, 'Rebate target ', el('b', {text: `${info.rebate_target} purchases in 7 days`}), ' (ad credit for any shortfall)'),
+        info.rebate_target ? el('span', {}, 'Rebate target ', el('b', {text: `${info.rebate_target} purchases in 7 days`}), ' (ad credit for any shortfall)') : null,
         el('span', {}, 'Auto-add creatives ', el('b', {text: info.auto_add_creatives ? 'on' : 'off'})),
-        el('span', {}, 'Balance loaded ', el('b', {text: usd(num(info.balance_loaded))}))),
-      el('p', {class: 'es-note', text: `${info.rebate_rule} Owner decision: “${info.owner_decision}”`}));
+        info.balance_loaded != null ? el('span', {}, 'Balance loaded ', el('b', {text: usd(num(info.balance_loaded))})) : null),
+      info.budget_note ? el('p', {class: 'es-note', text: info.budget_note}) : null,
+      info.rebate_rule || info.owner_decision ? el('p', {class: 'es-note',
+        text: [info.rebate_rule, info.owner_decision ? `Owner decision: “${info.owner_decision}”` : ''].filter(Boolean).join(' ')}) : null,
+      info.watch ? el('div', {class: 'alert'}, el('b', {text: 'Watch'}), el('span', {text: info.watch})) : null].filter(Boolean));
   }
 
+  let picked = null;
   function draw() {
-    const ads = rows('ad_tests'), info = rows('ad_test_info')[0], checks = rows('ad_test_checks');
+    const infos = rows('ad_test_info');
+    if (!infos.some(i => i.test === picked)) {  // default: the newest running test
+      const run = infos.filter(i => i.status !== 'paused').sort((x, y) => String(y.launched_at).localeCompare(String(x.launched_at)));
+      picked = (run[0] || infos[0] || {}).test || null;
+    }
+    const pick = document.getElementById('tt-pick');
+    pick.replaceChildren(...infos.map(i => el('option', {value: i.test, text: `${i.name}${i.status === 'paused' ? ' (paused)' : ''}`, selected: i.test === picked})));
+    pick.onchange = () => { picked = pick.value; draw(); };
+    const info = infos.find(i => i.test === picked);
+    const ads = rows('ad_tests').filter(r => r.test === picked), checks = rows('ad_test_checks').filter(r => r.test === picked);
     trialCard(info);
     const st = status('ad_tests');
     const waiting = st === 'loading' ? 'Loading…' : !ads.length ? 'No live test' : !ads.some(r => r.reported) ? 'Waiting for TikTok’s first numbers' : null;
-    const t = {spend: sum(ads, 'spend'), imp: sum(ads, 'impressions'), clk: sum(ads, 'clicks'), pur: sum(ads, 'purchases')};
+    const plus = k => info && num(info[`added_${k}`]) != null ? num(info[`added_${k}`]) : 0;  // TikTok's own ads count toward the totals
+    const tot = k => { const v = sum(ads, k); return v == null && !plus(k) ? null : (v || 0) + plus(k); };
+    const t = {spend: tot('spend'), imp: tot('impressions'), clk: tot('clicks'), pur: tot('purchases')};
     const target = info ? num(info.rebate_target) : null;
+    const incl = info && num(info.added_by_tiktok) ? `incl. ${usd(plus('spend'))} on ads TikTok made` : null;
     document.getElementById('tt-kpis').replaceChildren(
-      kpi({label: 'Spend', value: t.spend, format: usd, state: waiting, source: info && info.period ? info.period : 'since launch', job: 'ads:tiktok', lateMin: 420}),
+      kpi({label: 'Spend', value: t.spend, format: usd, state: waiting, source: info && info.period ? info.period : 'since launch', sub: incl, job: 'ads:tiktok', lateMin: 420}),
       kpi({label: 'Impressions', value: t.imp, format: big, state: waiting, source: 'TikTok'}),
       kpi({label: 'Clicks', value: t.clk, format: fmt, state: waiting, source: 'TikTok'}),
       kpi({label: 'Click-through rate', value: ratio(t.clk, t.imp), format: pct, state: waiting || (!t.imp ? 'No impressions yet' : null), source: 'clicks ÷ impressions'}),
@@ -108,19 +130,22 @@
     const adRows = ads.map(r => ({...r, ctr: ratio(num(r.clicks), num(r.impressions)), cpa: num(r.purchases) ? num(r.spend) / num(r.purchases) : null}));
     const AD_COLS = [{k: 'ad_name', label: 'Ad'}, {k: 'product', label: 'Product'}, {k: 'angle', label: 'Angle'}, ...COLS_METRIC,
                      {k: 'captions', label: 'Captions', n: true}, {k: 'caption_1', label: 'Main caption'}];
+    document.getElementById('tt-ads-title').textContent = `Our ${ads.length} ads`;
     table(document.getElementById('tt-ads'), adRows, AD_COLS, {sortKey: 'ad_name', desc: false, empty: 'No live test.',
-      onRow: r => drawer(r.ad_name, el('p', {class: 'es-note', text: `${r.product} · ${r.angle} · video ${r.video}`}),
+      onRow: r => drawer(r.ad_name, el('p', {class: 'es-note', text: `${r.product} · ${r.angle}${r.video ? ` · video ${r.video}` : ''}`}),
         el('ol', {class: 'tt-caps'}, String(r.caption_all || '').split('\n').map(c => el('li', {text: c}))))});
     document.getElementById('tt-period').textContent = info && info.refreshed_at ? ` TikTok numbers for ${info.period}, refreshed ${info.refreshed_at}.` : '';
-    document.getElementById('tt-csv').onclick = () => csv('tiktok_test_ads.csv', adRows, AD_COLS);
+    document.getElementById('tt-csv').onclick = () => csv(`tiktok_${picked}_ads.csv`, adRows, AD_COLS);
 
     const added = document.getElementById('tt-added');
     if (!info) added.replaceChildren(el('p', {class: 'es-empty', text: 'No live test.'}));
     else if (!num(info.added_by_tiktok)) added.replaceChildren(el('p', {class: 'es-empty',
-      text: info.refreshed_at ? 'None so far: only our 15 slideshows have delivered.' : 'Nothing reported by TikTok yet.'}));
-    else added.replaceChildren(el('div', {class: 'alert'}, el('b', {text: `${info.added_by_tiktok} video(s) added by TikTok`}),
+      text: info.refreshed_at ? 'None so far: only our own videos are in the ad group.' : 'Nothing reported by TikTok yet.'}));
+    else added.replaceChildren(el('div', {class: 'alert'}, el('b', {text: `${info.added_by_tiktok} ad(s) made or added by TikTok`}),
+      el('span', {text: `Spend ${usd(plus('spend'))} · impressions ${big(plus('impressions'))} · clicks ${fmt(plus('clicks'))} · purchases ${fmt(plus('purchases'))}`}),
       el('span', {text: info.added_names}),
-      el('span', {text: 'Leave them during the trial; removing one counts as an edit and cancels the rebate.'})));
+      info.trial_ends_at && new Date(info.trial_ends_at) > Date.now() && info.status !== 'paused'
+        ? el('span', {text: 'Leave them during the rebate trial; removing one counts as an edit.'}) : null));
 
     const lines = s => String(s || '').split('\n').filter(Boolean);
     table(document.getElementById('tt-drafts'), rows('ad_test_drafts'), [{k: 'name', label: 'Test'}, {k: 'product', label: 'Product'},
@@ -136,7 +161,7 @@
          el('h3', {class: 'es-h2', text: `Ads (${r.ads})`}), el('ol', {class: 'tt-caps'}, lines(r.ad_list).map(c => el('li', {text: c}))))});
 
     table(document.getElementById('tt-checks'), checks, [{k: 'date', label: 'Date'}, {k: 'status', label: 'Status'}, {k: 'spend', label: 'Spend'},
-      {k: 'purchases', label: 'Purchases'}, {k: 'added', label: 'Added by TikTok'}], {sortKey: 'date', empty: 'First check runs tomorrow at 9:00.'});
+      {k: 'purchases', label: 'Purchases'}, {k: 'added', label: 'Added by TikTok'}], {sortKey: 'date', empty: 'No daily checks recorded for this test.'});
   }
   dash.onData(draw);
 })();

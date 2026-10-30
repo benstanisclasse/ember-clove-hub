@@ -380,6 +380,8 @@ def test_ad_tests_match_tiktok_names_and_find_added_videos(tmp_path):
          "spend": 4.5, "impressions": 300, "clicks": 9, "purchases": 1, "revenue": 170.16, "period": "2026-10-22..2026-10-28",
          "refreshed_at": "2026-10-28T15:00"},
         {"platform": "tiktok", "level": "ad", "name": "EC-P01-A06-H01-V02.mp4", "parent_id": "g1", "spend": 1},
+        {"platform": "tiktok", "level": "ad", "name": "Dress with Crystals-Music_Refresh-1-2_EC_TT_P001_A_PRODUCT", "parent_id": "g1",
+         "spend": 0.5, "clicks": 2},  # TikTok's own variant of our ad: counted as TikTok's, not ours
         {"platform": "tiktok", "level": "ad", "name": "other campaign ad", "parent_id": "g9", "spend": 2},
         {"platform": "meta", "level": "ad", "name": "EC_TT_P001_B_LIFESTYLE", "parent_id": "g1", "spend": 3}]), encoding="utf-8")
     assert ad_tests.build(out, _test_folder(tmp_path)) == ["ad_tests 2", "ad_test_info 1", "ad_test_checks 1",
@@ -390,7 +392,9 @@ def test_ad_tests_match_tiktok_names_and_find_added_videos(tmp_path):
     assert a["captions"] == 2 and a["caption_all"] == "one\ntwo" and a["video"] == "EC_TT_P001_A_PRODUCT.mp4"
     assert b["spend"] is None and b["reported"] is False and b["captions"] == 1  # unknown stays null; Meta row ignored
     info = json.loads((out / "ad_test_info.json").read_text(encoding="utf-8"))[0]
-    assert info["added_by_tiktok"] == 1 and info["added_names"] == "EC-P01-A06-H01-V02.mp4"  # other ad group not counted
+    assert info["added_by_tiktok"] == 2 and info["added_names"] == (  # other ad group not counted
+        "Dress with Crystals-Music_Refresh-1-2_EC_TT_P001_A_PRODUCT; EC-P01-A06-H01-V02.mp4")
+    assert info["added_spend"] == 1.5 and info["added_clicks"] == 2 and info["status"] == "active"
     assert info["ads_reported"] == 1 and info["period"] == "2026-10-22..2026-10-28" and info["rebate_target"] == 10
     checks = json.loads((out / "ad_test_checks.json").read_text(encoding="utf-8"))
     assert checks == [{"test": "t1", "date": "2026-10-29", "status": "active", "spend": "12.50", "impressions": "900",

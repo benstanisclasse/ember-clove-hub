@@ -5,8 +5,9 @@ launch time, budget, rebate trial). For each live test this joins:
   launch_set.json      the ads as built: name, product, angle (A Product / B Lifestyle / C Benefit), captions, video
   products.json        product titles
   ads_entities.json    TikTok's own per-ad totals, written by the ads refresh task (scripts/ads_snapshot.py). TikTok
-                       names an ad "<video file>_<our ad name>", so ads are matched by our name; ads in the test's ad
-                       group that match none of ours were added by TikTok (auto-add creatives).
+                       names an ad "<video file>_<our ad name>", so ads are matched on that form; every other ad in
+                       the test's ad group was made by TikTok (auto-add creatives, or its own variants of one of our
+                       ads, named "<variant>_<our ad name>" with no video file) and is totalled separately.
   DAILY_CHECKS.md      the daily read-only check's table (scheduled task tiktok-test01-daily-check)
 
 A folder with a draft.json and no live.json is a test that isn't published yet (a TikTok draft or ad material only):
@@ -48,6 +49,12 @@ def _checks(path):
     return rows
 
 
+def _ours(entity_name, ad_name):
+    """TikTok names our uploaded ads "<video file>_<our ad name>"; its own variants of an ad end with our name too
+    but have no video file name in front."""
+    return entity_name.endswith(ad_name) and ".mp4_" in entity_name
+
+
 def build_test(folder, entities):
     """(ad rows, info row, check rows) for one test folder with a live.json; None when the test isn't live."""
     live = _load(folder / "live.json", None)
@@ -59,24 +66,24 @@ def build_test(folder, entities):
     angles = live.get("angles", {})
     group = str(live.get("adgroup_id", ""))
     tt_ads = [e for e in entities if e.get("platform") == live.get("platform", "tiktok") and e.get("level") == "ad"]
-    ours = [a["ad_name"] for a in launch.get("ads", [])]
     rows, matched = [], set()
     for a in launch.get("ads", []):
         name = a["ad_name"]
-        hit = [e for e in tt_ads if name in str(e.get("name", ""))]
+        hit = [e for e in tt_ads if _ours(str(e.get("name", "")), name)]
         matched.update(id(e) for e in hit)
         letter = name.split("_")[3] if name.count("_") >= 3 else ""
-        caps = [c["text"] for c in a.get("caption_variants", [])] or [a.get("caption", "")]
+        caps = [c["text"] for c in a.get("caption_variants", [])] or a.get("captions") or [a.get("caption", "")]
         row = {"test": live["test"], "ad_name": name, "product_id": a.get("product_id"),
-               "product": titles.get(a.get("product_id"), a.get("product_id")),
-               "angle": f"{letter} {angles.get(letter, '')}".strip(), "captions": len(caps), "caption_1": caps[0],
-               "caption_all": "\n".join(caps),
+               "product": titles.get(a.get("product_id"), a.get("product_id")) or live.get("product"),
+               "angle": f"{letter} {angles.get(letter) or a.get('angle', '')}".strip(), "captions": len(caps),
+               "caption_1": caps[0], "caption_all": "\n".join(caps),
                "video": Path(a.get("video", "")).name, "reported": bool(hit)}
         for k in METRICS:
             row[k] = round(sum(float(e.get(k) or 0) for e in hit), 2) if hit else None
         rows.append(row)
-    added = [e for e in tt_ads if id(e) not in matched and str(e.get("parent_id", "")) == group
-             and not any(n in str(e.get("name", "")) for n in ours)]
+    # Everything else in the test's ad group was made by TikTok (auto-add creatives, or its own variants of our ads:
+    # "Music_Refresh", "New_Hook", "AI Generated Video" ...). Kept apart so they never pass as our approved ads.
+    added = [e for e in tt_ads if id(e) not in matched and str(e.get("parent_id", "")) == group]
     period = next((e.get("period") for e in tt_ads if e.get("period")), None)
     refreshed = max((e.get("refreshed_at") or "" for e in tt_ads), default="") or None
     reb = live.get("rebate", {})
@@ -86,9 +93,13 @@ def build_test(folder, entities):
             "budget_note": live.get("budget_note"), "rebate_target": reb.get("target_conversions"),
             "trial_ends_at": reb.get("trial_ends_at"), "rebate_rule": reb.get("rule"),
             "auto_add_creatives": live.get("auto_add_creatives"), "owner_decision": live.get("owner_decision"),
-            "balance_loaded": live.get("balance_loaded"), "ads": len(rows), "ads_reported": sum(r["reported"] for r in rows),
-            "added_by_tiktok": len(added), "added_names": "; ".join(str(e.get("name")) for e in added),
+            "balance_loaded": live.get("balance_loaded"), "status": live.get("status", "active"),
+            "status_note": live.get("status_note"), "watch": live.get("watch"),
+            "ads": len(rows), "ads_reported": sum(r["reported"] for r in rows),
+            "added_by_tiktok": len(added), "added_names": "; ".join(sorted({str(e.get("name")) for e in added})),
             "period": period, "refreshed_at": refreshed}
+    for k in METRICS:
+        info[f"added_{k}"] = round(sum(float(e.get(k) or 0) for e in added), 2) if added else None
     checks = [{"test": live["test"], **c} for c in _checks(folder / "DAILY_CHECKS.md")]
     return rows, info, checks
 
