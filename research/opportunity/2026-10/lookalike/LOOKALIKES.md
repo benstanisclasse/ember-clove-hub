@@ -104,3 +104,47 @@ File: `research/kalodata/clog_cushionaire_detail_2026-10-30.json`.
 pulled; it would take the video ranking at 0.1 credit.
 
 **Established and well reviewed.** Listed since December 2024, 1,049 reviews, 10% commission.
+
+## The four open checks on the clog (2026-10-30)
+
+### 1. Creator concentration: one creator sells it (Kalodata video rank, 0.1 credit)
+Files: `research/kalodata/clog_cushionaire_videos_2026-10-30.json` and `clog_cushionaire_top_videos_2026-10-30.csv`.
+
+- **One creator dominates.** The top 100 videos made $205k across 54 creators. **melrein82 alone made 71%** of it
+  ($145k). The top 2 made 81%, the top 5 made 91%.
+- **The October rise is one video.** melrein82's video of Oct 2 made $65.7k from 1.3M views.
+- **Almost all paid.** Paid-boosted videos made 99.5% of the revenue: 19 of the top 20, at ad ROAS 1.6–4.4. None of the
+  top 20 are AI.
+- **Many new creators, little revenue.** 71 of the top 100 videos were posted in October, but outside the top 2
+  creators they sell little.
+
+**What this means.** The clog's "growth" is one creator's paid videos working. That concentration is worse than the
+loafer's, where two creators made about 66%. If she stops, sales likely fall the way the loafer's did.
+
+### 2. Material (CJ product page CJNS3087708)
+- **What CJ states:** "Upper Material: Suede", rubber outsole, closed toe. CJ's material field says "Others".
+- **Not stated:** genuine leather, or a cork footbed. The TikTok product is genuine leather or suede with cork.
+- **From the photos:** a tan footbed with "Baishina" (the supplier's brand) printed on it, and a wood-look platform sole.
+- **Our listing would have to say** "suede-look" or just "suede", until a sample shows what it is.
+
+### 3. Real weight
+- **The listed figure is a placeholder.** CJ lists 500 g for every size, and this supplier (Wenling Chengdong Jiuwei)
+  lists 500 g on the loafer too.
+- **Box:** 31 x 20 x 12 cm.
+- **Comparable CJ shoes** weigh 560–950 g. The split-toe flat is 850–950 g, and its freight on the same LuWei line is
+  $16.63.
+- **Estimate (not a quote):** at about 900 g, freight is about $16.63 instead of $11.32. Kept per order then drops from
+  $32.89 to about $27.59, and target CAC from $21.49 to about $16.19.
+
+### 4. Sizes and colours
+- **Range:** CJ sells EU 36–40, brown only.
+- **CJ's chart (foot length):** 36 = 22.6–23.0 cm, 37 = 23.1–23.5, 38 = 23.6–24.0, 39 = 24.1–24.5, 40 = 24.6–25.0. That is
+  roughly **US 5.5–8**, smaller than the usual EU-to-US chart.
+- **Who it misses:** US women's 8.5 and up, a large share of shoppers.
+- **No other supplier found.** Two more CJ searches turned up 7 other buckle and closed-toe options
+  (`data/opportunity_2026-10/lookalike_photos/clog_alternatives.jpg`). None is the same suede clog in more sizes or
+  colours. The nearest, CJYD2934996, is a smooth-leather version.
+
+### Updated verdict
+The clog still beats the loafer on supply and margin. But its demand rests on a single creator's paid videos, and CJ's
+version fits only US 5.5–8 in one colour.
