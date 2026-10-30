@@ -1,4 +1,4 @@
-# Local-only repository (no remote). Code, config, docs, plans and logs are tracked;
+# Repository (private GitHub remote: benstanisclasse/ember-clove-hub). Code, config, docs, plans and logs are tracked;
 # large media, raw exports, databases, backups and anything secret are not.
 
 # Secrets (keys live in Windows user environment variables, never in files)
