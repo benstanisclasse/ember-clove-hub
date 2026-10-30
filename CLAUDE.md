@@ -17,8 +17,11 @@
 - Log every material action in `log.md`.
 
 ## Code, history and backups (since 2026-10-27)
-- The Hub is a git repository with a **private** GitHub remote (`origin` = github.com/benstanisclasse/ember-clove-hub,
+- The Hub is a git repository with a **private** GitHub remote (`origin` = github.com/benstanisclasse/ember-clove-hub-private,
   branch `master`). After changing code, config or docs, commit with a clear message and `git push`.
+- A **public** copy lives at github.com/benstanisclasse/ember-clove-hub. Never push to it directly: after `git push`, run
+  `python -I scripts/publish_public.py`, which replaces emails and account/ad IDs with XXX. New private IDs go in
+  `config/hub.json` (`*_id` keys) or the untracked `config/public_redact.json` before publishing.
   Never commit secrets; `.gitignore` keeps out media, raw exports, databases, backups and logs.
 - `studio/analytics.db` holds history (post snapshots, followers, ad days) and sync health; `studio/studio.db` stays the
   conveyor. Reporting days are Eastern: use `studio.analytics.local_day()`.

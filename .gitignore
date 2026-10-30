@@ -1,4 +1,4 @@
-# Repository (private GitHub remote: benstanisclasse/ember-clove-hub). Code, config, docs, plans and logs are tracked;
+# Repository (private remote: ember-clove-hub-private; public XXX copy: ember-clove-hub). Code, config, docs, plans and logs are tracked;
 # large media, raw exports, databases, backups and anything secret are not.
 
 # Secrets (keys live in Windows user environment variables, never in files)
@@ -59,3 +59,6 @@ theme-staging/
 studio/dashboard/*.json
 studio/dashboard/*.csv
 studio/dashboard/synced_at.txt
+
+# Private list of values the public GitHub copy hides (scripts/publish_public.py)
+config/public_redact.json
