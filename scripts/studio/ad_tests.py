@@ -9,8 +9,12 @@ launch time, budget, rebate trial). For each live test this joins:
                        group that match none of ours were added by TikTok (auto-add creatives).
   DAILY_CHECKS.md      the daily read-only check's table (scheduled task tiktok-test01-daily-check)
 
-Writes studio/dashboard/ad_tests.json (one row per ad), ad_test_info.json (one row per test) and
-ad_test_checks.json (one row per daily check). Numbers are unknown (null), never 0, until TikTok reports the ad.
+A folder with a draft.json and no live.json is a test that isn't published yet (a TikTok draft or ad material only):
+it gets one row in ad_test_drafts.json with what's built and what blocks it, and no numbers.
+
+Writes studio/dashboard/ad_tests.json (one row per ad), ad_test_info.json (one row per test),
+ad_test_checks.json (one row per daily check) and ad_test_drafts.json (one row per unpublished test). Numbers are
+unknown (null), never 0, until TikTok reports the ad.
 """
 import json
 import re
@@ -89,16 +93,34 @@ def build_test(folder, entities):
     return rows, info, checks
 
 
+def build_draft(folder):
+    """One row for a test that isn't live yet (draft.json, no live.json): what's built and what blocks it; else None."""
+    draft = _load(folder / "draft.json", None)
+    if not draft or (folder / "live.json").exists():
+        return None
+    ads = _load(folder / "launch_set.json", {}).get("ads", [])
+    return {"test": draft["test"], "name": draft.get("name"), "product": draft.get("product"),
+            "stage": draft.get("stage"), "campaign_name": draft.get("campaign_name"), "campaign_id": draft.get("campaign_id"),
+            "adgroup_name": draft.get("adgroup_name"), "daily_budget": draft.get("daily_budget"),
+            "starts_at": draft.get("starts_at"), "ads": len(ads),
+            "ad_list": "\n".join(f"{a['ad_name']}: {a.get('angle', '')}" for a in ads),
+            "blockers": "\n".join(draft.get("blockers", [])), "note": draft.get("note"), "plan": draft.get("plan")}
+
+
 def build(out, tests_dir=TESTS):
-    """Write the three datasets for every live test; return summary lines for the sync log."""
+    """Write the four datasets for every live and draft test; return summary lines for the sync log."""
     entities = _load(Path(out) / "ads_entities.json", [])
-    ads, infos, checks = [], [], []
+    ads, infos, checks, drafts = [], [], [], []
     for folder in sorted(p for p in Path(tests_dir).glob("*") if p.is_dir()):
         got = build_test(folder, entities)
         if got:
             ads += got[0]
             infos.append(got[1])
             checks += got[2]
-    for name, data in (("ad_tests", ads), ("ad_test_info", infos), ("ad_test_checks", checks)):
+        draft = build_draft(folder)
+        if draft:
+            drafts.append(draft)
+    for name, data in (("ad_tests", ads), ("ad_test_info", infos), ("ad_test_checks", checks), ("ad_test_drafts", drafts)):
         analytics.write_text_atomic(Path(out) / f"{name}.json", json.dumps(data, ensure_ascii=False))
-    return [f"ad_tests {len(ads)}", f"ad_test_info {len(infos)}", f"ad_test_checks {len(checks)}"]
+    return [f"ad_tests {len(ads)}", f"ad_test_info {len(infos)}", f"ad_test_checks {len(checks)}",
+            f"ad_test_drafts {len(drafts)}"]

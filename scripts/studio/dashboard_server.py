@@ -40,7 +40,7 @@ DATASETS = ["schedule", "followers", "tiktok_videos", "post_timeline", "daily_me
             "store_daily", "store_sources", "store_utm", "store_products", "store_reconciliation", "system_info",
             "episode_history", "ads_entities", "store_attribution", "content_queue", "content_events",
             "profit_daily", "profit_products", "profit_summary", "cost_ledger", "content_jobs", "content_quality",
-            "character_refs", "bible_locks", "ad_tests", "ad_test_info", "ad_test_checks", "ads_funnel"]
+            "character_refs", "bible_locks", "ad_tests", "ad_test_info", "ad_test_checks", "ad_test_drafts", "ads_funnel"]
 JOB_LABELS = {"tiktok": "TikTok", "facebook": "Facebook", "shopify": "Shopify", "snapshots": "History", "content": "Content queue", "ad_tests": "Ad tests", "ads:meta": "Meta ads",
               "ads:tiktok": "TikTok ads"}
 # path -> (file, title, nav key). Six sections (Phase D); old addresses redirect.

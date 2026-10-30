@@ -1,0 +1,22 @@
+{
+ "test": "ec_product_test_03_loafer",
+ "name": "TikTok test 03: chunky lug sole loafers",
+ "product": "Chunky Lug Sole Loafers (Shopify 9791590400239, draft, $57.99)",
+ "stage": "Ad material only (no TikTok campaign built)",
+ "platform": "tiktok",
+ "campaign_name": "EC_TT_Loafer01 (planned name)",
+ "campaign_id": null,
+ "adgroup_name": null,
+ "daily_budget": null,
+ "starts_at": null,
+ "note": "6 slideshow ads (12 AI pictures, 18 captions). Kept about $35.19 per pair before ads at $57.99; break-even about 2.8% of clicks buying at $1 per click. Caution: the Clarks loafer this copies fell about 70% after September and two creators made 69% of its video sales.",
+ "blockers": [
+  "Owner decides whether to test it at all, given the fading demand",
+  "Set the product live on the store and the TikTok channel (it is a Shopify draft, so the ad link would 404)",
+  "Link it to CJ for fulfilment (CJ syncs the product first, then the size mapping is confirmed)",
+  "Order a sample: sizing (CJ has no chart; US labels are from a standard EU chart) and finish",
+  "Decide whether the designer-looking twist plate is acceptable to advertise",
+  "Build the campaign in TikTok Ads Manager, approve a budget and fund the balance"
+ ],
+ "plan": "research/ads/tiktok/product_tests/ec_product_test_03_loafer/PLAN.md"
+}

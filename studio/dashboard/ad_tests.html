@@ -14,6 +14,12 @@
       5 captions each. Numbers are TikTok's own and arrive with the ads refresh every 3 hours while the Claude app is open. Purchases are
       what TikTok credits to its ads. Nothing on this page changes the campaign.</p></header>
 
+  <section class="es-card">
+    <h2 class="es-h2">Next tests (not published)</h2>
+    <p class="es-note">Campaigns built or prepared but not live: nothing here is spending. Click a row for its ads and what still blocks it.</p>
+    <div class="es-tablewrap"><table class="es-table" id="tt-drafts"></table></div>
+  </section>
+
   <section class="es-card tt-trial" id="tt-trial"></section>
   <section class="es-tiles" id="tt-kpis"></section>
 
@@ -115,6 +121,19 @@
     else added.replaceChildren(el('div', {class: 'alert'}, el('b', {text: `${info.added_by_tiktok} video(s) added by TikTok`}),
       el('span', {text: info.added_names}),
       el('span', {text: 'Leave them during the trial; removing one counts as an edit and cancels the rebate.'})));
+
+    const lines = s => String(s || '').split('\n').filter(Boolean);
+    table(document.getElementById('tt-drafts'), rows('ad_test_drafts'), [{k: 'name', label: 'Test'}, {k: 'product', label: 'Product'},
+      {k: 'stage', label: 'Stage'}, {k: 'ads', label: 'Ads', n: true},
+      {k: 'daily_budget', label: 'Planned budget', n: true, f: v => num(v) == null ? '—' : `${usd(num(v))}/day`},
+      {k: 'starts_at', label: 'Planned start', f: v => v ? new Date(v).toLocaleString([], {month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'}) : '—'},
+      {k: 'blockers', label: 'Blocked by', f: v => `${lines(v).length} item(s)`}],
+      {sortKey: 'test', desc: false, empty: status('ad_test_drafts') === 'loading' ? 'Loading…' : 'No draft tests.',
+       onRow: r => drawer(r.name,
+         el('p', {class: 'es-note', text: [r.campaign_name, r.adgroup_name].filter(Boolean).join(' · ') + (r.plan ? ` · plan: ${r.plan}` : '')}),
+         r.note ? el('p', {text: r.note}) : null,
+         el('h3', {class: 'es-h2', text: 'Before it can go live'}), el('ol', {class: 'tt-caps'}, lines(r.blockers).map(c => el('li', {text: c}))),
+         el('h3', {class: 'es-h2', text: `Ads (${r.ads})`}), el('ol', {class: 'tt-caps'}, lines(r.ad_list).map(c => el('li', {text: c}))))});
 
     table(document.getElementById('tt-checks'), checks, [{k: 'date', label: 'Date'}, {k: 'status', label: 'Status'}, {k: 'spend', label: 'Spend'},
       {k: 'purchases', label: 'Purchases'}, {k: 'added', label: 'Added by TikTok'}], {sortKey: 'date', empty: 'First check runs tomorrow at 9:00.'});

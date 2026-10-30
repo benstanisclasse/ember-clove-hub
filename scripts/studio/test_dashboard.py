@@ -362,7 +362,13 @@ def _test_folder(tmp_path):
     (t / "DAILY_CHECKS.md").write_text("# x\n\n| Date | Status | Spend | Impressions | Clicks | Purchases | Videos added by TikTok |\n"
                                        "|---|---|---|---|---|---|---|\n| 2026-10-29 | active | 12.50 | 900 | 20 | 0 | none |\n",
                                        encoding="utf-8")
-    (t.parent / "draft_only").mkdir()  # no live.json: ignored
+    (t.parent / "draft_only").mkdir()  # no live.json and no draft.json: ignored
+    d = t.parent / "t2"
+    d.mkdir()
+    (d / "draft.json").write_text(json.dumps({"test": "t2", "name": "Test two", "stage": "TikTok draft", "daily_budget": 100,
+        "blockers": ["Owner publishes", "Top up balance"]}), encoding="utf-8")
+    (d / "launch_set.json").write_text(json.dumps({"ads": [{"ad_name": "EC_TT_X_A", "angle": "Stack it"}]}), encoding="utf-8")
+    (t / "draft.json").write_text(json.dumps({"test": "t1"}), encoding="utf-8")  # live.json wins: not a draft
     return t.parent
 
 
@@ -376,7 +382,8 @@ def test_ad_tests_match_tiktok_names_and_find_added_videos(tmp_path):
         {"platform": "tiktok", "level": "ad", "name": "EC-P01-A06-H01-V02.mp4", "parent_id": "g1", "spend": 1},
         {"platform": "tiktok", "level": "ad", "name": "other campaign ad", "parent_id": "g9", "spend": 2},
         {"platform": "meta", "level": "ad", "name": "EC_TT_P001_B_LIFESTYLE", "parent_id": "g1", "spend": 3}]), encoding="utf-8")
-    assert ad_tests.build(out, _test_folder(tmp_path)) == ["ad_tests 2", "ad_test_info 1", "ad_test_checks 1"]
+    assert ad_tests.build(out, _test_folder(tmp_path)) == ["ad_tests 2", "ad_test_info 1", "ad_test_checks 1",
+                                                           "ad_test_drafts 1"]
     ads = {r["ad_name"]: r for r in json.loads((out / "ad_tests.json").read_text(encoding="utf-8"))}
     a, b = ads["EC_TT_P001_A_PRODUCT"], ads["EC_TT_P001_B_LIFESTYLE"]
     assert a["spend"] == 4.5 and a["purchases"] == 1 and a["product"] == "Dress" and a["angle"] == "A Product"
@@ -388,6 +395,9 @@ def test_ad_tests_match_tiktok_names_and_find_added_videos(tmp_path):
     checks = json.loads((out / "ad_test_checks.json").read_text(encoding="utf-8"))
     assert checks == [{"test": "t1", "date": "2026-10-29", "status": "active", "spend": "12.50", "impressions": "900",
                        "clicks": "20", "purchases": "0", "added": "none"}]
+    drafts = json.loads((out / "ad_test_drafts.json").read_text(encoding="utf-8"))
+    assert [(x["test"], x["ads"], x["ad_list"], x["blockers"]) for x in drafts] == [
+        ("t2", 1, "EC_TT_X_A: Stack it", "Owner publishes\nTop up balance")]
 
 
 def test_ad_tests_without_numbers_or_live_tests(tmp_path):
@@ -397,7 +407,7 @@ def test_ad_tests_without_numbers_or_live_tests(tmp_path):
     assert all(r["spend"] is None for r in json.loads((out / "ad_tests.json").read_text(encoding="utf-8")))
     empty = tmp_path / "none"
     empty.mkdir()
-    assert ad_tests.build(out, empty) == ["ad_tests 0", "ad_test_info 0", "ad_test_checks 0"]
+    assert ad_tests.build(out, empty) == ["ad_tests 0", "ad_test_info 0", "ad_test_checks 0", "ad_test_drafts 0"]
 
 
 def test_tiktok_tests_page_is_a_sub_page_of_advertising(server):
@@ -405,4 +415,5 @@ def test_tiktok_tests_page_is_a_sub_page_of_advertising(server):
     text = body.decode("utf-8")
     assert code == 200 and ctype.startswith("text/html") and 'id="tt-ads"' in text
     assert "TikTok tests" in text.split('aria-current="page"')[1].split("</a>")[0]
-    assert {"ad_tests", "ad_test_info", "ad_test_checks"} <= set(json.loads(get(server + "/data")[2])["datasets"])
+    assert 'id="tt-drafts"' in text
+    assert {"ad_tests", "ad_test_info", "ad_test_checks", "ad_test_drafts"} <= set(json.loads(get(server + "/data")[2])["datasets"])
