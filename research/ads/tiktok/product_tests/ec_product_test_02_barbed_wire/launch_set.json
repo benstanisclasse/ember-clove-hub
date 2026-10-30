@@ -260,6 +260,36 @@
       },
       "utm": "bw_v2",
       "link": "https://emberandclove.com/products/silver-barbed-wire-necklace?utm_source=tiktok&utm_medium=paid_social&utm_campaign=ec_tt_barbedwire_01&utm_content=bw_v2"
+    },
+    {
+      "ad_name": "EC_TT_BW_N_OWNER_VIDEOS",
+      "angle": "Owner's own videos: car close-up, choker talk, wire talk (new)",
+      "from_round1": "owner-supplied, unedited; one ad holding 3 videos (TikTok shows one row per video)",
+      "videos": [
+        "owner_videos_2026-10-30/EC_TT_BW_N1_CAR_CLOSEUP.mp4",
+        "owner_videos_2026-10-30/EC_TT_BW_N2_CHOKER_TALK.mp4",
+        "owner_videos_2026-10-30/EC_TT_BW_N3_WIRE_TALK.mp4"
+      ],
+      "captions": [
+        "Up close: twisted wire and small barbs all the way round.",
+        "The detail that makes a plain tee interesting.",
+        "Layer it with a curb chain."
+      ],
+      "settings": "duplicated from J; creative enhancements all off (no music refresh); promo offers removed; add-ons off; AI-generated label on all 3 videos; auto-selected recommended creatives removed",
+      "owner_approval": {
+        "quote": "I made them or have the creators' written permission, and I accept that they break the AI-presenter rule. Upload all 3 to the necklace ad group as you planned.",
+        "actor": "owner",
+        "via": "chat",
+        "at": "2026-10-30"
+      },
+      "tiktok_ad_ids": [
+        "XXX",
+        "XXX",
+        "XXX"
+      ],
+      "published_at": "2026-10-30T17:05:26Z",
+      "utm": "bw_n",
+      "link": "https://emberandclove.com/products/silver-barbed-wire-necklace?utm_source=tiktok&utm_medium=paid_social&utm_campaign=ec_tt_barbedwire_01&utm_content=bw_n"
     }
   ]
 }
