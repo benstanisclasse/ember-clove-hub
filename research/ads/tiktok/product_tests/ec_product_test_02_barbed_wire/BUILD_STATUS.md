@@ -21,7 +21,7 @@ angle can you take what is working in the currecnt campagin and us it here". Not
 
 ## Ad group EC_TT_BarbedWire01_All (draft XXX) — done
 - Website · Conversion · TikTok Pixel for Shopify 1792800281 · **Purchase** · **Maximum results** (no target cost)
-- **$30/day** (TikTok: up to $37.50 some days, max $210/week) · run continuously, **starts Nov 5, 2026 09:15 ET**
+- **$100/day** (owner 2026-10-30: "can you make the necklace campaign 100/day"; was $30. TikTok: up to $125 some days, max $700/week) · run continuously, **starts Nov 5, 2026 09:15 ET**
   (after round 1's rebate trial ends Nov 4 12:04 CST; nothing can deliver before that even if published)
 - Automatic targeting, US, no age limit, no suggestions (owner's round-1 choice: "TikTok decides entirely on its own")
 - Placements: automatic (TikTok + TikTok Ad Network), as round 1
@@ -77,5 +77,5 @@ Higgsfield API top-up. With these, the draft will have 15 ads.
 
 ## Before it can go live (owner)
 2. CJ balance is $0.00: orders are linked to CJ but won't ship until the CJ order is paid or the balance is funded.
-3. Approve the 13 ads, $30/day and the Nov 5 start, then publish (TikTok balance is shared with round 1).
+3. Approve the 15 ads, $100/day and the Nov 5 start, then publish. TikTok balance is shared with round 1: $753.04 on 2026-10-30, ~$90-175 expected left after round 1's trial (Nov 4) -> top up or set auto recharge first.
 4. Stop rule (from PLAN.md): stop at ~$47 spent with no add-to-cart, or ~$94 with no purchase.
