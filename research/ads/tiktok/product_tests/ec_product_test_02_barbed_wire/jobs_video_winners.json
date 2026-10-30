@@ -1,0 +1,21 @@
+{
+  "duration": 10,
+  "resolution": "720p",
+  "style": "One continuous handheld take, no cuts, filmed on a phone front camera, natural and unpolished, slight hand-held movement, like an everyday TikTok creator video. The person is fictional and must not resemble any real person. The necklace is exactly the silver barbed-wire chain from the necklace reference image: thin twisted silver wire with small wrapped barbs spaced evenly all the way round, about 4 mm thick, no pendant, no tag, no logo. No text, no captions, no logos, no watermark. Realistic hands with five fingers, natural skin texture.",
+  "refs": {
+    "car": "data/media_generated/tiktok_test_02_barbed_wire/video_refs/ugc_1_car.jpg",
+    "bedroom": "data/media_generated/tiktok_test_02_barbed_wire/video_refs/ugc_2_bedroom.jpg",
+    "patio": "data/media_generated/tiktok_test_02_barbed_wire/video_refs/ugc_3_patio.jpg",
+    "necklace": "data/media_generated/tiktok_test_02_barbed_wire/video_refs/necklace.jpg"
+  },
+  "jobs": [
+    {"key": "V1_car", "refs": ["car", "necklace"],
+     "prompt": "Vertical 9:16 selfie video, 10 seconds. The same woman as in the first reference image (same face, long straight black hair, small silver lip ring, stacked silver rings, faded vintage graphic tee) sits in the driver's seat of the same parked car in soft daylight. Framed from her eyes down to her chest. She tilts her head to one side, slowly lifts the barbed-wire necklace off her collarbone with her fingertips and lets it fall back, runs one finger along the chain, glances down at it, then looks back at the camera with a calm, unbothered expression. The barbed-wire necklace is layered with a silver curb chain and stays sharp and clearly visible the whole time."},
+    {"key": "V2_night", "refs": ["car", "necklace"],
+     "prompt": "Vertical 9:16 selfie video, 10 seconds. The same woman as in the first reference image (same face, long straight black hair, small silver lip ring, stacked silver rings) at night in her dim bedroom lit by soft purple and blue LED strip light, wearing a black t-shirt. It opens very close, framed from her chin down to her chest: her fingertips trace slowly along the barbed-wire necklace at the base of her neck and lift it slightly so the barbs catch the light. Then she pulls the phone back to show her face, tilts her head and gives a small knowing look to the camera. The necklace stays sharp and clearly visible."},
+    {"key": "V3_dangle", "refs": ["bedroom", "necklace"],
+     "prompt": "Vertical 9:16 selfie video, 10 seconds. The same woman as in the first reference image (same face, long soft brunette waves, winged eyeliner, black V-neck tee) at home in front of the same white dresser in warm lamp light. For the first three seconds she holds the barbed-wire necklace up by one end and lets it dangle and swing slowly right in front of the camera lens, close and in sharp focus, with her face softly behind it. Then she lowers it, and she is already wearing the same barbed-wire necklace layered with a thin plain silver chain; she touches it at her collarbone with two fingers and gives a relaxed half smile to the camera."},
+    {"key": "V4_patio", "refs": ["patio", "necklace"],
+     "prompt": "Vertical 9:16 selfie video, 10 seconds. The same woman as in the first reference image (same face, warm tan skin, wide-brim felt hat, chunky tortoiseshell sunglasses, plain heather-grey t-shirt) sits at the same sunny cafe patio table with a blurred street behind. Framed from the hat down to her chest. She points at the barbed-wire necklace layered with a slim silver tennis chain, then pinches the barbed-wire necklace between two fingers and pulls it slightly toward the camera so the barbs are close and sharp, lets it go, smiles and adjusts her sunglasses."}
+  ]
+}
