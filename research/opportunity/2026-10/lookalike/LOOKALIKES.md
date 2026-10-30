@@ -90,3 +90,17 @@ demand is for the design, not the name.
 
 **Runner-up: the bowling bag**, for margin rather than match. At $89 it keeps $64.75 per order, but CJ's bag isn't
 quilted. Worth a second CJ search for a quilted version.
+
+## October check: the clog (Kalodata, 2026-10-30, 0.1 credit)
+File: `research/kalodata/clog_cushionaire_detail_2026-10-30.json`.
+
+**Still growing:**
+- Last 30 days: $212.9k from 3,608 pairs at an average $59.00 (list price $69.99).
+- That is up about 14% on September's $187.3k. The loafer fell about 70% over the same window.
+
+**Sold mostly through video.** $207.3k came from videos, $5.4k from live and $0.2k from the shop page.
+
+**A broad creator base.** 349 videos by 225 creators, against the loafer's 274 by 150. Creator concentration was not
+pulled; it would take the video ranking at 0.1 credit.
+
+**Established and well reviewed.** Listed since December 2024, 1,049 reviews, 10% commission.
