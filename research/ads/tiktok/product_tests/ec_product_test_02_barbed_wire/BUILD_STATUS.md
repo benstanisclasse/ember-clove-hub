@@ -26,12 +26,22 @@ angle can you take what is working in the currecnt campagin and us it here". Not
 - Automatic targeting, US, no age limit, no suggestions (owner's round-1 choice: "TikTok decides entirely on its own")
 - Placements: automatic (TikTok + TikTok Ad Network), as round 1
 
-## Ads — blocked
-TikTok's new unified flow attaches catalog products to every ad ("Promoted products", default *All products*), even with
-Catalog campaign off. The necklace is **not in the TikTok catalog** (nkpfvz-ra.myshopify.com-shopify1, 83 products):
-in Shopify it is published only on the Online Store channel. With *All products*, tapping a product card would open
-other items, so no ads were saved. To fix: publish the necklace to the TikTok sales channel in Shopify (owner OK
-needed: store change), wait for the catalog sync, then pick only the necklace as the promoted product.
+## Ads — done (15, in the draft, unpublished; checked 2026-10-29 ~23:30 ET after a reload)
+Owner, 2026-10-29: "Yes, publish the necklace to the TikTok sales channel in Shopify, then finish the 15 ads in the draft
+with only the necklace as the promoted product." Necklace published to Shopify's TikTok channel; synced to the TikTok catalog
+as 2 SKUs (45 cm 51357329948911, 50 cm 51357329981679).
+
+Every ad, read back from the saved draft: own video only (D–M4 slideshows, V1/V2 label clips), its 3 captions from
+`launch_set.json`, promoted products = the 2 necklace SKUs only, additional destination = tracked necklace link with its
+utm_content (TikTok also applies utm_source=tiktok, utm_medium=paid_social, utm_campaign=ec_tt_barbedwire_01, utm_content to
+product-card taps), Shop now only, promo offer empty (TikTok auto-fills "Extra 20% off" from the store discount on every
+ad; removed each time), AI-generated label on (1 asset), creative enhancements = Music refresh only, add-ons 0/2 (no
+auto ad card), Shopping Assistant off, auto-add assets off, catalog creatives off, product cards 0/4 info, identity
+@emberandclove (ads only).
+
+Fixed during the check: M2 and H had kept the D captions in slots 2–3 (and M2 briefly got a TikTok AI suggestion
+"A Polished Twist: Add Luxury to Your Stack" in slot 1); retyped and confirmed after another reload. The original ad
+(now V2) had kept old settings (CTA list, ad card, dub); fixed.
 
 ## Videos — in the TikTok Creative library (uploaded 2026-10-29)
 13 videos, 1080x1920, silent, AI pictures (Higgsfield Flare 4K) + one AI clip. Built by `scripts/slideshow.py` from
@@ -66,7 +76,6 @@ Owner, 2026-10-29: "Yes, use the text-label versions of the winner-style clips."
 Higgsfield API top-up. With these, the draft will have 15 ads.
 
 ## Before it can go live (owner)
-1. OK to publish the necklace to the TikTok sales channel in Shopify (so the ads can promote it).
 2. CJ balance is $0.00: orders are linked to CJ but won't ship until the CJ order is paid or the balance is funded.
 3. Approve the 13 ads, $30/day and the Nov 5 start, then publish (TikTok balance is shared with round 1).
 4. Stop rule (from PLAN.md): stop at ~$47 spent with no add-to-cart, or ~$94 with no purchase.
