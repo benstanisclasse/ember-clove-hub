@@ -1,0 +1,57 @@
+product_id,product,scenario,price,contribution,be_cac,be_roas,target_cac,target_roas,cvr_needed_at_be_cpc1,cvr_needed_at_target_cpc1
+1731468041024738009,April Satin Pant,base,61.355,37.258,37.258,1.647,24.987,2.455,0.027,0.04
+1731468041024738009,April Satin Pant,ship_plus_25pct,61.355,34.883,34.883,1.759,22.612,2.713,0.029,0.044
+1731468041024738009,April Satin Pant,price_minus_15pct,52.152,28.782,28.782,1.812,18.352,2.842,0.035,0.054
+1731468041024738009,April Satin Pant,refunds_10pct,61.355,34.19,34.19,1.795,21.919,2.799,0.029,0.046
+1731468041024738009,April Satin Pant,cost_plus_20pct,61.355,35.368,35.368,1.735,23.097,2.656,0.028,0.043
+1731468041024738009,April Satin Pant,generic_price_minus_30pct,42.949,20.306,20.306,2.115,11.716,3.666,0.049,0.085
+1731468041024738009,April Satin Pant,all_adverse,52.152,21.909,21.909,2.38,11.479,4.543,0.046,0.087
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,base,28.873,6.472,6.472,4.461,0.697,41.414,0.155,1.434
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,ship_plus_25pct,28.873,3.642,3.642,7.928,-2.133,,0.275,
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,price_minus_15pct,24.542,2.483,2.483,9.884,-2.425,,0.403,
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,refunds_10pct,28.873,5.028,5.028,5.742,-0.746,,0.199,
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,cost_plus_20pct,28.873,4.772,4.772,6.051,-1.003,,0.21,
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,generic_price_minus_30pct,20.211,-1.506,-1.506,,-5.548,,,
+1729440610297484172,Dream Pairs Women's Bow Motif Ballet Flats - Flexible Footwe,all_adverse,24.542,-3.274,-3.274,,-8.182,,,
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,base,44.824,18.653,18.653,2.403,9.688,4.627,0.054,0.103
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,ship_plus_25pct,44.824,16.306,16.306,2.749,7.341,6.106,0.061,0.136
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,price_minus_15pct,38.101,12.461,12.461,3.058,4.841,7.871,0.08,0.207
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,refunds_10pct,44.824,16.412,16.412,2.731,7.447,6.019,0.061,0.134
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,cost_plus_20pct,44.824,16.065,16.065,2.79,7.1,6.313,0.062,0.141
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,generic_price_minus_30pct,31.377,6.268,6.268,5.006,-0.007,,0.16,
+1729467441089778277,OYS Women's Sexy One Shoulder Satin High Split Cocktail Fit ,all_adverse,38.101,5.62,5.62,6.779,-2.0,,0.178,
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,base,65.626,42.221,42.221,1.554,29.096,2.255,0.024,0.034
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,ship_plus_25pct,65.626,39.391,39.391,1.666,26.266,2.498,0.025,0.038
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,price_minus_15pct,55.782,33.155,33.155,1.682,21.999,2.536,0.03,0.045
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,refunds_10pct,65.626,38.94,38.94,1.685,25.815,2.542,0.026,0.039
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,cost_plus_20pct,65.626,40.901,40.901,1.604,27.776,2.363,0.024,0.036
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,generic_price_minus_30pct,45.938,24.089,24.089,1.907,14.901,3.083,0.042,0.067
+1731966485847774151,Clarks Collection Loafers -Westlynn Ayla,all_adverse,55.782,26.216,26.216,2.128,15.06,3.704,0.038,0.066
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,base,70.306,53.342,53.342,1.318,39.28,1.79,0.019,0.025
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,ship_plus_25pct,70.306,52.137,52.137,1.348,38.075,1.846,0.019,0.026
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,price_minus_15pct,59.76,43.629,43.629,1.37,31.677,1.887,0.023,0.032
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,refunds_10pct,70.306,49.826,49.826,1.411,35.765,1.966,0.02,0.028
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,cost_plus_20pct,70.306,52.084,52.084,1.35,38.022,1.849,0.019,0.026
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,generic_price_minus_30pct,49.214,33.916,33.916,1.451,24.073,2.044,0.029,0.042
+1732377057880544126,The Barb Wire Choker Danielle Guizio X The M Jewelers Neckla,all_adverse,59.76,38.178,38.178,1.565,26.226,2.279,0.026,0.038
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",base,45.415,34.797,34.797,1.305,25.714,1.766,0.029,0.039
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",ship_plus_25pct,45.415,33.48,33.48,1.356,24.397,1.862,0.03,0.041
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",price_minus_15pct,38.603,28.523,28.523,1.353,20.803,1.856,0.035,0.048
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",refunds_10pct,45.415,32.527,32.527,1.396,23.444,1.937,0.031,0.043
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",cost_plus_20pct,45.415,34.505,34.505,1.316,25.422,1.786,0.029,0.039
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",generic_price_minus_30pct,31.791,22.249,22.249,1.429,15.891,2.001,0.045,0.063
+1732201295444087593,"WMP Eyewear Astra Cat-Eye Sunglasses for Women, Bold Modern ",all_adverse,38.603,24.984,24.984,1.545,17.263,2.236,0.04,0.058
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,base,46.853,24.682,24.682,1.898,15.311,3.06,0.041,0.065
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,ship_plus_25pct,46.853,21.812,21.812,2.148,12.441,3.766,0.046,0.08
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,price_minus_15pct,39.825,18.209,18.209,2.187,10.244,3.888,0.055,0.098
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,refunds_10pct,46.853,22.339,22.339,2.097,12.968,3.613,0.045,0.077
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,cost_plus_20pct,46.853,23.344,23.344,2.007,13.973,3.353,0.043,0.072
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,generic_price_minus_30pct,32.797,11.736,11.736,2.795,5.177,6.335,0.085,0.193
+1729505773514822531,Comfrt | Minimalist Hoodie - Mega,all_adverse,39.825,12.01,12.01,3.316,4.045,9.846,0.083,0.247
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,base,62.556,33.934,33.934,1.843,21.423,2.92,0.029,0.047
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,ship_plus_25pct,62.556,31.446,31.446,1.989,18.935,3.304,0.032,0.053
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,price_minus_15pct,53.172,25.292,25.292,2.102,14.657,3.628,0.04,0.068
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,refunds_10pct,62.556,30.806,30.806,2.031,18.295,3.419,0.032,0.055
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,cost_plus_20pct,62.556,31.248,31.248,2.002,18.737,3.339,0.032,0.053
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,generic_price_minus_30pct,43.789,16.65,16.65,2.63,7.892,5.549,0.06,0.127
+1732607430962811779,Comfrt | VIP Airplane Mode Travel Zip Hoodie - Mega | CloudT,all_adverse,53.172,17.459,17.459,3.045,6.825,7.791,0.057,0.147

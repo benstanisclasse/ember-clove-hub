@@ -1,0 +1,30 @@
+{
+ "sep_rows": 40774,
+ "sep_listed_top500_risers": 19172,
+ "sep_deep_risers": 21602,
+ "store_fit_rows": 7391,
+ "eligible": 2239,
+ "eligible_by_cat": {
+  "Womenswear & Underwear": 608,
+  "Shoes": 502,
+  "Fashion Accessories": 425,
+  "Luggage & Bags": 400,
+  "Jewelry Accessories & Derivatives": 304
+ },
+ "with_video_stats": 120,
+ "with_saved_cj": 50,
+ "eligible_with_saved_cj": 47,
+ "flags_eligible": {
+  "flag_brand": 1472,
+  "flag_claims": 108,
+  "flag_mens": 110,
+  "flag_hair": 326
+ },
+ "trend_eligible": {
+  "emerging": 868,
+  "uncertain": 471,
+  "stable": 435,
+  "declining": 308,
+  "accelerating": 157
+ }
+}
