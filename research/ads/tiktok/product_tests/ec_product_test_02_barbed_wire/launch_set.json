@@ -201,7 +201,14 @@
         "Barbed wire necklace, layered with a curb chain.",
         "Edgy but dainty.",
         "The necklace that does the whole outfit."
-      ]
+      ],
+      "use": "final_video/EC_TT_BW_V1_CAR_LABEL.mp4",
+      "label_approval": {
+        "quote": "Yes, use the text-label versions of the winner-style clips.",
+        "actor": "owner",
+        "via": "chat",
+        "at": "2026-10-30T00:41:12Z"
+      }
     },
     {
       "ad_name": "EC_TT_BW_V2_NIGHT",
@@ -215,7 +222,14 @@
         "Edgy but dainty.",
         "Barbed wire, after dark.",
         "Layer it with a curb chain."
-      ]
+      ],
+      "use": "final_video/EC_TT_BW_V2_NIGHT_LABEL.mp4",
+      "label_approval": {
+        "quote": "Yes, use the text-label versions of the winner-style clips.",
+        "actor": "owner",
+        "via": "chat",
+        "at": "2026-10-30T00:41:12Z"
+      }
     }
   ]
 }

@@ -43,7 +43,7 @@ not reused.**
 10-second vertical AI clips (Higgsfield Seedance 2.5 reference-to-video via `scripts/hf_video_batch.py`, prompts in
 `jobs_video_winners.json`, references = our own fictional model pictures + the clean necklace photo), one continuous take
 each, silent (music is picked in TikTok Ads Manager). `scripts/text_label.py` makes a 1080x1920 clean version and a
-version with a short white label near the top. **Adding the label is an edit, so the label versions need the owner's OK.**
+version with a short white label near the top. Adding the label is an edit; owner approved the label versions on 2026-10-29: "Yes, use the text-label versions of the winner-style clips."
 
 | Ad | Copies the format of | Person / place | Label | Status |
 |---|---|---|---|---|

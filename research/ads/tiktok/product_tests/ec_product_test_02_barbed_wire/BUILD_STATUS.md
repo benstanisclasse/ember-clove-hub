@@ -57,6 +57,14 @@ Each ad, when built: own video, 3 captions from `launch_set.json` (checked again
 prices, delivery, discounts or testimonials), link `…/products/silver-barbed-wire-necklace?utm_source=tiktok&utm_medium=paid_social&utm_campaign=ec_tt_barbedwire_01&utm_content=<above>`,
 Shop now, AI-generated label, product card price/discount/shipping info off, auto-add creatives off where offered.
 
+## Winner-style clips (WINNER_STUDY.md) — in the TikTok Creative library (uploaded 2026-10-29)
+| Ad | Video used | Label | Captions |
+|---|---|---|---|
+| EC_TT_BW_V1_CAR | EC_TT_BW_V1_CAR_LABEL.mp4 (10 s) | barbed wire necklace | see launch_set.json |
+| EC_TT_BW_V2_NIGHT | EC_TT_BW_V2_NIGHT_LABEL.mp4 (10 s) | edgy but dainty | see launch_set.json |
+Owner, 2026-10-29: "Yes, use the text-label versions of the winner-style clips." V3 dangle and V4 patio wait for a
+Higgsfield API top-up. With these, the draft will have 15 ads.
+
 ## Before it can go live (owner)
 1. OK to publish the necklace to the TikTok sales channel in Shopify (so the ads can promote it).
 2. CJ balance is $0.00: orders are linked to CJ but won't ship until the CJ order is paid or the balance is funded.
