@@ -1,0 +1,30 @@
+{
+  "B": "https://cf.cjdropshipping.com/",
+  "style": "Photorealistic social-media photo shot on a phone, natural light, real place. The loafers are exactly the ones in the reference images: women's slip-on loafers with a glossy smooth upper, a moc-toe seam around a round toe, a strap across the instep with a small rectangular polished silver metal plate that has a small round twist detail in the middle, a thick black rubber lug sole with deep treads and a low block heel about 2 cm high. Keep their real proportions: a chunky sole but a flat, low shoe, not a platform. No logo, no brand name, no text, no watermark anywhere in the image, nothing written on the plate. The woman is a fictional adult in her mid to late twenties, natural skin texture, realistic hands, feet and anatomy, November season styling.",
+  "jobs": [
+    {"key": "ad_A_threeways_s1", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "Full-length mirror selfie in a bright apartment hallway: a woman in straight-leg light blue jeans, a white t-shirt and a long camel coat, wearing the black loafers with white ribbed socks; the loafers are sharp and clearly visible at the bottom of the frame."},
+    {"key": "ad_A_threeways_s2", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "Same hallway mirror selfie: the same woman now in a black pleated mini skirt, sheer black tights and a grey cardigan, wearing the black loafers; framed from the waist down so the loafers fill the lower third."},
+    {"key": "ad_A_threeways_s3", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "Same hallway mirror selfie: the same woman now in wide-leg charcoal tailored trousers and a cream knit sweater, the black loafers peeking out under the hem, framed from the waist down."},
+    {"key": "ad_B_office_s1", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "Low-angle photo on a city sidewalk in the morning: a woman walking toward the camera in black tailored cropped trousers and a beige trench coat, carrying a tote and a coffee, the black loafers in sharp focus in the foreground, office buildings softly blurred behind."},
+    {"key": "ad_B_office_s2", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "Evening in a warmly lit wine bar: the same woman seated on a bar stool, legs crossed, black cropped trousers, the black loafers in focus with the silver plate catching the light, soft amber background."},
+    {"key": "ad_C_fall_s1", "aspect": "9:16", "refs": ["@5b2e8454-2f5e-4e44-be95-72315958c004", "@a14e308f-1e14-4995-b19b-8a9df160d062"],
+     "prompt": "Top-down phone photo looking at a woman's own feet on a path covered in orange and brown autumn leaves: the brown loafers worn with cream ribbed socks and the hem of cuffed light-wash jeans; the loafers fill the centre of the frame."},
+    {"key": "ad_C_fall_s2", "aspect": "9:16", "refs": ["@5b2e8454-2f5e-4e44-be95-72315958c004", "@a14e308f-1e14-4995-b19b-8a9df160d062"],
+     "prompt": "A woman walking through a park in autumn in cuffed light-wash jeans, a chunky brown knit sweater and a plaid scarf, wearing the brown loafers with cream socks, photographed from the knees down mid-step, golden afternoon light."},
+    {"key": "ad_D_sole_s1", "aspect": "9:16", "refs": ["@ce6cf935-10a6-4ac5-b213-d141a43eb783", "@e949ca3f-1b13-4c11-a3bc-f700e79d8876"],
+     "prompt": "Ground-level close-up on wet cobblestones: one black loafer mid-step with the thick lug sole and deep treads in sharp focus, the silver plate visible, black trouser hem above, rainy city street blurred behind."},
+    {"key": "ad_D_sole_s2", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "A woman's hand holding one black loafer up in front of a shop window, side view showing the chunky lug sole and the low block heel, glossy upper reflecting the daylight, the other loafer worn on her foot below."},
+    {"key": "ad_E_twocolours_s1", "aspect": "9:16", "refs": ["@ff9bf6ff-f94a-4d19-b5d2-a1da5d901787", "@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@5b2e8454-2f5e-4e44-be95-72315958c004"],
+     "prompt": "Top-down photo on a light oak bedroom floor: one pair of black loafers and one pair of brown loafers side by side, next to a folded pair of jeans and a knit sweater, soft morning window light."},
+    {"key": "ad_E_twocolours_s2", "aspect": "9:16", "refs": ["@5b2e8454-2f5e-4e44-be95-72315958c004", "@a14e308f-1e14-4995-b19b-8a9df160d062"],
+     "prompt": "A woman sitting on the edge of a bed putting on the brown loafers, framed from the knees down, cream wide-leg trousers, the black pair waiting on the floor beside her, soft morning light."},
+    {"key": "ad_F_socks_s1", "aspect": "9:16", "refs": ["@e949ca3f-1b13-4c11-a3bc-f700e79d8876", "@ce6cf935-10a6-4ac5-b213-d141a43eb783"],
+     "prompt": "Photo of a woman standing at a city street crossing, framed from the knees down: the hem of a long dark wool coat and a grey knee-length pleated skirt, white ribbed crew socks, the black loafers sharp in the centre, overcast daylight, zebra crossing stripes on the road."}
+  ]
+}
