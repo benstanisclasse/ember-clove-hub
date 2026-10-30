@@ -119,7 +119,7 @@ Files: `research/kalodata/clog_cushionaire_videos_2026-10-30.json` and `clog_cus
   creators they sell little.
 
 **What this means.** The clog's "growth" is one creator's paid videos working. That concentration is worse than the
-loafer's, where two creators made about 66%. If she stops, sales likely fall the way the loafer's did.
+loafer's, where two creators made 69%. If she stops, sales likely fall the way the loafer's did.
 
 ### 2. Material (CJ product page CJNS3087708)
 - **What CJ states:** "Upper Material: Suede", rubber outsole, closed toe. CJ's material field says "Others".

@@ -29,7 +29,7 @@ Files: `research/kalodata/loafer_clarks_videos_2026-10-30.json` (detail and top 
 
 **Concentrated:**
 - The top 20 videos made 93% of the top-100 revenue.
-- Two creators made about 66% of it: kelseyyyshops 39%, travel.bestie1 27%.
+- Two creators made 69% of it: kelseyyyshops 40%, travel.bestie1 29% (all their videos in the top 100).
 
 **What we can use:**
 - The format: a try-on, a styling tip ("cute to style for fall"), and fall outfits.
