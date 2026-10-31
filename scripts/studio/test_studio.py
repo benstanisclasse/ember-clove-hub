@@ -78,6 +78,26 @@ def test_planner_output_obeys_calendar_rules(con, b):
     assert sum(e["pillar"] == "value" for e in eps) / len(eps) >= b["rules"].mix.value_share_min
 
 
+def test_old_break_in_past_posts_does_not_block_planning(con, b):
+    first = planned(con, b, days=1)
+    con.execute("UPDATE episodes SET cta_line = 'New one every morning.' WHERE id IN (?, ?)",
+                (first[0]["id"], first[1]["id"]))  # two past posts in a row already broke the soft-line rule
+    con.commit()
+    old = set(gates.check_calendar([dict(r) for r in con.execute("SELECT * FROM episodes ORDER BY post_date, slot")], b))
+    assert any("soft line" in e for e in old)
+    eps = planned(con, b, days=1, start="2026-11-03")
+    assert len(eps) == len(first) + 3
+    assert set(gates.check_calendar(eps, b)) <= old  # the new posts add no break of their own
+
+
+def test_plan_skips_ids_kept_by_moved_episodes(con, b):
+    planned(con, b, days=1)
+    con.execute("UPDATE episodes SET post_date = '2026-11-01' WHERE id = 'EW-20261102-1'")  # moved, keeps its id
+    con.commit()
+    eps = planned(con, b, days=1)
+    assert "EW-20261102-1b" in {e["id"] for e in eps}
+
+
 def test_calendar_catches_broken_rotation(con, b):
     eps = planned(con, b)
     eps[1]["room_id"] = eps[0]["room_id"]

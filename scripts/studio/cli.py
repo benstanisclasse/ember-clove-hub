@@ -85,15 +85,25 @@ def cmd_plan(con, b, args):
                 cta_line = next(soft)
             counters[s.id] += 1
             name = next((p.name for p in b["products"].items if p.id == product), "")
-            ep = {"id": f"EW-{day.replace('-', '')}-{i + 1}", "series_id": s.id, "ep_no": counters[s.id],
+            # an episode moved to another date keeps its id, so the plain id may be taken: add b, c, ...
+            ep_id = base = f"EW-{day.replace('-', '')}-{i + 1}"
+            for suffix in "bcdefgh":
+                if not con.execute("SELECT 1 FROM episodes WHERE id = ?", (ep_id,)).fetchone():
+                    break
+                ep_id = base + suffix
+            ep = {"id": ep_id, "series_id": s.id, "ep_no": counters[s.id],
                   "pillar": s.pillar, "title": s.episode_title.format(n=counters[s.id], topic="TBD", product=name),
                   "post_date": day, "slot": slot, "room_id": room, "product_id": product,
                   "cta_type": "product" if s.pillar == "product" else s.cta, "cta_line": cta_line}
             ep["outfit_json"] = json.dumps(gates.pick_outfit(ep, recent + new, b))
             new.append(ep)
-    errs = gates.check_calendar(recent + new, b)
+    # breaks already in the posts before --start can't be undone (they're out); only new breaks stop the plan
+    old = set(gates.check_calendar(recent, b))
+    errs = [e for e in gates.check_calendar(recent + new, b) if e not in old]
     if errs:
         raise db.GateError("Plan breaks the rules, nothing saved:\n  " + "\n  ".join(errs))
+    if old:
+        print("Already in earlier posts (not blocking):\n  " + "\n  ".join(sorted(old)))
     for ep in new:
         con.execute("INSERT INTO episodes (id, series_id, ep_no, pillar, title, post_date, slot, room_id, product_id,"
                     " outfit_json, cta_type, cta_line, state, created_at, updated_at)"
