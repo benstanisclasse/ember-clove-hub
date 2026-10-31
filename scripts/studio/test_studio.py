@@ -594,6 +594,30 @@ def test_autopilot_sends_scheduled_posts_public_with_the_ai_label(con, b, tmp_pa
     assert "uploadAsDraft" not in settings and "scheduledFor" in sent[0]
 
 
+def test_a_waiting_public_post_moves_in_postzen_then_here(con, b, tmp_path, monkeypatch):
+    import postzen as pz
+    ep_id, _ = _approved_episode(con, b, tmp_path, monkeypatch)
+    cli.cmd_schedule(con, b, argparse.Namespace(episode=ep_id, caption="Errand day.", actor="claude"))
+    con.execute("DELETE FROM episodes WHERE id != ?", (ep_id,))  # just this one on the calendar
+    db.note(con, ep_id, "x", postzen_post_id="pz1", publish_mode="scheduled", platform_status="scheduled")
+    stored = {"status": "scheduled", "scheduledFor": "2026-11-02T13:30:00.000Z"}
+    puts = []
+    monkeypatch.setattr(pz, "get", lambda path, **k: {"post": dict(stored)})
+    monkeypatch.setattr(pz, "put", lambda path, body: puts.append((path, body)) or stored.update(scheduledFor=body["scheduledFor"]))
+    move = argparse.Namespace(moves=[f"{ep_id}=2026-11-20@12:30"], reason="owner moved it", quote=None, actor="claude")
+    with pytest.raises(db.GateError, match="owner only"):
+        cli.cmd_reschedule(con, b, move)
+    assert not puts and db.get(con, ep_id)["post_date"] == "2026-11-02"
+    cli.cmd_reschedule(con, b, argparse.Namespace(**{**vars(move), "quote": "move it", "actor": "owner"}))
+    assert puts == [("posts/pz1", {"scheduledFor": "2026-11-20T17:30:00Z", "timezone": "America/New_York"})]
+    ep = db.get(con, ep_id)
+    assert (ep["post_date"], ep["slot"], ep["postzen_post_id"]) == ("2026-11-20", "12:30", "pz1")
+    stored["status"] = "published"  # already out: can't move
+    with pytest.raises(db.GateError, match="not waiting"):
+        cli.cmd_reschedule(con, b, argparse.Namespace(**{**vars(move), "moves": [f"{ep_id}=2026-11-21@12:30"],
+                                                         "quote": "move it", "actor": "owner"}))
+
+
 def test_a_waiting_draft_upload_goes_public_in_place(con, b, tmp_path, monkeypatch):
     from studio import content, publishing
     import postzen as pz

@@ -140,13 +140,17 @@ def note(con, ep_id, reason, **fields):
     return get(con, ep_id)
 
 
-def reschedule(con, moves, actor, reason, check):
+def reschedule(con, moves, actor, reason, check, with_postzen=False, dry_run=False):
     """Move episodes to new (date, slot) pairs in one step. check(episodes) returns calendar errors for the calendar as
-    it would be; any error refuses the whole move. Episodes already with PostZen or posted can't move."""
+    it would be; any error refuses the whole move. Episodes already with PostZen can't move unless with_postzen (the
+    caller has moved the PostZen post first; only public posts still waiting for their slot); posted ones never move.
+    dry_run: check only, change nothing."""
     eps = {r["id"]: dict(r) for r in con.execute("SELECT * FROM episodes WHERE test = 0")}
+    old_errs = set(check(sorted(eps.values(), key=lambda e: (e["post_date"], e["slot"]))))  # already there; don't block
     for ep_id, (day, slot) in moves.items():
         ep = eps.get(ep_id) or get(con, ep_id)
-        if ep["test"] or ep["postzen_post_id"] or ep["state"] in ("POSTED", "MEASURED"):
+        pz_ok = with_postzen and ep["publish_mode"] == "scheduled" and ep["platform_status"] == "scheduled"
+        if ep["test"] or (ep["postzen_post_id"] and not pz_ok) or ep["state"] in ("POSTED", "MEASURED"):
             raise GateError(f"{ep_id} is {'with PostZen' if ep['postzen_post_id'] else ep['state']}; it can't move")
         ep.update(post_date=day, slot=slot)
     taken = {}
@@ -154,9 +158,11 @@ def reschedule(con, moves, actor, reason, check):
         if (e["post_date"], e["slot"]) in taken:
             raise GateError(f"{e['id']} and {taken[(e['post_date'], e['slot'])]} both on {e['post_date']} {e['slot']}")
         taken[(e["post_date"], e["slot"])] = e["id"]
-    errs = check(sorted(eps.values(), key=lambda e: (e["post_date"], e["slot"])))
+    errs = [e for e in check(sorted(eps.values(), key=lambda e: (e["post_date"], e["slot"]))) if e not in old_errs]
     if errs:
         raise GateError("calendar rules fail:\n  " + "\n  ".join(errs))
+    if dry_run:
+        return
     for ep_id, (day, slot) in moves.items():
         old = get(con, ep_id)
         con.execute("UPDATE episodes SET post_date = ?, slot = ?, updated_at = ? WHERE id = ?", (day, slot, now(), ep_id))

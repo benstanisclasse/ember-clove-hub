@@ -8,7 +8,8 @@
   python scripts/studio/cli.py approve EP --quote "owner's words" (owner only)
   python scripts/studio/cli.py reject EP --quote "owner's words"  (owner only)
   python scripts/studio/cli.py schedule EP --caption "..."        (again to change the caption)
-  python scripts/studio/cli.py reschedule EP=2026-10-27@12:30 ... --reason "..."  (whole calendar re-checked)
+  python scripts/studio/cli.py reschedule EP=2026-10-27@12:30 ... --reason "..."  (whole calendar re-checked; a public
+      post still waiting in PostZen moves there too: --actor owner --quote "...")
   python scripts/studio/cli.py posted EP --url https://...
   python scripts/studio/cli.py board                              where every episode is
   python scripts/studio/cli.py bind-approvals                     one-time (Phase D): bind older approvals to their file
@@ -276,9 +277,25 @@ def cmd_reschedule(con, b, args):
         if slot not in b["rules"].posting.slots:
             raise db.GateError(f"{slot!r} isn't a posting slot ({', '.join(b['rules'].posting.slots)})")
         moves[ep_id] = (day, slot)
-    db.reschedule(con, moves, args.actor, args.reason, lambda eps: gates.check_calendar(eps, b))
+    check = lambda eps: gates.check_calendar(eps, b)  # noqa: E731
+    sent = {e: m for e, m in moves.items() if db.get(con, e)["postzen_post_id"]}
+    if sent:  # public posts waiting in PostZen move there first, then here; owner only, with their words
+        from studio import publishing
+        if args.actor != "owner" or not args.quote:
+            raise db.GateError("moving a post that's already with PostZen is owner only (--actor owner --quote)")
+        db.reschedule(con, moves, args.actor, args.reason, check, with_postzen=True, dry_run=True)
+        done = []
+        for ep_id, (day, slot) in sent.items():
+            try:
+                when = publishing.move_post(db.get(con, ep_id), day, slot, b)
+            except Exception as e:
+                raise db.GateError(f"{e}\n  PostZen posts already moved (studio.db not changed): "
+                                   + (", ".join(done) or "none")) from e
+            done.append(f"{ep_id} -> {when}")
+    reason = args.reason + (f" (owner: {args.quote})" if sent else "")
+    db.reschedule(con, moves, args.actor, reason, check, with_postzen=bool(sent))
     for ep_id, (day, slot) in moves.items():
-        print(f"{ep_id}: {day} {slot}")
+        print(f"{ep_id}: {day} {slot}" + (" (PostZen moved)" if ep_id in sent else ""))
     return 0
 
 
@@ -486,6 +503,7 @@ def main():
     p = sub.add_parser("reschedule")
     p.add_argument("moves", nargs="+", metavar="EP=YYYY-MM-DD@HH:MM")
     p.add_argument("--reason", required=True)
+    p.add_argument("--quote", help="owner's words (required to move a post already with PostZen)")
     p = sub.add_parser("set-line")
     p.add_argument("episode")
     p.add_argument("--line", required=True)

@@ -220,6 +220,25 @@ def go_public(con, ep, b, quote):
                    platform_status=post.get("status"))
 
 
+def move_post(ep, day, slot, b):
+    """A post still waiting in PostZen for its slot moves to a new slot: the same PostZen post gets the new time (PUT
+    scheduledFor), then is read back. Video, caption and settings stay as they are. Returns the new UTC time."""
+    local, when = slot_time(dict(ep, post_date=day, slot=slot), b)
+    if local <= dt.datetime.now(local.tzinfo) + dt.timedelta(minutes=10):
+        raise db.GateError(f"{ep['id']}: {local:%Y-%m-%d %H:%M} is too soon or has passed")
+    post = pz.get(f"posts/{ep['postzen_post_id']}").get("post") or {}
+    if post.get("status") != "scheduled":
+        raise db.GateError(f"{ep['id']}: PostZen post {ep['postzen_post_id']} is {post.get('status')}, not waiting for "
+                           "its slot; it can't move")
+    pz.put(f"posts/{ep['postzen_post_id']}", {"scheduledFor": when, "timezone": b["rules"].posting.timezone})
+    post = pz.get(f"posts/{ep['postzen_post_id']}").get("post") or {}
+    got = post.get("scheduledFor") or ""
+    if post.get("status") != "scheduled" or not got.startswith(when[:16]):
+        raise RuntimeError(f"{ep['id']}: PostZen post {ep['postzen_post_id']} didn't take the new time {when} "
+                           f"(status {post.get('status')}, scheduledFor {got!r}); check it before its slot")
+    return when
+
+
 METRICS = ("views", "impressions", "reach", "likes", "comments", "shares", "saves", "clicks")  # PostZen AnalyticsMetrics
 
 
