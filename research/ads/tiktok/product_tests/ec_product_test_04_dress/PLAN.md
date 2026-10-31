@@ -63,6 +63,15 @@ At $52.99 the dress is not over-priced by the course's rule; it is expensive to 
   2026-10-30). The owner may need to change Audience controls first.
 - Offer A needs the owner's approval of the exact numbers.
 
+## Queued, owner-approved, waiting for Ads Manager (Chrome)
+1. Barbed wire cut to 3 ads (section 3).
+2. Necklace 20% (owner 2026-10-31: "End the 20% necklace discount once the TikTok ad promo is removed in Ads Manager,
+   and remove the 20% line from the description at the same time."). Order: (a) in EC_TT_BarbedWire01, remove the
+   20% PERCENTAGE promo from every kept ad's product info and check it reads back gone; (b) then, same sitting,
+   deactivate the automatic discount "Silver Barbed Wire Necklace 20% off" and delete the description line
+   "20% off: taken off automatically in your cart, no code needed."; (c) storefront check: cart price = $34.95 /
+   $39.95, no "20%" on the page. If the owner removes the promo themselves, do (b) and (c) as soon as they say so.
+
 ## 3. Barbed wire campaign: cut to 3 ads (approved, not yet done)
 Keep: "Music Refresh 0-5" (creative XXX inside ad EC_TT_BW_M2_HIM_STACK XXX), N3 wire talk
 (XXX) and N1 car close-up (XXX), both inside EC_TT_BW_N_OWNER_VIDEOS XXX.
