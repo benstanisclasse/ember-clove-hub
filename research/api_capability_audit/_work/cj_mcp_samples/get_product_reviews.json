@@ -1,0 +1,7 @@
+{
+  "_call": {"tool": "get_product_reviews", "args": {"pid": "1537624790973034496", "pageNum": 1, "pageSize": 3}, "retrieved": "2026-10-31", "note": "No reviews exist for this product, so review item fields could not be observed."},
+  "pageNum": 1,
+  "pageSize": 3,
+  "total": 0,
+  "list": []
+}

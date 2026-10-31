@@ -1,0 +1,71 @@
+{
+  "_call": {"tool": "search_products", "args": {"keyword": "barbed wire necklace", "pageNum": 1, "pageSize": 1}, "retrieved": "2026-10-31", "prefix_text": "Found 6000 products total."},
+  "pageSize": 1,
+  "pageNumber": 1,
+  "totalRecords": 6000,
+  "totalPages": 6000,
+  "content": [
+    {
+      "productList": [
+        {
+          "id": "1537624790973034496",
+          "nameEn": "Barbed Wire Necklace",
+          "sku": "CJLX1504225",
+          "isCollect": 0,
+          "listedNum": 70,
+          "bigImage": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg",
+          "sellPrice": "6.29 -- 8.29",
+          "nowPrice": null,
+          "authorityStatus": "1",
+          "addMarkStatus": 0,
+          "isVedio": 0,
+          "productType": "0",
+          "isAut": "0",
+          "categoryId": "95D9F317-1DB3-4E42-A031-02223215B9C5",
+          "threeCategoryName": null,
+          "twoCategoryId": null,
+          "twoCategoryName": null,
+          "oneCategoryId": null,
+          "oneCategoryName": null,
+          "directMinOrderNum": null,
+          "supplierName": null,
+          "zoneRecommendJson": null,
+          "createAt": null,
+          "setRecommendedTime": null,
+          "autStatus": "1",
+          "isList": 0,
+          "isAd": 0,
+          "activityId": null,
+          "isPersonalized": 0,
+          "saleStatus": "3",
+          "syncListedProductStatus": null,
+          "videoList": [],
+          "deliveryCycle": null,
+          "warehouseInventoryNum": 95350,
+          "discountPrice": null,
+          "discountPriceRate": null,
+          "myProduct": true,
+          "currency": null,
+          "totalVerifiedInventory": 0,
+          "totalUnVerifiedInventory": null,
+          "verifiedWarehouse": 2,
+          "customization": null,
+          "hasCECertification": null,
+          "description": null,
+          "spu": null,
+          "inventoryInfo": null,
+          "variantKeyEn": null,
+          "variantInventories": null,
+          "propertyKey": null,
+          "isVideo": 0,
+          "productUrl": "https://www.cjdropshipping.com/product/barbed-wire-necklace-p-1537624790973034496.html"
+        }
+      ],
+      "relatedCategoryList": [
+        {"id": "95D9F317-1DB3-4E42-A031-02223215B9C5", "name": "Necklace & Pendants", "currentLevel": 3}
+      ],
+      "keyWord": "barbed wire necklace",
+      "keyWordOld": "barbed wire necklace"
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "_call": {
+    "tool": "calculate_freight_tip",
+    "args": {
+      "srcAreaCode": "CN",
+      "destAreaCode": "US",
+      "productProp": [
+        "COMMON"
+      ],
+      "weight": 24,
+      "freightTrialSkuList": [
+        {
+          "sku": "CJLX150422501AZ",
+          "skuQuantity": 1,
+          "skuWeight": 24
+        }
+      ]
+    },
+    "retrieved": "2026-10-31",
+    "note": "Bare array of 29 options (about 75 KB), wrapped under 'response', trimmed to 3 chosen for field coverage (PO-box message, ruleTips with zip/houseNumber, DDU message with 4 ruleTips). 'uid' (identical on every row) redacted."
+  },
+  "response": [
+    {
+      "arrivalTime": "5-11",
+      "discountFee": 4.82,
+      "discountFeeCNY": 29.85,
+      "volumeWeight": null,
+      "option": {
+        "arrivalTime": "12-25",
+        "cnName": "CJ物流纯电高功率",
+        "enName": "CJPacket Super Pure Electricity",
+        "id": "1545048748261367810"
+      },
+      "ruleTips": [],
+      "ruleTipTypes": [],
+      "channelId": "1549681635195609089",
+      "error": "",
+      "errorEn": "",
+      "optionId": "1545048748261367810",
+      "postage": 4.19,
+      "postageCNY": 25.95,
+      "priceIncreases": "115",
+      "reSort": "16",
+      "remoteFee": 0,
+      "remoteFeeCNY": 0,
+      "tip": "",
+      "uid": "redacted",
+      "orderId": null,
+      "unWeightChargeTarget": null,
+      "floatMaxPrice": null,
+      "floatMinPrice": null,
+      "logisticsParamRespDTO": null,
+      "message": "Delivery to PO Box addresses in the United States is not available. Please provide a complete and detailed physical address.",
+      "wrapPostage": null,
+      "wrapPostageCNY": null,
+      "wrapWeight": 0,
+      "stopWords": [],
+      "recommendLogisticsTypeList": [],
+      "timePrioritySort": null,
+      "pricePrioritySort": null,
+      "compositeRecommendSort": null,
+      "channel": {
+        "cnName": "促佳美国大功率纯电",
+        "enName": "促佳美国大功率纯电",
+        "id": "1549681635195609089"
+      },
+      "cjRespDTO": {
+        "postage": "4.19",
+        "postageCNY": "25.95",
+        "remoteFee": "0.00",
+        "remoteFeeCNY": "0"
+      },
+      "destArea": {
+        "cnName": "美国",
+        "countryId": "233",
+        "enName": "United States",
+        "id": "233",
+        "parentId": null,
+        "postCode": "",
+        "shortCode": "US"
+      },
+      "srcArea": {
+        "cnName": "中国",
+        "countryId": "48",
+        "enName": "China",
+        "id": "48",
+        "parentId": null,
+        "postCode": "",
+        "shortCode": "CN"
+      },
+      "dump": false,
+      "zonePrice": [],
+      "allRuleTips": [],
+      "taxesFee": null,
+      "clearanceOperationFee": null,
+      "tariff": null,
+      "totalPostageFee": 4.82
+    },
+    {
+      "arrivalTime": "4-7",
+      "discountFee": 5.74,
+      "discountFeeCNY": 35.57,
+      "volumeWeight": null,
+      "option": {
+        "arrivalTime": "8-15",
+        "cnName": "云途YunExpress特惠普货",
+        "enName": "YunExpress Ordinary",
+        "id": "1868922929754472449"
+      },
+      "ruleTips": [
+        {
+          "expression": "^([\\d]{5}-[\\d]{4}|[\\d]{5})$",
+          "interceptType": "0",
+          "max": null,
+          "min": null,
+          "msgCode": "4008",
+          "msgEn": "Please enter your post code, in format of \" 5 digit number + - + 4 digit number\" or a 5 digit number.",
+          "type": "zip"
+        },
+        {
+          "expression": "",
+          "interceptType": "1",
+          "max": null,
+          "min": null,
+          "msgCode": "6001",
+          "msgEn": "Please enter the door number in the \"Address1\" or \"Address2\".",
+          "type": "houseNumber"
+        }
+      ],
+      "ruleTipTypes": [
+        "zip",
+        "houseNumber"
+      ],
+      "channelId": "12",
+      "error": "",
+      "errorEn": "",
+      "optionId": "1868922929754472449",
+      "postage": 4.59,
+      "postageCNY": 28.45,
+      "priceIncreases": "125",
+      "reSort": "11",
+      "remoteFee": 0,
+      "remoteFeeCNY": 0,
+      "tip": "",
+      "uid": "redacted",
+      "orderId": null,
+      "unWeightChargeTarget": null,
+      "floatMaxPrice": null,
+      "floatMinPrice": null,
+      "logisticsParamRespDTO": null,
+      "message": "",
+      "wrapPostage": null,
+      "wrapPostageCNY": null,
+      "wrapWeight": 0,
+      "stopWords": [],
+      "recommendLogisticsTypeList": [
+        0,
+        2
+      ],
+      "timePrioritySort": 0,
+      "pricePrioritySort": null,
+      "compositeRecommendSort": 0,
+      "channel": {
+        "cnName": "促佳云途yunExpress全球专线挂号（特惠普货）",
+        "enName": "促佳云途yunExpress全球专线挂号（特惠普货）",
+        "id": "12"
+      },
+      "cjRespDTO": {
+        "postage": "4.59",
+        "postageCNY": "28.45",
+        "remoteFee": "0.00",
+        "remoteFeeCNY": "0"
+      },
+      "destArea": {
+        "cnName": "美国",
+        "countryId": "233",
+        "enName": "United States",
+        "id": "233",
+        "parentId": null,
+        "postCode": "",
+        "shortCode": "US"
+      },
+      "srcArea": {
+        "cnName": "中国",
+        "countryId": "48",
+        "enName": "China",
+        "id": "48",
+        "parentId": null,
+        "postCode": "",
+        "shortCode": "CN"
+      },
+      "dump": false,
+      "zonePrice": [],
+      "allRuleTips": [
+        {
+          "expression": "^([\\d]{5}-[\\d]{4}|[\\d]{5})$",
+          "interceptType": "0",
+          "max": null,
+          "min": null,
+          "msgCode": "4008",
+          "msgEn": "Please enter your post code, in format of \" 5 digit number + - + 4 digit number\" or a 5 digit number.",
+          "type": "zip"
+        },
+        {
+          "expression": "",
+          "interceptType": "1",
+          "max": null,
+          "min": null,
+          "msgCode": "6001",
+          "msgEn": "Please enter the door number in the \"Address1\" or \"Address2\".",
+          "type": "houseNumber"
+        }
+      ],
+      "taxesFee": null,
+      "clearanceOperationFee": null,
+      "tariff": null,
+      "totalPostageFee": 5.74
+    },
+    {
+      "arrivalTime": "20-60",
+      "discountFee": 8.91,
+      "discountFeeCNY": 55.12,
+      "volumeWeight": null,
+      "option": {
+        "arrivalTime": "20-60",
+        "cnName": "顺邮宝专线",
+        "enName": "CJPacket Liquid Line",
+        "id": "60"
+      },
+      "ruleTips": [
+        {
+          "expression": "^([\\s+]*\\d[\\s+]*){9,10}$",
+          "interceptType": "1",
+          "max": null,
+          "min": null,
+          "msgCode": "1004",
+          "msgEn": "Please enter your phone number, in length of 9-10 digits. ",
+          "type": "phone"
+        },
+        {
+          "expression": "^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$",
+          "interceptType": "1",
+          "max": null,
+          "min": null,
+          "msgCode": "3001",
+          "msgEn": "Please enter your email address (only letters, numbers and symbols are supported). ",
+          "type": "email"
+        },
+        {
+          "expression": "^([\\d]{5}-[\\d]{4}|[\\d]{5})$",
+          "interceptType": "0",
+          "max": null,
+          "min": null,
+          "msgCode": "4008",
+          "msgEn": "Please enter your post code, in format of \" 5 digit number + - + 4 digit number\" or a 5 digit number.",
+          "type": "zip"
+        },
+        {
+          "expression": "^(?![0-9]+$)(?![_\\W]+$)[\\s\\S]+$",
+          "interceptType": "0",
+          "max": null,
+          "min": null,
+          "msgCode": "9001",
+          "msgEn": "Please enter the province.Pure numbers or characters are not allowed.",
+          "type": "province"
+        }
+      ],
+      "ruleTipTypes": [
+        "phone",
+        "email",
+        "zip",
+        "province"
+      ],
+      "channelId": "80",
+      "error": "",
+      "errorEn": "",
+      "optionId": "60",
+      "postage": 7.74,
+      "postageCNY": 47.93,
+      "priceIncreases": "115",
+      "reSort": "80",
+      "remoteFee": 0,
+      "remoteFeeCNY": 0,
+      "tip": "",
+      "uid": "redacted",
+      "orderId": null,
+      "unWeightChargeTarget": null,
+      "floatMaxPrice": null,
+      "floatMinPrice": null,
+      "logisticsParamRespDTO": null,
+      "message": "DDU Custom Clearance， If inspected by customs，The buyer is responsible for any applicable duties and taxes（Customs inspection rate is less than 10%）",
+      "wrapPostage": null,
+      "wrapPostageCNY": null,
+      "wrapWeight": 0,
+      "stopWords": [],
+      "recommendLogisticsTypeList": [],
+      "timePrioritySort": null,
+      "pricePrioritySort": null,
+      "compositeRecommendSort": null,
+      "channel": {
+        "cnName": "促佳SYBRAM",
+        "enName": "促佳SYBRAM",
+        "id": "80"
+      },
+      "cjRespDTO": {
+        "postage": "3.77",
+        "postageCNY": "23.36",
+        "remoteFee": null,
+        "remoteFeeCNY": null
+      },
+      "destArea": {
+        "cnName": "美国",
+        "countryId": "233",
+        "enName": "United States",
+        "id": "233",
+        "parentId": null,
+        "postCode": "",
+        "shortCode": "US"
+      },
+      "srcArea": {
+        "cnName": "中国",
+        "countryId": "48",
+        "enName": "China",
+        "id": "48",
+        "parentId": null,
+        "postCode": "",
+        "shortCode": "CN"
+      },
+      "dump": false,
+      "zonePrice": [],
+      "allRuleTips": [
+        {
+          "expression": "^([\\s+]*\\d[\\s+]*){9,10}$",
+          "interceptType": "1",
+          "max": null,
+          "min": null,
+          "msgCode": "1004",
+          "msgEn": "Please enter your phone number, in length of 9-10 digits. ",
+          "type": "phone"
+        },
+        {
+          "expression": "^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$",
+          "interceptType": "1",
+          "max": null,
+          "min": null,
+          "msgCode": "3001",
+          "msgEn": "Please enter your email address (only letters, numbers and symbols are supported). ",
+          "type": "email"
+        },
+        {
+          "expression": "^([\\d]{5}-[\\d]{4}|[\\d]{5})$",
+          "interceptType": "0",
+          "max": null,
+          "min": null,
+          "msgCode": "4008",
+          "msgEn": "Please enter your post code, in format of \" 5 digit number + - + 4 digit number\" or a 5 digit number.",
+          "type": "zip"
+        },
+        {
+          "expression": "^(?![0-9]+$)(?![_\\W]+$)[\\s\\S]+$",
+          "interceptType": "0",
+          "max": null,
+          "min": null,
+          "msgCode": "9001",
+          "msgEn": "Please enter the province.Pure numbers or characters are not allowed.",
+          "type": "province"
+        }
+      ],
+      "taxesFee": null,
+      "clearanceOperationFee": 0,
+      "tariff": null,
+      "totalPostageFee": 8.91
+    }
+  ]
+}

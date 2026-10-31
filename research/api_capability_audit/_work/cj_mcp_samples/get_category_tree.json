@@ -1,0 +1,186 @@
+{
+  "_call": {
+    "tool": "get_category_tree",
+    "args": {},
+    "retrieved": "2026-10-31",
+    "note": "Full tree (about 94 KB) returned in one call with no parentId: 14 top-level, 89 second-level, 578 third-level categories. Trimmed to 3x3x3. Top-level names: Women's Clothing; Pet Supplies; Home, Garden & Furniture; Health, Beauty & Hair; Jewelry & Watches; Men's Clothing; Bags & Shoes; Toys, Kids & Babies; Sports & Outdoors; Consumer Electronics; Home Improvement; Automobiles & Motorcycles; Phones & Accessories; Computer & Office. Our necklace sits at Jewelry & Watches > Fashion Jewelry > Necklace & Pendants (95D9F317-1DB3-4E42-A031-02223215B9C5)."
+  },
+  "response": [
+    {
+      "categoryFirstId": "2FE8A083-5E7B-4179-896D-561EA116F730",
+      "categoryFirstName": "Women's Clothing",
+      "categoryFirstList": [
+        {
+          "categorySecondId": "23DDAF61-8F6C-40F7-9F1F-DC9BB25450B6",
+          "categorySecondName": "Accessories",
+          "categorySecondList": [
+            {
+              "categoryId": "0DC4DF6F-4EC5-47DF-B20D-863ADF69319F",
+              "categoryName": "Scarves & Wraps"
+            },
+            {
+              "categoryId": "1374953557614268416",
+              "categoryName": "Face Masks"
+            },
+            {
+              "categoryId": "1E4A1FD7-738C-4AEF-9793-BDE062158BD6",
+              "categoryName": "Belts & Cummerbunds"
+            }
+          ]
+        },
+        {
+          "categorySecondId": "2502190915541622500",
+          "categorySecondName": "Couple&Parent-Child Clothing",
+          "categorySecondList": [
+            {
+              "categoryId": "2502190916161603800",
+              "categoryName": "Couple&Parent-Child Sweatshirts"
+            },
+            {
+              "categoryId": "2502190916291603600",
+              "categoryName": "Couple&Parent-Child Short-Sleeves"
+            },
+            {
+              "categoryId": "2502190916401605200",
+              "categoryName": "Couple&Parent -Child Jackets"
+            }
+          ]
+        },
+        {
+          "categorySecondId": "2608160526591611000",
+          "categorySecondName": "Women's Jackets",
+          "categorySecondList": [
+            {
+              "categoryId": "2608160527241639100",
+              "categoryName": "Women's Casual Jackets"
+            },
+            {
+              "categoryId": "2608160527511604800",
+              "categoryName": "Women's Baseball Jackets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryFirstId": "2409110611570657700",
+      "categoryFirstName": "Pet Supplies",
+      "categoryFirstList": [
+        {
+          "categorySecondId": "2410110335471602500",
+          "categorySecondName": "Pet Toys",
+          "categorySecondList": [
+            {
+              "categoryId": "2410110339311602900",
+              "categoryName": "Pet Chase Toys"
+            },
+            {
+              "categoryId": "2410110339451623300",
+              "categoryName": "Pet Chew Toys"
+            },
+            {
+              "categoryId": "2410110340031614900",
+              "categoryName": "Pet Training and Educational Toys"
+            }
+          ]
+        },
+        {
+          "categorySecondId": "2410110337031615300",
+          "categorySecondName": "Pet Drinking & Feeding",
+          "categorySecondList": [
+            {
+              "categoryId": "2410110341061612000",
+              "categoryName": "Pet Bowls"
+            },
+            {
+              "categoryId": "2410110341331606800",
+              "categoryName": "Pet Drinking Tools"
+            },
+            {
+              "categoryId": "2410110341451628800",
+              "categoryName": "Pet Feeding Tools"
+            }
+          ]
+        },
+        {
+          "categorySecondId": "2410110337231611800",
+          "categorySecondName": "Pet Outdoor Supplies",
+          "categorySecondList": [
+            {
+              "categoryId": "2410110342021620700",
+              "categoryName": "Barking Control Equipments"
+            },
+            {
+              "categoryId": "2410110342161616300",
+              "categoryName": "Trainers"
+            },
+            {
+              "categoryId": "2410110342321607200",
+              "categoryName": "Dog Training Pads & Diapers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryFirstId": "52FC6CA5-669B-4D0B-B1AC-415675931399",
+      "categoryFirstName": "Home, Garden & Furniture",
+      "categoryFirstList": [
+        {
+          "categorySecondId": "1AD00A3C-465A-430A-9820-F2D097FDA53A",
+          "categorySecondName": "Home Textiles",
+          "categorySecondList": [
+            {
+              "categoryId": "1A9A9965-A914-46D7-B8E2-49AD256F2B6B",
+              "categoryName": "Curtains"
+            },
+            {
+              "categoryId": "2601070550351602500",
+              "categoryName": "Floor Mats"
+            },
+            {
+              "categoryId": "300CC260-CF9D-4AEA-9FC2-6C8DB8A35B51",
+              "categoryName": "Cushion Covers"
+            }
+          ]
+        },
+        {
+          "categorySecondId": "2180A6DC-32EC-44B2-8FD4-CE3DD6DB4C19",
+          "categorySecondName": "Arts, Crafts & Sewing",
+          "categorySecondList": [
+            {
+              "categoryId": "2409230854411618700",
+              "categoryName": "Decor Paintings"
+            },
+            {
+              "categoryId": "664B9B04-4697-437A-AA46-631EFCC3DF03",
+              "categoryName": "Lace"
+            },
+            {
+              "categoryId": "93671B1A-DE8F-4398-B139-8B2214206648",
+              "categoryName": "Apparel Sewing & Fabric"
+            }
+          ]
+        },
+        {
+          "categorySecondId": "2502140306341614500",
+          "categorySecondName": "Musical Instruments",
+          "categorySecondList": [
+            {
+              "categoryId": "2502140306571605000",
+              "categoryName": "Guitars"
+            },
+            {
+              "categoryId": "2502140307181607100",
+              "categoryName": "Violins"
+            },
+            {
+              "categoryId": "2603180848241600400",
+              "categoryName": "Steel Tongue Drum"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

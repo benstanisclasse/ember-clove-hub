@@ -1,0 +1,3757 @@
+{
+ "tables": {
+  "pulls": {
+   "rows": 5165,
+   "columns": {
+    "pull_id": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 5165,
+     "sample": "1"
+    },
+    "file": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 5165,
+     "sample": "raw/2026-10-25/balance.json"
+    },
+    "pulled_on": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 9,
+     "sample": "2026-10-25"
+    },
+    "name": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 5163,
+     "sample": "balance"
+    },
+    "endpoint": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 9,
+     "sample": "credit/balance"
+    },
+    "region": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5135
+      ]
+     ],
+     "non_null_pct": 99.4,
+     "distinct": 2,
+     "sample": "US"
+    },
+    "date_range": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5109
+      ]
+     ],
+     "non_null_pct": 98.9,
+     "distinct": 17,
+     "sample": "last30Day"
+    },
+    "filters": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2010,
+     "sample": "{}"
+    },
+    "http_status": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "200"
+    },
+    "success": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "1"
+    },
+    "n_records": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 47,
+     "sample": "0"
+    },
+    "sha256": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 5155,
+     "sample": "af73d63c886b1ce2736ffa44e6220faca35940405db071d74a1f4d48b99b13dd"
+    },
+    "collected_at": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 5164,
+     "sample": "2026-10-25T23:19:35"
+    },
+    "kind": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5165
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 9,
+     "sample": "category"
+    },
+    "month": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       5003
+      ]
+     ],
+     "non_null_pct": 96.9,
+     "distinct": 14,
+     "sample": "2026-09"
+    },
+    "category_id": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       3654
+      ]
+     ],
+     "non_null_pct": 70.7,
+     "distinct": 31,
+     "sample": "600001"
+    },
+    "page": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       4069
+      ]
+     ],
+     "non_null_pct": 78.8,
+     "distinct": 11,
+     "sample": "1"
+    }
+   },
+   "pull_dates": [
+    "2026-10-25",
+    "weekly_2026-10-26",
+    "2026-10-25T14:43:04",
+    "2026-10-30T08:59:07"
+   ]
+  },
+  "products": {
+   "rows": 259418,
+   "columns": {
+    "pull_id": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2597,
+     "sample": "27"
+    },
+    "position": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 100,
+     "sample": "1"
+    },
+    "product_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 136291,
+     "sample": "1729383667573952595"
+    },
+    "product_name": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 134325,
+     "sample": "EL ELENGATINE Women's Plus-Size Denim Shirt Dress - Retro Vintage Oversized Coll"
+    },
+    "revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 217078,
+     "sample": "160947.0"
+    },
+    "sales_volumn": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 14067,
+     "sample": "5961"
+    },
+    "unit_price": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 28588,
+     "sample": "27.0"
+    },
+    "revenue_growth_rate": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 100365,
+     "sample": "34.32"
+    },
+    "commission_rate": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 60,
+     "sample": "11.0"
+    },
+    "live_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 127602,
+     "sample": "648.0"
+    },
+    "video_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 172348,
+     "sample": "160245.0"
+    },
+    "showcase_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 89402,
+     "sample": "54.0"
+    },
+    "launch_date": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       259418
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1148,
+     "sample": "2025-06-22"
+    },
+    "seller_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       259210
+      ]
+     ],
+     "non_null_pct": 99.9,
+     "distinct": 42800,
+     "sample": "7495925172675578874"
+    },
+    "seller_name": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       259210
+      ]
+     ],
+     "non_null_pct": 99.9,
+     "distinct": 43168,
+     "sample": "Elengatine USA"
+    },
+    "sku_count": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       259194
+      ]
+     ],
+     "non_null_pct": 99.9,
+     "distinct": 666,
+     "sample": "179"
+    }
+   },
+   "raw_json_paths": {
+    "commission_rate": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "0.0"
+    },
+    "launch_date": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "2026-06-08"
+    },
+    "live_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "0.0"
+    },
+    "master_image_url": {
+     "present_pct": 100.0,
+     "types": {
+      "null": 4000
+     },
+     "example": null
+    },
+    "product_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "1732375054034637196"
+    },
+    "product_name": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "Men's Dark Round Neck Embroidered Short Sleeve Long Shirt, L"
+    },
+    "revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "517.53"
+    },
+    "revenue_growth_rate": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "-100.0"
+    },
+    "sales_volumn": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "22"
+    },
+    "seller_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 3995,
+      "null": 5
+     },
+     "example": "8655423035545129356"
+    },
+    "seller_name": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 3995,
+      "null": 5
+     },
+     "example": "Sacred Men Style"
+    },
+    "showcase_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "517.53"
+    },
+    "sku_count": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 3995,
+      "null": 5
+     },
+     "example": "5"
+    },
+    "unit_price": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "23.52"
+    },
+    "video_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "0.0"
+    }
+   },
+   "raw_json_sampled": 4000,
+   "pull_dates": [
+    "2026-10-25",
+    "subcats_2026-10-26",
+    "2026-10-25T14:43:08",
+    "2026-10-26T10:50:48"
+   ]
+  },
+  "videos": {
+   "rows": 135953,
+   "columns": {
+    "pull_id": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1414,
+     "sample": "34"
+    },
+    "position": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 100,
+     "sample": "1"
+    },
+    "video_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 98772,
+     "sample": "7321448031214193950"
+    },
+    "video_title": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       135953
+      ]
+     ],
+     "non_null_pct": 96.1,
+     "distinct": 89063,
+     "sample": "This brown color is so stunning but the other colors are so pretty too! 🤩🤎 worth"
+    },
+    "belonged_creator_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 34773,
+     "sample": "27411141"
+    },
+    "belonged_creator_handle": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 35663,
+     "sample": "taylorbise"
+    },
+    "revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 101700,
+     "sample": "34684.0"
+    },
+    "views": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 107001,
+     "sample": "2006011"
+    },
+    "revenue_growth_rate": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       135952
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 12702,
+     "sample": "-187.0"
+    },
+    "ads_roas": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1236,
+     "sample": "2.55"
+    },
+    "ad": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "1"
+    },
+    "ai_video": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "0"
+    },
+    "digg_count": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 43719,
+     "sample": "31755"
+    },
+    "share_count": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 16418,
+     "sample": "3974"
+    },
+    "comment_count": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 3655,
+     "sample": "123"
+    },
+    "ad_revenue_ratio": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       135952
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 48545,
+     "sample": "80.0"
+    },
+    "ad_view_ratio": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       135953
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 92431,
+     "sample": "44.65922669417067"
+    },
+    "publish_date": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       135952
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 97006,
+     "sample": "2026/08/21 15:59:04"
+    },
+    "product_filter": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       34632
+      ]
+     ],
+     "non_null_pct": 25.5,
+     "distinct": 125,
+     "sample": "1729483993705256484"
+    }
+   },
+   "raw_json_paths": {
+    "ad": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "0"
+    },
+    "ad_revenue_ratio": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "0.0"
+    },
+    "ad_view_ratio": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "0.0"
+    },
+    "ads_roas": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "0.0"
+    },
+    "ai_video": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "0"
+    },
+    "belonged_creator_handle": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "wudi2434"
+    },
+    "belonged_creator_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "7566137966104626231"
+    },
+    "comment_count": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "1"
+    },
+    "creator_debut": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "2026-01-03"
+    },
+    "digg_count": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "20"
+    },
+    "publish_date": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "2026/09/23 07:00:00"
+    },
+    "revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "117.0"
+    },
+    "revenue_growth_rate": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 4000
+     },
+     "example": "-202.02"
+    },
+    "share_count": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "6"
+    },
+    "video_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "7688636961279528205"
+    },
+    "video_title": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 4000
+     },
+     "example": "❤️‍🔥Never run out of battery! 48,000mAh solar power bank wit"
+    },
+    "views": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 4000
+     },
+     "example": "5463"
+    }
+   },
+   "raw_json_sampled": 4000,
+   "pull_dates": [
+    "2026-10-25",
+    "weekly_2026-10-26",
+    "2026-10-25T14:43:21",
+    "2026-10-30T08:59:07"
+   ]
+  },
+  "product_details": {
+   "rows": 1039,
+   "columns": {
+    "pull_id": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1039,
+     "sample": "13"
+    },
+    "position": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "1"
+    },
+    "product_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1023,
+     "sample": "1729383972059255701"
+    },
+    "product_name": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1023,
+     "sample": "JLab JBuds Lux ANC Wireless Bluetooth Noise Cancelling Headphones with Mics, Adj"
+    },
+    "product_shop_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 874,
+     "sample": "7495182113810385569"
+    },
+    "pri_cate_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 28,
+     "sample": "601739"
+    },
+    "sec_cate_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 166,
+     "sample": "909320"
+    },
+    "ter_cate_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 505,
+     "sample": "601990"
+    },
+    "min_price": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 718,
+     "sample": "57.78"
+    },
+    "max_price": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 775,
+     "sample": "239.17"
+    },
+    "unit_price": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 937,
+     "sample": "49.16"
+    },
+    "revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1034,
+     "sample": "220978.0"
+    },
+    "video_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 808,
+     "sample": "207888.0"
+    },
+    "live_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 704,
+     "sample": "12849.0"
+    },
+    "shopping_mall_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 737,
+     "sample": "241.0"
+    },
+    "sales_volumn": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 742,
+     "sample": "4495"
+    },
+    "creator_number": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 349,
+     "sample": "1121"
+    },
+    "video_number": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 450,
+     "sample": "1773"
+    },
+    "live_number": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 317,
+     "sample": "849"
+    },
+    "product_review_count": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 654,
+     "sample": "20104"
+    },
+    "commission_rate": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 28,
+     "sample": "0.0"
+    },
+    "delivery_type": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 3,
+     "sample": "local"
+    },
+    "launch_date": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       1039
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 552,
+     "sample": "2024-02-27"
+    },
+    "revenue_trend": {
+     "declared": "",
+     "storage_types": [],
+     "non_null_pct": 0.0,
+     "distinct": 0,
+     "sample": null
+    }
+   },
+   "raw_json_paths": {
+    "commission_rate": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "10.0"
+    },
+    "creator_number": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 1039
+     },
+     "example": "60"
+    },
+    "delivery_type": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "local"
+    },
+    "launch_date": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "2023-07-25"
+    },
+    "live_number": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 1039
+     },
+     "example": "125"
+    },
+    "live_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "483.93"
+    },
+    "master_image_url": {
+     "present_pct": 100.0,
+     "types": {
+      "null": 1039
+     },
+     "example": null
+    },
+    "max_price": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "74.99"
+    },
+    "min_price": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "69.99"
+    },
+    "pri_cate_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "601755"
+    },
+    "product_description": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 1039
+     },
+     "example": null
+    },
+    "product_description[].content": {
+     "present_pct": 32.9,
+     "types": {
+      "array": 342
+     },
+     "example": null
+    },
+    "product_description[].image": {
+     "present_pct": 50.8,
+     "types": {
+      "object": 528
+     },
+     "example": null
+    },
+    "product_description[].image.height": {
+     "present_pct": 50.8,
+     "types": {
+      "integer": 528
+     },
+     "example": "1049"
+    },
+    "product_description[].image.remove_gap": {
+     "present_pct": 48.1,
+     "types": {
+      "string": 500
+     },
+     "example": "false"
+    },
+    "product_description[].image.uri": {
+     "present_pct": 50.8,
+     "types": {
+      "string": 528
+     },
+     "example": "tos-useast5-i-omjb5zjo8w-tx/419e9cbd10cc4a1d868eedd5276501fa"
+    },
+    "product_description[].image.url_list": {
+     "present_pct": 50.8,
+     "types": {
+      "array": 528
+     },
+     "example": null
+    },
+    "product_description[].image.width": {
+     "present_pct": 50.8,
+     "types": {
+      "integer": 528
+     },
+     "example": "2560"
+    },
+    "product_description[].li_sub": {
+     "present_pct": 30.1,
+     "types": {
+      "array": 313
+     },
+     "example": null
+    },
+    "product_description[].li_sub[][].align": {
+     "present_pct": 0.5,
+     "types": {
+      "integer": 5
+     },
+     "example": "1"
+    },
+    "product_description[].li_sub[][].b": {
+     "present_pct": 14.5,
+     "types": {
+      "boolean": 151
+     },
+     "example": "True"
+    },
+    "product_description[].li_sub[][].em": {
+     "present_pct": 0.6,
+     "types": {
+      "boolean": 6
+     },
+     "example": "True"
+    },
+    "product_description[].li_sub[][].t": {
+     "present_pct": 30.1,
+     "types": {
+      "string": 313
+     },
+     "example": "Wear adjustable end across your chest"
+    },
+    "product_description[].li_sub[][].u": {
+     "present_pct": 0.2,
+     "types": {
+      "boolean": 2
+     },
+     "example": "True"
+    },
+    "product_description[].sub": {
+     "present_pct": 71.5,
+     "types": {
+      "array": 743
+     },
+     "example": null
+    },
+    "product_description[].sub[].align": {
+     "present_pct": 20.4,
+     "types": {
+      "integer": 212
+     },
+     "example": "1"
+    },
+    "product_description[].sub[].b": {
+     "present_pct": 34.5,
+     "types": {
+      "boolean": 358
+     },
+     "example": "True"
+    },
+    "product_description[].sub[].em": {
+     "present_pct": 2.1,
+     "types": {
+      "boolean": 22
+     },
+     "example": "True"
+    },
+    "product_description[].sub[].h": {
+     "present_pct": 26.9,
+     "types": {
+      "integer": 279
+     },
+     "example": "1"
+    },
+    "product_description[].sub[].t": {
+     "present_pct": 71.5,
+     "types": {
+      "string": 743
+     },
+     "example": "This eyeliner pen enhances the lash line with rich color."
+    },
+    "product_description[].sub[].u": {
+     "present_pct": 1.4,
+     "types": {
+      "boolean": 15
+     },
+     "example": "True"
+    },
+    "product_description[].text": {
+     "present_pct": 79.1,
+     "types": {
+      "string": 822
+     },
+     "example": "This eyeliner pen enhances the lash line with rich color."
+    },
+    "product_description[].type": {
+     "present_pct": 98.7,
+     "types": {
+      "string": 1026
+     },
+     "example": "image"
+    },
+    "product_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "1729383972059255701"
+    },
+    "product_name": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "Ohuhu Alcohol Markers: Fine / Chisel & Brush Dual Tips  - 72"
+    },
+    "product_region": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "us"
+    },
+    "product_review_count": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 1039
+     },
+     "example": "86"
+    },
+    "product_shop_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "7494821293310315413"
+    },
+    "revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "483.93"
+    },
+    "revenue_trend": {
+     "present_pct": 100.0,
+     "types": {
+      "null": 1039
+     },
+     "example": null
+    },
+    "sales_volumn": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 1039
+     },
+     "example": "7"
+    },
+    "sec_cate_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "831112"
+    },
+    "shopping_mall_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "0.0"
+    },
+    "ter_cate_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 1039
+     },
+     "example": "831752"
+    },
+    "unit_price": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "69.13"
+    },
+    "video_number": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 1039
+     },
+     "example": "28"
+    },
+    "video_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 1039
+     },
+     "example": "0.0"
+    }
+   },
+   "raw_json_sampled": 1039,
+   "pull_dates": [
+    "2026-10-25",
+    "weekly_2026-10-26",
+    "2026-10-25T14:43:31",
+    "2026-10-30T08:55:28"
+   ]
+  },
+  "categories": {
+   "rows": 807,
+   "columns": {
+    "pull_id": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 15,
+     "sample": "2"
+    },
+    "position": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 100,
+     "sample": "1"
+    },
+    "category_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 261,
+     "sample": "601450"
+    },
+    "category_name": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 259,
+     "sample": "Beauty & Personal Care"
+    },
+    "rank": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 220,
+     "sample": "1"
+    },
+    "revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 719,
+     "sample": "371998365.96"
+    },
+    "sale": {
+     "declared": "",
+     "storage_types": [
+      [
+       "integer",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 716,
+     "sample": "16928690"
+    },
+    "revenue_growth_rate": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 687,
+     "sample": "16.4"
+    },
+    "top3_shop_revenue_ratio": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 663,
+     "sample": "13.01"
+    },
+    "average_revenue": {
+     "declared": "",
+     "storage_types": [
+      [
+       "real",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 720,
+     "sample": "16730.31"
+    },
+    "category_level": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       807
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "1"
+    }
+   },
+   "raw_json_paths": {
+    "average_revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 807
+     },
+     "example": "16730.31"
+    },
+    "category_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 807
+     },
+     "example": "601450"
+    },
+    "category_name": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 807
+     },
+     "example": "Beauty & Personal Care"
+    },
+    "rank": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 807
+     },
+     "example": "1"
+    },
+    "revenue": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 807
+     },
+     "example": "371998365.96"
+    },
+    "revenue_growth_rate": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 807
+     },
+     "example": "16.4"
+    },
+    "sale": {
+     "present_pct": 100.0,
+     "types": {
+      "integer": 807
+     },
+     "example": "16928690"
+    },
+    "top3_shop_revenue_ratio": {
+     "present_pct": 100.0,
+     "types": {
+      "number": 807
+     },
+     "example": "13.01"
+    }
+   },
+   "raw_json_sampled": 807,
+   "pull_dates": [
+    "2026-10-25",
+    "subcats_2026-10-26",
+    "2026-10-25T14:43:04",
+    "2026-10-26T10:44:30"
+   ]
+  },
+  "comment_insights": {
+   "rows": 24,
+   "columns": {
+    "pull_id": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 24,
+     "sample": "5"
+    },
+    "position": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "1"
+    },
+    "product_id": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 24,
+     "sample": "1729430076387136161"
+    },
+    "comment_summary": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 24,
+     "sample": "{\"summary\": \"Most users are very satisfied with these headphones, praising their"
+    },
+    "pain_points": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 24,
+     "sample": "[{\"view_point\": \"Sound leakage at high volume\", \"point_zh\": \"高音量时漏音明显\", \"key_rev"
+    },
+    "positive_points": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 24,
+     "sample": "[{\"view_point\": \"Great sound quality\", \"point_zh\": \"音质出色\", \"key_review_id\": \"753"
+    },
+    "usage_scenarios": {
+     "declared": "",
+     "storage_types": [
+      [
+       "text",
+       24
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 24,
+     "sample": "[{\"view_point\": \"At the gym or working out\", \"point_zh\": \"健身或锻炼时使用\", \"key_review"
+    }
+   },
+   "raw_json_paths": {
+    "cached_at": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "2025-08-20T06:33:50+00:00"
+    },
+    "comment_summary": {
+     "present_pct": 100.0,
+     "types": {
+      "object": 24
+     },
+     "example": null
+    },
+    "comment_summary.summary": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "Most users are very satisfied with these headphones, praisin"
+    },
+    "comment_summary.summary_zh": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "大多数用户对这款耳机非常满意，称赞其卓越的音质、有效的降噪、持久的电池续航、舒适佩戴、丰富的颜色选择以及实惠的价格。许多"
+    },
+    "country_code": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "us"
+    },
+    "original_comments": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "original_comments[].country": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "us"
+    },
+    "original_comments[].currency": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 2,
+      "null": 14
+     },
+     "example": "USD"
+    },
+    "original_comments[].digg_count": {
+     "present_pct": 70.8,
+     "types": {
+      "integer": 17
+     },
+     "example": "0"
+    },
+    "original_comments[].display_text": {
+     "present_pct": 66.7,
+     "types": {
+      "null": 16
+     },
+     "example": null
+    },
+    "original_comments[].first_collect_day": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "2025-08-07"
+    },
+    "original_comments[].is_anonymous": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 16,
+      "boolean": 1
+     },
+     "example": "true"
+    },
+    "original_comments[].is_digged": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 16,
+      "boolean": 1
+     },
+     "example": "false"
+    },
+    "original_comments[].is_local": {
+     "present_pct": 70.8,
+     "types": {
+      "null": 4,
+      "boolean": 1,
+      "string": 12
+     },
+     "example": "True"
+    },
+    "original_comments[].is_owner": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 16,
+      "boolean": 1
+     },
+     "example": "false"
+    },
+    "original_comments[].is_updated": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 16,
+      "boolean": 1
+     },
+     "example": "false"
+    },
+    "original_comments[].link": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 17
+     },
+     "example": "false"
+    },
+    "original_comments[].partition_day": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "2025-08-18"
+    },
+    "original_comments[].product_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "1729430076387136161"
+    },
+    "original_comments[].rating": {
+     "present_pct": 66.7,
+     "types": {
+      "null": 16
+     },
+     "example": null
+    },
+    "original_comments[].real_price": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 2,
+      "null": 14
+     },
+     "example": "59.99"
+    },
+    "original_comments[].review": {
+     "present_pct": 100.0,
+     "types": {
+      "object": 24
+     },
+     "example": null
+    },
+    "original_comments[].review.comment": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "Love these! the sound quality is great, they look cute unlik"
+    },
+    "original_comments[].review.display_text": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "Love these! the sound quality is great, they look cute unlik"
+    },
+    "original_comments[].review.has_origin_text": {
+     "present_pct": 4.2,
+     "types": {
+      "boolean": 1
+     },
+     "example": "True"
+    },
+    "original_comments[].review.images": {
+     "present_pct": 29.2,
+     "types": {
+      "array": 7
+     },
+     "example": null
+    },
+    "original_comments[].review.images[].url_list": {
+     "present_pct": 29.2,
+     "types": {
+      "array": 7
+     },
+     "example": null
+    },
+    "original_comments[].review.main_review_title": {
+     "present_pct": 4.2,
+     "types": {
+      "string": 1
+     },
+     "example": null
+    },
+    "original_comments[].review.media": {
+     "present_pct": 29.2,
+     "types": {
+      "array": 7
+     },
+     "example": null
+    },
+    "original_comments[].review.media[].image": {
+     "present_pct": 29.2,
+     "types": {
+      "object": 7
+     },
+     "example": null
+    },
+    "original_comments[].review.media[].image.url_list": {
+     "present_pct": 29.2,
+     "types": {
+      "array": 7
+     },
+     "example": null
+    },
+    "original_comments[].review.media[].media_type": {
+     "present_pct": 29.2,
+     "types": {
+      "integer": 7
+     },
+     "example": "1"
+    },
+    "original_comments[].review.rating": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 16,
+      "integer": 8
+     },
+     "example": "4"
+    },
+    "original_comments[].review.review_country": {
+     "present_pct": 4.2,
+     "types": {
+      "string": 1
+     },
+     "example": "United States"
+    },
+    "original_comments[].review.review_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "7535657299442272055"
+    },
+    "original_comments[].review.review_timestamp": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "1754531947603"
+    },
+    "original_comments[].review.review_timestamp_fmt": {
+     "present_pct": 4.2,
+     "types": {
+      "string": 1
+     },
+     "example": "July 7, 2025"
+    },
+    "original_comments[].review.strike_through_required": {
+     "present_pct": 4.2,
+     "types": {
+      "boolean": 1
+     },
+     "example": "False"
+    },
+    "original_comments[].review_id": {
+     "present_pct": 66.7,
+     "types": {
+      "null": 16
+     },
+     "example": null
+    },
+    "original_comments[].review_source_info": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 14,
+      "object": 1,
+      "null": 2
+     },
+     "example": "{\"link\":\"aweme://webview_popup?url=https%3A%2F%2Foec-api.tik"
+    },
+    "original_comments[].review_source_info.link": {
+     "present_pct": 4.2,
+     "types": {
+      "string": 1
+     },
+     "example": "aweme://webview_popup?url=https%3A%2F%2Foec-api.tiktokv.com%"
+    },
+    "original_comments[].review_source_name": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 17
+     },
+     "example": "Verified purchase"
+    },
+    "original_comments[].review_source_type": {
+     "present_pct": 70.8,
+     "types": {
+      "string": 16,
+      "integer": 1
+     },
+     "example": "0"
+    },
+    "original_comments[].review_timestamp": {
+     "present_pct": 66.7,
+     "types": {
+      "null": 16
+     },
+     "example": null
+    },
+    "original_comments[].scraper_api": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "shop.product.comment"
+    },
+    "original_comments[].seller_id": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "7495182113810385569"
+    },
+    "original_comments[].sku_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "1729430076387267233"
+    },
+    "original_comments[].sku_specification": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "Item: Cloud"
+    },
+    "original_comments[].update_time": {
+     "present_pct": 66.7,
+     "types": {
+      "string": 16
+     },
+     "example": "2025-08-07"
+    },
+    "pain_points": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "pain_points[].id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "7506aec3-571e-4caf-82e9-4f39571112f3"
+    },
+    "pain_points[].id_list": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "pain_points[].key_review_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "7535572276155008782"
+    },
+    "pain_points[].point_zh": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "高音量时漏音明显"
+    },
+    "pain_points[].view_point": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "Sound leakage at high volume"
+    },
+    "positive_points": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "positive_points[].id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "133d22b3-f843-4867-b8b0-1e61a2e96aa3"
+    },
+    "positive_points[].id_list": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "positive_points[].key_review_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "7534899793257350967"
+    },
+    "positive_points[].point_zh": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "音质出色"
+    },
+    "positive_points[].view_point": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "Great sound quality"
+    },
+    "product_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "1729430076387136161"
+    },
+    "usage_scenarios": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "usage_scenarios[].id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "8749f390-dbfc-4fbd-95f7-f42f789a5197"
+    },
+    "usage_scenarios[].id_list": {
+     "present_pct": 100.0,
+     "types": {
+      "array": 24
+     },
+     "example": null
+    },
+    "usage_scenarios[].key_review_id": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "7534816804997809975"
+    },
+    "usage_scenarios[].point_zh": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "健身或锻炼时使用"
+    },
+    "usage_scenarios[].view_point": {
+     "present_pct": 100.0,
+     "types": {
+      "string": 24
+     },
+     "example": "At the gym or working out"
+    }
+   },
+   "raw_json_sampled": 24,
+   "pull_dates": [
+    "2026-10-25",
+    "weekly_2026-10-26",
+    "2026-10-25T14:43:53",
+    "2026-10-26T00:11:21"
+   ]
+  },
+  "video_features": {
+   "rows": 185,
+   "columns": {
+    "video_id": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "7456675687580208430"
+    },
+    "product_id": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 94,
+     "sample": "1729579293681291410"
+    },
+    "category": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 25,
+     "sample": "Home Supplies"
+    },
+    "role": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "winner"
+    },
+    "pair": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 94,
+     "sample": "1729579293681291410"
+    },
+    "revenue": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 139,
+     "sample": "42720.89"
+    },
+    "views": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 174,
+     "sample": "446012.0"
+    },
+    "ai_video": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "0"
+    },
+    "ad": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "1"
+    },
+    "duration_s": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 157,
+     "sample": "61.1"
+    },
+    "cuts": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 29,
+     "sample": "3"
+    },
+    "cuts_per_10s": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 124,
+     "sample": "0.49"
+    },
+    "words": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 125,
+     "sample": "234"
+    },
+    "words_per_s": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 127,
+     "sample": "3.83"
+    },
+    "speech_share": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 54,
+     "sample": "0.86"
+    },
+    "hook_text": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 84.3,
+     "distinct": 153,
+     "sample": "I'm calling it now, but Autumn Sunrise will become R &W"
+    },
+    "transcript": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 87.0,
+     "distinct": 158,
+     "sample": "I'm calling it now, but Autumn Sunrise will become R &W Company's best -selling "
+    },
+    "tags_json": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "{\"hook_type\": \"bold_claim\", \"first_frame\": \"person_with_product\", \"on_screen_tex"
+    },
+    "tag_model": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "anthropic/claude-haiku-5.5"
+    },
+    "created_at": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "2026-10-26T09:10:31"
+    }
+   }
+  },
+  "video_elements": {
+   "rows": 184,
+   "columns": {
+    "video_id": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       184
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 184,
+     "sample": "7456675687580208430"
+    },
+    "elements_json": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       184
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 184,
+     "sample": "{\"room\": \"kitchen\", \"lighting\": \"mixed\", \"presenter_count\": \"1\", \"presenter_pres"
+    },
+    "model": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       184
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "anthropic/claude-haiku-5.5"
+    },
+    "created_at": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       184
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 184,
+     "sample": "2026-10-26T15:06:17"
+    }
+   }
+  },
+  "video_audio": {
+   "rows": 185,
+   "columns": {
+    "video_id": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "7456675687580208430"
+    },
+    "music_share": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 15,
+     "sample": "0.0"
+    },
+    "music_p": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "0.010907689109444618"
+    },
+    "singing_p": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "0.0001730869698803872"
+    },
+    "speech_p": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "0.6924273371696472"
+    },
+    "speech_db": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       161
+      ]
+     ],
+     "non_null_pct": 87.0,
+     "distinct": 161,
+     "sample": "-34.05535892232939"
+    },
+    "gap_db": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       168
+      ]
+     ],
+     "non_null_pct": 90.8,
+     "distinct": 168,
+     "sample": "-47.8466070156222"
+    },
+    "gap_rel_db": {
+     "declared": "REAL",
+     "storage_types": [
+      [
+       "real",
+       144
+      ]
+     ],
+     "non_null_pct": 77.8,
+     "distinct": 144,
+     "sample": "-13.791248093292808"
+    },
+    "music_level": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 4,
+     "sample": "none"
+    },
+    "model": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "MIT/ast-finetuned-audioset-10-10-0.4593"
+    },
+    "at": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       185
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 185,
+     "sample": "2026-10-27 00:26:27"
+    }
+   }
+  },
+  "research_runs": {
+   "rows": 8,
+   "columns": {
+    "run_id": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 8,
+     "sample": "20261028-005716-select-breakout_1m"
+    },
+    "created_at": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "2026-10-28T00:57:16"
+    },
+    "question": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 4,
+     "sample": "Will a product in its category's top 500 this month still be in a top 500 next m"
+    },
+    "task": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 4,
+     "sample": "holders_1m"
+    },
+    "data_snapshot": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "pit_2026-09_v1"
+    },
+    "data_cutoff": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "2026-09"
+    },
+    "features": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "[\"log_sales\", \"log_units\", \"unit_price\", \"video_share\", \"live_share\", \"shop_shar"
+    },
+    "params": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "{\"hgb\": {\"max_depth\": 6, \"learning_rate\": 0.05, \"max_iter\": 400, \"min_samples_le"
+    },
+    "seed": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "20261028"
+    },
+    "code_commit": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 1,
+     "sample": "777234625b1b1cfabd4c990163525c5d9f060736"
+    },
+    "eval_design": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 8,
+     "sample": "{\"design\": \"rolling origin, expanding window, embargo = horizon (train rows with"
+    },
+    "results_json": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 8,
+     "sample": "{\"selection\": {\"hgb\": {\"auc\": [0.6714, 0.6591, 0.6844], \"p_cat@10\": [0.5133, 0.4"
+    },
+    "decision": {
+     "declared": "TEXT",
+     "storage_types": [
+      [
+       "text",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 5,
+     "sample": "PROVISIONAL (holdout not used): logistic (model). hgb did not beat the best base"
+    },
+    "holdout_used": {
+     "declared": "INTEGER",
+     "storage_types": [
+      [
+       "integer",
+       8
+      ]
+     ],
+     "non_null_pct": 100.0,
+     "distinct": 2,
+     "sample": "0"
+    }
+   }
+  }
+ },
+ "pulls": {
+  "by_endpoint": [
+   [
+    "tiktok/product/rank",
+    "top",
+    1714,
+    169808,
+    "2026-10-25",
+    "subcats_2026-10-26",
+    1700
+   ],
+   [
+    "tiktok/product/detail",
+    "detail",
+    1039,
+    1039,
+    "2026-10-25",
+    "weekly_2026-10-26",
+    1039
+   ],
+   [
+    "tiktok/video/rank",
+    "top_videos",
+    1027,
+    101320,
+    "2026-10-25",
+    "core",
+    1015
+   ],
+   [
+    "tiktok/product/rank",
+    "risers",
+    686,
+    67210,
+    "2026-10-25",
+    "core",
+    673
+   ],
+   [
+    "tiktok/video/rank",
+    "product_videos",
+    401,
+    34632,
+    "2026-10-25",
+    "weekly_2026-10-26",
+    398
+   ],
+   [
+    "tiktok/product/rank",
+    "risers_deep",
+    224,
+    22400,
+    "core",
+    "core",
+    224
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "comments",
+    26,
+    24,
+    "2026-10-25",
+    "weekly_2026-10-26",
+    24
+   ],
+   [
+    "tiktok/video/url",
+    "other",
+    26,
+    0,
+    "barbwire_videos",
+    "pilot_videos",
+    26
+   ],
+   [
+    "tiktok/category/rank",
+    "category",
+    17,
+    807,
+    "2026-10-25",
+    "subcats_2026-10-26",
+    15
+   ],
+   [
+    "credit/balance",
+    "other",
+    3,
+    0,
+    "2026-10-25",
+    "weekly_2026-10-26",
+    3
+   ],
+   [
+    "tiktok/video/detail",
+    "other",
+    1,
+    1,
+    "pilot_videos",
+    "pilot_videos",
+    1
+   ],
+   [
+    "tiktok/video/download",
+    "other",
+    1,
+    0,
+    "pilot_videos",
+    "pilot_videos",
+    0
+   ]
+  ],
+  "date_ranges": [
+   [
+    "credit/balance",
+    null,
+    3
+   ],
+   [
+    "tiktok/category/rank",
+    "last30Day",
+    8
+   ],
+   [
+    "tiktok/category/rank",
+    "last365Day",
+    5
+   ],
+   [
+    "tiktok/category/rank",
+    "last90Day",
+    3
+   ],
+   [
+    "tiktok/category/rank",
+    "2026-09",
+    1
+   ],
+   [
+    "tiktok/product/comment/insight",
+    null,
+    26
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-09",
+    86
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-06",
+    85
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-05",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-04",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-02",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-01",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2025-12",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-07",
+    83
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-03",
+    83
+   ],
+   [
+    "tiktok/product/detail",
+    "2025-11",
+    83
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-08",
+    82
+   ],
+   [
+    "tiktok/product/detail",
+    "2025-10",
+    82
+   ],
+   [
+    "tiktok/product/detail",
+    "last30Day",
+    35
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-09",
+    430
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-08",
+    203
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-03",
+    199
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-10",
+    199
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-07",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-06",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-05",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-04",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-02",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-01",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-12",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-11",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "last30Day",
+    7
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-04",
+    1
+   ],
+   [
+    "tiktok/product/rank",
+    "2024-10",
+    1
+   ],
+   [
+    "tiktok/video/detail",
+    "last30Day",
+    1
+   ],
+   [
+    "tiktok/video/download",
+    null,
+    1
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-09",
+    445
+   ],
+   [
+    "tiktok/video/rank",
+    "2025-10",
+    86
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-08",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-07",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-06",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-05",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-04",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-03",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-02",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-01",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2025-12",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2025-11",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "last30Day",
+    47
+   ],
+   [
+    "tiktok/video/url",
+    null,
+    26
+   ]
+  ],
+  "months": [
+   [
+    "tiktok/category/rank",
+    "2026-09",
+    1
+   ],
+   [
+    "tiktok/product/detail",
+    "2025-10",
+    82
+   ],
+   [
+    "tiktok/product/detail",
+    "2025-11",
+    83
+   ],
+   [
+    "tiktok/product/detail",
+    "2025-12",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-01",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-02",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-03",
+    83
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-04",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-05",
+    84
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-06",
+    85
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-07",
+    83
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-08",
+    82
+   ],
+   [
+    "tiktok/product/detail",
+    "2026-09",
+    86
+   ],
+   [
+    "tiktok/product/rank",
+    "2024-10",
+    1
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-04",
+    1
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-10",
+    199
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-11",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2025-12",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-01",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-02",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-03",
+    199
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-04",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-05",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-06",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-07",
+    198
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-08",
+    203
+   ],
+   [
+    "tiktok/product/rank",
+    "2026-09",
+    430
+   ],
+   [
+    "tiktok/video/rank",
+    "2025-10",
+    86
+   ],
+   [
+    "tiktok/video/rank",
+    "2025-11",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2025-12",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-01",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-02",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-03",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-04",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-05",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-06",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-07",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-08",
+    85
+   ],
+   [
+    "tiktok/video/rank",
+    "2026-09",
+    445
+   ]
+  ],
+  "filters_sample": [
+   [
+    "credit/balance",
+    "{}"
+   ],
+   [
+    "tiktok/category/rank",
+    "{\"sort_field\": {\"field\": \"revenue\", \"type\": \"DESC\"}, \"page_size\": 100, \"page_number\": 1, \"category_level\": 1}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729430076387136161\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729439724989550911\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729482193942974913\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729483993705256484\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729495345537783705\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729507401480311085\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1729551101038203406\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1730023604176720764\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1730998871840690912\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1731345494138851409\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1731590104358097289\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1731815026369991111\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1731957437599551601\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732204471705636940\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732220923495878743\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732411282527326740\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732425242458558504\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732461065225080872\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732488219987448751\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732506421315277386\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732506869527318968\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732508242354409944\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732584721469772638\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732592735715561685\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732601279515562986\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/comment/insight",
+    "{\"product_id\": \"1732632210421485674\", \"country_code\": \"us\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729383972059255701\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729383982284837120\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729384059427852579\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729384223731061320\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729384316379042703\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729384341400884054\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729384988357595659\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385034780414637\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385148775830006\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385324429349829\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385338776425026\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385365856686801\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385366195769922\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385630983098568\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385734409785663\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385831674450269\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729385969126641693\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729386007526937172\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729386063955398670\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729386398132441379\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729386917027878380\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729387145108099733\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729387361461702706\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729387732300698941\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729388764987363365\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729389548737040895\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729391293727937511\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729393097460650961\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729395075085340746\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729395492671295722\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729397517910118629\"}"
+   ],
+   [
+    "tiktok/product/detail",
+    "{\"product_id\": \"1729398463214293100\"}"
+   ]
+  ],
+  "failures": [
+   [
+    "tiktok/category/rank",
+    200,
+    2
+   ],
+   [
+    "tiktok/product/comment/insight",
+    200,
+    2
+   ],
+   [
+    "tiktok/product/rank",
+    200,
+    27
+   ],
+   [
+    "tiktok/video/download",
+    404,
+    1
+   ],
+   [
+    "tiktok/video/rank",
+    200,
+    15
+   ]
+  ]
+ },
+ "video_ids_with_features": [
+  185
+ ],
+ "distinct_ids": {
+  "products.product_id": 136291,
+  "product_details.product_id": 1023,
+  "videos.video_id": 98772,
+  "videos.creator": 34773,
+  "products.seller_id": 42800,
+  "categories.category_id": 261
+ }
+}

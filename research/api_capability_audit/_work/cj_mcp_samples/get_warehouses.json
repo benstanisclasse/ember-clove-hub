@@ -1,0 +1,11 @@
+{
+  "_call": {"tool": "get_warehouses", "args": {}, "retrieved": "2026-10-31", "note": "Bare JSON array of 20 regions, wrapped under 'response' and trimmed to 3. All 20 countryCode/areaId pairs: US 2, CN 1, MX 12, CA 11, GB 17, DE 4, BR 40, FR 19, IT 32, AU 9, AE 30, ES 31, PH 26, VN 25, RO 23, MY 18, JP 10, TH 3, PL 35, NG 64. Note: the 'id' field holds the Indonesian country name, not an id."},
+  "response": [
+    {"areaCn": null, "areaEn": null, "areaId": 2, "countryCode": "US", "nameEn": null, "valueEn": null, "disabled": null,
+     "de": "Vereinigte Staaten von Amerika", "zh": "美国", "id": "Amerika Serikat", "fr": "les états-unis d'Amérique", "th": "สหรัฐอเมริกา", "en": "United States"},
+    {"areaCn": null, "areaEn": null, "areaId": 1, "countryCode": "CN", "nameEn": null, "valueEn": null, "disabled": null,
+     "de": "China", "zh": "中国", "id": "Cina", "fr": "Chine", "th": "จีน", "en": "China"},
+    {"areaCn": null, "areaEn": null, "areaId": 12, "countryCode": "MX", "nameEn": null, "valueEn": null, "disabled": null,
+     "de": "Mexiko", "zh": "墨西哥", "id": "Meksiko", "fr": "Mexique", "th": "เม็กซิโก", "en": "Mexico"}
+  ]
+}

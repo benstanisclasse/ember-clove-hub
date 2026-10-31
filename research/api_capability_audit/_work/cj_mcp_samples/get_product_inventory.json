@@ -1,0 +1,55 @@
+{
+  "_call": {"tool": "get_product_inventory", "args": {"pid": "1537624790973034496"}, "retrieved": "2026-10-31", "note": "Stock lists trimmed to 3 of 5 sub-warehouses each. The tool prefixes a Chinese usage note (pick stockId with cjInventory>0, braces optional)."},
+  "inventories": [
+    {
+      "areaEn": "China Warehouse",
+      "areaId": 1,
+      "countryCode": "CN",
+      "totalInventoryNum": 78214,
+      "cjInventoryNum": 0,
+      "factoryInventoryNum": 78214,
+      "countryNameEn": "China Warehouse",
+      "stock": [
+        {"stockId": "{6709CCD7-0DC7-43B1-B310-17AB499E9B0A}", "inventory": 0, "factoryInventory": 18556},
+        {"stockId": "83hrf88jd3f38yf8ue8j8u3jhd3ruerj", "inventory": 0, "factoryInventory": 12798},
+        {"stockId": "85742FBC-38D7-4DC4-9496-296186FFEED8", "inventory": 0, "factoryInventory": 15231}
+      ]
+    }
+  ],
+  "variantInventories": [
+    {
+      "vid": "1537624791082086400",
+      "inventory": [
+        {
+          "countryCode": "CN",
+          "totalInventory": 36104,
+          "cjInventory": 0,
+          "factoryInventory": 36104,
+          "verifiedWarehouse": 2,
+          "stock": [
+            {"stockId": "6709CCD7-0DC7-43B1-B310-17AB499E9B0A", "inventory": 0, "factoryInventory": 8706},
+            {"stockId": "83hrf88jd3f38yf8ue8j8u3jhd3ruerj", "inventory": 0, "factoryInventory": 5514},
+            {"stockId": "85742FBC-38D7-4DC4-9496-296186FFEED8", "inventory": 0, "factoryInventory": 8065}
+          ]
+        }
+      ]
+    },
+    {
+      "vid": "1537624791086280704",
+      "inventory": [
+        {
+          "countryCode": "CN",
+          "totalInventory": 42110,
+          "cjInventory": 0,
+          "factoryInventory": 42110,
+          "verifiedWarehouse": 2,
+          "stock": [
+            {"stockId": "83hrf88jd3f38yf8ue8j8u3jhd3ruerj", "inventory": 0, "factoryInventory": 7284},
+            {"stockId": "caece4d5-5f35-487d-b4c7-4137aacb1802", "inventory": 0, "factoryInventory": 9231},
+            {"stockId": "1dfec6fa-edeb-44e8-93d3-cfa0980aaf9e", "inventory": 0, "factoryInventory": 8579}
+          ]
+        }
+      ]
+    }
+  ]
+}

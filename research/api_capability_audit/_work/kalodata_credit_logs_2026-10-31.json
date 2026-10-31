@@ -1,0 +1,33 @@
+{
+  "called_at": "2026-10-31",
+  "window": "2026-09-01..2026-10-31 (UTC days)",
+  "records": 5317,
+  "api_total": 5317,
+  "pages": 54,
+  "example_record": {
+    "gmtCreated": 1793365146584,
+    "userId": "redacted",
+    "consumerId": "redacted",
+    "sourceType": "OPEN_API_CALL",
+    "kaloBiz": 0,
+    "kaloBizName": "kalodata",
+    "displayQuantity": -0.1
+  },
+  "credits_by_day_and_type": {
+    "2026-10-25 OPEN_API_CALL": -102.3,
+    "2026-10-25 OPEN_API_COMMENT_INSIGHT": -8.0,
+    "2026-10-26 OPEN_API_CALL": -434.2,
+    "2026-10-26 OPEN_API_COMMENT_INSIGHT": -16.0,
+    "2026-10-29 OPEN_API_CALL": -3.2,
+    "2026-10-30 OPEN_API_CALL": -0.4
+  },
+  "records_by_amount": {
+    "-1.0": 24,
+    "-0.5": 27,
+    "-0.1": 5266
+  },
+  "records_by_type": {
+    "OPEN_API_CALL / kalodata": 5293,
+    "OPEN_API_COMMENT_INSIGHT / kalodata": 24
+  }
+}

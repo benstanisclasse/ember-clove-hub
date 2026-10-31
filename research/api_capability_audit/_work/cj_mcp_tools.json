@@ -1,0 +1,6300 @@
+{
+  "server_tool_prefix": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__",
+  "retrieved": "2026-10-31",
+  "tool_count": 70,
+  "safety_class_counts": {
+    "account_modifying": 10,
+    "read_only": 41,
+    "creates_order": 4,
+    "financial": 3,
+    "auth": 1,
+    "ui_widget": 8,
+    "publishes_listing": 3
+  },
+  "notes": "Descriptions are English summaries of the bilingual (Chinese/English) tool descriptions. wraps_endpoint is filled only when the description names an endpoint or internal step. Account/shop/order values are redacted; catalogue and freight values kept. Samples in cj_mcp_samples/.",
+  "tools": [
+    {
+      "name": "add_to_cart",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__add_to_cart",
+      "description": "Adds an already-created CJ order to the cart (step 2 only, addCart); no confirmation or payment. For the full pipeline use submit_order_to_cart.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": "addCart (internal step name per description)",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "calculate_freight",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__calculate_freight",
+      "description": "Freight estimate by destination country, weight and logistics method, for product cost evaluation and price comparison.",
+      "params": [
+        {
+          "name": "endCountryCode",
+          "type": "string",
+          "required": true,
+          "description": "Destination country code (e.g. US)."
+        },
+        {
+          "name": "startCountryCode",
+          "type": "string",
+          "required": false,
+          "description": "Origin country code (e.g. CN)."
+        },
+        {
+          "name": "products",
+          "type": "array<object>",
+          "required": true,
+          "description": "Product list; needs variant ids from search_products.",
+          "items": [
+            {
+              "name": "vid",
+              "type": "string",
+              "required": true,
+              "description": "Variant id."
+            },
+            {
+              "name": "quantity",
+              "type": "number",
+              "required": true,
+              "description": "Quantity."
+            }
+          ]
+        },
+        {
+          "name": "zip",
+          "type": "string",
+          "required": false,
+          "description": "Destination ZIP for remote-area accuracy."
+        },
+        {
+          "name": "houseNumber",
+          "type": "string",
+          "required": false,
+          "description": "House number (some carriers need it)."
+        },
+        {
+          "name": "iossNumber",
+          "type": "string",
+          "required": false,
+          "description": "IOSS number for EU VAT."
+        },
+        {
+          "name": "taxId",
+          "type": "string",
+          "required": false,
+          "description": "Recipient tax id (e.g. EU IOSS) for cross-border tax calculation."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "startCountryCode": "CN",
+        "endCountryCode": "US",
+        "products": [
+          {
+            "vid": "1537624791082086400",
+            "quantity": 1
+          }
+        ]
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].logisticAging",
+          "type": "string",
+          "example_or_redacted": "5-11"
+        },
+        {
+          "path": "[].logisticPrice",
+          "type": "number",
+          "example_or_redacted": 5.27
+        },
+        {
+          "path": "[].logisticPriceCn",
+          "type": "number",
+          "example_or_redacted": 32.61
+        },
+        {
+          "path": "[].logisticName",
+          "type": "string",
+          "example_or_redacted": "LuWei Ordinary US"
+        },
+        {
+          "path": "[].channelId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].error",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].errorEn",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].optionId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].postage",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].postageCNY",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].priceIncreases",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].reSort",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].remoteFee",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].remoteFeeCNY",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].tip",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].orderId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].unWeightChargeTarget",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].volumeWeight",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].floatMaxPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].floatMinPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].logisticsParamRespDTO",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].message",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].wrapPostage",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].wrapPostageCNY",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].wrapWeight",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].ruleTipTypes",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].stopWords",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].channel",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].cjRespDTO",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].destArea",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].srcArea",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].option",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].zonePrice",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].allRuleTips",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].ruleTips",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].taxesFee",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].clearanceOperationFee",
+          "type": "integer|number",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].recommendLogisticsTypeList",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].recommendLogisticsTypeList[]",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "[].timePrioritySort",
+          "type": "integer (nullable)",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].pricePrioritySort",
+          "type": "integer (nullable)",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].compositeRecommendSort",
+          "type": "integer (nullable)",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].totalPostageFee",
+          "type": "number",
+          "example_or_redacted": 5.27
+        }
+      ],
+      "sample_file": "cj_mcp_samples/calculate_freight.json"
+    },
+    {
+      "name": "calculate_freight_tip",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__calculate_freight_tip",
+      "description": "Enhanced freight trial that can filter shipping options by platform (Shopify/WooCommerce etc.). Requires origin, destination, logistics property and weight.",
+      "params": [
+        {
+          "name": "srcAreaCode",
+          "type": "string",
+          "required": true,
+          "description": "Origin country code (e.g. CN)."
+        },
+        {
+          "name": "destAreaCode",
+          "type": "string",
+          "required": true,
+          "description": "Destination country code (e.g. US)."
+        },
+        {
+          "name": "productProp",
+          "type": "array<string>",
+          "required": true,
+          "description": "Logistics properties from get_product_detail productProEnSet, e.g. [\"COMMON\"]."
+        },
+        {
+          "name": "weight",
+          "type": "number",
+          "required": true,
+          "description": "Total weight in grams."
+        },
+        {
+          "name": "freightTrialSkuList",
+          "type": "array<object>",
+          "required": false,
+          "description": "Recommended: SKUs with quantity and weight/volume.",
+          "items": [
+            {
+              "name": "sku",
+              "type": "string",
+              "required": false,
+              "description": "SKU code."
+            },
+            {
+              "name": "skuQuantity",
+              "type": "number",
+              "required": false,
+              "description": "Quantity."
+            },
+            {
+              "name": "skuWeight",
+              "type": "number",
+              "required": false,
+              "description": "Unit weight (g)."
+            },
+            {
+              "name": "skuVolume",
+              "type": "number",
+              "required": false,
+              "description": "Unit volume (cm3)."
+            }
+          ]
+        },
+        {
+          "name": "skuList",
+          "type": "array<string>",
+          "required": false,
+          "description": "SKU list (deprecated; use freightTrialSkuList)."
+        },
+        {
+          "name": "platforms",
+          "type": "array<string>",
+          "required": false,
+          "description": "Filter shipping options by platform (shopify, ebay, amazon, tiktok, etsy)."
+        },
+        {
+          "name": "storageIdList",
+          "type": "array<string>",
+          "required": false,
+          "description": "Ship from specific warehouse/storage ids."
+        },
+        {
+          "name": "totalGoodsAmount",
+          "type": "number",
+          "required": false,
+          "description": "Total goods value USD (customs declaration and IOSS)."
+        },
+        {
+          "name": "volume",
+          "type": "number",
+          "required": false,
+          "description": "Total volume cm3 (volumetric weight)."
+        },
+        {
+          "name": "zip",
+          "type": "string",
+          "required": false,
+          "description": "Destination ZIP for remote-area accuracy."
+        },
+        {
+          "name": "houseNumber",
+          "type": "string",
+          "required": false,
+          "description": "House number (some carriers need a precise address)."
+        },
+        {
+          "name": "iossNumber",
+          "type": "string",
+          "required": false,
+          "description": "IOSS number for EU VAT."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "srcAreaCode": "CN",
+        "destAreaCode": "US",
+        "productProp": [
+          "COMMON"
+        ],
+        "weight": 24,
+        "freightTrialSkuList": [
+          {
+            "sku": "CJLX150422501AZ",
+            "skuQuantity": 1,
+            "skuWeight": 24
+          }
+        ]
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].arrivalTime",
+          "type": "string",
+          "example_or_redacted": "5-11"
+        },
+        {
+          "path": "[].discountFee",
+          "type": "number",
+          "example_or_redacted": 5.13
+        },
+        {
+          "path": "[].discountFeeCNY",
+          "type": "number",
+          "example_or_redacted": 31.72
+        },
+        {
+          "path": "[].volumeWeight",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].option",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].option.arrivalTime",
+          "type": "string",
+          "example_or_redacted": "15-35"
+        },
+        {
+          "path": "[].option.cnName",
+          "type": "string",
+          "example_or_redacted": "CJ物流超敏感"
+        },
+        {
+          "path": "[].option.enName",
+          "type": "string",
+          "example_or_redacted": "CJPacket Sensitive Pro"
+        },
+        {
+          "path": "[].option.id",
+          "type": "string",
+          "example_or_redacted": "1553924614972956673"
+        },
+        {
+          "path": "[].ruleTips",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].ruleTipTypes",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].channelId",
+          "type": "string",
+          "example_or_redacted": "1553921669172027394"
+        },
+        {
+          "path": "[].error",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "[].errorEn",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "[].optionId",
+          "type": "string",
+          "example_or_redacted": "1553924614972956673"
+        },
+        {
+          "path": "[].postage",
+          "type": "number",
+          "example_or_redacted": 3.94
+        },
+        {
+          "path": "[].postageCNY",
+          "type": "number",
+          "example_or_redacted": 24.4
+        },
+        {
+          "path": "[].priceIncreases",
+          "type": "string",
+          "example_or_redacted": "130"
+        },
+        {
+          "path": "[].reSort",
+          "type": "string",
+          "example_or_redacted": "16"
+        },
+        {
+          "path": "[].remoteFee",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].remoteFeeCNY",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].tip",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "[].uid",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].orderId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].unWeightChargeTarget",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].floatMaxPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].floatMinPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].logisticsParamRespDTO",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].message",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "[].wrapPostage",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].wrapPostageCNY",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].wrapWeight",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].stopWords",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].recommendLogisticsTypeList",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].timePrioritySort",
+          "type": "integer (nullable)",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].pricePrioritySort",
+          "type": "integer (nullable)",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].compositeRecommendSort",
+          "type": "integer (nullable)",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "[].channel",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].channel.cnName",
+          "type": "string",
+          "example_or_redacted": "促佳超敏感"
+        },
+        {
+          "path": "[].channel.enName",
+          "type": "string",
+          "example_or_redacted": "促佳超敏感"
+        },
+        {
+          "path": "[].channel.id",
+          "type": "string",
+          "example_or_redacted": "1553921669172027394"
+        },
+        {
+          "path": "[].cjRespDTO",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].cjRespDTO.postage",
+          "type": "string",
+          "example_or_redacted": "3.94"
+        },
+        {
+          "path": "[].cjRespDTO.postageCNY",
+          "type": "string",
+          "example_or_redacted": "24.40"
+        },
+        {
+          "path": "[].cjRespDTO.remoteFee",
+          "type": "string (nullable)",
+          "example_or_redacted": "0.00"
+        },
+        {
+          "path": "[].cjRespDTO.remoteFeeCNY",
+          "type": "string (nullable)",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "[].destArea",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].destArea.cnName",
+          "type": "string",
+          "example_or_redacted": "美国"
+        },
+        {
+          "path": "[].destArea.countryId",
+          "type": "string",
+          "example_or_redacted": "233"
+        },
+        {
+          "path": "[].destArea.enName",
+          "type": "string",
+          "example_or_redacted": "United States"
+        },
+        {
+          "path": "[].destArea.id",
+          "type": "string",
+          "example_or_redacted": "233"
+        },
+        {
+          "path": "[].destArea.parentId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].destArea.postCode",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "[].destArea.shortCode",
+          "type": "string",
+          "example_or_redacted": "US"
+        },
+        {
+          "path": "[].srcArea",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].srcArea.cnName",
+          "type": "string",
+          "example_or_redacted": "中国"
+        },
+        {
+          "path": "[].srcArea.countryId",
+          "type": "string",
+          "example_or_redacted": "48"
+        },
+        {
+          "path": "[].srcArea.enName",
+          "type": "string",
+          "example_or_redacted": "China"
+        },
+        {
+          "path": "[].srcArea.id",
+          "type": "string",
+          "example_or_redacted": "48"
+        },
+        {
+          "path": "[].srcArea.parentId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].srcArea.postCode",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "[].srcArea.shortCode",
+          "type": "string",
+          "example_or_redacted": "CN"
+        },
+        {
+          "path": "[].dump",
+          "type": "boolean",
+          "example_or_redacted": false
+        },
+        {
+          "path": "[].zonePrice",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].allRuleTips",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "[].taxesFee",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].clearanceOperationFee",
+          "type": "integer|null|number",
+          "example_or_redacted": 0.46
+        },
+        {
+          "path": "[].tariff",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].totalPostageFee",
+          "type": "number",
+          "example_or_redacted": 5.13
+        },
+        {
+          "path": "[].ruleTips[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].ruleTips[].expression",
+          "type": "string",
+          "example_or_redacted": "^([\\s+]*[A-Za-z0-9_.-]+[\\s+]*)+$"
+        },
+        {
+          "path": "[].ruleTips[].interceptType",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "[].ruleTips[].max",
+          "type": "string (nullable)",
+          "example_or_redacted": "255"
+        },
+        {
+          "path": "[].ruleTips[].min",
+          "type": "string (nullable)",
+          "example_or_redacted": "5"
+        },
+        {
+          "path": "[].ruleTips[].msgCode",
+          "type": "string",
+          "example_or_redacted": "4001"
+        },
+        {
+          "path": "[].ruleTips[].msgEn",
+          "type": "string",
+          "example_or_redacted": "Please enter your postcode (only numbers, symbols and spaces are supported). "
+        },
+        {
+          "path": "[].ruleTips[].type",
+          "type": "string",
+          "example_or_redacted": "zip"
+        },
+        {
+          "path": "[].ruleTipTypes[]",
+          "type": "string",
+          "example_or_redacted": "zip"
+        },
+        {
+          "path": "[].allRuleTips[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].allRuleTips[].expression",
+          "type": "string",
+          "example_or_redacted": "^([\\s+]*[A-Za-z0-9_.-]+[\\s+]*)+$"
+        },
+        {
+          "path": "[].allRuleTips[].interceptType",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "[].allRuleTips[].max",
+          "type": "string (nullable)",
+          "example_or_redacted": "255"
+        },
+        {
+          "path": "[].allRuleTips[].min",
+          "type": "string (nullable)",
+          "example_or_redacted": "5"
+        },
+        {
+          "path": "[].allRuleTips[].msgCode",
+          "type": "string",
+          "example_or_redacted": "4001"
+        },
+        {
+          "path": "[].allRuleTips[].msgEn",
+          "type": "string",
+          "example_or_redacted": "Please enter your postcode (only numbers, symbols and spaces are supported). "
+        },
+        {
+          "path": "[].allRuleTips[].type",
+          "type": "string",
+          "example_or_redacted": "zip"
+        },
+        {
+          "path": "[].recommendLogisticsTypeList[]",
+          "type": "integer",
+          "example_or_redacted": 1
+        }
+      ],
+      "sample_file": "cj_mcp_samples/calculate_freight_tip.json"
+    },
+    {
+      "name": "cancel_dispute",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__cancel_dispute",
+      "description": "[Sensitive, needs user confirmation] Withdraws a dispute after the issue is resolved or agreed.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        },
+        {
+          "name": "disputeId",
+          "type": "string",
+          "required": true,
+          "description": "Dispute ID from list_disputes / get_dispute_detail."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "check_login_status",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__check_login_status",
+      "description": "Reports whether the CJ account is connected/authorized, by which method, and what to do if not. Read-only; never returns credential material.",
+      "params": [],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "safety_note": "Auth-related but read-only.",
+      "called": true,
+      "call_args": {},
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "(plain text) login state",
+          "type": "string",
+          "example_or_redacted": "Logged in (URL direct token mode)"
+        },
+        {
+          "path": "(plain text) user",
+          "type": "string",
+          "example_or_redacted": "redacted (CJ user number)"
+        },
+        {
+          "path": "(plain text) auth via",
+          "type": "string",
+          "example_or_redacted": "URL direct token (stateless, no server storage)"
+        },
+        {
+          "path": "(plain text) note",
+          "type": "string",
+          "example_or_redacted": "Update URL when token expires"
+        }
+      ]
+    },
+    {
+      "name": "configure_webhook",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__configure_webhook",
+      "description": "[Sensitive] Sets the HTTPS callback URL and enables/disables product, stock, order and logistics event pushes. Each call overwrites the whole config; omitted types reset to ENABLE. Callback must be public HTTPS.",
+      "params": [
+        {
+          "name": "callbackUrl",
+          "type": "string",
+          "required": true,
+          "description": "Unified callback URL (public HTTPS)."
+        },
+        {
+          "name": "productType",
+          "type": "string",
+          "required": false,
+          "enum": [
+            "ENABLE",
+            "CANCEL"
+          ],
+          "default": "ENABLE",
+          "description": "Product events."
+        },
+        {
+          "name": "stockType",
+          "type": "string",
+          "required": false,
+          "enum": [
+            "ENABLE",
+            "CANCEL"
+          ],
+          "default": "ENABLE",
+          "description": "Stock events."
+        },
+        {
+          "name": "orderType",
+          "type": "string",
+          "required": false,
+          "enum": [
+            "ENABLE",
+            "CANCEL"
+          ],
+          "default": "ENABLE",
+          "description": "Order events."
+        },
+        {
+          "name": "logisticsType",
+          "type": "string",
+          "required": false,
+          "enum": [
+            "ENABLE",
+            "CANCEL"
+          ],
+          "default": "ENABLE",
+          "description": "Logistics events."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "confirm_cart_and_pay",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__confirm_cart_and_pay",
+      "description": "[Sensitive] For an order already in the cart: confirms cart (addCartConfirm), generates the parent payment order (saveGenerateParentOrder) and returns a payment link.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID already in cart."
+        }
+      ],
+      "safety_class": "creates_order",
+      "wraps_endpoint": "addCartConfirm + saveGenerateParentOrder (internal step names per description)",
+      "safety_note": "Creates a payment order and link; does not itself debit funds.",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "confirm_dispute",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__confirm_dispute",
+      "description": "Step 2 of opening a dispute: returns available dispute reasons, expected-result options (1 refund, 2 reissue) and maximum refund amount for create_dispute. Description states it is a query that creates/modifies nothing.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        },
+        {
+          "name": "productInfoList",
+          "type": "array<object>",
+          "required": true,
+          "description": "Products to dispute (lineItemId from get_dispute_products).",
+          "items": [
+            {
+              "name": "lineItemId",
+              "type": "string",
+              "required": true,
+              "description": "Line item id."
+            },
+            {
+              "name": "quantity",
+              "type": "number",
+              "required": true,
+              "description": "Quantity."
+            },
+            {
+              "name": "price",
+              "type": "number",
+              "required": false,
+              "description": "Unit price USD."
+            }
+          ]
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "safety_note": "Despite the name, described as query-only. Not called (no orders).",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "confirm_order",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__confirm_order",
+      "description": "[Sensitive] Confirms an order and triggers payment; irreversible, deducts account balance. Must tell the user before calling.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        }
+      ],
+      "safety_class": "financial",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "create_dispute",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__create_dispute",
+      "description": "[Sensitive, not freely reversible] Step 3: submits a dispute. Must call get_dispute_products then confirm_dispute and let the user pick reason/outcome first. expectType 1 refund / 2 reissue; refundType 1 balance / 2 original platform.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        },
+        {
+          "name": "disputeReasonId",
+          "type": "number",
+          "required": true,
+          "description": "Reason id from confirm_dispute."
+        },
+        {
+          "name": "expectType",
+          "type": "number",
+          "required": true,
+          "enum": [
+            1,
+            2
+          ],
+          "description": "1 refund, 2 reissue."
+        },
+        {
+          "name": "messageText",
+          "type": "string",
+          "required": true,
+          "description": "Description, max 500 chars."
+        },
+        {
+          "name": "productInfoList",
+          "type": "array<object>",
+          "required": true,
+          "description": "Disputed products.",
+          "items": [
+            {
+              "name": "lineItemId",
+              "type": "string",
+              "required": true,
+              "description": "From get_dispute_products."
+            },
+            {
+              "name": "quantity",
+              "type": "number",
+              "required": true,
+              "description": "Quantity."
+            },
+            {
+              "name": "price",
+              "type": "number",
+              "required": true,
+              "description": "Unit price."
+            }
+          ]
+        },
+        {
+          "name": "refundType",
+          "type": "number",
+          "required": false,
+          "enum": [
+            1,
+            2
+          ],
+          "default": 1,
+          "description": "1 balance, 2 original platform."
+        },
+        {
+          "name": "imageUrl",
+          "type": "array<string>",
+          "required": false,
+          "description": "Evidence image URLs."
+        },
+        {
+          "name": "videoUrl",
+          "type": "array<string>",
+          "required": false,
+          "description": "Evidence video URLs (upload via /disputes/uploadFile first if links expire)."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "safety_note": "Initiates a refund/reissue claim.",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "create_order",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__create_order",
+      "description": "Creates a CJ order (V2). All required fields must be supplied at once with exact field names. payType 2 pays from balance immediately; isSandbox=1 creates a sandbox order with no real charge.",
+      "params": [
+        {
+          "name": "orderInfo",
+          "type": "object",
+          "required": true,
+          "description": "Order parameters (field names must match exactly).",
+          "items": [
+            {
+              "name": "orderNumber",
+              "type": "string",
+              "required": true,
+              "description": "Unique custom order number."
+            },
+            {
+              "name": "shippingCustomerName",
+              "type": "string",
+              "required": true,
+              "description": "Recipient name."
+            },
+            {
+              "name": "shippingCountry",
+              "type": "string",
+              "required": true,
+              "description": "Full country name, e.g. United States."
+            },
+            {
+              "name": "shippingCountryCode",
+              "type": "string",
+              "required": true,
+              "description": "2-letter country code."
+            },
+            {
+              "name": "shippingProvince",
+              "type": "string",
+              "required": true,
+              "description": "Province/state."
+            },
+            {
+              "name": "shippingCity",
+              "type": "string",
+              "required": true,
+              "description": "City."
+            },
+            {
+              "name": "shippingAddress",
+              "type": "string",
+              "required": true,
+              "description": "Street address."
+            },
+            {
+              "name": "logisticName",
+              "type": "string",
+              "required": true,
+              "description": "Logistics name from calculate_freight."
+            },
+            {
+              "name": "fromCountryCode",
+              "type": "string",
+              "required": true,
+              "description": "Ship-from country code, usually CN."
+            },
+            {
+              "name": "products",
+              "type": "array<object>",
+              "required": true,
+              "description": "Product lines.",
+              "items": [
+                {
+                  "name": "quantity",
+                  "type": "number",
+                  "required": true,
+                  "description": "Quantity."
+                },
+                {
+                  "name": "vid",
+                  "type": "string",
+                  "required": false,
+                  "description": "CJ variant id (or sku)."
+                },
+                {
+                  "name": "sku",
+                  "type": "string",
+                  "required": false,
+                  "description": "CJ variant SKU (or vid)."
+                },
+                {
+                  "name": "unitPrice",
+                  "type": "number",
+                  "required": false,
+                  "description": "Unit price USD."
+                },
+                {
+                  "name": "storeLineItemId",
+                  "type": "string",
+                  "required": false,
+                  "description": "Store order lineItemId."
+                },
+                {
+                  "name": "podProperties",
+                  "type": "string",
+                  "required": false,
+                  "description": "POD customization JSON string."
+                }
+              ]
+            },
+            {
+              "name": "shippingAddress2",
+              "type": "string",
+              "required": false,
+              "description": "Address line 2."
+            },
+            {
+              "name": "shippingCounty",
+              "type": "string",
+              "required": false,
+              "description": "County."
+            },
+            {
+              "name": "shippingZip",
+              "type": "string",
+              "required": false,
+              "description": "ZIP code."
+            },
+            {
+              "name": "shippingPhone",
+              "type": "string",
+              "required": false,
+              "description": "Recipient phone."
+            },
+            {
+              "name": "email",
+              "type": "string",
+              "required": false,
+              "description": "Email."
+            },
+            {
+              "name": "houseNumber",
+              "type": "string",
+              "required": false,
+              "description": "House number."
+            },
+            {
+              "name": "payType",
+              "type": "number",
+              "required": false,
+              "enum": [
+                1,
+                2,
+                3
+              ],
+              "default": 1,
+              "description": "1 page payment (default), 2 pay from balance, 3 create only."
+            },
+            {
+              "name": "isSandbox",
+              "type": "number",
+              "required": false,
+              "enum": [
+                0,
+                1
+              ],
+              "description": "0 normal, 1 sandbox (simulated payment, no charge)."
+            },
+            {
+              "name": "iossType",
+              "type": "number",
+              "required": false,
+              "enum": [
+                1,
+                2,
+                3
+              ],
+              "description": "1 none, 2 own IOSS, 3 CJ handles."
+            },
+            {
+              "name": "iossNumber",
+              "type": "string",
+              "required": false,
+              "description": "IOSS number (iossType=2)."
+            },
+            {
+              "name": "taxId",
+              "type": "string",
+              "required": false,
+              "description": "EU VAT tax id."
+            },
+            {
+              "name": "remark",
+              "type": "string",
+              "required": false,
+              "description": "Order remark."
+            },
+            {
+              "name": "platform",
+              "type": "string",
+              "required": false,
+              "description": "shopify/ebay/amazon/walmart etc."
+            },
+            {
+              "name": "shopLogisticsType",
+              "type": "number",
+              "required": false,
+              "enum": [
+                1,
+                2,
+                3
+              ],
+              "default": 2,
+              "description": "1 platform logistics, 2 merchant (default), 3 CJ assigned warehouse."
+            },
+            {
+              "name": "storageId",
+              "type": "string",
+              "required": false,
+              "description": "CJ warehouse id (with shopLogisticsType=1)."
+            },
+            {
+              "name": "storeName",
+              "type": "string",
+              "required": false,
+              "description": "Store name as in CJ."
+            },
+            {
+              "name": "storeOrderTime",
+              "type": "string",
+              "required": false,
+              "description": "Consumer order time (unix seconds)."
+            },
+            {
+              "name": "orderFlow",
+              "type": "number",
+              "required": false,
+              "enum": [
+                1,
+                2
+              ],
+              "default": 1,
+              "description": "1 manual order flow, 2 store order flow."
+            }
+          ]
+        }
+      ],
+      "safety_class": "creates_order",
+      "wraps_endpoint": "createOrderV2 (per description: 'Create order (V2)'; submit_order_to_cart refers to createOrderV2)",
+      "safety_note": "With payType=2 it also spends balance (financial).",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "create_product_connection",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__create_product_connection",
+      "description": "[Sensitive] Binds CJ product variants to a store's platform product variants so store orders auto-match to CJ for fulfilment.",
+      "params": [
+        {
+          "name": "cjProductId",
+          "type": "string",
+          "required": true,
+          "description": "CJ product id."
+        },
+        {
+          "name": "platformProductId",
+          "type": "string",
+          "required": true,
+          "description": "Platform product id."
+        },
+        {
+          "name": "defaultArea",
+          "type": "number",
+          "required": true,
+          "description": "Default ship-from area (e.g. 1)."
+        },
+        {
+          "name": "logistics",
+          "type": "string",
+          "required": true,
+          "description": "Logistics method name (e.g. PacketPlus)."
+        },
+        {
+          "name": "variantList",
+          "type": "array<object>",
+          "required": true,
+          "description": "Variant mappings (at least one).",
+          "items": [
+            {
+              "name": "cjVariantId",
+              "type": "string",
+              "required": true,
+              "description": "CJ variant id."
+            },
+            {
+              "name": "platformVariantId",
+              "type": "string",
+              "required": true,
+              "description": "Platform variant id."
+            }
+          ]
+        },
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": false,
+          "description": "Shop id (default shop if omitted)."
+        },
+        {
+          "name": "sourceCountryCode",
+          "type": "string",
+          "required": false,
+          "description": "Ship-from country."
+        },
+        {
+          "name": "targetCountryCode",
+          "type": "string",
+          "required": false,
+          "description": "Destination country."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "create_sourcing",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__create_sourcing",
+      "description": "Submits a sourcing request asking CJ to find/procure a product (name + image URL required). Returns cjSourcingId for query_sourcing. Not a catalogue search.",
+      "params": [
+        {
+          "name": "productName",
+          "type": "string",
+          "required": true,
+          "description": "Product name."
+        },
+        {
+          "name": "productImage",
+          "type": "string",
+          "required": true,
+          "description": "Product image URL."
+        },
+        {
+          "name": "productUrl",
+          "type": "string",
+          "required": false,
+          "description": "Original product URL."
+        },
+        {
+          "name": "price",
+          "type": "string",
+          "required": false,
+          "description": "Reference price USD."
+        },
+        {
+          "name": "remark",
+          "type": "string",
+          "required": false,
+          "description": "Notes."
+        },
+        {
+          "name": "thirdProductId",
+          "type": "string",
+          "required": false,
+          "description": "Third-party product id."
+        },
+        {
+          "name": "thirdProductSku",
+          "type": "string",
+          "required": false,
+          "description": "Third-party SKU."
+        },
+        {
+          "name": "thirdVariantId",
+          "type": "string",
+          "required": false,
+          "description": "Third-party variant id."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "delete_order",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__delete_order",
+      "description": "[Sensitive] Soft-deletes an order (status becomes TRASH; still listed). Only CREATED or IN_CART orders; no restore tool in MCP.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "diagnose_shipping_methods",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__diagnose_shipping_methods",
+      "description": "Explains why each shipping method is unavailable on a route. Use only when calculate_freight_tip returns fewer/no methods. Returns no prices; costlier per call; troubleshooting only.",
+      "params": [
+        {
+          "name": "srcAreaCode",
+          "type": "string",
+          "required": true,
+          "description": "Origin country code."
+        },
+        {
+          "name": "destAreaCode",
+          "type": "string",
+          "required": true,
+          "description": "Destination country code."
+        },
+        {
+          "name": "productProp",
+          "type": "array<string>",
+          "required": true,
+          "description": "Logistics properties from productProEnSet; missing fails with 1600300."
+        },
+        {
+          "name": "weight",
+          "type": "number",
+          "required": true,
+          "description": "Total weight grams, must be > 0."
+        },
+        {
+          "name": "freightTrialSkuList",
+          "type": "array<object>",
+          "required": false,
+          "description": "Freight trial SKUs.",
+          "items": [
+            {
+              "name": "sku",
+              "type": "string",
+              "required": false,
+              "description": "SKU code."
+            },
+            {
+              "name": "vid",
+              "type": "string",
+              "required": false,
+              "description": "Variant id."
+            },
+            {
+              "name": "skuQuantity",
+              "type": "number",
+              "required": false,
+              "description": "Quantity."
+            },
+            {
+              "name": "skuWeight",
+              "type": "number",
+              "required": false,
+              "description": "Unit weight (g)."
+            },
+            {
+              "name": "skuVolume",
+              "type": "number",
+              "required": false,
+              "description": "Unit volume (cm3)."
+            },
+            {
+              "name": "hscode",
+              "type": "string",
+              "required": false,
+              "description": "HS code; missing triggers reason 2018."
+            },
+            {
+              "name": "productPropList",
+              "type": "array<string>",
+              "required": false,
+              "description": "Per-SKU logistics properties."
+            }
+          ]
+        },
+        {
+          "name": "skuList",
+          "type": "array<string>",
+          "required": false,
+          "description": "SKU list."
+        },
+        {
+          "name": "shippingMode",
+          "type": "number",
+          "required": false,
+          "enum": [
+            1,
+            2
+          ],
+          "description": "1 platform logistics (platforms then required), 2 merchant logistics; downstream default 2 (except AliExpress)."
+        },
+        {
+          "name": "platforms",
+          "type": "array<string>",
+          "required": false,
+          "description": "Required when shippingMode=1 (tiktok_us, tiktok_us_cross, Temu, Temu_us_local, Temu_certified_overseas, shein)."
+        },
+        {
+          "name": "storageIdList",
+          "type": "array<string>",
+          "required": false,
+          "description": "Storage ids."
+        },
+        {
+          "name": "totalGoodsAmount",
+          "type": "number",
+          "required": false,
+          "description": "Goods value USD."
+        },
+        {
+          "name": "volume",
+          "type": "number",
+          "required": false,
+          "description": "Total volume cm3."
+        },
+        {
+          "name": "length",
+          "type": "number",
+          "required": false,
+          "description": "Length cm."
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "required": false,
+          "description": "Width cm."
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "required": false,
+          "description": "Height cm."
+        },
+        {
+          "name": "wrapWeight",
+          "type": "number",
+          "required": false,
+          "description": "Wrap weight g."
+        },
+        {
+          "name": "zip",
+          "type": "string",
+          "required": false,
+          "description": "Destination ZIP."
+        },
+        {
+          "name": "houseNumber",
+          "type": "string",
+          "required": false,
+          "description": "House number."
+        },
+        {
+          "name": "iossNumber",
+          "type": "string",
+          "required": false,
+          "description": "IOSS number."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": "POST /logistic/unavailableShippingMethods (stated in description)",
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "disconnect_product",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__disconnect_product",
+      "description": "[Sensitive] Removes the binding between a platform product variant and a CJ product; one call per platformVariantId.",
+      "params": [
+        {
+          "name": "platformProductId",
+          "type": "string",
+          "required": true,
+          "description": "Platform product id."
+        },
+        {
+          "name": "platformVariantId",
+          "type": "string",
+          "required": true,
+          "description": "Platform variant id (from list_product_connections)."
+        },
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": false,
+          "description": "Shop id."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "generate_payment_link",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__generate_payment_link",
+      "description": "[Sensitive] From a shipmentsId (after addCartConfirm), generates the parent payment order (saveGenerateParentOrder) and returns payId and payment URL.",
+      "params": [
+        {
+          "name": "shipmentsId",
+          "type": "string",
+          "required": true,
+          "description": "shipmentsId from addCartConfirm."
+        }
+      ],
+      "safety_class": "creates_order",
+      "wraps_endpoint": "saveGenerateParentOrder (internal step name per description)",
+      "safety_note": "Creates a payment order; money moves only when it is paid.",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "get_account_balance",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_account_balance",
+      "description": "Returns CJ account balance: available, frozen and bonus amounts in USD.",
+      "params": [],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "safety_note": "Financial information; deliberately not called in this audit.",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "get_account_settings",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_account_settings",
+      "description": "Returns static account config: openId, openName, openEmail, per-endpoint quotaLimits, qpsLimit and webhook callback config. Does not return remaining quota (use get_rate_limit_status). quotaLimit=-1 means no per-endpoint cap.",
+      "params": [],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {},
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "openId",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "unionOpenId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "userNum",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "openName",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "openEmail",
+          "type": "string",
+          "example_or_redacted": "redacted (API already returns it partly masked)"
+        },
+        {
+          "path": "setting",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "setting.quotaLimits",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "setting.quotaLimits[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "setting.quotaLimits[].quotaUrl",
+          "type": "string",
+          "example_or_redacted": "/product/list"
+        },
+        {
+          "path": "setting.quotaLimits[].docLink",
+          "type": "string",
+          "example_or_redacted": "https://developers.cjdropshipping.cn/en/api/api2/api/product.html#_1-2-product-list-get"
+        },
+        {
+          "path": "setting.quotaLimits[].quotaLimit",
+          "type": "integer",
+          "example_or_redacted": 1000
+        },
+        {
+          "path": "setting.quotaLimits[].requestedNum",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "setting.quotaLimits[].quotaType",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "setting.qpsLimit",
+          "type": "integer",
+          "example_or_redacted": 100
+        },
+        {
+          "path": "callback",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "callback.product",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "callback.product.type",
+          "type": "string",
+          "example_or_redacted": "CANCEL"
+        },
+        {
+          "path": "callback.product.urls",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "callback.stock",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "callback.stock.type",
+          "type": "string",
+          "example_or_redacted": "CANCEL"
+        },
+        {
+          "path": "callback.stock.urls",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "callback.order",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "callback.order.type",
+          "type": "string",
+          "example_or_redacted": "CANCEL"
+        },
+        {
+          "path": "callback.order.urls",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "callback.logistic",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "callback.logistic.type",
+          "type": "string",
+          "example_or_redacted": "CANCEL"
+        },
+        {
+          "path": "callback.logistic.urls",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "root",
+          "type": "string",
+          "example_or_redacted": "GENERAL"
+        },
+        {
+          "path": "isSandbox",
+          "type": "boolean",
+          "example_or_redacted": false
+        }
+      ]
+    },
+    {
+      "name": "get_authorize_url",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_authorize_url",
+      "description": "Returns a shop authorization URL for connecting a new e-commerce store to the CJ account.",
+      "params": [
+        {
+          "name": "shopType",
+          "type": "string",
+          "required": true,
+          "description": "Platform type (shopify/woocommerce/ebay...)."
+        }
+      ],
+      "safety_class": "auth",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "get_category_tree",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_category_tree",
+      "description": "Returns the CJ product category tree (top categories such as Clothing, Electronics, Home) for filtering searches.",
+      "params": [
+        {
+          "name": "parentId",
+          "type": "string",
+          "required": false,
+          "description": "Parent category id; omit for top level."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {},
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].categoryFirstId",
+          "type": "string",
+          "example_or_redacted": "2FE8A083-5E7B-4179-896D-561EA116F730"
+        },
+        {
+          "path": "[].categoryFirstName",
+          "type": "string",
+          "example_or_redacted": "Women's Clothing"
+        },
+        {
+          "path": "[].categoryFirstList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].categoryFirstList[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].categoryFirstList[].categorySecondId",
+          "type": "string",
+          "example_or_redacted": "23DDAF61-8F6C-40F7-9F1F-DC9BB25450B6"
+        },
+        {
+          "path": "[].categoryFirstList[].categorySecondName",
+          "type": "string",
+          "example_or_redacted": "Accessories"
+        },
+        {
+          "path": "[].categoryFirstList[].categorySecondList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].categoryFirstList[].categorySecondList[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].categoryFirstList[].categorySecondList[].categoryId",
+          "type": "string",
+          "example_or_redacted": "0DC4DF6F-4EC5-47DF-B20D-863ADF69319F"
+        },
+        {
+          "path": "[].categoryFirstList[].categorySecondList[].categoryName",
+          "type": "string",
+          "example_or_redacted": "Scarves & Wraps"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_category_tree.json"
+    },
+    {
+      "name": "get_dispute_detail",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_dispute_detail",
+      "description": "Dispute detail: status, refund amount, product list.",
+      "params": [
+        {
+          "name": "disputeId",
+          "type": "string",
+          "required": true,
+          "description": "Dispute id from list_disputes."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "get_dispute_products",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_dispute_products",
+      "description": "Step 1 of opening a dispute: lists an order's disputable products with lineItemId, price, quantity.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "get_logistics_timeliness",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_logistics_timeliness",
+      "description": "Estimated delivery time and available shipping methods from origin to destination country.",
+      "params": [
+        {
+          "name": "endCountryCode",
+          "type": "string",
+          "required": true,
+          "description": "Destination country code."
+        },
+        {
+          "name": "productProp",
+          "type": "array<string>",
+          "required": true,
+          "description": "Logistics properties from productProEnSet."
+        },
+        {
+          "name": "weight",
+          "type": "number",
+          "required": true,
+          "description": "Total weight grams, integer >= 1 (fractions rejected upstream)."
+        },
+        {
+          "name": "startCountryCode",
+          "type": "string",
+          "required": false,
+          "default": "CN",
+          "description": "Origin country code."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "startCountryCode": "CN",
+        "endCountryCode": "US",
+        "productProp": [
+          "COMMON"
+        ],
+        "weight": 24
+      },
+      "call_result": "error: Timeliness query failed: Too Many Requests, QPS limit is 1 time/1second (sent in the same instant as calculate_freight and calculate_freight_tip; not retried because the brief allows a retry only for parameter mistakes)",
+      "response_fields": []
+    },
+    {
+      "name": "get_merge_progress",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_merge_progress",
+      "description": "Polls progress of an asynchronous order-merge task.",
+      "params": [
+        {
+          "name": "taskId",
+          "type": "string",
+          "required": true,
+          "description": "Merge task id."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "get_my_products",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_my_products",
+      "description": "Lists products the user has added to 'My Products' (not a full catalogue search); keyword and time filters.",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": false,
+          "description": "SKU/SPU/name."
+        },
+        {
+          "name": "categoryId",
+          "type": "string",
+          "required": false,
+          "description": "Category id."
+        },
+        {
+          "name": "startAt",
+          "type": "string",
+          "required": false,
+          "description": "Added-from time (ISO or timestamp)."
+        },
+        {
+          "name": "endAt",
+          "type": "string",
+          "required": false,
+          "description": "Added-until time."
+        },
+        {
+          "name": "isListed",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "0/1 listed."
+        },
+        {
+          "name": "visiable",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "0/1 visible."
+        },
+        {
+          "name": "hasPacked",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "0/1 packed."
+        },
+        {
+          "name": "hasVirPacked",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "0/1 virtually packed."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page number."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 20,
+          "description": "Page size, max 200."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "pageNumber",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "totalRecords",
+          "type": "integer",
+          "example_or_redacted": 10
+        },
+        {
+          "path": "totalPages",
+          "type": "integer",
+          "example_or_redacted": 4
+        },
+        {
+          "path": "content",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].productId",
+          "type": "string",
+          "example_or_redacted": "1537624790973034496"
+        },
+        {
+          "path": "content[].userId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].packWeight",
+          "type": "string",
+          "example_or_redacted": "24.00-35.00"
+        },
+        {
+          "path": "content[].weight",
+          "type": "string",
+          "example_or_redacted": "20.00-29.00"
+        },
+        {
+          "path": "content[].productType",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "content[].propertyKeyList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].propertyKeyList[]",
+          "type": "string",
+          "example_or_redacted": "COMMON"
+        },
+        {
+          "path": "content[].bigImage",
+          "type": "string",
+          "example_or_redacted": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg"
+        },
+        {
+          "path": "content[].nameEn",
+          "type": "string",
+          "example_or_redacted": "Barbed Wire Necklace"
+        },
+        {
+          "path": "content[].sku",
+          "type": "string",
+          "example_or_redacted": "CJLX1504225"
+        },
+        {
+          "path": "content[].isPod",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].hasPacked",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].folderId",
+          "type": "array (nullable)",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].createAt",
+          "type": "integer",
+          "example_or_redacted": 1793306133000
+        },
+        {
+          "path": "content[].sellPrice",
+          "type": "string",
+          "example_or_redacted": "6.29-8.29"
+        },
+        {
+          "path": "content[].discountPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].discountPriceRate",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].defaultArea",
+          "type": "string",
+          "example_or_redacted": "China Warehouse"
+        },
+        {
+          "path": "content[].shopMethod",
+          "type": "string",
+          "example_or_redacted": "CJPacket Ordinary"
+        },
+        {
+          "path": "content[].trialCountry",
+          "type": "string (nullable)",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "content[].trialFreight",
+          "type": "string",
+          "example_or_redacted": ""
+        },
+        {
+          "path": "content[].totalPrice",
+          "type": "string",
+          "example_or_redacted": "6.29-8.29"
+        },
+        {
+          "path": "content[].listedShopNum",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "content[].listedShopIds",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "content[].vid",
+          "type": "string",
+          "example_or_redacted": "1537624791082086400"
+        },
+        {
+          "path": "content[].areaId",
+          "type": "string",
+          "example_or_redacted": "1"
+        },
+        {
+          "path": "content[].areaCountryCode",
+          "type": "string",
+          "example_or_redacted": "CN"
+        },
+        {
+          "path": "content[].freightDiscount",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "content[].lengthList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].lengthList[]",
+          "type": "integer",
+          "example_or_redacted": 110
+        },
+        {
+          "path": "content[].heightList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].heightList[]",
+          "type": "integer",
+          "example_or_redacted": 50
+        },
+        {
+          "path": "content[].widthList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].widthList[]",
+          "type": "integer",
+          "example_or_redacted": 110
+        },
+        {
+          "path": "content[].volumeList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].volumeList[]",
+          "type": "integer",
+          "example_or_redacted": 605000
+        },
+        {
+          "path": "content[].addMarkStatus",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "content[].isSafeProduct",
+          "type": "boolean",
+          "example_or_redacted": true
+        },
+        {
+          "path": "content[].hasVirPacked",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productUrl",
+          "type": "string",
+          "example_or_redacted": "https://www.cjdropshipping.com/product/barbed-wire-necklace-p-1537624790973034496.html"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_my_products.json"
+    },
+    {
+      "name": "get_order_detail",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_order_detail",
+      "description": "Full detail of one CJ order: status, shipping address, products, logistics (trackNumber), amounts. Data only; show_order_detail renders UI.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order id or custom order id."
+        },
+        {
+          "name": "features",
+          "type": "array<string>",
+          "required": false,
+          "description": "Optional extras: LOGISTICS_TIMELINESS."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "get_order_list",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_order_list",
+      "description": "Order list query (data only; show_order_list renders UI; do not chain both).",
+      "params": [
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "description": "Page number from 1."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 10,
+          "description": "Page size, max 50."
+        },
+        {
+          "name": "orderIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Exact order ids, max 100."
+        },
+        {
+          "name": "shipmentOrderId",
+          "type": "string",
+          "required": false,
+          "description": "Filter by shipment order id."
+        },
+        {
+          "name": "sortByLatest",
+          "type": "boolean",
+          "required": false,
+          "description": "Shortcut: true = pageSize 1, latest order."
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "required": false,
+          "description": "shipped, complete, cancel, processing."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok (0 records)",
+      "response_fields": [
+        {
+          "path": "pageNum",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "total",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "list",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        }
+      ]
+    },
+    {
+      "name": "get_pay_order_list",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_pay_order_list",
+      "description": "Unpaid / pending-payment orders only.",
+      "params": [
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "description": "Page number."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "description": "Page size."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok (0 records)",
+      "response_fields": [
+        {
+          "path": "pageNum",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "total",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "list",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        }
+      ]
+    },
+    {
+      "name": "get_platform_category_attributes",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_platform_category_attributes",
+      "description": "Attributes (item specifics) of a store platform category, including required ones and allowed values, for publishing.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop id."
+        },
+        {
+          "name": "categoryId",
+          "type": "string",
+          "required": true,
+          "description": "Platform category id from get_platform_child_categories."
+        },
+        {
+          "name": "parentCategoryIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Parent id chain."
+        },
+        {
+          "name": "productId",
+          "type": "string",
+          "required": false,
+          "description": "CJ product id."
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "required": false,
+          "description": "Language."
+        },
+        {
+          "name": "siteCode",
+          "type": "string",
+          "required": false,
+          "description": "Platform site code."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "get_platform_child_categories",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_platform_child_categories",
+      "description": "Child categories of the shop's platform (eBay/Shopee/Lazada/TikTok/Temu/Mercado/WooCommerce...) level by level, for publishing.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop id."
+        },
+        {
+          "name": "parentCategoryId",
+          "type": "string",
+          "required": false,
+          "description": "Parent category id; omit or 0 for top level."
+        },
+        {
+          "name": "cjProductId",
+          "type": "string",
+          "required": false,
+          "description": "CJ product id (recommendation on some platforms)."
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": false,
+          "description": "Product title (recommendation)."
+        },
+        {
+          "name": "countryCode",
+          "type": "string",
+          "required": false,
+          "description": "Country/site code."
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "required": false,
+          "description": "Language e.g. en."
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "required": false,
+          "description": "Pass 2 for WooCommerce."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "shopId": "redacted",
+        "language": "en"
+      },
+      "call_result": "error: Get platform child categories failed: Store not found or Authorization Failed. Please reauthorize your store before syncing again. (shopId of the Shopify-type shop)",
+      "response_fields": []
+    },
+    {
+      "name": "get_product_detail",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_product_detail",
+      "description": "Full product detail: names, images, price, variants, description, logistics properties, customs code. Data only; show_product_detail renders UI. One of pid/productSku/variantSku required.",
+      "params": [
+        {
+          "name": "pid",
+          "type": "string",
+          "required": false,
+          "description": "Product id."
+        },
+        {
+          "name": "productSku",
+          "type": "string",
+          "required": false,
+          "description": "SPU code."
+        },
+        {
+          "name": "variantSku",
+          "type": "string",
+          "required": false,
+          "description": "Variant SKU."
+        },
+        {
+          "name": "countryCode",
+          "type": "string",
+          "required": false,
+          "description": "Only variants with stock in this country."
+        },
+        {
+          "name": "features",
+          "type": "string",
+          "required": false,
+          "description": "Comma-separated: enable_combine, enable_video."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pid": "1537624790973034496",
+        "features": "enable_video"
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "pid",
+          "type": "string",
+          "example_or_redacted": "1537624790973034496"
+        },
+        {
+          "path": "productName",
+          "type": "string",
+          "example_or_redacted": "[\"合金项链\",\"锁骨链\",\"项链\"]"
+        },
+        {
+          "path": "productNameSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "productNameSet[]",
+          "type": "string",
+          "example_or_redacted": "合金项链"
+        },
+        {
+          "path": "productNameEn",
+          "type": "string",
+          "example_or_redacted": "Barbed Wire Necklace"
+        },
+        {
+          "path": "productSku",
+          "type": "string",
+          "example_or_redacted": "CJLX1504225"
+        },
+        {
+          "path": "bigImage",
+          "type": "string",
+          "example_or_redacted": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg"
+        },
+        {
+          "path": "productImage",
+          "type": "string",
+          "example_or_redacted": "[\"https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg\"]"
+        },
+        {
+          "path": "productImageSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "productImageSet[]",
+          "type": "string",
+          "example_or_redacted": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg"
+        },
+        {
+          "path": "productWeight",
+          "type": "string",
+          "example_or_redacted": "20.00-29.00"
+        },
+        {
+          "path": "productUnit",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "productType",
+          "type": "string",
+          "example_or_redacted": "ORDINARY_PRODUCT"
+        },
+        {
+          "path": "categoryId",
+          "type": "string",
+          "example_or_redacted": "95D9F317-1DB3-4E42-A031-02223215B9C5"
+        },
+        {
+          "path": "categoryName",
+          "type": "string",
+          "example_or_redacted": "Jewelry & Watches > Fashion Jewelry > Necklace & Pendants"
+        },
+        {
+          "path": "entryCode",
+          "type": "string",
+          "example_or_redacted": "7117190000"
+        },
+        {
+          "path": "entryName",
+          "type": "string",
+          "example_or_redacted": "女式合金项链"
+        },
+        {
+          "path": "entryNameEn",
+          "type": "string",
+          "example_or_redacted": "Women's alloy necklace"
+        },
+        {
+          "path": "materialName",
+          "type": "string",
+          "example_or_redacted": "[\"金属\"]"
+        },
+        {
+          "path": "materialNameSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "materialNameSet[]",
+          "type": "string",
+          "example_or_redacted": "金属"
+        },
+        {
+          "path": "materialNameEn",
+          "type": "string",
+          "example_or_redacted": "[\"Metal\"]"
+        },
+        {
+          "path": "materialNameEnSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "materialNameEnSet[]",
+          "type": "string",
+          "example_or_redacted": "Metal"
+        },
+        {
+          "path": "materialKey",
+          "type": "string",
+          "example_or_redacted": "[\"METAL\"]"
+        },
+        {
+          "path": "materialKeySet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "materialKeySet[]",
+          "type": "string",
+          "example_or_redacted": "METAL"
+        },
+        {
+          "path": "packingWeight",
+          "type": "string",
+          "example_or_redacted": "24.00-35.00"
+        },
+        {
+          "path": "packingName",
+          "type": "string",
+          "example_or_redacted": "[\"纸盒\",\"布袋\"]"
+        },
+        {
+          "path": "packingNameSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "packingNameSet[]",
+          "type": "string",
+          "example_or_redacted": "纸盒"
+        },
+        {
+          "path": "packingNameEn",
+          "type": "string",
+          "example_or_redacted": "[\"Carton\",\"Cloth bag\"]"
+        },
+        {
+          "path": "packingNameEnSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "packingNameEnSet[]",
+          "type": "string",
+          "example_or_redacted": "Carton"
+        },
+        {
+          "path": "packingKey",
+          "type": "string",
+          "example_or_redacted": "[\"PAPER_BOX\",\"FARBIC_BAG\"]"
+        },
+        {
+          "path": "packingKeySet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "packingKeySet[]",
+          "type": "string",
+          "example_or_redacted": "PAPER_BOX"
+        },
+        {
+          "path": "productKey",
+          "type": "string",
+          "example_or_redacted": "[\"尺寸\"]"
+        },
+        {
+          "path": "productKeySet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "productKeySet[]",
+          "type": "string",
+          "example_or_redacted": "尺寸"
+        },
+        {
+          "path": "productKeyEn",
+          "type": "string",
+          "example_or_redacted": "Size"
+        },
+        {
+          "path": "productKeyEnSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "productKeyEnSet[]",
+          "type": "string",
+          "example_or_redacted": "Size"
+        },
+        {
+          "path": "productPro",
+          "type": "string",
+          "example_or_redacted": "[\"普货\"]"
+        },
+        {
+          "path": "productProSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "productProSet[]",
+          "type": "string",
+          "example_or_redacted": "普货"
+        },
+        {
+          "path": "productProEn",
+          "type": "string",
+          "example_or_redacted": "[\"COMMON\"]"
+        },
+        {
+          "path": "productProEnSet",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "productProEnSet[]",
+          "type": "string",
+          "example_or_redacted": "COMMON"
+        },
+        {
+          "path": "sellPrice",
+          "type": "string",
+          "example_or_redacted": "6.29-8.29"
+        },
+        {
+          "path": "sourceFrom",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "description",
+          "type": "string",
+          "example_or_redacted": "<p>Barbed Wire Necklace</p>"
+        },
+        {
+          "path": "variants",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variants[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variants[].vid",
+          "type": "string",
+          "example_or_redacted": "1537624791082086400"
+        },
+        {
+          "path": "variants[].pid",
+          "type": "string",
+          "example_or_redacted": "1537624790973034496"
+        },
+        {
+          "path": "variants[].variantName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "variants[].variantNameEn",
+          "type": "string",
+          "example_or_redacted": "Barbed Wire Necklace 45cm16pcs"
+        },
+        {
+          "path": "variants[].variantImage",
+          "type": "string",
+          "example_or_redacted": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg"
+        },
+        {
+          "path": "variants[].variantSku",
+          "type": "string",
+          "example_or_redacted": "CJLX150422501AZ"
+        },
+        {
+          "path": "variants[].barcode",
+          "type": "string",
+          "example_or_redacted": "1598451877427"
+        },
+        {
+          "path": "variants[].variantUnit",
+          "type": "string",
+          "example_or_redacted": "个"
+        },
+        {
+          "path": "variants[].variantProperty",
+          "type": "string",
+          "example_or_redacted": "[]"
+        },
+        {
+          "path": "variants[].variantKey",
+          "type": "string",
+          "example_or_redacted": "45cm16pcs"
+        },
+        {
+          "path": "variants[].variantLength",
+          "type": "integer",
+          "example_or_redacted": 110
+        },
+        {
+          "path": "variants[].variantWidth",
+          "type": "integer",
+          "example_or_redacted": 110
+        },
+        {
+          "path": "variants[].variantHeight",
+          "type": "integer",
+          "example_or_redacted": 50
+        },
+        {
+          "path": "variants[].variantVolume",
+          "type": "integer",
+          "example_or_redacted": 605000
+        },
+        {
+          "path": "variants[].variantWeight",
+          "type": "number",
+          "example_or_redacted": 24.0
+        },
+        {
+          "path": "variants[].variantSellPrice",
+          "type": "number",
+          "example_or_redacted": 6.29
+        },
+        {
+          "path": "variants[].createTime",
+          "type": "integer",
+          "example_or_redacted": 1655433292000
+        },
+        {
+          "path": "variants[].variantStandard",
+          "type": "string",
+          "example_or_redacted": "long=110,width=110,height=50"
+        },
+        {
+          "path": "variants[].variantSugSellPrice",
+          "type": "number",
+          "example_or_redacted": 90.01
+        },
+        {
+          "path": "variants[].combineNum",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "variants[].inventoryNum",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "variants[].combineVariants",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "variants[].inventories",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "addMarkStatus",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "createrTime",
+          "type": "string",
+          "example_or_redacted": "2022-06-17T02:34:52+08:00"
+        },
+        {
+          "path": "productVideo",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "status",
+          "type": "string",
+          "example_or_redacted": "3"
+        },
+        {
+          "path": "suggestSellPrice",
+          "type": "string",
+          "example_or_redacted": "90.01 - 118.63"
+        },
+        {
+          "path": "listedNum",
+          "type": "integer",
+          "example_or_redacted": 70
+        },
+        {
+          "path": "supplierName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "supplierId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "customizationVersion",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "customizationJson1",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "customizationJson2",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "customizationJson3",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "customizationJson4",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "isTestProduct",
+          "type": "boolean",
+          "example_or_redacted": false
+        },
+        {
+          "path": "productUrl",
+          "type": "string",
+          "example_or_redacted": "https://www.cjdropshipping.com/product/barbed-wire-necklace-p-1537624790973034496.html"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_product_detail.json"
+    },
+    {
+      "name": "get_product_inventory",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_product_inventory",
+      "description": "Inventory of a product across countries and sub-warehouses per variant; stockId can be passed to get_storage_info.",
+      "params": [
+        {
+          "name": "pid",
+          "type": "string",
+          "required": true,
+          "description": "Product id."
+        },
+        {
+          "name": "countryCode",
+          "type": "string",
+          "required": false,
+          "description": "Filter by country."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pid": "1537624790973034496"
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "inventories",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "inventories[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "inventories[].areaEn",
+          "type": "string",
+          "example_or_redacted": "China Warehouse"
+        },
+        {
+          "path": "inventories[].areaId",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "inventories[].countryCode",
+          "type": "string",
+          "example_or_redacted": "CN"
+        },
+        {
+          "path": "inventories[].totalInventoryNum",
+          "type": "integer",
+          "example_or_redacted": 78214
+        },
+        {
+          "path": "inventories[].cjInventoryNum",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "inventories[].factoryInventoryNum",
+          "type": "integer",
+          "example_or_redacted": 78214
+        },
+        {
+          "path": "inventories[].countryNameEn",
+          "type": "string",
+          "example_or_redacted": "China Warehouse"
+        },
+        {
+          "path": "inventories[].stock",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "inventories[].stock[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "inventories[].stock[].stockId",
+          "type": "string",
+          "example_or_redacted": "{6709CCD7-0DC7-43B1-B310-17AB499E9B0A}"
+        },
+        {
+          "path": "inventories[].stock[].inventory",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "inventories[].stock[].factoryInventory",
+          "type": "integer",
+          "example_or_redacted": 18556
+        },
+        {
+          "path": "variantInventories",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variantInventories[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variantInventories[].vid",
+          "type": "string",
+          "example_or_redacted": "1537624791082086400"
+        },
+        {
+          "path": "variantInventories[].inventory",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variantInventories[].inventory[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variantInventories[].inventory[].countryCode",
+          "type": "string",
+          "example_or_redacted": "CN"
+        },
+        {
+          "path": "variantInventories[].inventory[].totalInventory",
+          "type": "integer",
+          "example_or_redacted": 36104
+        },
+        {
+          "path": "variantInventories[].inventory[].cjInventory",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "variantInventories[].inventory[].factoryInventory",
+          "type": "integer",
+          "example_or_redacted": 36104
+        },
+        {
+          "path": "variantInventories[].inventory[].verifiedWarehouse",
+          "type": "integer",
+          "example_or_redacted": 2
+        },
+        {
+          "path": "variantInventories[].inventory[].stock",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variantInventories[].inventory[].stock[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "variantInventories[].inventory[].stock[].stockId",
+          "type": "string",
+          "example_or_redacted": "6709CCD7-0DC7-43B1-B310-17AB499E9B0A"
+        },
+        {
+          "path": "variantInventories[].inventory[].stock[].inventory",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "variantInventories[].inventory[].stock[].factoryInventory",
+          "type": "integer",
+          "example_or_redacted": 8706
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_product_inventory.json"
+    },
+    {
+      "name": "get_product_reviews",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_product_reviews",
+      "description": "Buyer reviews (score, text, images) for a product; filter by score, paged.",
+      "params": [
+        {
+          "name": "pid",
+          "type": "string",
+          "required": true,
+          "description": "Product id."
+        },
+        {
+          "name": "score",
+          "type": "number",
+          "required": false,
+          "description": "Filter 1-5."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 20,
+          "description": "Page size."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pid": "1537624790973034496",
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok (0 reviews)",
+      "response_fields": [
+        {
+          "path": "pageNum",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "total",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "list",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_product_reviews.json"
+    },
+    {
+      "name": "get_product_variants",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_product_variants",
+      "description": "All variants (colour/size) with price, weight, image. One of pid/productSku/variantSku.",
+      "params": [
+        {
+          "name": "pid",
+          "type": "string",
+          "required": false,
+          "description": "Product id."
+        },
+        {
+          "name": "productSku",
+          "type": "string",
+          "required": false,
+          "description": "SPU code."
+        },
+        {
+          "name": "variantSku",
+          "type": "string",
+          "required": false,
+          "description": "Variant SKU."
+        },
+        {
+          "name": "countryCode",
+          "type": "string",
+          "required": false,
+          "description": "Only variants in stock in this country."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pid": "1537624790973034496"
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].vid",
+          "type": "string",
+          "example_or_redacted": "1537624791082086400"
+        },
+        {
+          "path": "[].pid",
+          "type": "string",
+          "example_or_redacted": "1537624790973034496"
+        },
+        {
+          "path": "[].variantName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].variantNameEn",
+          "type": "string",
+          "example_or_redacted": "Barbed Wire Necklace 45cm16pcs"
+        },
+        {
+          "path": "[].variantImage",
+          "type": "string",
+          "example_or_redacted": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg"
+        },
+        {
+          "path": "[].variantSku",
+          "type": "string",
+          "example_or_redacted": "CJLX150422501AZ"
+        },
+        {
+          "path": "[].barcode",
+          "type": "string",
+          "example_or_redacted": "1598451877427"
+        },
+        {
+          "path": "[].variantUnit",
+          "type": "string",
+          "example_or_redacted": "个"
+        },
+        {
+          "path": "[].variantProperty",
+          "type": "string",
+          "example_or_redacted": "[]"
+        },
+        {
+          "path": "[].variantKey",
+          "type": "string",
+          "example_or_redacted": "45cm16pcs"
+        },
+        {
+          "path": "[].variantLength",
+          "type": "integer",
+          "example_or_redacted": 110
+        },
+        {
+          "path": "[].variantWidth",
+          "type": "integer",
+          "example_or_redacted": 110
+        },
+        {
+          "path": "[].variantHeight",
+          "type": "integer",
+          "example_or_redacted": 50
+        },
+        {
+          "path": "[].variantVolume",
+          "type": "integer",
+          "example_or_redacted": 605000
+        },
+        {
+          "path": "[].variantWeight",
+          "type": "number",
+          "example_or_redacted": 24.0
+        },
+        {
+          "path": "[].variantSellPrice",
+          "type": "number",
+          "example_or_redacted": 6.29
+        },
+        {
+          "path": "[].createTime",
+          "type": "integer",
+          "example_or_redacted": 1655433292000
+        },
+        {
+          "path": "[].variantStandard",
+          "type": "string",
+          "example_or_redacted": "long=110,width=110,height=50"
+        },
+        {
+          "path": "[].variantSugSellPrice",
+          "type": "number",
+          "example_or_redacted": 6.29
+        },
+        {
+          "path": "[].combineNum",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].inventoryNum",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].combineVariants",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].inventories",
+          "type": "null",
+          "example_or_redacted": "null"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_product_variants.json"
+    },
+    {
+      "name": "get_rate_limit_status",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_rate_limit_status",
+      "description": "Live rate-limit and remaining-quota status of this MCP service: QPS tiers (read/write/auth/global), daily quota used/remaining, concurrency and queue.",
+      "params": [],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {},
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "(plain text) read QPS",
+          "type": "string",
+          "example_or_redacted": "10/10 (10/s)"
+        },
+        {
+          "path": "(plain text) write QPS",
+          "type": "string",
+          "example_or_redacted": "2/2 (2/s)"
+        },
+        {
+          "path": "(plain text) auth QPS",
+          "type": "string",
+          "example_or_redacted": "1/1 (1/s)"
+        },
+        {
+          "path": "(plain text) global QPS",
+          "type": "string",
+          "example_or_redacted": "20/20 (20/s)"
+        },
+        {
+          "path": "(plain text) concurrency active",
+          "type": "string",
+          "example_or_redacted": "1/5 (queued: 0)"
+        }
+      ]
+    },
+    {
+      "name": "get_storage_info",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_storage_info",
+      "description": "Detail of one CJ warehouse (address, contact, logistics brands, self-pickup) by storage UUID from get_order_detail or get_product_inventory stockId. Not for listing warehouses.",
+      "params": [
+        {
+          "name": "storageId",
+          "type": "string",
+          "required": true,
+          "description": "Warehouse UUID (stockId or order storageId)."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "storageId": "6709CCD7-0DC7-43B1-B310-17AB499E9B0A"
+      },
+      "call_result": "error: Get storage info failed: Warehouse info not found (storageId 6709CCD7-0DC7-43B1-B310-17AB499E9B0A, a factory sub-warehouse stockId from get_product_inventory)",
+      "response_fields": []
+    },
+    {
+      "name": "get_tracking_info",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_tracking_info",
+      "description": "Real-time tracking for one or more tracking numbers: status, location, ETA.",
+      "params": [
+        {
+          "name": "trackNumbers",
+          "type": "array<string>",
+          "required": true,
+          "description": "Tracking numbers (batch)."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "get_warehouses",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__get_warehouses",
+      "description": "List of CJ global warehouse regions (country level) with ids for filtering private inventory; ids are region ids, not storage UUIDs.",
+      "params": [],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {},
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].areaCn",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].areaEn",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].areaId",
+          "type": "integer",
+          "example_or_redacted": 2
+        },
+        {
+          "path": "[].countryCode",
+          "type": "string",
+          "example_or_redacted": "US"
+        },
+        {
+          "path": "[].nameEn",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].valueEn",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].disabled",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].de",
+          "type": "string",
+          "example_or_redacted": "Vereinigte Staaten von Amerika"
+        },
+        {
+          "path": "[].zh",
+          "type": "string",
+          "example_or_redacted": "美国"
+        },
+        {
+          "path": "[].id",
+          "type": "string",
+          "example_or_redacted": "Amerika Serikat"
+        },
+        {
+          "path": "[].fr",
+          "type": "string",
+          "example_or_redacted": "les états-unis d'Amérique"
+        },
+        {
+          "path": "[].th",
+          "type": "string",
+          "example_or_redacted": "สหรัฐอเมริกา"
+        },
+        {
+          "path": "[].en",
+          "type": "string",
+          "example_or_redacted": "United States"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/get_warehouses.json"
+    },
+    {
+      "name": "list_disputes",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__list_disputes",
+      "description": "Lists ongoing and finished disputes.",
+      "params": [
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 20,
+          "description": "Page size, max 50 (capped)."
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "required": false,
+          "description": "processing or finished."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok (0 records)",
+      "response_fields": [
+        {
+          "path": "pageNum",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "total",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "list",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        }
+      ]
+    },
+    {
+      "name": "list_product_connections",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__list_product_connections",
+      "description": "Lists CJ-to-platform product connection records; filter by shop/platform product/variant.",
+      "params": [
+        {
+          "name": "page",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 10,
+          "description": "Page size, max 100."
+        },
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": false,
+          "description": "Shop id."
+        },
+        {
+          "name": "platformProductId",
+          "type": "string",
+          "required": false,
+          "description": "Platform product id."
+        },
+        {
+          "name": "platformVariantId",
+          "type": "string",
+          "required": false,
+          "description": "Platform variant id."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "page": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok (0 records)",
+      "response_fields": [
+        {
+          "path": "pageNum",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "total",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "list",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        }
+      ]
+    },
+    {
+      "name": "list_shops",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__list_shops",
+      "description": "Lists authorized stores (Shopify/WooCommerce/eBay etc.).",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": false,
+          "description": "Filter by shop name."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "description": "Page size."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pageNum": 1,
+        "pageSize": 10
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "[].id",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].createDate",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].name",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].status",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].type",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].updateDate",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].fulfillmentStatus",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].marketplace",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].aliasName",
+          "type": "string (nullable)",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].syncInventory",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].syncInventoryRate",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].isCb",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].trackUrlTemplate",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].emailNotification",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].email",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].countryCode",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].storeCountry",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "[].platformLogoUrl",
+          "type": "string",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].currencyCode",
+          "type": "string (nullable)",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].businessType",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].deliveryProfileOpen",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].haveDeliveryProfileScopes",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].deliveryProfileSpecifiedShop",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        },
+        {
+          "path": "[].deliveryProfileNewShop",
+          "type": "integer",
+          "example_or_redacted": "redacted"
+        }
+      ]
+    },
+    {
+      "name": "merge_orders",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__merge_orders",
+      "description": "Auto-matches mergeable orders into groups to save shipping (batch order optimisation). Paired with get_merge_progress, which polls an asynchronous merge task.",
+      "params": [
+        {
+          "name": "filterOrder",
+          "type": "boolean",
+          "required": true,
+          "description": "true filters manually removed orders (default), false includes all."
+        },
+        {
+          "name": "orderStatus",
+          "type": "number",
+          "required": true,
+          "enum": [
+            100,
+            101
+          ],
+          "description": "100 complete-orders page, 101 cart page."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "safety_note": "Conservative class: description says it returns mergeable groups, but merging is described as an async operation; may alter orders.",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "open_listing_page",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__open_listing_page",
+      "description": "Opens the product page on CJ with the listing modal auto-triggered (?list=1). productId must come from search_products/query_sku_details.",
+      "params": [
+        {
+          "name": "productId",
+          "type": "string",
+          "required": true,
+          "description": "Product id."
+        },
+        {
+          "name": "productName",
+          "type": "string",
+          "required": false,
+          "description": "English name for SEO URL."
+        }
+      ],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "open_order_page",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__open_order_page",
+      "description": "Generates an order page URL to finish a complex order in the browser (variants, address, payment).",
+      "params": [
+        {
+          "name": "productId",
+          "type": "string",
+          "required": true,
+          "description": "Product id."
+        },
+        {
+          "name": "productName",
+          "type": "string",
+          "required": false,
+          "description": "English name."
+        },
+        {
+          "name": "variantId",
+          "type": "string",
+          "required": false,
+          "description": "Variant id."
+        }
+      ],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "open_product_connect_page",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__open_product_connect_page",
+      "description": "Opens the product page with the store-connect flow auto-triggered (?connect=1).",
+      "params": [
+        {
+          "name": "productId",
+          "type": "string",
+          "required": true,
+          "description": "Product id from search_products/query_sku_details."
+        },
+        {
+          "name": "productName",
+          "type": "string",
+          "required": false,
+          "description": "English name."
+        }
+      ],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "open_shopping_cart",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__open_shopping_cart",
+      "description": "Generates the shopping cart page URL.",
+      "params": [],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "pay_by_balance",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__pay_by_balance",
+      "description": "[Sensitive, real money, irreversible] Pays a single order from account balance (payBalance). Must first show order amount and balance and get explicit confirmation.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID."
+        }
+      ],
+      "safety_class": "financial",
+      "wraps_endpoint": "payBalance (per description)",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "pay_by_balance_v2",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__pay_by_balance_v2",
+      "description": "[Sensitive, real money, irreversible] Pays a parent/shipment order from balance (payBalanceV2) using shipmentOrderId + payId from saveGenerateParentOrder.",
+      "params": [
+        {
+          "name": "shipmentOrderId",
+          "type": "string",
+          "required": true,
+          "description": "Shipment order id."
+        },
+        {
+          "name": "payId",
+          "type": "string",
+          "required": true,
+          "description": "Pay id."
+        }
+      ],
+      "safety_class": "financial",
+      "wraps_endpoint": "payBalanceV2 (per description)",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "publish_product_async",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__publish_product_async",
+      "description": "[Sensitive] Asynchronously lists a CJ product in an authorized store (Shopify/WooCommerce/Lazada/Shopee/TikTok/Whop/Nuvemshop/AliExpress/Mercado/Temu); not idempotent. Returns listedId; poll query_publish_status.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop ID from list_shops (status=1 shops)."
+        },
+        {
+          "name": "productId",
+          "type": "string",
+          "required": true,
+          "description": "CJ product id (pid)."
+        },
+        {
+          "name": "productTitle",
+          "type": "string",
+          "required": true,
+          "description": "Listing title."
+        },
+        {
+          "name": "variants",
+          "type": "array<object>",
+          "required": true,
+          "description": "Variants to list, 1-200; each needs variantId and price (variant ids from get_product_variants).",
+          "items": [
+            {
+              "name": "variantId",
+              "type": "string",
+              "required": true,
+              "description": "CJ variant id (vid)."
+            },
+            {
+              "name": "price",
+              "type": "number",
+              "required": true,
+              "description": "Store selling price in publishPriceCurrency."
+            },
+            {
+              "name": "sku",
+              "type": "string",
+              "required": false,
+              "description": "Variant SKU; defaults to CJ variant SKU."
+            },
+            {
+              "name": "variantTitle",
+              "type": "string",
+              "required": false,
+              "description": "Variant title."
+            },
+            {
+              "name": "image",
+              "type": "string",
+              "required": false,
+              "description": "Variant image URL."
+            },
+            {
+              "name": "inventoryCount",
+              "type": "number",
+              "required": false,
+              "description": "Listed inventory."
+            },
+            {
+              "name": "shippingCost",
+              "type": "number",
+              "required": false,
+              "description": "Shipping cost USD from freight trial."
+            },
+            {
+              "name": "weight",
+              "type": "number",
+              "required": false,
+              "description": "Weight (g)."
+            },
+            {
+              "name": "length",
+              "type": "number",
+              "required": false,
+              "description": "Length."
+            },
+            {
+              "name": "width",
+              "type": "number",
+              "required": false,
+              "description": "Width."
+            },
+            {
+              "name": "height",
+              "type": "number",
+              "required": false,
+              "description": "Height."
+            },
+            {
+              "name": "options",
+              "type": "array<object>",
+              "required": false,
+              "description": "Option values {optionName, optionValue, optionNameId, optionValueId}."
+            },
+            {
+              "name": "variantAttributes",
+              "type": "array<object>",
+              "required": false,
+              "description": "Variant attributes."
+            }
+          ]
+        },
+        {
+          "name": "productDescription",
+          "type": "string",
+          "required": false,
+          "description": "Description (HTML)."
+        },
+        {
+          "name": "bigImg",
+          "type": "string",
+          "required": false,
+          "description": "Main image URL."
+        },
+        {
+          "name": "images",
+          "type": "array<object>",
+          "required": false,
+          "description": "Images {url, position}; Etsy and other Rutter-based platforms max 5."
+        },
+        {
+          "name": "categoryId",
+          "type": "string",
+          "required": false,
+          "description": "Platform category id (from get_platform_child_categories; product_type for Shopify)."
+        },
+        {
+          "name": "categoryName",
+          "type": "string",
+          "required": false,
+          "description": "Platform category name."
+        },
+        {
+          "name": "categoryParentIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Parent category id chain (eBay/Temu)."
+        },
+        {
+          "name": "productCategoryAttributes",
+          "type": "array<object>",
+          "required": false,
+          "description": "Category attributes (TikTok/Temu/Shopee/Mercado/AliExpress) {platformAttributeId, platformAttributeName, attributeValueList[]} from get_platform_category_attributes."
+        },
+        {
+          "name": "attributes",
+          "type": "array<object>",
+          "required": false,
+          "description": "eBay item specifics / Lazada attributes {attributeId, attributeName, attributeValueId, attributeValue}."
+        },
+        {
+          "name": "platformBrandId",
+          "type": "string",
+          "required": false,
+          "description": "Platform brand id (from query_platform_brands; vendor for Shopify)."
+        },
+        {
+          "name": "platformBrandName",
+          "type": "string",
+          "required": false,
+          "description": "Platform brand name."
+        },
+        {
+          "name": "brand",
+          "type": "string",
+          "required": false,
+          "description": "Brand (eBay)."
+        },
+        {
+          "name": "collectionIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Shopify collection ids."
+        },
+        {
+          "name": "locationIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Shopify inventory location ids."
+        },
+        {
+          "name": "deliveryProfileId",
+          "type": "string",
+          "required": false,
+          "description": "Shopify delivery profile id."
+        },
+        {
+          "name": "enableLogisticsFee",
+          "type": "boolean",
+          "required": false,
+          "description": "Shopify: include shipping cost in price; false means variant shipping counted as 0."
+        },
+        {
+          "name": "defaultAreaId",
+          "type": "string",
+          "required": false,
+          "default": "1",
+          "description": "Ship-from warehouse area id."
+        },
+        {
+          "name": "sourceCountryCode",
+          "type": "string",
+          "required": false,
+          "default": "CN",
+          "description": "Ship-from country code."
+        },
+        {
+          "name": "targetCountryCode",
+          "type": "string",
+          "required": false,
+          "description": "Destination country code."
+        },
+        {
+          "name": "logisticsWay",
+          "type": "string",
+          "required": false,
+          "description": "Logistics method name (logisticName from freight trial)."
+        },
+        {
+          "name": "publishPriceCurrency",
+          "type": "string",
+          "required": false,
+          "default": "USD",
+          "description": "Selling price currency; query_shop_publish_info gives the shop currency."
+        },
+        {
+          "name": "shopCurrency",
+          "type": "string",
+          "required": false,
+          "description": "eBay site currency (e.g. GBP for UK); eBay only."
+        },
+        {
+          "name": "sourceCurrencyCode",
+          "type": "string",
+          "required": false,
+          "description": "Source currency (Lazada)."
+        },
+        {
+          "name": "targetCurrencyCode",
+          "type": "string",
+          "required": false,
+          "description": "Target currency (Lazada)."
+        },
+        {
+          "name": "siteCode",
+          "type": "string",
+          "required": false,
+          "description": "Site (eBay US/UK/Germany; Lazada/Temu sites)."
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "required": false,
+          "description": "Comma-separated tags (required by Etsy/Wix/Squarespace/Magento/BigCommerce/PrestaShop)."
+        },
+        {
+          "name": "productOptionNameList",
+          "type": "array<string>",
+          "required": false,
+          "description": "Option names e.g. [\"Color\",\"Size\"]."
+        },
+        {
+          "name": "options",
+          "type": "array<object>",
+          "required": false,
+          "description": "Options {name, values[]} (required by Shoplazza)."
+        },
+        {
+          "name": "needUploadImgOptionName",
+          "type": "string",
+          "required": false,
+          "description": "Option name whose values carry images (required by TikTok)."
+        },
+        {
+          "name": "productCertificationList",
+          "type": "array<object>",
+          "required": false,
+          "description": "TikTok product certifications."
+        },
+        {
+          "name": "ebayPolicyVO",
+          "type": "object",
+          "required": false,
+          "description": "eBay business policies {fulfillmentPolicies[], paymentPolicies[], returnPolicies[]}."
+        },
+        {
+          "name": "platformShippingService",
+          "type": "string",
+          "required": false,
+          "description": "eBay shipping service."
+        },
+        {
+          "name": "platformShippingServiceType",
+          "type": "string",
+          "required": false,
+          "description": "eBay shipping service type (required by eBay)."
+        },
+        {
+          "name": "ean",
+          "type": "string",
+          "required": false,
+          "description": "EAN (when eBay category requires)."
+        },
+        {
+          "name": "upc",
+          "type": "string",
+          "required": false,
+          "description": "UPC (when eBay category requires)."
+        },
+        {
+          "name": "isbn",
+          "type": "string",
+          "required": false,
+          "description": "ISBN (when eBay category requires)."
+        },
+        {
+          "name": "mpn",
+          "type": "string",
+          "required": false,
+          "description": "MPN (eBay)."
+        },
+        {
+          "name": "listType",
+          "type": "string",
+          "required": false,
+          "description": "Lazada listing type ASC/GSP."
+        },
+        {
+          "name": "ventures",
+          "type": "array<string>",
+          "required": false,
+          "description": "Lazada GSP countries."
+        },
+        {
+          "name": "logisticsChannelConfig",
+          "type": "object",
+          "required": false,
+          "description": "Shopee logistics channel config {channels[]}."
+        },
+        {
+          "name": "listingTypeId",
+          "type": "string",
+          "required": false,
+          "description": "Mercado listing type id."
+        },
+        {
+          "name": "sellPrice",
+          "type": "string",
+          "required": false,
+          "description": "Mercado selling price, same for all variants (required by Mercado)."
+        },
+        {
+          "name": "freightTemplateId",
+          "type": "string",
+          "required": false,
+          "description": "Freight template id (AliExpress/Temu)."
+        },
+        {
+          "name": "hsCode",
+          "type": "string",
+          "required": false,
+          "description": "HS code (AliExpress)."
+        },
+        {
+          "name": "lotNum",
+          "type": "number",
+          "required": false,
+          "description": "AliExpress pieces per lot."
+        },
+        {
+          "name": "packageType",
+          "type": "boolean",
+          "required": false,
+          "description": "AliExpress sold in lots."
+        },
+        {
+          "name": "productGroupIdList",
+          "type": "array<string>",
+          "required": false,
+          "description": "AliExpress product group ids."
+        },
+        {
+          "name": "productUnitId",
+          "type": "string",
+          "required": false,
+          "description": "AliExpress unit id."
+        },
+        {
+          "name": "promiseTemplateId",
+          "type": "string",
+          "required": false,
+          "description": "AliExpress service template id."
+        },
+        {
+          "name": "reduceStrategy",
+          "type": "string",
+          "required": false,
+          "description": "AliExpress stock reduce strategy."
+        },
+        {
+          "name": "sizeChartId",
+          "type": "number",
+          "required": false,
+          "description": "AliExpress size chart id."
+        },
+        {
+          "name": "deliveryTime",
+          "type": "string",
+          "required": false,
+          "description": "Promised handling time (Temu semi-managed in seconds, Temu US Local in days)."
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "required": false,
+          "description": "Temu language."
+        },
+        {
+          "name": "productOrigin",
+          "type": "string",
+          "required": false,
+          "description": "Temu product origin."
+        },
+        {
+          "name": "outerPackageDTO",
+          "type": "object",
+          "required": false,
+          "description": "Temu outer package {packageShape, packageType}."
+        },
+        {
+          "name": "sizeChartIdList",
+          "type": "array<number>",
+          "required": false,
+          "description": "Temu size chart ids."
+        },
+        {
+          "name": "skcImageDTOS",
+          "type": "array<object>",
+          "required": false,
+          "description": "Temu SKC images {valueId, value, imageUrls[]}."
+        },
+        {
+          "name": "warehouseConnectionNew",
+          "type": "object",
+          "required": false,
+          "description": "Temu warehouse binding config."
+        },
+        {
+          "name": "scoreList",
+          "type": "array<number>",
+          "required": false,
+          "description": "WooCommerce: review scores to import."
+        }
+      ],
+      "safety_class": "publishes_listing",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "publish_product_sync",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__publish_product_sync",
+      "description": "[Sensitive] Synchronously lists a CJ product in an authorized store (eBay/Etsy/BigCommerce/Squarespace/Magento/PrestaShop/Wix/Shoplazza/AllValue); not idempotent. Returns the platform product link.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop ID from list_shops (status=1 shops)."
+        },
+        {
+          "name": "productId",
+          "type": "string",
+          "required": true,
+          "description": "CJ product id (pid)."
+        },
+        {
+          "name": "productTitle",
+          "type": "string",
+          "required": true,
+          "description": "Listing title."
+        },
+        {
+          "name": "variants",
+          "type": "array<object>",
+          "required": true,
+          "description": "Variants to list, 1-200; each needs variantId and price (variant ids from get_product_variants).",
+          "items": [
+            {
+              "name": "variantId",
+              "type": "string",
+              "required": true,
+              "description": "CJ variant id (vid)."
+            },
+            {
+              "name": "price",
+              "type": "number",
+              "required": true,
+              "description": "Store selling price in publishPriceCurrency."
+            },
+            {
+              "name": "sku",
+              "type": "string",
+              "required": false,
+              "description": "Variant SKU; defaults to CJ variant SKU."
+            },
+            {
+              "name": "variantTitle",
+              "type": "string",
+              "required": false,
+              "description": "Variant title."
+            },
+            {
+              "name": "image",
+              "type": "string",
+              "required": false,
+              "description": "Variant image URL."
+            },
+            {
+              "name": "inventoryCount",
+              "type": "number",
+              "required": false,
+              "description": "Listed inventory."
+            },
+            {
+              "name": "shippingCost",
+              "type": "number",
+              "required": false,
+              "description": "Shipping cost USD from freight trial."
+            },
+            {
+              "name": "weight",
+              "type": "number",
+              "required": false,
+              "description": "Weight (g)."
+            },
+            {
+              "name": "length",
+              "type": "number",
+              "required": false,
+              "description": "Length."
+            },
+            {
+              "name": "width",
+              "type": "number",
+              "required": false,
+              "description": "Width."
+            },
+            {
+              "name": "height",
+              "type": "number",
+              "required": false,
+              "description": "Height."
+            },
+            {
+              "name": "options",
+              "type": "array<object>",
+              "required": false,
+              "description": "Option values {optionName, optionValue, optionNameId, optionValueId}."
+            },
+            {
+              "name": "variantAttributes",
+              "type": "array<object>",
+              "required": false,
+              "description": "Variant attributes."
+            }
+          ]
+        },
+        {
+          "name": "productDescription",
+          "type": "string",
+          "required": false,
+          "description": "Description (HTML)."
+        },
+        {
+          "name": "bigImg",
+          "type": "string",
+          "required": false,
+          "description": "Main image URL."
+        },
+        {
+          "name": "images",
+          "type": "array<object>",
+          "required": false,
+          "description": "Images {url, position}; Etsy and other Rutter-based platforms max 5."
+        },
+        {
+          "name": "categoryId",
+          "type": "string",
+          "required": false,
+          "description": "Platform category id (from get_platform_child_categories; product_type for Shopify)."
+        },
+        {
+          "name": "categoryName",
+          "type": "string",
+          "required": false,
+          "description": "Platform category name."
+        },
+        {
+          "name": "categoryParentIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Parent category id chain (eBay/Temu)."
+        },
+        {
+          "name": "productCategoryAttributes",
+          "type": "array<object>",
+          "required": false,
+          "description": "Category attributes (TikTok/Temu/Shopee/Mercado/AliExpress) {platformAttributeId, platformAttributeName, attributeValueList[]} from get_platform_category_attributes."
+        },
+        {
+          "name": "attributes",
+          "type": "array<object>",
+          "required": false,
+          "description": "eBay item specifics / Lazada attributes {attributeId, attributeName, attributeValueId, attributeValue}."
+        },
+        {
+          "name": "platformBrandId",
+          "type": "string",
+          "required": false,
+          "description": "Platform brand id (from query_platform_brands; vendor for Shopify)."
+        },
+        {
+          "name": "platformBrandName",
+          "type": "string",
+          "required": false,
+          "description": "Platform brand name."
+        },
+        {
+          "name": "brand",
+          "type": "string",
+          "required": false,
+          "description": "Brand (eBay)."
+        },
+        {
+          "name": "collectionIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Shopify collection ids."
+        },
+        {
+          "name": "locationIds",
+          "type": "array<string>",
+          "required": false,
+          "description": "Shopify inventory location ids."
+        },
+        {
+          "name": "deliveryProfileId",
+          "type": "string",
+          "required": false,
+          "description": "Shopify delivery profile id."
+        },
+        {
+          "name": "enableLogisticsFee",
+          "type": "boolean",
+          "required": false,
+          "description": "Shopify: include shipping cost in price; false means variant shipping counted as 0."
+        },
+        {
+          "name": "defaultAreaId",
+          "type": "string",
+          "required": false,
+          "default": "1",
+          "description": "Ship-from warehouse area id."
+        },
+        {
+          "name": "sourceCountryCode",
+          "type": "string",
+          "required": false,
+          "default": "CN",
+          "description": "Ship-from country code."
+        },
+        {
+          "name": "targetCountryCode",
+          "type": "string",
+          "required": false,
+          "description": "Destination country code."
+        },
+        {
+          "name": "logisticsWay",
+          "type": "string",
+          "required": false,
+          "description": "Logistics method name (logisticName from freight trial)."
+        },
+        {
+          "name": "publishPriceCurrency",
+          "type": "string",
+          "required": false,
+          "default": "USD",
+          "description": "Selling price currency; query_shop_publish_info gives the shop currency."
+        },
+        {
+          "name": "shopCurrency",
+          "type": "string",
+          "required": false,
+          "description": "eBay site currency (e.g. GBP for UK); eBay only."
+        },
+        {
+          "name": "sourceCurrencyCode",
+          "type": "string",
+          "required": false,
+          "description": "Source currency (Lazada)."
+        },
+        {
+          "name": "targetCurrencyCode",
+          "type": "string",
+          "required": false,
+          "description": "Target currency (Lazada)."
+        },
+        {
+          "name": "siteCode",
+          "type": "string",
+          "required": false,
+          "description": "Site (eBay US/UK/Germany; Lazada/Temu sites)."
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "required": false,
+          "description": "Comma-separated tags (required by Etsy/Wix/Squarespace/Magento/BigCommerce/PrestaShop)."
+        },
+        {
+          "name": "productOptionNameList",
+          "type": "array<string>",
+          "required": false,
+          "description": "Option names e.g. [\"Color\",\"Size\"]."
+        },
+        {
+          "name": "options",
+          "type": "array<object>",
+          "required": false,
+          "description": "Options {name, values[]} (required by Shoplazza)."
+        },
+        {
+          "name": "needUploadImgOptionName",
+          "type": "string",
+          "required": false,
+          "description": "Option name whose values carry images (required by TikTok)."
+        },
+        {
+          "name": "productCertificationList",
+          "type": "array<object>",
+          "required": false,
+          "description": "TikTok product certifications."
+        },
+        {
+          "name": "ebayPolicyVO",
+          "type": "object",
+          "required": false,
+          "description": "eBay business policies {fulfillmentPolicies[], paymentPolicies[], returnPolicies[]}."
+        },
+        {
+          "name": "platformShippingService",
+          "type": "string",
+          "required": false,
+          "description": "eBay shipping service."
+        },
+        {
+          "name": "platformShippingServiceType",
+          "type": "string",
+          "required": false,
+          "description": "eBay shipping service type (required by eBay)."
+        },
+        {
+          "name": "ean",
+          "type": "string",
+          "required": false,
+          "description": "EAN (when eBay category requires)."
+        },
+        {
+          "name": "upc",
+          "type": "string",
+          "required": false,
+          "description": "UPC (when eBay category requires)."
+        },
+        {
+          "name": "isbn",
+          "type": "string",
+          "required": false,
+          "description": "ISBN (when eBay category requires)."
+        },
+        {
+          "name": "mpn",
+          "type": "string",
+          "required": false,
+          "description": "MPN (eBay)."
+        },
+        {
+          "name": "listType",
+          "type": "string",
+          "required": false,
+          "description": "Lazada listing type ASC/GSP."
+        },
+        {
+          "name": "ventures",
+          "type": "array<string>",
+          "required": false,
+          "description": "Lazada GSP countries."
+        },
+        {
+          "name": "logisticsChannelConfig",
+          "type": "object",
+          "required": false,
+          "description": "Shopee logistics channel config {channels[]}."
+        },
+        {
+          "name": "listingTypeId",
+          "type": "string",
+          "required": false,
+          "description": "Mercado listing type id."
+        },
+        {
+          "name": "sellPrice",
+          "type": "string",
+          "required": false,
+          "description": "Mercado selling price, same for all variants (required by Mercado)."
+        },
+        {
+          "name": "freightTemplateId",
+          "type": "string",
+          "required": false,
+          "description": "Freight template id (AliExpress/Temu)."
+        },
+        {
+          "name": "hsCode",
+          "type": "string",
+          "required": false,
+          "description": "HS code (AliExpress)."
+        },
+        {
+          "name": "lotNum",
+          "type": "number",
+          "required": false,
+          "description": "AliExpress pieces per lot."
+        },
+        {
+          "name": "packageType",
+          "type": "boolean",
+          "required": false,
+          "description": "AliExpress sold in lots."
+        },
+        {
+          "name": "productGroupIdList",
+          "type": "array<string>",
+          "required": false,
+          "description": "AliExpress product group ids."
+        },
+        {
+          "name": "productUnitId",
+          "type": "string",
+          "required": false,
+          "description": "AliExpress unit id."
+        },
+        {
+          "name": "promiseTemplateId",
+          "type": "string",
+          "required": false,
+          "description": "AliExpress service template id."
+        },
+        {
+          "name": "reduceStrategy",
+          "type": "string",
+          "required": false,
+          "description": "AliExpress stock reduce strategy."
+        },
+        {
+          "name": "sizeChartId",
+          "type": "number",
+          "required": false,
+          "description": "AliExpress size chart id."
+        },
+        {
+          "name": "deliveryTime",
+          "type": "string",
+          "required": false,
+          "description": "Promised handling time (Temu semi-managed in seconds, Temu US Local in days)."
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "required": false,
+          "description": "Temu language."
+        },
+        {
+          "name": "productOrigin",
+          "type": "string",
+          "required": false,
+          "description": "Temu product origin."
+        },
+        {
+          "name": "outerPackageDTO",
+          "type": "object",
+          "required": false,
+          "description": "Temu outer package {packageShape, packageType}."
+        },
+        {
+          "name": "sizeChartIdList",
+          "type": "array<number>",
+          "required": false,
+          "description": "Temu size chart ids."
+        },
+        {
+          "name": "skcImageDTOS",
+          "type": "array<object>",
+          "required": false,
+          "description": "Temu SKC images {valueId, value, imageUrls[]}."
+        },
+        {
+          "name": "warehouseConnectionNew",
+          "type": "object",
+          "required": false,
+          "description": "Temu warehouse binding config."
+        },
+        {
+          "name": "scoreList",
+          "type": "array<number>",
+          "required": false,
+          "description": "WooCommerce: review scores to import."
+        }
+      ],
+      "safety_class": "publishes_listing",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "query_cj_inventory",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_cj_inventory",
+      "description": "CJ public (non-private) inventory by vid, sku/SPU or pid; per-warehouse totalInventoryNum/cjInventoryNum/factoryInventoryNum.",
+      "params": [
+        {
+          "name": "pid",
+          "type": "string",
+          "required": false,
+          "description": "Product id."
+        },
+        {
+          "name": "sku",
+          "type": "string",
+          "required": false,
+          "description": "Variant SKU or SPU."
+        },
+        {
+          "name": "vid",
+          "type": "string",
+          "required": false,
+          "description": "Variant id."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "query_cogs",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_cogs",
+      "description": "Cost-of-goods data for orders: goods amount, freight, tax breakdown.",
+      "params": [
+        {
+          "name": "orderCodesList",
+          "type": "array<string>",
+          "required": true,
+          "description": "CJ order codes."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "query_platform_brands",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_platform_brands",
+      "description": "Brand list of the shop's platform (needed for TikTok/Lazada/AliExpress listings); needNoBrand=true adds a 'No brand' option.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop id."
+        },
+        {
+          "name": "categoryId",
+          "type": "string",
+          "required": false,
+          "description": "Platform category id (TikTok)."
+        },
+        {
+          "name": "countryCode",
+          "type": "string",
+          "required": false,
+          "description": "Country/site (Lazada cross-border)."
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "required": false,
+          "description": "Language."
+        },
+        {
+          "name": "needNoBrand",
+          "type": "boolean",
+          "required": false,
+          "description": "Include 'No brand'."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "description": "Page size."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "shopId": "redacted",
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "error: Query platform brands failed: Store not found or Authorization Failed. Please reauthorize your store before syncing again. (shopId of the Shopify-type shop)",
+      "response_fields": []
+    },
+    {
+      "name": "query_private_inventory",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_private_inventory",
+      "description": "Your own stock bought and stored in CJ warehouses (SPU list); not the public catalogue.",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": false,
+          "description": "Name/SKU."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 20,
+          "description": "Page size, max 200."
+        },
+        {
+          "name": "warehouseId",
+          "type": "string",
+          "required": false,
+          "description": "Warehouse id from get_warehouses."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "ok (0 records)",
+      "response_fields": [
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "pageNumber",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "totalRecords",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "totalPages",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        }
+      ]
+    },
+    {
+      "name": "query_publish_status",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_publish_status",
+      "description": "Listing result by listedId or shopId+productId (PRODUCT_STAY/CENTRE keep polling >=5 s; SUCCESS has platformProductUrl; FAIL has listedFailMessage).",
+      "params": [
+        {
+          "name": "listedId",
+          "type": "string",
+          "required": false,
+          "description": "Listing record id."
+        },
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": false,
+          "description": "Shop id (if no listedId)."
+        },
+        {
+          "name": "productId",
+          "type": "string",
+          "required": false,
+          "description": "CJ product id (if no listedId)."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "query_shop_publish_info",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_shop_publish_info",
+      "description": "Shop listing info: currency, listing quota, and whether a product is already listed there. Call before publishing.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop id."
+        },
+        {
+          "name": "productId",
+          "type": "string",
+          "required": false,
+          "description": "CJ product id to check."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "query_sku_detail_by_sku",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_sku_detail_by_sku",
+      "description": "Private-inventory SKU detail (inbound batches, notes) by exact variant SKU. For public stock use query_cj_inventory.",
+      "params": [
+        {
+          "name": "variantSku",
+          "type": "string",
+          "required": true,
+          "description": "Variant SKU."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "variantSku": "CJLX1504225"
+      },
+      "call_result": "ok (empty array)",
+      "response_fields": [
+        {
+          "path": "(root)",
+          "type": "array",
+          "example_or_redacted": "[] (empty; item fields not observable)"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/query_sku_detail_by_sku.json"
+    },
+    {
+      "name": "query_sku_detail_page",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_sku_detail_page",
+      "description": "Paged SKU detail list (private inventory) for products with many SKUs.",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": false,
+          "description": "Keyword."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "description": "Page size."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "query_sku_details",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_sku_details",
+      "description": "Private-inventory SKU details for a product: variant quantities and warehouse distribution.",
+      "params": [
+        {
+          "name": "productId",
+          "type": "string",
+          "required": true,
+          "description": "Product id."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "query_sourcing",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_sourcing",
+      "description": "Looks up sourcing requests by id (listing all is not supported upstream).",
+      "params": [
+        {
+          "name": "sourceIds",
+          "type": "array<string>",
+          "required": true,
+          "description": "CJ sourcing ids (from create_sourcing)."
+        },
+        {
+          "name": "sourceStatuses",
+          "type": "array<string>",
+          "required": false,
+          "description": "processing / finished / cancelled."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 20,
+          "description": "Page size."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": true,
+      "call_args": {
+        "sourceIds": [],
+        "pageNum": 1,
+        "pageSize": 3
+      },
+      "call_result": "error: Please provide sourceIds. Upstream does not support listing all sourcing requests; query by ID only (called with sourceIds=[] since none exist)",
+      "response_fields": []
+    },
+    {
+      "name": "query_warehouse_order_pictures",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__query_warehouse_order_pictures",
+      "description": "Warehouse photos taken while processing orders (packing, inbound).",
+      "params": [
+        {
+          "name": "orderIds",
+          "type": "array<string>",
+          "required": true,
+          "description": "Order ids (batch)."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (not needed)",
+      "response_fields": []
+    },
+    {
+      "name": "republish_product",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__republish_product",
+      "description": "[Sensitive] Retries a failed listing record (PRODUCT_FAIL only, batch-capable platforms); creates the product in the store again.",
+      "params": [
+        {
+          "name": "shopId",
+          "type": "string",
+          "required": true,
+          "description": "Shop id."
+        },
+        {
+          "name": "listedProductId",
+          "type": "string",
+          "required": true,
+          "description": "listedId of a PRODUCT_FAIL record."
+        }
+      ],
+      "safety_class": "publishes_listing",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "save_product_to_shop",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__save_product_to_shop",
+      "description": "[Sensitive] Saves/syncs a store product's info into CJ, linking it with CJ.",
+      "params": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "description": "Store product id (max 64)."
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Title (max 500)."
+        },
+        {
+          "name": "image",
+          "type": "string",
+          "required": true,
+          "description": "Image URL (max 400)."
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "description": "Description (max 5000)."
+        },
+        {
+          "name": "priceMin",
+          "type": "number",
+          "required": false,
+          "description": "Min price (needs priceCurrency)."
+        },
+        {
+          "name": "priceMax",
+          "type": "number",
+          "required": false,
+          "description": "Max price (needs priceCurrency)."
+        },
+        {
+          "name": "priceCurrency",
+          "type": "string",
+          "required": false,
+          "description": "e.g. USD."
+        }
+      ],
+      "safety_class": "account_modifying",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "search_products",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__search_products",
+      "description": "Searches the existing CJ catalogue with keyword, category, price, country, warehouse and other filters (data only; show_product_list renders UI). Not for sourcing requests or private stock.",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": false,
+          "description": "Search keyword (name/SKU/description; Chinese or English)."
+        },
+        {
+          "name": "categoryId",
+          "type": "string",
+          "required": false,
+          "description": "Category id from get_category_tree."
+        },
+        {
+          "name": "lv2categoryList",
+          "type": "array<string>",
+          "required": false,
+          "description": "Second-level category ids."
+        },
+        {
+          "name": "lv3categoryList",
+          "type": "array<string>",
+          "required": false,
+          "description": "Third-level category ids."
+        },
+        {
+          "name": "countryCode",
+          "type": "string",
+          "required": false,
+          "description": "Only products with stock in this country (US, CN, GB, DE, FR...)."
+        },
+        {
+          "name": "isWarehouse",
+          "type": "boolean",
+          "required": false,
+          "description": "true = global-warehouse products only; combine with countryCode."
+        },
+        {
+          "name": "verifiedWarehouse",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "default": 0,
+          "description": "0/omit = all, 1 = verified inventory, 2 = pending verification."
+        },
+        {
+          "name": "startWarehouseInventory",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Minimum warehouse inventory (>=1); only in-stock products by default."
+        },
+        {
+          "name": "endWarehouseInventory",
+          "type": "number",
+          "required": false,
+          "description": "Maximum warehouse inventory."
+        },
+        {
+          "name": "minPrice",
+          "type": "number",
+          "required": false,
+          "description": "Minimum price USD."
+        },
+        {
+          "name": "maxPrice",
+          "type": "number",
+          "required": false,
+          "description": "Maximum price USD."
+        },
+        {
+          "name": "addMarkStatus",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "Free shipping filter: 0 not free, 1 free."
+        },
+        {
+          "name": "customization",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "Customizable products: 0 no, 1 yes."
+        },
+        {
+          "name": "hasCertification",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "Has certification: 0 no, 1 yes."
+        },
+        {
+          "name": "isSelfPickup",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1
+          ],
+          "description": "Self pickup: 0 no, 1 yes."
+        },
+        {
+          "name": "productFlag",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "description": "0 trending, 1 new, 2 video, 3 slow-moving."
+        },
+        {
+          "name": "productType",
+          "type": "string",
+          "required": false,
+          "enum": [
+            "ORDINARY_PRODUCT",
+            "SUPPLIER_PRODUCT"
+          ],
+          "description": "listV2 string format: ORDINARY_PRODUCT or SUPPLIER_PRODUCT."
+        },
+        {
+          "name": "supplierId",
+          "type": "string",
+          "required": false,
+          "description": "Filter by supplier."
+        },
+        {
+          "name": "zonePlatform",
+          "type": "string",
+          "required": false,
+          "description": "Platform zone filter: shopify, ebay, amazon, tiktok, etsy, walmart, etc."
+        },
+        {
+          "name": "timeStart",
+          "type": "string",
+          "required": false,
+          "description": "Listed-after time (ms timestamp)."
+        },
+        {
+          "name": "timeEnd",
+          "type": "string",
+          "required": false,
+          "description": "Listed-before time (ms timestamp)."
+        },
+        {
+          "name": "features",
+          "type": "array<string>",
+          "required": false,
+          "enum": [
+            "enable_description",
+            "enable_category",
+            "enable_combine",
+            "enable_video"
+          ],
+          "description": "Extra data: enable_description, enable_category, enable_combine, enable_video (video ids)."
+        },
+        {
+          "name": "orderBy",
+          "type": "number",
+          "required": false,
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "default": 0,
+          "description": "Sort field: 0 best match, 1 listed count, 2 price, 3 create time, 4 inventory."
+        },
+        {
+          "name": "sort",
+          "type": "string",
+          "required": false,
+          "enum": [
+            "desc",
+            "asc"
+          ],
+          "default": "desc",
+          "description": "Sort direction."
+        },
+        {
+          "name": "pageNum",
+          "type": "number",
+          "required": false,
+          "default": 1,
+          "description": "Page number."
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": false,
+          "default": 20,
+          "description": "Page size, max 100."
+        }
+      ],
+      "safety_class": "read_only",
+      "wraps_endpoint": "product listV2 (productType description says 'listV2 API uses string format')",
+      "called": true,
+      "call_args": {
+        "keyword": "barbed wire necklace",
+        "pageNum": 1,
+        "pageSize": 1
+      },
+      "call_result": "ok",
+      "response_fields": [
+        {
+          "path": "pageSize",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "pageNumber",
+          "type": "integer",
+          "example_or_redacted": 1
+        },
+        {
+          "path": "totalRecords",
+          "type": "integer",
+          "example_or_redacted": 6000
+        },
+        {
+          "path": "totalPages",
+          "type": "integer",
+          "example_or_redacted": 6000
+        },
+        {
+          "path": "content",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].productList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].productList[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].productList[].id",
+          "type": "string",
+          "example_or_redacted": "1537624790973034496"
+        },
+        {
+          "path": "content[].productList[].nameEn",
+          "type": "string",
+          "example_or_redacted": "Barbed Wire Necklace"
+        },
+        {
+          "path": "content[].productList[].sku",
+          "type": "string",
+          "example_or_redacted": "CJLX1504225"
+        },
+        {
+          "path": "content[].productList[].isCollect",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].listedNum",
+          "type": "integer",
+          "example_or_redacted": 70
+        },
+        {
+          "path": "content[].productList[].bigImage",
+          "type": "string",
+          "example_or_redacted": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg"
+        },
+        {
+          "path": "content[].productList[].sellPrice",
+          "type": "string",
+          "example_or_redacted": "6.29 -- 8.29"
+        },
+        {
+          "path": "content[].productList[].nowPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].authorityStatus",
+          "type": "string",
+          "example_or_redacted": "1"
+        },
+        {
+          "path": "content[].productList[].addMarkStatus",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].isVedio",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].productType",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "content[].productList[].isAut",
+          "type": "string",
+          "example_or_redacted": "0"
+        },
+        {
+          "path": "content[].productList[].categoryId",
+          "type": "string",
+          "example_or_redacted": "95D9F317-1DB3-4E42-A031-02223215B9C5"
+        },
+        {
+          "path": "content[].productList[].threeCategoryName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].twoCategoryId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].twoCategoryName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].oneCategoryId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].oneCategoryName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].directMinOrderNum",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].supplierName",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].zoneRecommendJson",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].createAt",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].setRecommendedTime",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].autStatus",
+          "type": "string",
+          "example_or_redacted": "1"
+        },
+        {
+          "path": "content[].productList[].isList",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].isAd",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].activityId",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].isPersonalized",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].saleStatus",
+          "type": "string",
+          "example_or_redacted": "3"
+        },
+        {
+          "path": "content[].productList[].syncListedProductStatus",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].videoList",
+          "type": "array",
+          "example_or_redacted": "[] (empty in sample)"
+        },
+        {
+          "path": "content[].productList[].deliveryCycle",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].warehouseInventoryNum",
+          "type": "integer",
+          "example_or_redacted": 95350
+        },
+        {
+          "path": "content[].productList[].discountPrice",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].discountPriceRate",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].myProduct",
+          "type": "boolean",
+          "example_or_redacted": true
+        },
+        {
+          "path": "content[].productList[].currency",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].totalVerifiedInventory",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].totalUnVerifiedInventory",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].verifiedWarehouse",
+          "type": "integer",
+          "example_or_redacted": 2
+        },
+        {
+          "path": "content[].productList[].customization",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].hasCECertification",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].description",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].spu",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].inventoryInfo",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].variantKeyEn",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].variantInventories",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].propertyKey",
+          "type": "null",
+          "example_or_redacted": "null"
+        },
+        {
+          "path": "content[].productList[].isVideo",
+          "type": "integer",
+          "example_or_redacted": 0
+        },
+        {
+          "path": "content[].productList[].productUrl",
+          "type": "string",
+          "example_or_redacted": "https://www.cjdropshipping.com/product/barbed-wire-necklace-p-1537624790973034496.html"
+        },
+        {
+          "path": "content[].relatedCategoryList",
+          "type": "array",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].relatedCategoryList[]",
+          "type": "object",
+          "example_or_redacted": null
+        },
+        {
+          "path": "content[].relatedCategoryList[].id",
+          "type": "string",
+          "example_or_redacted": "95D9F317-1DB3-4E42-A031-02223215B9C5"
+        },
+        {
+          "path": "content[].relatedCategoryList[].name",
+          "type": "string",
+          "example_or_redacted": "Necklace & Pendants"
+        },
+        {
+          "path": "content[].relatedCategoryList[].currentLevel",
+          "type": "integer",
+          "example_or_redacted": 3
+        },
+        {
+          "path": "content[].keyWord",
+          "type": "string",
+          "example_or_redacted": "barbed wire necklace"
+        },
+        {
+          "path": "content[].keyWordOld",
+          "type": "string",
+          "example_or_redacted": "barbed wire necklace"
+        }
+      ],
+      "sample_file": "cj_mcp_samples/search_products.json"
+    },
+    {
+      "name": "show_order_detail",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__show_order_detail",
+      "description": "UI tool, read-only: renders one order's detail in an MCP Apps panel (fetches by orderId itself).",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "Order id."
+        }
+      ],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "show_order_list",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__show_order_list",
+      "description": "UI tool: renders the order list as cards (fetches itself).",
+      "params": [],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "show_product_detail",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__show_product_detail",
+      "description": "UI tool: renders one product's detail with images and variants (fetches by pid itself).",
+      "params": [
+        {
+          "name": "pid",
+          "type": "string",
+          "required": true,
+          "description": "Product id."
+        }
+      ],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "show_product_list",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__show_product_list",
+      "description": "UI tool: renders a product list as cards with search/paging (fetches by keyword itself).",
+      "params": [
+        {
+          "name": "keyword",
+          "type": "string",
+          "required": false,
+          "description": "Pre-filled keyword."
+        }
+      ],
+      "safety_class": "ui_widget",
+      "wraps_endpoint": null,
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    },
+    {
+      "name": "submit_order_to_cart",
+      "full_name": "mcp__d080152b-e4e5-4731-9af2-18cef266c850__submit_order_to_cart",
+      "description": "[Sensitive] From a created orderId runs addCart -> addCartConfirm -> saveGenerateParentOrder and returns a payment link.",
+      "params": [
+        {
+          "name": "orderId",
+          "type": "string",
+          "required": true,
+          "description": "CJ order ID from createOrderV2."
+        }
+      ],
+      "safety_class": "creates_order",
+      "wraps_endpoint": "addCart + addCartConfirm + saveGenerateParentOrder (internal step names per description)",
+      "safety_note": "Creates a payment order and link; does not itself debit funds.",
+      "called": false,
+      "call_result": "not called (forbidden)",
+      "response_fields": []
+    }
+  ]
+}

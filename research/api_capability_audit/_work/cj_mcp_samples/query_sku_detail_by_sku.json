@@ -1,0 +1,4 @@
+{
+  "_call": {"tool": "query_sku_detail_by_sku", "args": {"variantSku": "CJLX1504225"}, "retrieved": "2026-10-31", "note": "Private-inventory lookup. Bare empty array returned: no private stock for this SKU (CJLX1504225 is the SPU code, not a variant SKU). Wrapped under 'response'."},
+  "response": []
+}

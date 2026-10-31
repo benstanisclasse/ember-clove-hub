@@ -1,0 +1,38 @@
+{
+  "_call": {"tool": "calculate_freight", "args": {"startCountryCode": "CN", "endCountryCode": "US", "products": [{"vid": "1537624791082086400", "quantity": 1}]}, "retrieved": "2026-10-31", "note": "Bare JSON array of 29 options, wrapped under 'response' and trimmed to 3 chosen to cover the non-empty recommendation and clearance-fee fields. No ZIP was needed."},
+  "response": [
+    {
+      "logisticAging": "5-11", "logisticPrice": 5.27, "logisticPriceCn": 32.61, "logisticName": "LuWei Ordinary US",
+      "channelId": null, "error": null, "errorEn": null, "optionId": null, "postage": null, "postageCNY": null,
+      "priceIncreases": null, "reSort": null, "remoteFee": null, "remoteFeeCNY": null, "tip": null, "orderId": null,
+      "unWeightChargeTarget": null, "volumeWeight": null, "floatMaxPrice": null, "floatMinPrice": null,
+      "logisticsParamRespDTO": null, "message": null, "wrapPostage": null, "wrapPostageCNY": null, "wrapWeight": null,
+      "ruleTipTypes": null, "stopWords": null, "channel": null, "cjRespDTO": null, "destArea": null, "srcArea": null,
+      "option": null, "zonePrice": [], "allRuleTips": null, "ruleTips": null, "taxesFee": 0, "clearanceOperationFee": 0,
+      "recommendLogisticsTypeList": [1], "timePrioritySort": null, "pricePrioritySort": 0, "compositeRecommendSort": null,
+      "totalPostageFee": 5.27
+    },
+    {
+      "logisticAging": "4-7", "logisticPrice": 5.74, "logisticPriceCn": 35.57, "logisticName": "YunExpress Ordinary",
+      "channelId": null, "error": null, "errorEn": null, "optionId": null, "postage": null, "postageCNY": null,
+      "priceIncreases": null, "reSort": null, "remoteFee": null, "remoteFeeCNY": null, "tip": null, "orderId": null,
+      "unWeightChargeTarget": null, "volumeWeight": null, "floatMaxPrice": null, "floatMinPrice": null,
+      "logisticsParamRespDTO": null, "message": null, "wrapPostage": null, "wrapPostageCNY": null, "wrapWeight": null,
+      "ruleTipTypes": null, "stopWords": null, "channel": null, "cjRespDTO": null, "destArea": null, "srcArea": null,
+      "option": null, "zonePrice": [], "allRuleTips": null, "ruleTips": null, "taxesFee": 0, "clearanceOperationFee": 0,
+      "recommendLogisticsTypeList": [0, 2], "timePrioritySort": 0, "pricePrioritySort": null, "compositeRecommendSort": 0,
+      "totalPostageFee": 5.74
+    },
+    {
+      "logisticAging": "10-23", "logisticPrice": 5.29, "logisticPriceCn": 32.8, "logisticName": "CJPacket Eub Special Line",
+      "channelId": null, "error": null, "errorEn": null, "optionId": null, "postage": null, "postageCNY": null,
+      "priceIncreases": null, "reSort": null, "remoteFee": null, "remoteFeeCNY": null, "tip": null, "orderId": null,
+      "unWeightChargeTarget": null, "volumeWeight": null, "floatMaxPrice": null, "floatMinPrice": null,
+      "logisticsParamRespDTO": null, "message": null, "wrapPostage": null, "wrapPostageCNY": null, "wrapWeight": null,
+      "ruleTipTypes": null, "stopWords": null, "channel": null, "cjRespDTO": null, "destArea": null, "srcArea": null,
+      "option": null, "zonePrice": [], "allRuleTips": null, "ruleTips": null, "taxesFee": 0, "clearanceOperationFee": 0.46,
+      "recommendLogisticsTypeList": [], "timePrioritySort": null, "pricePrioritySort": null, "compositeRecommendSort": null,
+      "totalPostageFee": 5.75
+    }
+  ]
+}

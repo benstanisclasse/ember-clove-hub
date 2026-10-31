@@ -1,0 +1,42 @@
+{
+  "_call": {"tool": "get_my_products", "args": {"pageNum": 1, "pageSize": 3}, "retrieved": "2026-10-31", "note": "Account's saved 'My Products' list (catalogue data only, no personal fields; userId is null). 10 records total, first 3 shown."},
+  "pageSize": 3,
+  "pageNumber": 1,
+  "totalRecords": 10,
+  "totalPages": 4,
+  "content": [
+    {
+      "productId": "1537624790973034496", "userId": null, "packWeight": "24.00-35.00", "weight": "20.00-29.00", "productType": "0",
+      "propertyKeyList": ["COMMON"], "bigImage": "https://cf.cjdropshipping.com/14654b5b-d02a-43f7-94b0-81d8234e11f2.jpg",
+      "nameEn": "Barbed Wire Necklace", "sku": "CJLX1504225", "isPod": 0, "hasPacked": 0, "folderId": null, "createAt": 1793306133000,
+      "sellPrice": "6.29-8.29", "discountPrice": null, "discountPriceRate": null, "defaultArea": "China Warehouse",
+      "shopMethod": "CJPacket Ordinary", "trialCountry": "", "trialFreight": "", "totalPrice": "6.29-8.29", "listedShopNum": "0",
+      "listedShopIds": [], "vid": "1537624791082086400", "areaId": "1", "areaCountryCode": "CN", "freightDiscount": "0",
+      "lengthList": [110, 110], "heightList": [50, 50], "widthList": [110, 110], "volumeList": [605000, 605000],
+      "addMarkStatus": "0", "isSafeProduct": true, "hasVirPacked": 0,
+      "productUrl": "https://www.cjdropshipping.com/product/barbed-wire-necklace-p-1537624790973034496.html"
+    },
+    {
+      "productId": "2410181202161602100", "userId": null, "packWeight": "220.00-380.00", "weight": "190.00-350.00", "productType": "0",
+      "propertyKeyList": ["COMMON"], "bigImage": "https://cf.cjdropshipping.com/quick/product/f0640993-d6ac-49f1-8e67-691f35279e82.jpg",
+      "nameEn": "Casual Female Square Toe Flat Flyknit Loafers", "sku": "CJYD2164215", "isPod": 0, "hasPacked": 0, "folderId": [],
+      "createAt": 1793294134302, "sellPrice": "3.81", "discountPrice": null, "discountPriceRate": null, "defaultArea": "China Warehouse",
+      "shopMethod": "LuWei Ordinary US", "trialCountry": null, "trialFreight": "0", "totalPrice": "3.81", "listedShopNum": "0",
+      "listedShopIds": [], "vid": "2410181202161606100", "areaId": "1", "areaCountryCode": "CN", "freightDiscount": "0",
+      "lengthList": [300, 300], "heightList": [100, 100], "widthList": [200, 200], "volumeList": [6000000, 6000000],
+      "addMarkStatus": "0", "isSafeProduct": false, "hasVirPacked": 0,
+      "productUrl": "https://www.cjdropshipping.com/product/casual-female-square-toe-flat-flyknit-loafers-p-2410181202161602100.html"
+    },
+    {
+      "productId": "1702161107026186240", "userId": null, "packWeight": "320.00-350.00", "weight": "300.00-330.00", "productType": "0",
+      "propertyKeyList": ["Clothes"], "bigImage": "https://cf.cjdropshipping.com/512a9bc1-a2c1-4d5d-b2af-36345a1aebcf.jpg",
+      "nameEn": "Women Sexy Bodycon Party Dresses Backless Spaghetti Strap", "sku": "CJLY1846826", "isPod": 0, "hasPacked": 0,
+      "folderId": [], "createAt": 1793293962207, "sellPrice": "4.70-9.50", "discountPrice": null, "discountPriceRate": null,
+      "defaultArea": "China Warehouse", "shopMethod": "LuWei Ordinary US", "trialCountry": null, "trialFreight": "0",
+      "totalPrice": "4.70-9.50", "listedShopNum": "0", "listedShopIds": [], "vid": "1702161107344953344", "areaId": "1",
+      "areaCountryCode": "CN", "freightDiscount": "0", "lengthList": [300, 300], "heightList": [30, 30], "widthList": [200, 200],
+      "volumeList": [1800000, 1800000], "addMarkStatus": "0", "isSafeProduct": false, "hasVirPacked": 0,
+      "productUrl": "https://www.cjdropshipping.com/product/women-sexy-bodycon-party-dresses-backless-spaghetti-strap-p-1702161107026186240.html"
+    }
+  ]
+}
