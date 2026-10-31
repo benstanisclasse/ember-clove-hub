@@ -64,6 +64,9 @@ At $52.99 the dress is not over-priced by the course's rule; it is expensive to 
 - Offer A needs the owner's approval of the exact numbers.
 
 ## Queued, owner-approved, waiting for Ads Manager (Chrome)
+
+**Cancelled 2026-10-31:** the owner deactivated the TikTok ad account (refund of the balance). The barbed wire cut and the TikTok dress campaign will not happen on this account. Item 2 was done in Shopify after the closure: automatic discount ended, description line and the ec-sale-20 badge tag removed; cart = $34.95.
+
 1. Barbed wire cut to 3 ads (section 3).
 2. Necklace 20% (owner 2026-10-31: "End the 20% necklace discount once the TikTok ad promo is removed in Ads Manager,
    and remove the 20% line from the description at the same time."). Order: (a) in EC_TT_BarbedWire01, remove the
