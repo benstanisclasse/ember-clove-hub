@@ -1,0 +1,31 @@
+{
+  "cand": "F66",
+  "pid": "1415241116604829696",
+  "checked_at": "2026-11-01",
+  "variants": [
+    {"vid": "1415517461314408448", "variantSku": "CJJT121379301AZ", "variantKey": "Silver", "variantWeight": 5050.0, "variantSellPrice": 19.51}
+  ],
+  "inventory": [
+    {"vid": "1415517461314408448", "countryCode": "CN", "totalInventory": 24665, "cjInventory": 0, "factoryInventory": 24665, "verifiedWarehouse": 2}
+  ],
+  "freight": {
+    "vid": "1415517461314408448",
+    "origin": "CN",
+    "zip": "10001",
+    "methods": [
+      {"logisticName": "YunExpress Ordinary", "logisticAging": "4-7", "logisticPrice": 81.84, "totalPostageFee": 81.84, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sea", "logisticAging": "25-30", "logisticPrice": 82.98, "totalPostageFee": 82.98, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Ordinary", "logisticAging": "4-9", "logisticPrice": 86.73, "totalPostageFee": 86.73, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "YunExpress Sensitive", "logisticAging": "4-7", "logisticPrice": 99.35, "totalPostageFee": 99.35, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive", "logisticAging": "4-9", "logisticPrice": 94.21, "totalPostageFee": 94.21, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Fast Ordinary", "logisticAging": "4-6", "logisticPrice": 99.59, "totalPostageFee": 99.59, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "DHL Official", "logisticAging": "3-7", "logisticPrice": 117.29, "totalPostageFee": 117.29, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Ordinary Over Length", "logisticAging": "7-11", "logisticPrice": 124.4, "totalPostageFee": 124.4, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive Over Length", "logisticAging": "7-12", "logisticPrice": 135.64, "totalPostageFee": 135.64, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Ordinary Oversize Line", "logisticAging": "7-15", "logisticPrice": 139.35, "totalPostageFee": 139.35, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive Oversize Line", "logisticAging": "8-16", "logisticPrice": 139.35, "totalPostageFee": 139.35, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket USPS Remote", "logisticAging": "5-10", "logisticPrice": 182.93, "totalPostageFee": 182.93, "taxesFee": 0, "clearanceOperationFee": 0}
+    ]
+  },
+  "errors": []
+}

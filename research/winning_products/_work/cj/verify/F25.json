@@ -1,0 +1,31 @@
+{
+  "cand": "F25",
+  "pid": "2062097530837508098",
+  "checked_at": "2026-11-01",
+  "variants": [
+    {"vid": "2062097533861601281", "variantSku": "CJFU29202150001", "variantKey": "Blue", "variantWeight": 12247.0, "variantSellPrice": 76.15}
+  ],
+  "inventory": [
+    {"vid": "2062097533861601281", "countryCode": "US", "totalInventory": 121, "cjInventory": 121, "factoryInventory": 0, "verifiedWarehouse": 1}
+  ],
+  "freight": {
+    "vid": "2062097533861601281",
+    "origin": "US",
+    "zip": "10001",
+    "methods": [
+      {"logisticName": "USPS US to US #17", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #16", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #25", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "UPS US to US #26", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "USPS US to US #26", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "UPS US to US #75", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #75", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "USPS US to US #74", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "UPS US to US #77", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #90", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "UPS US to US #92", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "USPS US to US #89", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0}
+    ]
+  },
+  "errors": []
+}

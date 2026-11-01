@@ -1,0 +1,824 @@
+{
+  "cand": "F31",
+  "pid": "1851876495414153216",
+  "checked_at": "2026-11-01",
+  "variants": [
+    {
+      "vid": "1851876495502233600",
+      "variantSku": "CJDD217753301AZ",
+      "variantKey": "Default",
+      "variantWeight": 11950.0,
+      "variantSellPrice": 135.12
+    }
+  ],
+  "inventory": [
+    {
+      "vid": "1851876495502233600",
+      "countryCode": "US",
+      "totalInventory": 1055,
+      "cjInventory": 1055,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    }
+  ],
+  "freight": {
+    "vid": "1851876495502233600",
+    "origin": "US",
+    "zip": "10001",
+    "methods": [
+      {
+        "logisticName": "Fedex US to US #39",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #49",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #40",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #50",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #41",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #51",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #42",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #52",
+        "logisticAging": "1-3",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Ontrac US to US",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Amazon Logistic US to US",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "USPS US to US",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CEVA Logistics US to US",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #2",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #2",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Amazon Logistic US to US #2",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CEVA Logistics US to US #2",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #3",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #3",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CEVA Logistics US to US #3",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #4",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #4",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CEVA Logistics US to US #4",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #6",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #7",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #8",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #9",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #10",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #12",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #13",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #14",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #15",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #16",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #17",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #18",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #19",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #20",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #21",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #22",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #23",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #38",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #25",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #26",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #27",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #28",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #29",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #30",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #31",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #32",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #33",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #34",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #5",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #7",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #8",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #9",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #10",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #11",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #12",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #13",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #14",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #15",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #16",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #17",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #18",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #19",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #20",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #21",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #22",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #23",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #24",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #25",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #26",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #27",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #28",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #29",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #30",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #31",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #32",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #33",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #35",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #34",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #35",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #36",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #37",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #36",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "USPS US to US #2",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #38",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #39",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #40",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #41",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #42",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #43",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #44",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #45",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #46",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #47",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #48",
+        "logisticAging": "2-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #11",
+        "logisticAging": "2-6",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      }
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,97 @@
+{
+  "cand": "F07",
+  "kalo_pid": "1729385927539987210",
+  "kalo_name": "COSTWAY 26/20lbs Portable Washing Machine, Twin Tub Washing Machine w/Drain Pump, Semi Automatic Compact Washer & Sipnner, Portable Washer Dryer Combo for Apartments Dorms RV Camping,4th of july decor, dad gift",
+  "collected_at": "2026-11-01T15:36:00Z",
+  "searches": [
+    {
+      "keyword": "twin tub portable washing machine",
+      "n_results": 20,
+      "totalRecords": 6000,
+      "results": [
+        {"pid": "2054406978446073857", "name": "14lbs Portable Washing Machine With 9.5lbs Wash And 4.5lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Grey", "sku": "CJFU2885952", "sellPrice": "89.99", "listedNum": 6, "warehouseInventoryNum": 243, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "productType": "5"},
+        {"pid": "2054406944404557826", "name": "Grey28lbs Portable Washing Machine With 18lbs Wash And 10lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Grey", "sku": "CJFU2885949", "sellPrice": "135.55", "listedNum": 1, "warehouseInventoryNum": 170, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "productType": "5"},
+        {"pid": "2054406996733239298", "name": "14lbs Portable Washing Machine With 9.5lbs Wash And 4.5lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Blue", "sku": "CJFU2885954", "sellPrice": "89.99", "listedNum": 3, "warehouseInventoryNum": 244, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "productType": "5"},
+        {"pid": "2054406961240494082", "name": "28lbs Portable Washing Machine With 18lbs Wash And 10lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Blue", "sku": "CJFU2885951", "sellPrice": "135.55", "listedNum": 3, "warehouseInventoryNum": 352, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "productType": "5"},
+        {"pid": "2043613020753678338", "name": "Portable Washing Machine, 7.7 Pounds, Fully Automatic Compact Model, Stainless Steel Tub, 10 Washing Modes, LED Display Screen", "sku": "CJQX2830749", "sellPrice": "149.71", "listedNum": 18, "warehouseInventoryNum": 556, "totalVerifiedInventory": 556, "verifiedWarehouse": 1, "productType": "5", "addMarkStatus": 1},
+        {"pid": "2070400323985977345", "name": "20 Lbs Compact Twin Tub Washing Machine For Home Use", "sku": "CJFU2956458", "sellPrice": "161.99", "listedNum": 6, "warehouseInventoryNum": 4096, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "productType": "5", "addMarkStatus": 1},
+        {"pid": "2504291354131614000", "name": "Washing Machine Tub Cleaner Agent", "sku": "CJJT2365689", "sellPrice": "1.26", "listedNum": 2, "warehouseInventoryNum": 9195, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2606101100331609800", "name": "Washing Machine Tub Cleaning Powder", "sku": "CJJT2929182", "sellPrice": "1.74", "listedNum": 0, "warehouseInventoryNum": 5746, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "955537D6-DB24-4719-AAF2-B98A555C3B55", "name": "Washing Machine Tub Bomb Cleaner", "sku": "CJJZJYQX00033", "sellPrice": "0.16 -- 7.57", "listedNum": 1961, "warehouseInventoryNum": 255312, "totalVerifiedInventory": 143, "verifiedWarehouse": 1},
+        {"pid": "68BE8B81-1F1B-45C5-B027-A8C2A4439DD9", "name": "Washing Machine Tub Bomb Cleaner", "sku": "CJJJJTJT55498", "sellPrice": "0.06 -- 1.64", "listedNum": 46, "warehouseInventoryNum": 137605, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2606260126101602900", "name": "Washing Machine Tub Cleaner For Fully Automatic Drum-type Machines", "sku": "CJYD2955075", "sellPrice": "1.26", "listedNum": 2, "warehouseInventoryNum": 7366, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2603310204241615600", "name": "Washing Machine Tub Cleaning Effervescent Tablets", "sku": "CJYD2812423", "sellPrice": "0.71 -- 2.13", "listedNum": 7, "warehouseInventoryNum": 19760, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2113693510427930625", "name": "Washing Machine Cleaner, 12pcs, Clean the Washing Machine Tub, Cleaning Agent for Home Cleaning", "sku": "CJYS3337377", "sellPrice": "18.48", "listedNum": 0, "warehouseInventoryNum": 438, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2407150919271600400", "name": "Portable Household High-pressure Car Washing Machine Portable 220V Washing Machine", "sku": "CJYD2084521", "sellPrice": "29.52", "listedNum": 30, "warehouseInventoryNum": 24667, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "AABABF50-0208-4F35-9899-313022BF6DAB", "name": "Portable jewelry washing machine", "sku": "CJJJJTJT12352", "sellPrice": "1.34", "listedNum": 100, "warehouseInventoryNum": 10291, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2114452304750522370", "name": "JAKEHOE Washing Machine Tub Cleaning Powder, 100G, Washing Machine Cleaning, Cleaning Agent for Home Cleaning", "sku": "CJYS3483537", "sellPrice": "18.48", "listedNum": 0, "warehouseInventoryNum": 100, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2502030553131605200", "name": "Folding Washing Machine Portable Underwear Underwear Small Washing Machine", "sku": "CJYD2282630", "sellPrice": "11.28", "listedNum": 73, "warehouseInventoryNum": 117882, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2409240616191628400", "name": "Portable Mini Small Underwear Washing Underwear Washing Machine Portable", "sku": "CJYD2145769", "sellPrice": "9.95", "listedNum": 89, "warehouseInventoryNum": 75219, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2501120334571624800", "name": "Folding Washing Machine Automatic Washing Machine Integrated Portable Large Capacity", "sku": "CJYD2268436", "sellPrice": "15.75", "listedNum": 91, "warehouseInventoryNum": 63066, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "1592444468467347456", "name": "Portable Turbine Mini Washing Machine", "sku": "CJJT1613158", "sellPrice": "4.89 -- 7.53", "listedNum": 433, "warehouseInventoryNum": 33751, "totalVerifiedInventory": 0, "verifiedWarehouse": 2}
+      ]
+    }
+  ],
+  "considered": [
+    {"cj_pid": "2054406961240494082", "cj_name": "28lbs Portable Washing Machine With 18lbs Wash And 10lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Blue", "score": 2, "reason": "Same function and form: semi-automatic twin tub washer + spinner with drain pump, 28lbs total (18 wash / 10 spin) vs Kalodata 26lbs; translucent lids, timers. Highest stock of the 28lbs listings (352, US warehouse). Chosen."},
+    {"cj_pid": "2070400323985977345", "cj_name": "20 Lbs Compact Twin Tub Washing Machine For Home Use", "score": 2, "reason": "Twin tub with drain tube, matches the 20lbs size of the Kalodata listing; but higher price (161.99), placeholder dimensions 1000x1000x1000 and no drain pump stated. Not chosen."},
+    {"cj_pid": "2054406944404557826", "cj_name": "Grey28lbs Portable Washing Machine ... Twin Tub Washer Compact Machine With Drain Pump ... Grey", "score": null, "reason": "Grey colour listing of the chosen product; not opened (lower stock 170)."}
+  ],
+  "match": {
+    "cj_pid": "2054406961240494082",
+    "cj_name": "28lbs Portable Washing Machine With 18lbs Wash And 10lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Blue",
+    "cj_sku": "CJFU2885951",
+    "score": 2,
+    "branded_cap": false,
+    "note": "Generic twin tub portable washer/spinner with drain pump, 28lbs (18+10) versus Costway 26lbs; same function, form and use case. Differs in brand, colour (blue) and slightly higher capacity; supplier-shipped from US warehouse."
+  },
+  "detail": {
+    "productNameEn": "28lbs Portable Washing Machine With 18lbs Wash And 10lbs Spin, Twin Tub Washer Compact Machine With Drain Pump, Mini Portable Washer For Home, Camping, RVs, And Small Spaces, Blue",
+    "productSku": "CJFU2885951",
+    "productType": "SUPPLIER_SHIPPED_PRODUCT",
+    "categoryName": "Home, Garden & Furniture / Home Storage / Furniture",
+    "material": "[\"Others\"]",
+    "packing": "[\"Carton\"]",
+    "productWeight": "17900",
+    "packingWeight": "17900",
+    "listedNum": 3,
+    "sellPrice": "135.55",
+    "suggestSellPrice": "464.94",
+    "supplierName": "NINGBO MISSINTERESTING IMPORT AND EXPORT Co.,Ltd",
+    "description_excerpt": "\n <p><em>【Twin Tub Design】With double cylinder washing design, the spinning function and washing function are combined into one, which is convenient for you to move the washed clothes directly to the spinning cylinder.Translucent covers allow you to inspect your clothes at a glance. 【Easy operation】There are 3 washing modes (gentle/normal/drain)"
+  },
+  "variants": [
+    {"vid": "2054406961374711810", "variantSku": "CJFU28859510001", "variantKey": "Default", "variantNameEn": "", "variantWeight": 17900.0, "variantLength": 695, "variantWidth": 445, "variantHeight": 860, "variantSellPrice": 135.55, "variantSugSellPrice": 135.55}
+  ],
+  "inventory": [
+    {"vid": "2054406961374711810", "countryCode": "US", "totalInventory": 352, "cjInventory": 352, "factoryInventory": 0, "verifiedWarehouse": 1}
+  ],
+  "freight": [
+    {"vid": "2054406961374711810", "which": "heaviest", "origin": "CN", "zip": "10001", "methods": []},
+    {"vid": "2054406961374711810", "which": "heaviest", "origin": "CN", "zip": "60601", "methods": []},
+    {"vid": "2054406961374711810", "which": "heaviest", "origin": "CN", "zip": "90001", "methods": []},
+    {"vid": "2054406961374711810", "which": "heaviest", "origin": "US", "zip": "10001", "methods": [
+      {"logisticName": "Fedex US to US", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #3", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #4", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #5", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null}
+    ]},
+    {"vid": "2054406961374711810", "which": "heaviest", "origin": "US", "zip": "60601", "methods": [
+      {"logisticName": "Fedex US to US", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #3", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #4", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #5", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null}
+    ]},
+    {"vid": "2054406961374711810", "which": "heaviest", "origin": "US", "zip": "90001", "methods": [
+      {"logisticName": "Fedex US to US", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #3", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #4", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null},
+      {"logisticName": "Fedex US to US #5", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0, "remoteFee": null, "error": null, "errorEn": null}
+    ]}
+  ],
+  "errors": [
+    "get_product_inventory pid=2054406961240494082: first attempt Too Many Requests (requestId 433d8e61cb1749f5b7ff8ad1be1def92); retry succeeded",
+    "calculate_freight CN 10001: first attempt Too Many Requests (requestId 5e7c4c8223494d8c9b68e7ec8c4d293b); retry succeeded (returned [])",
+    "note: CN-origin freight returned an empty list for all three zips (product has US stock only); variantSugSellPrice from get_product_variants is 135.55 while get_product_detail shows 464.94"
+  ]
+}

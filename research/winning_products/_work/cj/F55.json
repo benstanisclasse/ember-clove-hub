@@ -1,0 +1,65 @@
+{
+  "cand": "F55",
+  "kalo_pid": "1732207310717948380",
+  "kalo_name": "Naturalizer Womens Tansy Other - Medium & Wide Width",
+  "collected_at": "2026-11-01T00:00:00Z",
+  "searches": [
+    {
+      "keyword": "women comfort loafer flats wide width",
+      "n_results": 20,
+      "totalRecords": 6000,
+      "results": [
+        {"pid": "1686220706017071104", "name": "Women Loafers Shoes Soft Leather Flats", "sku": "CJNS1812253", "sellPrice": "10.14", "listedNum": 368, "warehouseInventoryNum": 346009, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1562247702674034688", "name": "Tassel Flats Loafers Women Casual Cozy Shoes", "sku": "CJNS1548423", "sellPrice": "7.35", "listedNum": 201, "warehouseInventoryNum": 944370, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2083070148676284418", "name": "Women Bow Decor Round Toe Ballet Flats, Comfort Slip-on Loafers, Casual Shallow Mouth Shoes", "sku": "CJNS3023807", "sellPrice": "8.50", "listedNum": 7, "warehouseInventoryNum": 139566, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1607560871445155840", "name": "Loafers Women Flowers Embroidery Shoes Breathable Mesh Flats", "sku": "CJNS1650385", "sellPrice": "5.97", "listedNum": 221, "warehouseInventoryNum": 291447, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1603260008635453440", "name": "Zip Flats Shoes Comfortable Non Slip Loafers Women", "sku": "CJNS1638600", "sellPrice": "6.33", "listedNum": 173, "warehouseInventoryNum": 327176, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2112720938785275906", "name": "Spring Autumn Retro Simple Soft Soled Women's Flats And Loafers 2026 Fashion Solid Shallow Comfort Women Shoes", "sku": "CJNS3293908", "sellPrice": "5.30", "listedNum": 3, "warehouseInventoryNum": 133732, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2089254612196950017", "name": "Women's 2026 British Platform Loafers, Versatile Comfort Slip On Black Work Loafer Shoes", "sku": "CJNS3068724", "sellPrice": "11.50", "listedNum": 6, "warehouseInventoryNum": 40159, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1561902338347520000", "name": "Women Loafers Hollow Out Breathable Anti Slip Flats Shoes", "sku": "CJNS1548222", "sellPrice": "5.09", "listedNum": 147, "warehouseInventoryNum": 562861, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1625399685869883392", "name": "Women Flats Shoes Breathable Mesh Shoes Summer Light Loafers", "sku": "CJNS1683943", "sellPrice": "3.26", "listedNum": 242, "warehouseInventoryNum": 426483, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1809234173925150720", "name": "Fashion Bowknot Flats Shoes Women Casual Solid Loafers Cozy Shoes", "sku": "CJNS2076627", "sellPrice": "3.18", "listedNum": 403, "warehouseInventoryNum": 358915, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2508050953181612300", "name": "Casual One Pedal Loafer Tassel Shallow Mouth Loafers For Women", "sku": "CJYD2448360", "sellPrice": "4.71", "listedNum": 87, "warehouseInventoryNum": 101252, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2113896490355720194", "name": "Casual Loafers For Women Spring New Soft-Soled Metal Export Flats Flats Lazy Bean Shoes", "sku": "CJNS3367459", "sellPrice": "4.50 -- 4.70", "listedNum": 4, "warehouseInventoryNum": 504073, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1812473652039274496", "name": "Fashion Colorblock Flats Shoes Flying Woven Breathable Cozy Loafers For Women", "sku": "CJNS2083830", "sellPrice": "3.98", "listedNum": 238, "warehouseInventoryNum": 299142, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1772947567756718080", "name": "New Print Flats Shoes Summer Spring Casual Canvas Loafers For Women", "sku": "CJYD1997649", "sellPrice": "4.59", "listedNum": 232, "warehouseInventoryNum": 404079, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2082732348353413122", "name": "Women Gentle Minimalist Double Rhinestone Pearl Strap Flats,  Matching Casual Daily  Loafer Slippers", "sku": "CJNS3019747", "sellPrice": "7.00", "listedNum": 5, "warehouseInventoryNum": 77497, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2506070253101603100", "name": "Bow Knitted Loafers Ins Fashion Pointed-toed Flats Shoes For Women", "sku": "CJYD2394928", "sellPrice": "3.88", "listedNum": 328, "warehouseInventoryNum": 360823, "totalVerifiedInventory": 337, "verifiedWarehouse": 1, "addMarkStatus": 0},
+        {"pid": "1593810655168180224", "name": "Vintage Soft Leather Slip-On Square Toe Loafer Flats", "sku": "CJNS1616005", "sellPrice": "21.56", "listedNum": 58, "warehouseInventoryNum": 228778, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "2509080758151605400", "name": "Ins Cross-straped Denim Loafers Fashion Lightweight Comfortable Flats Shoes For Women", "sku": "CJYD2494353", "sellPrice": "3.71", "listedNum": 126, "warehouseInventoryNum": 175081, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "D04AF867-2DD6-471D-9A00-AC39694BEEA1", "name": "Women Flats Bowtie Loafers Shoes Women Ballet Flats Pointed Toe Shoes Patent Leather Elegant Low Heels On Flat Shoes Woman", "sku": "CJBHNSNS03472", "sellPrice": "8.25", "listedNum": 272, "warehouseInventoryNum": 150691, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0},
+        {"pid": "1809231820559896576", "name": "Bowknot Flats Shoes Fashion Casual Pointed Toe Loafers For Women Lazy Shoes", "sku": "CJNS2076624", "sellPrice": "3.62", "listedNum": 170, "warehouseInventoryNum": 335165, "totalVerifiedInventory": 0, "verifiedWarehouse": 2, "addMarkStatus": 0}
+      ]
+    }
+  ],
+  "considered": [
+    {"cj_pid": "1686220706017071104", "cj_name": "Women Loafers Shoes Soft Leather Flats", "score": 1, "reason": "Chosen as closest generic substitute: women's soft comfort flat (microfiber upper, beef-tendon sole, sizes 35-43, black/brown/beige, 1 pair). The Kalodata item is a branded Naturalizer model ('Tansy', style not described in the title) offered in medium and wide widths; CJ offers no wide widths and only imitates the category, so capped at 1."}
+  ],
+  "match": {
+    "cj_pid": "1686220706017071104",
+    "cj_name": "Women Loafers Shoes Soft Leather Flats",
+    "cj_sku": "CJNS1812253",
+    "score": 1,
+    "branded_cap": true,
+    "note": "Same broad function (women's comfort flat shoe). Kalodata item is a branded Naturalizer design with medium/wide widths and an unspecified silhouette; CJ item is a generic microfiber flat in EU sizes, no width options."
+  },
+  "detail": {
+    "productNameEn": "Women Loafers Shoes Soft Leather Flats",
+    "productSku": "CJNS1812253",
+    "categoryName": "Bags & Shoes/Women's Shoes/Flats",
+    "material": "[\"Leather\"]",
+    "packing": "[\"Plastic bags\"]",
+    "productWeight": "550-590",
+    "packingWeight": "550-590",
+    "listedNum": 368,
+    "sellPrice": "10.14",
+    "suggestSellPrice": "55.98",
+    "productType": "SUPPLIER_PRODUCT",
+    "supplierName": "VickyLei",
+    "description_excerpt": "<p><b>Product information:</b><br/></p><p>Popular elements: car suture<br/>Toe shape: round head<br/>Upper Material: Microfiber<br/>Cortical features: shaved<br/>Heel Height: Flat Heel<br/>Sole material: beef tendon<br/>Inner material: imitation leather<br/>Upper height: low top<br/>Heel shape: flat heel<br/>Sole process: sewing shoes<br/>Way of wearing: front tie</p>"
+  },
+  "variants": [],
+  "inventory": [],
+  "freight": [],
+  "errors": []
+}

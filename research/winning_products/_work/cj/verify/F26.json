@@ -1,0 +1,28 @@
+{
+  "cand": "F26",
+  "pid": "2100027114166009857",
+  "checked_at": "2026-11-01",
+  "variants": [
+    {"vid": "2100027114694492161", "variantSku": "CJNS31675000001", "variantKey": "Green", "variantWeight": 8500.0, "variantSellPrice": 42.58}
+  ],
+  "inventory": [
+    {"vid": "2100027114694492161", "countryCode": "US", "totalInventory": 230, "cjInventory": 230, "factoryInventory": 0, "verifiedWarehouse": 1},
+    {"vid": "2100027114694492161", "countryCode": "CA", "totalInventory": 230, "cjInventory": 230, "factoryInventory": 0, "verifiedWarehouse": 1}
+  ],
+  "freight": {
+    "vid": "2100027114694492161",
+    "origin": "US",
+    "zip": "10001",
+    "methods": [
+      {"logisticName": "USPS US to US #7", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #11", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "UPS US to US #7", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Yunexpress US to US #3", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "GOFO US to US #3", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Uniuni US to US #2", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "DHL US to US #5", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Amazon Logistic US to US #4", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0}
+    ]
+  },
+  "errors": []
+}

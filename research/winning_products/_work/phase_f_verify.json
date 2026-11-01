@@ -1,0 +1,97 @@
+{
+ "checked": 7,
+ "passed": 7,
+ "items": {
+  "F07": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    4,
+    4
+   ],
+   "pass": true
+  },
+  "F14": {
+   "issues": [],
+   "variants_old_new": [
+    16,
+    16
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    28,
+    28
+   ],
+   "pass": true
+  },
+  "F25": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    12,
+    12
+   ],
+   "pass": true
+  },
+  "F26": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    8,
+    8
+   ],
+   "pass": true
+  },
+  "F31": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    99,
+    99
+   ],
+   "pass": true
+  },
+  "F49": {
+   "issues": [],
+   "variants_old_new": [
+    3,
+    3
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    28,
+    28
+   ],
+   "pass": true
+  },
+  "F66": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    12,
+    12
+   ],
+   "pass": true
+  }
+ }
+}

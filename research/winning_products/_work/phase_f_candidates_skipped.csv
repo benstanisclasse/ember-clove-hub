@@ -1,0 +1,22 @@
+pool,cat_name,pid,name,why
+A,Kitchenware,1731760747491267565,"50-Pack Ready Multi-Size Disposable Round Plastic Iced Coffee & 12-32oz Smoothie Cups Bulk Pack - See Drink Level, Includes Lid & Straw, Simplifies Restocking, Ideal for Home Use",excluded term: Coffee
+A,Kitchenware,1729409004822696061,"Ultrean Stainless Steel Digital Kitchen Scale - 11lb Capacity, 3g/1g Precision, 8.3*6.1*0.6 in, 6-Unit Conversion, Tare Function, Auto-Off, Backlit, 4 High-Precision Sensors, Alkaline Batteries Included, for Baking & Meal Prep, Household Kitchen Scales",ASP 10.65 < 15.0
+A,Kitchenware,1729538559757947170,"BrüMate Müv 100% Leakproof Insulated Coffee & Travel Mug | 15oz, 25oz, 35oz Sizes | Comfort Grip Handle | Built-in Silicone Sleeve and Cup Holder Friendly (on 25oz & 35oz Sizes)",excluded term: Coffee
+A,Pet Supplies,1729385148775830006,Mighty Paw Yak Cheese Dog Chews: All-Natural Treats for Your Pup,ASP 14.13 < 15.0
+A,Baby & Maternity,1731233069725881319,"Momcozy KleanPal Pro Baby Bottle Washer & Momcozy Official Washing Block for Momcozy KleanPal Pro Baby Bottle Washer, 120 Tablets-B",excluded term: Tablets
+A,Health,1729443340259136359,"Lemme Purr Gummies - Vaginal Probiotic for Women - Balanced pH, Healthy Odor, Yeast Balance & Flora Support - Tasty Pineapple (60 Count)",excluded term: Gummies
+A,Health,1729469892331475499,"Rainbow Nutrients 24-in-1 Advanced Hair Growth Supplement with Biotin 10,000 mcg, Collagen & Saw Palmetto, Supports Hair Loss, Fuller Hair, Skin & Nails, 60-Day Supply",excluded term: Supplement
+A,Health,1729407546684576134,"L-Methylfolate 15mg + B12 Pro Strength, Liquid 5-MTHF Form, Supports Mood, Methylation, & Cognition Supplement Energy Levels Vitamin Methylcobalamin",excluded term: Supplement
+A,Health,1729433051068339194,"OxyShred Ultra Pre-Workout Energy Powder - Energy Boost, Focus & Workout Performance Support - 150mg Caffeine - Zero Sugar & Vegan - Daily Pre-Workout Drink for Adults",excluded term: Drink
+A,Health,1729465781365085154,Ultimate Men's Health Bundle - Snap Supplements - Nitric Oxide Booster 60ct + Prostate Health Bundle - Natural Supplement Capsules - Support Blood Circulation & Prostate Health,excluded term: Supplements
+A,Health,1729735865011180175,"Pure NMN Powder (Nicotinamide Mononucleotide) NAD+ 6 Month Jar Supplement for Energy, Focus, Mitochondrial Health Brain Booster Fitness",excluded term: Supplement
+A,Health,1730036046960432059,"Bloom Nutrition Creatine Monohydrate Powder (40 Servings) - Supports Energy, Cognitive Health, Hydration & Post Workout Muscle Recovery - Creatine for Women",excluded term: Creatine
+A,Health,1729408245971653630,"RYSE Loaded Protein Powder - 25g Whey Protein Isolate & Concentrate with Prebiotic Fiber & MCTs - Low Carb, Low Sugar, Digestive-Friendly",excluded term: Protein Powder
+A,Jewelry Accessories & Derivatives,1731381415047172621,"Aprilery Initial Personalized DIY A-Z Letter Cable Cuff Jewelry - 2-Tone Open Bangle, Braided Bracelets, Letter Link Bracelet, Accessories for Women, Personalized Gift for Mother",ASP 9.06 < 15.0
+B,Home Supplies,1732628193326502318,"3-in-1 Travel Underwear Storage Bag | Bra Panties Socks Organizer Pouch, Waterproof Portable Underwear Storage Bag, Ideal for Daily Use, Trips and Business Travel",ASP 8.01 < 15.0
+B,Home Supplies,1732529862317740048,FlyCleanse Toilet Fragrance Cleaning Block—Powerful Stain Removal—Eliminates Odors and Leaves a Long-Lasting Scent,ASP 13.29 < 15.0
+B,Household Appliances,1731781795575337927,Nespresso Vertuo Next Coffee/Espresso Maker w Frother & Voucher,excluded term: Coffee
+B,Phones & Electronics,1732621916972422035,"Fitness Tracker with Silent Alarm, Waterproof Band, Step Counter, Built-in USB Plug - No Cables Needed, Ideal for Gym & Travel #SmartWatch #LifeHack",ASP 12.00 < 15.0
+B,Health,1732127020211933284,"Advanced Digestive Enzymes Prebiotic, Probiotic, & Postbiotic Supplement by Purity Products - 1.5B CFUs, Plant-Based, Anti Bloat Digestive Nutritional Supplements for Bloated Stomach Relief, Gut Support - 60 Veggie Caps, 2-Month Supply",excluded term: Probiotic
+B,Kids' Fashion,1732592625651257611,Just a Who Loves Monster Trucks and Dinosaurs Cool Creative Trendy Casual Graphic Print TShirt Tee Top Apparel Clothing,ASP 8.76 < 15.0
+B,Kids' Fashion,1732315067103089405,"1 Pair Kids Shoes Soft Sole with Magic Tape & Flat Bottom, Breathable Mesh Lining, Anti-Slip Wear-Resistant, Suitable for Daily Wear",ASP 14.32 < 15.0

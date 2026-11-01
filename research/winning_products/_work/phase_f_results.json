@@ -1,0 +1,224 @@
+{
+ "plan": "registry/PHASE_F_PLAN.md",
+ "n_candidates": 72,
+ "H-F1_overall": {
+  "Feasible": {
+   "n": 2,
+   "share": 0.028,
+   "wilson95": [
+    0.008,
+    0.096
+   ]
+  },
+  "Marginal": {
+   "n": 5,
+   "share": 0.069,
+   "wilson95": [
+    0.03,
+    0.152
+   ]
+  },
+  "Not viable": {
+   "n": 19,
+   "share": 0.264,
+   "wilson95": [
+    0.176,
+    0.376
+   ]
+  },
+  "Not sourceable": {
+   "n": 44,
+   "share": 0.611,
+   "wilson95": [
+    0.496,
+    0.715
+   ]
+  },
+  "Ineligible": {
+   "n": 2,
+   "share": 0.028,
+   "wilson95": [
+    0.008,
+    0.096
+   ]
+  },
+  "Not collected": {
+   "n": 0,
+   "share": 0.0,
+   "wilson95": [
+    0.0,
+    0.051
+   ]
+  }
+ },
+ "by_pool": {
+  "A": {
+   "Feasible": 1,
+   "Ineligible": 2,
+   "Marginal": 4,
+   "Not sourceable": 28,
+   "Not viable": 13
+  },
+  "B": {
+   "Feasible": 1,
+   "Ineligible": 0,
+   "Marginal": 1,
+   "Not sourceable": 16,
+   "Not viable": 6
+  }
+ },
+ "by_category": {
+  "Automotive & Motorcycle": {
+   "Not sourceable": "1",
+   "Marginal": "1",
+   "Not viable": "1"
+  },
+  "Baby & Maternity": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Beauty & Personal Care": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Computers & Office Equipment": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Fashion Accessories": {
+   "Not sourceable": "3"
+  },
+  "Furniture": {
+   "Not sourceable": "3"
+  },
+  "Health": {
+   "Ineligible": "2",
+   "Not sourceable": "1"
+  },
+  "Home Improvement": {
+   "Not sourceable": "3"
+  },
+  "Home Supplies": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Household Appliances": {
+   "Not viable": "2",
+   "Not sourceable": "1"
+  },
+  "Jewelry Accessories & Derivatives": {
+   "Not sourceable": "3"
+  },
+  "Kids' Fashion": {
+   "Not sourceable": "3"
+  },
+  "Kitchenware": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Luggage & Bags": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Menswear & Underwear": {
+   "Not viable": "2",
+   "Not sourceable": "1"
+  },
+  "Muslim Fashion": {
+   "Not viable": "2",
+   "Marginal": "1"
+  },
+  "Pet Supplies": {
+   "Not sourceable": "3"
+  },
+  "Phones & Electronics": {
+   "Not sourceable": "2",
+   "Not viable": "1"
+  },
+  "Shoes": {
+   "Not viable": "1",
+   "Marginal": "1",
+   "Not sourceable": "1"
+  },
+  "Sports & Outdoor": {
+   "Not viable": "2",
+   "Not sourceable": "1"
+  },
+  "Textiles & Soft Furnishings": {
+   "Not sourceable": "2",
+   "Marginal": "1"
+  },
+  "Tools & Hardware": {
+   "Not viable": "2",
+   "Not sourceable": "1"
+  },
+  "Toys & Hobbies": {
+   "Not sourceable": "2",
+   "Feasible": "1"
+  },
+  "Womenswear & Underwear": {
+   "Marginal": "1",
+   "Feasible": "1",
+   "Not sourceable": "1"
+  }
+ },
+ "match_scores": {
+  "1.0": 36,
+  "2.0": 31,
+  "0.0": 3,
+  "nan": 2
+ },
+ "fulfilment": {
+  "Medium": 17,
+  "High": 9,
+  "Low": 5
+ },
+ "Q1_asp": {
+  "spearman_asp_cba": 0.091,
+  "p": 0.6574,
+  "feasible_share_by_tercile": {
+   "low": 0.111,
+   "mid": 0.0,
+   "high": 0.111
+  },
+  "asp_tercile_edges": [
+   18.43,
+   31.7,
+   56.8,
+   162.93
+  ]
+ },
+ "Q2_pool": {
+  "A": {
+   "n": 48,
+   "feasible": 1,
+   "feasible_or_marginal": 5
+  },
+  "B": {
+   "n": 24,
+   "feasible": 1,
+   "feasible_or_marginal": 2
+  }
+ },
+ "Q3_cost_ratio_vs_match": {
+  "testable": false,
+  "n_with_cost": 31,
+  "note": "variants (and so CJ cost) were collected only for score-2 matches, so cost/ASP can't be compared across scores"
+ },
+ "Q4_variant_spread": {
+  "median_cba_spread": 0.0,
+  "share_cheapest_overstates_by_gt2": 0.038,
+  "n": 26
+ },
+ "Q5_us_stock": {
+  "share_with_us_stock": 0.346,
+  "median_origin_used": {
+   "CN": 17,
+   "US": 9
+  },
+  "variant_ship_base_median": {
+   "US": 0.0,
+   "CN": 11.41
+  }
+ }
+}

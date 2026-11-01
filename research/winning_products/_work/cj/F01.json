@@ -1,0 +1,68 @@
+{
+  "cand": "F01",
+  "kalo_pid": "1729398962080093028",
+  "kalo_name": "Laundry Sauce Premium Laundry Detergent Pods:  Ultimate Deep Clean & Fragrance Boost, Concentrated Formula for Tough Odor & Stain Removal, High-End, Luxury Laundry Pods",
+  "collected_at": "2026-11-01T15:29:46Z",
+  "searches": [
+    {
+      "keyword": "laundry detergent pods",
+      "n_results": 20,
+      "totalRecords": 1480,
+      "results": [
+        {"pid": "2605220500101629100", "name": "Powerful Laundry Detergent Pods", "sku": "CJJT2899961", "sellPrice": "1.93", "listedNum": 3, "warehouseInventoryNum": 9714, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2604240903531638800", "name": "Laundry Detergent Pods For Clean And Antibacterial Washing", "sku": "CJYD2853637", "sellPrice": "3.34", "listedNum": 3, "warehouseInventoryNum": 7191, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2610060708211622000", "name": "3-in-1 Antibacterial Mite-Removing And Fragrance-Lasting Laundry Detergent Pods", "sku": "CJYD3225661", "sellPrice": "5.25", "listedNum": 0, "warehouseInventoryNum": 53533, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2610220608231620400", "name": "5-in-1 Laundry Detergent Pods With Long-lasting Fragrance And Powerful Stain Removal", "sku": "CJYD3313763", "sellPrice": "0.88 -- 1.83", "listedNum": 0, "warehouseInventoryNum": 44765, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2605300354091639200", "name": "Laundry Detergent", "sku": "CJJT2915594", "sellPrice": "1.74", "listedNum": 2, "warehouseInventoryNum": 7765, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2508121448031613700", "name": "Laundry Detergent Sheets", "sku": "CJJT2454525", "sellPrice": "1.74", "listedNum": 21, "warehouseInventoryNum": 7183, "totalVerifiedInventory": 1, "verifiedWarehouse": 1},
+        {"pid": "2507231541431600100", "name": "Laundry Detergent Sheet", "sku": "CJJT2438057", "sellPrice": "1.36", "listedNum": 6, "warehouseInventoryNum": 7316, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2607301244291618200", "name": "Laundry Detergent Sheets", "sku": "CJJT3022377", "sellPrice": "1.80", "listedNum": 2, "warehouseInventoryNum": 8594, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2078305715055071234", "name": "2-Piece Laundry Detergent Storage Set, 1.5L Laundry Detergent Storage Box For Powder, Durable PET Laundry Detergent Container, Liquid Laundry Detergent Dispenser", "sku": "CJCC2992060", "sellPrice": "7.35", "listedNum": 3, "warehouseInventoryNum": 7, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2506070432141619900", "name": "Perfect Color Care Laundry Pods", "sku": "CJJT2395002", "sellPrice": "1.76", "listedNum": 18, "warehouseInventoryNum": 7780, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "1549963217722683392", "name": "New Formula Laundry Detergent", "sku": "CJJT1529022", "sellPrice": "0.02 -- 0.60", "listedNum": 117, "warehouseInventoryNum": 105110, "totalVerifiedInventory": 8, "verifiedWarehouse": 1},
+        {"pid": "1775825558077710336", "name": "Active Enzyme Laundry Detergent", "sku": "CJJT2003522", "sellPrice": "0.80", "listedNum": 46, "warehouseInventoryNum": 10013, "totalVerifiedInventory": 2, "verifiedWarehouse": 1},
+        {"pid": "1775827017452228608", "name": "Active Enzyme Laundry Detergent", "sku": "CJJT2003527", "sellPrice": "0.80", "listedNum": 23, "warehouseInventoryNum": 10134, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2410290427511609800", "name": "High Efficiency Laundry Active Enzyme Laundry Detergent", "sku": "CJJT2174779", "sellPrice": "1.00", "listedNum": 13, "warehouseInventoryNum": 14301, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2504290246091628200", "name": "Particle Forest Pet Laundry Detergent", "sku": "CJYD2364974", "sellPrice": "1.74 -- 6.30", "listedNum": 18, "warehouseInventoryNum": 62423, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2504030630071621100", "name": "Color-safe Bleach Laundry Detergent", "sku": "CJJT2344564", "sellPrice": "1.55", "listedNum": 5, "warehouseInventoryNum": 7781, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "1782301046530908160", "name": "Plant Laundry Detergent Deep Cleaning", "sku": "CJYD2017122", "sellPrice": "6.09 -- 10.66", "listedNum": 24, "warehouseInventoryNum": 38262, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "2504050645191613900", "name": "Color-safe Bleach Laundry Detergent", "sku": "CJJT2346126", "sellPrice": "1.55", "listedNum": 8, "warehouseInventoryNum": 8152, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "1646836108598194176", "name": "Degreasing And Degreasing Laundry Detergent", "sku": "CJJT1734593", "sellPrice": "0.92", "listedNum": 44, "warehouseInventoryNum": 10863, "totalVerifiedInventory": 0, "verifiedWarehouse": 2},
+        {"pid": "1650380567751430144", "name": "500ml Special Laundry Detergent For Underwear", "sku": "CJYS1743011", "sellPrice": "1.41", "listedNum": 37, "warehouseInventoryNum": 10582, "totalVerifiedInventory": 0, "verifiedWarehouse": 2}
+      ]
+    }
+  ],
+  "considered": [
+    {"cj_pid": "2610220608231620400", "cj_name": "5-in-1 Laundry Detergent Pods With Long-lasting Fragrance And Powerful Stain Removal", "score": null, "reason": "get_product_detail failed twice with rate-limit error (QPS); not evaluated."},
+    {"cj_pid": "2610060708211622000", "cj_name": "3-in-1 Antibacterial Mite-Removing And Fragrance-Lasting Laundry Detergent Pods", "score": 1, "reason": "Same function and form (fragranced concentrated pods, 15 g x 30 per box, 7 scents). But Laundry Sauce is a brand's own premium/luxury fragrance formula; CJ item is a generic Chinese-market pod with Chinese-branded box and plastic-bag packing, so a different quality tier/branded design. Chosen as best available."},
+    {"cj_pid": "2605220500101629100", "cj_name": "Powerful Laundry Detergent Pods", "score": 1, "reason": "Generic pods, only 10 pieces per pack, no fragrance positioning; weaker match than 2610060708211622000."}
+  ],
+  "match": {
+    "cj_pid": "2610060708211622000",
+    "cj_name": "3-in-1 Antibacterial Mite-Removing And Fragrance-Lasting Laundry Detergent Pods",
+    "cj_sku": "CJYD3225661",
+    "score": 1,
+    "branded_cap": true,
+    "note": "Fragrance-focused concentrated laundry pods, 30 pods per box in 7 scents, same function and form. Differs in being a generic Chinese-market formula versus Laundry Sauce's branded luxury fragrance formula, so capped at 1."
+  },
+  "detail": {
+    "productNameEn": "3-in-1 Antibacterial Mite-Removing And Fragrance-Lasting Laundry Detergent Pods",
+    "productSku": "CJYD3225661",
+    "categoryName": "Home, Garden & Furniture > Home Storage > Home Office Storage",
+    "material": "[\"Others\"]",
+    "packing": "[\"Plastic bags\"]",
+    "productWeight": "500.00",
+    "packingWeight": "550.00",
+    "listedNum": 0,
+    "sellPrice": "5.25",
+    "suggestSellPrice": "39.27",
+    "description_excerpt": "<p><b>Product information:</b><br/>Advantages: Deep cleansing, color protection, low suds and easy rinsing, low viscosity and quick dissolution<br/> Specification: 15 g<br/> Color options: Xinxiangyunxi Chunxi 15 g × 30 tablets per box, Zhongxia Meng 15 g × 30 tablets per box, Qingqiuye Yu 15 g × 30 tablets per box"
+  },
+  "variants": [],
+  "inventory": [],
+  "freight": [],
+  "errors": [
+    "get_product_detail pid=2610220608231620400: Too Many Requests, QPS limit is 1 time/1second (requestId c322b16d58e74689b6d56cbbd26b7a59); retry also failed (requestId 23e47539dcf64cfe8c22214281a7f3d9)",
+    "search_products keyword='laundry detergent pods': first attempt Too Many Requests (requestId 381d2f3beb534e76a6af8245100a7f6e); retry succeeded"
+  ]
+}

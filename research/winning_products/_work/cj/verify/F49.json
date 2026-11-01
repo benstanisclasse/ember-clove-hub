@@ -1,0 +1,52 @@
+{
+  "cand": "F49",
+  "pid": "2610050956211601900",
+  "checked_at": "2026-11-01",
+  "variants": [
+    {"vid": "2610050956211602700", "variantSku": "CJYD322295101AZ", "variantKey": "Christmas decompression ball-Blind Box", "variantWeight": 460.0, "variantSellPrice": 5.27},
+    {"vid": "2610140245111631700", "variantSku": "CJYD322295102BY", "variantKey": "Christmas building blocks-Blind Box", "variantWeight": 460.0, "variantSellPrice": 5.27},
+    {"vid": "2610140245111631701", "variantSku": "CJYD322295103CX", "variantKey": "Christmas Town Blind Box-Blind Box", "variantWeight": 460.0, "variantSellPrice": 4.92}
+  ],
+  "inventory": [
+    {"vid": "2610050956211602700", "countryCode": "CN", "totalInventory": 9771, "cjInventory": 0, "factoryInventory": 9771, "verifiedWarehouse": 2},
+    {"vid": "2610140245111631700", "countryCode": "CN", "totalInventory": 9625, "cjInventory": 0, "factoryInventory": 9625, "verifiedWarehouse": 2},
+    {"vid": "2610140245111631701", "countryCode": "CN", "totalInventory": 5362, "cjInventory": 0, "factoryInventory": 5362, "verifiedWarehouse": 2}
+  ],
+  "freight": {
+    "vid": "2610050956211602700",
+    "origin": "CN",
+    "zip": "10001",
+    "note": "all three variants weigh 460.0; first in CJ list order used",
+    "methods": [
+      {"logisticName": "YunExpress Ordinary", "logisticAging": "4-7", "logisticPrice": 11.75, "totalPostageFee": 11.75, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Ordinary", "logisticAging": "4-9", "logisticPrice": 11.53, "totalPostageFee": 11.53, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "YunExpress Sensitive", "logisticAging": "4-7", "logisticPrice": 13.1, "totalPostageFee": 13.1, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive", "logisticAging": "4-9", "logisticPrice": 12.4, "totalPostageFee": 12.4, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Eub", "logisticAging": "12-50", "logisticPrice": 13.89, "totalPostageFee": 14.09, "taxesFee": 0, "clearanceOperationFee": 0.2},
+      {"logisticName": "CJPacket FJTY Eub Special Line", "logisticAging": "15-25", "logisticPrice": 15.48, "totalPostageFee": 15.48, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive Pro+", "logisticAging": "6-11", "logisticPrice": 15.81, "totalPostageFee": 15.81, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Fast Ordinary", "logisticAging": "4-6", "logisticPrice": 16.31, "totalPostageFee": 16.31, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket LX Sensitive Plant", "logisticAging": "8-20", "logisticPrice": 17.24, "totalPostageFee": 17.24, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Fast US", "logisticAging": "7-12", "logisticPrice": 17.53, "totalPostageFee": 17.53, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive Pro", "logisticAging": "5-11", "logisticPrice": 19.45, "totalPostageFee": 19.45, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Super Pure Electricity", "logisticAging": "5-11", "logisticPrice": 17.24, "totalPostageFee": 17.24, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Pure Electricity", "logisticAging": "7-14", "logisticPrice": 17.24, "totalPostageFee": 17.24, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Eub Special Line", "logisticAging": "10-23", "logisticPrice": 17.0, "totalPostageFee": 17.46, "taxesFee": 0, "clearanceOperationFee": 0.46},
+      {"logisticName": "CJPacket Liquid US", "logisticAging": "5-11", "logisticPrice": 18.16, "totalPostageFee": 18.16, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Ordinary Over Length", "logisticAging": "7-11", "logisticPrice": 25.65, "totalPostageFee": 25.65, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket USPS Remote", "logisticAging": "5-10", "logisticPrice": 19.71, "totalPostageFee": 19.71, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive Over Length", "logisticAging": "7-12", "logisticPrice": 26.67, "totalPostageFee": 26.67, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Fast Line", "logisticAging": "4-9", "logisticPrice": 21.78, "totalPostageFee": 21.78, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "USPS Ordinary", "logisticAging": "5-11", "logisticPrice": 19.4, "totalPostageFee": 19.4, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Liquid Line", "logisticAging": "20-60", "logisticPrice": 22.5, "totalPostageFee": 22.5, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "USPS", "logisticAging": "4-9", "logisticPrice": 22.71, "totalPostageFee": 22.71, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Ordinary Oversize Line", "logisticAging": "7-15", "logisticPrice": 30.37, "totalPostageFee": 30.37, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sensitive Oversize Line", "logisticAging": "8-16", "logisticPrice": 30.37, "totalPostageFee": 30.37, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Qfulfillment A line", "logisticAging": "10-25", "logisticPrice": 24.35, "totalPostageFee": 24.35, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Postal", "logisticAging": "5-9", "logisticPrice": 26.29, "totalPostageFee": 26.29, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "DHL Official", "logisticAging": "3-7", "logisticPrice": 39.6, "totalPostageFee": 39.6, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "CJPacket Sea", "logisticAging": "25-30", "logisticPrice": 82.98, "totalPostageFee": 82.98, "taxesFee": 0, "clearanceOperationFee": 0}
+    ]
+  },
+  "errors": []
+}

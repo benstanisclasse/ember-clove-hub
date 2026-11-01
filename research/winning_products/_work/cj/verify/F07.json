@@ -1,0 +1,23 @@
+{
+  "cand": "F07",
+  "pid": "2054406961240494082",
+  "checked_at": "2026-11-01",
+  "variants": [
+    {"vid": "2054406961374711810", "variantSku": "CJFU28859510001", "variantKey": "Default", "variantWeight": 17900.0, "variantSellPrice": 135.55}
+  ],
+  "inventory": [
+    {"vid": "2054406961374711810", "countryCode": "US", "totalInventory": 352, "cjInventory": 352, "factoryInventory": 0, "verifiedWarehouse": 1}
+  ],
+  "freight": {
+    "vid": "2054406961374711810",
+    "origin": "US",
+    "zip": "10001",
+    "methods": [
+      {"logisticName": "Fedex US to US", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #3", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #4", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0},
+      {"logisticName": "Fedex US to US #5", "logisticAging": "3-5", "logisticPrice": 0.0, "totalPostageFee": 0.0, "taxesFee": 0, "clearanceOperationFee": 0}
+    ]
+  },
+  "errors": []
+}
