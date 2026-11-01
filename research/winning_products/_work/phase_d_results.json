@@ -1,0 +1,281 @@
+{
+ "plan": "registry/PHASE_D_PLAN.md",
+ "D1": {
+  "rows": 100666,
+  "ad_share_by_month": {
+   "2025-10": 0.633,
+   "2025-11": 0.81,
+   "2025-12": 0.793,
+   "2026-01": 0.778,
+   "2026-02": 0.764,
+   "2026-03": 0.789,
+   "2026-04": 0.774,
+   "2026-05": 0.799,
+   "2026-06": 0.819,
+   "2026-07": 0.813,
+   "2026-08": 0.818,
+   "2026-09": 0.834
+  },
+  "ad_share_by_category_p10_p50_p90": [
+   0.618,
+   0.846,
+   0.911
+  ],
+  "roas_when_ad_p10_p50_p90": [
+   1.85,
+   2.56,
+   3.35
+  ],
+  "roas_nonzero_when_organic": 0,
+  "roas_zero_when_ad": 0,
+  "ad_rev_ratio_range": [
+   0.0,
+   80.00000000000009
+  ],
+  "ad_rev_ratio_at_cap_80_share_of_ads": 0.413,
+  "ad_view_ratio_range": [
+   0.0,
+   100.0
+  ],
+  "organic_with_ad_rev_ratio_gt0": 0,
+  "ai_share_by_month": {
+   "2025-10": 0.0,
+   "2025-11": 0.0,
+   "2025-12": 0.0,
+   "2026-01": 0.0,
+   "2026-02": 0.0,
+   "2026-03": 0.0,
+   "2026-04": 0.0,
+   "2026-05": 0.0,
+   "2026-06": 0.04,
+   "2026-07": 0.046,
+   "2026-08": 0.045,
+   "2026-09": 0.058
+  },
+  "roas_by_category_median": {
+   "min": 1.72,
+   "50%": 2.55,
+   "max": 3.06
+  }
+ },
+ "D2": {
+  "cells": 336,
+  "views": {
+   "median_rho": 0.455,
+   "iqr": [
+    0.391,
+    0.512
+   ]
+  },
+  "likes": {
+   "median_rho": 0.218,
+   "iqr": [
+    0.161,
+    0.277
+   ]
+  },
+  "shares": {
+   "median_rho": 0.25,
+   "iqr": [
+    0.189,
+    0.315
+   ]
+  },
+  "comments": {
+   "median_rho": 0.222,
+   "iqr": [
+    0.175,
+    0.288
+   ]
+  },
+  "eng": {
+   "median_rho": -0.075,
+   "iqr": [
+    -0.125,
+    -0.028
+   ]
+  },
+  "rpm_vs_eng": {
+   "median_rho": -0.035,
+   "iqr": [
+    -0.14,
+    0.057
+   ]
+  },
+  "verdict": {
+   "views": "moderate",
+   "likes": "weak (<0.3)",
+   "shares": "weak (<0.3)",
+   "comments": "weak (<0.3)",
+   "eng": "weak (<0.3)"
+  },
+  "rpm_p10_p50_p90": [
+   6.49,
+   21.28,
+   81.79
+  ]
+ },
+ "D3": {
+  "cells_with_both": 1475,
+  "cells_ad_higher": "748",
+  "share_ad_higher": 0.507,
+  "median_ratio_ad_over_organic": 1.003,
+  "supported": false,
+  "pooled_rpm_median": {
+   "ad": 20.85,
+   "organic": 23.3
+  },
+  "revenue_share_from_ad_videos": 0.889
+ },
+ "D4": {
+  "creators": [
+   180.0,
+   230.0,
+   253.0
+  ],
+  "top10_creator_share": [
+   0.158,
+   0.211,
+   0.361
+  ],
+  "new_creator_rev_share": [
+   0.051,
+   0.131,
+   0.245
+  ],
+  "creator_persistence_next_month": [
+   0.338,
+   0.422,
+   0.526
+  ],
+  "note": "p10/p50/p90 across category-months (top-300 videos)"
+ },
+ "D5_H-C2": {
+  "n": 536,
+  "base_T1": 0.698,
+  "creator_number": {
+   "OR_per_sd": 1.779,
+   "ci95": [
+    1.209,
+    2.62
+   ],
+   "p": 0.0035,
+   "supported": true
+  },
+  "video_number": {
+   "OR_per_sd": 1.955,
+   "ci95": [
+    1.326,
+    2.883
+   ],
+   "p": 0.0007,
+   "supported": true
+  },
+  "live_number": {
+   "OR_per_sd": 1.229,
+   "ci95": [
+    0.907,
+    1.664
+   ],
+   "p": 0.1829,
+   "supported": false
+  }
+ },
+ "D6": {
+  "products": 188,
+  "in_top500_sep": 188,
+  "videos": [
+   64.3,
+   100.0,
+   100.0
+  ],
+  "creators": [
+   19.0,
+   50.0,
+   70.3
+  ],
+  "top_video_share": [
+   0.111,
+   0.233,
+   0.494
+  ],
+  "top_creator_share": [
+   0.159,
+   0.327,
+   0.704
+  ],
+  "top3_creator_share": [
+   0.372,
+   0.646,
+   0.923
+  ],
+  "ad_share_of_video_rev": [
+   0.622,
+   0.868,
+   0.992
+  ],
+  "forward_file": {
+   "file": "registry\\forward_test_video_conc_2026-09.csv",
+   "sha256": "7cb79a1815c92ee8bb10cc026321cf9c0851efce485f1b0bc9a10ae3fe3e5fb7",
+   "test": "Spearman(top_creator_share, in Oct-2026 top 500) < 0 among products ranked 101-500 in Sep"
+  }
+ },
+ "D7": {
+  "alpha_per_test": 0.005,
+  "power": 0.8,
+  "scenarios": [
+   {
+    "discordant_share": 0.2,
+    "discordant_ratio": 2.0,
+    "pairs_needed": 596
+   },
+   {
+    "discordant_share": 0.2,
+    "discordant_ratio": 3.0,
+    "pairs_needed": 264
+   },
+   {
+    "discordant_share": 0.3,
+    "discordant_ratio": 2.0,
+    "pairs_needed": 397
+   },
+   {
+    "discordant_share": 0.3,
+    "discordant_ratio": 3.0,
+    "pairs_needed": 175
+   },
+   {
+    "discordant_share": 0.5,
+    "discordant_ratio": 2.0,
+    "pairs_needed": 237
+   },
+   {
+    "discordant_share": 0.5,
+    "discordant_ratio": 3.0,
+    "pairs_needed": 104
+   }
+  ],
+  "prior_study": "91 pairs (VIDEO_STUDY_2026-10.md); only ad=1 survived 152 tests"
+ },
+ "D5_sensitivity_with_history_controls": {
+  "n": 536,
+  "controls": "rank_pct, log_rev_cut, months_top_last3, new_entrant, kalo_g, mom_g, category FE",
+  "creator_number": {
+   "OR_per_sd": 1.636,
+   "ci95": [
+    1.068,
+    2.504
+   ],
+   "p": 0.0236
+  },
+  "video_number": {
+   "OR_per_sd": 1.798,
+   "ci95": [
+    1.18,
+    2.739
+   ],
+   "p": 0.0063
+  },
+  "label": "sensitivity check added after the registered result; not a replacement"
+ }
+}
