@@ -1,0 +1,474 @@
+{
+ "plan": "registry/PHASE_G_PLAN.md",
+ "G1_per_month": {
+  "2026-03": {
+   "A Emerging": {
+    "n_eligible": 3041,
+    "base": 0.15981585004932589,
+    "P@20": 0.75,
+    "B1@20": 0.4
+   },
+   "B Proven": {
+    "n_eligible": 3186,
+    "base": 0.5178907721280602,
+    "P@20": 1.0,
+    "B1@20": 0.5
+   },
+   "C Underexploited": {
+    "n_eligible": 2000,
+    "base": 0.388,
+    "P@20": 1.0,
+    "B1@20": 0.75
+   },
+   "D Creative-driven": {
+    "n_eligible": 7198,
+    "base": 0.35648791330925256,
+    "P@20": 1.0,
+    "B1@20": 0.45
+   },
+   "F Sustainable": {
+    "n_eligible": 11200,
+    "base": 0.31214285714285717,
+    "P@20": 1.0,
+    "B1@20": 0.45
+   }
+  },
+  "2026-04": {
+   "A Emerging": {
+    "n_eligible": 2787,
+    "base": 0.1973448152134912,
+    "P@20": 0.8,
+    "B1@20": 0.05
+   },
+   "B Proven": {
+    "n_eligible": 3534,
+    "base": 0.5127334465195246,
+    "P@20": 0.95,
+    "B1@20": 0.75
+   },
+   "C Underexploited": {
+    "n_eligible": 2400,
+    "base": 0.4091666666666667,
+    "P@20": 0.9,
+    "B1@20": 1.0
+   },
+   "D Creative-driven": {
+    "n_eligible": 7179,
+    "base": 0.35450619863490734,
+    "P@20": 0.95,
+    "B1@20": 0.7
+   },
+   "F Sustainable": {
+    "n_eligible": 11200,
+    "base": 0.31258928571428574,
+    "P@20": 0.95,
+    "B1@20": 0.6
+   }
+  },
+  "2026-05": {
+   "A Emerging": {
+    "n_eligible": 3034,
+    "base": 0.17369808833223468,
+    "P@20": 0.65,
+    "B1@20": 0.35
+   },
+   "B Proven": {
+    "n_eligible": 3734,
+    "base": 0.5152651312265667,
+    "P@20": 0.9,
+    "B1@20": 0.8
+   },
+   "C Underexploited": {
+    "n_eligible": 2400,
+    "base": 0.43291666666666667,
+    "P@20": 0.85,
+    "B1@20": 0.7
+   },
+   "D Creative-driven": {
+    "n_eligible": 7228,
+    "base": 0.3602656336469286,
+    "P@20": 0.85,
+    "B1@20": 0.7
+   },
+   "F Sustainable": {
+    "n_eligible": 11200,
+    "base": 0.31508928571428574,
+    "P@20": 0.85,
+    "B1@20": 0.4
+   }
+  },
+  "2026-06": {
+   "A Emerging": {
+    "n_eligible": 3307,
+    "base": 0.17236165709101905,
+    "P@20": 0.75,
+    "B1@20": 0.35
+   },
+   "B Proven": {
+    "n_eligible": 3825,
+    "base": 0.5566013071895425,
+    "P@20": 0.9,
+    "B1@20": 0.75
+   },
+   "C Underexploited": {
+    "n_eligible": 2000,
+    "base": 0.459,
+    "P@20": 0.95,
+    "B1@20": 0.7
+   },
+   "D Creative-driven": {
+    "n_eligible": 6956,
+    "base": 0.37679700977573316,
+    "P@20": 0.95,
+    "B1@20": 0.8
+   },
+   "F Sustainable": {
+    "n_eligible": 11200,
+    "base": 0.32848214285714283,
+    "P@20": 0.9,
+    "B1@20": 0.6
+   }
+  }
+ },
+ "G1_underexploited_categories": {
+  "2026-03": [
+   "601739",
+   "601755",
+   "602118",
+   "700645",
+   "801928"
+  ],
+  "2026-04": [
+   "601739",
+   "601755",
+   "602118",
+   "602284",
+   "605196",
+   "700645"
+  ],
+  "2026-05": [
+   "602118",
+   "602284",
+   "605196",
+   "700437",
+   "700645",
+   "801928"
+  ],
+  "2026-06": [
+   "602118",
+   "605196",
+   "700437",
+   "700645",
+   "801928"
+  ]
+ },
+ "G1_summary": {
+  "A Emerging": {
+   "months_tested": 4,
+   "mean_n_eligible": 3042.2,
+   "mean_base": 0.1758,
+   "mean_P@20": 0.7375,
+   "vs_base": {
+    "mean": 0.5617,
+    "ci95": [
+     0.5048,
+     0.5964
+    ]
+   },
+   "vs_B1": {
+    "mean": 0.45,
+    "ci95": [
+     0.325,
+     0.65
+    ],
+    "months_ahead": "4/4"
+   },
+   "vs_F": {
+    "mean": -0.1875,
+    "ci95": [
+     -0.225,
+     -0.15
+    ],
+    "p_boot": 0.0,
+    "same_sign_months": "4/4",
+    "p_holm": 0.0,
+    "supported": true
+   }
+  },
+  "B Proven": {
+   "months_tested": 4,
+   "mean_n_eligible": 3569.8,
+   "mean_base": 0.5256,
+   "mean_P@20": 0.9375,
+   "vs_base": {
+    "mean": 0.4119,
+    "ci95": [
+     0.3641,
+     0.4597
+    ]
+   },
+   "vs_B1": {
+    "mean": 0.2375,
+    "ci95": [
+     0.125,
+     0.4125
+    ],
+    "months_ahead": "4/4"
+   },
+   "vs_F": {
+    "mean": 0.0125,
+    "ci95": [
+     0.0,
+     0.0375
+    ],
+    "p_boot": 0.626,
+    "same_sign_months": "1/4",
+    "p_holm": 1.0,
+    "supported": false
+   }
+  },
+  "C Underexploited": {
+   "months_tested": 4,
+   "mean_n_eligible": 2200.0,
+   "mean_base": 0.4223,
+   "mean_P@20": 0.925,
+   "vs_base": {
+    "mean": 0.5027,
+    "ci95": [
+     0.4356,
+     0.5817
+    ]
+   },
+   "vs_B1": {
+    "mean": 0.1375,
+    "ci95": [
+     -0.0125,
+     0.25
+    ],
+    "months_ahead": "3/4"
+   },
+   "vs_F": {
+    "mean": 0.0,
+    "ci95": [
+     -0.0375,
+     0.0375
+    ],
+    "p_boot": 1.0,
+    "same_sign_months": "1/4",
+    "p_holm": 1.0,
+    "supported": false
+   }
+  },
+  "D Creative-driven": {
+   "months_tested": 4,
+   "mean_n_eligible": 7140.2,
+   "mean_base": 0.362,
+   "mean_P@20": 0.9375,
+   "vs_base": {
+    "mean": 0.5755,
+    "ci95": [
+     0.5162,
+     0.6259
+    ]
+   },
+   "vs_B1": {
+    "mean": 0.275,
+    "ci95": [
+     0.15,
+     0.45
+    ],
+    "months_ahead": "4/4"
+   },
+   "vs_F": {
+    "mean": 0.0125,
+    "ci95": [
+     0.0,
+     0.0375
+    ],
+    "p_boot": 0.637,
+    "same_sign_months": "1/4",
+    "p_holm": 1.0,
+    "supported": false
+   }
+  },
+  "F Sustainable": {
+   "months_tested": 4,
+   "mean_n_eligible": 11200.0,
+   "mean_base": 0.3171,
+   "mean_P@20": 0.925,
+   "vs_base": {
+    "mean": 0.6079,
+    "ci95": [
+     0.5532,
+     0.6626
+    ]
+   },
+   "vs_B1": {
+    "mean": 0.4125,
+    "ci95": [
+     0.325,
+     0.5
+    ],
+    "months_ahead": "4/4"
+   }
+  }
+ },
+ "G2": {
+  "n": 44800,
+  "brier": 0.1732,
+  "brier_base_rate": 0.2165,
+  "skill": 0.2004,
+  "slope": 0.835,
+  "intercept": -0.208,
+  "reliability": [
+   {
+    "dec": 1,
+    "pred": 0.027,
+    "obs": 0.033,
+    "n": 4480
+   },
+   {
+    "dec": 2,
+    "pred": 0.08,
+    "obs": 0.104,
+    "n": 4480
+   },
+   {
+    "dec": 3,
+    "pred": 0.13,
+    "obs": 0.147,
+    "n": 4480
+   },
+   {
+    "dec": 4,
+    "pred": 0.185,
+    "obs": 0.189,
+    "n": 4480
+   },
+   {
+    "dec": 5,
+    "pred": 0.25,
+    "obs": 0.246,
+    "n": 4480
+   },
+   {
+    "dec": 6,
+    "pred": 0.325,
+    "obs": 0.301,
+    "n": 4480
+   },
+   {
+    "dec": 7,
+    "pred": 0.417,
+    "obs": 0.381,
+    "n": 4480
+   },
+   {
+    "dec": 8,
+    "pred": 0.523,
+    "obs": 0.456,
+    "n": 4480
+   },
+   {
+    "dec": 9,
+    "pred": 0.649,
+    "obs": 0.577,
+    "n": 4480
+   },
+   {
+    "dec": 10,
+    "pred": 0.805,
+    "obs": 0.737,
+    "n": 4480
+   }
+  ],
+  "report_as": "probability"
+ },
+ "G5": {
+  "file": "registry/forward_test_strategies_2026-09.csv",
+  "rows": 100,
+  "underexploited_sep": [
+   "602118",
+   "602284",
+   "605196",
+   "605248",
+   "700437",
+   "700645",
+   "801928"
+  ],
+  "sha256": "b51d30cf0411782dae7590028d70a9ba368edbf5a1e841193ec1c095b8819067",
+  "tests": [
+   "(i) T1 P@20 per strategy (Oct-2026 top 500)",
+   "(ii) T4 P@20 per strategy (Oct-Dec 2026 top 500)",
+   "each vs F, descriptive"
+  ]
+ },
+ "G4": {
+  "n": 72,
+  "not_rejected": [
+   "F10",
+   "F14",
+   "F05"
+  ],
+  "gate_counts": {
+   "R1": 2,
+   "R2": 41,
+   "R3": 5,
+   "R4": 19,
+   "R5": 28,
+   "R6": 3,
+   "R7": 9
+  },
+  "readiness": {
+   "Rejected": 69,
+   "Needs verification": 3
+  },
+  "rejected_only_by": {
+   "R1": [],
+   "R2": [
+    "F01",
+    "F03",
+    "F06",
+    "F15",
+    "F17",
+    "F21",
+    "F22",
+    "F28",
+    "F30",
+    "F33",
+    "F34",
+    "F35",
+    "F37",
+    "F38",
+    "F44",
+    "F45",
+    "F48",
+    "F53",
+    "F56",
+    "F57"
+   ],
+   "R3": [
+    "F68"
+   ],
+   "R4": [
+    "F13",
+    "F16",
+    "F18",
+    "F43",
+    "F46",
+    "F49",
+    "F66",
+    "F70"
+   ],
+   "R5": [
+    "F36",
+    "F54",
+    "F62"
+   ],
+   "R6": [
+    "F09"
+   ],
+   "R7": []
+  }
+ }
+}
