@@ -1,0 +1,71 @@
+{
+ "checked": 5,
+ "passed": 5,
+ "items": {
+  "H10": {
+   "issues": [],
+   "variants_old_new": [
+    96,
+    96
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    28,
+    28
+   ],
+   "pass": true
+  },
+  "H38": {
+   "issues": [],
+   "variants_old_new": [
+    20,
+    20
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    28,
+    28
+   ],
+   "pass": true
+  },
+  "H44": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    6,
+    6
+   ],
+   "pass": true
+  },
+  "H50": {
+   "issues": [],
+   "variants_old_new": [
+    1,
+    1
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    9,
+    9
+   ],
+   "pass": true
+  },
+  "H55": {
+   "issues": [],
+   "variants_old_new": [
+    6,
+    6
+   ],
+   "max_stock_dev": 0.0,
+   "freight_methods_old_new": [
+    3,
+    3
+   ],
+   "pass": true
+  }
+ }
+}

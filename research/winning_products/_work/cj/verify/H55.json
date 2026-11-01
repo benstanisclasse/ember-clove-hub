@@ -1,0 +1,131 @@
+{
+  "cand": "H55",
+  "pid": "2011352957814849537",
+  "checked_at": "2026-11-01T17:01:13+00:00",
+  "variants": [
+    {
+      "vid": "2011352957932290049",
+      "variantSku": "CJZR272917101AZ",
+      "variantKey": "Burgundy-14inch",
+      "variantWeight": 300.0,
+      "variantSellPrice": 54.8
+    },
+    {
+      "vid": "2011352957932290051",
+      "variantSku": "CJZR272917103CX",
+      "variantKey": "Burgundy-20inch",
+      "variantWeight": 300.0,
+      "variantSellPrice": 71.78
+    },
+    {
+      "vid": "2011352957932290052",
+      "variantSku": "CJZR272917104DW",
+      "variantKey": "Burgundy-26inch",
+      "variantWeight": 300.0,
+      "variantSellPrice": 107.5
+    },
+    {
+      "vid": "2011352957932290053",
+      "variantSku": "CJZR272917105EV",
+      "variantKey": "Burgundy-28inch",
+      "variantWeight": 300.0,
+      "variantSellPrice": 126.07
+    },
+    {
+      "vid": "2092549855163580418",
+      "variantSku": "CJZR272917106FU",
+      "variantKey": "Burgundy-18inch",
+      "variantWeight": 300.0,
+      "variantSellPrice": 65.35
+    },
+    {
+      "vid": "2092549855322963969",
+      "variantSku": "CJZR272917107GT",
+      "variantKey": "Burgundy-22inch",
+      "variantWeight": 300.0,
+      "variantSellPrice": 79.68
+    }
+  ],
+  "inventory": [
+    {
+      "vid": "2011352957932290052",
+      "countryCode": "US",
+      "totalInventory": 230,
+      "cjInventory": 230,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    },
+    {
+      "vid": "2011352957932290051",
+      "countryCode": "US",
+      "totalInventory": 230,
+      "cjInventory": 230,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    },
+    {
+      "vid": "2092549855163580418",
+      "countryCode": "US",
+      "totalInventory": 230,
+      "cjInventory": 230,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    },
+    {
+      "vid": "2011352957932290053",
+      "countryCode": "US",
+      "totalInventory": 230,
+      "cjInventory": 230,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    },
+    {
+      "vid": "2011352957932290049",
+      "countryCode": "US",
+      "totalInventory": 230,
+      "cjInventory": 230,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    },
+    {
+      "vid": "2092549855322963969",
+      "countryCode": "US",
+      "totalInventory": 230,
+      "cjInventory": 230,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    }
+  ],
+  "freight": {
+    "vid": "2011352957932290049",
+    "origin": "US",
+    "zip": "10001",
+    "methods": [
+      {
+        "logisticName": "UPS US to US #46",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "USPS US to US #40",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Uniuni US to US #8",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      }
+    ]
+  },
+  "errors": []
+}

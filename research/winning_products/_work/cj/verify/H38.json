@@ -1,0 +1,541 @@
+{
+  "cand": "H38",
+  "pid": "2604200841181608300",
+  "checked_at": "2026-11-01T16:59:27+00:00",
+  "variants": [
+    {
+      "vid": "2604200841181608800",
+      "variantSku": "CJYD284463201AZ",
+      "variantKey": "S-Black",
+      "variantWeight": 260.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841181609300",
+      "variantSku": "CJYD284463202BY",
+      "variantKey": "S-Navy Blue",
+      "variantWeight": 260.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841181609800",
+      "variantSku": "CJYD284463203CX",
+      "variantKey": "S-Brown",
+      "variantWeight": 260.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191600600",
+      "variantSku": "CJYD284463204DW",
+      "variantKey": "S-Gray",
+      "variantWeight": 260.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191601100",
+      "variantSku": "CJYD284463205EV",
+      "variantKey": "S-White",
+      "variantWeight": 260.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191601600",
+      "variantSku": "CJYD284463206FU",
+      "variantKey": "M-Black",
+      "variantWeight": 270.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191602000",
+      "variantSku": "CJYD284463207GT",
+      "variantKey": "M-Navy Blue",
+      "variantWeight": 270.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191602500",
+      "variantSku": "CJYD284463208HS",
+      "variantKey": "M-Brown",
+      "variantWeight": 270.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191603000",
+      "variantSku": "CJYD284463209IR",
+      "variantKey": "M-Gray",
+      "variantWeight": 270.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191603500",
+      "variantSku": "CJYD284463210JQ",
+      "variantKey": "M-White",
+      "variantWeight": 270.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191604000",
+      "variantSku": "CJYD284463211KP",
+      "variantKey": "L-Black",
+      "variantWeight": 280.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191604500",
+      "variantSku": "CJYD284463212LO",
+      "variantKey": "L-Navy Blue",
+      "variantWeight": 280.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191604900",
+      "variantSku": "CJYD284463213MN",
+      "variantKey": "L-Brown",
+      "variantWeight": 280.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191605500",
+      "variantSku": "CJYD284463214NM",
+      "variantKey": "L-Gray",
+      "variantWeight": 280.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191605900",
+      "variantSku": "CJYD284463215OL",
+      "variantKey": "L-White",
+      "variantWeight": 280.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191606600",
+      "variantSku": "CJYD284463216PK",
+      "variantKey": "XL-Black",
+      "variantWeight": 290.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191607100",
+      "variantSku": "CJYD284463217QJ",
+      "variantKey": "XL-Navy Blue",
+      "variantWeight": 290.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191607800",
+      "variantSku": "CJYD284463218RI",
+      "variantKey": "XL-Brown",
+      "variantWeight": 290.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191608300",
+      "variantSku": "CJYD284463219SH",
+      "variantKey": "XL-Gray",
+      "variantWeight": 290.0,
+      "variantSellPrice": 4.34
+    },
+    {
+      "vid": "2604200841191608800",
+      "variantSku": "CJYD284463220TG",
+      "variantKey": "XL-White",
+      "variantWeight": 290.0,
+      "variantSellPrice": 4.34
+    }
+  ],
+  "inventory": [
+    {
+      "vid": "2604200841181608800",
+      "countryCode": "CN",
+      "totalInventory": 7414,
+      "cjInventory": 0,
+      "factoryInventory": 7414,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191607800",
+      "countryCode": "CN",
+      "totalInventory": 6673,
+      "cjInventory": 0,
+      "factoryInventory": 6673,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191605500",
+      "countryCode": "CN",
+      "totalInventory": 7136,
+      "cjInventory": 0,
+      "factoryInventory": 7136,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191604500",
+      "countryCode": "CN",
+      "totalInventory": 8290,
+      "cjInventory": 0,
+      "factoryInventory": 8290,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841181609800",
+      "countryCode": "CN",
+      "totalInventory": 7073,
+      "cjInventory": 0,
+      "factoryInventory": 7073,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191602000",
+      "countryCode": "CN",
+      "totalInventory": 7780,
+      "cjInventory": 0,
+      "factoryInventory": 7780,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191606600",
+      "countryCode": "CN",
+      "totalInventory": 6775,
+      "cjInventory": 0,
+      "factoryInventory": 6775,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191603500",
+      "countryCode": "CN",
+      "totalInventory": 7826,
+      "cjInventory": 0,
+      "factoryInventory": 7826,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191608800",
+      "countryCode": "CN",
+      "totalInventory": 5059,
+      "cjInventory": 0,
+      "factoryInventory": 5059,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191603000",
+      "countryCode": "CN",
+      "totalInventory": 8917,
+      "cjInventory": 0,
+      "factoryInventory": 8917,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191605900",
+      "countryCode": "CN",
+      "totalInventory": 6308,
+      "cjInventory": 0,
+      "factoryInventory": 6308,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191604900",
+      "countryCode": "CN",
+      "totalInventory": 5552,
+      "cjInventory": 0,
+      "factoryInventory": 5552,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191600600",
+      "countryCode": "CN",
+      "totalInventory": 6890,
+      "cjInventory": 0,
+      "factoryInventory": 6890,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191608300",
+      "countryCode": "CN",
+      "totalInventory": 7315,
+      "cjInventory": 0,
+      "factoryInventory": 7315,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191601600",
+      "countryCode": "CN",
+      "totalInventory": 6110,
+      "cjInventory": 0,
+      "factoryInventory": 6110,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841181609300",
+      "countryCode": "CN",
+      "totalInventory": 6869,
+      "cjInventory": 0,
+      "factoryInventory": 6869,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191607100",
+      "countryCode": "CN",
+      "totalInventory": 7156,
+      "cjInventory": 0,
+      "factoryInventory": 7156,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191602500",
+      "countryCode": "CN",
+      "totalInventory": 7973,
+      "cjInventory": 0,
+      "factoryInventory": 7973,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191604000",
+      "countryCode": "CN",
+      "totalInventory": 7816,
+      "cjInventory": 0,
+      "factoryInventory": 7816,
+      "verifiedWarehouse": 2
+    },
+    {
+      "vid": "2604200841191601100",
+      "countryCode": "CN",
+      "totalInventory": 7165,
+      "cjInventory": 0,
+      "factoryInventory": 7165,
+      "verifiedWarehouse": 2
+    }
+  ],
+  "freight": {
+    "vid": "2604200841191606600",
+    "origin": "CN",
+    "zip": "10001",
+    "methods": [
+      {
+        "logisticName": "YunExpress Clothing Line",
+        "logisticAging": "8-15",
+        "logisticPrice": 8.89,
+        "totalPostageFee": 8.89,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "YunExpress Ordinary",
+        "logisticAging": "4-7",
+        "logisticPrice": 9.07,
+        "totalPostageFee": 9.07,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Ordinary",
+        "logisticAging": "4-9",
+        "logisticPrice": 8.56,
+        "totalPostageFee": 8.56,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "YunExpress Sensitive",
+        "logisticAging": "4-7",
+        "logisticPrice": 9.89,
+        "totalPostageFee": 9.89,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Pure Electricity",
+        "logisticAging": "7-14",
+        "logisticPrice": 9.23,
+        "totalPostageFee": 9.23,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Sensitive",
+        "logisticAging": "4-9",
+        "logisticPrice": 9.53,
+        "totalPostageFee": 9.53,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Sensitive Pro",
+        "logisticAging": "5-11",
+        "logisticPrice": 10.86,
+        "totalPostageFee": 10.86,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Eub Special Line",
+        "logisticAging": "10-23",
+        "logisticPrice": 10.48,
+        "totalPostageFee": 10.94,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0.46
+      },
+      {
+        "logisticName": "CJPacket Fast Ordinary",
+        "logisticAging": "4-6",
+        "logisticPrice": 11.03,
+        "totalPostageFee": 11.03,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "USPS Ordinary",
+        "logisticAging": "5-11",
+        "logisticPrice": 10.17,
+        "totalPostageFee": 10.17,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Eub",
+        "logisticAging": "12-50",
+        "logisticPrice": 10.99,
+        "totalPostageFee": 11.19,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0.2
+      },
+      {
+        "logisticName": "CJPacket LX Sensitive Plant",
+        "logisticAging": "8-20",
+        "logisticPrice": 12.38,
+        "totalPostageFee": 12.38,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket FJTY Eub Special Line",
+        "logisticAging": "15-25",
+        "logisticPrice": 11.9,
+        "totalPostageFee": 11.9,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Sensitive Pro+",
+        "logisticAging": "6-11",
+        "logisticPrice": 12.05,
+        "totalPostageFee": 12.05,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Liquid US",
+        "logisticAging": "5-11",
+        "logisticPrice": 12.15,
+        "totalPostageFee": 12.15,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "USPS",
+        "logisticAging": "4-9",
+        "logisticPrice": 12.58,
+        "totalPostageFee": 12.58,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Fast US",
+        "logisticAging": "7-12",
+        "logisticPrice": 13.52,
+        "totalPostageFee": 13.52,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Fast Line",
+        "logisticAging": "4-9",
+        "logisticPrice": 14.31,
+        "totalPostageFee": 14.31,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Qfulfillment A line",
+        "logisticAging": "10-25",
+        "logisticPrice": 14.06,
+        "totalPostageFee": 14.06,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Postal",
+        "logisticAging": "5-9",
+        "logisticPrice": 14.67,
+        "totalPostageFee": 14.67,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Liquid Line",
+        "logisticAging": "20-60",
+        "logisticPrice": 14.92,
+        "totalPostageFee": 14.92,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket USPS Remote",
+        "logisticAging": "5-10",
+        "logisticPrice": 14.75,
+        "totalPostageFee": 14.75,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Ordinary Over Length",
+        "logisticAging": "7-11",
+        "logisticPrice": 21.99,
+        "totalPostageFee": 21.99,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Sensitive Over Length",
+        "logisticAging": "7-12",
+        "logisticPrice": 22.63,
+        "totalPostageFee": 22.63,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Ordinary Oversize Line",
+        "logisticAging": "7-15",
+        "logisticPrice": 26.34,
+        "totalPostageFee": 26.34,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Sensitive Oversize Line",
+        "logisticAging": "8-16",
+        "logisticPrice": 26.34,
+        "totalPostageFee": 26.34,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "DHL Official",
+        "logisticAging": "3-7",
+        "logisticPrice": 30.92,
+        "totalPostageFee": 30.92,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "CJPacket Sea",
+        "logisticAging": "25-30",
+        "logisticPrice": 82.98,
+        "totalPostageFee": 82.98,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      }
+    ]
+  },
+  "errors": []
+}

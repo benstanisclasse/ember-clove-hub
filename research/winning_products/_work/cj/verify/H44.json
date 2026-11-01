@@ -1,0 +1,80 @@
+{
+  "cand": "H44",
+  "pid": "2037377982160621570",
+  "checked_at": "2026-11-01T17:00:14+00:00",
+  "variants": [
+    {
+      "vid": "2037377982282256385",
+      "variantSku": "CJFU28073900001",
+      "variantKey": "White",
+      "variantWeight": 47400.0,
+      "variantSellPrice": 199.46
+    }
+  ],
+  "inventory": [
+    {
+      "vid": "2037377982282256385",
+      "countryCode": "US",
+      "totalInventory": 129,
+      "cjInventory": 129,
+      "factoryInventory": 0,
+      "verifiedWarehouse": 1
+    }
+  ],
+  "freight": {
+    "vid": "2037377982282256385",
+    "origin": "US",
+    "zip": "10001",
+    "methods": [
+      {
+        "logisticName": "USPS US to US #25",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #25",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #24",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "Fedex US to US #76",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "UPS US to US #78",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      },
+      {
+        "logisticName": "USPS US to US #75",
+        "logisticAging": "3-5",
+        "logisticPrice": 0.0,
+        "totalPostageFee": 0.0,
+        "taxesFee": 0,
+        "clearanceOperationFee": 0
+      }
+    ]
+  },
+  "errors": []
+}

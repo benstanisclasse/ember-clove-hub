@@ -41,8 +41,8 @@ with room for ads. Another 5 (7%) are marginal.**
 3%, or 10% if marginal ones are counted.** Demand evidence alone almost never turns into a sourceable, advertisable
 product. That is the main finding.
 
-The ROAS thresholds are planning heuristics, not measured CAC. For scale: our current test dress needs break-even ROAS 2.36,
-and the median Kalodata ad-video ROAS is 2.56 (Phase D).
+The ROAS thresholds are planning heuristics, not measured CAC. For scale, the median Kalodata ad-video ROAS is 2.56
+(Phase D), and that is a TikTok Shop estimate.
 
 ## Why candidates failed
 

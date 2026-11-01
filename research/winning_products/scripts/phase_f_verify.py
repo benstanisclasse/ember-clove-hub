@@ -2,7 +2,7 @@
 _work/cj/verify/<cand>.json with the collector files _work/cj/<cand>.json.
 Pass = every variant price and weight exact, the matching freight quote exact (same method names and fees), and CJ stock
 within +-5% per variant x country (stock moves). Writes _work/phase_f_verify.json.
-Run: python -I research/winning_products/scripts/phase_f_verify.py
+Run: python -I research/winning_products/scripts/phase_f_verify.py [F|H]
 """
 import json
 import sys
@@ -20,7 +20,8 @@ def f(x):
 
 
 out = {}
-for vf in sorted((W / "cj" / "verify").glob("F*.json")):
+PFX = sys.argv[1] if len(sys.argv) > 1 else "F"   # "H" for the Phase H check (PHASE_H_PLAN.md H3)
+for vf in sorted((W / "cj" / "verify").glob(f"{PFX}*.json")):
     c = vf.stem
     new = json.loads(vf.read_text(encoding="utf-8"))
     old = json.loads((W / "cj" / f"{c}.json").read_text(encoding="utf-8"))
@@ -66,6 +67,6 @@ for vf in sorted((W / "cj" / "verify").glob("F*.json")):
     r["pass"] = not r["issues"]
     out[c] = r
 summary = {"checked": len(out), "passed": sum(r["pass"] for r in out.values()), "items": out}
-(W / "phase_f_verify.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
+(W / ("phase_f_verify.json" if PFX == "F" else f"phase_{PFX.lower()}_verify.json")).write_text(json.dumps(summary, indent=1), encoding="utf-8")
 print(json.dumps({k: {"pass": v["pass"], "n_issues": len(v["issues"]), "first": v["issues"][:4]} for k, v in out.items()}, indent=1))
 print("passed", summary["passed"], "of", summary["checked"])

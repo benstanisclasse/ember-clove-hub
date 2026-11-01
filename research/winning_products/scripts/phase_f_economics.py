@@ -2,6 +2,7 @@
 classification (registry/PHASE_F_PLAN.md F3-F7). Reads _work/phase_f_candidates.csv and the collector files
 _work/cj/F*.json. Read-only. Writes _work/phase_f_variants.csv, _work/phase_f_products.csv, _work/phase_f_results.json.
 Run: python -I research/winning_products/scripts/phase_f_economics.py            (economics)
+     python -I research/winning_products/scripts/phase_f_economics.py --phase h  (Phase H pool, same rules)
      python -I research/winning_products/scripts/phase_f_economics.py --sample   (transcription-check sample)
 """
 import json
@@ -25,7 +26,11 @@ APPAREL = {"Womenswear & Underwear", "Menswear & Underwear", "Kids' Fashion", "M
 DUTY_STRESS = 0.30          # share of product cost, China-origin only (assumption, unverified)
 SEED = 20261101
 
-cand = pd.read_csv(W / "phase_f_candidates.csv", dtype={"pid": str, "cat": str, "saved_cj_pid": str})
+# --phase h reuses these frozen Phase F rules for the Phase H early-stage pool (registry/PHASE_H_PLAN.md H4)
+PH = "h" if "--phase" in sys.argv and sys.argv[sys.argv.index("--phase") + 1] == "h" else "f"
+cand = pd.read_csv(W / f"phase_{PH}_candidates.csv", dtype={"pid": str, "cat": str, "saved_cj_pid": str})
+if PH == "h":
+    cand = cand.assign(pool="H", score=cand["enter_M1"])
 
 
 def num(x):
@@ -203,8 +208,8 @@ for _, c in cand.iterrows():
     prows.append({**prod, "class": cls, "reason": why})
 
 VD, PD = pd.DataFrame(vrows), pd.DataFrame(prows)
-VD.to_csv(W / "phase_f_variants.csv", index=False)
-PD.to_csv(W / "phase_f_products.csv", index=False)
+VD.to_csv(W / f"phase_{PH}_variants.csv", index=False)
+PD.to_csv(W / f"phase_{PH}_products.csv", index=False)
 
 R = {"plan": "registry/PHASE_F_PLAN.md", "n_candidates": len(PD)}
 order = ["Feasible", "Marginal", "Not viable", "Not sourceable", "Ineligible", "Not collected"]
@@ -242,7 +247,7 @@ if len(E):
     cnv = VD[VD.get("origin").eq("CN")] if "origin" in VD else VD.iloc[0:0]
     R["Q5_us_stock"]["variant_ship_base_median"] = {"US": float(usv["ship_base"].median()) if len(usv) else None,
                                                     "CN": float(cnv["ship_base"].median()) if len(cnv) else None}
-(W / "phase_f_results.json").write_text(json.dumps(R, indent=1, default=str), encoding="utf-8")
+(W / f"phase_{PH}_results.json").write_text(json.dumps(R, indent=1, default=str), encoding="utf-8")
 print(json.dumps(R, indent=1, default=str)[:4000])
 cols = ["cand", "cat_name", "asp", "match_score", "fulfilment", "med_origin", "med_ship_base", "med_b_cba", "med_b_be_roas",
         "med_b_premium_needed", "class"]

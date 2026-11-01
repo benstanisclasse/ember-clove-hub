@@ -1,0 +1,461 @@
+{
+ "cand": "H04",
+ "kalo_pid": "1732598205346714567",
+ "kalo_name": "LocknLock S/4 Bowls w/ Handle Lids & Holiday Bags",
+ "collected_at": "2026-11-01T16:36:25Z",
+ "searches": [
+  {
+   "keyword": "food storage bowls with lids set",
+   "n_results": 20,
+   "totalRecords": 6000,
+   "results": [
+    {
+     "pid": "1425007139054817280",
+     "name": "Dog Supplies Bowls Large Stainless Steel Food Bowls Pet Cat Bowls",
+     "sku": "CJGY1246629",
+     "sellPrice": "2.46 -- 10.31",
+     "listedNum": 1042,
+     "warehouseInventoryNum": 704625,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2003458445975941121",
+     "name": "Dog Food Storage Cabinet with Bowls & Dog Feeding Station, Black",
+     "sku": "CJPB2680122",
+     "sellPrice": "55.25",
+     "listedNum": 35,
+     "warehouseInventoryNum": 80,
+     "totalVerifiedInventory": 80,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2003458466393812994",
+     "name": "Dog Food Storage Cabinet with Bowls & Dog Feeding Station, Gray",
+     "sku": "CJPB2680124",
+     "sellPrice": "55.25",
+     "listedNum": 54,
+     "warehouseInventoryNum": 86,
+     "totalVerifiedInventory": 86,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2003458457782906882",
+     "name": "Dog Food Storage Cabinet with Bowls & Dog Feeding Station, Espresso",
+     "sku": "CJPB2680123",
+     "sellPrice": "55.32",
+     "listedNum": 36,
+     "warehouseInventoryNum": 5,
+     "totalVerifiedInventory": 5,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2003458495368065025",
+     "name": "Dog Food Storage Cabinet with Bowls & Dog Feeding Station, White",
+     "sku": "CJPB2680125",
+     "sellPrice": "54.48",
+     "listedNum": 50,
+     "warehouseInventoryNum": 88,
+     "totalVerifiedInventory": 88,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2099783677789892609",
+     "name": "Stainless Steel Dog Bowls, 3 Pack, Non-Slip Dog Bowl Set, 13 Oz Dog Food Bowl, Dog Bowl No Spill, Dog Food And Water Bowl Set, Water Bowl, Dog Dish, Pet Food Bowls, No Tip Dog Bowls",
+     "sku": "CJPB3165950",
+     "sellPrice": "4.16",
+     "listedNum": 9,
+     "warehouseInventoryNum": 8213,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2603110250141610600",
+     "name": "Food Container Lids Storage Organizer Box",
+     "sku": "CJJT2783134",
+     "sellPrice": "3.35 -- 6.14",
+     "listedNum": 7,
+     "warehouseInventoryNum": 22712,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2003457920922660866",
+     "name": "Pet Feeder Station Storage Cabinet, Dog Food Storage Container with Dog Raised Bowls, Watering Supplies, Gray",
+     "sku": "CJPB2680106",
+     "sellPrice": "112.16",
+     "listedNum": 67,
+     "warehouseInventoryNum": 36,
+     "totalVerifiedInventory": 36,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "C27FB611-FC72-4732-B87E-71093581739E",
+     "name": "Pet Pots, Customized Stainless Steel Processing Tanks, Dog Bowls,bowls, Grain Feeding Bowls, Pet Supplies, Dog Food",
+     "sku": "CJJJCWGY00247",
+     "sellPrice": "0.69 -- 2.68",
+     "listedNum": 715,
+     "warehouseInventoryNum": 64400,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2003457851599204354",
+     "name": "Pet Feeder Station Storage Cabinet, Dog Food Storage Container with Dog Raised Bowls, Watering Supplies, White",
+     "sku": "CJPB2680104",
+     "sellPrice": "112.97",
+     "listedNum": 128,
+     "warehouseInventoryNum": 342,
+     "totalVerifiedInventory": 342,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2003457889528295425",
+     "name": "Pet Feeder Station Storage Cabinet, Dog Food Storage Container with Dog Raised Bowls, Watering Supplies, Black",
+     "sku": "CJPB2680105",
+     "sellPrice": "112.97",
+     "listedNum": 48,
+     "warehouseInventoryNum": 346,
+     "totalVerifiedInventory": 346,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2003457952598044673",
+     "name": "Pet Feeder Station Storage Cabinet, Dog Food Storage Container with Dog Raised Bowls, Watering Supplies, Gray",
+     "sku": "CJPB2680107",
+     "sellPrice": "93.29",
+     "listedNum": 50,
+     "warehouseInventoryNum": 110,
+     "totalVerifiedInventory": 110,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "1645603161459142656",
+     "name": "Anti Overturning Of Dog And Cat Food Bowls",
+     "sku": "CJMY1731020",
+     "sellPrice": "1.00 -- 1.31",
+     "listedNum": 223,
+     "warehouseInventoryNum": 25157,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2004107860278157313",
+     "name": "Dog Bowls /Pet Feeding Storage",
+     "sku": "CJPB2690054",
+     "sellPrice": "99.29",
+     "listedNum": 76,
+     "warehouseInventoryNum": 230,
+     "totalVerifiedInventory": 230,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2068635694805278722",
+     "name": "Elevated Cat Bowls Set - Raised Cat Food And Water Bowl Set With Non Slip Stand - Pet Feeding Station With 2 Stainless Steel Bowls",
+     "sku": "CJPB2949135",
+     "sellPrice": "3.44",
+     "listedNum": 62,
+     "warehouseInventoryNum": 73299,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2603310542051616100",
+     "name": "Ceramic Bowl Set Elevated Pet Bowls Food Bowl And Water Bowl For Dogs And Cats",
+     "sku": "CJYD2812735",
+     "sellPrice": "1.84 -- 3.13",
+     "listedNum": 10,
+     "warehouseInventoryNum": 126044,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "1854054731325788160",
+     "name": "Ceramic Cat Food Bowls Whisker Friendly Cat Bowls With Nonslip Silicone Bottom Cat Food Dishes For Food And Water Cat Food Dishes Wide Shallow Small Cat Plates For Cats Kitten Small Dogs",
+     "sku": "CJPB2184034",
+     "sellPrice": "2.17",
+     "listedNum": 86,
+     "warehouseInventoryNum": 45898,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2113882399888359426",
+     "name": "Raised Cat Food Bowl Ceramic  Tilted Cat Food Bowls Protect Cat's Spine Anti Vomiting Backflow Prevention Bowls For Adult Kitty, Kitten, And Small Dogs",
+     "sku": "CJPB3367188",
+     "sellPrice": "4.72",
+     "listedNum": 1,
+     "warehouseInventoryNum": 14910,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2113934425713082370",
+     "name": "Ceramic Raised Cat Bowls, Elevated Tilted Cat Food And Water Bowls Set Prevent Neck, Anti Vomit, For Cats Puppies, Dishwasher And Microwave Safe",
+     "sku": "CJPB3367983",
+     "sellPrice": "6.15",
+     "listedNum": 0,
+     "warehouseInventoryNum": 7835,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2003458189406171138",
+     "name": "Elevated Dog Bowls with Storage Cabinet, Raised Dog Bowl Stand Pet Food Bowl Dog Feeding Station, Brown",
+     "sku": "CJPB2680114",
+     "sellPrice": "47.01",
+     "listedNum": 77,
+     "warehouseInventoryNum": 110,
+     "totalVerifiedInventory": 110,
+     "verifiedWarehouse": 1
+    }
+   ]
+  },
+  {
+   "keyword": "plastic food storage container set lids",
+   "n_results": 20,
+   "totalRecords": 6000,
+   "results": [
+    {
+     "pid": "2603110250141610600",
+     "name": "Food Container Lids Storage Organizer Box",
+     "sku": "CJJT2783134",
+     "sellPrice": "3.35 -- 6.14",
+     "listedNum": 7,
+     "warehouseInventoryNum": 22712,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2113626444502462465",
+     "name": "24X Clear Plastic Food Containers With Lids Microwave Freezer Safe Storage Boxes",
+     "sku": "CJCF3321958",
+     "sellPrice": "17.52",
+     "listedNum": 4,
+     "warehouseInventoryNum": 14,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2011724425901240322",
+     "name": "24X Clear Plastic Food Containers With Lids Microwave Freezer Safe Storage Boxes",
+     "sku": "CJJT2730813",
+     "sellPrice": "25.54",
+     "listedNum": 165,
+     "warehouseInventoryNum": 14,
+     "totalVerifiedInventory": 14,
+     "verifiedWarehouse": 1
+    },
+    {
+     "pid": "2512291001371622000",
+     "name": "Double-layer Draining Plastic Food Storage Container Set",
+     "sku": "CJYD2702108",
+     "sellPrice": "2.95 -- 11.02",
+     "listedNum": 38,
+     "warehouseInventoryNum": 42789,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "1496431404576280576",
+     "name": "Food Storage Container Set",
+     "sku": "CJCF1422741",
+     "sellPrice": "2.26",
+     "listedNum": 157,
+     "warehouseInventoryNum": 43546,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "7799226E-C2B0-42A0-9C49-3C03819D669C",
+     "name": "Vacuum Food Storage Compression Container Home Kitchen Adjustable Storage Jars Fridge Storage Bottle With Lids Airtight Plastic",
+     "sku": "CJJJJTCC01118",
+     "sellPrice": "2.30 -- 3.49",
+     "listedNum": 211,
+     "warehouseInventoryNum": 120000,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2096991953083490305",
+     "name": "Cereal Dispenser Countertop With Lids, 5L Organization And Storage Containers For Kitchen And Pantry, Plastic Containers For Food",
+     "sku": "CJSB3138034",
+     "sellPrice": "6.85",
+     "listedNum": 6,
+     "warehouseInventoryNum": 2,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "BB0BB608-E0E8-48FC-B3E0-D837762468B8",
+     "name": "Large Capacity Moistureproof Bucket Container Food Bucket Food Storage Containers FP8",
+     "sku": "CJJJJTCF02706",
+     "sellPrice": "4.01",
+     "listedNum": 381,
+     "warehouseInventoryNum": 36693,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2603260204401623000",
+     "name": "Hot-selling Sealed Plastic Food Storage Containers",
+     "sku": "CJYD2804728",
+     "sellPrice": "4.36 -- 6.97",
+     "listedNum": 35,
+     "warehouseInventoryNum": 28227,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2039587520481640449",
+     "name": "Black  White   Food Grade Clear Plastic Airtight Storage Containers, Square Thickened Jars With Lids For Grains, Cereal & Dry Food",
+     "sku": "CJCF2816055",
+     "sellPrice": "8.04 -- 25.95",
+     "listedNum": 34,
+     "warehouseInventoryNum": 66,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2610100901531605400",
+     "name": "Butter Container, Food-grade Plastic Cheese Container",
+     "sku": "CJYD3240887",
+     "sellPrice": "1.21",
+     "listedNum": 0,
+     "warehouseInventoryNum": 80714,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2091967809186070530",
+     "name": "6 Pack 17oz Freezer Storage Containers, Reusable Plastic Food Containers With Twist Top Lids, BPA-Free, Microwave & Dishwasher Safe",
+     "sku": "CJCF3092331",
+     "sellPrice": "37.99",
+     "listedNum": 4,
+     "warehouseInventoryNum": 100,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "1358752347978862592",
+     "name": "Food Storage Box Plastic Clear Container Wall-mounted Grain Storage Box for Whole Grains Kitchen Storage Container",
+     "sku": "CJCF1009920",
+     "sellPrice": "5.27",
+     "listedNum": 544,
+     "warehouseInventoryNum": 8000,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "37297DC2-2E59-4E96-A9B4-E94DF8A42A40",
+     "name": "Microwavable Food Storage & Container Stack Set",
+     "sku": "CJJJCFCF01672",
+     "sellPrice": "1.88",
+     "listedNum": 211,
+     "warehouseInventoryNum": 26955,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2508130507471622200",
+     "name": "Plastic Inner Hanging Food Container Feeder",
+     "sku": "CJYD2454860",
+     "sellPrice": "0.46",
+     "listedNum": 6,
+     "warehouseInventoryNum": 6670,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2606160220051608400",
+     "name": "Household Food-grade Storage Container",
+     "sku": "CJYD2935930",
+     "sellPrice": "0.75 -- 1.51",
+     "listedNum": 21,
+     "warehouseInventoryNum": 12876,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2092739785621897217",
+     "name": "Airtight Food Storage Containers With Lids, 24 Pack, Reusable Kitchen Pantry Containers For Dry Food, Cereal, Snacks & Meal Prep",
+     "sku": "CJCF3099474",
+     "sellPrice": "60.99",
+     "listedNum": 24,
+     "warehouseInventoryNum": 50,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2607110802191623300",
+     "name": "Food-grade Thickened Plastic Rice Container Box",
+     "sku": "CJYD2980109",
+     "sellPrice": "3.00 -- 6.29",
+     "listedNum": 0,
+     "warehouseInventoryNum": 104861,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "2605050220041612600",
+     "name": "Plastic Sealed Salad Storage Container",
+     "sku": "CJYD2869030",
+     "sellPrice": "2.63",
+     "listedNum": 8,
+     "warehouseInventoryNum": 9760,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    },
+    {
+     "pid": "C8685FC8-7194-41E1-B11F-8790976BA04C",
+     "name": "Plastic Jewelry Box Storage Container",
+     "sku": "CJJJJTFZ00238",
+     "sellPrice": "2.57 -- 3.18",
+     "listedNum": 311,
+     "warehouseInventoryNum": 49242,
+     "totalVerifiedInventory": 0,
+     "verifiedWarehouse": 2
+    }
+   ]
+  }
+ ],
+ "considered": [
+  {
+   "cj_pid": "2603260204401623000",
+   "cj_name": "Hot-selling Sealed Plastic Food Storage Containers",
+   "score": 1,
+   "reason": "Same function (sealed, airtight clear plastic food storage containers with lids), but sold as 12/14/24/26-piece sets of boxes, not a set of 4 bowls with handle lids, and no holiday gift bags; LocknLock is a brand's own locking-lid design. Chosen as closest available."
+  },
+  {
+   "cj_pid": "1496431404576280576",
+   "cj_name": "Food Storage Container Set",
+   "score": 1,
+   "reason": "Generic plastic food storage container set; detail gives no piece count, lid type or capacity (description is only the title), 250 g set. Less information than 2603260204401623000, so not chosen."
+  }
+ ],
+ "match": {
+  "cj_pid": "2603260204401623000",
+  "cj_name": "Hot-selling Sealed Plastic Food Storage Containers",
+  "cj_sku": "CJYD2804728",
+  "score": 1,
+  "branded_cap": true,
+  "note": "Sealed, airtight transparent plastic food storage containers (same function). Differs in form and pack size (12-26 piece box sets vs 4 bowls with handled lids plus holiday bags) and LocknLock is a branded locking-lid design, so 1."
+ },
+ "detail": {
+  "productNameEn": "Hot-selling Sealed Plastic Food Storage Containers",
+  "productSku": "CJYD2804728",
+  "categoryName": "Home, Garden & Furniture > Home Storage > Kitchen Storage",
+  "material": "[\"Plastic\"]",
+  "packing": "[\"Plastic bags\"]",
+  "productWeight": "1200.00-1945.00",
+  "packingWeight": "1230.00-1975.00",
+  "listedNum": 35,
+  "sellPrice": "4.36-6.97",
+  "suggestSellPrice": "26.21 - 41.89",
+  "description_excerpt": "<p><b>Product information:</b><br/>Color: Transparent<br/> Specifications: 12-piece set, 14-piece set, 24-piece set, 26-piece set<br/> Features: Portable, Storage, Fresh-keeping, Airtight<br/> Material: Plastic<br/> Style: Simple</p>\n<br/>\n<b>Packing list: </b>\n<br/>Plastic Storage Box x12pcs/Plastic Storage Boxx14pcs/Plastic Storage Boxx24pcs/Plastic Storage Boxx26pcs"
+ },
+ "variants": [],
+ "inventory": [],
+ "freight": [],
+ "errors": []
+}
