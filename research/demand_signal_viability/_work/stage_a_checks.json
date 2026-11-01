@@ -1,0 +1,99 @@
+{
+ "collection_dates_by_kind": {
+  "detail": {
+   "min": "2026-10-25",
+   "max": "2026-10-31"
+  },
+  "other": {
+   "min": "2026-10-31",
+   "max": "2026-10-31"
+  },
+  "product_videos": {
+   "min": "2026-10-25",
+   "max": "2026-10-31"
+  },
+  "risers": {
+   "min": "2026-10-25",
+   "max": "2026-10-25"
+  },
+  "risers_deep": {
+   "min": "2026-10-25",
+   "max": "2026-10-25"
+  },
+  "top": {
+   "min": "2026-10-25",
+   "max": "2026-10-31"
+  },
+  "top_deep": {
+   "min": "2026-10-25",
+   "max": "2026-11-01"
+  },
+  "top_videos": {
+   "min": "2026-10-25",
+   "max": "2026-10-25"
+  }
+ },
+ "months_covered": [
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09"
+ ],
+ "revisions_same_product_month_same_category": {
+  "pairs": 5009,
+  "lag_days_range": [
+   6,
+   7
+  ],
+  "share_identical": 1.0,
+  "median_abs_change": 0.0,
+  "p95_abs_change": 0.0,
+  "note": "pulls 1-7 days apart, all 3-12 months after the month ended; says nothing about revisions in the first weeks"
+ },
+ "model_v2_vs_best_rule": {
+  "holders_1m": {
+   "question": "Will a product in its category's top 500 this month still be in a top 500 next month and sell at least as much?",
+   "adopted": "logistic",
+   "adopted_p_cat@10": 0.5366,
+   "best_rule": "kalodata_growth",
+   "best_rule_p_cat@10": 0.4107,
+   "gain_pts": 12.6,
+   "base_rate": 0.2996
+  },
+  "holders_3m": {
+   "question": "Will a product in its category's top 500 this month be in a top 500 three months on?",
+   "adopted": "logistic",
+   "adopted_p_cat@10": 0.8973,
+   "best_rule": "floor_ratio",
+   "best_rule_p_cat@10": 0.8241,
+   "gain_pts": 7.3,
+   "base_rate": 0.4696
+  },
+  "breakout_1m": {
+   "question": "Will a product on its category's riser list (positions 1-200) and outside the top 500 enter a top 500 next month?",
+   "adopted": "logistic",
+   "adopted_p_cat@10": 0.283,
+   "best_rule": "floor_ratio",
+   "best_rule_p_cat@10": 0.271,
+   "gain_pts": 1.2,
+   "base_rate": 0.046
+  },
+  "breakout_3m": {
+   "question": "Will a product on its category's riser list (positions 1-200) and outside the top 500 enter a top 500 within three months?",
+   "adopted": "logistic",
+   "adopted_p_cat@10": 0.3473,
+   "best_rule": "floor_ratio",
+   "best_rule_p_cat@10": 0.3286,
+   "gain_pts": 1.9,
+   "base_rate": 0.0473
+  }
+ }
+}
