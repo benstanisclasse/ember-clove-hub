@@ -5,6 +5,7 @@ Accessories, Jewelry. Every call goes through kalodata.call (raw file first, cre
 (saved responses are reused, so reruns cost nothing).
 
   tests     one call per untested endpoint/option (~0.5 credits)          -> raw/gaps_tests/
+  deep      ranks 501-1,000 for other categories (owner, 2026-11-01: extend if the niche test shows value)
   ranks     monthly shop + creator ranks only (re-pull after the need_category fix; --months/--cats to limit)
   tier2     niche ranks 501-1,000 x 12 months, monthly shop + creator ranks, reviews, attributes, images and
             product videos for a seeded rank-stratified sample of Sep-2026 niche products (~77 credits) -> raw/gaps_tier2/
@@ -95,12 +96,13 @@ def sample():
     return rows
 
 
-def tier2(budget):
-    k.RAW = k.OUT / "raw" / "gaps_tier2"
+def deep_ranks(budget, months, cats, folder="gaps_tier2"):
+    """Ranks 501-1,000 (pages 6-10) per category-month; pages already held are skipped."""
+    k.RAW = k.OUT / "raw" / folder
     con = sqlite3.connect(f"file:{k.OUT / 'kalodata.db'}?mode=ro", uri=True)
-    print("Niche ranks 501-1,000", flush=True)
-    for m in MONTHS:
-        for cid in NICHE:
+    print(f"Ranks 501-1,000: {len(cats)} categories x {len(months)} months", flush=True)
+    for m in months:
+        for cid in cats:
             have = {r[0] for r in con.execute("select page from pulls where month=? and category_id=? and "
                                               "kind in ('top','top_deep') and success=1", (m, cid))}
             for page in range(6, 11):
@@ -108,6 +110,18 @@ def tier2(budget):
                     core.get("tiktok/product/rank", rank_payload(m, page, category_ids=[cid], need_extra=True),
                              f"deep_{m}_{cid}_p{page}", budget, 0.1)
     print(f"  {budget.spent:.1f} credits", flush=True)
+
+
+def other_l1():
+    """The 24 L1 categories outside the niche (Virtual Products excluded: its lists stop at rank 100)."""
+    con = sqlite3.connect(f"file:{k.OUT / 'kalodata.db'}?mode=ro", uri=True)
+    cats = [r[0] for r in con.execute("""select category_id from pulls where kind='top' and month is not null
+            group by category_id having count(distinct month) = 12""")]
+    return sorted(c for c in cats if c not in NICHE and c != "834312")
+
+
+def tier2(budget):
+    deep_ranks(budget, MONTHS, list(NICHE))
     shop_creator_ranks(budget, MONTHS, list(NICHE))
     rows = sample()
     print(f"Sample: {len(rows)} products (research/winning_products/_work/tier2_sample.csv)", flush=True)
@@ -171,7 +185,7 @@ def forward(month, budget):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["tests", "tier2", "ranks", "forward"])
+    ap.add_argument("cmd", choices=["tests", "tier2", "ranks", "deep", "forward"])
     ap.add_argument("--max-credits", type=float, required=True)
     ap.add_argument("--month")
     ap.add_argument("--months", help="ranks: comma-separated months (default: all 12)")
@@ -182,6 +196,9 @@ def main():
         tests(budget)
     elif a.cmd == "tier2":
         tier2(budget)
+    elif a.cmd == "deep":  # ranks 501-1,000; default: the 24 non-niche L1 categories, all 12 months
+        deep_ranks(budget, a.months.split(",") if a.months else MONTHS,
+                   a.cats.split(",") if a.cats else other_l1(), folder="gaps_deep_all")
     elif a.cmd == "ranks":
         shop_creator_ranks(budget, a.months.split(",") if a.months else MONTHS,
                            a.cats.split(",") if a.cats else list(NICHE))

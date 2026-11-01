@@ -102,3 +102,16 @@ returned "creator not found" (partial first month). Balance 405.29 → 396.09 (�
   are 2026-07-21 / 2026-09-18 / 2026-10-16, and the overall range is 2024-12-07..2026-10-30.
 - 30% are dated after 2026-09-30 and must be excluded from any feature for month ≤ 2026-09.
 - Ratings: 5★ 80%, 4★ 8%, 3★ 4%, 2★ 2%, 1★ 6%.
+
+## Extension: ranks 501-1,000 for the other 24 categories (2026-11-01)
+
+The owner said, before Phase C: *"before we expand to other catagories less see if we find any valuable information is the
+ones we have already downloaded and then we download the rest if there is somehting there."* Phase C's pre-registered
+rule found value in the 501-1,000 band (H-N2) and none in shop ranks (H-N3), so only the band was extended
+(`kalodata_gaps.py deep`):
+
+- One category-month was tested first (0.5 credits).
+- Then 24 categories x 12 months: 1,440 pages, 1,428 with data (12 Pre-Owned pages empty), 142,789 rows in
+  `raw/gaps_deep_all/`.
+- Balance 396.09 -> **253.29 (-142.8)**.
+- The H-N2b replication was registered before the download and passed (PHASE_C_PREDICTIVE_RESEARCH.md §4).
