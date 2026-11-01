@@ -1,0 +1,202 @@
+{
+ "R01": {
+  "cand": "F60",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R02": {
+  "cand": "H16",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R03": {
+  "cand": "H53",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R04": {
+  "cand": "H07",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R05": {
+  "cand": "F36",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R06": {
+  "cand": "H48",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R07": {
+  "cand": "H15",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R08": {
+  "cand": "F53",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R09": {
+  "cand": "F27",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R10": {
+  "cand": "H38",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R11": {
+  "cand": "H57",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R12": {
+  "cand": "F71",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R13": {
+  "cand": "F41",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R14": {
+  "cand": "F32",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R15": {
+  "cand": "F29",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R16": {
+  "cand": "H63",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R17": {
+  "cand": "F05",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R18": {
+  "cand": "F13",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R19": {
+  "cand": "H34",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R20": {
+  "cand": "H61",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R21": {
+  "cand": "F31",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R22": {
+  "cand": "F52",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R23": {
+  "cand": "H70",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R24": {
+  "cand": "F70",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R25": {
+  "cand": "H24",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R26": {
+  "cand": "H29",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R27": {
+  "cand": "F34",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R28": {
+  "cand": "H72",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R29": {
+  "cand": "H69",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R30": {
+  "cand": "H52",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R31": {
+  "cand": "F21",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R32": {
+  "cand": "H03",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R33": {
+  "cand": "F51",
+  "collector_score": 1,
+  "collector_branded_cap": false
+ },
+ "R34": {
+  "cand": "H68",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R35": {
+  "cand": "H35",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R36": {
+  "cand": "F58",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R37": {
+  "cand": "H27",
+  "collector_score": 1,
+  "collector_branded_cap": true
+ },
+ "R38": {
+  "cand": "F49",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R39": {
+  "cand": "F12",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ },
+ "R40": {
+  "cand": "F08",
+  "collector_score": 2,
+  "collector_branded_cap": false
+ }
+}

@@ -1,0 +1,358 @@
+{
+ "plan": "registry/STAGE_C_PLAN.md",
+ "unique_candidates": 145,
+ "ineligible": 4,
+ "collected": 141,
+ "funnel": [
+  {
+   "lane": "all",
+   "n": 141,
+   "F1": 136,
+   "F2": 52,
+   "F3": 44,
+   "F4": 44,
+   "F5": 27,
+   "F6": 12,
+   "F7": 8,
+   "F8": 4,
+   "F9": 0,
+   "F1_share": 0.965,
+   "F2_share": 0.369,
+   "F3_share": 0.312,
+   "F4_share": 0.312,
+   "F5_share": 0.191,
+   "F6_share": 0.085,
+   "F7_share": 0.057,
+   "F8_share": 0.028,
+   "F9_share": 0.0,
+   "F1_wilson": [
+    0.92,
+    0.985
+   ],
+   "F2_wilson": [
+    0.294,
+    0.451
+   ],
+   "F3_wilson": [
+    0.241,
+    0.393
+   ],
+   "F4_wilson": [
+    0.241,
+    0.393
+   ],
+   "F5_wilson": [
+    0.135,
+    0.264
+   ],
+   "F6_wilson": [
+    0.049,
+    0.143
+   ],
+   "F7_wilson": [
+    0.029,
+    0.108
+   ],
+   "F8_wilson": [
+    0.011,
+    0.071
+   ],
+   "F9_wilson": [
+    0.0,
+    0.027
+   ]
+  },
+  {
+   "lane": "early-stage",
+   "n": 95,
+   "F1": 92,
+   "F2": 32,
+   "F3": 26,
+   "F4": 26,
+   "F5": 15,
+   "F6": 7,
+   "F7": 5,
+   "F8": 3,
+   "F9": 0,
+   "F1_share": 0.968,
+   "F2_share": 0.337,
+   "F3_share": 0.274,
+   "F4_share": 0.274,
+   "F5_share": 0.158,
+   "F6_share": 0.074,
+   "F7_share": 0.053,
+   "F8_share": 0.032,
+   "F9_share": 0.0,
+   "F1_wilson": [
+    0.911,
+    0.989
+   ],
+   "F2_wilson": [
+    0.25,
+    0.437
+   ],
+   "F3_wilson": [
+    0.194,
+    0.371
+   ],
+   "F4_wilson": [
+    0.194,
+    0.371
+   ],
+   "F5_wilson": [
+    0.098,
+    0.244
+   ],
+   "F6_wilson": [
+    0.036,
+    0.144
+   ],
+   "F7_wilson": [
+    0.023,
+    0.117
+   ],
+   "F8_wilson": [
+    0.011,
+    0.089
+   ],
+   "F9_wilson": [
+    0.0,
+    0.039
+   ]
+  },
+  {
+   "lane": "validated",
+   "n": 46,
+   "F1": 44,
+   "F2": 20,
+   "F3": 18,
+   "F4": 18,
+   "F5": 12,
+   "F6": 5,
+   "F7": 3,
+   "F8": 1,
+   "F9": 0,
+   "F1_share": 0.957,
+   "F2_share": 0.435,
+   "F3_share": 0.391,
+   "F4_share": 0.391,
+   "F5_share": 0.261,
+   "F6_share": 0.109,
+   "F7_share": 0.065,
+   "F8_share": 0.022,
+   "F9_share": 0.0,
+   "F1_wilson": [
+    0.855,
+    0.988
+   ],
+   "F2_wilson": [
+    0.302,
+    0.578
+   ],
+   "F3_wilson": [
+    0.264,
+    0.535
+   ],
+   "F4_wilson": [
+    0.264,
+    0.535
+   ],
+   "F5_wilson": [
+    0.156,
+    0.403
+   ],
+   "F6_wilson": [
+    0.047,
+    0.23
+   ],
+   "F7_wilson": [
+    0.022,
+    0.175
+   ],
+   "F8_wilson": [
+    0.004,
+    0.113
+   ],
+   "F9_wilson": [
+    -0.0,
+    0.077
+   ]
+  }
+ ],
+ "categories": 24,
+ "matched_profile": {
+  "n": 52,
+  "us_stock_share": 0.5,
+  "supplier_shipped_share": 0.5,
+  "cost_pct_of_price_median": 0.7,
+  "freight_pct_of_price_median_cn": 0.378,
+  "median_contribution": 1.69,
+  "median_breakeven_cac": 1.69,
+  "median_target_cac_positive_share": 0.327,
+  "branded_cap_share_of_score1": 0.464
+ },
+ "C4_demand_vs_sourcing": {
+  "early-stage": {
+   "n": 95,
+   "spearman_mo_pct_vs_F2": 0.06,
+   "spearman_mo_pct_vs_F7": -0.107,
+   "spearman_mo_pct_vs_branded": -0.131,
+   "by_revenue_tercile": {
+    "low": {
+     "n": 32,
+     "F2": 0.312,
+     "F7": 0.062,
+     "branded": 0.219,
+     "revenue_range": [
+      357,
+      11037
+     ]
+    },
+    "mid": {
+     "n": 31,
+     "F2": 0.419,
+     "F7": 0.065,
+     "branded": 0.258,
+     "revenue_range": [
+      11730,
+      24349
+     ]
+    },
+    "high": {
+     "n": 32,
+     "F2": 0.281,
+     "F7": 0.031,
+     "branded": 0.406,
+     "revenue_range": [
+      24660,
+      97796
+     ]
+    }
+   }
+  },
+  "validated": {
+   "n": 46,
+   "spearman_mo_pct_vs_F2": -0.336,
+   "spearman_mo_pct_vs_F7": -0.149,
+   "spearman_mo_pct_vs_branded": 0.232,
+   "by_revenue_tercile": {
+    "low": {
+     "n": 15,
+     "F2": 0.267,
+     "F7": 0.0,
+     "branded": 0.4,
+     "revenue_range": [
+      1171,
+      35360
+     ]
+    },
+    "mid": {
+     "n": 15,
+     "F2": 0.4,
+     "F7": 0.133,
+     "branded": 0.267,
+     "revenue_range": [
+      36286,
+      67712
+     ]
+    },
+    "high": {
+     "n": 16,
+     "F2": 0.625,
+     "F7": 0.062,
+     "branded": 0.25,
+     "revenue_range": [
+      69113,
+      265943
+     ]
+    }
+   }
+  }
+ },
+ "C5_effort": {
+  "cj_calls_per_candidate_mean": 6.2,
+  "cj_calls_by_type_mean": {
+   "searches": 1.54,
+   "details": 2.2,
+   "variants": 0.37,
+   "inventory": 0.37,
+   "freight": 1.74
+  },
+  "cj_points_per_candidate_mean": 124,
+  "agents": {
+   "F": {
+    "collectors": 6,
+    "candidates": 70,
+    "tokens_per_candidate": 65411,
+    "tool_calls_per_candidate": 9.6,
+    "wall_seconds_per_candidate_per_collector": 111.5,
+    "elapsed_minutes_6_parallel": 27.7
+   },
+   "H": {
+    "collectors": 6,
+    "candidates": 71,
+    "tokens_per_candidate": 58880,
+    "tool_calls_per_candidate": 11.4,
+    "wall_seconds_per_candidate_per_collector": 90.5,
+    "elapsed_minutes_6_parallel": 22.1
+   }
+  },
+  "candidates_per_gate_pass": 17.6,
+  "candidates_per_feasible": 35.2,
+  "note": "human research time not measured; no user did this research by hand"
+ },
+ "C3_sample": {
+  "n": 40,
+  "by_collector_score": {
+   "1": 20,
+   "2": 20
+  },
+  "fields_shown": [
+   "id",
+   "tiktok_product_title",
+   "tiktok_category",
+   "tiktok_price_usd",
+   "cj_product_name",
+   "cj_category",
+   "cj_material",
+   "cj_packing",
+   "cj_sell_price",
+   "cj_description_excerpt"
+  ],
+  "deviation": "variant keys withheld: they exist only for score-2 files and would reveal the stratum"
+ },
+ "C3_match_reliability": {
+  "n": 40,
+  "percent_agreement": 0.95,
+  "kappa": 0.9,
+  "kappa_linear_weighted": 0.9,
+  "confusion_collector_x_blind": {
+   "1": {
+    "1": 20,
+    "2": 2
+   },
+   "2": {
+    "1": 0,
+    "2": 18
+   }
+  },
+  "verdict": "reliable enough to automate",
+  "blind_scored_0": 0,
+  "disagreements": [
+   {
+    "id": "R24",
+    "cand": "F70",
+    "collector": 2,
+    "blind": 1,
+    "blind_reason": "Both are light blue loose men's jeans, but CJ is a straight-leg drawstring-waist style rather than a baggy fly-front jean."
+   },
+   {
+    "id": "R28",
+    "cand": "H72",
+    "collector": 2,
+    "blind": 1,
+    "blind_reason": "Both are cubic zirconia ring sets, but CJ is a luxury micro-pave proposal set versus dainty 2-piece stackables; piece count unknown."
+   }
+  ]
+ }
+}
