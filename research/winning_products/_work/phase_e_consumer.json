@@ -1,0 +1,298 @@
+{
+ "plan": "registry/PHASE_E_PLAN.md",
+ "E4_overall": {
+  "reviews": 83156,
+  "products_with_reviews": 487,
+  "rating_dist": {
+   "1": 0.057,
+   "2": 0.023,
+   "3": 0.039,
+   "4": 0.077,
+   "5": 0.804
+  },
+  "low_star_share_all": 0.08,
+  "theme_rate_in_low_star": {
+   "size_fit": 0.098,
+   "quality": 0.157,
+   "not_as_pictured": 0.017,
+   "shipping": 0.045,
+   "comfort": 0.051,
+   "value": 0.02,
+   "smell": 0.015,
+   "gift": 0.005,
+   "compliments": 0.001
+  },
+  "theme_rate_in_high_star": {
+   "size_fit": 0.03,
+   "quality": 0.036,
+   "not_as_pictured": 0.0,
+   "shipping": 0.014,
+   "comfort": 0.133,
+   "value": 0.009,
+   "smell": 0.006,
+   "gift": 0.006,
+   "compliments": 0.014
+  }
+ },
+ "E4_by_category": {
+  "Womenswear & Underwear": {
+   "reviews": 23222,
+   "low_star": 0.09,
+   "top_complaints": {
+    "size_fit": 0.148,
+    "quality": 0.128,
+    "comfort": 0.063,
+    "shipping": 0.039
+   },
+   "top_praise": {
+    "comfort": 0.168,
+    "size_fit": 0.049,
+    "quality": 0.031,
+    "compliments": 0.007
+   }
+  },
+  "Shoes": {
+   "reviews": 19679,
+   "low_star": 0.066,
+   "top_complaints": {
+    "size_fit": 0.155,
+    "quality": 0.119,
+    "comfort": 0.108,
+    "shipping": 0.04
+   },
+   "top_praise": {
+    "comfort": 0.223,
+    "size_fit": 0.05,
+    "quality": 0.027,
+    "shipping": 0.013
+   }
+  },
+  "Fashion Accessories": {
+   "reviews": 22483,
+   "low_star": 0.085,
+   "top_complaints": {
+    "quality": 0.213,
+    "size_fit": 0.04,
+    "shipping": 0.035,
+    "not_as_pictured": 0.034
+   },
+   "top_praise": {
+    "comfort": 0.118,
+    "quality": 0.055,
+    "smell": 0.021,
+    "compliments": 0.019
+   }
+  },
+  "Jewelry Accessories & Derivatives": {
+   "reviews": 17972,
+   "low_star": 0.076,
+   "top_complaints": {
+    "quality": 0.162,
+    "shipping": 0.073,
+    "size_fit": 0.049,
+    "value": 0.023
+   },
+   "top_praise": {
+    "quality": 0.029,
+    "compliments": 0.022,
+    "shipping": 0.021,
+    "value": 0.011
+   }
+  }
+ },
+ "E4_sustained_vs_others": {
+  "n_A": 156,
+  "n_others": 344,
+  "metrics": {
+   "mean_rating": {
+    "sustained_A": 4.5476,
+    "others": 4.559,
+    "diff_ci95": [
+     -0.0559,
+     0.0364
+    ]
+   },
+   "low_star": {
+    "sustained_A": 0.0811,
+    "others": 0.0771,
+    "diff_ci95": [
+     -0.0057,
+     0.0136
+    ]
+   },
+   "c_not_as_pictured": {
+    "sustained_A": 0.0119,
+    "others": 0.0181,
+    "diff_ci95": [
+     -0.0164,
+     0.0031
+    ]
+   },
+   "c_size_fit": {
+    "sustained_A": 0.0827,
+    "others": 0.1007,
+    "diff_ci95": [
+     -0.0396,
+     0.0031
+    ]
+   },
+   "c_quality": {
+    "sustained_A": 0.1574,
+    "others": 0.1704,
+    "diff_ci95": [
+     -0.0422,
+     0.0181
+    ]
+   },
+   "p_comfort": {
+    "sustained_A": 0.1138,
+    "others": 0.1407,
+    "diff_ci95": [
+     -0.0496,
+     -0.0039
+    ]
+   },
+   "p_compliments": {
+    "sustained_A": 0.0157,
+    "others": 0.0131,
+    "diff_ci95": [
+     -0.0013,
+     0.0066
+    ]
+   },
+   "p_gift": {
+    "sustained_A": 0.0061,
+    "others": 0.007,
+    "diff_ci95": [
+     -0.0028,
+     0.001
+    ]
+   }
+  },
+  "groups": {
+   "F": 172,
+   "A": 156,
+   "U": 88,
+   "B": 56,
+   "E": 27,
+   "C": 1
+  }
+ },
+ "E5": {
+  "products": 196,
+  "attributes_rows": 2552,
+  "top_keys_by_category": {
+   "Womenswear & Underwear": {
+    "Brand": 33,
+    "Style": 32,
+    "Material": 30,
+    "Fit": 25,
+    "Washing Instructions": 21,
+    "Design": 18,
+    "Season": 18,
+    "Size Type": 17
+   },
+   "Shoes": {
+    "Brand": 33,
+    "Style": 29,
+    "Gender": 24,
+    "Upper Material": 20,
+    "Material": 17,
+    "Toe Shape": 16,
+    "Season": 15,
+    "Heel Type": 13
+   },
+   "Fashion Accessories": {
+    "Brand": 25,
+    "Material": 25,
+    "Gender": 24,
+    "Quantity Per Pack": 20,
+    "Density": 20,
+    "Hair Type": 18,
+    "Length": 15,
+    "Color": 15
+   },
+   "Jewelry Accessories & Derivatives": {
+    "Brand": 28,
+    "Material": 28,
+    "Region Of Origin": 26,
+    "Gender": 25,
+    "Manufacturer": 24,
+    "Occasion": 23,
+    "Age Group": 18,
+    "Style": 15
+   }
+  },
+  "flag_rates": {
+   "problem_solving": 0.265,
+   "aesthetic": 0.347,
+   "comfort": 0.556,
+   "convenience": 0.444
+  },
+  "flag_rates_by_category": {
+   "Womenswear & Underwear": {
+    "problem_solving": 0.36,
+    "aesthetic": 0.38,
+    "comfort": 0.78,
+    "convenience": 0.44
+   },
+   "Shoes": {
+    "problem_solving": 0.42,
+    "aesthetic": 0.28,
+    "comfort": 0.86,
+    "convenience": 0.58
+   },
+   "Fashion Accessories": {
+    "problem_solving": 0.25,
+    "aesthetic": 0.167,
+    "comfort": 0.458,
+    "convenience": 0.604
+   },
+   "Jewelry Accessories & Derivatives": {
+    "problem_solving": 0.021,
+    "aesthetic": 0.562,
+    "comfort": 0.104,
+    "convenience": 0.146
+   }
+  }
+ },
+ "E6": {
+  "products": 24,
+  "pain_points": 149,
+  "pain_theme_counts": {
+   "size_fit": 13,
+   "quality": 15,
+   "not_as_pictured": 2,
+   "shipping": 20,
+   "comfort": 3,
+   "value": 2,
+   "smell": 2,
+   "gift": 0,
+   "compliments": 0
+  },
+  "examples": [
+   "sound leakage at high volume",
+   "discomfort for users with ear piercings or glasses",
+   "not truly noise cancelling / weak noise cancellation",
+   "product defects or damage upon arrival",
+   "short product lifespan",
+   "uncomfortable for long wear",
+   "static or uneven sound in one ear",
+   "microphone issues for calls",
+   "does not come with case or charging cable",
+   "length issues (too long or too short for some)",
+   "sizing inconsistencies (runs large or small)",
+   "material concerns (itchy, cheap, or heavy)"
+  ]
+ },
+ "forward": {
+  "products": 285,
+  "reviews_used": 34159,
+  "file": "registry/forward_test_reviews_2026-09.csv",
+  "sha256": "97f4d49386b9d60a4e58f53513329a2345f85f69acde4902ecc712bb06053e67",
+  "tests": [
+   "R1: Spearman(low_star, in Oct-2026 top 500) < 0",
+   "R2: Spearman(c_not_as_pictured, in Oct-2026 top 500) < 0"
+  ]
+ }
+}

@@ -1,0 +1,537 @@
+{
+ "plan": "registry/PHASE_E_PLAN.md",
+ "E1": {
+  "thresholds": {
+   "top3_terciles": [
+    0.1405,
+    0.2201
+   ],
+   "entrant_ret2_t1_median_t2": [
+    0.3257,
+    0.3402,
+    0.3622
+   ]
+  },
+  "categories": [
+   {
+    "cat": "605196",
+    "name": "Automotive & Motorcycle",
+    "growth": 0.1042,
+    "top3_share": 0.1555,
+    "hhi": 0.0177,
+    "shops": 289.4545,
+    "entrant_rate": 0.3177,
+    "entrant_ret2": 0.3714,
+    "asp_median": 28.67,
+    "asp_trend": 0.1008,
+    "class": "Attractive emerging"
+   },
+   {
+    "cat": "600001",
+    "name": "Home Supplies",
+    "growth": 0.0822,
+    "top3_share": 0.1021,
+    "hhi": 0.0092,
+    "shops": 350.3636,
+    "entrant_rate": 0.4215,
+    "entrant_ret2": 0.2859,
+    "asp_median": 20.48,
+    "asp_trend": 0.0712,
+    "class": "Established but competitive"
+   },
+   {
+    "cat": "603014",
+    "name": "Sports & Outdoor",
+    "growth": 0.0166,
+    "top3_share": 0.2124,
+    "hhi": 0.0252,
+    "shops": 260.7273,
+    "entrant_rate": 0.3718,
+    "entrant_ret2": 0.3127,
+    "asp_median": 38.84,
+    "asp_trend": 0.0965,
+    "class": "Established but competitive"
+   },
+   {
+    "cat": "604206",
+    "name": "Toys & Hobbies",
+    "growth": -0.019,
+    "top3_share": 0.1344,
+    "hhi": 0.0134,
+    "shops": 300.5455,
+    "entrant_rate": 0.468,
+    "entrant_ret2": 0.2724,
+    "asp_median": 27.87,
+    "asp_trend": 0.1373,
+    "class": "Established but competitive"
+   },
+   {
+    "cat": "604579",
+    "name": "Tools & Hardware",
+    "growth": 0.2833,
+    "top3_share": 0.2412,
+    "hhi": 0.0312,
+    "shops": 227.2727,
+    "entrant_rate": 0.3465,
+    "entrant_ret2": 0.342,
+    "asp_median": 48.27,
+    "asp_trend": 0.0504,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "802184",
+    "name": "Kids' Fashion",
+    "growth": 0.4711,
+    "top3_share": 0.2836,
+    "hhi": 0.0469,
+    "shops": 188.6364,
+    "entrant_rate": 0.4028,
+    "entrant_ret2": 0.3222,
+    "asp_median": 20.075,
+    "asp_trend": 0.1257,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "600942",
+    "name": "Household Appliances",
+    "growth": 0.0497,
+    "top3_share": 0.3328,
+    "hhi": 0.0598,
+    "shops": 226.8182,
+    "entrant_rate": 0.3242,
+    "entrant_ret2": 0.3616,
+    "asp_median": 82.085,
+    "asp_trend": 0.1114,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "600154",
+    "name": "Textiles & Soft Furnishings",
+    "growth": 0.3284,
+    "top3_share": 0.3023,
+    "hhi": 0.053,
+    "shops": 253.1818,
+    "entrant_rate": 0.3405,
+    "entrant_ret2": 0.351,
+    "asp_median": 28.35,
+    "asp_trend": 0.1116,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "602284",
+    "name": "Baby & Maternity",
+    "growth": 0.2797,
+    "top3_share": 0.2353,
+    "hhi": 0.0321,
+    "shops": 218.8182,
+    "entrant_rate": 0.2792,
+    "entrant_ret2": 0.4011,
+    "asp_median": 39.605,
+    "asp_trend": 0.0529,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "953224",
+    "name": "Jewelry Accessories & Derivatives",
+    "growth": 0.0594,
+    "top3_share": 0.3497,
+    "hhi": 0.0738,
+    "shops": 118.7273,
+    "entrant_rate": 0.31,
+    "entrant_ret2": 0.3637,
+    "asp_median": 29.3,
+    "asp_trend": -0.0242,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "601450",
+    "name": "Beauty & Personal Care",
+    "growth": 0.0231,
+    "top3_share": 0.262,
+    "hhi": 0.032,
+    "shops": 251.0,
+    "entrant_rate": 0.3055,
+    "entrant_ret2": 0.3879,
+    "asp_median": 26.85,
+    "asp_trend": -0.1133,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "601352",
+    "name": "Shoes",
+    "growth": 0.195,
+    "top3_share": 0.3677,
+    "hhi": 0.0663,
+    "shops": 171.7273,
+    "entrant_rate": 0.3925,
+    "entrant_ret2": 0.3121,
+    "asp_median": 45.985,
+    "asp_trend": 0.0271,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "601303",
+    "name": "Muslim Fashion",
+    "growth": -0.3195,
+    "top3_share": 0.293,
+    "hhi": 0.0478,
+    "shops": 143.4545,
+    "entrant_rate": 0.4272,
+    "entrant_ret2": 0.2838,
+    "asp_median": 30.46,
+    "asp_trend": 0.0229,
+    "class": "Highly concentrated"
+   },
+   {
+    "cat": "856720",
+    "name": "Pre-Owned",
+    "growth": 0.8923,
+    "top3_share": 0.3475,
+    "hhi": 0.0656,
+    "shops": 68.0,
+    "entrant_rate": 0.8853,
+    "entrant_ret2": 0.0345,
+    "asp_median": 995.0,
+    "asp_trend": 1.4058,
+    "class": "Insufficient evidence"
+   },
+   {
+    "cat": "602118",
+    "name": "Pet Supplies",
+    "growth": 0.0459,
+    "top3_share": 0.1777,
+    "hhi": 0.0232,
+    "shops": 276.3636,
+    "entrant_rate": 0.2858,
+    "entrant_ret2": 0.4269,
+    "asp_median": 29.955,
+    "asp_trend": 0.0244,
+    "class": "Mixed"
+   },
+   {
+    "cat": "824584",
+    "name": "Luggage & Bags",
+    "growth": 0.0537,
+    "top3_share": 0.2029,
+    "hhi": 0.0264,
+    "shops": 227.1818,
+    "entrant_rate": 0.3558,
+    "entrant_ret2": 0.3275,
+    "asp_median": 33.285,
+    "asp_trend": 0.0049,
+    "class": "Mixed"
+   },
+   {
+    "cat": "824328",
+    "name": "Menswear & Underwear",
+    "growth": 0.435,
+    "top3_share": 0.129,
+    "hhi": 0.0148,
+    "shops": 243.0909,
+    "entrant_rate": 0.4398,
+    "entrant_ret2": 0.2604,
+    "asp_median": 29.98,
+    "asp_trend": 0.1382,
+    "class": "Mixed"
+   },
+   {
+    "cat": "801928",
+    "name": "Books, Magazines & Audio",
+    "growth": 0.0122,
+    "top3_share": 0.159,
+    "hhi": 0.0191,
+    "shops": 248.3636,
+    "entrant_rate": 0.3192,
+    "entrant_ret2": 0.3634,
+    "asp_median": 26.36,
+    "asp_trend": 0.0222,
+    "class": "Mixed"
+   },
+   {
+    "cat": "700645",
+    "name": "Health",
+    "growth": -0.1006,
+    "top3_share": 0.1765,
+    "hhi": 0.0214,
+    "shops": 219.1818,
+    "entrant_rate": 0.1878,
+    "entrant_ret2": 0.4621,
+    "asp_median": 27.79,
+    "asp_trend": 0.0007,
+    "class": "Mixed"
+   },
+   {
+    "cat": "601152",
+    "name": "Womenswear & Underwear",
+    "growth": 0.0275,
+    "top3_share": 0.141,
+    "hhi": 0.0163,
+    "shops": 241.3636,
+    "entrant_rate": 0.3505,
+    "entrant_ret2": 0.3295,
+    "asp_median": 30.38,
+    "asp_trend": 0.0097,
+    "class": "Mixed"
+   },
+   {
+    "cat": "601755",
+    "name": "Computers & Office Equipment",
+    "growth": 0.1548,
+    "top3_share": 0.1261,
+    "hhi": 0.0139,
+    "shops": 283.2727,
+    "entrant_rate": 0.3373,
+    "entrant_ret2": 0.3351,
+    "asp_median": 28.715,
+    "asp_trend": 0.1927,
+    "class": "Mixed"
+   },
+   {
+    "cat": "600024",
+    "name": "Kitchenware",
+    "growth": 0.1027,
+    "top3_share": 0.1761,
+    "hhi": 0.0195,
+    "shops": 297.0909,
+    "entrant_rate": 0.4038,
+    "entrant_ret2": 0.2836,
+    "asp_median": 25.415,
+    "asp_trend": 0.0378,
+    "class": "Mixed"
+   },
+   {
+    "cat": "604968",
+    "name": "Home Improvement",
+    "growth": -0.0018,
+    "top3_share": 0.2054,
+    "hhi": 0.0284,
+    "shops": 293.4545,
+    "entrant_rate": 0.3652,
+    "entrant_ret2": 0.3402,
+    "asp_median": 38.215,
+    "asp_trend": 0.1635,
+    "class": "Mixed"
+   },
+   {
+    "cat": "604453",
+    "name": "Furniture",
+    "growth": 0.0465,
+    "top3_share": 0.1139,
+    "hhi": 0.0135,
+    "shops": 209.9091,
+    "entrant_rate": 0.3198,
+    "entrant_ret2": 0.3511,
+    "asp_median": 142.055,
+    "asp_trend": 0.0193,
+    "class": "Mixed"
+   },
+   {
+    "cat": "951432",
+    "name": "Collectibles",
+    "growth": -0.1703,
+    "top3_share": 0.1192,
+    "hhi": 0.0139,
+    "shops": 221.5455,
+    "entrant_rate": 0.5392,
+    "entrant_ret2": 0.2049,
+    "asp_median": 95.445,
+    "asp_trend": 0.3252,
+    "class": "Mixed"
+   },
+   {
+    "cat": "601739",
+    "name": "Phones & Electronics",
+    "growth": 0.2335,
+    "top3_share": 0.1058,
+    "hhi": 0.011,
+    "shops": 307.6364,
+    "entrant_rate": 0.3525,
+    "entrant_ret2": 0.3355,
+    "asp_median": 36.92,
+    "asp_trend": 0.1728,
+    "class": "Mixed"
+   },
+   {
+    "cat": "700437",
+    "name": "Food & Beverages",
+    "growth": -0.037,
+    "top3_share": 0.1396,
+    "hhi": 0.0168,
+    "shops": 247.1818,
+    "entrant_rate": 0.27,
+    "entrant_ret2": 0.388,
+    "asp_median": 24.52,
+    "asp_trend": -0.0309,
+    "class": "Potentially underserved"
+   },
+   {
+    "cat": "605248",
+    "name": "Fashion Accessories",
+    "growth": 0.0011,
+    "top3_share": 0.118,
+    "hhi": 0.012,
+    "shops": 253.5455,
+    "entrant_rate": 0.3428,
+    "entrant_ret2": 0.3676,
+    "asp_median": 49.0,
+    "asp_trend": -0.0234,
+    "class": "Potentially underserved"
+   }
+  ]
+ },
+ "E2_H-D2": {
+  "rho_across_categories": 0.16,
+  "p": 0.4255,
+  "within_month": [
+   {
+    "month": "2025-12",
+    "rho": 0.145
+   },
+   {
+    "month": "2026-01",
+    "rho": -0.062
+   },
+   {
+    "month": "2026-02",
+    "rho": 0.221
+   },
+   {
+    "month": "2026-03",
+    "rho": 0.123
+   },
+   {
+    "month": "2026-04",
+    "rho": -0.018
+   },
+   {
+    "month": "2026-05",
+    "rho": 0.228
+   },
+   {
+    "month": "2026-06",
+    "rho": 0.249
+   },
+   {
+    "month": "2026-07",
+    "rho": 0.191
+   }
+  ],
+  "months_negative": "2/8",
+  "supported": false
+ },
+ "E3_families": {
+  "products": 59865,
+  "families": 54479,
+  "multi_member_families": 3029,
+  "products_in_multi": 8415,
+  "largest": 221,
+  "examples": [
+   {
+    "cat": "Health",
+    "titles": [
+     "Rainbow Nutrients 24-in-1 Advanced Hair Growth Supplement with Biotin 10,000 mcg, Collagen & Saw Palmetto, Supports Hair Loss, Fuller Hair, Skin & Nails, 60-Day Supply",
+     "(2-Pack) Rainbow Nutrients 24-in-1 Advanced Hair Growth Supplement with Biotin 10,000 mcg, Collagen & Saw Palmetto, Supports Hair Loss, Fuller Hair, Skin & Nails, 120-Day Supply",
+     "(3-Pack) Rainbow Nutrients 24-in-1 Advanced Hair Growth Supplement with Biotin 10,000 mcg, Collagen & Saw Palmetto, Supports Hair Loss, Fuller Hair, Skin & Nails, 6-Month Supply",
+     "Rainbow Nutrients 24-in-1 Advanced Hair Growth Supplement with Biotin 10,000 mcg, Collagen & Saw Palmetto, Supports Hair Loss, Fuller Hair, Skin & Nails, 30-Day Supply"
+    ]
+   },
+   {
+    "cat": "Beauty & Personal Care",
+    "titles": [
+     "[#1 Viral] celimax The Vita A Retinal Shot Tightening Booster | with Retinal, Matryxyl, Pore Minimizer, Wrinkles & Fine Lines, Firmer Skin, 15ml, Retinol Skincare",
+     "[celimax official] The Vita A Retinal Shot Tightening Booster Duo | with Retinal, Matryxyl, Pore Minimizer, Wrinkles & Fine Lines, Firmer Skin, Retinol Skincare"
+    ]
+   },
+   {
+    "cat": "Kitchenware",
+    "titles": [
+     "3-Pack Black Triangle Shower Caddy, 3-Tier Corner Shelves Shower Storage Rack, Drill Free Wall MountShower Organizer, 40lbs Load Capacity BathroomAccessories Towels Hook Toiletries",
+     "3-Pack Black Triangle Shower Caddy, 3-Tier Corner Shelves Shower Storage Rack, Drill Free Wall MountShower Organizer, 40lbs Load Capacity BathroomAccessories Towels Hook Toiletries"
+    ]
+   },
+   {
+    "cat": "Collectibles",
+    "titles": [
+     "Panini Mosaic NFL 6 Box Box Pick Your Number Team Break 2025",
+     "Panini Mosaic NFL 10 Box Box Team Break 2025"
+    ]
+   },
+   {
+    "cat": "Kids' Fashion",
+    "titles": [
+     "K-POP Demon Hunters Hip Hop Hoodie set Merch Girls Rumi Mira Zoe HUNTR/X Fans Pullover pant suit Tops Teen Sweatshirt Jogging Clothing Hoody pullover gift Hooded sweater kids Anime movie children Youtube funny fancy Casual  fancy long sleeve Tees  sport",
+     "K-POP Demon Hunters Hip Hop Hoodie set Merch Girls Rumi Mira Zoe HUNTR/X Fans Pullover pant suit Tops Teen Sweatshirt Jogging Clothing Hoody pullover gift Hooded sweater kids Anime movie children Youtube funny fancy Casual  fancy long sleeve Tees  sport",
+     "K-POP Demon Hunters Hoodie Merch Girls Rumi Mira Zoe HUNTR/X Fans Jacket Teen Sweatshirt Jogging Clothing Pullover Hoody pullover gift Hooded sweater kids Anime movie children Youtube funny fancy Casual prints fancy long sleeve Tops teen sport costume"
+    ]
+   },
+   {
+    "cat": "Books, Magazines & Audio",
+    "titles": [
+     "Tell Me Your Life Story, Dad by Questions About Me. Life Story Guided Journal Keepsake Gift Book. The Perfect Gift for Dad. Paperback.",
+     "Tell Me Your Life Story, Mom by Questions About Me. Life Story Guided Journal Keepsake Gift Book. The Perfect Gift for Mom. Paperback."
+    ]
+   },
+   {
+    "cat": "Phones & Electronics",
+    "titles": [
+     "S25 Ultra Smart Android Phone, 6.8 Inch Screen, Dual Sim Slot, Octa-Core Cpu, 4g Network, 4GB RAM, 64GB Storage, 4500mah Battery, 5+13mp Camera",
+     "S25 Ultra Smart Android Phone, 6.56 Inch Screen, Dual Sim Slot, Quad Core Cpu, 4g Network, 3gb RAM, 64GB Storage, 2850mah Battery, Android Cell Phones",
+     "S25 Ultra Unlocked Android Smartphone, 6.8 Inch Screen, Dual Sim Slot, Octa-Core Cpu, 4g Network, 4GB RAM, 64GB Storage, 3950mah Battery"
+    ]
+   },
+   {
+    "cat": "Food & Beverages",
+    "titles": [
+     "Kajun Loaded Tea 40 Louisiana-Inspired Loaded Tea and Loaded Snow Cone Flavors That'll Make You Say 'Oh My Crawfish!' a TikTok Exclusive Bundle Savings of Tea Bombs Sugar-Free Beverage Rainbow",
+     "Kajun Loaded Tea Variety 40 Pack Louisiana-Inspired Loaded Tea and Loaded Snow Cone Flavors That'll Make You Say 'Oh My Crawfish!' a TikTok Exclusive Bundle Savings of Tea Bombs Sugar-Free Beverage Rainbow"
+    ]
+   },
+   {
+    "cat": "Fashion Accessories",
+    "titles": [
+     "\u3010Hot\u3011ISEE HAIR Human Hair Crochet Hair Extensions - Burmese Curly & Kinky Curly Miracle Knots Pre-Separated 32-38 Strands Per Pack Knotless Crochet Hair Protective Style Boho Braids Easy DIY Install Lightweight Reusable Hair #TikTokShopFallDealsForYou",
+     "ISEE HAIR Human Hair Crochet Hair Extensions - Burmese Curly & Kinky Curly Miracle Knots Pre-Separated 32-38 Strands Per Pack Knotless Crochet Hair Protective Style Boho Braids Easy DIY Install Lightweight Reusable Hair #TikTokShopFallDealsForYou"
+    ]
+   },
+   {
+    "cat": "Pre-Owned",
+    "titles": [
+     "Pre-owned Louis Vuitton Multi Pochette Accessoires Monogram Pink Strap Shoulder Crossbody Bag",
+     "Pre-owned Louis Vuitton Multi Pochette Accessoires Monogram Pink Strap Shoulder Crossbody Bag",
+     "Pre-owned Louis Vuitton Multi Pochette Accessoires Monogram Pink Strap Shoulder Crossbody Bag",
+     "Pre-owned Louis Vuitton Multi Pochette Accessoires Monogram Pink Strap Shoulder Crossbody Bag"
+    ]
+   }
+  ]
+ },
+ "E3_shops_vs_next_asp": {
+  "family_months": 3398,
+  "rho": -0.004,
+  "p": 0.8224
+ },
+ "E3_H-D3_ablation": {
+  "dAUC_mean": 4e-05,
+  "dAUC_ci95": [
+   -0.0,
+   0.0001
+  ],
+  "months_positive": "6/7",
+  "dP@50_mean": 0.0,
+  "dAUC_by_month": [
+   -9e-05,
+   0.00011,
+   3e-05,
+   0.00011,
+   2e-05,
+   0.0001,
+   4e-05
+  ],
+  "supported": false
+ },
+ "E3_direction_pooled": {
+  "log_fam_shops": 0.949,
+  "log_fam_size": 0.969,
+  "fam_shops_chg": 1.094,
+  "fam_asp_rel": 1.013
+ }
+}
