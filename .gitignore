@@ -27,6 +27,7 @@ research/kalodata/model_*/
 research/kalodata/pilot_model_*/
 research/kalodata/snapshots/
 research/kalodata/sealed/
+research/winning_products/_work/cache/
 research/**/*.joblib
 research/**/*.gz
 research/**/*.log
