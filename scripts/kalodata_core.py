@@ -61,8 +61,10 @@ def get(path, payload, name, budget, credits):
         if data is not None:
             return data
         body = (json.loads((k.RAW / f"{name}.json").read_text(encoding="utf-8")).get("response") or {})
-        if body.get("code") == 501:  # invalid parameter or "not found": retrying won't help
-            return []
+        msg = str(body.get("message") or "").lower()
+        if str(body.get("code")) == "501" or any(s in msg for s in ("parse error", "invalid parameter", "not found",
+                                                                    "no enough")):
+            return []  # invalid parameter or "not found": retrying won't help (the API sends code as a string)
         time.sleep(5 * (attempt + 1))
     return []
 

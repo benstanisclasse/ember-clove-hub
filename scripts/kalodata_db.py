@@ -55,6 +55,7 @@ PULL_META = {"sha256": "TEXT", "collected_at": "TEXT", "kind": "TEXT", "month": 
              "page": "INTEGER"}
 PRIVATE_KEYS = {"review_user"}  # buyer name and user id in comment responses
 RISER_PAGES = 2  # risers 1-200; later pages (201-1,000, pulled once for Sep 2026) are kind risers_deep
+TOP_PAGES = 5  # top sellers 1-500; later pages (501+, niche deep pulls from 2026-10-31) are kind top_deep
 
 
 def scrub(o):
@@ -75,7 +76,7 @@ def pull_meta(endpoint, req):
     page = req.get("page_number")
     sort = (req.get("sort_field") or {}).get("field")
     if endpoint == "tiktok/product/rank":
-        kind = "top" if sort in (None, "revenue") else (
+        kind = ("top" if (page or 1) <= TOP_PAGES else "top_deep") if sort in (None, "revenue") else (
             "risers" if (page or 1) <= RISER_PAGES else "risers_deep") if sort == "revenue_growth_rate" else "other"
     elif endpoint == "tiktok/video/rank":
         kind = "product_videos" if req.get("product_id") else "top_videos"
@@ -137,7 +138,10 @@ def ingest_file(path, con=None):
     meta = pull_meta(endpoint, req)
     old = con.execute("SELECT pull_id, sha256, success, n_records FROM pulls WHERE file = ?", (rel,)).fetchone()
     if old:
-        if old[1] == digest:
+        if old[1] == digest:  # unchanged file: only refresh the metadata if the classification rules changed
+            con.execute("UPDATE pulls SET kind=?, month=?, category_id=?, page=? WHERE pull_id=? AND "
+                        "(kind IS NOT ? OR month IS NOT ? OR category_id IS NOT ? OR page IS NOT ?)",
+                        (*meta, old[0], *meta))
             return 0
         same = old[2] == int(bool(body.get("success"))) and old[3] == (len(records) if table else 0)
         if old[1] is None and same:  # loaded before checksums existed and still matches: just fill the metadata

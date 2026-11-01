@@ -176,3 +176,20 @@ Frozen in `registry/DEFINITIONS_v1.md` before any outcome was examined:
 - creator and video counts from the random detail sample
 
 All results are labelled **descriptive/exploratory** under the holdout ledger above.
+
+---
+
+## Correction (2026-10-31, after the Tier 2 download)
+
+The loader used to label every revenue-sorted page "top". One old probe page (Womenswear 2026-09, ranks 1,001-1,100) was
+therefore inside the top-500 panel. Pages beyond 5 are now labelled `top_deep` (`scripts/kalodata_db.py`, `TOP_PAGES`),
+and `phase_a_integrity.py` was re-run (`_work/phase_a_results.json`, EXP-A-002). The changes are small, and no conclusion
+changes:
+
+| Figure | Before | Corrected |
+|---|---|---|
+| Panel product-months | 251,752 | 251,654 |
+| Products seen in the top 500 once | 28,951 | 28,886 |
+| 2026-09 top-500 entrants (in any list the month before) | 4,986 (146) | 4,892 (142) |
+
+The figures above in this report are kept as first written. The corrected values supersede them.

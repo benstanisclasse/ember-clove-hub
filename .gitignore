@@ -26,6 +26,7 @@ research/tiktok/ads/
 research/kalodata/model_*/
 research/kalodata/pilot_model_*/
 research/kalodata/snapshots/
+research/kalodata/sealed/
 research/**/*.joblib
 research/**/*.gz
 research/**/*.log

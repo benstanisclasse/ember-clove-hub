@@ -1,13 +1,13 @@
 {
- "n_observation_rows": 258730,
+ "n_observation_rows": 258640,
  "duplicates_same_list": {
   "keys_with_multiple_rows": 1020,
   "of_which_values_differ": 0,
   "examples_differing": []
  },
  "product_month": {
-  "distinct_product_months": 251752,
-  "products": 135983,
+  "distinct_product_months": 251654,
+  "products": 135918,
   "product_months_in_more_than_one_category": 174,
   "product_months_with_revenue_disagreeing_over_1pct": 161,
   "examples": [
@@ -110,7 +110,7 @@
  },
  "collection_window": [
   "2026-10-25T14:43:08",
-  "2026-10-30T08:55:28"
+  "2026-10-31T20:55:59"
  ],
  "collection_by_month": {
   "2025-10": [
@@ -170,15 +170,15 @@
   ],
   "2026-09": [
    "2026-10-25T16:11:49",
-   "2026-10-25T21:47:22",
+   "2026-10-31T20:55:59",
    292
   ]
  },
  "panel": {
-  "product_months": 251752
+  "product_months": 251654
  },
  "growth_rate_check": {
-  "pairs": 99967,
+  "pairs": 99958,
   "agree_within_2pct_or_1pt": 1547,
   "share": 0.0155,
   "sample_disagreements": [
@@ -217,12 +217,12 @@
   ]
  },
  "growth_rate_values": {
-  "n": 251752,
+  "n": 251654,
   "eq_-100": 3921,
   "lt_-100": 0,
   "p01": -100.0,
   "p50": 100.0,
-  "p99": 15770.0,
+  "p99": 15778.75,
   "max": 2512414.77
  },
  "field_checks": {
@@ -237,22 +237,22 @@
   "asp_x_units_over_revenue": {
    "p01": 0.999344262295082,
    "p50": 1.0,
-   "p99": 1.0006448839208943,
+   "p99": 1.0006450057177685,
    "share_within_2pct": 1.0
   },
   "commission_values": {
-   "0": 82167,
-   "8": 21612,
-   "10": 18338,
-   "9": 15213,
-   "7": 15192,
-   "5": 13949,
-   "6": 12726,
-   "11": 11742
+   "0": 82152,
+   "8": 21597,
+   "10": 18322,
+   "9": 15204,
+   "7": 15177,
+   "5": 13942,
+   "6": 12722,
+   "11": 11738
   },
   "commission_zero_share": 0.3264,
-  "seller_missing": 110,
-  "sku_count_missing": 125
+  "seller_missing": 10,
+  "sku_count_missing": 25
  },
  "launch_date": {
   "missing": 0,
@@ -296,7 +296,7 @@
   "Kitchenware": 0.576,
   "Textiles & Soft Furnishings": 0.649,
   "Household Appliances": 0.657,
-  "Womenswear & Underwear": 0.268,
+  "Womenswear & Underwear": 0.254,
   "Muslim Fashion": 0.723,
   "Shoes": 0.439,
   "Beauty & Personal Care": 0.335,
@@ -322,14 +322,14 @@
   "Jewelry Accessories & Derivatives": 0.334
  },
  "top500_months_per_product": {
-  "1": 28951,
-  "2": 10491,
-  "3": 5604,
+  "1": 28886,
+  "2": 10488,
+  "3": 5603,
   "4": 3409,
-  "5": 2461,
-  "6": 1815,
-  "7": 1407,
-  "8": 1108,
+  "5": 2460,
+  "6": 1812,
+  "7": 1410,
+  "8": 1105,
   "9": 989,
   "10": 744,
   "11": 700,
@@ -398,9 +398,9 @@
   },
   "2026-09": {
    "prev_top": 13988,
-   "still_top": 9098,
+   "still_top": 9092,
    "rate": 0.65,
-   "new_entrants": 4986
+   "new_entrants": 4892
   }
  },
  "top500_entrant_sources": {
@@ -455,45 +455,45 @@
    "in_any_list_any_earlier_month": 1788
   },
   "2026-09": {
-   "entrants": 4986,
-   "in_any_list_prev_month": 146,
-   "in_any_list_any_earlier_month": 1723
+   "entrants": 4892,
+   "in_any_list_prev_month": 142,
+   "in_any_list_any_earlier_month": 1695
   }
  },
  "detail_history": {
   "products_with_monthly_details": 989,
   "months_per_product_p50": 1,
   "products_where_field_varies_by_month": {
-   "creator_number": 15,
-   "video_number": 15,
-   "live_number": 15,
-   "product_review_count": 0,
-   "revenue": 15,
+   "creator_number": 16,
+   "video_number": 16,
+   "live_number": 16,
+   "product_review_count": 1,
+   "revenue": 16,
    "launch_date": 0
   }
  },
  "detail_vs_rank_revenue_same_month": {
-  "pairs": 1004,
-  "match_within_1pct": 964
+  "pairs": 1005,
+  "match_within_1pct": 965
  },
  "videos": {
-  "rows": 132981,
-  "distinct_video_months": 129000,
+  "rows": 141584,
+  "distinct_video_months": 137509,
   "dup_keys": 3295,
-  "published_after_observed_month": 7,
+  "published_after_observed_month": 12,
   "publish_age_months_p10_p50_p90": [
    0,
    1,
    4
   ],
-  "ad_share": 0.699,
-  "ai_share": 0.04,
+  "ad_share": 0.693,
+  "ai_share": 0.041,
   "ads_roas_zero_when_ad": 0.0,
   "ads_roas_nonzero_when_not_ad": 0.0,
-  "ads_roas_distinct_values": 1195,
+  "ads_roas_distinct_values": 1309,
   "ads_roas_p10_p50_p90_when_ad": [
-   1.61,
-   2.48,
+   1.54,
+   2.45,
    3.36
   ],
   "ad_revenue_ratio_range": [
@@ -501,8 +501,8 @@
    80.00000000000009
   ],
   "zero_view_rows": 0,
-  "rows_with_product_link": 32161,
-  "products_with_video_link": 99,
+  "rows_with_product_link": 40764,
+  "products_with_video_link": 192,
   "months_with_product_link": [
    "2026-09"
   ],

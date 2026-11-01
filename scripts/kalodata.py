@@ -41,7 +41,8 @@ class Budget:
         self.spent += credits
 
 
-def call(path, payload, name, budget=None, credits=0.0, method="POST"):
+def call(path, payload, name, budget=None, credits=0.0, method="POST", ingest=True):
+    """ingest=False keeps the raw file out of kalodata.db (sealed forward-test pulls)."""
     if budget:
         budget.charge(credits, name)
     headers = {"secret-key": hub_env.get_secret("kalodata_api"), "content-type": "application/json;charset=UTF-8"}
@@ -56,7 +57,8 @@ def call(path, payload, name, budget=None, credits=0.0, method="POST"):
     raw_file.write_text(json.dumps({"path": path, "request": payload, "status": resp.status_code, "response": body},
                                    indent=2, ensure_ascii=False), encoding="utf-8")
     try:
-        kalodata_db.ingest_file(raw_file)  # keep the local database in step with every pull
+        if ingest:
+            kalodata_db.ingest_file(raw_file)  # keep the local database in step with every pull
     except Exception as e:  # the raw file is the record; a DB hiccup must not lose a paid call
         print(f"  (database load skipped for {name}: {e})")
     if resp.status_code != 200 or not body.get("success", False):
