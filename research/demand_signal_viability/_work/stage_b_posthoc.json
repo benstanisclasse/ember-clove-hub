@@ -1,0 +1,78 @@
+{
+ "universe_prev_top_share": {
+  "2026-01": 0.22,
+  "2026-02": 0.252,
+  "2026-03": 0.273,
+  "2026-04": 0.296,
+  "2026-05": 0.305,
+  "2026-06": 0.309,
+  "2026-07": 0.323,
+  "2026-08": 0.33
+ },
+ "P1_precision_source_top20": {
+  "A Revenue": {
+   "flags": 4480,
+   "hits": 1256,
+   "hits_first_time": 532,
+   "hits_reentry": 724,
+   "flags_first_time": 2102,
+   "precision_all": 0.2804,
+   "share_of_hits_reentry": 0.5764,
+   "precision_first_time_flags": 0.2531,
+   "first_time_hits_per_month": 66.5
+  },
+  "B Growth": {
+   "flags": 4480,
+   "hits": 857,
+   "hits_first_time": 563,
+   "hits_reentry": 294,
+   "flags_first_time": 3331,
+   "precision_all": 0.1913,
+   "share_of_hits_reentry": 0.3431,
+   "precision_first_time_flags": 0.169,
+   "first_time_hits_per_month": 70.375
+  },
+  "D Momentum": {
+   "flags": 4480,
+   "hits": 891,
+   "hits_first_time": 592,
+   "hits_reentry": 299,
+   "flags_first_time": 3372,
+   "precision_all": 0.1989,
+   "share_of_hits_reentry": 0.3356,
+   "precision_first_time_flags": 0.1756,
+   "first_time_hits_per_month": 74.0
+  },
+  "E Existing model": {
+   "flags": 4480,
+   "hits": 1774,
+   "hits_first_time": 777,
+   "hits_reentry": 997,
+   "flags_first_time": 2088,
+   "precision_all": 0.396,
+   "share_of_hits_reentry": 0.562,
+   "precision_first_time_flags": 0.3721,
+   "first_time_hits_per_month": 97.125
+  },
+  "F logit": {
+   "flags": 4480,
+   "hits": 1777,
+   "hits_first_time": 758,
+   "hits_reentry": 1019,
+   "flags_first_time": 2088,
+   "precision_all": 0.3967,
+   "share_of_hits_reentry": 0.5734,
+   "precision_first_time_flags": 0.363,
+   "first_time_hits_per_month": 94.75
+  }
+ },
+ "P2_kalo_g": {
+  "n_triples": 122862,
+  "rho_with_own_month_growth_(m-1->m)": 0.235,
+  "rho_with_next_month_growth_(m->m+1)": 0.262,
+  "rho_partial_next_given_own": 0.308,
+  "products_with_3plus_months": 38879,
+  "share_with_kalo_g_constant_across_months": 0.0006,
+  "share_value_100": 0.0377
+ }
+}

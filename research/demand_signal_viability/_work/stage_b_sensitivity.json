@@ -1,0 +1,68 @@
+{
+ "S1": {
+  "A Revenue": {
+   "catP@20": 0.2804,
+   "first_time_hits_per_month": 66.5
+  },
+  "E no kalo_g": {
+   "catP@20": 0.2779,
+   "first_time_hits_per_month": 93.5
+  },
+  "F logit no kalo_g": {
+   "catP@20": 0.3074,
+   "first_time_hits_per_month": 93.8
+  },
+  "F logit (with)": {
+   "catP@20": 0.3967,
+   "first_time_hits_per_month": 94.8
+  },
+  "F_no_kalo_minus_revenue": {
+   "mean": 0.027,
+   "ci95": [
+    0.0163,
+    0.0364
+   ],
+   "months_ahead": "8/8"
+  },
+  "kalo_g_contribution": {
+   "mean": 0.0893,
+   "ci95": [
+    0.073,
+    0.1025
+   ]
+  }
+ },
+ "S2": {
+  "A Revenue": {
+   "catP@20": 0.0969,
+   "first_time_hits_per_month": 20.8
+  },
+  "E no kalo_g": {
+   "catP@20": 0.1062,
+   "first_time_hits_per_month": 10.2
+  },
+  "F logit no kalo_g": {
+   "catP@20": 0.1089,
+   "first_time_hits_per_month": 14.8
+  },
+  "F logit (with)": {
+   "catP@20": 0.1406,
+   "first_time_hits_per_month": 23.0
+  },
+  "F_no_kalo_minus_revenue": {
+   "mean": 0.0121,
+   "ci95": [
+    0.0009,
+    0.0232
+   ],
+   "months_ahead": "3/4"
+  },
+  "kalo_g_contribution": {
+   "mean": 0.0317,
+   "ci95": [
+    0.025,
+    0.0384
+   ]
+  }
+ }
+}
