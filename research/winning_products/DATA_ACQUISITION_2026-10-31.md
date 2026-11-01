@@ -68,22 +68,33 @@ on or before the end of m.
 ## Results (Tier 2 run, 2026-10-31 evening ET)
 
 **Spend.** `credit/logs` shows 1,867 charges, 643 × 0.1 and 1,224 × 0.01, displayed total **76.54 credits**. The
-balance fell from **470.9 to 405.29 (−65.61)**. The gap suggests review and image calls really cost about 0.001 and
-the log rounds them up to 0.01. Summary: `_work/kalodata_credit_logs_tier2_2026-10-31.json`.
+balance fell from **470.9 to 405.29 (−65.61)**. The ~10.9 gap matches the failed and no-data calls (96 + 10 + 3 test retries ≈ 10.9 credits), which are listed
+in the log but **were not deducted from the balance** (see "Billing facts", corrected). Summary:
+`_work/kalodata_credit_logs_tier2_2026-10-31.json`.
 
 | Pull | Files | Outcome |
 |---|---|---|
 | Niche ranks 501-1,000, 12 months | 240 | All succeeded: 24,000 rows (`top_deep`) |
-| Monthly shop and creator ranks | 96 | **All failed and were billed (9.6 credits).** `need_category` was sent as `true`, but the API wants an integer. Fixed (`need_category=1`); **not re-pulled yet**: re-pulling costs ~9.6 credits more than the approved ~77, so it awaits the owner's OK. Failed responses are kept in `raw/gaps_tier2_failed/` |
+| Monthly shop and creator ranks | 96 | First run: all 96 failed (`need_category` sent as `true`; the API wants an integer). Failed responses are kept in
+`raw/gaps_tier2_failed/`. **Re-pulled 2026-10-31 after the owner's "Yes, re-pull them"** (`kalodata_gaps.py ranks`,
+after a 1-category test): all 48 shop pulls and 44 of 48 creator pulls returned 100 rows each. Creators for 2025-10
+returned "creator not found" (partial first month). Balance 405.29 → 396.09 (−9.2 = the 92 successes) |
 | Raw reviews | 921 pages, 499 products | 83,156 reviews. 12 products have none, and **357 hit the 200-review cap** |
-| Product attributes | 200 | 196 with data (median 13 attributes, plus highlights). **4 "file not found" calls were billed anyway** |
+| Product attributes | 200 | 196 with data (median 13 attributes, plus highlights). 4 "file not found" (listed in the log, not deducted) |
 | Product images | 299 | All succeeded (median 9 images per product). The URLs expire, so store hashes, not files |
-| Product → videos (Sep 2026) | 99 | 93 with videos (8,603 rows). **6 "video not found" calls were billed** |
+| Product → videos (Sep 2026) | 99 | 93 with videos (8,603 rows). 6 "video not found" (listed in the log, not deducted) |
 
-**Billing facts learned (they contradict or go beyond the docs):**
-- Failed calls are billed, including parameter errors.
-- "No data" results are billed, including `product/analysis`, which the pricing page says charges only when data exists.
-- Plan every pull with a small test page first.
+**Billing facts learned (corrected after the re-pull; the first version of this note said failed calls were billed):**
+- `credit/logs` lists a charge for **every** call, including parameter errors and "not found" results. The **balance**
+  dropped only for successful calls:
+  - re-pull: 96 logged, −9.2 balance for 92 successes
+  - Tier 2: 76.54 logged, −65.61 balance, a gap equal to the failed and no-data calls
+  So `credit/logs` overstates spend, and **the balance is the truth for cost**. The earlier audit finding of "~150 more
+  0.1 charges than saved responses" is likely the same logging effect, not billing.
+- Review and image calls cost the listed 0.01.
+- Still: test one page before any bulk pull. Failed calls waste rate limit and time even when they are free.
+
+**Total spent today (balance):** 470.9 → 396.09 = **74.81 credits**, covering the tests, Tier 2 and the shop/creator re-pull.
 
 **Reviews:**
 - Timestamps are **Unix seconds**, not milliseconds.

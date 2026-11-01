@@ -1,0 +1,26 @@
+{
+  "called_at": "2026-10-31",
+  "window": "2026-09-01..2026-10-31 (UTC days)",
+  "records": 1963,
+  "api_total": 1963,
+  "pages": 20,
+  "example_record": {
+    "gmtCreated": 1793501898973,
+    "userId": "redacted",
+    "consumerId": "redacted",
+    "sourceType": "OPEN_API_CALL",
+    "kaloBiz": 0,
+    "kaloBizName": "kalodata",
+    "displayQuantity": -0.1
+  },
+  "credits_by_day_and_type": {
+    "2026-11-01 OPEN_API_CALL": -86.14
+  },
+  "records_by_amount": {
+    "-0.1": 739,
+    "-0.01": 1224
+  },
+  "records_by_type": {
+    "OPEN_API_CALL / kalodata": 1963
+  }
+}

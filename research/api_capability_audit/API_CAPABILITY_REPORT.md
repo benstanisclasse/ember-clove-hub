@@ -215,6 +215,9 @@ Price list from the pricing page, checked against our own `credit/logs` (5,317 c
 | `credit/balance`, `credit/logs` | free | 10 | verified |
 
 - Failed rank and detail calls appear to be billed: there are ~150 more 0.1 charges than successful responses.
+  **Correction (2026-10-31, later):** probably not. On two later runs, `credit/logs` listed every failed or "not found"
+  call, but the balance fell only for successful calls. The balance is the truth for cost; the log overstates it.
+  Evidence: `research/winning_products/DATA_ACQUISITION_2026-10-31.md`.
 - Monthly rebate: 20% on spend between 3k and 30k credits, 50% above. Credit purchase prices are behind login.
 - **Scenario costs** (`automation_opportunities.md`):
   - current core refresh: ~30/month

@@ -5,6 +5,7 @@ Accessories, Jewelry. Every call goes through kalodata.call (raw file first, cre
 (saved responses are reused, so reruns cost nothing).
 
   tests     one call per untested endpoint/option (~0.5 credits)          -> raw/gaps_tests/
+  ranks     monthly shop + creator ranks only (re-pull after the need_category fix; --months/--cats to limit)
   tier2     niche ranks 501-1,000 x 12 months, monthly shop + creator ranks, reviews, attributes, images and
             product videos for a seeded rank-stratified sample of Sep-2026 niche products (~77 credits) -> raw/gaps_tier2/
   forward   one month of the core design (top 500, risers 200, top videos 300, 29 categories, ~29 credits),
@@ -107,14 +108,7 @@ def tier2(budget):
                     core.get("tiktok/product/rank", rank_payload(m, page, category_ids=[cid], need_extra=True),
                              f"deep_{m}_{cid}_p{page}", budget, 0.1)
     print(f"  {budget.spent:.1f} credits", flush=True)
-    print("Monthly shop and creator ranks", flush=True)
-    for m in MONTHS:
-        for cid in NICHE:
-            core.get("tiktok/shop/rank", rank_payload(m, 1, category_ids=[cid], need_category=1),
-                     f"shops_{m}_{cid}", budget, 0.1)
-            core.get("tiktok/creator/rank", rank_payload(m, 1, category_id_list=cid, need_category=1),
-                     f"creators_{m}_{cid}", budget, 0.1)
-    print(f"  {budget.spent:.1f} credits", flush=True)
+    shop_creator_ranks(budget, MONTHS, list(NICHE))
     rows = sample()
     print(f"Sample: {len(rows)} products (research/winning_products/_work/tier2_sample.csv)", flush=True)
     for r in rows:
@@ -133,6 +127,19 @@ def tier2(budget):
             core.get("tiktok/video/rank", rank_payload(SAMPLE_MONTH, 1, product_id=pid), f"pvideos_{SAMPLE_MONTH}_{pid}",
                      budget, 0.1)
     print(f"Done: {budget.spent:.2f} credits (estimated); calls {core.COUNT}", flush=True)
+
+
+def shop_creator_ranks(budget, months, cats):
+    """Top 100 shops and creators per niche category-month (need_category must be an integer, not a boolean)."""
+    k.RAW = k.OUT / "raw" / "gaps_tier2"
+    print("Monthly shop and creator ranks", flush=True)
+    for m in months:
+        for cid in cats:
+            core.get("tiktok/shop/rank", rank_payload(m, 1, category_ids=[cid], need_category=1),
+                     f"shops_{m}_{cid}", budget, 0.1)
+            core.get("tiktok/creator/rank", rank_payload(m, 1, category_id_list=cid, need_category=1),
+                     f"creators_{m}_{cid}", budget, 0.1)
+    print(f"  {budget.spent:.1f} credits", flush=True)
 
 
 def forward(month, budget):
@@ -164,15 +171,20 @@ def forward(month, budget):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["tests", "tier2", "forward"])
+    ap.add_argument("cmd", choices=["tests", "tier2", "ranks", "forward"])
     ap.add_argument("--max-credits", type=float, required=True)
     ap.add_argument("--month")
+    ap.add_argument("--months", help="ranks: comma-separated months (default: all 12)")
+    ap.add_argument("--cats", help="ranks: comma-separated category ids (default: the 4 niche categories)")
     a = ap.parse_args()
     budget = k.Budget(a.max_credits)
     if a.cmd == "tests":
         tests(budget)
     elif a.cmd == "tier2":
         tier2(budget)
+    elif a.cmd == "ranks":
+        shop_creator_ranks(budget, a.months.split(",") if a.months else MONTHS,
+                           a.cats.split(",") if a.cats else list(NICHE))
     else:
         forward(a.month, budget)
 
