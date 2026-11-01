@@ -13,6 +13,7 @@ notes. Plans and audits: `docs/MARKET_ENGINE_V2_ROADMAP.md` and the `docs/MARKET
 | `kalodata/audit/`, `*.md`, small CSVs | Reports, audits, evaluation scripts | yes | mirror + daily |
 | `kalodata/videos/`, `tiktok/ads/` | Transcripts, tags and frame sheets of studied videos | no | mirror |
 | `api_capability_audit/` | Kalodata + CJ API capability audit (2026-10-31): endpoint/field catalogues, costs, gap analysis, proposed architecture. Start at `API_CAPABILITY_REPORT.md` | yes | mirror + daily |
+| `winning_products/` | Winning-product research programme (2026-10-31): phase reports, pre-registered definitions and hypotheses, experiment registry. Start at `PHASE_A_DATA_INTEGRITY.md` | yes | mirror + daily |
 
 ## Rules
 

@@ -1,0 +1,702 @@
+category_id,category,month,kind,rows,min_revenue_in_list,deepest_rank
+605196,Automotive & Motorcycle,2025-10,risers,200,1.63,200
+605196,Automotive & Motorcycle,2025-10,top,500,3710.66,500
+605196,Automotive & Motorcycle,2025-11,risers,200,45.51,200
+605196,Automotive & Motorcycle,2025-11,top,500,16551.56,500
+605196,Automotive & Motorcycle,2025-12,risers,200,7.78,200
+605196,Automotive & Motorcycle,2025-12,top,500,16889.63,500
+605196,Automotive & Motorcycle,2026-01,risers,200,15.74,200
+605196,Automotive & Motorcycle,2026-01,top,500,12723.52,500
+605196,Automotive & Motorcycle,2026-02,risers,200,10.85,200
+605196,Automotive & Motorcycle,2026-02,top,500,12288.57,500
+605196,Automotive & Motorcycle,2026-03,risers,200,20.34,200
+605196,Automotive & Motorcycle,2026-03,top,500,16577.66,500
+605196,Automotive & Motorcycle,2026-04,risers,200,27.92,200
+605196,Automotive & Motorcycle,2026-04,top,500,14843.8,500
+605196,Automotive & Motorcycle,2026-05,risers,200,8.72,200
+605196,Automotive & Motorcycle,2026-05,top,500,14353.0,500
+605196,Automotive & Motorcycle,2026-06,risers,200,18.15,200
+605196,Automotive & Motorcycle,2026-06,top,500,15925.58,500
+605196,Automotive & Motorcycle,2026-07,risers,200,26.65,200
+605196,Automotive & Motorcycle,2026-07,top,500,16689.55,500
+605196,Automotive & Motorcycle,2026-08,risers,200,22.47,200
+605196,Automotive & Motorcycle,2026-08,top,500,17008.15,500
+605196,Automotive & Motorcycle,2026-09,risers,200,24.17,200
+605196,Automotive & Motorcycle,2026-09,risers_deep,800,12.0,1000
+605196,Automotive & Motorcycle,2026-09,top,500,15973.74,500
+602284,Baby & Maternity,2025-10,risers,200,4.99,200
+602284,Baby & Maternity,2025-10,top,500,1119.9,500
+602284,Baby & Maternity,2025-11,risers,200,26.9,200
+602284,Baby & Maternity,2025-11,top,500,4785.35,500
+602284,Baby & Maternity,2025-12,risers,200,5.35,200
+602284,Baby & Maternity,2025-12,top,500,4925.75,500
+602284,Baby & Maternity,2026-01,risers,200,12.91,200
+602284,Baby & Maternity,2026-01,top,500,4170.47,500
+602284,Baby & Maternity,2026-02,risers,200,19.1,200
+602284,Baby & Maternity,2026-02,top,500,4330.5,500
+602284,Baby & Maternity,2026-03,risers,200,20.5,200
+602284,Baby & Maternity,2026-03,top,500,5159.64,500
+602284,Baby & Maternity,2026-04,risers,200,11.1,200
+602284,Baby & Maternity,2026-04,top,500,4645.4,500
+602284,Baby & Maternity,2026-05,risers,200,18.17,200
+602284,Baby & Maternity,2026-05,top,500,5185.41,500
+602284,Baby & Maternity,2026-06,risers,200,29.61,200
+602284,Baby & Maternity,2026-06,top,500,5723.07,500
+602284,Baby & Maternity,2026-07,risers,200,9.03,200
+602284,Baby & Maternity,2026-07,top,500,6401.27,500
+602284,Baby & Maternity,2026-08,risers,200,14.76,200
+602284,Baby & Maternity,2026-08,top,500,6223.78,500
+602284,Baby & Maternity,2026-09,risers,200,26.04,200
+602284,Baby & Maternity,2026-09,risers_deep,800,15.14,1000
+602284,Baby & Maternity,2026-09,top,500,6356.72,500
+601450,Beauty & Personal Care,2025-10,risers,200,3.0,200
+601450,Beauty & Personal Care,2025-10,top,500,25248.0,500
+601450,Beauty & Personal Care,2025-11,risers,200,215.59,200
+601450,Beauty & Personal Care,2025-11,top,500,127717.6,500
+601450,Beauty & Personal Care,2025-12,risers,200,33.6,200
+601450,Beauty & Personal Care,2025-12,top,500,114512.3,500
+601450,Beauty & Personal Care,2026-01,risers,200,40.95,200
+601450,Beauty & Personal Care,2026-01,top,500,88177.0,500
+601450,Beauty & Personal Care,2026-02,risers,200,83.6,200
+601450,Beauty & Personal Care,2026-02,top,500,86228.1,500
+601450,Beauty & Personal Care,2026-03,risers,200,78.17,200
+601450,Beauty & Personal Care,2026-03,top,500,97238.05,500
+601450,Beauty & Personal Care,2026-04,risers,200,74.63,200
+601450,Beauty & Personal Care,2026-04,top,500,91207.55,500
+601450,Beauty & Personal Care,2026-05,risers,200,34.8,200
+601450,Beauty & Personal Care,2026-05,top,500,90647.0,500
+601450,Beauty & Personal Care,2026-06,risers,200,63.45,200
+601450,Beauty & Personal Care,2026-06,top,500,94863.62,500
+601450,Beauty & Personal Care,2026-07,risers,200,28.4,200
+601450,Beauty & Personal Care,2026-07,top,500,99953.63,500
+601450,Beauty & Personal Care,2026-08,risers,200,37.82,200
+601450,Beauty & Personal Care,2026-08,top,500,95888.83,500
+601450,Beauty & Personal Care,2026-09,risers,200,78.96,200
+601450,Beauty & Personal Care,2026-09,risers_deep,800,10.49,1000
+601450,Beauty & Personal Care,2026-09,top,500,97795.8,500
+801928,"Books, Magazines & Audio",2025-10,risers,200,4.8,200
+801928,"Books, Magazines & Audio",2025-10,top,500,1360.0,500
+801928,"Books, Magazines & Audio",2025-11,risers,200,50.28,200
+801928,"Books, Magazines & Audio",2025-11,top,500,4982.43,500
+801928,"Books, Magazines & Audio",2025-12,risers,200,19.9,200
+801928,"Books, Magazines & Audio",2025-12,top,500,5979.08,500
+801928,"Books, Magazines & Audio",2026-01,risers,200,20.98,200
+801928,"Books, Magazines & Audio",2026-01,top,500,4382.0,500
+801928,"Books, Magazines & Audio",2026-02,risers,200,37.82,200
+801928,"Books, Magazines & Audio",2026-02,top,500,4087.94,500
+801928,"Books, Magazines & Audio",2026-03,risers,200,17.38,200
+801928,"Books, Magazines & Audio",2026-03,top,500,4374.63,500
+801928,"Books, Magazines & Audio",2026-04,risers,200,17.8,200
+801928,"Books, Magazines & Audio",2026-04,top,500,3882.84,500
+801928,"Books, Magazines & Audio",2026-05,risers,200,25.0,200
+801928,"Books, Magazines & Audio",2026-05,top,500,4049.0,500
+801928,"Books, Magazines & Audio",2026-06,risers,200,30.0,200
+801928,"Books, Magazines & Audio",2026-06,top,500,4275.03,500
+801928,"Books, Magazines & Audio",2026-07,risers,200,31.35,200
+801928,"Books, Magazines & Audio",2026-07,top,500,4414.96,500
+801928,"Books, Magazines & Audio",2026-08,risers,200,8.0,200
+801928,"Books, Magazines & Audio",2026-08,top,500,4490.38,500
+801928,"Books, Magazines & Audio",2026-09,risers,200,7.0,200
+801928,"Books, Magazines & Audio",2026-09,risers_deep,800,5.0,1000
+801928,"Books, Magazines & Audio",2026-09,top,500,3904.53,500
+951432,Collectibles,2025-10,risers,200,2.99,200
+951432,Collectibles,2025-10,top,500,5939.01,500
+951432,Collectibles,2025-11,risers,200,29.88,200
+951432,Collectibles,2025-11,top,500,18476.61,500
+951432,Collectibles,2025-12,risers,200,90.3,200
+951432,Collectibles,2025-12,top,500,19435.0,500
+951432,Collectibles,2026-01,risers,200,11.0,200
+951432,Collectibles,2026-01,top,500,20101.0,500
+951432,Collectibles,2026-02,risers,200,24.0,200
+951432,Collectibles,2026-02,top,500,18632.2,500
+951432,Collectibles,2026-03,risers,200,31.01,200
+951432,Collectibles,2026-03,top,500,20502.5,500
+951432,Collectibles,2026-04,risers,200,48.39,200
+951432,Collectibles,2026-04,top,500,14871.0,500
+951432,Collectibles,2026-05,risers,200,17.0,200
+951432,Collectibles,2026-05,top,500,14905.0,500
+951432,Collectibles,2026-06,risers,200,23.0,200
+951432,Collectibles,2026-06,top,500,15704.43,500
+951432,Collectibles,2026-07,risers,200,65.95,200
+951432,Collectibles,2026-07,top,500,15698.3,500
+951432,Collectibles,2026-08,risers,200,18.0,200
+951432,Collectibles,2026-08,top,500,15954.0,500
+951432,Collectibles,2026-09,risers,200,36.0,200
+951432,Collectibles,2026-09,risers_deep,800,8.44,1000
+951432,Collectibles,2026-09,top,500,15338.4,500
+601755,Computers & Office Equipment,2025-10,risers,200,3.5,200
+601755,Computers & Office Equipment,2025-10,top,500,2060.33,500
+601755,Computers & Office Equipment,2025-11,risers,200,18.2,200
+601755,Computers & Office Equipment,2025-11,top,500,10926.67,500
+601755,Computers & Office Equipment,2025-12,risers,200,13.44,200
+601755,Computers & Office Equipment,2025-12,top,500,12747.82,500
+601755,Computers & Office Equipment,2026-01,risers,200,7.58,200
+601755,Computers & Office Equipment,2026-01,top,500,8532.98,500
+601755,Computers & Office Equipment,2026-02,risers,200,18.67,200
+601755,Computers & Office Equipment,2026-02,top,500,6573.3,500
+601755,Computers & Office Equipment,2026-03,risers,200,17.78,200
+601755,Computers & Office Equipment,2026-03,top,500,8075.0,500
+601755,Computers & Office Equipment,2026-04,risers,200,19.51,200
+601755,Computers & Office Equipment,2026-04,top,500,7596.62,500
+601755,Computers & Office Equipment,2026-05,risers,200,8.92,200
+601755,Computers & Office Equipment,2026-05,top,500,7051.81,500
+601755,Computers & Office Equipment,2026-06,risers,200,20.41,200
+601755,Computers & Office Equipment,2026-06,top,500,8193.55,500
+601755,Computers & Office Equipment,2026-07,risers,200,17.47,200
+601755,Computers & Office Equipment,2026-07,top,500,9524.54,500
+601755,Computers & Office Equipment,2026-08,risers,200,18.85,200
+601755,Computers & Office Equipment,2026-08,top,500,9792.48,500
+601755,Computers & Office Equipment,2026-09,risers,200,16.99,200
+601755,Computers & Office Equipment,2026-09,risers_deep,800,7.85,1000
+601755,Computers & Office Equipment,2026-09,top,500,8826.79,500
+605248,Fashion Accessories,2025-10,risers,200,3.99,200
+605248,Fashion Accessories,2025-10,top,500,7458.83,500
+605248,Fashion Accessories,2025-11,risers,200,97.99,200
+605248,Fashion Accessories,2025-11,top,500,29670.34,500
+605248,Fashion Accessories,2025-12,risers,200,8.24,200
+605248,Fashion Accessories,2025-12,top,500,32780.59,500
+605248,Fashion Accessories,2026-01,risers,200,28.21,200
+605248,Fashion Accessories,2026-01,top,500,27532.42,500
+605248,Fashion Accessories,2026-02,risers,200,41.61,200
+605248,Fashion Accessories,2026-02,top,500,26948.0,500
+605248,Fashion Accessories,2026-03,risers,200,9.2,200
+605248,Fashion Accessories,2026-03,top,500,31081.79,500
+605248,Fashion Accessories,2026-04,risers,200,20.72,200
+605248,Fashion Accessories,2026-04,top,500,28723.98,500
+605248,Fashion Accessories,2026-05,risers,200,15.32,200
+605248,Fashion Accessories,2026-05,top,500,27808.58,500
+605248,Fashion Accessories,2026-06,risers,200,32.0,200
+605248,Fashion Accessories,2026-06,top,500,29364.62,500
+605248,Fashion Accessories,2026-07,risers,200,22.75,200
+605248,Fashion Accessories,2026-07,top,500,30981.51,500
+605248,Fashion Accessories,2026-08,risers,200,19.31,200
+605248,Fashion Accessories,2026-08,top,500,30109.93,500
+605248,Fashion Accessories,2026-09,risers,200,37.5,200
+605248,Fashion Accessories,2026-09,risers_deep,800,1.2,1000
+605248,Fashion Accessories,2026-09,top,500,28243.53,500
+700437,Food & Beverages,2025-10,risers,200,1.99,200
+700437,Food & Beverages,2025-10,top,500,4018.94,500
+700437,Food & Beverages,2025-11,risers,200,29.64,200
+700437,Food & Beverages,2025-11,top,500,14338.55,500
+700437,Food & Beverages,2025-12,risers,200,21.88,200
+700437,Food & Beverages,2025-12,top,500,14519.06,500
+700437,Food & Beverages,2026-01,risers,200,27.58,200
+700437,Food & Beverages,2026-01,top,500,13681.53,500
+700437,Food & Beverages,2026-02,risers,200,24.04,200
+700437,Food & Beverages,2026-02,top,500,12916.01,500
+700437,Food & Beverages,2026-03,risers,200,20.49,200
+700437,Food & Beverages,2026-03,top,500,14414.34,500
+700437,Food & Beverages,2026-04,risers,200,20.93,200
+700437,Food & Beverages,2026-04,top,500,12367.72,500
+700437,Food & Beverages,2026-05,risers,200,10.14,200
+700437,Food & Beverages,2026-05,top,500,12772.9,500
+700437,Food & Beverages,2026-06,risers,200,34.0,200
+700437,Food & Beverages,2026-06,top,500,12933.22,500
+700437,Food & Beverages,2026-07,risers,200,14.5,200
+700437,Food & Beverages,2026-07,top,500,13166.82,500
+700437,Food & Beverages,2026-08,risers,200,32.0,200
+700437,Food & Beverages,2026-08,top,500,13678.55,500
+700437,Food & Beverages,2026-09,risers,200,21.74,200
+700437,Food & Beverages,2026-09,risers_deep,800,8.75,1000
+700437,Food & Beverages,2026-09,top,500,12948.91,500
+604453,Furniture,2025-10,risers,200,29.99,200
+604453,Furniture,2025-10,top,500,4020.87,500
+604453,Furniture,2025-11,risers,200,169.68,200
+604453,Furniture,2025-11,top,500,27666.48,500
+604453,Furniture,2025-12,risers,200,73.82,200
+604453,Furniture,2025-12,top,500,22127.75,500
+604453,Furniture,2026-01,risers,200,81.1,200
+604453,Furniture,2026-01,top,500,15285.93,500
+604453,Furniture,2026-02,risers,200,182.74,200
+604453,Furniture,2026-02,top,500,19512.22,500
+604453,Furniture,2026-03,risers,200,39.64,200
+604453,Furniture,2026-03,top,500,28359.64,500
+604453,Furniture,2026-04,risers,200,77.7,200
+604453,Furniture,2026-04,top,500,24299.4,500
+604453,Furniture,2026-05,risers,200,20.44,200
+604453,Furniture,2026-05,top,500,23917.28,500
+604453,Furniture,2026-06,risers,200,83.34,200
+604453,Furniture,2026-06,top,500,27655.17,500
+604453,Furniture,2026-07,risers,200,81.0,200
+604453,Furniture,2026-07,top,500,30154.55,500
+604453,Furniture,2026-08,risers,200,64.66,200
+604453,Furniture,2026-08,top,500,28370.58,500
+604453,Furniture,2026-09,risers,200,82.92,200
+604453,Furniture,2026-09,risers_deep,800,30.86,1000
+604453,Furniture,2026-09,top,500,27544.12,500
+700645,Health,2025-10,risers,200,9.75,200
+700645,Health,2025-10,top,500,9516.5,500
+700645,Health,2025-11,risers,200,79.99,200
+700645,Health,2025-11,top,500,38865.95,500
+700645,Health,2025-12,risers,200,43.05,200
+700645,Health,2025-12,top,500,37872.87,500
+700645,Health,2026-01,risers,200,47.69,200
+700645,Health,2026-01,top,500,37022.52,500
+700645,Health,2026-02,risers,200,83.7,200
+700645,Health,2026-02,top,500,33434.56,500
+700645,Health,2026-03,risers,200,79.14,200
+700645,Health,2026-03,top,500,44142.76,500
+700645,Health,2026-04,risers,200,91.29,200
+700645,Health,2026-04,top,500,39488.14,500
+700645,Health,2026-05,risers,200,29.7,200
+700645,Health,2026-05,top,500,38344.36,500
+700645,Health,2026-06,risers,200,34.08,200
+700645,Health,2026-06,top,500,39137.41,500
+700645,Health,2026-07,risers,200,21.0,200
+700645,Health,2026-07,top,500,39585.3,500
+700645,Health,2026-08,risers,200,46.0,200
+700645,Health,2026-08,top,500,39656.17,500
+700645,Health,2026-09,risers,200,58.31,200
+700645,Health,2026-09,risers_deep,800,20.35,1000
+700645,Health,2026-09,top,500,37781.28,500
+604968,Home Improvement,2025-10,risers,200,2.0,200
+604968,Home Improvement,2025-10,top,500,3093.96,500
+604968,Home Improvement,2025-11,risers,200,29.66,200
+604968,Home Improvement,2025-11,top,500,14681.74,500
+604968,Home Improvement,2025-12,risers,200,14.29,200
+604968,Home Improvement,2025-12,top,500,12969.21,500
+604968,Home Improvement,2026-01,risers,200,9.81,200
+604968,Home Improvement,2026-01,top,500,9165.67,500
+604968,Home Improvement,2026-02,risers,200,36.34,200
+604968,Home Improvement,2026-02,top,500,10269.15,500
+604968,Home Improvement,2026-03,risers,200,19.82,200
+604968,Home Improvement,2026-03,top,500,16998.87,500
+604968,Home Improvement,2026-04,risers,200,24.75,200
+604968,Home Improvement,2026-04,top,500,16553.53,500
+604968,Home Improvement,2026-05,risers,200,10.43,200
+604968,Home Improvement,2026-05,top,500,16859.89,500
+604968,Home Improvement,2026-06,risers,200,33.95,200
+604968,Home Improvement,2026-06,top,500,17641.36,500
+604968,Home Improvement,2026-07,risers,200,29.27,200
+604968,Home Improvement,2026-07,top,500,18192.61,500
+604968,Home Improvement,2026-08,risers,200,15.88,200
+604968,Home Improvement,2026-08,top,500,16659.89,500
+604968,Home Improvement,2026-09,risers,200,58.26,200
+604968,Home Improvement,2026-09,risers_deep,800,12.26,1000
+604968,Home Improvement,2026-09,top,500,16381.38,500
+600001,Home Supplies,2025-10,risers,200,4.0,200
+600001,Home Supplies,2025-10,top,500,7345.8,500
+600001,Home Supplies,2025-11,risers,200,84.99,200
+600001,Home Supplies,2025-11,top,500,35624.94,500
+600001,Home Supplies,2025-12,risers,200,36.17,200
+600001,Home Supplies,2025-12,top,500,30281.01,500
+600001,Home Supplies,2026-01,risers,200,5.2,200
+600001,Home Supplies,2026-01,top,500,21938.91,500
+600001,Home Supplies,2026-02,risers,200,15.65,200
+600001,Home Supplies,2026-02,top,500,20532.59,500
+600001,Home Supplies,2026-03,risers,200,46.97,200
+600001,Home Supplies,2026-03,top,500,25156.35,500
+600001,Home Supplies,2026-04,risers,200,39.31,200
+600001,Home Supplies,2026-04,top,500,22089.84,500
+600001,Home Supplies,2026-05,risers,200,15.71,200
+600001,Home Supplies,2026-05,top,500,22517.0,500
+600001,Home Supplies,2026-06,risers,200,35.02,200
+600001,Home Supplies,2026-06,top,500,23801.47,500
+600001,Home Supplies,2026-07,risers,200,39.72,200
+600001,Home Supplies,2026-07,top,500,26858.8,500
+600001,Home Supplies,2026-08,risers,200,28.82,200
+600001,Home Supplies,2026-08,top,500,28130.05,500
+600001,Home Supplies,2026-09,risers,200,41.0,200
+600001,Home Supplies,2026-09,risers_deep,800,10.2,1000
+600001,Home Supplies,2026-09,top,500,27716.36,500
+600942,Household Appliances,2025-10,risers,200,1.22,200
+600942,Household Appliances,2025-10,top,500,3267.24,500
+600942,Household Appliances,2025-11,risers,200,65.07,200
+600942,Household Appliances,2025-11,top,500,20724.1,500
+600942,Household Appliances,2025-12,risers,200,11.89,200
+600942,Household Appliances,2025-12,top,500,20840.93,500
+600942,Household Appliances,2026-01,risers,200,14.37,200
+600942,Household Appliances,2026-01,top,500,12361.61,500
+600942,Household Appliances,2026-02,risers,200,34.47,200
+600942,Household Appliances,2026-02,top,500,12393.2,500
+600942,Household Appliances,2026-03,risers,200,33.84,200
+600942,Household Appliances,2026-03,top,500,18333.96,500
+600942,Household Appliances,2026-04,risers,200,19.93,200
+600942,Household Appliances,2026-04,top,500,17022.62,500
+600942,Household Appliances,2026-05,risers,200,28.89,200
+600942,Household Appliances,2026-05,top,500,19197.18,500
+600942,Household Appliances,2026-06,risers,200,66.38,200
+600942,Household Appliances,2026-06,top,500,27127.32,500
+600942,Household Appliances,2026-07,risers,200,52.93,200
+600942,Household Appliances,2026-07,top,500,27293.29,500
+600942,Household Appliances,2026-08,risers,200,13.2,200
+600942,Household Appliances,2026-08,top,500,20499.18,500
+600942,Household Appliances,2026-09,risers,200,30.96,200
+600942,Household Appliances,2026-09,risers_deep,800,7.53,1000
+600942,Household Appliances,2026-09,top,500,19027.16,500
+953224,Jewelry Accessories & Derivatives,2025-10,risers,200,1.49,200
+953224,Jewelry Accessories & Derivatives,2025-10,top,500,1062.4,500
+953224,Jewelry Accessories & Derivatives,2025-11,risers,200,7.7,200
+953224,Jewelry Accessories & Derivatives,2025-11,top,500,3969.0,500
+953224,Jewelry Accessories & Derivatives,2025-12,risers,200,9.0,200
+953224,Jewelry Accessories & Derivatives,2025-12,top,500,4293.0,500
+953224,Jewelry Accessories & Derivatives,2026-01,risers,200,10.46,200
+953224,Jewelry Accessories & Derivatives,2026-01,top,500,3507.32,500
+953224,Jewelry Accessories & Derivatives,2026-02,risers,200,9.87,200
+953224,Jewelry Accessories & Derivatives,2026-02,top,500,3567.04,500
+953224,Jewelry Accessories & Derivatives,2026-03,risers,200,5.6,200
+953224,Jewelry Accessories & Derivatives,2026-03,top,500,3893.64,500
+953224,Jewelry Accessories & Derivatives,2026-04,risers,200,9.0,200
+953224,Jewelry Accessories & Derivatives,2026-04,top,500,3599.92,500
+953224,Jewelry Accessories & Derivatives,2026-05,risers,200,9.3,200
+953224,Jewelry Accessories & Derivatives,2026-05,top,500,3626.71,500
+953224,Jewelry Accessories & Derivatives,2026-06,risers,200,9.96,200
+953224,Jewelry Accessories & Derivatives,2026-06,top,500,3623.65,500
+953224,Jewelry Accessories & Derivatives,2026-07,risers,200,8.17,200
+953224,Jewelry Accessories & Derivatives,2026-07,top,500,3929.29,500
+953224,Jewelry Accessories & Derivatives,2026-08,risers,200,14.52,200
+953224,Jewelry Accessories & Derivatives,2026-08,top,500,4236.52,500
+953224,Jewelry Accessories & Derivatives,2026-09,risers,200,13.4,200
+953224,Jewelry Accessories & Derivatives,2026-09,risers_deep,800,4.0,1000
+953224,Jewelry Accessories & Derivatives,2026-09,top,500,4341.24,500
+802184,Kids' Fashion,2025-10,risers,200,8.99,200
+802184,Kids' Fashion,2025-10,top,500,318.96,500
+802184,Kids' Fashion,2025-11,risers,200,48.0,200
+802184,Kids' Fashion,2025-11,top,500,1790.88,500
+802184,Kids' Fashion,2025-12,risers,200,10.27,200
+802184,Kids' Fashion,2025-12,top,500,2143.26,500
+802184,Kids' Fashion,2026-01,risers,200,10.23,200
+802184,Kids' Fashion,2026-01,top,500,934.07,500
+802184,Kids' Fashion,2026-02,risers,200,26.43,200
+802184,Kids' Fashion,2026-02,top,500,968.69,500
+802184,Kids' Fashion,2026-03,risers,200,23.33,200
+802184,Kids' Fashion,2026-03,top,500,1139.0,500
+802184,Kids' Fashion,2026-04,risers,200,28.15,200
+802184,Kids' Fashion,2026-04,top,500,1269.62,500
+802184,Kids' Fashion,2026-05,risers,200,28.07,200
+802184,Kids' Fashion,2026-05,top,500,1236.2,500
+802184,Kids' Fashion,2026-06,risers,200,23.31,200
+802184,Kids' Fashion,2026-06,top,500,1445.0,500
+802184,Kids' Fashion,2026-07,risers,200,12.0,200
+802184,Kids' Fashion,2026-07,top,500,1834.3,500
+802184,Kids' Fashion,2026-08,risers,200,15.48,200
+802184,Kids' Fashion,2026-08,top,500,1954.82,500
+802184,Kids' Fashion,2026-09,risers,200,45.38,200
+802184,Kids' Fashion,2026-09,risers_deep,800,15.42,1000
+802184,Kids' Fashion,2026-09,top,500,1784.88,500
+600024,Kitchenware,2025-10,risers,200,0.93,200
+600024,Kitchenware,2025-10,top,500,2809.74,500
+600024,Kitchenware,2025-11,risers,200,104.65,200
+600024,Kitchenware,2025-11,top,500,16173.3,500
+600024,Kitchenware,2025-12,risers,200,21.72,200
+600024,Kitchenware,2025-12,top,500,16853.29,500
+600024,Kitchenware,2026-01,risers,200,13.93,200
+600024,Kitchenware,2026-01,top,500,10210.87,500
+600024,Kitchenware,2026-02,risers,200,21.78,200
+600024,Kitchenware,2026-02,top,500,10162.0,500
+600024,Kitchenware,2026-03,risers,200,18.87,200
+600024,Kitchenware,2026-03,top,500,11245.98,500
+600024,Kitchenware,2026-04,risers,200,17.39,200
+600024,Kitchenware,2026-04,top,500,10666.56,500
+600024,Kitchenware,2026-05,risers,200,17.8,200
+600024,Kitchenware,2026-05,top,500,9538.11,500
+600024,Kitchenware,2026-06,risers,200,18.07,200
+600024,Kitchenware,2026-06,top,500,11148.19,500
+600024,Kitchenware,2026-07,risers,200,35.19,200
+600024,Kitchenware,2026-07,top,500,12913.53,500
+600024,Kitchenware,2026-08,risers,200,15.86,200
+600024,Kitchenware,2026-08,top,500,13198.76,500
+600024,Kitchenware,2026-09,risers,200,37.72,200
+600024,Kitchenware,2026-09,risers_deep,800,8.54,1000
+600024,Kitchenware,2026-09,top,500,12544.98,500
+824584,Luggage & Bags,2025-10,risers,200,3.95,200
+824584,Luggage & Bags,2025-10,top,500,2392.0,500
+824584,Luggage & Bags,2025-11,risers,200,44.87,200
+824584,Luggage & Bags,2025-11,top,500,10588.98,500
+824584,Luggage & Bags,2025-12,risers,200,17.91,200
+824584,Luggage & Bags,2025-12,top,500,10973.44,500
+824584,Luggage & Bags,2026-01,risers,200,9.6,200
+824584,Luggage & Bags,2026-01,top,500,8121.93,500
+824584,Luggage & Bags,2026-02,risers,200,12.1,200
+824584,Luggage & Bags,2026-02,top,500,8063.38,500
+824584,Luggage & Bags,2026-03,risers,200,25.22,200
+824584,Luggage & Bags,2026-03,top,500,10048.8,500
+824584,Luggage & Bags,2026-04,risers,200,20.26,200
+824584,Luggage & Bags,2026-04,top,500,9124.26,500
+824584,Luggage & Bags,2026-05,risers,200,10.18,200
+824584,Luggage & Bags,2026-05,top,500,8513.87,500
+824584,Luggage & Bags,2026-06,risers,200,32.4,200
+824584,Luggage & Bags,2026-06,top,500,9378.01,500
+824584,Luggage & Bags,2026-07,risers,200,39.57,200
+824584,Luggage & Bags,2026-07,top,500,11352.91,500
+824584,Luggage & Bags,2026-08,risers,200,24.58,200
+824584,Luggage & Bags,2026-08,top,500,11477.48,500
+824584,Luggage & Bags,2026-09,risers,200,10.61,200
+824584,Luggage & Bags,2026-09,risers_deep,800,10.41,1000
+824584,Luggage & Bags,2026-09,top,500,10716.77,500
+824328,Menswear & Underwear,2025-10,risers,200,3.0,200
+824328,Menswear & Underwear,2025-10,top,500,5017.0,500
+824328,Menswear & Underwear,2025-11,risers,200,131.13,200
+824328,Menswear & Underwear,2025-11,top,500,21703.44,500
+824328,Menswear & Underwear,2025-12,risers,200,50.6,200
+824328,Menswear & Underwear,2025-12,top,500,23045.0,500
+824328,Menswear & Underwear,2026-01,risers,200,27.13,200
+824328,Menswear & Underwear,2026-01,top,500,13554.88,500
+824328,Menswear & Underwear,2026-02,risers,200,45.49,200
+824328,Menswear & Underwear,2026-02,top,500,12841.0,500
+824328,Menswear & Underwear,2026-03,risers,200,49.19,200
+824328,Menswear & Underwear,2026-03,top,500,16286.03,500
+824328,Menswear & Underwear,2026-04,risers,200,78.96,200
+824328,Menswear & Underwear,2026-04,top,500,15778.2,500
+824328,Menswear & Underwear,2026-05,risers,200,56.07,200
+824328,Menswear & Underwear,2026-05,top,500,17849.94,500
+824328,Menswear & Underwear,2026-06,risers,200,77.1,200
+824328,Menswear & Underwear,2026-06,top,500,23343.31,500
+824328,Menswear & Underwear,2026-07,risers,200,64.72,200
+824328,Menswear & Underwear,2026-07,top,500,23532.39,500
+824328,Menswear & Underwear,2026-08,risers,200,72.4,200
+824328,Menswear & Underwear,2026-08,top,500,25067.14,500
+824328,Menswear & Underwear,2026-09,risers,200,119.78,200
+824328,Menswear & Underwear,2026-09,risers_deep,800,22.48,1000
+824328,Menswear & Underwear,2026-09,top,500,23251.41,500
+601303,Muslim Fashion,2025-10,risers,200,3.07,200
+601303,Muslim Fashion,2025-10,top,500,58.88,500
+601303,Muslim Fashion,2025-11,risers,200,7.99,200
+601303,Muslim Fashion,2025-11,top,500,288.0,500
+601303,Muslim Fashion,2025-12,risers,200,5.26,200
+601303,Muslim Fashion,2025-12,top,500,225.24,500
+601303,Muslim Fashion,2026-01,risers,200,3.77,200
+601303,Muslim Fashion,2026-01,top,500,271.4,500
+601303,Muslim Fashion,2026-02,risers,200,8.85,200
+601303,Muslim Fashion,2026-02,top,500,520.1,500
+601303,Muslim Fashion,2026-03,risers,200,3.99,200
+601303,Muslim Fashion,2026-03,top,500,530.51,500
+601303,Muslim Fashion,2026-04,risers,200,14.11,200
+601303,Muslim Fashion,2026-04,top,500,523.46,500
+601303,Muslim Fashion,2026-05,risers,200,6.0,200
+601303,Muslim Fashion,2026-05,top,500,467.0,500
+601303,Muslim Fashion,2026-06,risers,200,12.33,200
+601303,Muslim Fashion,2026-06,top,500,432.0,500
+601303,Muslim Fashion,2026-07,risers,200,8.27,200
+601303,Muslim Fashion,2026-07,top,500,456.98,500
+601303,Muslim Fashion,2026-08,risers,200,15.68,200
+601303,Muslim Fashion,2026-08,top,500,336.0,500
+601303,Muslim Fashion,2026-09,risers,200,6.0,200
+601303,Muslim Fashion,2026-09,risers_deep,800,0.87,1000
+601303,Muslim Fashion,2026-09,top,500,359.0,500
+602118,Pet Supplies,2025-10,risers,200,2.16,200
+602118,Pet Supplies,2025-10,top,500,1973.45,500
+602118,Pet Supplies,2025-11,risers,200,42.14,200
+602118,Pet Supplies,2025-11,top,500,8298.46,500
+602118,Pet Supplies,2025-12,risers,200,16.02,200
+602118,Pet Supplies,2025-12,top,500,9686.72,500
+602118,Pet Supplies,2026-01,risers,200,14.42,200
+602118,Pet Supplies,2026-01,top,500,7235.2,500
+602118,Pet Supplies,2026-02,risers,200,10.4,200
+602118,Pet Supplies,2026-02,top,500,7568.68,500
+602118,Pet Supplies,2026-03,risers,200,8.47,200
+602118,Pet Supplies,2026-03,top,500,9044.82,500
+602118,Pet Supplies,2026-04,risers,200,20.45,200
+602118,Pet Supplies,2026-04,top,500,8930.61,500
+602118,Pet Supplies,2026-05,risers,200,13.77,200
+602118,Pet Supplies,2026-05,top,500,8714.82,500
+602118,Pet Supplies,2026-06,risers,200,19.0,200
+602118,Pet Supplies,2026-06,top,500,9747.48,500
+602118,Pet Supplies,2026-07,risers,200,12.72,200
+602118,Pet Supplies,2026-07,top,500,9746.8,500
+602118,Pet Supplies,2026-08,risers,200,8.58,200
+602118,Pet Supplies,2026-08,top,500,10055.46,500
+602118,Pet Supplies,2026-09,risers,200,20.26,200
+602118,Pet Supplies,2026-09,risers_deep,800,5.77,1000
+602118,Pet Supplies,2026-09,top,500,10097.47,500
+601739,Phones & Electronics,2025-10,risers,200,1.23,200
+601739,Phones & Electronics,2025-10,top,500,7198.2,500
+601739,Phones & Electronics,2025-11,risers,200,162.79,200
+601739,Phones & Electronics,2025-11,top,500,40071.24,500
+601739,Phones & Electronics,2025-12,risers,200,14.5,200
+601739,Phones & Electronics,2025-12,top,500,41813.0,500
+601739,Phones & Electronics,2026-01,risers,200,5.64,200
+601739,Phones & Electronics,2026-01,top,500,24575.47,500
+601739,Phones & Electronics,2026-02,risers,200,38.83,200
+601739,Phones & Electronics,2026-02,top,500,22807.99,500
+601739,Phones & Electronics,2026-03,risers,200,26.39,200
+601739,Phones & Electronics,2026-03,top,500,29231.72,500
+601739,Phones & Electronics,2026-04,risers,200,12.15,200
+601739,Phones & Electronics,2026-04,top,500,26264.5,500
+601739,Phones & Electronics,2026-05,risers,200,18.14,200
+601739,Phones & Electronics,2026-05,top,500,26541.93,500
+601739,Phones & Electronics,2026-06,risers,200,10.1,200
+601739,Phones & Electronics,2026-06,top,500,32681.54,500
+601739,Phones & Electronics,2026-07,risers,200,27.18,200
+601739,Phones & Electronics,2026-07,top,500,34503.36,500
+601739,Phones & Electronics,2026-08,risers,200,28.06,200
+601739,Phones & Electronics,2026-08,top,500,34860.08,500
+601739,Phones & Electronics,2026-09,risers,200,39.07,200
+601739,Phones & Electronics,2026-09,risers_deep,800,13.2,1000
+601739,Phones & Electronics,2026-09,top,500,32264.12,500
+856720,Pre-Owned,2025-10,risers,200,34.0,200
+856720,Pre-Owned,2025-10,top,500,550.0,500
+856720,Pre-Owned,2025-11,risers,200,1.0,200
+856720,Pre-Owned,2025-11,top,500,894.0,500
+856720,Pre-Owned,2025-12,risers,200,44.99,200
+856720,Pre-Owned,2025-12,top,500,899.0,500
+856720,Pre-Owned,2026-01,risers,200,1.0,200
+856720,Pre-Owned,2026-01,top,500,923.0,500
+856720,Pre-Owned,2026-02,risers,200,11.0,200
+856720,Pre-Owned,2026-02,top,500,899.0,500
+856720,Pre-Owned,2026-03,risers,200,12.0,200
+856720,Pre-Owned,2026-03,top,500,906.0,500
+856720,Pre-Owned,2026-04,risers,200,45.0,200
+856720,Pre-Owned,2026-04,top,500,170.98,500
+856720,Pre-Owned,2026-05,risers,200,1.0,200
+856720,Pre-Owned,2026-05,top,500,990.0,500
+856720,Pre-Owned,2026-06,risers,200,44.99,200
+856720,Pre-Owned,2026-06,top,500,2399.0,500
+856720,Pre-Owned,2026-07,risers,200,15.0,200
+856720,Pre-Owned,2026-07,top,500,1879.0,500
+856720,Pre-Owned,2026-08,risers,200,45.0,200
+856720,Pre-Owned,2026-08,top,500,996.0,500
+856720,Pre-Owned,2026-09,risers,200,1.0,200
+856720,Pre-Owned,2026-09,risers_deep,800,4.0,1000
+856720,Pre-Owned,2026-09,top,500,1360.0,500
+601352,Shoes,2025-10,risers,200,2.0,200
+601352,Shoes,2025-10,top,500,4593.69,500
+601352,Shoes,2025-11,risers,200,96.19,200
+601352,Shoes,2025-11,top,500,22344.51,500
+601352,Shoes,2025-12,risers,200,38.87,200
+601352,Shoes,2025-12,top,500,19623.11,500
+601352,Shoes,2026-01,risers,200,26.92,200
+601352,Shoes,2026-01,top,500,12517.0,500
+601352,Shoes,2026-02,risers,200,48.83,200
+601352,Shoes,2026-02,top,500,12702.85,500
+601352,Shoes,2026-03,risers,200,24.15,200
+601352,Shoes,2026-03,top,500,18581.39,500
+601352,Shoes,2026-04,risers,200,29.6,200
+601352,Shoes,2026-04,top,500,16934.22,500
+601352,Shoes,2026-05,risers,200,34.16,200
+601352,Shoes,2026-05,top,500,16440.0,500
+601352,Shoes,2026-06,risers,200,53.44,200
+601352,Shoes,2026-06,top,500,19625.16,500
+601352,Shoes,2026-07,risers,200,24.74,200
+601352,Shoes,2026-07,top,500,19548.06,500
+601352,Shoes,2026-08,risers,200,37.61,200
+601352,Shoes,2026-08,top,500,21917.41,500
+601352,Shoes,2026-09,risers,200,31.85,200
+601352,Shoes,2026-09,risers_deep,800,9.68,1000
+601352,Shoes,2026-09,top,500,24666.94,500
+603014,Sports & Outdoor,2025-10,risers,200,0.9,200
+603014,Sports & Outdoor,2025-10,top,500,8219.83,500
+603014,Sports & Outdoor,2025-11,risers,200,7.74,200
+603014,Sports & Outdoor,2025-11,top,500,38691.27,500
+603014,Sports & Outdoor,2025-12,risers,200,37.23,200
+603014,Sports & Outdoor,2025-12,top,500,38884.03,500
+603014,Sports & Outdoor,2026-01,risers,200,2.8,200
+603014,Sports & Outdoor,2026-01,top,500,29834.35,500
+603014,Sports & Outdoor,2026-02,risers,200,89.64,200
+603014,Sports & Outdoor,2026-02,top,500,29335.43,500
+603014,Sports & Outdoor,2026-03,risers,200,61.47,200
+603014,Sports & Outdoor,2026-03,top,500,45344.75,500
+603014,Sports & Outdoor,2026-04,risers,200,59.17,200
+603014,Sports & Outdoor,2026-04,top,500,42287.24,500
+603014,Sports & Outdoor,2026-05,risers,200,16.86,200
+603014,Sports & Outdoor,2026-05,top,500,46761.85,500
+603014,Sports & Outdoor,2026-06,risers,200,68.21,200
+603014,Sports & Outdoor,2026-06,top,500,54818.2,500
+603014,Sports & Outdoor,2026-07,risers,200,54.57,200
+603014,Sports & Outdoor,2026-07,top,500,49955.87,500
+603014,Sports & Outdoor,2026-08,risers,200,36.09,200
+603014,Sports & Outdoor,2026-08,top,500,47104.79,500
+603014,Sports & Outdoor,2026-09,risers,200,73.56,200
+603014,Sports & Outdoor,2026-09,risers_deep,800,11.88,1000
+603014,Sports & Outdoor,2026-09,top,500,42226.41,500
+600154,Textiles & Soft Furnishings,2025-10,risers,200,3.0,200
+600154,Textiles & Soft Furnishings,2025-10,top,500,2364.24,500
+600154,Textiles & Soft Furnishings,2025-11,risers,200,53.62,200
+600154,Textiles & Soft Furnishings,2025-11,top,500,11629.73,500
+600154,Textiles & Soft Furnishings,2025-12,risers,200,15.5,200
+600154,Textiles & Soft Furnishings,2025-12,top,500,11935.0,500
+600154,Textiles & Soft Furnishings,2026-01,risers,200,10.59,200
+600154,Textiles & Soft Furnishings,2026-01,top,500,6698.29,500
+600154,Textiles & Soft Furnishings,2026-02,risers,200,16.0,200
+600154,Textiles & Soft Furnishings,2026-02,top,500,6288.17,500
+600154,Textiles & Soft Furnishings,2026-03,risers,200,22.55,200
+600154,Textiles & Soft Furnishings,2026-03,top,500,7784.46,500
+600154,Textiles & Soft Furnishings,2026-04,risers,200,20.35,200
+600154,Textiles & Soft Furnishings,2026-04,top,500,7477.5,500
+600154,Textiles & Soft Furnishings,2026-05,risers,200,16.61,200
+600154,Textiles & Soft Furnishings,2026-05,top,500,7477.0,500
+600154,Textiles & Soft Furnishings,2026-06,risers,200,23.87,200
+600154,Textiles & Soft Furnishings,2026-06,top,500,9188.96,500
+600154,Textiles & Soft Furnishings,2026-07,risers,200,19.57,200
+600154,Textiles & Soft Furnishings,2026-07,top,500,10304.2,500
+600154,Textiles & Soft Furnishings,2026-08,risers,200,12.41,200
+600154,Textiles & Soft Furnishings,2026-08,top,500,10818.2,500
+600154,Textiles & Soft Furnishings,2026-09,risers,200,28.49,200
+600154,Textiles & Soft Furnishings,2026-09,risers_deep,800,13.61,1000
+600154,Textiles & Soft Furnishings,2026-09,top,500,11087.39,500
+604579,Tools & Hardware,2025-10,risers,200,2.15,200
+604579,Tools & Hardware,2025-10,top,500,3679.08,500
+604579,Tools & Hardware,2025-11,risers,200,50.17,200
+604579,Tools & Hardware,2025-11,top,500,16748.2,500
+604579,Tools & Hardware,2025-12,risers,200,18.0,200
+604579,Tools & Hardware,2025-12,top,500,15252.9,500
+604579,Tools & Hardware,2026-01,risers,200,14.67,200
+604579,Tools & Hardware,2026-01,top,500,11937.88,500
+604579,Tools & Hardware,2026-02,risers,200,15.18,200
+604579,Tools & Hardware,2026-02,top,500,12602.24,500
+604579,Tools & Hardware,2026-03,risers,200,21.26,200
+604579,Tools & Hardware,2026-03,top,500,17867.8,500
+604579,Tools & Hardware,2026-04,risers,200,24.92,200
+604579,Tools & Hardware,2026-04,top,500,16483.09,500
+604579,Tools & Hardware,2026-05,risers,200,19.69,200
+604579,Tools & Hardware,2026-05,top,500,15949.71,500
+604579,Tools & Hardware,2026-06,risers,200,22.55,200
+604579,Tools & Hardware,2026-06,top,500,18242.89,500
+604579,Tools & Hardware,2026-07,risers,200,32.57,200
+604579,Tools & Hardware,2026-07,top,500,18589.56,500
+604579,Tools & Hardware,2026-08,risers,200,24.31,200
+604579,Tools & Hardware,2026-08,top,500,17976.09,500
+604579,Tools & Hardware,2026-09,risers,200,21.23,200
+604579,Tools & Hardware,2026-09,risers_deep,800,9.9,1000
+604579,Tools & Hardware,2026-09,top,500,17618.79,500
+604206,Toys & Hobbies,2025-10,risers,200,2.8,200
+604206,Toys & Hobbies,2025-10,top,500,4950.84,500
+604206,Toys & Hobbies,2025-11,risers,200,77.11,200
+604206,Toys & Hobbies,2025-11,top,500,30273.56,500
+604206,Toys & Hobbies,2025-12,risers,200,17.95,200
+604206,Toys & Hobbies,2025-12,top,500,34292.91,500
+604206,Toys & Hobbies,2026-01,risers,200,14.5,200
+604206,Toys & Hobbies,2026-01,top,500,11006.6,500
+604206,Toys & Hobbies,2026-02,risers,200,33.52,200
+604206,Toys & Hobbies,2026-02,top,500,9809.3,500
+604206,Toys & Hobbies,2026-03,risers,200,24.1,200
+604206,Toys & Hobbies,2026-03,top,500,14966.96,500
+604206,Toys & Hobbies,2026-04,risers,200,33.92,200
+604206,Toys & Hobbies,2026-04,top,500,10936.87,500
+604206,Toys & Hobbies,2026-05,risers,200,26.52,200
+604206,Toys & Hobbies,2026-05,top,500,11757.6,500
+604206,Toys & Hobbies,2026-06,risers,200,27.04,200
+604206,Toys & Hobbies,2026-06,top,500,13525.26,500
+604206,Toys & Hobbies,2026-07,risers,200,15.28,200
+604206,Toys & Hobbies,2026-07,top,500,13964.03,500
+604206,Toys & Hobbies,2026-08,risers,200,4.79,200
+604206,Toys & Hobbies,2026-08,top,500,14150.7,500
+604206,Toys & Hobbies,2026-09,risers,200,34.5,200
+604206,Toys & Hobbies,2026-09,risers_deep,800,12.5,1000
+604206,Toys & Hobbies,2026-09,top,500,14073.66,500
+900488,Women's Shoes,2026-03,top,10,351157.13,10
+601152,Womenswear & Underwear,2025-10,risers,200,4.25,200
+601152,Womenswear & Underwear,2025-10,top,510,17746.36,500
+601152,Womenswear & Underwear,2025-11,risers,200,87.08,200
+601152,Womenswear & Underwear,2025-11,top,500,66919.56,500
+601152,Womenswear & Underwear,2025-12,risers,200,126.05,200
+601152,Womenswear & Underwear,2025-12,top,500,58915.11,500
+601152,Womenswear & Underwear,2026-01,risers,200,66.3,200
+601152,Womenswear & Underwear,2026-01,top,500,52262.8,500
+601152,Womenswear & Underwear,2026-02,risers,200,233.11,200
+601152,Womenswear & Underwear,2026-02,top,500,50157.02,500
+601152,Womenswear & Underwear,2026-03,risers,200,131.41,200
+601152,Womenswear & Underwear,2026-03,top,500,70033.66,500
+601152,Womenswear & Underwear,2026-04,risers,200,265.94,200
+601152,Womenswear & Underwear,2026-04,top,500,64440.49,500
+601152,Womenswear & Underwear,2026-05,risers,200,76.0,200
+601152,Womenswear & Underwear,2026-05,top,500,64490.03,500
+601152,Womenswear & Underwear,2026-06,risers,200,108.16,200
+601152,Womenswear & Underwear,2026-06,top,500,66720.15,500
+601152,Womenswear & Underwear,2026-07,risers,200,112.53,200
+601152,Womenswear & Underwear,2026-07,top,500,63154.78,500
+601152,Womenswear & Underwear,2026-08,risers,200,142.39,200
+601152,Womenswear & Underwear,2026-08,top,1000,70743.31,500
+601152,Womenswear & Underwear,2026-09,risers,210,333.17,200
+601152,Womenswear & Underwear,2026-09,risers_deep,800,14.87,1000
+601152,Womenswear & Underwear,2026-09,top,1100,44209.62,1100

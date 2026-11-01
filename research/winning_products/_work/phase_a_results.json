@@ -1,0 +1,555 @@
+{
+ "n_observation_rows": 258730,
+ "duplicates_same_list": {
+  "keys_with_multiple_rows": 1020,
+  "of_which_values_differ": 0,
+  "examples_differing": []
+ },
+ "product_month": {
+  "distinct_product_months": 251752,
+  "products": 135983,
+  "product_months_in_more_than_one_category": 174,
+  "product_months_with_revenue_disagreeing_over_1pct": 161,
+  "examples": [
+   [
+    [
+     "1729384209881403548",
+     "2025-10"
+    ],
+    [
+     [
+      "risers",
+      "core",
+      85.5
+     ],
+     [
+      "risers",
+      "core",
+      102.0
+     ]
+    ]
+   ],
+   [
+    [
+     "1729384287450140828",
+     "2025-10"
+    ],
+    [
+     [
+      "risers",
+      "core",
+      195.0
+     ],
+     [
+      "risers",
+      "core",
+      462.75
+     ]
+    ]
+   ],
+   [
+    [
+     "1729385332164104348",
+     "2025-10"
+    ],
+    [
+     [
+      "risers",
+      "core",
+      65.0
+     ],
+     [
+      "risers",
+      "core",
+      36.0
+     ]
+    ]
+   ],
+   [
+    [
+     "1729402681317626394",
+     "2025-10"
+    ],
+    [
+     [
+      "risers",
+      "core",
+      1699.15
+     ],
+     [
+      "top",
+      "core",
+      8021.99
+     ]
+    ]
+   ],
+   [
+    [
+     "1731851438153830799",
+     "2025-11"
+    ],
+    [
+     [
+      "risers",
+      "core",
+      5499.45
+     ],
+     [
+      "top",
+      "core",
+      5499.45
+     ],
+     [
+      "top",
+      "core",
+      17023.22
+     ]
+    ]
+   ]
+  ]
+ },
+ "collection_window": [
+  "2026-10-25T14:43:08",
+  "2026-10-30T08:55:28"
+ ],
+ "collection_by_month": {
+  "2025-10": [
+   "2026-10-25T15:57:34",
+   "2026-10-25T19:35:41",
+   285
+  ],
+  "2025-11": [
+   "2026-10-25T19:35:42",
+   "2026-10-25T19:47:15",
+   283
+  ],
+  "2025-12": [
+   "2026-10-25T19:47:17",
+   "2026-10-25T19:59:03",
+   283
+  ],
+  "2026-01": [
+   "2026-10-25T19:59:04",
+   "2026-10-25T20:10:47",
+   283
+  ],
+  "2026-02": [
+   "2026-10-25T20:10:48",
+   "2026-10-25T20:22:38",
+   283
+  ],
+  "2026-03": [
+   "2026-10-25T20:22:39",
+   "2026-10-26T10:50:48",
+   284
+  ],
+  "2026-04": [
+   "2026-10-25T20:34:40",
+   "2026-10-25T20:46:33",
+   283
+  ],
+  "2026-05": [
+   "2026-10-25T20:46:34",
+   "2026-10-25T20:58:32",
+   283
+  ],
+  "2026-06": [
+   "2026-10-25T20:58:34",
+   "2026-10-25T21:10:45",
+   283
+  ],
+  "2026-07": [
+   "2026-10-25T21:10:46",
+   "2026-10-25T21:23:04",
+   283
+  ],
+  "2026-08": [
+   "2026-10-25T16:11:41",
+   "2026-10-25T21:35:21",
+   288
+  ],
+  "2026-09": [
+   "2026-10-25T16:11:49",
+   "2026-10-25T21:47:22",
+   292
+  ]
+ },
+ "panel": {
+  "product_months": 251752
+ },
+ "growth_rate_check": {
+  "pairs": 99967,
+  "agree_within_2pct_or_1pt": 1547,
+  "share": 0.0155,
+  "sample_disagreements": [
+   [
+    24017.974057327174,
+    4655.81
+   ],
+   [
+    8950.0,
+    3420.0
+   ],
+   [
+    146.52383353885233,
+    3217.01
+   ],
+   [
+    4039.335885787213,
+    14917.67
+   ],
+   [
+    -2.3427125578724506,
+    5701.73
+   ],
+   [
+    20020.412705314964,
+    5086.86
+   ],
+   [
+    10708.917281348786,
+    2481.65
+   ],
+   [
+    5608.929534384143,
+    2072.09
+   ]
+  ]
+ },
+ "growth_rate_values": {
+  "n": 251752,
+  "eq_-100": 3921,
+  "lt_-100": 0,
+  "p01": -100.0,
+  "p50": 100.0,
+  "p99": 15770.0,
+  "max": 2512414.77
+ },
+ "field_checks": {
+  "revenue_le_0": 0,
+  "units_le_0": 0,
+  "channel_sum_over_revenue": {
+   "p01": 0.9999999999999998,
+   "p50": 1.0,
+   "p99": 1.0000000000000002,
+   "share_within_1pct": 1.0
+  },
+  "asp_x_units_over_revenue": {
+   "p01": 0.999344262295082,
+   "p50": 1.0,
+   "p99": 1.0006448839208943,
+   "share_within_2pct": 1.0
+  },
+  "commission_values": {
+   "0": 82167,
+   "8": 21612,
+   "10": 18338,
+   "9": 15213,
+   "7": 15192,
+   "5": 13949,
+   "6": 12726,
+   "11": 11742
+  },
+  "commission_zero_share": 0.3264,
+  "seller_missing": 110,
+  "sku_count_missing": 125
+ },
+ "launch_date": {
+  "missing": 0,
+  "launch_after_observed_month": 0,
+  "min": "2023-07-21",
+  "max": "2026-09-28",
+  "age_months_p10_p50_p90": [
+   0,
+   6,
+   20
+  ],
+  "distinct_launch_dates_per_product_max": 1
+ },
+ "top500_cutoff_revenue": {
+  "n_cat_months": 336,
+  "p10": 1790.88,
+  "p50": 13554.88,
+  "p90": 39585.3
+ },
+ "short_top_lists": [
+  [
+   "Women's Shoes",
+   "2026-03",
+   10
+  ]
+ ],
+ "risers_revenue": {
+  "n": 67210,
+  "p10": 72.0,
+  "p50": 579.12,
+  "p90": 7560.07,
+  "share_below_1000usd": 0.6171
+ },
+ "risers_growth": {
+  "p10": 100.0,
+  "p50": 1880.97,
+  "p90": 7778.23
+ },
+ "top500_share_of_category_approx": {
+  "Home Supplies": 0.358,
+  "Kitchenware": 0.576,
+  "Textiles & Soft Furnishings": 0.649,
+  "Household Appliances": 0.657,
+  "Womenswear & Underwear": 0.268,
+  "Muslim Fashion": 0.723,
+  "Shoes": 0.439,
+  "Beauty & Personal Care": 0.335,
+  "Phones & Electronics": 0.46,
+  "Computers & Office Equipment": 0.529,
+  "Pet Supplies": 0.636,
+  "Baby & Maternity": 0.679,
+  "Sports & Outdoor": 0.414,
+  "Toys & Hobbies": 0.346,
+  "Furniture": 0.465,
+  "Tools & Hardware": 0.543,
+  "Home Improvement": 0.558,
+  "Automotive & Motorcycle": 0.497,
+  "Fashion Accessories": 0.285,
+  "Food & Beverages": 0.594,
+  "Health": 0.616,
+  "Books, Magazines & Audio": 0.559,
+  "Kids' Fashion": 0.47,
+  "Menswear & Underwear": 0.331,
+  "Luggage & Bags": 0.532,
+  "Pre-Owned": 0.912,
+  "Collectibles": 0.428,
+  "Jewelry Accessories & Derivatives": 0.334
+ },
+ "top500_months_per_product": {
+  "1": 28951,
+  "2": 10491,
+  "3": 5604,
+  "4": 3409,
+  "5": 2461,
+  "6": 1815,
+  "7": 1407,
+  "8": 1108,
+  "9": 989,
+  "10": 744,
+  "11": 700,
+  "12": 1801
+ },
+ "top500_retention": {
+  "2025-11": {
+   "prev_top": 13990,
+   "still_top": 8137,
+   "rate": 0.582,
+   "new_entrants": 5850
+  },
+  "2025-12": {
+   "prev_top": 13987,
+   "still_top": 8787,
+   "rate": 0.628,
+   "new_entrants": 5194
+  },
+  "2026-01": {
+   "prev_top": 13981,
+   "still_top": 7910,
+   "rate": 0.566,
+   "new_entrants": 6064
+  },
+  "2026-02": {
+   "prev_top": 13974,
+   "still_top": 8817,
+   "rate": 0.631,
+   "new_entrants": 5175
+  },
+  "2026-03": {
+   "prev_top": 13992,
+   "still_top": 8757,
+   "rate": 0.626,
+   "new_entrants": 5222
+  },
+  "2026-04": {
+   "prev_top": 13979,
+   "still_top": 8981,
+   "rate": 0.642,
+   "new_entrants": 5013
+  },
+  "2026-05": {
+   "prev_top": 13994,
+   "still_top": 9129,
+   "rate": 0.652,
+   "new_entrants": 4861
+  },
+  "2026-06": {
+   "prev_top": 13990,
+   "still_top": 8853,
+   "rate": 0.633,
+   "new_entrants": 5137
+  },
+  "2026-07": {
+   "prev_top": 13990,
+   "still_top": 9067,
+   "rate": 0.648,
+   "new_entrants": 4926
+  },
+  "2026-08": {
+   "prev_top": 13993,
+   "still_top": 9204,
+   "rate": 0.658,
+   "new_entrants": 4784
+  },
+  "2026-09": {
+   "prev_top": 13988,
+   "still_top": 9098,
+   "rate": 0.65,
+   "new_entrants": 4986
+  }
+ },
+ "top500_entrant_sources": {
+  "2025-11": {
+   "entrants": 5850,
+   "in_any_list_prev_month": 101,
+   "in_any_list_any_earlier_month": 101
+  },
+  "2025-12": {
+   "entrants": 5194,
+   "in_any_list_prev_month": 294,
+   "in_any_list_any_earlier_month": 818
+  },
+  "2026-01": {
+   "entrants": 6064,
+   "in_any_list_prev_month": 268,
+   "in_any_list_any_earlier_month": 1453
+  },
+  "2026-02": {
+   "entrants": 5175,
+   "in_any_list_prev_month": 218,
+   "in_any_list_any_earlier_month": 1340
+  },
+  "2026-03": {
+   "entrants": 5222,
+   "in_any_list_prev_month": 224,
+   "in_any_list_any_earlier_month": 1420
+  },
+  "2026-04": {
+   "entrants": 5013,
+   "in_any_list_prev_month": 208,
+   "in_any_list_any_earlier_month": 1567
+  },
+  "2026-05": {
+   "entrants": 4861,
+   "in_any_list_prev_month": 193,
+   "in_any_list_any_earlier_month": 1445
+  },
+  "2026-06": {
+   "entrants": 5137,
+   "in_any_list_prev_month": 171,
+   "in_any_list_any_earlier_month": 1496
+  },
+  "2026-07": {
+   "entrants": 4926,
+   "in_any_list_prev_month": 171,
+   "in_any_list_any_earlier_month": 1693
+  },
+  "2026-08": {
+   "entrants": 4784,
+   "in_any_list_prev_month": 193,
+   "in_any_list_any_earlier_month": 1788
+  },
+  "2026-09": {
+   "entrants": 4986,
+   "in_any_list_prev_month": 146,
+   "in_any_list_any_earlier_month": 1723
+  }
+ },
+ "detail_history": {
+  "products_with_monthly_details": 989,
+  "months_per_product_p50": 1,
+  "products_where_field_varies_by_month": {
+   "creator_number": 15,
+   "video_number": 15,
+   "live_number": 15,
+   "product_review_count": 0,
+   "revenue": 15,
+   "launch_date": 0
+  }
+ },
+ "detail_vs_rank_revenue_same_month": {
+  "pairs": 1004,
+  "match_within_1pct": 964
+ },
+ "videos": {
+  "rows": 132981,
+  "distinct_video_months": 129000,
+  "dup_keys": 3295,
+  "published_after_observed_month": 7,
+  "publish_age_months_p10_p50_p90": [
+   0,
+   1,
+   4
+  ],
+  "ad_share": 0.699,
+  "ai_share": 0.04,
+  "ads_roas_zero_when_ad": 0.0,
+  "ads_roas_nonzero_when_not_ad": 0.0,
+  "ads_roas_distinct_values": 1195,
+  "ads_roas_p10_p50_p90_when_ad": [
+   1.61,
+   2.48,
+   3.36
+  ],
+  "ad_revenue_ratio_range": [
+   0,
+   80.00000000000009
+  ],
+  "zero_view_rows": 0,
+  "rows_with_product_link": 32161,
+  "products_with_video_link": 99,
+  "months_with_product_link": [
+   "2026-09"
+  ],
+  "spearman_revenue_views_topvideos": 0.721,
+  "spearman_revenue_likes_topvideos": 0.417
+ },
+ "comment_insights": [
+  24,
+  "2025-07-08T02:10:35+00:00",
+  "2026-10-26T04:11:21.429528+00:00"
+ ],
+ "video_features": [
+  185,
+  92,
+  94,
+  25
+ ],
+ "categories_snapshots": [
+  [
+   "last30Day",
+   1,
+   58,
+   "2026-10-25T14:43:04"
+  ],
+  [
+   "last30Day",
+   2,
+   248,
+   "2026-10-25T14:43:06"
+  ],
+  [
+   "last365Day",
+   1,
+   29,
+   "2026-10-25T19:23:17"
+  ],
+  [
+   "last365Day",
+   2,
+   240,
+   "2026-10-25T19:23:19"
+  ],
+  [
+   "last90Day",
+   2,
+   232,
+   "2026-10-26T10:44:22"
+  ]
+ ]
+}
